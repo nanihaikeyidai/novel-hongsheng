@@ -49,6 +49,7 @@ DEFAULT_VOICE_MAP: dict[str, str] = {
     "李想": "李想.wav",
     "王老师": "王老师.wav",
     "李老师": "李老师.wav",
+    "陈老师": "李老师.wav",   # 第一章男老师，使用李老师参考音色
     "陈小雨": "陈小雨.wav",
     "妈妈": "妈妈.wav",
     "周芳": "周芳.wav",
@@ -108,6 +109,22 @@ def load_script(json_path: Path, selected_indices: Optional[list[int]] = None) -
     return lines
 
 
+def normalize_tts_text(text: str) -> str:
+    """句首预处理：去空白、去引号、插入零宽占位符规避首字丢失。"""
+    # 1. 基础清理
+    text = text.strip()
+    # 2. 去除首尾常见引号（成稿中可能残留）
+    quote_chars = '""""''《》〈〉「」『』【】'
+    while text and text[0] in quote_chars:
+        text = text[1:]
+    while text and text[-1] in quote_chars:
+        text = text[:-1]
+    text = text.strip()
+    # 3. （可选）句首占位符已被移除，避免控制台 GBK 输出报错；
+    #     首字丢失问题目前主要通过句首去引号和参数稳定化来缓解。
+    return text
+
+
 def split_text_at_boundaries(text: str, max_chars: int) -> list[str]:
     """按句末标点将长文本切分成多个较短的片段。"""
     if len(text) <= max_chars:
@@ -135,7 +152,7 @@ def group_consecutive_lines(lines: list[dict], max_chars: int = DEFAULT_MAX_GROU
     groups: list[tuple[str, str]] = []
     for line in lines:
         char = line.get("character") or DEFAULT_FALLBACK_VOICE
-        content = str(line.get("content", "")).strip()
+        content = normalize_tts_text(str(line.get("content", "")))
         if not content:
             continue
         if groups and groups[-1][0] == char:
@@ -352,7 +369,7 @@ def main() -> None:
             print(f"[{idx + 1}/{len(groups)}] [{char}] {text.replace(chr(10), ' ')[:60]}{'...' if len(text) > 60 else ''}")
 
             user_msg = processor.build_user_message(
-                text=text,
+                text=normalize_tts_text(text),
                 reference=[codes],
                 language="Chinese",
             )
