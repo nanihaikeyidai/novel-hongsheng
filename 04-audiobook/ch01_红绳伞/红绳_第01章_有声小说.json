@@ -1,1581 +1,1099 @@
 {
   "title": "红绳",
-  "author": "未署名",
-  "total_chapters": 1,
-  "total_word_count": 3003,
-  "characters": {
-    "旁白": {
-      "character_name": "旁白",
-      "voice_description": "成年男性叙述者，声音沉稳清晰，带有克制的讲述感，语速中等偏慢",
-      "default_emotion": "neutral",
-      "speed_factor": 0.95,
-      "reference_audio_path": null,
-      "reference_text": null
-    },
-    "林明": {
-      "character_name": "林明",
-      "voice_description": "十七岁青年男性，音色略低带哑，语气冷淡疏离，话少，语速偏慢",
-      "default_emotion": "cold",
-      "speed_factor": 0.9,
-      "reference_audio_path": null,
-      "reference_text": null
-    },
-    "林晓": {
-      "character_name": "林晓",
-      "voice_description": "十七岁青年女性，声音轻柔干净，说话克制隐忍，尾音微微发颤",
-      "default_emotion": "gentle",
-      "speed_factor": 0.9,
-      "reference_audio_path": null,
-      "reference_text": null
-    },
-    "李想": {
-      "character_name": "李想",
-      "voice_description": "十七岁青年男性，声音明亮活泼，语速稍快，带着自来熟的热情",
-      "default_emotion": "happy",
-      "speed_factor": 1.1,
-      "reference_audio_path": null,
-      "reference_text": null
-    },
-    "王老师": {
-      "character_name": "王老师",
-      "voice_description": "中年女性教师，声音平稳严肃，不带太多情绪起伏",
-      "default_emotion": "neutral",
-      "speed_factor": 0.95,
-      "reference_audio_path": null,
-      "reference_text": null
-    }
-  },
   "chapters": [
     {
       "chapter_number": 1,
       "title": "红绳伞",
-      "word_count": 3003,
       "lines": [
         {
           "type": "narration",
           "content": "青屿的雨季总是这样，不讲道理。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "开学第一天，我从公交车上跳下来的时候",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "天已经像被谁泼了一盆墨。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "雨点砸在站台顶棚上",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "声音大得像是有人在头顶撒了一把碎石子。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我拎着书包站在边缘",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "看着校门方向涌过去的人群——红的伞、蓝的伞、印着卡通图案的透明伞",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "一朵一朵地开过去，很快就被白茫茫的雨幕吞掉。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我没有伞。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "家里的那把黑伞昨天被我妈带去上夜班了，她说下午回来",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "结果到现在也没见人影。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我摸了摸书包侧袋",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "只摸到一把折叠小刀和半包受潮的纸巾。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "算了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "淋雨而已，又不会死。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我把校服外套往头上一兜，走进雨里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "青屿一中我很早就听说过，转学手续办了半个暑假",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "今天才算真正踩进这地方。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "教学楼是白色的，被雨水浇得发亮",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "走廊里的地砖能映出人影。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我顺着指示牌往高二教学楼走，湿透的裤腿贴在腿上",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "每走一步都透着凉意。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "预备铃在我踏上二楼走廊的时候响了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "教室里已经坐满了人。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我停在门口，把外套从头上拉下来",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "水珠顺着发梢滴进眼睛里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "讲台上站着一个四十来岁的女人，短发，戴眼镜",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "正低头看花名册。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我敲了敲门框，她抬起头，目光在我身上停了两秒。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "林明？",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "在门口，把外套从头上拉下来，水珠顺着发梢滴进眼睛里。讲台上站着一个四十来岁的女人，短发，戴眼镜，正低头看花名册。我敲了敲门框，她抬起头，目光在我身上停了两秒。\n"
+          "character": "王老师"
         },
         {
           "type": "dialogue",
           "content": "是。",
-          "character": "林明",
-          "emotion": "cold",
-          "context_hint": "套从头上拉下来，水珠顺着发梢滴进眼睛里。讲台上站着一个四十来岁的女人，短发，戴眼镜，正低头看花名册。我敲了敲门框，她抬起头，目光在我身上停了两秒。\n\"林明？\"\n"
+          "character": "林明"
         },
         {
           "type": "dialogue",
           "content": "进来吧。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "下来，水珠顺着发梢滴进眼睛里。讲台上站着一个四十来岁的女人，短发，戴眼镜，正低头看花名册。我敲了敲门框，她抬起头，目光在我身上停了两秒。\n\"林明？\"\n\"是。\"\n"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "我走进教室，四十多双眼睛同时转过来。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "这种注视我很熟悉，每转一次学就要经历一次。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我垂下眼，不想看清任何人的脸。",
-          "character": null,
-          "emotion": "cold",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "看清了也没用，过几个月，或者过一年，我又会走。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "这是新转来的林明同学，从临川过来。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "\"\n我走进教室，四十多双眼睛同时转过来。这种注视我很熟悉，每转一次学就要经历一次。我垂下眼，不想看清任何人的脸。看清了也没用，过几个月，或者过一年，我又会走。\n"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "王老师用粉笔在黑板上写下我的名字",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "希望大家多帮助他融入集体。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "经历一次。我垂下眼，不想看清任何人的脸。看清了也没用，过几个月，或者过一年，我又会走。\n\"这是新转来的林明同学，从临川过来。\"王老师用粉笔在黑板上写下我的名字，"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "教室里响起稀稀拉拉的掌声。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我点了下头，算是回应。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "第三排靠窗还有个空位，你先坐那儿。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "走。\n\"这是新转来的林明同学，从临川过来。\"王老师用粉笔在黑板上写下我的名字，\"希望大家多帮助他融入集体。\"\n教室里响起稀稀拉拉的掌声。我点了下头，算是回应。\n"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "我顺着她指的方向看过去。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "第三排，靠窗，后面就是走廊的落地窗。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "座位前面已经坐了一个女生，马尾辫，白衬衫",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "背挺得很直，正低头在笔记本上写着什么。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的右手腕上系着一根细细的红绳，颜色很深",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "像是洗过很多次，边缘都有些毛了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我走过去，拉开椅子坐下。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "椅子腿擦过地面，发出一声刺耳的响动。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "前排那个女生的肩膀似乎动了一下，但她没有回头。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我把湿透的外套搭在椅背上，从书包里掏出课本。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "课本边角被雨水泡得发皱，我皱了皱眉，把它摊在桌上。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "同学们，把暑假作业拿出来，课代表收一下。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "一声刺耳的响动。前排那个女生的肩膀似乎动了一下，但她没有回头。\n我把湿透的外套搭在椅背上，从书包里掏出课本。课本边角被雨水泡得发皱，我皱了皱眉，把它摊在桌上。\n"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "王老师拍了拍讲台。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "教室里顿时响起翻书包的声音。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我侧过脸，看着窗外。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "雨更大了，玻璃窗上蜿蜒着无数条水痕",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "把外面的世界割成一块一块的。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "青屿的雨和临川不一样，临川的雨是凉的、干的",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "下完就完了；",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "青屿的雨是温的、黏的，像某种活物，缠在你身上不肯走。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "林明。",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "窗上蜿蜒着无数条水痕，把外面的世界割成一块一块的。青屿的雨和临川不一样，临川的雨是凉的、干的，下完就完了；青屿的雨是温的、黏的，像某种活物，缠在你身上不肯走。\n"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "我转过头。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "王老师站在过道里，低头看着我。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "你的暑假作业呢？",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "的雨和临川不一样，临川的雨是凉的、干的，下完就完了；青屿的雨是温的、黏的，像某种活物，缠在你身上不肯走。\n\"林明。\"\n我转过头。王老师站在过道里，低头看着我。\n"
+          "character": "王老师"
         },
         {
           "type": "dialogue",
           "content": "我之前在临川，教材版本不一样。",
-          "character": "林明",
-          "emotion": "neutral",
-          "context_hint": "的雨是凉的、干的，下完就完了；青屿的雨是温的、黏的，像某种活物，缠在你身上不肯走。\n\"林明。\"\n我转过头。王老师站在过道里，低头看着我。\n\"你的暑假作业呢？\"\n"
+          "character": "林明"
         },
         {
           "type": "narration",
           "content": "我说",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "班主任说让我先跟着上课，作业后面补。",
-          "character": "林明",
-          "emotion": "neutral",
-          "context_hint": "温的、黏的，像某种活物，缠在你身上不肯走。\n\"林明。\"\n我转过头。王老师站在过道里，低头看着我。\n\"你的暑假作业呢？\"\n\"我之前在临川，教材版本不一样。\"我说，"
+          "character": "林明"
         },
         {
           "type": "narration",
           "content": "她",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "嗯",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "\"林明。\"\n我转过头。王老师站在过道里，低头看着我。\n\"你的暑假作业呢？\"\n\"我之前在临川，教材版本不一样。\"我说，\"班主任说让我先跟着上课，作业后面补。\"\n她"
+          "character": "王老师"
         },
         {
           "type": "narration",
           "content": "了一声，没再追问，转身走回讲台。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "前排那个女生忽然侧了一下头，似乎想回头看什么",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "但动作做到一半又停住了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她只是把肩上的马尾辫往旁边拨了拨",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "露出一段白皙的脖颈。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "那根红绳在她手腕上格外显眼，像一道旧伤疤。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "第一节是语文课。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "王老师讲《荷塘月色》，声音平稳",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "像一台设定好程序的机器。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我把课本翻到那一页，目光落在字迹模糊的文章上",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "却一个字也没看进去。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "窗外的雨声太吵了，吵得人心里发空。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我下意识地看了一眼前排的女生。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她坐得很端正，笔记本摊开，字迹清秀",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "一行一行记得很整齐。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的笔杆是浅粉色的，上面贴着一个小小的草莓贴纸。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "草莓贴纸旁边，有一道很深的划痕，像是被什么东西刮过。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她写字的速度不快，每一笔都很用力。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "有时候写到一半，笔尖会突然悬在半空",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "过好几秒才重新落下。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "像是在想什么，又像是强迫自己继续写下去。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我把视线收回来。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我对观察别人没兴趣。",
-          "character": null,
-          "emotion": "cold",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "人都是一个样子的，笑、说话、交朋友、说再见。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "看多了只会觉得累。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "课间操因为暴雨取消了，教室里的人一下子松散下来。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "有人聚在走廊上看雨，有人低头玩手机",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "还有人在后排小声地打闹。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我趴在桌上，把脸埋进臂弯里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "湿透的裤腿已经半干了，贴在皮肤上，有一股潮湿的霉味。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "哎，新来的。",
-          "character": "李想",
-          "emotion": "neutral",
-          "context_hint": "人一下子松散下来。有人聚在走廊上看雨，有人低头玩手机，还有人在后排小声地打闹。我趴在桌上，把脸埋进臂弯里。湿透的裤腿已经半干了，贴在皮肤上，有一股潮湿的霉味。\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "一个声音在耳边响起。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我抬起头，看见一个圆脸的男生正站在我桌子旁边",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "戴着黑框眼镜，脸上挂着一种自来熟的笑。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "我叫李想，你同桌。",
-          "character": "李想",
-          "emotion": "happy",
-          "context_hint": "了，贴在皮肤上，有一股潮湿的霉味。\n\"哎，新来的。\"\n一个声音在耳边响起。我抬起头，看见一个圆脸的男生正站在我桌子旁边，戴着黑框眼镜，脸上挂着一种自来熟的笑。\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "他指了指我旁边的空位",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "刚才去厕所了，没来得及自我介绍。",
-          "character": "李想",
-          "emotion": "happy",
-          "context_hint": "来的。\"\n一个声音在耳边响起。我抬起头，看见一个圆脸的男生正站在我桌子旁边，戴着黑框眼镜，脸上挂着一种自来熟的笑。\n\"我叫李想，你同桌。\"他指了指我旁边的空位，"
+          "character": "李想"
         },
         {
           "type": "dialogue",
           "content": "嗯。",
-          "character": "林明",
-          "emotion": "cold",
-          "context_hint": "，看见一个圆脸的男生正站在我桌子旁边，戴着黑框眼镜，脸上挂着一种自来熟的笑。\n\"我叫李想，你同桌。\"他指了指我旁边的空位，\"刚才去厕所了，没来得及自我介绍。\"\n"
+          "character": "林明"
         },
         {
           "type": "narration",
           "content": "我把脸转回另一边。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "你从临川来啊？",
-          "character": "李想",
-          "emotion": "happy",
-          "context_hint": "桌子旁边，戴着黑框眼镜，脸上挂着一种自来熟的笑。\n\"我叫李想，你同桌。\"他指了指我旁边的空位，\"刚才去厕所了，没来得及自我介绍。\"\n\"嗯。\"我把脸转回另一边。\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "他没在意我的冷淡，一屁股坐下",
-          "character": null,
-          "emotion": "cold",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "临川是不是在北方？听说那边冬天会下雪？",
-          "character": "李想",
-          "emotion": "surprise",
-          "context_hint": "\n\"我叫李想，你同桌。\"他指了指我旁边的空位，\"刚才去厕所了，没来得及自我介绍。\"\n\"嗯。\"我把脸转回另一边。\n\"你从临川来啊？\"他没在意我的冷淡，一屁股坐下，"
+          "character": "李想"
         },
         {
           "type": "dialogue",
           "content": "会。",
-          "character": "林明",
-          "emotion": "cold",
-          "context_hint": "，\"刚才去厕所了，没来得及自我介绍。\"\n\"嗯。\"我把脸转回另一边。\n\"你从临川来啊？\"他没在意我的冷淡，一屁股坐下，\"临川是不是在北方？听说那边冬天会下雪？\"\n"
+          "character": "林明"
         },
         {
           "type": "dialogue",
           "content": "我靠，真的假的？我这辈子还没见过雪。",
-          "character": "李想",
-          "emotion": "excited",
-          "context_hint": "厕所了，没来得及自我介绍。\"\n\"嗯。\"我把脸转回另一边。\n\"你从临川来啊？\"他没在意我的冷淡，一屁股坐下，\"临川是不是在北方？听说那边冬天会下雪？\"\n\"会。\"\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "他夸张地睁大眼睛",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "那你是不是会滑雪？",
-          "character": "李想",
-          "emotion": "surprise",
-          "context_hint": "\"你从临川来啊？\"他没在意我的冷淡，一屁股坐下，\"临川是不是在北方？听说那边冬天会下雪？\"\n\"会。\"\n\"我靠，真的假的？我这辈子还没见过雪。\"他夸张地睁大眼睛，"
+          "character": "李想"
         },
         {
           "type": "dialogue",
           "content": "不会。",
-          "character": "林明",
-          "emotion": "cold",
-          "context_hint": "意我的冷淡，一屁股坐下，\"临川是不是在北方？听说那边冬天会下雪？\"\n\"会。\"\n\"我靠，真的假的？我这辈子还没见过雪。\"他夸张地睁大眼睛，\"那你是不是会滑雪？\"\n"
+          "character": "林明"
         },
         {
           "type": "dialogue",
           "content": "哦。",
-          "character": "李想",
-          "emotion": "neutral",
-          "context_hint": "一屁股坐下，\"临川是不是在北方？听说那边冬天会下雪？\"\n\"会。\"\n\"我靠，真的假的？我这辈子还没见过雪。\"他夸张地睁大眼睛，\"那你是不是会滑雪？\"\n\"不会。\"\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "他挠了挠头，但很快又找到了新话题",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "哎，你前面坐着的是林晓，我们班班长。学习贼好，就是性格有点闷，你别介意。",
-          "character": "李想",
-          "emotion": "neutral",
-          "context_hint": "天会下雪？\"\n\"会。\"\n\"我靠，真的假的？我这辈子还没见过雪。\"他夸张地睁大眼睛，\"那你是不是会滑雪？\"\n\"不会。\"\n\"哦。\"他挠了挠头，但很快又找到了新话题，"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "我抬眼看了看那个背影。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "林晓。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "原来她叫林晓。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "她手腕上那根红绳你看见了吧？",
-          "character": "李想",
-          "emotion": "surprise",
-          "context_hint": "\"他挠了挠头，但很快又找到了新话题，\"哎，你前面坐着的是林晓，我们班班长。学习贼好，就是性格有点闷，你别介意。\"\n我抬眼看了看那个背影。林晓。\n原来她叫林晓。\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "李想压低声音，神神秘秘地说",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "从高一入学就戴着，从来不摘。有人问过她是不是男朋友送的，她没回答。",
-          "character": "李想",
-          "emotion": "mysterious",
-          "context_hint": "，我们班班长。学习贼好，就是性格有点闷，你别介意。\"\n我抬眼看了看那个背影。林晓。\n原来她叫林晓。\n\"她手腕上那根红绳你看见了吧？\"李想压低声音，神神秘秘地说，"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "我没接话。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "李想又说了一会儿，见我始终不冷不热，终于觉得没意思",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "转过去和后座的男生聊天了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "教室里重新安静下来，只剩下窗外的雨声。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我把下巴搁在手臂上，看着林晓的后脑勺。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的马尾辫用一根黑色皮筋扎着，发尾有些分叉",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "随着她写字的动作轻轻晃动。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "红绳。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我对那根红绳没什么兴趣，但不知为什么",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "它在我眼前晃了一早上，晃得我有些心烦。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "中午放学的时候，雨势一点没减。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我站在走廊边上，看着楼下的积水已经漫过了台阶。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "学生们撑着伞涌向校门，像是一群急于逃离的鱼。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我摸了摸口袋，里面只有三块钱",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "连一把最便宜的伞都买不起。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "林明。",
-          "character": "林晓",
-          "emotion": "neutral",
-          "context_hint": "一点没减。\n我站在走廊边上，看着楼下的积水已经漫过了台阶。学生们撑着伞涌向校门，像是一群急于逃离的鱼。我摸了摸口袋，里面只有三块钱，连一把最便宜的伞都买不起。\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "我回过头。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "林晓站在我身后，手里握着一把黑伞。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "伞很大，伞骨看起来很结实。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的书包斜挎在肩上，马尾辫被风吹得有些乱。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她把伞递到我面前，动作自然得像是递一块橡皮。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "你拿着。",
-          "character": "林晓",
-          "emotion": "gentle",
-          "context_hint": "我回过头。\n林晓站在我身后，手里握着一把黑伞。伞很大，伞骨看起来很结实。她的书包斜挎在肩上，马尾辫被风吹得有些乱。她把伞递到我面前，动作自然得像是递一块橡皮。\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "我愣了一下。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "不用。",
-          "character": "林明",
-          "emotion": "cold",
-          "context_hint": "手里握着一把黑伞。伞很大，伞骨看起来很结实。她的书包斜挎在肩上，马尾辫被风吹得有些乱。她把伞递到我面前，动作自然得像是递一块橡皮。\n\"你拿着。\"\n我愣了一下。\n"
+          "character": "林明"
         },
         {
           "type": "narration",
           "content": "我说",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "我淋雨回去就行。",
-          "character": "林明",
-          "emotion": "neutral",
-          "context_hint": "。伞很大，伞骨看起来很结实。她的书包斜挎在肩上，马尾辫被风吹得有些乱。她把伞递到我面前，动作自然得像是递一块橡皮。\n\"你拿着。\"\n我愣了一下。\n\"不用。\"我说，"
+          "character": "林明"
         },
         {
           "type": "dialogue",
           "content": "雨太大了。",
-          "character": "林晓",
-          "emotion": "sad",
-          "context_hint": "结实。她的书包斜挎在肩上，马尾辫被风吹得有些乱。她把伞递到我面前，动作自然得像是递一块橡皮。\n\"你拿着。\"\n我愣了一下。\n\"不用。\"我说，\"我淋雨回去就行。\"\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "她的声音很轻，但语气里有一种不容拒绝的东西",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "明天还我就行。",
-          "character": "林晓",
-          "emotion": "gentle",
-          "context_hint": "我面前，动作自然得像是递一块橡皮。\n\"你拿着。\"\n我愣了一下。\n\"不用。\"我说，\"我淋雨回去就行。\"\n\"雨太大了。\"她的声音很轻，但语气里有一种不容拒绝的东西，"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "我没有接。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我不喜欢欠别人东西。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "欠东西就意味着要有来往，有来往就意味着要说话，要笑",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "要假装熟悉。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "这些都很累。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "林晓见我不动，往前迈了一小步，把伞塞进我手里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的指尖擦过我的手背，很凉，像是被雨水泡过。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "拿着。",
-          "character": "林晓",
-          "emotion": "gentle",
-          "context_hint": "味着要有来往，有来往就意味着要说话，要笑，要假装熟悉。这些都很累。\n林晓见我不动，往前迈了一小步，把伞塞进我手里。她的指尖擦过我的手背，很凉，像是被雨水泡过。\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "她又重复了一遍。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "伞柄上系着一根红绳。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我低头看了一眼，瞳孔不自觉地缩了一下。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "那根红绳和她手腕上那根几乎一模一样——同样的暗红色",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "同样的毛边，同样的旧。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "绳结打得很松，像是随手系上去的",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "但又被反复摩挲过无数次，绳身都变得光滑了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "这红绳……",
-          "character": "林明",
-          "emotion": "surprise",
-          "context_hint": "缩了一下。那根红绳和她手腕上那根几乎一模一样——同样的暗红色，同样的毛边，同样的旧。绳结打得很松，像是随手系上去的，但又被反复摩挲过无数次，绳身都变得光滑了。\n"
+          "character": "林明"
         },
         {
           "type": "narration",
           "content": "我皱起眉。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "伞上的装饰。",
-          "character": "林晓",
-          "emotion": "neutral",
-          "context_hint": "上那根几乎一模一样——同样的暗红色，同样的毛边，同样的旧。绳结打得很松，像是随手系上去的，但又被反复摩挲过无数次，绳身都变得光滑了。\n\"这红绳……\"我皱起眉。\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "她飞快地说",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "旧了，别介意。",
-          "character": "林晓",
-          "emotion": "neutral",
-          "context_hint": "暗红色，同样的毛边，同样的旧。绳结打得很松，像是随手系上去的，但又被反复摩挲过无数次，绳身都变得光滑了。\n\"这红绳……\"我皱起眉。\n\"伞上的装饰。\"她飞快地说，"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "我抬起头，想再说些什么，却正好对上她的眼睛。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的眼睛很亮，黑白分明",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "睫毛上还沾着一点从门外飘进来的雨雾。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "但在那层明亮之下，有什么东西沉得很深。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我说不清那是什么",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "只觉得那不像是一个十七岁女生该有的眼神。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她的眼眶忽然红了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "只是一瞬间的事，像是被风吹的，又像是被雨溅的。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她迅速低下头，抬起手揉了揉眼睛。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "雨太大。",
-          "character": "林晓",
-          "emotion": "sad",
-          "context_hint": "我说不清那是什么，只觉得那不像是一个十七岁女生该有的眼神。\n她的眼眶忽然红了。\n只是一瞬间的事，像是被风吹的，又像是被雨溅的。她迅速低下头，抬起手揉了揉眼睛。\n"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "她说",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "看错了。",
-          "character": "林晓",
-          "emotion": "sad",
-          "context_hint": "只觉得那不像是一个十七岁女生该有的眼神。\n她的眼眶忽然红了。\n只是一瞬间的事，像是被风吹的，又像是被雨溅的。她迅速低下头，抬起手揉了揉眼睛。\n\"雨太大。\"她说，"
+          "character": "林晓"
         },
         {
           "type": "narration",
           "content": "我没说话。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "她把书包往肩上提了提，转身走进教室",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "背影很快消失在后排的过道里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我站在原地，手里握着那把黑伞",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "伞柄上的红绳贴着我的掌心，有一种奇异的温度。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "不像是伞柄该有的温度。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "走廊里渐渐空了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我撑开伞，走进雨里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "黑伞很大，把我整个人罩在下面。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "雨点砸在伞面上，发出沉闷的声响。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我走了几步，忍不住低头又看了一眼那根红绳。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "它在风中轻轻摆动，暗红色的绳身被雨水打湿",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "颜色变得更深了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我忽然想起李想说的话。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "dialogue",
           "content": "从高一入学就戴着，从来不摘。",
-          "character": "李想",
-          "emotion": "mysterious",
-          "context_hint": "。雨点砸在伞面上，发出沉闷的声响。我走了几步，忍不住低头又看了一眼那根红绳。它在风中轻轻摆动，暗红色的绳身被雨水打湿，颜色变得更深了。\n我忽然想起李想说的话。\n"
+          "character": "李想"
         },
         {
           "type": "narration",
           "content": "可这把伞上的红绳，和她手腕上那根也太像了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "像是同一根绳子被剪成了两段，一段系在手腕上",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "一段系在伞柄上。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我摇摇头，把这些乱七八糟的念头甩出去。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "一把伞而已。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "明天还给她，就两清了。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "可走到校门口的时候，我还是忍不住回头看了一眼。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "二楼的走廊上，一个白色的身影正站在窗边",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "隔着雨幕望向我这边。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "距离太远，我看不清她的表情",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "只能看见她垂在身侧的那只手，手腕上一抹暗红。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我转过身，加快脚步走进雨里。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "那把伞很重。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "或者说，那根红绳很重。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         },
         {
           "type": "narration",
           "content": "我不知道为什么。",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
+          "character": null
         }
       ]
     }
