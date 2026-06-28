@@ -536,21 +536,7 @@
         },
         {
           "type": "narration",
-          "content": "她",
-          "character": null,
-          "emotion": "neutral",
-          "context_hint": "林明第一人称视角，克制冷淡"
-        },
-        {
-          "type": "dialogue",
-          "content": "嗯",
-          "character": "王老师",
-          "emotion": "neutral",
-          "context_hint": "\"林明。\"\n我转过头。王老师站在过道里，低头看着我。\n\"你的暑假作业呢？\"\n\"我之前在临川，教材版本不一样。\"我说，\"班主任说让我先跟着上课，作业后面补。\"\n她"
-        },
-        {
-          "type": "narration",
-          "content": "了一声，没再追问，转身走回讲台。",
+          "content": "她嗯了一声，没再追问，转身走回讲台。",
           "character": null,
           "emotion": "neutral",
           "context_hint": "林明第一人称视角，克制冷淡"
