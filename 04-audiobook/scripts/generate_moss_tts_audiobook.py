@@ -346,7 +346,7 @@ def main() -> None:
     start_time = time.time()
     with torch.no_grad():
         for idx, (char, text) in enumerate(groups):
-            codes = ref_codes.get(char) or ref_codes[DEFAULT_FALLBACK_VOICE]
+            codes = ref_codes[char] if char in ref_codes else ref_codes[DEFAULT_FALLBACK_VOICE]
             print(f"[{idx + 1}/{len(groups)}] [{char}] {text.replace(chr(10), ' ')[:60]}{'...' if len(text) > 60 else ''}")
 
             user_msg = processor.build_user_message(
