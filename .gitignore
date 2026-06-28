@@ -15,5 +15,13 @@ Thumbs.db
 04-audiobook/lines/
 04-audiobook/moss_tts_output/
 
-# 大文件备份
+# 大文件备份/压缩包
 *.zip
+
+# 模型权重 / HuggingFace 缓存（不应进 Git）
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+03-intermediate/*/有声小说/checkpoints/
