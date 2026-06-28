@@ -1,0 +1,129 @@
+{
+  "model": "D:\\HermesWorkspace\\models\\MOSS-TTS-Local-Transformer-v1.5",
+  "json_source": "d:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_有声小说.json",
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    28,
+    29,
+    30,
+    31,
+    100,
+    101,
+    105,
+    108,
+    114,
+    141,
+    142,
+    148,
+    150,
+    152,
+    153,
+    155
+  ],
+  "sample_rate": 48000,
+  "total_samples": 2777760,
+  "total_duration_seconds": 57.87,
+  "generation_elapsed_seconds": 78.2,
+  "segments": [
+    {
+      "index": 0,
+      "character": "旁白",
+      "text": "青屿的雨季总是这样，不讲道理。\n开学第一天，我从公交车上跳下来的时候\n天已经像被谁泼了一盆墨。\n雨点砸在站台顶棚上\n声音大得像是有人在头顶撒了一把碎石子。\n我敲了敲门框，她抬起头，目光在我身上停了两秒。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\旁白.wav",
+      "samples": 1132800,
+      "duration_seconds": 23.6
+    },
+    {
+      "index": 1,
+      "character": "王老师",
+      "text": "林明？",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\王老师.wav",
+      "samples": 72960,
+      "duration_seconds": 1.52
+    },
+    {
+      "index": 2,
+      "character": "林明",
+      "text": "是。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\青年林明.wav",
+      "samples": 19200,
+      "duration_seconds": 0.4
+    },
+    {
+      "index": 3,
+      "character": "王老师",
+      "text": "进来吧。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\王老师.wav",
+      "samples": 38400,
+      "duration_seconds": 0.8
+    },
+    {
+      "index": 4,
+      "character": "旁白",
+      "text": "湿透的裤腿已经半干了，贴在皮肤上，有一股潮湿的霉味。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\旁白.wav",
+      "samples": 330240,
+      "duration_seconds": 6.88
+    },
+    {
+      "index": 5,
+      "character": "李想",
+      "text": "哎，新来的。\n我叫李想，你同桌。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\李想.wav",
+      "samples": 211200,
+      "duration_seconds": 4.4
+    },
+    {
+      "index": 6,
+      "character": "林明",
+      "text": "嗯。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\青年林明.wav",
+      "samples": 103680,
+      "duration_seconds": 2.16
+    },
+    {
+      "index": 7,
+      "character": "李想",
+      "text": "我靠，真的假的？我这辈子还没见过雪。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\李想.wav",
+      "samples": 218880,
+      "duration_seconds": 4.56
+    },
+    {
+      "index": 8,
+      "character": "旁白",
+      "text": "连一把最便宜的伞都买不起。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\旁白.wav",
+      "samples": 157440,
+      "duration_seconds": 3.28
+    },
+    {
+      "index": 9,
+      "character": "林晓",
+      "text": "林明。\n你拿着。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\青年林晓.wav",
+      "samples": 80640,
+      "duration_seconds": 1.68
+    },
+    {
+      "index": 10,
+      "character": "林明",
+      "text": "不用。\n我淋雨回去就行。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\青年林明.wav",
+      "samples": 134400,
+      "duration_seconds": 2.8
+    },
+    {
+      "index": 11,
+      "character": "林晓",
+      "text": "雨太大了。\n明天还我就行。",
+      "reference": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色\\青年林晓.wav",
+      "samples": 145920,
+      "duration_seconds": 3.04
+    }
+  ]
+}

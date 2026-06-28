@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《红绳》剧情流程图</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .mermaid {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .note {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+            max-width: 800px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>《红绳》剧情流程图</h1>
+    <div class="mermaid">
+flowchart TD
+    Start([红绳 · 全书剧情流程图]) --> FirstStart[第一世：高三开学<br/>林明转学，遇见林晓]
+
+    subgraph 第一世高中 [第一世高中 · 如果爱有声音]
+    FirstStart --> A1[初见<br/>林明主动递草莓糖]
+    A1 --> A2[前后桌<br/>他主动借笔记等她放学]
+    A2 --> A3[草莓糖<br/>两人互送糖]
+    A3 --> A4[篮球场<br/>他为她认真打球]
+    A4 --> A5[秋游<br/>烟火下第一次牵手]
+    A5 --> A6[梧桐树下<br/>三根红绳定情]
+    end
+
+    A6 --> FirstLater[第一世婚后]
+
+    subgraph 第一世婚后 [第一世婚后 · 褪色的红绳]
+    FirstLater --> B1[结婚]
+    B1 --> B2[女儿梅念出生<br/>第三根红绳编成平安结]
+    B2 --> B3[林明成为消防员]
+    B3 --> B4[云川镇大地震<br/>林明随队救援]
+    B4 --> B5[敲门声响起<br/>门外是遇难通知书]
+    B5 --> B6[林晓握着三根红绳<br/>海边痛哭]
+    end
+
+    B6 --> Trigger{强烈思念<br/>触发轮回}
+
+    Trigger --> SecondStart[第二世：林晓在小学教室醒来<br/>环境不同，手握红绳，保留记忆]
+
+    subgraph 第二世高中 [第二世高中 · 她认识我]
+    SecondStart --> C1[红绳伞<br/>林明转学，林晓借伞]
+    C1 --> C2[薄荷与草莓<br/>她记得他不吃薄荷]
+    C2 --> C3[第三排靠窗<br/>她偷记他的细节]
+    C3 --> C4[篮球场与情敌<br/>苏晴出现，林晓场边哭]
+    C4 --> C5[错题本上的字<br/>她用他的话安慰他]
+    C5 --> C6[目标大学<br/>她偷偷填同一座城市]
+    C6 --> C7[秋游的夜晚<br/>她下意识牵他手]
+    C7 --> C8[灾难新闻<br/>她红绳发热恐惧]
+    end
+
+    C8 --> SecondLater[第二世婚后]
+
+    subgraph 第二世婚后 [第二世婚后 · 无论如何]
+    SecondLater --> D1[大学：他想学消防<br/>她极力阻止]
+    D1 --> D2[结婚<br/>她手抖着系回红绳]
+    D2 --> D3[梅念出生<br/>平安结再现]
+    D3 --> D4[他还是成为消防员]
+    D4 --> D5[每次出警<br/>她彻夜不眠]
+    D5 --> D6[云川镇再震<br/>舅舅一家被困]
+    D6 --> D7[她阻止失败<br/>说出轮回真相]
+    D7 --> D8[他知道真相仍前往]
+    D8 --> D9[废墟救人后失踪<br/>红绳断裂]
+    D9 --> D10[敲门声响起<br/>门外是活着的林明<br/>失去一条腿]
+    D10 --> D11[断绳重新接好<br/>死亡循环打破]
+    end
+
+    D11 --> End([无论如何<br/>都会在一起])
+
+    classDef first_hs fill:#ffe6e6,stroke:#cc0000,stroke-width:2px;
+    classDef first_later fill:#ffcccc,stroke:#cc0000,stroke-width:2px;
+    classDef second_hs fill:#e6f3ff,stroke:#0066cc,stroke-width:2px;
+    classDef second_later fill:#cce6ff,stroke:#0066cc,stroke-width:2px;
+    classDef trigger fill:#fff4cc,stroke:#ff9900,stroke-width:2px;
+    classDef end fill:#e6ffe6,stroke:#009900,stroke-width:2px;
+    classDef key fill:#f0e6ff,stroke:#6600cc,stroke-width:2px;
+
+    class FirstStart,A1,A2,A3,A4,A5,A6 first_hs;
+    class FirstLater,B1,B2,B3,B4,B5,B6 first_later;
+    class SecondStart,C1,C2,C3,C4,C5,C6,C7,C8 second_hs;
+    class SecondLater,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11 second_later;
+    class Trigger trigger;
+    class End end;
+    class B5,D10 key;
+    </div>
+
+    <div class="note">
+        <strong>说明：</strong><br>
+        • 浅红色：第一世高中，林明主动、阳光、爱情甜蜜。<br>
+        • 深红色：第一世婚后，幸福走向灾难与死亡。<br>
+        • 浅蓝色：第二世高中，林明高冷封闭，林晓带着记忆重新靠近，苏晴制造危机感。<br>
+        • 深蓝色：第二世婚后，命运再次铺开，但结局被改写。<br>
+        • 第二世回响：林明做出和第一世相似的举动或说出相同的话时，林晓内心必须掀起波澜。<br>
+        • 黄色节点：轮回触发点。<br>
+        • 紫色节点：两次"敲门"对照——第一次是死亡通知，第二次是林明本人归来。<br>
+        • 绿色节点：结局，林明失去一条腿，但死亡循环打破。<br>
+        • 核心对比：同一事件在两世中情感完全相反；第二世突出林晓的伤心与不被理解的关照。
+    </div>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+</body>
+</html>
