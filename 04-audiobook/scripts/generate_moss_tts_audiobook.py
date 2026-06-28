@@ -258,7 +258,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-group-chars", type=int, default=DEFAULT_MAX_GROUP_CHARS,
                         help="同角色合并后的最大字数")
     parser.add_argument("--no-mp3", action="store_true",
-                        help="不生成 MP3")
+                        help="不生成 MP3（默认会生成 MP3 并删除中间 WAV）")
+    parser.add_argument("--keep-wav", action="store_true",
+                        help="保留中间 WAV 文件（默认只保留 MP3）")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu",
                         help="计算设备")
     parser.add_argument("--dtype", type=str, default="bfloat16", choices=["bfloat16", "float16", "float32"],
@@ -405,6 +407,8 @@ def main() -> None:
     if not args.no_mp3:
         mp3_path = out_wav.with_suffix(".mp3")
         mp3_ok = save_mp3_with_ffmpeg(out_wav, mp3_path)
+        if mp3_ok and not args.keep_wav:
+            out_wav.unlink()
 
     meta = {
         "model": str(args.model_dir),
@@ -421,10 +425,13 @@ def main() -> None:
     with out_meta.open("w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[DONE] 合并音频: {out_wav}")
-    print(f"[DONE] 总时长: {meta['total_duration_seconds']}s | 生成耗时: {meta['generation_elapsed_seconds']}s")
+    print(f"\n[DONE] 总时长: {meta['total_duration_seconds']}s | 生成耗时: {meta['generation_elapsed_seconds']}s")
     if mp3_ok:
         print(f"[DONE] MP3: {out_wav.with_suffix('.mp3')}")
+        if not args.keep_wav:
+            print("[DONE] 已删除中间 WAV 文件")
+    else:
+        print(f"[DONE] 合并音频: {out_wav}")
     print(f"[DONE] 元数据: {out_meta}")
     print(f"[DONE] 分段文件: {segments_dir}")
 
