@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 生成音频（除参考音色外）
+04-audiobook/ch01_红绳伞/*.wav
+04-audiobook/ch01_红绳伞/*.mp3
+04-audiobook/ch01_红绳伞/segments/
+04-audiobook/lines/
+04-audiobook/moss_tts_output/
+
+# 大文件备份
+*.zip
