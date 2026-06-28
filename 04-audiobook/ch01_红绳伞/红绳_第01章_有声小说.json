@@ -3,17 +3,262 @@
   "chapters": [
     {
       "chapter_number": 1,
-      "title": "红绳伞",
+      "chapter_title": "第一章 红绳伞",
       "lines": [
         {
           "type": "narration",
-          "content": "青屿的雨季总是这样，不讲道理。\n开学第一天，我从公交车上跳下来的时候\n天已经像被谁泼了一盆墨。\n雨点砸在站台顶棚上\n声音大得像是有人在头顶撒了一把碎石子。\n我拎着书包站在边缘\n看着校门方向涌过去的人群——红的伞、蓝的伞、印着卡通图案的透明伞\n一朵一朵地开过去，很快就被白茫茫的雨幕吞掉。\n我没有伞。\n家里的那把黑伞昨天被我妈带去上夜班了，她说下午回来\n结果到现在也没见人影。\n我摸了摸书包侧袋\n只摸到一把折叠小刀和半包受潮的纸巾。\n算了。\n淋雨而已，又不会死。\n我把校服外套往头上一兜，走进雨里。\n青屿一中我很早就听说过，转学手续办了半个暑假\n今天才算真正踩进这地方。\n教学楼是白色的，被雨水浇得发亮\n走廊里的地砖能映出人影。\n我顺着指示牌往高二教学楼走，湿透的裤腿贴在腿上\n每走一步都透着凉意。\n预备铃在我踏上二楼走廊的时候响了。\n教室里已经坐满了人。\n我停在门口，把外套从头上拉下来\n水珠顺着发梢滴进眼睛里。\n讲台上站着一个四十来岁的女人，短发，戴眼镜\n正低头看花名册。\n我敲了敲门框，她抬起头，目光在我身上停了两秒。",
+          "content": "我醒来的时候，六点四十。\n窗外是灰的，像一张没干透的水彩纸。妈妈在冰箱上贴了便签：",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "林明？",
+          "content": "粥在锅里，鸡蛋在桌上。转学手续我办好了，晚上回来晚。",
+          "character": "妈妈"
+        },
+        {
+          "type": "narration",
+          "content": "便签右下角画了一个笑脸，画得很丑。我把便签揭下来，揉成一团，扔进垃圾桶。\n这是我第三次转学。小学一次，初中一次，现在高三又一次。每次的理由都一样：妈妈的工作调动。我已经习惯了，习惯到不再去问",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "为什么是我",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "。人在一个地方待久了，总会有点舍不得的东西。我不让自己有那种东西。\n爸爸走的时候我十岁。他走之前跟妈妈吵了一架，说这个家让他喘不过气。我躲在房间里，听着门被摔上。后来妈妈说他去了南方，再也没回来。我没有恨他，也没有想他。一个人离开，就是说明他不想被找到。我理解。我不是没期待过他会回来。只是期待这种事，多了会让人显得可怜。所以我选择不去期待任何人。\n吃完凉粥和鸡蛋，我把碗放进水槽，没洗。书包里只有两支笔和一个空本子，课本还没领。我对开学没什么期待。换个地方，换一批人，换一套课表，本质上没什么不同。日子是重复的，人对我也都是背景音。\n我走进青屿一中时，校门上方的电子屏正在滚动：\n高三下学期开学典礼\n。我停下来看了一眼，然后继续往里走。周围都是穿着同样校服的人，他们成群，说话，笑。那些声音像隔了一层毛玻璃，和我没关系。\n教室在笃行楼四楼。我到的时候，开学仪式已经结束，走廊里空无一人。我推开后门，三十多双眼睛一起转过来。\n我不习惯这种被看见的感觉，于是垂下眼，走到最后一排靠窗的空位坐下。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "这位是林明同学，从临市转来。",
           "character": "王老师"
+        },
+        {
+          "type": "narration",
+          "content": "班主任王老师用粉笔在黑板上写下我的名字，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "高三最后一学期，希望大家互相帮助。",
+          "character": "王老师"
+        },
+        {
+          "type": "narration",
+          "content": "没人鼓掌，只有几声低低的议论。我没抬头，把书包塞进桌肚，发现里面有一本别人落下的旧数学课本。我把它拿出来，翻到扉页，上面有一行清秀的字：林晓。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "林明，你先和林晓合看一节课。",
+          "character": "王老师"
+        },
+        {
+          "type": "narration",
+          "content": "王老师指了指我前面的女生，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "等下午领了新教材再说。",
+          "character": "王老师"
+        },
+        {
+          "type": "narration",
+          "content": "那个女生回过头来。马尾辫，刘海整齐，眼睛很大，但没什么多余的表情。她把课本往我这边推了推：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "看这边。",
+          "character": "林晓"
+        },
+        {
+          "type": "dialogue",
+          "content": "谢谢。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我说。声音有点哑。\n她没笑，只是转回去。我注意到她右手腕上系着一根红绳，旧了，颜色褪成暗红，却很紧地贴着皮肤。她的目光在我左肩停了一瞬，又很快移开。那里有一道我小时候摔伤留下的疤，平时被校服领子遮着，很少有人注意。\n数学课我没怎么听。不是不想听，是那些公式我早就见过。以前在原来的学校，我数学成绩很好，后来我就不想考好了。考得好又怎样，没人看。\n初二那年我拿过市数学竞赛三等奖。颁奖的时候，台下坐着很多人，我站在台上，找不到一张认识的脸。我把奖状折起来塞进书包，回家路上扔进了垃圾桶。妈妈知道后骂了我一顿，问我为什么。我说，没用。她哭了。从那以后，我再也没考过第一。\n陈老师说话像机关枪，在黑板上写下一道解析几何，转过身问：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "有没有同学愿意上来？",
+          "character": "陈老师"
+        },
+        {
+          "type": "narration",
+          "content": "教室里没人举手。他的目光扫过来，停在我脸上。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "新来的，林明是吧？你来。",
+          "character": "陈老师"
+        },
+        {
+          "type": "narration",
+          "content": "我站起来，走到黑板前，拿起粉笔，三两下写完。答案是对的。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "不错。",
+          "character": "陈老师"
+        },
+        {
+          "type": "narration",
+          "content": "陈老师说，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "坐回去吧。",
+          "character": "陈老师"
+        },
+        {
+          "type": "narration",
+          "content": "我把粉笔放回粉笔槽，回到座位。林晓侧头看了我一眼，眼神里没有惊讶，只有一种\n原来如此\n的平静。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你数学很好。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她说。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "一般。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我说。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你步骤写得比老师还快。",
+          "character": "林晓"
+        },
+        {
+          "type": "dialogue",
+          "content": "……",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "下课铃响的时候，她把课本合上，忽然问：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你以前数学很好吧？",
+          "character": "林晓"
+        },
+        {
+          "type": "dialogue",
+          "content": "以前的事，不记得了。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我说。\n她看着我，眼睛很亮，没再说话。她的红绳在写字时偶尔晃动，像一根被系住的心跳。\n下课后李想凑过来，压低声音：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "牛啊你，那道题陈老师本来想装酷的，被你三秒破功。",
+          "character": "李想"
+        },
+        {
+          "type": "narration",
+          "content": "我没回应。\n他又说：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "前桌林晓，我们班班花，你别打她主意啊。",
+          "character": "李想"
+        },
+        {
+          "type": "narration",
+          "content": "我看了他一眼：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "我没兴趣。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "他嘿嘿笑：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "现在没兴趣，以后不好说。",
+          "character": "李想"
+        },
+        {
+          "type": "narration",
+          "content": "我把书竖起来，挡住他的脸。\n第二节语文课，老师让我们默写《滕王阁序》。我没带笔袋，找了半天只有一支断水的圆珠笔。我皱了皱眉，准备就这么空着。\n一只手握着一块橡皮伸到我桌边。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "还有这个。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她的声音很轻，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你先用。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "我抬头，是林晓。她没回头，只是把橡皮和一支黑笔放在我桌角。橡皮上印着一只卡通猫，边角磨得圆滑，像是用了很久。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "谢谢。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我又说了一遍。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "嗯。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她终于侧过脸看了我一眼，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你叫林明？",
+          "character": "林晓"
         },
         {
           "type": "dialogue",
@@ -22,258 +267,103 @@
         },
         {
           "type": "dialogue",
-          "content": "进来吧。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "我走进教室，四十多双眼睛同时转过来。\n这种注视我很熟悉，每转一次学就要经历一次。\n我垂下眼，不想看清任何人的脸。\n看清了也没用，过几个月，或者过一年，我又会走。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "这是新转来的林明同学，从临川过来。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "王老师用粉笔在黑板上写下我的名字",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "希望大家多帮助他融入集体。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "教室里响起稀稀拉拉的掌声。\n我点了下头，算是回应。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "第三排靠窗还有个空位，你先坐那儿。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "我顺着她指的方向看过去。\n第三排，靠窗，后面就是走廊的落地窗。\n座位前面已经坐了一个女生，马尾辫，白衬衫\n背挺得很直，正低头在笔记本上写着什么。\n她的右手腕上系着一根细细的红绳，颜色很深\n像是洗过很多次，边缘都有些毛了。\n我走过去，拉开椅子坐下。\n椅子腿擦过地面，发出一声刺耳的响动。\n前排那个女生的肩膀似乎动了一下，但她没有回头。\n我把湿透的外套搭在椅背上，从书包里掏出课本。\n课本边角被雨水泡得发皱，我皱了皱眉，把它摊在桌上。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "同学们，把暑假作业拿出来，课代表收一下。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "王老师拍了拍讲台。\n教室里顿时响起翻书包的声音。\n我侧过脸，看着窗外。\n雨更大了，玻璃窗上蜿蜒着无数条水痕\n把外面的世界割成一块一块的。\n青屿的雨和临川不一样，临川的雨是凉的、干的\n下完就完了；\n青屿的雨是温的、黏的，像某种活物，缠在你身上不肯走。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "林明。",
-          "character": "王老师"
-        },
-        {
-          "type": "narration",
-          "content": "我转过头。\n王老师站在过道里，低头看着我。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "你的暑假作业呢？",
-          "character": "王老师"
-        },
-        {
-          "type": "dialogue",
-          "content": "我之前在临川，教材版本不一样。",
-          "character": "林明"
-        },
-        {
-          "type": "narration",
-          "content": "我说",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "班主任说让我先跟着上课，作业后面补。",
-          "character": "林明"
-        },
-        {
-          "type": "narration",
-          "content": "她嗯了一声，没再追问，转身走回讲台。\n前排那个女生忽然侧了一下头，似乎想回头看什么\n但动作做到一半又停住了。\n她只是把肩上的马尾辫往旁边拨了拨\n露出一段白皙的脖颈。\n那根红绳在她手腕上格外显眼，像一道旧伤疤。\n第一节是语文课。\n王老师讲《荷塘月色》，声音平稳\n像一台设定好程序的机器。\n我把课本翻到那一页，目光落在字迹模糊的文章上\n却一个字也没看进去。\n窗外的雨声太吵了，吵得人心里发空。\n我下意识地看了一眼前排的女生。\n她坐得很端正，笔记本摊开，字迹清秀\n一行一行记得很整齐。\n她的笔杆是浅粉色的，上面贴着一个小小的草莓贴纸。\n草莓贴纸旁边，有一道很深的划痕，像是被什么东西刮过。\n她写字的速度不快，每一笔都很用力。\n有时候写到一半，笔尖会突然悬在半空\n过好几秒才重新落下。\n像是在想什么，又像是强迫自己继续写下去。\n我把视线收回来。\n我对观察别人没兴趣。\n人都是一个样子的，笑、说话、交朋友、说再见。\n看多了只会觉得累。\n课间操因为暴雨取消了，教室里的人一下子松散下来。\n有人聚在走廊上看雨，有人低头玩手机\n还有人在后排小声地打闹。\n我趴在桌上，把脸埋进臂弯里。\n湿透的裤腿已经半干了，贴在皮肤上，有一股潮湿的霉味。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "哎，新来的。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "一个声音在耳边响起。\n我抬起头，看见一个圆脸的男生正站在我桌子旁边\n戴着黑框眼镜，脸上挂着一种自来熟的笑。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "我叫李想，你同桌。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "他指了指我旁边的空位",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "刚才去厕所了，没来得及自我介绍。",
-          "character": "李想"
-        },
-        {
-          "type": "dialogue",
-          "content": "嗯。",
-          "character": "林明"
-        },
-        {
-          "type": "narration",
-          "content": "我把脸转回另一边。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "你从临川来啊？",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "他没在意我的冷淡，一屁股坐下",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "临川是不是在北方？听说那边冬天会下雪？",
-          "character": "李想"
-        },
-        {
-          "type": "dialogue",
-          "content": "会。",
-          "character": "林明"
-        },
-        {
-          "type": "dialogue",
-          "content": "我靠，真的假的？我这辈子还没见过雪。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "他夸张地睁大眼睛",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "那你是不是会滑雪？",
-          "character": "李想"
-        },
-        {
-          "type": "dialogue",
-          "content": "不会。",
-          "character": "林明"
-        },
-        {
-          "type": "dialogue",
-          "content": "哦。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "他挠了挠头，但很快又找到了新话题",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "哎，你前面坐着的是林晓，我们班班长。学习贼好，就是性格有点闷，你别介意。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "我抬眼看了看那个背影。\n林晓。\n原来她叫林晓。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "她手腕上那根红绳你看见了吧？",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "李想压低声音，神神秘秘地说",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "从高一入学就戴着，从来不摘。有人问过她是不是男朋友送的，她没回答。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "我没接话。\n李想又说了一会儿，见我始终不冷不热，终于觉得没意思\n转过去和后座的男生聊天了。\n教室里重新安静下来，只剩下窗外的雨声。\n我把下巴搁在手臂上，看着林晓的后脑勺。\n她的马尾辫用一根黑色皮筋扎着，发尾有些分叉\n随着她写字的动作轻轻晃动。\n红绳。\n我对那根红绳没什么兴趣，但不知为什么\n它在我眼前晃了一早上，晃得我有些心烦。\n中午放学的时候，雨势一点没减。\n我站在走廊边上，看着楼下的积水已经漫过了台阶。\n学生们撑着伞涌向校门，像是一群急于逃离的鱼。\n我摸了摸口袋，里面只有三块钱\n连一把最便宜的伞都买不起。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "林明。",
+          "content": "我叫林晓。",
           "character": "林晓"
         },
         {
           "type": "narration",
-          "content": "我回过头。\n林晓站在我身后，手里握着一把黑伞。\n伞很大，伞骨看起来很结实。\n她的书包斜挎在肩上，马尾辫被风吹得有些乱。\n她把伞递到我面前，动作自然得像是递一块橡皮。",
+          "content": "她说完就转回去了，马尾辫在我眼前晃了一下。\n我知道她叫林晓，课本上写着。但她自己说出来，还是让我多看了她一眼。\n中午我没去食堂。教室空了，我坐在原位，从书包里拿出早上剩下的煮鸡蛋，慢慢剥。我把鸡蛋壳剥得很干净，放进塑料袋，再把塑料袋系紧。教室后面的垃圾桶满了，我没扔，放在桌角。这一点小动作让我觉得自己还像个正常人。\n我走到走廊尽头的开水间接了杯热水。回来时看见她和两个女生站在楼梯口，其中一个女生朝我这边看了一眼。林晓摇摇头，说了什么。我没听清，也不想知道。",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "你拿着。",
+          "content": "你不去吃饭？",
           "character": "林晓"
         },
         {
           "type": "narration",
-          "content": "我愣了一下。",
+          "content": "是林晓。她站在门口，手里拿着一个饭卡袋。",
           "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "不饿。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我说。\n她看了我两秒，然后走过来，把一袋草莓糖放在我桌上：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "那吃点这个。下午课很长。",
+          "character": "林晓"
+        },
+        {
+          "type": "dialogue",
+          "content": "我不——",
+          "character": "林明"
+        },
+        {
+          "type": "dialogue",
+          "content": "不是给你的。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她打断我，语气平静，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "是还你人情。你早上帮我捡了笔。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "我早上确实捡过一支滚到我脚边的笔。原来那是她的。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "谢谢。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我说。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "不用总谢。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她终于笑了一下，很小，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你话好少。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "我没接话。她也没再停留，转身走了。我拿起一颗草莓糖，粉红色的糖纸在光线下有点透明。我放进嘴里，甜得发腻。\n我又剥开一颗，这次没觉得那么甜。\n下午发新书，王老师说我的课本明天才能到。林晓把她的课本递给我：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你先拿回去看，我晚上回家还有一本旧的。",
+          "character": "林晓"
         },
         {
           "type": "dialogue",
           "content": "不用。",
           "character": "林明"
-        },
-        {
-          "type": "narration",
-          "content": "我说",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "我淋雨回去就行。",
-          "character": "林明"
-        },
-        {
-          "type": "dialogue",
-          "content": "雨太大了。",
-          "character": "林晓"
-        },
-        {
-          "type": "narration",
-          "content": "她的声音很轻，但语气里有一种不容拒绝的东西",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "明天还我就行。",
-          "character": "林晓"
-        },
-        {
-          "type": "narration",
-          "content": "我没有接。\n我不喜欢欠别人东西。\n欠东西就意味着要有来往，有来往就意味着要说话，要笑\n要假装熟悉。\n这些都很累。\n林晓见我不动，往前迈了一小步，把伞塞进我手里。\n她的指尖擦过我的手背，很凉，像是被雨水泡过。",
-          "character": null
         },
         {
           "type": "dialogue",
@@ -282,67 +372,137 @@
         },
         {
           "type": "narration",
-          "content": "她又重复了一遍。\n伞柄上系着一根红绳。\n我低头看了一眼，瞳孔不自觉地缩了一下。\n那根红绳和她手腕上那根几乎一模一样——同样的暗红色\n同样的毛边，同样的旧。\n绳结打得很松，像是随手系上去的\n但又被反复摩挲过无数次，绳身都变得光滑了。",
+          "content": "她把书塞进我怀里，",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "这红绳……",
+          "content": "我不想明天被老师问为什么新同学没书。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她的理由很实际，让我没法拒绝。我接过书，指尖碰到她的手背，很凉。\n放学的时候下雨了。我没带伞，站在教学楼门口，看着雨把地面打湿。学生们三三两两撑着伞离开，像一群移动的花。\n公告栏上贴着一张红纸：\n距离高考还有 108 天。\n我盯着那行字看了一会儿。108 天之后，我又会离开这里。所以没什么好开始。\n一把黑伞递到我面前。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "你家远吗？",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "林晓问。",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "还行。",
+          "character": "林明"
+        },
+        {
+          "type": "dialogue",
+          "content": "拿着。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她把伞柄塞进我手里，",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "明天还我。",
+          "character": "林晓"
+        },
+        {
+          "type": "dialogue",
+          "content": "那你呢？",
+          "character": "林明"
+        },
+        {
+          "type": "dialogue",
+          "content": "我坐公交，站台有棚。",
+          "character": "林晓"
+        },
+        {
+          "type": "narration",
+          "content": "她说完，把书包顶在头上，跑进雨里。红色的发绳在灰白色的雨幕里一闪，很快就看不见了。\n我握着那把伞，发现伞柄上缠着一根细细的红绳，和她手腕上那根颜色一样。\n雨还在下。我撑开伞，走进人群。伞很大，把我整个人都罩住。我忽然觉得，这个春天也许不会和以前一样长。\n走在路上，我把课本抱在怀里。扉页上\n林晓\n两个字被雨水溅湿了一角，我用袖子擦了擦，没擦掉。\n公交站台的棚子底下站着几个人，我没看见她。也许是上了前面的那班车。我收起伞，在站台边站了一会儿，雨水顺着伞沿滴到地上，砸出一个个小坑。\n一辆公交车开来，我没上。又一辆开来，我还是没上。\n我也不知道自己在等什么。\n对面便利店门口有个女生在躲雨，头发扎成马尾。我看了两秒，发现不是她。心里某个地方轻轻落下去，像没扔中的石子。\n雨越下越大，我把伞往右边倾斜，虽然右边根本没有人。这个举动让我自己都觉得可笑。\n我重新撑开伞，往家走。雨水打在伞面上，发出闷闷的声响。我把伞柄上那根红绳绕在食指上，转了一圈，又松开。\n路上经过一家文具店，橱窗里摆着各式各样的橡皮。我停下来看了一会儿，想起她那块印着卡通猫的橡皮。我没进去。\n晚上妈妈回来得很晚，带着一身油烟味。她推开我房门看了一眼，见我没睡，说：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "新学校怎么样？",
+          "character": "妈妈"
+        },
+        {
+          "type": "dialogue",
+          "content": "还行。",
+          "character": "林明"
+        },
+        {
+          "type": "dialogue",
+          "content": "交几个朋友。",
+          "character": "妈妈"
+        },
+        {
+          "type": "dialogue",
+          "content": "嗯。",
           "character": "林明"
         },
         {
           "type": "narration",
-          "content": "我皱起眉。",
+          "content": "她叹了口气，把门带上。\n我把伞靠在门边，给自己煮了一碗面。吃完后，我在日记本上写：",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "伞上的装饰。",
+          "content": "今天转学。前面坐了一个叫林晓的女生。她给了我一把伞，伞柄上系着红绳。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我以前也写过日记，写过一段时间就停了。因为回头看的时候，发现每一天都差不多。\n写到这里，我停了很久，又补了一句：",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "草莓糖太甜了。",
+          "character": "林明"
+        },
+        {
+          "type": "narration",
+          "content": "我把日记本合上，手指无意识地在封面上画了一个圈。那个圈越画越像伞柄上的绳结。\n我躺在床上，听着雨声。窗帘没拉严，路灯的光从缝隙里漏进来。我想起她递伞时，眼眶好像红了一下。她说",
+          "character": null
+        },
+        {
+          "type": "dialogue",
+          "content": "雨太大，看错了",
           "character": "林晓"
         },
         {
           "type": "narration",
-          "content": "她飞快地说",
+          "content": "。\n我把伞撑开又合上，伞骨发出轻微的声响。那根红绳在伞柄上打了个死结，我解不开，也不想解开。\n我凑近台灯仔细看，发现那根红绳不是随便系上去的。绳结打得紧实，像有人反复练习过。结扣旁边还挂着一个小小的木珠，被磨得发亮。我把手指伸进绳圈，感受到一种奇怪的重量。不是绳子重，是这根绳子好像被人握了很久。\n床头还放着那颗没吃完的草莓糖，糖纸在台灯下泛着粉红。我盯着它看了一会儿，把它塞进了抽屉最深处。\n我关掉台灯，房间里暗下来。雨声变得很远。我想起她说",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "旧了，别介意。",
+          "content": "明天见",
           "character": "林晓"
         },
         {
           "type": "narration",
-          "content": "我抬起头，想再说些什么，却正好对上她的眼睛。\n她的眼睛很亮，黑白分明\n睫毛上还沾着一点从门外飘进来的雨雾。\n但在那层明亮之下，有什么东西沉得很深。\n我说不清那是什么\n只觉得那不像是一个十七岁女生该有的眼神。\n她的眼眶忽然红了。\n只是一瞬间的事，像是被风吹的，又像是被雨溅的。\n她迅速低下头，抬起手揉了揉眼睛。",
+          "content": "——不，她没说明天见。她说的是",
           "character": null
         },
         {
           "type": "dialogue",
-          "content": "雨太大。",
+          "content": "明天还我",
           "character": "林晓"
         },
         {
           "type": "narration",
-          "content": "她说",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "看错了。",
-          "character": "林晓"
-        },
-        {
-          "type": "narration",
-          "content": "我没说话。\n她把书包往肩上提了提，转身走进教室\n背影很快消失在后排的过道里。\n我站在原地，手里握着那把黑伞\n伞柄上的红绳贴着我的掌心，有一种奇异的温度。\n不像是伞柄该有的温度。\n走廊里渐渐空了。\n我撑开伞，走进雨里。\n黑伞很大，把我整个人罩在下面。\n雨点砸在伞面上，发出沉闷的声响。\n我走了几步，忍不住低头又看了一眼那根红绳。\n它在风中轻轻摆动，暗红色的绳身被雨水打湿\n颜色变得更深了。\n我忽然想起李想说的话。",
-          "character": null
-        },
-        {
-          "type": "dialogue",
-          "content": "从高一入学就戴着，从来不摘。",
-          "character": "李想"
-        },
-        {
-          "type": "narration",
-          "content": "可这把伞上的红绳，和她手腕上那根也太像了。\n像是同一根绳子被剪成了两段，一段系在手腕上\n一段系在伞柄上。\n我摇摇头，把这些乱七八糟的念头甩出去。\n一把伞而已。\n明天还给她，就两清了。\n可走到校门口的时候，我还是忍不住回头看了一眼。\n二楼的走廊上，一个白色的身影正站在窗边\n隔着雨幕望向我这边。\n距离太远，我看不清她的表情\n只能看见她垂在身侧的那只手，手腕上一抹暗红。\n我转过身，加快脚步走进雨里。\n那把伞很重。\n或者说，那根红绳很重。\n我不知道为什么。",
+          "content": "。还了伞，就两清了。\n不感兴趣。我对自己说。\n但那个\n不感兴趣\n的声音，比往常轻了一点。",
           "character": null
         }
       ]
