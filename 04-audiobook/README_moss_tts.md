@@ -40,11 +40,12 @@ cd D:\HermesWorkspace\ai小说\红绳\04-audiobook
 D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe scripts\generate_moss_tts_audiobook.py
 ```
 
-输出到 `ch01_红绳伞/`：
-- `红绳_第01章_moss_tts.wav`
+输出到 `ch01_红绳伞/`（默认只保留 MP3）：
 - `红绳_第01章_moss_tts.mp3`
 - `红绳_第01章_moss_tts_meta.json`
 - `红绳_第01章_moss_tts_segments/`
+
+> 如需同时保留 WAV，加 `--keep-wav`；如完全不需要 MP3，加 `--no-mp3`。
 
 ### 2. 只生成 Demo（例如前 5 行）
 
