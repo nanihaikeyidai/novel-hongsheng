@@ -1,0 +1,187 @@
+{
+  "model": "D:\\HermesWorkspace\\models\\MOSS-TTS-Local-Transformer-v1.5",
+  "json_source": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_有声小说.json",
+  "reference_dir": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\参考音色",
+  "voice_map": {
+    "旁白": "旁白.wav",
+    "林明": "青年林明.wav",
+    "林晓": "青年林晓.wav",
+    "李想": "李想.wav",
+    "王老师": "王老师.wav",
+    "李老师": "李老师.wav",
+    "陈老师": "李老师.wav",
+    "陈小雨": "陈小雨.wav",
+    "妈妈": "妈妈.wav",
+    "周芳": "周芳.wav",
+    "小学林明": "小学林明.wav",
+    "小学林晓": "小学林晓.wav"
+  },
+  "selected_indices": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+  ],
+  "sample_rate": 48000,
+  "total_samples": 4162080,
+  "total_duration_seconds": 86.71,
+  "generation_elapsed_seconds": 82.73,
+  "segments": [
+    {
+      "index": 0,
+      "character": "林晓",
+      "text": "你话好少。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0000_林晓.wav",
+      "samples": 57600,
+      "duration_seconds": 1.2
+    },
+    {
+      "index": 1,
+      "character": "旁白",
+      "text": "我没接话。她也没再停留，转身走了。我拿起一颗草莓糖，粉红色的糖纸在光线下有点透明。我放进嘴里，甜得发腻。\n我又剥开一颗，这次没觉得那么甜。\n下午发新书，王老师说我的课本明天才能到。林晓把她的课本递给我：",
+      "reference": "旁白.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0001_旁白.wav",
+      "samples": 1163520,
+      "duration_seconds": 24.24
+    },
+    {
+      "index": 2,
+      "character": "林晓",
+      "text": "你先拿回去看，我晚上回家还有一本旧的。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0002_林晓.wav",
+      "samples": 153600,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 3,
+      "character": "林明",
+      "text": "不用。",
+      "reference": "青年林明.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0003_林明.wav",
+      "samples": 23040,
+      "duration_seconds": 0.48
+    },
+    {
+      "index": 4,
+      "character": "林晓",
+      "text": "拿着。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0004_林晓.wav",
+      "samples": 38400,
+      "duration_seconds": 0.8
+    },
+    {
+      "index": 5,
+      "character": "旁白",
+      "text": "她把书塞进我怀里，",
+      "reference": "旁白.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0005_旁白.wav",
+      "samples": 92160,
+      "duration_seconds": 1.92
+    },
+    {
+      "index": 6,
+      "character": "林晓",
+      "text": "我不想明天被老师问为什么新同学没书。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0006_林晓.wav",
+      "samples": 153600,
+      "duration_seconds": 3.2
+    },
+    {
+      "index": 7,
+      "character": "旁白",
+      "text": "她的理由很实际，让我没法拒绝。我接过书，指尖碰到她的手背，很凉。\n放学的时候下雨了。我没带伞，站在教学楼门口，看着雨把地面打湿。学生们三三两两撑着伞离开，像一群移动的花。\n公告栏上贴着一张红纸：\n距离高考还有 108 天。\n我盯着那行字看了一会儿。108 天之后，我又会离开这里。所以没什么好开始。\n一把黑伞递到我面前。",
+      "reference": "旁白.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0007_旁白.wav",
+      "samples": 1847040,
+      "duration_seconds": 38.48
+    },
+    {
+      "index": 8,
+      "character": "林晓",
+      "text": "你家远吗？",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0008_林晓.wav",
+      "samples": 46080,
+      "duration_seconds": 0.96
+    },
+    {
+      "index": 9,
+      "character": "旁白",
+      "text": "林晓问。",
+      "reference": "旁白.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0009_旁白.wav",
+      "samples": 38400,
+      "duration_seconds": 0.8
+    },
+    {
+      "index": 10,
+      "character": "林明",
+      "text": "还行。",
+      "reference": "青年林明.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0010_林明.wav",
+      "samples": 30720,
+      "duration_seconds": 0.64
+    },
+    {
+      "index": 11,
+      "character": "林晓",
+      "text": "拿着。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0011_林晓.wav",
+      "samples": 34560,
+      "duration_seconds": 0.72
+    },
+    {
+      "index": 12,
+      "character": "旁白",
+      "text": "她把伞柄塞进我手里，",
+      "reference": "旁白.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0012_旁白.wav",
+      "samples": 126720,
+      "duration_seconds": 2.64
+    },
+    {
+      "index": 13,
+      "character": "林晓",
+      "text": "明天还我。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0013_林晓.wav",
+      "samples": 46080,
+      "duration_seconds": 0.96
+    },
+    {
+      "index": 14,
+      "character": "林明",
+      "text": "那你呢？",
+      "reference": "青年林明.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0014_林明.wav",
+      "samples": 26880,
+      "duration_seconds": 0.56
+    },
+    {
+      "index": 15,
+      "character": "林晓",
+      "text": "我坐公交，站台有棚。",
+      "reference": "青年林晓.wav",
+      "segment_path": "D:\\HermesWorkspace\\ai小说\\红绳\\04-audiobook\\ch01_红绳伞\\红绳_第01章_moss_tts_sample_segments\\0015_林晓.wav",
+      "samples": 103680,
+      "duration_seconds": 2.16
+    }
+  ]
+}
