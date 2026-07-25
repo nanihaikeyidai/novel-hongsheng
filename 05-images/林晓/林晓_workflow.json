@@ -1,0 +1,103 @@
+{
+  "55": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2_turbo_nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "56": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2"
+    }
+  },
+  "57": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "80": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": ["55", 0],
+      "lora_name": "krea2-Cc风情万种-风格.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "81": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": ["80", 0],
+      "lora_name": "krea2-Cc-天魔-身材.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "82": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": ["81", 0],
+      "lora_name": "krea2-Cc风情万种-人像.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "51": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["56", 0],
+      "text": "人物概念设计图的并排四格分屏构图，四个格子从左到右均匀排列，每个格子独立且完整:\n第一格为人物头部到胸口的精致半身特写，面部居中比例协调不溢出；\n第二格为人物正面全身站姿从头到脚完整显示；\n第三格为人物侧面全身站姿从头到脚完整显示；\n第四格为人物背面全身站姿从头到脚完整显示，脚踩地面。\n\nA teenage girl with long black hair tied in a high ponytail, straight neat bangs across the forehead, large bright eyes with notably long eyelashes, fair porcelain skin, small and delicate features, a calm and reserved expression with a hint of gentleness. Wearing a white Chinese high school uniform shirt with a navy blue pleated skirt, white socks and black loafers. A faded dark red string bracelet tied tightly around her right wrist, an old small wooden bead hanging beside the knot. In her right hand she holds a small eraser printed with a cartoon cat, edges worn smooth. Her left hand holds a black umbrella with a thin red string wrapped around its handle, matching the color of the bracelet. A pink candy wrapper peeks out of her skirt pocket. Pure white background with soft studio lighting, clean and minimal composition, anime illustration style, high detail, delicate rendering, elegant and pure atmosphere."
+    }
+  },
+  "76": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": ["56", 0],
+      "text": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, mutation, deformed, extra limbs, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, mutated hands, polar lowres, bad face, out of frame, oversaturated, overexposed, multiple people, group"
+    }
+  },
+  "77": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": ["51", 0]
+    }
+  },
+  "52": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1920,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "53": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["82", 0],
+      "positive": ["51", 0],
+      "negative": ["77", 0],
+      "latent_image": ["52", 0],
+      "seed": 909746541,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "54": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["53", 0],
+      "vae": ["57", 0]
+    }
+  },
+  "29": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["54", 0],
+      "filename_prefix": "红绳_林晓_四格人设"
+    }
+  }
+}
