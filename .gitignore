@@ -25,3 +25,8 @@ Thumbs.db
 *.pth
 *.ckpt
 03-intermediate/*/有声小说/checkpoints/
+
+# 短剧本地生成物与网页离线缓存
+05-workflow/video/
+05-workflow/*.html
+05-workflow/*_files/
