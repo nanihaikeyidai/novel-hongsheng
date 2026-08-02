@@ -1,4 +1,4 @@
 interface:
   display_name: "剧本分镜与故事板流水线"
-  short_description: "将剧本转为分镜、故事板和纯文字空间描述的视频提示词"
-  default_prompt: "使用 $script-to-storyboard-video 将我的剧本拆成连续分镜与故事板，并生成不引用故事板图片、完整描述镜头方位和动作的视频提示词。"
+  short_description: "生成带编号故事板，并逐格对应生成视频SHOT提示词"
+  default_prompt: "使用 $script-to-storyboard-video 先生成左上角连续编号的故事板；待我审核后，按一格一个SHOT逐格生成视频提示词，除非我明确指定删格或合并。"
