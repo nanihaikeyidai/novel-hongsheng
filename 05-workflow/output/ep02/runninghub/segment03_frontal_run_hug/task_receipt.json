@@ -1,0 +1,11 @@
+{
+  "taskId": "2093256217987350529",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-28T16:35:47.6754271+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_frontal_run_cry_hug_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, Picture 3 reverse-axis exact first frame, frontal Su Wan run toward Lin Xiao, crying embrace and revised dialogue, exactly two dry girls, three image refs, two voice refs, no teacher, no storyboard image input, refine disconnected"
+}

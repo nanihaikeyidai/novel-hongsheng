@@ -1,0 +1,259 @@
+{
+  "prompt": {
+    "129": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "142": {
+      "class_type": "ReservedVRAMSetter",
+      "inputs": {
+        "anything": [
+          "129",
+          0
+        ],
+        "reserved": 1.0,
+        "mode": "manual",
+        "seed": 95023784637039,
+        "auto_max_reserved": 0.0,
+        "clean_gpu_before": true
+      }
+    },
+    "147": {
+      "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+      "inputs": {
+        "model": [
+          "142",
+          0
+        ]
+      }
+    },
+    "132": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "type": "minimax",
+        "device": "default"
+      }
+    },
+    "131": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+      }
+    },
+    "130": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+      }
+    },
+    "154": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "hongsheng_ep01/seg4_ref1_monster.png"
+      }
+    },
+    "155": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "hongsheng_ep01/seg4_ref2_teacher.png"
+      }
+    },
+    "156": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "hongsheng_ep01/seg4_ref3_classroom.png"
+      }
+    },
+    "151": {
+      "class_type": "PrimitiveStringMultiline",
+      "inputs": {
+        "value": "15秒，16:9，高精度日漫电影感的玄幻校园入侵场面。细腻赛璐璐人物、手绘动画教室、冷蓝灰雨光、玻璃雨痕、城市雨雾、湿润翼膜反光；动作有重量和清晰因果，无血腥。\n\n从片段3的安静教室继续，怪兽只能从靠窗侧进入，按@图片5的九格先后顺序：\n0–4秒：声音先行，低沉振翅声盖过雨声；靠窗玻璃轻微震动，雨滴向两侧颤开，巨大黑影从窗外雨雾中掠过。靠窗同学自然转头，王老师仍在讲台停下粉笔。\n4–8秒：黑翼怪兽在窗外收拢膜翼高速撞向玻璃；撞击后玻璃由接触点向内爆裂，碎片、雨水和灰尘喷入教室。动作必须先撞击再爆裂。\n8–12秒：怪兽穿过破口进入教室，身体和膜翼带着冷雨，撞翻靠窗一张空桌；摄影机随冲势短促后退，保持怪兽体型接近成年人。\n12–15秒：怪兽利爪压住碎玻璃落地，稳定重心后展开宽大黑色膜翼；低机位微微拉远展示完整威胁终态。停在展翼完成，不进入学生撤离。\n\n声音：雨声、逐渐逼近的低沉振翅、玻璃震动、猛烈撞击与爆裂、桌椅翻倒、利爪压碎玻璃、怪兽低吼；无对白、无BGM。"
+      }
+    },
+    "133": {
+      "class_type": "ResolutionSelector",
+      "inputs": {
+        "aspect_ratio": "16:9 (Widescreen)",
+        "megapixels": 0.4,
+        "multiple": 32
+      }
+    },
+    "143": {
+      "class_type": "PrimitiveFloat",
+      "inputs": {
+        "value": 15.0
+      }
+    },
+    "150": {
+      "class_type": "ComfyMathExpression",
+      "inputs": {
+        "values.a": [
+          "143",
+          0
+        ],
+        "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
+      }
+    },
+    "153": {
+      "class_type": "MiniMaxH3ReferenceToVideo",
+      "inputs": {
+        "clip": [
+          "132",
+          0
+        ],
+        "vae": [
+          "131",
+          0
+        ],
+        "audio_vae": [
+          "130",
+          0
+        ],
+        "ref_images.ref_image_0": [
+          "154",
+          0
+        ],
+        "ref_images.ref_image_1": [
+          "155",
+          0
+        ],
+        "ref_images.ref_image_2": [
+          "156",
+          0
+        ],
+        "prompt": [
+          "151",
+          0
+        ],
+        "width": [
+          "133",
+          0
+        ],
+        "height": [
+          "133",
+          1
+        ],
+        "length": [
+          "150",
+          1
+        ],
+        "ref_image_size": "match"
+      }
+    },
+    "138": {
+      "class_type": "BasicGuider",
+      "inputs": {
+        "model": [
+          "147",
+          0
+        ],
+        "conditioning": [
+          "153",
+          0
+        ]
+      }
+    },
+    "141": {
+      "class_type": "BasicScheduler",
+      "inputs": {
+        "model": [
+          "147",
+          0
+        ],
+        "scheduler": "beta",
+        "steps": 10,
+        "denoise": 1.0
+      }
+    },
+    "140": {
+      "class_type": "KSamplerSelect",
+      "inputs": {
+        "sampler_name": "euler"
+      }
+    },
+    "139": {
+      "class_type": "RandomNoise",
+      "inputs": {
+        "noise_seed": 488357386810245
+      }
+    },
+    "144": {
+      "class_type": "SamplerCustomAdvanced",
+      "inputs": {
+        "noise": [
+          "139",
+          0
+        ],
+        "guider": [
+          "138",
+          0
+        ],
+        "sampler": [
+          "140",
+          0
+        ],
+        "sigmas": [
+          "141",
+          0
+        ],
+        "latent_image": [
+          "153",
+          1
+        ]
+      }
+    },
+    "145": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "144",
+          0
+        ],
+        "vae": [
+          "131",
+          0
+        ]
+      }
+    },
+    "146": {
+      "class_type": "VAEDecodeAudio",
+      "inputs": {
+        "samples": [
+          "144",
+          0
+        ],
+        "vae": [
+          "130",
+          0
+        ]
+      }
+    },
+    "149": {
+      "class_type": "VHS_VideoCombine",
+      "inputs": {
+        "images": [
+          "145",
+          0
+        ],
+        "audio": [
+          "146",
+          0
+        ],
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "hongsheng_ep01/seg4_ref2va",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true
+      }
+    }
+  }
+}

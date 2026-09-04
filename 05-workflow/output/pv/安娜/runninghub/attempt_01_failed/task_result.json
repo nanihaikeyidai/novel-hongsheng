@@ -1,0 +1,38 @@
+{
+  "taskId": "2091575769301217282",
+  "status": "FAILED",
+  "errorCode": "805",
+  "errorMessage": "工作流运行失败",
+  "results": null,
+  "clientId": "",
+  "promptTips": "",
+  "failedReason": {
+    "current_outputs": "{}",
+    "exception_type": "requests.exceptions.ChunkedEncodingError",
+    "node_name": "MiniMaxH3Director",
+    "current_inputs": "{}",
+    "traceback": "[\"  File \\\"/workspace/ComfyUI/execution.py\\\", line 1767, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\\n\",\"  File \\\"/workspace/ComfyUI/execution.py\\\", line 553, in get_output_data\\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\\n\",\"  File \\\"/workspace/ComfyUI/execution.py\\\", line 527, in _async_map_node_over_list\\n    await process_inputs(input_dict, i)\\n\",\"  File \\\"/workspace/ComfyUI/execution.py\\\", line 515, in process_inputs\\n    result = f(**inputs)\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/nodes/director.py\\\", line 204, in execute\\n    plan = prepare_director_plan(\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/nodes/director_common.py\\\", line 224, in prepare_director_plan\\n    plan = build_director_plan(\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/director/plan.py\\\", line 540, in build_director_plan\\n    global_refs = _load_refs(global_block.get(\\\"refs\\\") or [])\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/director/plan.py\\\", line 245, in _load_refs\\n    tensor = load_reference_tensor(item)\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/director/plan.py\\\", line 204, in load_reference_tensor\\n    file_path = resolve_comfy_input_path(\\n\",\"  File \\\"/workspace/ComfyUI/custom_nodes/ComfyUI_MiniMaxH3_Director/lib/comfy_paths.py\\\", line 149, in resolve_comfy_input_path\\n    if not folder_paths.exists_annotated_filepath(annotated):\\n\",\"  File \\\"/workspace/ComfyUI/folder_paths.py\\\", line 925, in exists_annotated_filepath\\n    download_info = tencent_cos.get_file_with_switch_fallback(objectname, filepath, switch_bucket, switch_region, task_region)\\n\",\"  File \\\"/workspace/ComfyUI/tencent_cos.py\\\", line 770, in get_file_with_switch_fallback\\n    return get_file(object_name, local_path, target_bucket, target_region, raise_on_error=True)\\n\",\"  File \\\"/workspace/ComfyUI/tencent_cos.py\\\", line 752, in get_file\\n    return _run_cos_request_with_accelerated_fallback(\\n\",\"  File \\\"/workspace/ComfyUI/tencent_cos.py\\\", line 533, in _run_cos_request_with_accelerated_fallback\\n    return operation(client, accelerated, attempt)\\n\",\"  File \\\"/workspace/ComfyUI/tencent_cos.py\\\", line 728, in _download\\n    client.download_file(\\n\",\"  File \\\"/usr/local/lib/python3.10/dist-packages/qcloud_cos/cos_client.py\\\", line 3664, in download_file\\n    response['Body'].get_stream_to_file(DestFilePath)\\n\",\"  File \\\"/usr/local/lib/python3.10/dist-packages/qcloud_cos/streambody.py\\\", line 55, in get_stream_to_file\\n    chunk = self.read(1024, auto_decompress)\\n\",\"  File \\\"/usr/local/lib/python3.10/dist-packages/qcloud_cos/streambody.py\\\", line 44, in read\\n    chunk = next(self._rt.iter_content(chunk_size))\\n\",\"  File \\\"/usr/local/lib/python3.10/dist-packages/requests/models.py\\\", line 822, in generate\\n    raise ChunkedEncodingError(e)\\n\"]",
+    "node_id": "12",
+    "exception_message": "('Connection broken: IncompleteRead(523310 bytes read, 1382022 more expected)', IncompleteRead(523310 bytes read, 1382022 more expected))"
+  },
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "0",
+    "thirdPartyConsumeMoney": null
+  },
+  "parentTaskId": null,
+  "taskUsageList": [
+    {
+      "taskId": "2091575769301217282",
+      "parentTaskId": null,
+      "taskStatus": "FAILED",
+      "usage": {
+        "consumeMoney": null,
+        "consumeCoins": null,
+        "taskCostTime": "0",
+        "thirdPartyConsumeMoney": null
+      }
+    }
+  ]
+}

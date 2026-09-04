@@ -1,0 +1,11 @@
+{
+  "taskId": "2093030247430844418",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-28T01:37:52.0848890+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_two_girls_strict_dry_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, Picture 3 exact first frame, exactly two strictly dry girls, one red cord only on Lin Xiao, three image refs, two voice refs, no teacher, no storyboard or separate scene input, refine disconnected"
+}

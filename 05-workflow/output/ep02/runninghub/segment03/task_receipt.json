@@ -1,0 +1,11 @@
+{
+  "taskId": "2093011430063439874",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-28T00:23:05.7894216+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_suwan_hug_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, Picture 5 described as exact first frame, five image refs, two voice refs, no storyboard input, refine disconnected"
+}

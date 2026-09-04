@@ -1,0 +1,6 @@
+{
+  "taskId": "2092773726801326081",
+  "status": "FAILED",
+  "reason": "runSelection must be integer index; received segment id",
+  "archivedAt": "2026-08-27T08:40:47.5234869+08:00"
+}

@@ -30,3 +30,5 @@ Thumbs.db
 05-workflow/video/
 05-workflow/*.html
 05-workflow/*_files/
+05-workflow/*.mp4
+05-workflow/output/**/*.mp4
