@@ -1,0 +1,282 @@
+{
+  "22": {
+    "class_type": "PathchSageAttentionKJ",
+    "inputs": {
+      "sage_attention": "disabled",
+      "model": [
+        "24",
+        0
+      ],
+      "allow_compile": false
+    },
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "12": {
+    "class_type": "MiniMaxH3Director",
+    "inputs": {
+      "shift_audio": 3,
+      "seed": 666,
+      "shift_video": 6.000000000000001,
+      "export_source_images": "Ollama",
+      "minimax_director_ui": "",
+      "bd_grp_sample": "采样设置",
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "total_frames": 724,
+      "scheduler": "simple",
+      "clear_vram_between_segments": false,
+      "bd_grp_advanced": "高级采样",
+      "model": [
+        "16",
+        0
+      ],
+      "height": 768,
+      "cfg": 1,
+      "global_prompt": "subject_definitions:\n<Subject 1> is the single Su Wan identity from <Picture 1>; inherit only her face, chestnut-brown short bob, age, proportions and school uniform. Only her hair and outer shoulders are lightly damp from corridor rain mist; never soak or make her clothes transparent.\n<Subject 2> is the single Lin Xiao identity from <Picture 2>; inherit only her face, high ponytail, right-wrist red cord and dry school uniform.\n<Subject 3> is the single adult female Teacher Wang identity from <Picture 3>; inherit only her face, glasses, shoulder-length dark-brown hair, dry beige professional suit and credible 30-year-old teacher bearing.\n<Picture 4> is the empty damaged rainy classroom; inherit its doorway/window axis, shattered windows, overturned desks, debris and cold rainy lighting, but never add a person from the scene reference.\n<Picture 5> is the exact 16:9 first frame at 00:00 in R2V mode. It fixes Su Wan and Teacher Wang as the only two people initially visible, their separated positions, opening motion, dry/damp distinction and doorway-to-classroom orientation. Lin Xiao becomes visible only after Su Wan reaches her. Treat <Picture 1> through <Picture 3> only as identity attributes, never as instructions to instantiate extra bodies.\nExactly three named people may become visible across the video: one Su Wan, one Lin Xiao and one Teacher Wang. Lu Chen and Anna remain elsewhere in the same classroom but off-camera. No storyboard sheet is uploaded or referenced. No subtitles, readable text, BGM, clone, duplicate, ghost image or anatomical overlap.",
+      "timeline_data": "{\"version\":5,\"editMode\":\"segment\",\"totalFrames\":724,\"frameRate\":24,\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":724,\"width\":0,\"height\":0},\"videoClips\":[],\"global\":{\"taskType\":\"r2v — 参考主体生视频(Reference to Video)\",\"prompt\":\"subject_definitions:\\n<Subject 1> is the single Su Wan identity from <Picture 1>; inherit only her face, chestnut-brown short bob, age, proportions and school uniform. Only her hair and outer shoulders are lightly damp from corridor rain mist; never soak or make her clothes transparent.\\n<Subject 2> is the single Lin Xiao identity from <Picture 2>; inherit only her face, high ponytail, right-wrist red cord and dry school uniform.\\n<Subject 3> is the single adult female Teacher Wang identity from <Picture 3>; inherit only her face, glasses, shoulder-length dark-brown hair, dry beige professional suit and credible 30-year-old teacher bearing.\\n<Picture 4> is the empty damaged rainy classroom; inherit its doorway/window axis, shattered windows, overturned desks, debris and cold rainy lighting, but never add a person from the scene reference.\\n<Picture 5> is the exact 16:9 first frame at 00:00 in R2V mode. It fixes Su Wan and Teacher Wang as the only two people initially visible, their separated positions, opening motion, dry/damp distinction and doorway-to-classroom orientation. Lin Xiao becomes visible only after Su Wan reaches her. Treat <Picture 1> through <Picture 3> only as identity attributes, never as instructions to instantiate extra bodies.\\nExactly three named people may become visible across the video: one Su Wan, one Lin Xiao and one Teacher Wang. Lu Chen and Anna remain elsewhere in the same classroom but off-camera. No storyboard sheet is uploaded or referenced. No subtitles, readable text, BGM, clone, duplicate, ghost image or anatomical overlap.\",\"refs\":[{\"index\":0,\"imageFile\":\"openapi/34c96093f184184025239754d9018dde0ede8b5ce84b62eb2d0c6d71c26eb9f7.png\",\"fileName\":\"openapi/34c96093f184184025239754d9018dde0ede8b5ce84b62eb2d0c6d71c26eb9f7.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"openapi/11d6c04ae39d3a9cd39ac9745d3e542ba9d4c86726177a0772d743bc9064cbf4.png\",\"fileName\":\"openapi/11d6c04ae39d3a9cd39ac9745d3e542ba9d4c86726177a0772d743bc9064cbf4.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"openapi/4b705b575e242ad758ae6a741574b7a3d1b42b573873d44f29f78a4fcecca3d6.png\",\"fileName\":\"openapi/4b705b575e242ad758ae6a741574b7a3d1b42b573873d44f29f78a4fcecca3d6.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"openapi/2695aa48b8174a0e22cb774359cde388557750fc6e7b0e73d5dddd2bc28ce593.png\",\"fileName\":\"openapi/2695aa48b8174a0e22cb774359cde388557750fc6e7b0e73d5dddd2bc28ce593.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"openapi/766af99978943833f7e0644b40675c9d90539cb99c183c9da5a1cf9d4267fc26.png\",\"fileName\":\"openapi/766af99978943833f7e0644b40675c9d90539cb99c183c9da5a1cf9d4267fc26.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"continuousReference\":false,\"genImage\":{\"imageFile\":\"\"},\"sourceWidth\":768,\"sourceHeight\":1024,\"refAudios\":[{\"index\":0,\"audioFile\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"fileName\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"fileName\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[],\"commonEnabled\":true,\"commonCollapsed\":false},\"output\":{\"mode\":\"fixed\",\"aspectRatio\":\"16:9 (宽屏)\",\"megapixels\":0.9,\"multiple\":32,\"longEdge\":1280,\"width\":1280,\"height\":736,\"maxExportFrames\":0,\"exportMode\":\"all\",\"audioMode\":\"generate\",\"refImageSize\":\"match\",\"continuityEnabled\":false,\"continuityOverlapFrames\":5},\"runSelectEnabled\":true,\"runSelection\":[1],\"segments\":[{\"id\":\"mt0slveqtpanc\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"\\n\\n\\n【声音与输出限制】只保留陆沉与林晓的画内对白、持续雨声、破窗漏风声、人物呼吸、脚步及与可见动作同步的环境音和动作音；无字幕、无背景音乐、无BGM。画面不得出现对白文字、字幕条、气泡、片名、UI、水印、Logo、故事板边框、宫格编号、箭头或任何可读文字；故事板内文字不入画，字幕后期统一添加。\\n\\n【素材优先级】人物、场景、道具、首帧和末帧参考图的优先级高于故事板／九宫格分镜图；两者冲突时严格采用参考图，不混合冲突设定。只有某项当前镜头必需的信息没有对应参考图时，才使用故事板补足该项内容，并且只继承必要的镜头顺序、动作节拍、景别、机位或画面状态。\\n\\n## P01｜15秒｜余惊中的问答\\n\\n【分镜】\\n\\n人物站位：阴雨天的受损高三教室已经撤空；破窗、翻倒课桌、散落书本、碎玻璃和地面积水保持不变,陆沉双眼已恢复普通深色，仍站在林晓与破窗之间；林晓位于陆沉身后半步，一只手按住胸口。王老师尚在走廊外\\n\\n视觉风格：高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定的角色线稿，通透空气透视，冷蓝灰雨天环境光，玻璃雨痕、城市雨雾与湿润表面的克制反射；人物身份和校服严格遵循参考图。画幅固定16:9横屏，2K级高清。禁止摄影写实、真人照片、3D渲染、欧美漫画、低幼卡通、厚涂油画和晴天暖阳。\\n\\n镜头1（0–3秒，第5格，双人中景）：陆沉面向破窗站稳，双眼已经恢复普通深色，呼吸略重；林晓在他身后半步，一只手按住胸口，抬眼望向他的侧脸。镜头固定，雨水从破窗吹入，散落纸页低幅颤动。两人暂时都不说话，让余惊自然落定。\\n\\n镜头2（3–6秒，第6格，林晓近景）：林晓仍按住胸口，眼神带着困惑和残留惊惧，嘴唇轻轻发颤。她用轻而略微颤抖的年轻女性声音问。林晓：“刚才……发生了什么？”口型逐字同步，语速偏慢，问句末尾自然收住；陆沉画外闭口倾听，不插话。\\n\\n镜头3（6–8秒，第7格，陆沉近景）：切到陆沉正面近景。他的眼睛保持普通深色，神情平静克制，呼吸逐渐稳定；短暂停顿后，以低沉、简短、没有情绪起伏的年轻男性声音回答。陆沉：“不知道。”口型准确，只说一次，句末立即闭唇。\\n\\n镜头4（8–12秒，第8格，双人近景）：陆沉与林晓在破窗雨幕前近距离同框。林晓观察他的眼睛，显然仍有疑问；陆沉与她短暂对视后微微移开目光，不再解释。两人保持原有世界位置，不互换站位、不靠近或触碰。镜头运动逐渐减速并停止，现场只剩雨声、漏风声和两人的呼吸。\\n\\n镜头5（12–15秒，第9格，教室门口中近景）：走廊外急促脚步由远到近，王老师抵达门口，紧张的说：\\\"没受伤吧，赶快离开教室\\\"\\n\\n\\n【禁止项】\\n\\n文字/UI/水印/Logo/角标/可读文字/真实UI/字幕/对白文字/气泡/故事板边框/宫格编号/箭头/怪兽返场/红瞳重新点亮/第三句台词/多人同时说话/人物瞬移/破损环境复原\\n\\n【强制声明】\\n\\n无背景音乐,仅保留环境音与人声和音效;画面禁字幕/文字/水印/Logo;禁止可读文字(指画面字幕文字,不含人声台词);分镜图内的字幕与文字不入画,字幕后期统一添加\\n```\\n\\n## 首尾状态\\n\\n- 入点：黑翼怪兽已经完全逃入窗外雨幕；陆沉双眼恢复普通深色并仍护在林晓身前；林晓按住胸口、惊魂未定；王老师仍在走廊外。\\n- 出点：林晓已问“刚才……发生了什么？”，陆沉回答“不知道。”；两人保持原位；王老师已抵达教室门口但尚未开口，直接承接下一片段的伤情询问。\",\"negativePrompt\":\"bad video, low quality, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny classroom, warm sunlight, restored classroom, monster, creature, red eyes, supernatural power, fight, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, duplicated character, double exposure, ghost image, ghosting, motion trail, translucent person, split body, merged bodies, anatomical overlap, soaked clothing, transparent wet shirt, clinging fabric, wet Teacher Wang, wet Lin Xiao, identity drift, face change, hairstyle change, costume change, age change, male teacher, speaker facing camera, extra dialogue, overlapping voices, wrong speaker, lip-sync error, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark, readable text, malformed hands, duplicated limbs, extra person, teleportation, position swap, collision, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\"},{\"id\":\"ep02_segment03_suwan_hug_15s\",\"start\":362,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"# EP02｜片段03｜MiniMax H3 R2V 视频提示词\\n\\n## RH 上传映射\\n\\n- `<Picture 1>`：苏婉人物参考图，仅锁定苏婉身份。\\n- `<Picture 2>`：林晓人物参考图，仅锁定林晓身份。\\n- `<Picture 3>`：王老师人物参考图，仅锁定王老师身份。\\n- `<Picture 4>`：怪兽袭击后的雨天教室无人场景图，仅锁定场景结构、破损状态与雨天光线。\\n- `<Picture 5>`：片段03独立横屏首帧图；在 R2V 模式中作为普通图片参考上传，并明确作为 00:00 的精确首帧。\\n- `<Audio 1>`：王老师参考音色。\\n- `<Audio 2>`：苏婉参考音色。\\n\\n> 本次不上传故事板，不把故事板、分镜宫格或任何拼图作为参考图。片段内参考图槽位、生成图槽位和关键帧槽位全部留空；只使用上述五张全局图片参考和两条音色参考。\\n\\n## Prompt\\n\\nsubject_definitions:\\n<Subject 1> is Su Wan from <Picture 1>: one female high-school student with the exact youthful face, chestnut-brown short bob, slim proportions and white-and-blue school uniform. Her short hair and outer shoulders are only lightly damp from corridor rain mist; her uniform is not soaked, transparent or clinging. <Audio 2> is her voice-timbre reference. She speaks only as (S2).\\n<Subject 2> is Lin Xiao from <Picture 2>: one female high-school student with the exact face, high ponytail, slim proportions, white-and-blue school uniform and thin red cord on her right wrist. She remains dry indoors. She has no spoken line in this segment.\\n<Subject 3> is Teacher Wang from <Picture 3>: one attractive 30-year-old adult female homeroom and Chinese-language teacher with the exact face, shoulder-length dark-brown hair, glasses, beige professional suit, elegant posture and credible adult authority. Her hair and clothes remain completely dry indoors. <Audio 1> is her voice-timbre reference. She speaks only as (S1).\\n<Picture 4> fixes the same severely damaged rainy classroom: corridor door on the same side, shattered window wall, overturned desks, scattered books, broken glass, wet reflective floor near the windows, cold blue-grey rain light and no monster.\\n<Picture 5> is the exact 16:9 first frame at 00:00 in R2V mode. Fully retain its opening composition, identities, body count, doorway-to-classroom axis, Su Wan's forward running pose, Teacher Wang's position behind her, damaged classroom state and cold rainy lighting. Treat <Picture 1> through <Picture 3> only as identity attributes for the people already defined, never as instructions to instantiate extra bodies.\\n\\nsummary:\\nA 15-second 16:9 high-detail anime-film emotional action-and-dialogue scene immediately after Teacher Wang has ordered the students to evacuate the damaged classroom. Su Wan runs back from the corridor, narrowly avoids broken glass, reaches Lin Xiao and hugs her tightly. Lin Xiao is startled, then supports and gently pats Su Wan's trembling back. Preserve continuous geography and emotion from the previous segment while keeping Lu Chen and Anna alive and present deeper in the same classroom but off-camera for this shot sequence.\\n\\nretention_analysis:\\nRetain from <Picture 1> through <Picture 3> only each named character's identity, face, hair, age, proportions and clothing. Retain from <Picture 4> only the fixed rainy damaged classroom, doorway/window orientation, existing debris and cold lighting. Retain from <Picture 5> the exact opening frame at 00:00: one Su Wan entering at speed and one dry Teacher Wang following behind her. Exactly three named people may become visible across the entire target video: one Su Wan, one Lin Xiao and one Teacher Wang. At 00:00 exactly two people are visible as fixed by <Picture 5>; Lin Xiao enters the composition only when Su Wan reaches her. Lu Chen and Anna remain safely elsewhere in the same classroom but off-camera throughout and must not be generated as extra visible bodies. Each visible person has one opaque body in one continuous position; never clone, duplicate, split, trail, dissolve, cross-fade, merge or overlap anatomically. The monster has already escaped and never returns. No supplied reference image contains or defines subtitles, dialogue text, speech bubbles, panel borders, UI or readable text.\\n\\ndetailed_description:\\n[Shot 1, 00:00-00:05] Begin exactly from <Picture 5> without reframing, morphing or adding a person. Use a stable medium-wide 16:9 composition with exactly two visible people: one Su Wan in front and one Teacher Wang behind her. Su Wan runs in from the corridor with urgent but physically coherent steps, her lightly damp bob bouncing once; she almost places one foot on scattered glass, notices it and shifts her step around it. Teacher Wang follows along the same visible path and reaches one hand toward Su Wan without touching or crossing through her body. At the exact moment Teacher Wang (S1) speaks, she faces Su Wan rather than the camera; her eyebrows lift with controlled alarm, her eyes widen and lock onto Su Wan's feet, her lips tense then articulate clearly, and she warns firmly with exact lip sync, once: (S1) <d>[Chinese] 慢点！看脚下！</d> Her mouth closes immediately after the final syllable while the worried expression remains. Su Wan keeps her mouth closed and continues forward. Teacher Wang stays completely dry; only Su Wan's hair and outer shoulders are lightly damp.\\n\\n[Shot 2, 00:05-00:10] Cut on the same doorway-to-classroom axis to a restrained tracking medium shot. Su Wan visibly weaves around one overturned desk and broken glass; do not teleport her. Lin Xiao now enters the frame ahead as the third and final visible person, standing dry and shaken beside the middle row. Su Wan reaches Lin Xiao, opens both arms and faces her directly. At the exact moment Su Wan (S2) speaks, her current expression combines fear and sudden relief: eyes reddened and glossy, brows pinched upward, breathing fast, gaze fixed only on Lin Xiao, lips trembling before opening; she calls with exact lip sync, once: (S2) <d>[Chinese] 林晓！</d> Her mouth closes after the name. She immediately wraps both arms around Lin Xiao in one clean, readable embrace. Teacher Wang slows safely behind them and remains silent; no one looks into the camera.\\n\\n[Shot 3, 00:10-00:15] Continue in a coherent medium two-shot focused on Su Wan and Lin Xiao, with Teacher Wang stationary farther behind and spatially separate. The force of the embrace makes Lin Xiao take exactly half a step backward, then stop securely without colliding with debris. Lin Xiao's current expression changes visibly from wide-eyed surprise to soft concern; she raises one hand, supports Su Wan and gives two gentle pats on her upper back. Su Wan's shoulders continue one small trembling motion while her face rests against Lin Xiao's shoulder; both mouths remain closed. End with at least a one-second stable hold: the embrace has settled, Lin Xiao's hand rests supportively on Su Wan's back, Teacher Wang watches them with concern, all three identities and bodies are stable, and no new action begins.\\n\\nVisual constraints: high-detail Japanese anime youth cinematic look, delicate cel-shaded people, hand-drawn animation background, clean stable linework, transparent atmospheric perspective, cinematic rain light, rain-streaked glass, city rain mist, cold blue-grey ambient light and restrained wet-floor reflections. 16:9 horizontal, 2K-class clarity. Exactly one Su Wan, one Lin Xiao and one Teacher Wang may be visible; no other visible person. Stable anatomy and clear separation between silhouettes except for the intentional natural arm contact during the hug. No photorealism, live action, 3D render, Western comics, childish cartoon, oil-paint texture, sunny or warm reset, identity drift, age drift, male Teacher Wang, changed uniforms, changed hair, restored damage, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, double exposure, ghost image, motion trail, translucent body, merged bodies, anatomical overlap, monster, red eyes, supernatural power, fighting, teleportation, position swap, extra dialogue, overlapping speech, wrong speaker, camera-facing dialogue, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark or readable text.\\n\\noverall_soundscape:\\nContinuous rain and wind through broken windows, Su Wan's quick approaching footsteps and urgent breathing, one brief light glass rattle as she avoids the shard, soft fabric movement during the embrace, and two clean dry Chinese dialogue lines synchronized only to their visible speakers. No off-screen voices, no crowd noise and no added narration.\\n\\nnon_diegetic_music:\\nN/A\\n\\n\",\"negativePrompt\":\"bad video, low quality, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny classroom, warm sunlight, restored classroom, monster, creature, red eyes, supernatural power, fight, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, duplicated character, double exposure, ghost image, ghosting, motion trail, translucent person, split body, merged bodies, anatomical overlap, soaked clothing, transparent wet shirt, clinging fabric, wet Teacher Wang, wet Lin Xiao, identity drift, face change, hairstyle change, costume change, age change, male teacher, speaker facing camera, extra dialogue, overlapping voices, wrong speaker, lip-sync error, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark, readable text, malformed hands, duplicated limbs, extra person, teleportation, position swap, collision, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\"}],\"timelineMode\":\"prompt_batch\",\"width\":1376,\"height\":768,\"refMaxSize\":1376,\"gen\":{\"defaultFrameCount\":124},\"keyframes\":[],\"durationSec\":30,\"shots\":[],\"liveTaePreview\":true,\"batchDetailMode\":\"solo\",\"batchWorkspaces\":{\"r2v\":{\"selectedIndex\":1,\"editMode\":\"segment\",\"runSelectEnabled\":true,\"runSelection\":[1],\"segments\":[{\"id\":\"mt0slveqtpanc\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"\\n\\n\\n【声音与输出限制】只保留陆沉与林晓的画内对白、持续雨声、破窗漏风声、人物呼吸、脚步及与可见动作同步的环境音和动作音；无字幕、无背景音乐、无BGM。画面不得出现对白文字、字幕条、气泡、片名、UI、水印、Logo、故事板边框、宫格编号、箭头或任何可读文字；故事板内文字不入画，字幕后期统一添加。\\n\\n【素材优先级】人物、场景、道具、首帧和末帧参考图的优先级高于故事板／九宫格分镜图；两者冲突时严格采用参考图，不混合冲突设定。只有某项当前镜头必需的信息没有对应参考图时，才使用故事板补足该项内容，并且只继承必要的镜头顺序、动作节拍、景别、机位或画面状态。\\n\\n## P01｜15秒｜余惊中的问答\\n\\n【分镜】\\n\\n人物站位：阴雨天的受损高三教室已经撤空；破窗、翻倒课桌、散落书本、碎玻璃和地面积水保持不变,陆沉双眼已恢复普通深色，仍站在林晓与破窗之间；林晓位于陆沉身后半步，一只手按住胸口。王老师尚在走廊外\\n\\n视觉风格：高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定的角色线稿，通透空气透视，冷蓝灰雨天环境光，玻璃雨痕、城市雨雾与湿润表面的克制反射；人物身份和校服严格遵循参考图。画幅固定16:9横屏，2K级高清。禁止摄影写实、真人照片、3D渲染、欧美漫画、低幼卡通、厚涂油画和晴天暖阳。\\n\\n镜头1（0–3秒，第5格，双人中景）：陆沉面向破窗站稳，双眼已经恢复普通深色，呼吸略重；林晓在他身后半步，一只手按住胸口，抬眼望向他的侧脸。镜头固定，雨水从破窗吹入，散落纸页低幅颤动。两人暂时都不说话，让余惊自然落定。\\n\\n镜头2（3–6秒，第6格，林晓近景）：林晓仍按住胸口，眼神带着困惑和残留惊惧，嘴唇轻轻发颤。她用轻而略微颤抖的年轻女性声音问。林晓：“刚才……发生了什么？”口型逐字同步，语速偏慢，问句末尾自然收住；陆沉画外闭口倾听，不插话。\\n\\n镜头3（6–8秒，第7格，陆沉近景）：切到陆沉正面近景。他的眼睛保持普通深色，神情平静克制，呼吸逐渐稳定；短暂停顿后，以低沉、简短、没有情绪起伏的年轻男性声音回答。陆沉：“不知道。”口型准确，只说一次，句末立即闭唇。\\n\\n镜头4（8–12秒，第8格，双人近景）：陆沉与林晓在破窗雨幕前近距离同框。林晓观察他的眼睛，显然仍有疑问；陆沉与她短暂对视后微微移开目光，不再解释。两人保持原有世界位置，不互换站位、不靠近或触碰。镜头运动逐渐减速并停止，现场只剩雨声、漏风声和两人的呼吸。\\n\\n镜头5（12–15秒，第9格，教室门口中近景）：走廊外急促脚步由远到近，王老师抵达门口，紧张的说：\\\"没受伤吧，赶快离开教室\\\"\\n\\n\\n【禁止项】\\n\\n文字/UI/水印/Logo/角标/可读文字/真实UI/字幕/对白文字/气泡/故事板边框/宫格编号/箭头/怪兽返场/红瞳重新点亮/第三句台词/多人同时说话/人物瞬移/破损环境复原\\n\\n【强制声明】\\n\\n无背景音乐,仅保留环境音与人声和音效;画面禁字幕/文字/水印/Logo;禁止可读文字(指画面字幕文字,不含人声台词);分镜图内的字幕与文字不入画,字幕后期统一添加\\n```\\n\\n## 首尾状态\\n\\n- 入点：黑翼怪兽已经完全逃入窗外雨幕；陆沉双眼恢复普通深色并仍护在林晓身前；林晓按住胸口、惊魂未定；王老师仍在走廊外。\\n- 出点：林晓已问“刚才……发生了什么？”，陆沉回答“不知道。”；两人保持原位；王老师已抵达教室门口但尚未开口，直接承接下一片段的伤情询问。\",\"negativePrompt\":\"bad video, low quality, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny classroom, warm sunlight, restored classroom, monster, creature, red eyes, supernatural power, fight, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, duplicated character, double exposure, ghost image, ghosting, motion trail, translucent person, split body, merged bodies, anatomical overlap, soaked clothing, transparent wet shirt, clinging fabric, wet Teacher Wang, wet Lin Xiao, identity drift, face change, hairstyle change, costume change, age change, male teacher, speaker facing camera, extra dialogue, overlapping voices, wrong speaker, lip-sync error, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark, readable text, malformed hands, duplicated limbs, extra person, teleportation, position swap, collision, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24,\"previewLive\":false,\"previewStep\":8,\"previewTotalSteps\":8},{\"id\":\"ep02_segment03_suwan_hug_15s\",\"start\":362,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"# EP02｜片段03｜MiniMax H3 R2V 视频提示词\\n\\n## RH 上传映射\\n\\n- `<Picture 1>`：苏婉人物参考图，仅锁定苏婉身份。\\n- `<Picture 2>`：林晓人物参考图，仅锁定林晓身份。\\n- `<Picture 3>`：王老师人物参考图，仅锁定王老师身份。\\n- `<Picture 4>`：怪兽袭击后的雨天教室无人场景图，仅锁定场景结构、破损状态与雨天光线。\\n- `<Picture 5>`：片段03独立横屏首帧图；在 R2V 模式中作为普通图片参考上传，并明确作为 00:00 的精确首帧。\\n- `<Audio 1>`：王老师参考音色。\\n- `<Audio 2>`：苏婉参考音色。\\n\\n> 本次不上传故事板，不把故事板、分镜宫格或任何拼图作为参考图。片段内参考图槽位、生成图槽位和关键帧槽位全部留空；只使用上述五张全局图片参考和两条音色参考。\\n\\n## Prompt\\n\\nsubject_definitions:\\n<Subject 1> is Su Wan from <Picture 1>: one female high-school student with the exact youthful face, chestnut-brown short bob, slim proportions and white-and-blue school uniform. Her short hair and outer shoulders are only lightly damp from corridor rain mist; her uniform is not soaked, transparent or clinging. <Audio 2> is her voice-timbre reference. She speaks only as (S2).\\n<Subject 2> is Lin Xiao from <Picture 2>: one female high-school student with the exact face, high ponytail, slim proportions, white-and-blue school uniform and thin red cord on her right wrist. She remains dry indoors. She has no spoken line in this segment.\\n<Subject 3> is Teacher Wang from <Picture 3>: one attractive 30-year-old adult female homeroom and Chinese-language teacher with the exact face, shoulder-length dark-brown hair, glasses, beige professional suit, elegant posture and credible adult authority. Her hair and clothes remain completely dry indoors. <Audio 1> is her voice-timbre reference. She speaks only as (S1).\\n<Picture 4> fixes the same severely damaged rainy classroom: corridor door on the same side, shattered window wall, overturned desks, scattered books, broken glass, wet reflective floor near the windows, cold blue-grey rain light and no monster.\\n<Picture 5> is the exact 16:9 first frame at 00:00 in R2V mode. Fully retain its opening composition, identities, body count, doorway-to-classroom axis, Su Wan's forward running pose, Teacher Wang's position behind her, damaged classroom state and cold rainy lighting. Treat <Picture 1> through <Picture 3> only as identity attributes for the people already defined, never as instructions to instantiate extra bodies.\\n\\nsummary:\\nA 15-second 16:9 high-detail anime-film emotional action-and-dialogue scene immediately after Teacher Wang has ordered the students to evacuate the damaged classroom. Su Wan runs back from the corridor, narrowly avoids broken glass, reaches Lin Xiao and hugs her tightly. Lin Xiao is startled, then supports and gently pats Su Wan's trembling back. Preserve continuous geography and emotion from the previous segment while keeping Lu Chen and Anna alive and present deeper in the same classroom but off-camera for this shot sequence.\\n\\nretention_analysis:\\nRetain from <Picture 1> through <Picture 3> only each named character's identity, face, hair, age, proportions and clothing. Retain from <Picture 4> only the fixed rainy damaged classroom, doorway/window orientation, existing debris and cold lighting. Retain from <Picture 5> the exact opening frame at 00:00: one Su Wan entering at speed and one dry Teacher Wang following behind her. Exactly three named people may become visible across the entire target video: one Su Wan, one Lin Xiao and one Teacher Wang. At 00:00 exactly two people are visible as fixed by <Picture 5>; Lin Xiao enters the composition only when Su Wan reaches her. Lu Chen and Anna remain safely elsewhere in the same classroom but off-camera throughout and must not be generated as extra visible bodies. Each visible person has one opaque body in one continuous position; never clone, duplicate, split, trail, dissolve, cross-fade, merge or overlap anatomically. The monster has already escaped and never returns. No supplied reference image contains or defines subtitles, dialogue text, speech bubbles, panel borders, UI or readable text.\\n\\ndetailed_description:\\n[Shot 1, 00:00-00:05] Begin exactly from <Picture 5> without reframing, morphing or adding a person. Use a stable medium-wide 16:9 composition with exactly two visible people: one Su Wan in front and one Teacher Wang behind her. Su Wan runs in from the corridor with urgent but physically coherent steps, her lightly damp bob bouncing once; she almost places one foot on scattered glass, notices it and shifts her step around it. Teacher Wang follows along the same visible path and reaches one hand toward Su Wan without touching or crossing through her body. At the exact moment Teacher Wang (S1) speaks, she faces Su Wan rather than the camera; her eyebrows lift with controlled alarm, her eyes widen and lock onto Su Wan's feet, her lips tense then articulate clearly, and she warns firmly with exact lip sync, once: (S1) <d>[Chinese] 慢点！看脚下！</d> Her mouth closes immediately after the final syllable while the worried expression remains. Su Wan keeps her mouth closed and continues forward. Teacher Wang stays completely dry; only Su Wan's hair and outer shoulders are lightly damp.\\n\\n[Shot 2, 00:05-00:10] Cut on the same doorway-to-classroom axis to a restrained tracking medium shot. Su Wan visibly weaves around one overturned desk and broken glass; do not teleport her. Lin Xiao now enters the frame ahead as the third and final visible person, standing dry and shaken beside the middle row. Su Wan reaches Lin Xiao, opens both arms and faces her directly. At the exact moment Su Wan (S2) speaks, her current expression combines fear and sudden relief: eyes reddened and glossy, brows pinched upward, breathing fast, gaze fixed only on Lin Xiao, lips trembling before opening; she calls with exact lip sync, once: (S2) <d>[Chinese] 林晓！</d> Her mouth closes after the name. She immediately wraps both arms around Lin Xiao in one clean, readable embrace. Teacher Wang slows safely behind them and remains silent; no one looks into the camera.\\n\\n[Shot 3, 00:10-00:15] Continue in a coherent medium two-shot focused on Su Wan and Lin Xiao, with Teacher Wang stationary farther behind and spatially separate. The force of the embrace makes Lin Xiao take exactly half a step backward, then stop securely without colliding with debris. Lin Xiao's current expression changes visibly from wide-eyed surprise to soft concern; she raises one hand, supports Su Wan and gives two gentle pats on her upper back. Su Wan's shoulders continue one small trembling motion while her face rests against Lin Xiao's shoulder; both mouths remain closed. End with at least a one-second stable hold: the embrace has settled, Lin Xiao's hand rests supportively on Su Wan's back, Teacher Wang watches them with concern, all three identities and bodies are stable, and no new action begins.\\n\\nVisual constraints: high-detail Japanese anime youth cinematic look, delicate cel-shaded people, hand-drawn animation background, clean stable linework, transparent atmospheric perspective, cinematic rain light, rain-streaked glass, city rain mist, cold blue-grey ambient light and restrained wet-floor reflections. 16:9 horizontal, 2K-class clarity. Exactly one Su Wan, one Lin Xiao and one Teacher Wang may be visible; no other visible person. Stable anatomy and clear separation between silhouettes except for the intentional natural arm contact during the hug. No photorealism, live action, 3D render, Western comics, childish cartoon, oil-paint texture, sunny or warm reset, identity drift, age drift, male Teacher Wang, changed uniforms, changed hair, restored damage, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, double exposure, ghost image, motion trail, translucent body, merged bodies, anatomical overlap, monster, red eyes, supernatural power, fighting, teleportation, position swap, extra dialogue, overlapping speech, wrong speaker, camera-facing dialogue, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark or readable text.\\n\\noverall_soundscape:\\nContinuous rain and wind through broken windows, Su Wan's quick approaching footsteps and urgent breathing, one brief light glass rattle as she avoids the shard, soft fabric movement during the embrace, and two clean dry Chinese dialogue lines synchronized only to their visible speakers. No off-screen voices, no crowd noise and no added narration.\\n\\nnon_diegetic_music:\\nN/A\\n\\n\",\"negativePrompt\":\"bad video, low quality, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny classroom, warm sunlight, restored classroom, monster, creature, red eyes, supernatural power, fight, crowd, extra student, visible Lu Chen, visible Anna, clone, duplicate person, duplicated character, double exposure, ghost image, ghosting, motion trail, translucent person, split body, merged bodies, anatomical overlap, soaked clothing, transparent wet shirt, clinging fabric, wet Teacher Wang, wet Lin Xiao, identity drift, face change, hairstyle change, costume change, age change, male teacher, speaker facing camera, extra dialogue, overlapping voices, wrong speaker, lip-sync error, subtitles, speech bubbles, panel borders, storyboard grid, UI, logo, watermark, readable text, malformed hands, duplicated limbs, extra person, teleportation, position swap, collision, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24,\"previewLive\":false,\"previewStep\":8,\"previewTotalSteps\":8}],\"globalCommon\":{\"commonEnabled\":true,\"commonCollapsed\":false,\"prompt\":\"subject_definitions:\\n<Subject 1> is the single Su Wan identity from <Picture 1>; inherit only her face, chestnut-brown short bob, age, proportions and school uniform. Only her hair and outer shoulders are lightly damp from corridor rain mist; never soak or make her clothes transparent.\\n<Subject 2> is the single Lin Xiao identity from <Picture 2>; inherit only her face, high ponytail, right-wrist red cord and dry school uniform.\\n<Subject 3> is the single adult female Teacher Wang identity from <Picture 3>; inherit only her face, glasses, shoulder-length dark-brown hair, dry beige professional suit and credible 30-year-old teacher bearing.\\n<Picture 4> is the empty damaged rainy classroom; inherit its doorway/window axis, shattered windows, overturned desks, debris and cold rainy lighting, but never add a person from the scene reference.\\n<Picture 5> is the exact 16:9 first frame at 00:00 in R2V mode. It fixes Su Wan and Teacher Wang as the only two people initially visible, their separated positions, opening motion, dry/damp distinction and doorway-to-classroom orientation. Lin Xiao becomes visible only after Su Wan reaches her. Treat <Picture 1> through <Picture 3> only as identity attributes, never as instructions to instantiate extra bodies.\\nExactly three named people may become visible across the video: one Su Wan, one Lin Xiao and one Teacher Wang. Lu Chen and Anna remain elsewhere in the same classroom but off-camera. No storyboard sheet is uploaded or referenced. No subtitles, readable text, BGM, clone, duplicate, ghost image or anatomical overlap.\",\"refs\":[{\"index\":0,\"imageFile\":\"openapi/34c96093f184184025239754d9018dde0ede8b5ce84b62eb2d0c6d71c26eb9f7.png\",\"fileName\":\"openapi/34c96093f184184025239754d9018dde0ede8b5ce84b62eb2d0c6d71c26eb9f7.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"openapi/11d6c04ae39d3a9cd39ac9745d3e542ba9d4c86726177a0772d743bc9064cbf4.png\",\"fileName\":\"openapi/11d6c04ae39d3a9cd39ac9745d3e542ba9d4c86726177a0772d743bc9064cbf4.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"openapi/4b705b575e242ad758ae6a741574b7a3d1b42b573873d44f29f78a4fcecca3d6.png\",\"fileName\":\"openapi/4b705b575e242ad758ae6a741574b7a3d1b42b573873d44f29f78a4fcecca3d6.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"openapi/2695aa48b8174a0e22cb774359cde388557750fc6e7b0e73d5dddd2bc28ce593.png\",\"fileName\":\"openapi/2695aa48b8174a0e22cb774359cde388557750fc6e7b0e73d5dddd2bc28ce593.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"openapi/766af99978943833f7e0644b40675c9d90539cb99c183c9da5a1cf9d4267fc26.png\",\"fileName\":\"openapi/766af99978943833f7e0644b40675c9d90539cb99c183c9da5a1cf9d4267fc26.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"fileName\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"fileName\":\"openapi/abf3d8b24c0c6e45b02724420af6cb99656c87afe9b79806a0487294ca9816eb.wav\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[]}}},\"videoWorkspaces\":{\"rv2v\":{\"selectedIndex\":0,\"currentFrame\":0,\"editMode\":\"global\",\"runSelectEnabled\":false,\"runSelection\":[],\"totalFrames\":372,\"frameRate\":24,\"storageWidth\":864,\"storageHeight\":32,\"segments\":[],\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":0,\"width\":0,\"height\":0,\"storageWidth\":864,\"storageHeight\":32},\"videoClips\":[],\"globalCommon\":{\"commonEnabled\":false,\"commonCollapsed\":false,\"prompt\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[]}}}}",
+      "frame_rate": 24,
+      "steps": 8,
+      "video_vae": [
+        "3",
+        0
+      ],
+      "sampler": "euler",
+      "bd_grp_perf": "性能",
+      "width": 1376,
+      "ref_max_size": 1376,
+      "task_type": "r2v — 参考主体生视频(Reference to Video)",
+      "clip": [
+        "2",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "MiniMaxH3Director"
+    }
+  },
+  "23": {
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "24": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v1.1_768p_comfyui_bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "26": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "lora_name": "Minimax_h3_fl2v_turbo_4step_v1.1_768p_comfyui_bf16_0825.safetensors",
+      "strength_model": 0.7000000000000002,
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "16": {
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "17": {
+    "class_type": "PathchSageAttentionKJ",
+    "inputs": {
+      "sage_attention": "auto",
+      "model": [
+        "26",
+        0
+      ],
+      "allow_compile": false
+    },
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "18": {
+    "class_type": "MiniMaxH3DirectorRefine",
+    "inputs": {
+      "aspect_ratio": "16:9 (宽屏)",
+      "refine_model": [
+        "23",
+        0
+      ],
+      "megapixels": 1,
+      "upscale_model": [
+        "19",
+        0
+      ],
+      "latent_upscale_model": 0.25,
+      "seed_mode": "inherit",
+      "sampler": "euler",
+      "mode": "upscale",
+      "passes": 1,
+      "width": 1376,
+      "skip_fl2v": true,
+      "sigmas": [
+        "20",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "height": 768
+    },
+    "_meta": {
+      "title": "MiniMax H3 Director Refine"
+    }
+  },
+  "19": {
+    "class_type": "UpscaleModelLoader",
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "weight_dtype": "default",
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+    },
+    "_meta": {
+      "title": "MiniMax H3 UNET"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIP (minimax / Qwen3-VL)"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "_meta": {
+      "title": "Video VAE"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "_meta": {
+      "title": "Audio VAE"
+    }
+  },
+  "6": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "fps": [
+        "12",
+        2
+      ],
+      "audio": [
+        "12",
+        1
+      ],
+      "bit_depth": 8
+    },
+    "_meta": {
+      "title": "Create Video"
+    }
+  },
+  "7": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "codec": "auto",
+      "filename_prefix": "video/MiniMaxH3_Director_t2v",
+      "fw_video_preview": "",
+      "format": "auto",
+      "video": [
+        "6",
+        0
+      ],
+      "video-preview": ""
+    },
+    "_meta": {
+      "title": "💾 Save Video"
+    }
+  },
+  "8": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "preview": "MiniMax H3 Director [批量生成 (r2v)] (segment): 1 segment(s), 362 frames @ 24.00 fps\nOutput: 864×480 (fixed)\nGlobal task: 参考主体生视频(Reference to Video)\n  #1 [0:362] 362f — r2v — subject_definitions:\n\n\n【参考图固定定义】本段只使用4张参考图：<Picture 1>  为陆沉的…\n\nExecution path: ComfyUI official MiniMax H3\nAudio: generate — decode MiniMax H3 AV latent audio.\nSegment continuity: OFF — official MiniMax H3 per-segment path (no motion-context pin/patch/trim; r2v/v2v/rv2v use stock ReferenceToVideo).\nSegment 1/1: r2v — Reference-to AV — subject images (+ optional tags) in prompt (MiniMax H3) (~6 ref image(s), 0 ref video(s)) (362 frames, seed=666)\n\nGenerated audio: decoded from MiniMax H3 AV latent (frame-aligned to picture / timeline fps).\n\nSource images: fallback to generated output (No video clips in MiniMax H3 Director timeline.).\n\nimages_pre_refine: same as images (Refine node not connected).\n\n有问题联系作者：AI搅拌手  QQ交流群：551482703",
+      "source": [
+        "12",
+        5
+      ]
+    },
+    "_meta": {
+      "title": "Director 运行报告"
+    }
+  },
+  "20": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "scheduler": "beta",
+      "denoise": 0.25000000000000006,
+      "model": [
+        "23",
+        0
+      ],
+      "steps": 3
+    },
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "21": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "weight_dtype": "default",
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+    },
+    "_meta": {
+      "title": "MiniMax H3 UNET"
+    }
+  }
+}

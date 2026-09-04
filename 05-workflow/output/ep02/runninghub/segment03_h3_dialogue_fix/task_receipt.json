@@ -1,0 +1,11 @@
+{
+  "taskId": "2093361161608327169",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-28T23:32:47.8990841+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_h3_standard_dialogue_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, pure six-section H3 Full-Reference prompt, one speaker tag per dialogue event, Picture 3 reverse-axis exact first frame, frontal Su Wan run, crying embrace, exactly two dry girls, three image refs, two voice refs, no storyboard input, refine disconnected"
+}

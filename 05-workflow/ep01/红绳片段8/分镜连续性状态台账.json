@@ -1,0 +1,1897 @@
+{
+  "project": "红绳 EP01 v2 片段08",
+  "spatial_invariants": [
+    "首格逐项继承片段7审核末格：林明已挡在林晓身前且尚未红瞳",
+    "第6格怪兽仍在室内，第7格用连续动作压缩其穿窗并飞到室外的过程",
+    "第8格仅安娜可见，安娜面向破窗及怪兽逃离方向，背景不得出现林明和林晓",
+    "第9格仅林晓可见，手掌按住胸口并呼气平复心跳",
+    "普通学生与王老师保持撤离；雨天、破窗、翻桌、碎玻璃、散书和积水不得复位"
+  ],
+  "blocking_validation": {
+    "required": true,
+    "coordinate_system": {
+      "name": "classroom_world_grid",
+      "x_min": 0,
+      "x_max": 110,
+      "y_min": 0,
+      "y_max": 100,
+      "window_plane_x": 100,
+      "threshold_tolerance": 1.5,
+      "max_displacement_per_frame": 10
+    },
+    "entity_footprints": {
+      "lin_ming": 1.2,
+      "lin_xiao": 1.2,
+      "anna": 1.2,
+      "monster": 1.5
+    },
+    "frames": [
+      {
+        "id": "08.01",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 94,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.02",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 94,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.03",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 94,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.04",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 94,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.05",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 94,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.06",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 97,
+            "y": 65,
+            "zone": "inside_classroom_floor_window_zone",
+            "support": "floor"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "monster",
+              "window_plane"
+            ]
+          }
+        ],
+        "movement_causes": {
+          "monster": "怪兽受威压从x=94后退到x=97，仍在窗墙内"
+        }
+      },
+      {
+        "id": "08.07",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 104,
+            "y": 65,
+            "zone": "outside_window_in_rain",
+            "support": "outside_air"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "window_plane",
+              "monster"
+            ]
+          }
+        ],
+        "movement_causes": {
+          "monster": "怪兽从室内x=97连续穿过x=100窗墙并到达室外x=104"
+        }
+      },
+      {
+        "id": "08.08",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 104,
+            "y": 65,
+            "zone": "outside_window_in_rain",
+            "support": "outside_air"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "window_plane",
+              "monster"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      },
+      {
+        "id": "08.09",
+        "placements": {
+          "lin_ming": {
+            "x": 91,
+            "y": 65,
+            "zone": "between_lin_xiao_and_monster",
+            "support": "floor"
+          },
+          "lin_xiao": {
+            "x": 88,
+            "y": 65,
+            "zone": "behind_lin_ming_safe",
+            "support": "floor"
+          },
+          "anna": {
+            "x": 84,
+            "y": 82,
+            "zone": "rear_window_row",
+            "support": "floor"
+          },
+          "monster": {
+            "x": 104,
+            "y": 65,
+            "zone": "outside_window_in_rain",
+            "support": "outside_air"
+          }
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [
+          {
+            "axis": "x",
+            "items": [
+              "lin_xiao",
+              "lin_ming",
+              "window_plane",
+              "monster"
+            ]
+          }
+        ],
+        "movement_causes": {}
+      }
+    ]
+  },
+  "frames": [
+    {
+      "id": "08.01",
+      "previous_frame": "07.09",
+      "script_beat": "承接片段7末格：林明已挡在林晓身前，怪兽利爪悬停，林明尚未红瞳",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_normal_eyes",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_normal_eyes",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：林明已挡在林晓身前，怪兽仍在室内，首格未重复冲刺。"
+    },
+    {
+      "id": "08.02",
+      "previous_frame": "08.01",
+      "script_beat": "林明保持护人站位回头看向林晓，冷静说“站我身后”",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_normal_eyes",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ],
+          "to": [
+            "lin_ming"
+          ],
+          "cause": "镜头切为林明回望林晓的三分之二脸部近景"
+        },
+        {
+          "path": "entities.lin_ming.facing",
+          "from": "monster",
+          "to": "lin_xiao",
+          "cause": "林明只转动脸与视线，确认林晓在自己身后"
+        },
+        {
+          "path": "entities.lin_ming.pose",
+          "from": "protective_stance_normal_eyes",
+          "to": "looking_back_calmly_speaking_to_lin_xiao",
+          "cause": "林明保持护人站位并冷静说出“站我身后”"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "lin_xiao",
+            "pose": "looking_back_calmly_speaking_to_lin_xiao",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：画面为林明回头三分之二脸部近景，普通深色眼睛；新增对白不改变既有护人站位。"
+    },
+    {
+      "id": "08.03",
+      "previous_frame": "08.02",
+      "script_beat": "林明说完后转回怪兽，双眼完全转为猩红，同步一声短促低沉威压音",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "lin_xiao",
+            "pose": "looking_back_calmly_speaking_to_lin_xiao",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "entities.lin_ming.facing",
+          "from": "lin_xiao",
+          "to": "monster",
+          "cause": "林明说完后把视线重新锁定怪兽"
+        },
+        {
+          "path": "entities.lin_ming.pose",
+          "from": "looking_back_calmly_speaking_to_lin_xiao",
+          "to": "protective_stance_red_eyes",
+          "cause": "林明转回正面并保持绝对平静的威慑表情"
+        },
+        {
+          "path": "entities.lin_ming.ability_state",
+          "from": "inactive",
+          "to": "scarlet_eyes_active",
+          "cause": "普通深色虹膜由中心向外完全转为猩红"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_red_eyes",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：第3格双眼完全呈猩红；视频执行时在完全变红的准确瞬间同步一次短促低沉威压音。"
+    },
+    {
+      "id": "08.04",
+      "previous_frame": "08.03",
+      "script_beat": "林明闭口沉默，以红瞳和无形威压正面锁住怪兽",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_red_eyes",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_xiao",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "lin_ming"
+          ],
+          "to": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ],
+          "cause": "镜头切回侧面群像对峙"
+        },
+        {
+          "path": "entities.lin_ming.pose",
+          "from": "protective_stance_red_eyes",
+          "to": "protective_stance_silent_pressure",
+          "cause": "林明保持嘴唇闭合，以红瞳无声震慑怪兽"
+        },
+        {
+          "path": "entities.monster.facing",
+          "from": "lin_xiao",
+          "to": "lin_ming",
+          "cause": "怪兽被林明红瞳与无形威压吸引"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：林明保持护人站位正面对峙；视频执行明确闭口无对白，不生成“退后”。"
+    },
+    {
+      "id": "08.05",
+      "previous_frame": "08.04",
+      "script_beat": "怪兽瞳孔收缩、黑翼僵住、利爪停在半空",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "one_claw_suspended",
+            "motion": "still",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ],
+          "to": [
+            "monster"
+          ],
+          "cause": "镜头切为怪兽惊惧面部特写"
+        },
+        {
+          "path": "entities.monster.pose",
+          "from": "one_claw_suspended",
+          "to": "frozen_in_fear_wings_stiff",
+          "cause": "林明红瞳威压使怪兽陷入恐惧"
+        },
+        {
+          "path": "entities.monster.motion",
+          "from": "still",
+          "to": "frozen",
+          "cause": "无形威压冻结怪兽动作"
+        },
+        {
+          "path": "entities.monster.condition",
+          "from": "unhurt",
+          "to": "terrified",
+          "cause": "怪兽感受到压倒性威胁"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "frozen_in_fear_wings_stiff",
+            "motion": "frozen",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：怪兽瞳孔收缩、攻击性表情转为惊惧。"
+    },
+    {
+      "id": "08.06",
+      "previous_frame": "08.05",
+      "script_beat": "怪兽在教室内连续后退，仍未越过窗墙",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "frozen_in_fear_wings_stiff",
+            "motion": "frozen",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "monster"
+          ],
+          "to": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ],
+          "cause": "镜头切回室内广角记录后退空间"
+        },
+        {
+          "path": "entities.monster.pose",
+          "from": "frozen_in_fear_wings_stiff",
+          "to": "stumbling_backward_inside",
+          "cause": "怪兽从僵直中恢复并开始畏惧后退"
+        },
+        {
+          "path": "entities.monster.motion",
+          "from": "frozen",
+          "to": "retreating",
+          "cause": "威压驱使怪兽向身后破窗退去"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "stumbling_backward_inside",
+            "motion": "retreating",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：怪兽在教室内后退，林明和林晓世界站位不变。"
+    },
+    {
+      "id": "08.07",
+      "previous_frame": "08.06",
+      "script_beat": "怪兽穿过破窗后已在室外雨幕振翼逃离",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "inside_classroom_floor_window_zone",
+            "facing": "lin_ming",
+            "pose": "stumbling_backward_inside",
+            "motion": "retreating",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "lin_ming",
+            "lin_xiao",
+            "anna",
+            "monster"
+          ],
+          "to": [
+            "monster"
+          ],
+          "cause": "镜头经破窗望向室外，只保留逃离怪兽"
+        },
+        {
+          "path": "entities.monster.position",
+          "from": "inside_classroom_floor_window_zone",
+          "to": "outside_window_in_rain",
+          "cause": "怪兽在本格连续动作中穿过破窗飞到室外"
+        },
+        {
+          "path": "entities.monster.facing",
+          "from": "lin_ming",
+          "to": "away_from_classroom",
+          "cause": "怪兽逃离时转身背向教室"
+        },
+        {
+          "path": "entities.monster.pose",
+          "from": "stumbling_backward_inside",
+          "to": "flying_away",
+          "cause": "怪兽撞过破窗后展开黑翼"
+        },
+        {
+          "path": "entities.monster.motion",
+          "from": "retreating",
+          "to": "flying_away",
+          "cause": "怪兽振翼进入雨幕"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "outside_window_in_rain",
+            "facing": "away_from_classroom",
+            "pose": "flying_away",
+            "motion": "flying_away",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：旧第7格已删除，怪兽已穿过破窗并在室外雨幕中飞离；画面无其他人物。"
+    },
+    {
+      "id": "08.08",
+      "previous_frame": "08.07",
+      "script_beat": "安娜独自面向怪兽逃离方向，暗刃化为黑银光屑收回掌心",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "monster"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_slightly_surprised_blades_hidden",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "black_silver_blades_active"
+          },
+          "monster": {
+            "present": true,
+            "position": "outside_window_in_rain",
+            "facing": "away_from_classroom",
+            "pose": "flying_away",
+            "motion": "flying_away",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "monster"
+          ],
+          "to": [
+            "anna"
+          ],
+          "cause": "镜头切到后排安娜单人近景，背景不纳入林明和林晓"
+        },
+        {
+          "path": "entities.anna.pose",
+          "from": "standing_slightly_surprised_blades_hidden",
+          "to": "standing_restrained_surprise_blade_dissolving",
+          "cause": "安娜确认怪兽逃离后露出更明确但克制的惊讶"
+        },
+        {
+          "path": "entities.anna.ability_state",
+          "from": "black_silver_blades_active",
+          "to": "blade_dissolved_observing",
+          "cause": "威胁解除后安娜将暗刃碎成黑银光屑收回掌心"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "anna"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_restrained_surprise_blade_dissolving",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "blade_dissolved_observing"
+          },
+          "monster": {
+            "present": true,
+            "position": "outside_window_in_rain",
+            "facing": "away_from_classroom",
+            "pose": "flying_away",
+            "motion": "flying_away",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：安娜单人侧向怪兽逃离／破窗方向收刃，背景只有撤空破损教室，无林明和林晓。"
+    },
+    {
+      "id": "08.09",
+      "previous_frame": "08.08",
+      "script_beat": "林晓单人特写，手掌按住胸口，轻轻呼气平复急促心跳",
+      "entry_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "anna"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "lin_ming",
+            "pose": "surprised_looking_up",
+            "motion": "still",
+            "condition": "unhurt_tense",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_restrained_surprise_blade_dissolving",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "blade_dissolved_observing"
+          },
+          "monster": {
+            "present": true,
+            "position": "outside_window_in_rain",
+            "facing": "away_from_classroom",
+            "pose": "flying_away",
+            "motion": "flying_away",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "changes": [
+        {
+          "path": "environment.visible_entities",
+          "from": [
+            "anna"
+          ],
+          "to": [
+            "lin_xiao"
+          ],
+          "cause": "镜头切为林晓单人胸像特写"
+        },
+        {
+          "path": "entities.lin_xiao.facing",
+          "from": "lin_ming",
+          "to": "slightly_downward",
+          "cause": "林晓低下视线感受尚未平复的心跳"
+        },
+        {
+          "path": "entities.lin_xiao.pose",
+          "from": "surprised_looking_up",
+          "to": "hand_pressed_to_chest_sighing",
+          "cause": "危险解除后林晓用手按住胸口并缓慢呼气"
+        },
+        {
+          "path": "entities.lin_xiao.condition",
+          "from": "unhurt_tense",
+          "to": "unhurt_heartbeat_fast_relieved",
+          "cause": "她从受惊紧绷转为心跳急促但逐渐安心"
+        }
+      ],
+      "exit_state": {
+        "environment": {
+          "location": "rainy_classroom",
+          "occupancy": "evacuated",
+          "damage_level": "severe",
+          "weather": "rain",
+          "light": "cold_blue_grey",
+          "window": "shattered",
+          "furniture": "overturned",
+          "debris": "papers_glass_rainwater",
+          "visible_entities": [
+            "lin_xiao"
+          ]
+        },
+        "entities": {
+          "lin_ming": {
+            "present": true,
+            "position": "between_lin_xiao_and_monster",
+            "facing": "monster",
+            "pose": "protective_stance_silent_pressure",
+            "motion": "stopped",
+            "condition": "unhurt",
+            "held_items": [],
+            "ability_state": "scarlet_eyes_active"
+          },
+          "lin_xiao": {
+            "present": true,
+            "position": "behind_lin_ming_safe",
+            "facing": "slightly_downward",
+            "pose": "hand_pressed_to_chest_sighing",
+            "motion": "still",
+            "condition": "unhurt_heartbeat_fast_relieved",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "anna": {
+            "present": true,
+            "position": "rear_window_row",
+            "facing": "monster",
+            "pose": "standing_restrained_surprise_blade_dissolving",
+            "motion": "still",
+            "condition": "unhurt_calm",
+            "held_items": [],
+            "ability_state": "blade_dissolved_observing"
+          },
+          "monster": {
+            "present": true,
+            "position": "outside_window_in_rain",
+            "facing": "away_from_classroom",
+            "pose": "flying_away",
+            "motion": "flying_away",
+            "condition": "terrified",
+            "held_items": [],
+            "ability_state": "inactive"
+          },
+          "ordinary_students": {
+            "present": false,
+            "position": "outside_classroom"
+          },
+          "wang_teacher": {
+            "present": false,
+            "position": "outside_classroom"
+          }
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "像素核验通过：林晓单人胸像，一手按住胸口，肩线放松、嘴唇微张呼气，明确表现平复急促心跳。"
+    }
+  ]
+}

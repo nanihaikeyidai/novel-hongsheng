@@ -1,0 +1,151 @@
+{
+  "prompt": {
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+      }
+    },
+    "15": {
+      "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+      "inputs": {
+        "model": [
+          "14",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "CreateVideo",
+      "inputs": {
+        "images": [
+          "12",
+          0
+        ],
+        "audio": [
+          "12",
+          1
+        ],
+        "fps": [
+          "12",
+          2
+        ],
+        "bit_depth": 8,
+        "color_space": "sRGB"
+      }
+    },
+    "14": {
+      "class_type": "PathchSageAttentionKJ",
+      "inputs": {
+        "model": [
+          "41",
+          0
+        ],
+        "sage_attention": "auto",
+        "allow_compile": false
+      }
+    },
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+        "type": "minimax",
+        "device": "default"
+      }
+    },
+    "16": {
+      "class_type": "LoraLoaderModelOnly",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "lora_name": "h3\\minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+        "strength_model": 1
+      }
+    },
+    "41": {
+      "class_type": "TESpeedMiniMaxH3",
+      "inputs": {
+        "model": [
+          "16",
+          0
+        ],
+        "processing_control_value": 0.08,
+        "processing_percent_1": 0.1,
+        "processing_percent_2": 0.9,
+        "mcs": 2,
+        "device": "auto",
+        "mode": "8-step LoRA"
+      }
+    },
+    "12": {
+      "class_type": "MiniMaxH3Director",
+      "inputs": {
+        "model": [
+          "15",
+          0
+        ],
+        "video_vae": [
+          "3",
+          0
+        ],
+        "audio_vae": [
+          "4",
+          0
+        ],
+        "clip": [
+          "2",
+          0
+        ],
+        "task_type": "r2v — 参考主体生视频(Reference to Video)",
+        "global_prompt": "Use each segment's formal prompt as the sole story direction. 16:9横屏，2K级高清，高精度日漫青春电影感，冷蓝灰雨天环境光；无字幕、无BGM、无水印。",
+        "bd_grp_sample": "采样设置",
+        "cfg": 1,
+        "seed": 667,
+        "frame_rate": 24,
+        "width": 1056,
+        "height": 608,
+        "ref_max_size": 1056,
+        "total_frames": 724,
+        "timeline_data": "{\"version\":5,\"editMode\":\"segment\",\"totalFrames\":724,\"frameRate\":24,\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"sourceFrameCount\":734,\"deletedSourceRanges\":[]},\"videoClips\":[],\"global\":{\"taskType\":\"r2v — 参考主体生视频(Reference to Video)\",\"prompt\":\"subject_definitions:\\n图片1：林晓角色人设图，黑棕色高马尾、白蓝高中校服、藏蓝百褶裙、红色发带与腕间旧红绳。\\n\\n图片2：陆沉角色人设图，短黑发、高挑清瘦男高中生，白衬衫、深色长裤、黑色校鞋。\\n\\n图片3：安娜角色人设图，深蓝长直发、冷静气质的女高中生，白蓝校服与深色百褶裙。\\n\\n图片4：王老师角色人设图，约30岁知性漂亮的女性高中班主任，长发、眼镜、浅色职业套装与高跟鞋。\\n\\n图片5：怪兽袭击后的雨天教室场景图，空教室、破损窗户、翻倒课桌、碎玻璃、散纸与积水，冷蓝灰雨天光线。\\n\\n\\n\\n\\n音频1：林晓\\n音频2：陆沉\\n音频3：王老师\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"continuousReference\":false,\"genImage\":{\"imageFile\":\"\"},\"sourceWidth\":768,\"sourceHeight\":1024,\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"commonEnabled\":true,\"commonCollapsed\":false,\"refVideos\":[]},\"output\":{\"mode\":\"fixed\",\"aspectRatio\":\"16:9 (宽屏)\",\"megapixels\":0.6,\"multiple\":32,\"longEdge\":1056,\"width\":1056,\"height\":608,\"maxExportFrames\":0,\"exportMode\":\"all\",\"audioMode\":\"source\",\"exportSourceImages\":false,\"refImageSize\":\"match\",\"continuityEnabled\":true,\"continuityOverlapFrames\":22},\"runSelectEnabled\":false,\"runSelection\":[],\"segments\":[{\"id\":\"ep02_seg11_local_res06\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的林晓。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中；该人物在本段是说话人 (S2)。\\n<Subject 2> 是来自 <Picture 2> 的苏婉（17–18岁，栗棕齐肩短发，白蓝校服）。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中；该人物在本段是说话人 (S1)。\\n<Subject 3> 是来自 <Picture 3> 的陆沉。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 4> 是来自 <Picture 4> 的礼堂外走廊／下午停课场景（专属空景，保留雨窗、长椅与离校空间）。场景图锁定建筑结构、空间布局、材质、基础光线和环境状态；不继承参考图中的临时人物、角标或可读文字。\\n<Picture 5> 是本段故事板规划图，对应 [Shot 1] 至 [Shot 3]，只提供镜头顺序、景别、构图、动作节拍和首尾状态；不得生成宫格线、编号、字幕、箭头或制作标注。\\n<Picture 6> 是 [Shot 1] 的第0秒首帧锚点，锁定开场构图、人物数量与分离状态、空间轴线、天气、光线和持续存在的环境状态；不得继承图片中的任何可读文字。\\n\\nsummary:\\n[keyframe completion + reference generation] 生成EP02片段11《临时停课》的连续15秒视频。成片固定16:9横屏、2K级高清；高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物、场景和道具参考图优先于 <Picture 5>；故事板只补充镜头规划。全程无字幕、无画面文字、无BGM、无水印、无Logo。\\n\\nretention_analysis:\\n<Subject 1>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 2>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 3>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 4>：fully_preserved - 在剧情需要其出现的镜头中保持空间结构、材质、光线和环境状态，不复制参考图背景、边框或文字。\\n<Picture 5>：fully_preserved - 保留镜头规划与动作节拍，不保留宫格外观和制作文字。\\n<Picture 6>（[Shot 1] 首帧）：fully_preserved - 以其开场构图和可见状态为最高优先级，不允许首帧人物增删、换位、重叠或环境复位。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物站位、道具持有、门窗内外、泳道或走廊方向和180度轴线必须跨镜头稳定；参考图与故事板冲突时，以对应人物、场景、道具和首帧参考图为准。\\n\\n[Shot 1] [全景][走廊侧面机位，横移]。校园广播宣布临时停课，学生开始离校；走廊人流稀疏，<Subject 1>坐在长椅上捧着温水，神情仍有些疲惫；<Subject 2>站在她身边；窗外雨幕与玻璃雨痕可见\\n\\n[Shot 2] At 00:05.000，持续至 00:10.000。 [中近景][双人侧面机位，固定]。<Subject 2>蹲在<Subject 1>面前，认真地看着她确认；<Subject 1>微微摇头回应，语气平静；<Subject 2>伸出手轻轻搭在<Subject 1>膝上。<Subject 2> (S1) 在画面内面对交流对象、按自然语速说：<d>[Chinese] 真不用去医院？</d>；说话时逐字口型同步，结束后立即闭口，其他人物保持闭口倾听。<Subject 1> (S2) 在画面内面对交流对象、按自然语速说：<d>[Chinese] 不用，只是还有点乱。</d>；说话时逐字口型同步，结束后立即闭口，其他人物保持闭口倾听\\n\\n[Shot 3] At 00:10.000，持续至 00:15.000。 [近景][<Subject 1>正面机位，慢推]。<Subject 1>的视线穿过走廊看向<Subject 3>独自走向门厅的背影，随后低头看向自己手中的黑色雨伞，手指摩挲伞柄上缠绕的红绳；冷蓝灰雨光落在她的侧脸。主体动作与镜头运动在14.5秒前自然减速并停止，最后至少0.5秒稳定停留，不再启动新动作\\n\\n全程无字幕、无画面文字、无标题卡、无对白气泡、无UI、无水印、无Logo；故事板中的宫格线、编号、箭头和制作标注不进入画面。固定16:9横屏、2K级高清。\\n\\noverall_soundscape:\\n环境音：广播宣布停课声、雨声、走廊脚步声渐远；动作音：温水杯轻放、衣料摩擦、手指摩挲伞柄红绳的细微声响；段尾脚步声远去。 只保留画内对白、环境音和动作音；同一时刻只允许一人说话。不得出现旁白式解释、额外对白或不可见动作产生的音效。\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, storyboard grid, panel numbers, arrows, identity drift, face change, hairstyle change, costume drift, duplicate characters, extra people, merged bodies, malformed hands, teleportation, axis flip, broken continuity, restored scene, sunny weather, warm sunlight, background music, 3D render, photorealism, vertical video\",\"taskType\":\"\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"场景_停课后教学楼走廊_无人.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"故事板.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":5,\"imageFile\":\"首帧图.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24},{\"id\":\"ep02_seg12_local_res06\",\"start\":362,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的陆沉。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 2> 是来自 <Picture 2> 的林晓。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 3> 是来自 <Picture 3> 的苏婉（17–18岁，栗棕齐肩短发，白蓝校服）。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 4> 是来自 <Picture 4> 的教学楼门厅／校园雨幕（屋檐、台阶、雨幕、城市雨雾）。场景图锁定建筑结构、空间布局、材质、基础光线和环境状态；不继承参考图中的临时人物、角标或可读文字。\\n<Picture 5> 是本段故事板规划图，对应 [Shot 1] 至 [Shot 3]，只提供镜头顺序、景别、构图、动作节拍和首尾状态；不得生成宫格线、编号、字幕、箭头或制作标注。\\n<Picture 6> 是 [Shot 1] 的第0秒首帧锚点，锁定开场构图、人物数量与分离状态、空间轴线、天气、光线和持续存在的环境状态；不得继承图片中的任何可读文字。\\n\\nsummary:\\n[keyframe completion + reference generation] 生成EP02片段12《屋檐下》的连续15秒视频。成片固定16:9横屏、2K级高清；高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物、场景和道具参考图优先于 <Picture 5>；故事板只补充镜头规划。全程无字幕、无画面文字、无BGM、无水印、无Logo。\\n\\nretention_analysis:\\n<Subject 1>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 2>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 3>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 4>：fully_preserved - 在剧情需要其出现的镜头中保持空间结构、材质、光线和环境状态，不复制参考图背景、边框或文字。\\n<Picture 5>：fully_preserved - 保留镜头规划与动作节拍，不保留宫格外观和制作文字。\\n<Picture 6>（[Shot 1] 首帧）：fully_preserved - 以其开场构图和可见状态为最高优先级，不允许首帧人物增删、换位、重叠或环境复位。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物站位、道具持有、门窗内外、泳道或走廊方向和180度轴线必须跨镜头稳定；参考图与故事板冲突时，以对应人物、场景、道具和首帧参考图为准。\\n\\n[Shot 1] [中景][门厅内侧机位，固定]。<Subject 1>独自站在屋檐下，看着台阶外密集的雨幕；他没有伞，也没有贸然冲出去，双手插在外套口袋里，肩膀微微收紧；檐水在身前连成水线；视觉变化：檐水水线下落\\n\\n[Shot 2] At 00:05.000，持续至 00:10.000。 [近景][<Subject 1>侧面机位，固定]。<Subject 1>伸出手接住一滴檐水，水滴在掌心溅开；他抬眼看了看灰蒙蒙的天空，确认雨势不会很快减弱，随后把手收回口袋；衣摆被风轻轻吹动；视觉变化：水珠在掌心溅开\\n\\n[Shot 3] At 00:10.000，持续至 00:15.000。 [中景][门厅纵深机位，慢拉]。身后传来脚步声，<Subject 2>和<Subject 3>并肩走来，<Subject 2>把黑色雨伞握在手中，神情紧张却坚定；两人在<Subject 1>身侧停下，<Subject 2>微微侧头看向他。主体动作与镜头运动在14.5秒前自然减速并停止，最后至少0.5秒稳定停留，不再启动新动作\\n\\n全程无字幕、无画面文字、无标题卡、无对白气泡、无UI、无水印、无Logo；故事板中的宫格线、编号、箭头和制作标注不进入画面。固定16:9横屏、2K级高清。\\n\\noverall_soundscape:\\n环境音：檐水连成水线、远处雷声低沉、雨声持续；动作音：脚步接近、衣料摩擦、水珠溅开声；段尾两人停步。 只保留画内对白、环境音和动作音；同一时刻只允许一人说话。不得出现旁白式解释、额外对白或不可见动作产生的音效。\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, storyboard grid, panel numbers, arrows, identity drift, face change, hairstyle change, costume drift, duplicate characters, extra people, merged bodies, malformed hands, teleportation, axis flip, broken continuity, restored scene, sunny weather, warm sunlight, background music, 3D render, photorealism, vertical video\",\"taskType\":\"\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"场景_教学楼雨中_无人.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"故事板.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":5,\"imageFile\":\"首帧图.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24}],\"timelineMode\":\"prompt_batch\",\"width\":1056,\"height\":608,\"refMaxSize\":1056,\"gen\":{\"defaultFrameCount\":124},\"keyframes\":[],\"durationSec\":30,\"shots\":[],\"liveTaePreview\":true,\"batchDetailMode\":\"solo\",\"batchWorkspaces\":{\"r2v\":{\"selectedIndex\":0,\"editMode\":\"segment\",\"runSelectEnabled\":false,\"runSelection\":[],\"segments\":[{\"id\":\"ep02_seg11_local_res06\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的林晓。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中；该人物在本段是说话人 (S2)。\\n<Subject 2> 是来自 <Picture 2> 的苏婉（17–18岁，栗棕齐肩短发，白蓝校服）。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中；该人物在本段是说话人 (S1)。\\n<Subject 3> 是来自 <Picture 3> 的陆沉。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 4> 是来自 <Picture 4> 的礼堂外走廊／下午停课场景（专属空景，保留雨窗、长椅与离校空间）。场景图锁定建筑结构、空间布局、材质、基础光线和环境状态；不继承参考图中的临时人物、角标或可读文字。\\n<Picture 5> 是本段故事板规划图，对应 [Shot 1] 至 [Shot 3]，只提供镜头顺序、景别、构图、动作节拍和首尾状态；不得生成宫格线、编号、字幕、箭头或制作标注。\\n<Picture 6> 是 [Shot 1] 的第0秒首帧锚点，锁定开场构图、人物数量与分离状态、空间轴线、天气、光线和持续存在的环境状态；不得继承图片中的任何可读文字。\\n\\nsummary:\\n[keyframe completion + reference generation] 生成EP02片段11《临时停课》的连续15秒视频。成片固定16:9横屏、2K级高清；高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物、场景和道具参考图优先于 <Picture 5>；故事板只补充镜头规划。全程无字幕、无画面文字、无BGM、无水印、无Logo。\\n\\nretention_analysis:\\n<Subject 1>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 2>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 3>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 4>：fully_preserved - 在剧情需要其出现的镜头中保持空间结构、材质、光线和环境状态，不复制参考图背景、边框或文字。\\n<Picture 5>：fully_preserved - 保留镜头规划与动作节拍，不保留宫格外观和制作文字。\\n<Picture 6>（[Shot 1] 首帧）：fully_preserved - 以其开场构图和可见状态为最高优先级，不允许首帧人物增删、换位、重叠或环境复位。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物站位、道具持有、门窗内外、泳道或走廊方向和180度轴线必须跨镜头稳定；参考图与故事板冲突时，以对应人物、场景、道具和首帧参考图为准。\\n\\n[Shot 1] [全景][走廊侧面机位，横移]。校园广播宣布临时停课，学生开始离校；走廊人流稀疏，<Subject 1>坐在长椅上捧着温水，神情仍有些疲惫；<Subject 2>站在她身边；窗外雨幕与玻璃雨痕可见\\n\\n[Shot 2] At 00:05.000，持续至 00:10.000。 [中近景][双人侧面机位，固定]。<Subject 2>蹲在<Subject 1>面前，认真地看着她确认；<Subject 1>微微摇头回应，语气平静；<Subject 2>伸出手轻轻搭在<Subject 1>膝上。<Subject 2> (S1) 在画面内面对交流对象、按自然语速说：<d>[Chinese] 真不用去医院？</d>；说话时逐字口型同步，结束后立即闭口，其他人物保持闭口倾听。<Subject 1> (S2) 在画面内面对交流对象、按自然语速说：<d>[Chinese] 不用，只是还有点乱。</d>；说话时逐字口型同步，结束后立即闭口，其他人物保持闭口倾听\\n\\n[Shot 3] At 00:10.000，持续至 00:15.000。 [近景][<Subject 1>正面机位，慢推]。<Subject 1>的视线穿过走廊看向<Subject 3>独自走向门厅的背影，随后低头看向自己手中的黑色雨伞，手指摩挲伞柄上缠绕的红绳；冷蓝灰雨光落在她的侧脸。主体动作与镜头运动在14.5秒前自然减速并停止，最后至少0.5秒稳定停留，不再启动新动作\\n\\n全程无字幕、无画面文字、无标题卡、无对白气泡、无UI、无水印、无Logo；故事板中的宫格线、编号、箭头和制作标注不进入画面。固定16:9横屏、2K级高清。\\n\\noverall_soundscape:\\n环境音：广播宣布停课声、雨声、走廊脚步声渐远；动作音：温水杯轻放、衣料摩擦、手指摩挲伞柄红绳的细微声响；段尾脚步声远去。 只保留画内对白、环境音和动作音；同一时刻只允许一人说话。不得出现旁白式解释、额外对白或不可见动作产生的音效。\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, storyboard grid, panel numbers, arrows, identity drift, face change, hairstyle change, costume drift, duplicate characters, extra people, merged bodies, malformed hands, teleportation, axis flip, broken continuity, restored scene, sunny weather, warm sunlight, background music, 3D render, photorealism, vertical video\",\"taskType\":\"\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"场景_停课后教学楼走廊_无人.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"故事板.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":5,\"imageFile\":\"首帧图.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24},{\"id\":\"ep02_seg12_local_res06\",\"start\":362,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的陆沉。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 2> 是来自 <Picture 2> 的林晓。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 3> 是来自 <Picture 3> 的苏婉（17–18岁，栗棕齐肩短发，白蓝校服）。人物图只锁定身份、五官、发型、年龄感、体型和服装；不继承参考图背景、原姿势、边框或文字；按镜头需要出现在目标视频中。\\n<Subject 4> 是来自 <Picture 4> 的教学楼门厅／校园雨幕（屋檐、台阶、雨幕、城市雨雾）。场景图锁定建筑结构、空间布局、材质、基础光线和环境状态；不继承参考图中的临时人物、角标或可读文字。\\n<Picture 5> 是本段故事板规划图，对应 [Shot 1] 至 [Shot 3]，只提供镜头顺序、景别、构图、动作节拍和首尾状态；不得生成宫格线、编号、字幕、箭头或制作标注。\\n<Picture 6> 是 [Shot 1] 的第0秒首帧锚点，锁定开场构图、人物数量与分离状态、空间轴线、天气、光线和持续存在的环境状态；不得继承图片中的任何可读文字。\\n\\nsummary:\\n[keyframe completion + reference generation] 生成EP02片段12《屋檐下》的连续15秒视频。成片固定16:9横屏、2K级高清；高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物、场景和道具参考图优先于 <Picture 5>；故事板只补充镜头规划。全程无字幕、无画面文字、无BGM、无水印、无Logo。\\n\\nretention_analysis:\\n<Subject 1>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 2>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 3>：fully_preserved - 在剧情需要其出现的镜头中保持身份、五官、发型、服装和体型，不复制参考图背景、边框或文字。\\n<Subject 4>：fully_preserved - 在剧情需要其出现的镜头中保持空间结构、材质、光线和环境状态，不复制参考图背景、边框或文字。\\n<Picture 5>：fully_preserved - 保留镜头规划与动作节拍，不保留宫格外观和制作文字。\\n<Picture 6>（[Shot 1] 首帧）：fully_preserved - 以其开场构图和可见状态为最高优先级，不允许首帧人物增删、换位、重叠或环境复位。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定线稿，通透空气透视，冷蓝灰雨天环境光、玻璃雨痕、城市雨雾和湿润表面的克制反射。阴雨和既有破坏持续存在，禁止晴天或环境复原。 人物站位、道具持有、门窗内外、泳道或走廊方向和180度轴线必须跨镜头稳定；参考图与故事板冲突时，以对应人物、场景、道具和首帧参考图为准。\\n\\n[Shot 1] [中景][门厅内侧机位，固定]。<Subject 1>独自站在屋檐下，看着台阶外密集的雨幕；他没有伞，也没有贸然冲出去，双手插在外套口袋里，肩膀微微收紧；檐水在身前连成水线；视觉变化：檐水水线下落\\n\\n[Shot 2] At 00:05.000，持续至 00:10.000。 [近景][<Subject 1>侧面机位，固定]。<Subject 1>伸出手接住一滴檐水，水滴在掌心溅开；他抬眼看了看灰蒙蒙的天空，确认雨势不会很快减弱，随后把手收回口袋；衣摆被风轻轻吹动；视觉变化：水珠在掌心溅开\\n\\n[Shot 3] At 00:10.000，持续至 00:15.000。 [中景][门厅纵深机位，慢拉]。身后传来脚步声，<Subject 2>和<Subject 3>并肩走来，<Subject 2>把黑色雨伞握在手中，神情紧张却坚定；两人在<Subject 1>身侧停下，<Subject 2>微微侧头看向他。主体动作与镜头运动在14.5秒前自然减速并停止，最后至少0.5秒稳定停留，不再启动新动作\\n\\n全程无字幕、无画面文字、无标题卡、无对白气泡、无UI、无水印、无Logo；故事板中的宫格线、编号、箭头和制作标注不进入画面。固定16:9横屏、2K级高清。\\n\\noverall_soundscape:\\n环境音：檐水连成水线、远处雷声低沉、雨声持续；动作音：脚步接近、衣料摩擦、水珠溅开声；段尾两人停步。 只保留画内对白、环境音和动作音；同一时刻只允许一人说话。不得出现旁白式解释、额外对白或不可见动作产生的音效。\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, storyboard grid, panel numbers, arrows, identity drift, face change, hairstyle change, costume drift, duplicate characters, extra people, merged bodies, malformed hands, teleportation, axis flip, broken continuity, restored scene, sunny weather, warm sunlight, background music, 3D render, photorealism, vertical video\",\"taskType\":\"\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"场景_教学楼雨中_无人.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"故事板.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":5,\"imageFile\":\"首帧图.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"_videoFrameCount\":362,\"previewFps\":24}],\"globalCommon\":{\"commonEnabled\":true,\"commonCollapsed\":false,\"prompt\":\"subject_definitions:\\n图片1：林晓角色人设图，黑棕色高马尾、白蓝高中校服、藏蓝百褶裙、红色发带与腕间旧红绳。\\n\\n图片2：陆沉角色人设图，短黑发、高挑清瘦男高中生，白衬衫、深色长裤、黑色校鞋。\\n\\n图片3：安娜角色人设图，深蓝长直发、冷静气质的女高中生，白蓝校服与深色百褶裙。\\n\\n图片4：王老师角色人设图，约30岁知性漂亮的女性高中班主任，长发、眼镜、浅色职业套装与高跟鞋。\\n\\n图片5：怪兽袭击后的雨天教室场景图，空教室、破损窗户、翻倒课桌、碎玻璃、散纸与积水，冷蓝灰雨天光线。\\n\\n\\n\\n\\n音频1：林晓\\n音频2：陆沉\\n音频3：王老师\",\"refs\":[{\"index\":0,\"imageFile\":\"陆沉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"林晓_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"苏婉_人设.png\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[{\"index\":0,\"audioFile\":\"苏婉.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0},{\"index\":1,\"audioFile\":\"林晓.wav\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\",\"durationSec\":0}],\"refVideos\":[]}}}}",
+        "bd_grp_advanced": "高级采样",
+        "steps": 8,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "shift_video": 6,
+        "shift_audio": 3,
+        "bd_grp_perf": "性能",
+        "clear_vram_between_segments": true,
+        "export_source_images": false
+      }
+    },
+    "7": {
+      "class_type": "SaveVideo",
+      "inputs": {
+        "video": [
+          "6",
+          0
+        ],
+        "filename_prefix": "video/RedString_EP02_segments11_12_local_res06_retry",
+        "format": "auto",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    }
+  },
+  "client_id": "47561eff-6b48-4f8f-80ab-4f8d783e4921"
+}

@@ -1,0 +1,11 @@
+{
+  "taskId": "2093382883963273217",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-29T00:59:06.8399218+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_closeup_fast_run_res1_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, resolution ratio/megapixels 1.0, 1376x768, 8 sampler steps, 4-step LoRA 0.7, pure six-section H3 Full-Reference prompt, Picture 3 tight frontal Su Wan running-face first frame, immediate fast close-range approach, no distant wide run-in, crying embrace, exactly two dry girls, three image refs, two voice refs, no storyboard input, refine disconnected"
+}

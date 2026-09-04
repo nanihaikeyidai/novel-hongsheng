@@ -1,0 +1,45 @@
+{
+  "taskId": "2093026917023436801",
+  "status": "SUCCESS",
+  "downloadedFiles": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\output\\ep02\\runninghub\\segment03_two_person\\ep02_segment03_runninghub_01.mp4"
+  ],
+  "completedAt": "2026-08-28T01:34:14.0143166+08:00",
+  "response": {
+    "taskId": "2093026917023436801",
+    "status": "SUCCESS",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": [
+      {
+        "url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com/8e3cb2f6099d5772ed26216d6126f481/output/video/MiniMaxH3_Director_t2v_00001_htqnq_1787852036.mp4",
+        "nodeId": "7",
+        "outputType": "mp4",
+        "text": null
+      }
+    ],
+    "clientId": "",
+    "promptTips": "",
+    "failedReason": {},
+    "usage": {
+      "consumeMoney": null,
+      "consumeCoins": "230",
+      "taskCostTime": "573",
+      "thirdPartyConsumeMoney": null
+    },
+    "parentTaskId": null,
+    "taskUsageList": [
+      {
+        "taskId": "2093026917023436801",
+        "parentTaskId": null,
+        "taskStatus": "SUCCESS",
+        "usage": {
+          "consumeMoney": null,
+          "consumeCoins": "230",
+          "taskCostTime": "573",
+          "thirdPartyConsumeMoney": null
+        }
+      }
+    ]
+  }
+}

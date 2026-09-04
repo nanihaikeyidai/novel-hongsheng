@@ -1,0 +1,11 @@
+{
+  "taskId": "2092950231531606018",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-27T20:19:54.8816737+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment02_teacher_check_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, Picture 6 described as exact first frame, six image refs, no storyboard input, refine disconnected"
+}

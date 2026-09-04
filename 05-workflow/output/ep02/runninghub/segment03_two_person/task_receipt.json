@@ -1,0 +1,11 @@
+{
+  "taskId": "2093026917023436801",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-28T01:24:38.0737557+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment03_two_girls_dry_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "R2V, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, Picture 4 exact first frame, exactly two dry girls, four image refs, two voice refs, no teacher, no storyboard input, refine disconnected"
+}

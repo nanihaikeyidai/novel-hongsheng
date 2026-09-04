@@ -1,0 +1,11 @@
+{
+  "taskId": "2092824296719339522",
+  "initialStatus": "RUNNING",
+  "submittedAt": "2026-08-27T11:59:29.8359332+08:00",
+  "workflowId": "2090984765787820034",
+  "selectedSegment": "ep02_segment02_teacher_check_15s",
+  "durationSeconds": 15,
+  "frameRate": 24,
+  "frameCount": 362,
+  "outputTarget": "1376x768 requested main output, 16:9 horizontal, 8 sampler steps, 4-step LoRA 0.7, refine disconnected"
+}

@@ -1,0 +1,282 @@
+{
+    "22":  {
+               "class_type":  "PathchSageAttentionKJ",
+               "inputs":  {
+                              "sage_attention":  "disabled",
+                              "model":  [
+                                            "24",
+                                            0
+                                        ],
+                              "allow_compile":  false
+                          },
+               "_meta":  {
+                             "title":  "Patch Sage Attention KJ"
+                         }
+           },
+    "12":  {
+               "class_type":  "MiniMaxH3Director",
+               "inputs":  {
+                              "shift_audio":  3,
+                              "seed":  666,
+                              "shift_video":  6.000000000000001,
+                              "export_source_images":  "Ollama",
+                              "minimax_director_ui":  "",
+                              "bd_grp_sample":  "采样设置",
+                              "audio_vae":  [
+                                                "4",
+                                                0
+                                            ],
+                              "total_frames":  362,
+                              "scheduler":  "simple",
+                              "clear_vram_between_segments":  false,
+                              "bd_grp_advanced":  "高级采样",
+                              "model":  [
+                                            "16",
+                                            0
+                                        ],
+                              "height":  768,
+                              "cfg":  1,
+                              "global_prompt":  "subject_definitions:\n\u003cSubject 1\u003e is the single principal identity from \u003cPicture 1\u003e: an approximately 52-year-old adult male school principal with short black-grey hair, rectangular glasses, a dark charcoal-grey suit, light shirt and tie. Inherit only identity, face, age, proportions and clothing; do not inherit the white reference background or its pose. He is the only visible person and remains silent throughout.\n\u003cSubject 2\u003e is the giant bat-like distorted creature from \u003cPicture 2\u003e, with a grey-black body, broad black wings, pointed ears and red eyes. It is visible only as a distorted surveillance-recording image on the monitor; it never becomes physically present in the office and never shares the office space with \u003cSubject 1\u003e.\n\u003cSubject 3\u003e is the rainy principal\u0027s office from \u003cPicture 3\u003e. Inherit the monitor desk, landline telephone, filing cabinets, rain-streaked window, desk layout and cold blue-grey rainy light; do not inherit the photographic rendering style, readable marks or any temporary people.\n\nsummary:\n[reference generation] Generate one continuous 15-second 16:9 horizontal video at 2K-class clarity for EP02 segment 07, using only the three supplied reference images and no first-frame image, storyboard image, audio reference or reference video. Apply a high-detail Japanese anime cinematic look with delicate cel-shaded characters, hand-drawn animation backgrounds, clean stable linework, transparent atmospheric perspective, cold blue-grey rainy light, rain-streaked glass and restrained wet reflections. The principal reviews an abstract surveillance replay, sees the bat-like distortion break through a rainy classroom window on the monitor, then answers an incoming emergency line. The creature remains only inside the monitor image; the caller remains an off-screen male voice.\n\nretention_analysis:\n\u003cSubject 1\u003e: fully_preserved - preserve the principal\u0027s identity, adult male age, rectangular glasses, short black-grey hair, charcoal suit and tense sweaty state; allow only the scripted sitting, leaning, turning and phone actions.\n\u003cSubject 2\u003e: fully_preserved - preserve the distorted creature\u0027s black wings, grey-black body and bat-like silhouette only within the surveillance monitor; do not instantiate it in the office.\n\u003cSubject 3\u003e: fully_preserved - preserve the office\u0027s desk, monitor, landline telephone, cabinets, rainy window, spatial layout and cold blue-grey rainy atmosphere; do not copy photographic texture or readable wall marks.\n\ndetailed_description:\nThe video is 16:9 horizontal, 2K-class, high-detail Japanese anime youth cinematic style, with delicate cel-shaded characters, hand-drawn background art and clean stable linework. Establish a coherent office axis: the principal sits behind the monitor desk, the monitor is directly in front of him, the landline is within reach on the desk, filing cabinets stay behind him and the rain window stays in the background. Exactly one visible person exists: the principal. The caller is never visible and never receives a face, avatar or lip movement.\n\n[Shot 1] From 00:00 to 00:05, begin with a stable medium close shot of \u003cSubject 1\u003e seated alone at \u003cSubject 3\u003e\u0027s monitor desk. He is sweating heavily, his shirt collar slightly damp, breathing fast, and dragging an unreadable abstract progress block across the surveillance replay. Monitor light falls across his tense side profile. The landline remains still on the desk. No readable text, timestamp or real UI appears.\n\n[Shot 2] From 00:05 to 00:10, cut to a fixed close view of the monitor, then return to a restrained close view of the principal\u0027s eyes. \u003cSubject 2\u003e appears only inside the abstract surveillance image: the giant bat-like distortion smashes through a rainy classroom window, black wings and glass fragments sweeping across the monitor image. The monitor image contains no readable text, timestamp or real interface. The principal leans closer, pupils contract and sweat runs along his temple; he stays physically in the office and remains silent.\n\n[Shot 3] From 00:10 to 00:15, cut to a stable side-medium shot of the desk. The landline suddenly rings and vibrates slightly on the tabletop. The principal\u0027s shoulders jerk once; he quickly lifts the receiver, the cord straightens naturally, and he presses it to his right ear while keeping his gaze on the monitor. A low, calm, forceful adult male caller exists only as an off-screen telephone voice (S1) and says once, with no visible caller and no mouth animation: \u003cd\u003e[Chinese] 自然灾害研究所应急处置组。现场有无人员伤亡？\u003c/d\u003e The principal keeps his mouth closed and listens. Stop all major movement by 14.50 seconds, then hold the final pose for at least 0.50 seconds: receiver against his right ear, body rigid, eyes still on the monitor, phone cord grounded on the desk, rainy office unchanged.\n\nNo subtitles, captions, Chinese characters, title cards, speech bubbles, UI, watermark or logo appear in the image. No background music; retain only rain, monitor hum, tense breathing, telephone ring and visible handling sounds.\n\noverall_soundscape:\nContinuous rain against the office window, quiet monitor hum, the principal\u0027s quick breathing, a brief landline ring and vibration, receiver and cord handling sounds, and one off-screen adult male telephone line. Only one voice speaks, and the caller remains off-screen.\n\nnon_diegetic_music:\nN/A",
+                              "timeline_data":  "{\"version\":5,\"editMode\":\"segment\",\"totalFrames\":362,\"frameRate\":24,\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":362,\"width\":0,\"height\":0},\"videoClips\":[],\"global\":{\"taskType\":\"r2v — 参考主体生视频(Reference to Video)\",\"prompt\":\"subject_definitions:\\n\\u003cSubject 1\\u003e is the single principal identity from \\u003cPicture 1\\u003e: an approximately 52-year-old adult male school principal with short black-grey hair, rectangular glasses, a dark charcoal-grey suit, light shirt and tie. Inherit only identity, face, age, proportions and clothing; do not inherit the white reference background or its pose. He is the only visible person and remains silent throughout.\\n\\u003cSubject 2\\u003e is the giant bat-like distorted creature from \\u003cPicture 2\\u003e, with a grey-black body, broad black wings, pointed ears and red eyes. It is visible only as a distorted surveillance-recording image on the monitor; it never becomes physically present in the office and never shares the office space with \\u003cSubject 1\\u003e.\\n\\u003cSubject 3\\u003e is the rainy principal\\u0027s office from \\u003cPicture 3\\u003e. Inherit the monitor desk, landline telephone, filing cabinets, rain-streaked window, desk layout and cold blue-grey rainy light; do not inherit the photographic rendering style, readable marks or any temporary people.\\n\\nsummary:\\n[reference generation] Generate one continuous 15-second 16:9 horizontal video at 2K-class clarity for EP02 segment 07, using only the three supplied reference images and no first-frame image, storyboard image, audio reference or reference video. Apply a high-detail Japanese anime cinematic look with delicate cel-shaded characters, hand-drawn animation backgrounds, clean stable linework, transparent atmospheric perspective, cold blue-grey rainy light, rain-streaked glass and restrained wet reflections. The principal reviews an abstract surveillance replay, sees the bat-like distortion break through a rainy classroom window on the monitor, then answers an incoming emergency line. The creature remains only inside the monitor image; the caller remains an off-screen male voice.\\n\\nretention_analysis:\\n\\u003cSubject 1\\u003e: fully_preserved - preserve the principal\\u0027s identity, adult male age, rectangular glasses, short black-grey hair, charcoal suit and tense sweaty state; allow only the scripted sitting, leaning, turning and phone actions.\\n\\u003cSubject 2\\u003e: fully_preserved - preserve the distorted creature\\u0027s black wings, grey-black body and bat-like silhouette only within the surveillance monitor; do not instantiate it in the office.\\n\\u003cSubject 3\\u003e: fully_preserved - preserve the office\\u0027s desk, monitor, landline telephone, cabinets, rainy window, spatial layout and cold blue-grey rainy atmosphere; do not copy photographic texture or readable wall marks.\\n\\ndetailed_description:\\nThe video is 16:9 horizontal, 2K-class, high-detail Japanese anime youth cinematic style, with delicate cel-shaded characters, hand-drawn background art and clean stable linework. Establish a coherent office axis: the principal sits behind the monitor desk, the monitor is directly in front of him, the landline is within reach on the desk, filing cabinets stay behind him and the rain window stays in the background. Exactly one visible person exists: the principal. The caller is never visible and never receives a face, avatar or lip movement.\\n\\n[Shot 1] From 00:00 to 00:05, begin with a stable medium close shot of \\u003cSubject 1\\u003e seated alone at \\u003cSubject 3\\u003e\\u0027s monitor desk. He is sweating heavily, his shirt collar slightly damp, breathing fast, and dragging an unreadable abstract progress block across the surveillance replay. Monitor light falls across his tense side profile. The landline remains still on the desk. No readable text, timestamp or real UI appears.\\n\\n[Shot 2] From 00:05 to 00:10, cut to a fixed close view of the monitor, then return to a restrained close view of the principal\\u0027s eyes. \\u003cSubject 2\\u003e appears only inside the abstract surveillance image: the giant bat-like distortion smashes through a rainy classroom window, black wings and glass fragments sweeping across the monitor image. The monitor image contains no readable text, timestamp or real interface. The principal leans closer, pupils contract and sweat runs along his temple; he stays physically in the office and remains silent.\\n\\n[Shot 3] From 00:10 to 00:15, cut to a stable side-medium shot of the desk. The landline suddenly rings and vibrates slightly on the tabletop. The principal\\u0027s shoulders jerk once; he quickly lifts the receiver, the cord straightens naturally, and he presses it to his right ear while keeping his gaze on the monitor. A low, calm, forceful adult male caller exists only as an off-screen telephone voice (S1) and says once, with no visible caller and no mouth animation: \\u003cd\\u003e[Chinese] 自然灾害研究所应急处置组。现场有无人员伤亡？\\u003c/d\\u003e The principal keeps his mouth closed and listens. Stop all major movement by 14.50 seconds, then hold the final pose for at least 0.50 seconds: receiver against his right ear, body rigid, eyes still on the monitor, phone cord grounded on the desk, rainy office unchanged.\\n\\nNo subtitles, captions, Chinese characters, title cards, speech bubbles, UI, watermark or logo appear in the image. No background music; retain only rain, monitor hum, tense breathing, telephone ring and visible handling sounds.\\n\\noverall_soundscape:\\nContinuous rain against the office window, quiet monitor hum, the principal\\u0027s quick breathing, a brief landline ring and vibration, receiver and cord handling sounds, and one off-screen adult male telephone line. Only one voice speaks, and the caller remains off-screen.\\n\\nnon_diegetic_music:\\nN/A\",\"refs\":[{\"index\":0,\"imageFile\":\"openapi/9fcfd4e1f274300e953268d0c7754281965be120b40347904ef5f4084df4d339.png\",\"fileName\":\"openapi/9fcfd4e1f274300e953268d0c7754281965be120b40347904ef5f4084df4d339.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"openapi/40b857588d09f7371e2c7b53ffaf4fa751a329b6c9e59b761085de6fe1c5a6e0.png\",\"fileName\":\"openapi/40b857588d09f7371e2c7b53ffaf4fa751a329b6c9e59b761085de6fe1c5a6e0.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"openapi/9b2be3c1635f17072ed726da3a1f4cec4a31356c59e2e5b2c09f4228f312a198.png\",\"fileName\":\"openapi/9b2be3c1635f17072ed726da3a1f4cec4a31356c59e2e5b2c09f4228f312a198.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"continuousReference\":false,\"genImage\":{\"imageFile\":\"\"},\"sourceWidth\":768,\"sourceHeight\":1024,\"refAudios\":[],\"refVideos\":[],\"commonEnabled\":true,\"commonCollapsed\":false},\"output\":{\"mode\":\"fixed\",\"aspectRatio\":\"16:9 (宽屏)\",\"megapixels\":0.9,\"multiple\":32,\"longEdge\":1280,\"width\":1280,\"height\":736,\"maxExportFrames\":0,\"exportMode\":\"all\",\"audioMode\":\"generate\",\"refImageSize\":\"match\",\"continuityEnabled\":false,\"continuityOverlapFrames\":5},\"runSelectEnabled\":true,\"runSelection\":[0],\"segments\":[{\"id\":\"ep02_segment07_no_first_frame\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n\\u003cSubject 1\\u003e is the single principal identity from \\u003cPicture 1\\u003e: an approximately 52-year-old adult male school principal with short black-grey hair, rectangular glasses, a dark charcoal-grey suit, light shirt and tie. Inherit only identity, face, age, proportions and clothing; do not inherit the white reference background or its pose. He is the only visible person and remains silent throughout.\\n\\u003cSubject 2\\u003e is the giant bat-like distorted creature from \\u003cPicture 2\\u003e, with a grey-black body, broad black wings, pointed ears and red eyes. It is visible only as a distorted surveillance-recording image on the monitor; it never becomes physically present in the office and never shares the office space with \\u003cSubject 1\\u003e.\\n\\u003cSubject 3\\u003e is the rainy principal\\u0027s office from \\u003cPicture 3\\u003e. Inherit the monitor desk, landline telephone, filing cabinets, rain-streaked window, desk layout and cold blue-grey rainy light; do not inherit the photographic rendering style, readable marks or any temporary people.\\n\\nsummary:\\n[reference generation] Generate one continuous 15-second 16:9 horizontal video at 2K-class clarity for EP02 segment 07, using only the three supplied reference images and no first-frame image, storyboard image, audio reference or reference video. Apply a high-detail Japanese anime cinematic look with delicate cel-shaded characters, hand-drawn animation backgrounds, clean stable linework, transparent atmospheric perspective, cold blue-grey rainy light, rain-streaked glass and restrained wet reflections. The principal reviews an abstract surveillance replay, sees the bat-like distortion break through a rainy classroom window on the monitor, then answers an incoming emergency line. The creature remains only inside the monitor image; the caller remains an off-screen male voice.\\n\\nretention_analysis:\\n\\u003cSubject 1\\u003e: fully_preserved - preserve the principal\\u0027s identity, adult male age, rectangular glasses, short black-grey hair, charcoal suit and tense sweaty state; allow only the scripted sitting, leaning, turning and phone actions.\\n\\u003cSubject 2\\u003e: fully_preserved - preserve the distorted creature\\u0027s black wings, grey-black body and bat-like silhouette only within the surveillance monitor; do not instantiate it in the office.\\n\\u003cSubject 3\\u003e: fully_preserved - preserve the office\\u0027s desk, monitor, landline telephone, cabinets, rainy window, spatial layout and cold blue-grey rainy atmosphere; do not copy photographic texture or readable wall marks.\\n\\ndetailed_description:\\nThe video is 16:9 horizontal, 2K-class, high-detail Japanese anime youth cinematic style, with delicate cel-shaded characters, hand-drawn background art and clean stable linework. Establish a coherent office axis: the principal sits behind the monitor desk, the monitor is directly in front of him, the landline is within reach on the desk, filing cabinets stay behind him and the rain window stays in the background. Exactly one visible person exists: the principal. The caller is never visible and never receives a face, avatar or lip movement.\\n\\n[Shot 1] From 00:00 to 00:05, begin with a stable medium close shot of \\u003cSubject 1\\u003e seated alone at \\u003cSubject 3\\u003e\\u0027s monitor desk. He is sweating heavily, his shirt collar slightly damp, breathing fast, and dragging an unreadable abstract progress block across the surveillance replay. Monitor light falls across his tense side profile. The landline remains still on the desk. No readable text, timestamp or real UI appears.\\n\\n[Shot 2] From 00:05 to 00:10, cut to a fixed close view of the monitor, then return to a restrained close view of the principal\\u0027s eyes. \\u003cSubject 2\\u003e appears only inside the abstract surveillance image: the giant bat-like distortion smashes through a rainy classroom window, black wings and glass fragments sweeping across the monitor image. The monitor image contains no readable text, timestamp or real interface. The principal leans closer, pupils contract and sweat runs along his temple; he stays physically in the office and remains silent.\\n\\n[Shot 3] From 00:10 to 00:15, cut to a stable side-medium shot of the desk. The landline suddenly rings and vibrates slightly on the tabletop. The principal\\u0027s shoulders jerk once; he quickly lifts the receiver, the cord straightens naturally, and he presses it to his right ear while keeping his gaze on the monitor. A low, calm, forceful adult male caller exists only as an off-screen telephone voice (S1) and says once, with no visible caller and no mouth animation: \\u003cd\\u003e[Chinese] 自然灾害研究所应急处置组。现场有无人员伤亡？\\u003c/d\\u003e The principal keeps his mouth closed and listens. Stop all major movement by 14.50 seconds, then hold the final pose for at least 0.50 seconds: receiver against his right ear, body rigid, eyes still on the monitor, phone cord grounded on the desk, rainy office unchanged.\\n\\nNo subtitles, captions, Chinese characters, title cards, speech bubbles, UI, watermark or logo appear in the image. No background music; retain only rain, monitor hum, tense breathing, telephone ring and visible handling sounds.\\n\\noverall_soundscape:\\nContinuous rain against the office window, quiet monitor hum, the principal\\u0027s quick breathing, a brief landline ring and vibration, receiver and cord handling sounds, and one off-screen adult male telephone line. Only one voice speaks, and the caller remains off-screen.\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, real surveillance UI, timestamps, report text, storyboard grid, panel borders, numbers, arrows, production annotations, second visible person, caller on screen, caller face, caller avatar, caller mouth, phone-call video window, creature physically inside the office, creature leaving the monitor, extra creature, duplicate principal, identity drift, wrong age, wrong clothing, missing glasses, sweat disappearing, floating telephone, broken phone cord, prop teleportation, spatial flip, axis crossing, camera shake, sudden zoom, motion blur, unstable final frame, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny weather, warm sunlight, background music, BGM, watermark, logo\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\"}],\"timelineMode\":\"prompt_batch\",\"width\":1376,\"height\":768,\"refMaxSize\":1376,\"gen\":{\"defaultFrameCount\":124},\"keyframes\":[],\"durationSec\":15,\"shots\":[],\"liveTaePreview\":true,\"batchDetailMode\":\"solo\",\"batchWorkspaces\":{\"r2v\":{\"selectedIndex\":0,\"editMode\":\"segment\",\"runSelectEnabled\":true,\"runSelection\":[0],\"segments\":[{\"id\":\"ep02_segment07_no_first_frame\",\"start\":0,\"length\":362,\"frameCount\":362,\"durationSec\":15,\"prompt\":\"subject_definitions:\\n\\u003cSubject 1\\u003e is the single principal identity from \\u003cPicture 1\\u003e: an approximately 52-year-old adult male school principal with short black-grey hair, rectangular glasses, a dark charcoal-grey suit, light shirt and tie. Inherit only identity, face, age, proportions and clothing; do not inherit the white reference background or its pose. He is the only visible person and remains silent throughout.\\n\\u003cSubject 2\\u003e is the giant bat-like distorted creature from \\u003cPicture 2\\u003e, with a grey-black body, broad black wings, pointed ears and red eyes. It is visible only as a distorted surveillance-recording image on the monitor; it never becomes physically present in the office and never shares the office space with \\u003cSubject 1\\u003e.\\n\\u003cSubject 3\\u003e is the rainy principal\\u0027s office from \\u003cPicture 3\\u003e. Inherit the monitor desk, landline telephone, filing cabinets, rain-streaked window, desk layout and cold blue-grey rainy light; do not inherit the photographic rendering style, readable marks or any temporary people.\\n\\nsummary:\\n[reference generation] Generate one continuous 15-second 16:9 horizontal video at 2K-class clarity for EP02 segment 07, using only the three supplied reference images and no first-frame image, storyboard image, audio reference or reference video. Apply a high-detail Japanese anime cinematic look with delicate cel-shaded characters, hand-drawn animation backgrounds, clean stable linework, transparent atmospheric perspective, cold blue-grey rainy light, rain-streaked glass and restrained wet reflections. The principal reviews an abstract surveillance replay, sees the bat-like distortion break through a rainy classroom window on the monitor, then answers an incoming emergency line. The creature remains only inside the monitor image; the caller remains an off-screen male voice.\\n\\nretention_analysis:\\n\\u003cSubject 1\\u003e: fully_preserved - preserve the principal\\u0027s identity, adult male age, rectangular glasses, short black-grey hair, charcoal suit and tense sweaty state; allow only the scripted sitting, leaning, turning and phone actions.\\n\\u003cSubject 2\\u003e: fully_preserved - preserve the distorted creature\\u0027s black wings, grey-black body and bat-like silhouette only within the surveillance monitor; do not instantiate it in the office.\\n\\u003cSubject 3\\u003e: fully_preserved - preserve the office\\u0027s desk, monitor, landline telephone, cabinets, rainy window, spatial layout and cold blue-grey rainy atmosphere; do not copy photographic texture or readable wall marks.\\n\\ndetailed_description:\\nThe video is 16:9 horizontal, 2K-class, high-detail Japanese anime youth cinematic style, with delicate cel-shaded characters, hand-drawn background art and clean stable linework. Establish a coherent office axis: the principal sits behind the monitor desk, the monitor is directly in front of him, the landline is within reach on the desk, filing cabinets stay behind him and the rain window stays in the background. Exactly one visible person exists: the principal. The caller is never visible and never receives a face, avatar or lip movement.\\n\\n[Shot 1] From 00:00 to 00:05, begin with a stable medium close shot of \\u003cSubject 1\\u003e seated alone at \\u003cSubject 3\\u003e\\u0027s monitor desk. He is sweating heavily, his shirt collar slightly damp, breathing fast, and dragging an unreadable abstract progress block across the surveillance replay. Monitor light falls across his tense side profile. The landline remains still on the desk. No readable text, timestamp or real UI appears.\\n\\n[Shot 2] From 00:05 to 00:10, cut to a fixed close view of the monitor, then return to a restrained close view of the principal\\u0027s eyes. \\u003cSubject 2\\u003e appears only inside the abstract surveillance image: the giant bat-like distortion smashes through a rainy classroom window, black wings and glass fragments sweeping across the monitor image. The monitor image contains no readable text, timestamp or real interface. The principal leans closer, pupils contract and sweat runs along his temple; he stays physically in the office and remains silent.\\n\\n[Shot 3] From 00:10 to 00:15, cut to a stable side-medium shot of the desk. The landline suddenly rings and vibrates slightly on the tabletop. The principal\\u0027s shoulders jerk once; he quickly lifts the receiver, the cord straightens naturally, and he presses it to his right ear while keeping his gaze on the monitor. A low, calm, forceful adult male caller exists only as an off-screen telephone voice (S1) and says once, with no visible caller and no mouth animation: \\u003cd\\u003e[Chinese] 自然灾害研究所应急处置组。现场有无人员伤亡？\\u003c/d\\u003e The principal keeps his mouth closed and listens. Stop all major movement by 14.50 seconds, then hold the final pose for at least 0.50 seconds: receiver against his right ear, body rigid, eyes still on the monitor, phone cord grounded on the desk, rainy office unchanged.\\n\\nNo subtitles, captions, Chinese characters, title cards, speech bubbles, UI, watermark or logo appear in the image. No background music; retain only rain, monitor hum, tense breathing, telephone ring and visible handling sounds.\\n\\noverall_soundscape:\\nContinuous rain against the office window, quiet monitor hum, the principal\\u0027s quick breathing, a brief landline ring and vibration, receiver and cord handling sounds, and one off-screen adult male telephone line. Only one voice speaks, and the caller remains off-screen.\\n\\nnon_diegetic_music:\\nN/A\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable text, real surveillance UI, timestamps, report text, storyboard grid, panel borders, numbers, arrows, production annotations, second visible person, caller on screen, caller face, caller avatar, caller mouth, phone-call video window, creature physically inside the office, creature leaving the monitor, extra creature, duplicate principal, identity drift, wrong age, wrong clothing, missing glasses, sweat disappearing, floating telephone, broken phone cord, prop teleportation, spatial flip, axis crossing, camera shake, sudden zoom, motion blur, unstable final frame, photorealistic, live action, 3D render, Western comic, childish cartoon, oil painting, sunny weather, warm sunlight, background music, BGM, watermark, logo\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\"}],\"globalCommon\":{\"commonEnabled\":true,\"commonCollapsed\":false,\"prompt\":\"subject_definitions:\\n\\u003cSubject 1\\u003e is the single principal identity from \\u003cPicture 1\\u003e: an approximately 52-year-old adult male school principal with short black-grey hair, rectangular glasses, a dark charcoal-grey suit, light shirt and tie. Inherit only identity, face, age, proportions and clothing; do not inherit the white reference background or its pose. He is the only visible person and remains silent throughout.\\n\\u003cSubject 2\\u003e is the giant bat-like distorted creature from \\u003cPicture 2\\u003e, with a grey-black body, broad black wings, pointed ears and red eyes. It is visible only as a distorted surveillance-recording image on the monitor; it never becomes physically present in the office and never shares the office space with \\u003cSubject 1\\u003e.\\n\\u003cSubject 3\\u003e is the rainy principal\\u0027s office from \\u003cPicture 3\\u003e. Inherit the monitor desk, landline telephone, filing cabinets, rain-streaked window, desk layout and cold blue-grey rainy light; do not inherit the photographic rendering style, readable marks or any temporary people.\\n\\nsummary:\\n[reference generation] Generate one continuous 15-second 16:9 horizontal video at 2K-class clarity for EP02 segment 07, using only the three supplied reference images and no first-frame image, storyboard image, audio reference or reference video. Apply a high-detail Japanese anime cinematic look with delicate cel-shaded characters, hand-drawn animation backgrounds, clean stable linework, transparent atmospheric perspective, cold blue-grey rainy light, rain-streaked glass and restrained wet reflections. The principal reviews an abstract surveillance replay, sees the bat-like distortion break through a rainy classroom window on the monitor, then answers an incoming emergency line. The creature remains only inside the monitor image; the caller remains an off-screen male voice.\\n\\nretention_analysis:\\n\\u003cSubject 1\\u003e: fully_preserved - preserve the principal\\u0027s identity, adult male age, rectangular glasses, short black-grey hair, charcoal suit and tense sweaty state; allow only the scripted sitting, leaning, turning and phone actions.\\n\\u003cSubject 2\\u003e: fully_preserved - preserve the distorted creature\\u0027s black wings, grey-black body and bat-like silhouette only within the surveillance monitor; do not instantiate it in the office.\\n\\u003cSubject 3\\u003e: fully_preserved - preserve the office\\u0027s desk, monitor, landline telephone, cabinets, rainy window, spatial layout and cold blue-grey rainy atmosphere; do not copy photographic texture or readable wall marks.\\n\\ndetailed_description:\\nThe video is 16:9 horizontal, 2K-class, high-detail Japanese anime youth cinematic style, with delicate cel-shaded characters, hand-drawn background art and clean stable linework. Establish a coherent office axis: the principal sits behind the monitor desk, the monitor is directly in front of him, the landline is within reach on the desk, filing cabinets stay behind him and the rain window stays in the background. Exactly one visible person exists: the principal. The caller is never visible and never receives a face, avatar or lip movement.\\n\\n[Shot 1] From 00:00 to 00:05, begin with a stable medium close shot of \\u003cSubject 1\\u003e seated alone at \\u003cSubject 3\\u003e\\u0027s monitor desk. He is sweating heavily, his shirt collar slightly damp, breathing fast, and dragging an unreadable abstract progress block across the surveillance replay. Monitor light falls across his tense side profile. The landline remains still on the desk. No readable text, timestamp or real UI appears.\\n\\n[Shot 2] From 00:05 to 00:10, cut to a fixed close view of the monitor, then return to a restrained close view of the principal\\u0027s eyes. \\u003cSubject 2\\u003e appears only inside the abstract surveillance image: the giant bat-like distortion smashes through a rainy classroom window, black wings and glass fragments sweeping across the monitor image. The monitor image contains no readable text, timestamp or real interface. The principal leans closer, pupils contract and sweat runs along his temple; he stays physically in the office and remains silent.\\n\\n[Shot 3] From 00:10 to 00:15, cut to a stable side-medium shot of the desk. The landline suddenly rings and vibrates slightly on the tabletop. The principal\\u0027s shoulders jerk once; he quickly lifts the receiver, the cord straightens naturally, and he presses it to his right ear while keeping his gaze on the monitor. A low, calm, forceful adult male caller exists only as an off-screen telephone voice (S1) and says once, with no visible caller and no mouth animation: \\u003cd\\u003e[Chinese] 自然灾害研究所应急处置组。现场有无人员伤亡？\\u003c/d\\u003e The principal keeps his mouth closed and listens. Stop all major movement by 14.50 seconds, then hold the final pose for at least 0.50 seconds: receiver against his right ear, body rigid, eyes still on the monitor, phone cord grounded on the desk, rainy office unchanged.\\n\\nNo subtitles, captions, Chinese characters, title cards, speech bubbles, UI, watermark or logo appear in the image. No background music; retain only rain, monitor hum, tense breathing, telephone ring and visible handling sounds.\\n\\noverall_soundscape:\\nContinuous rain against the office window, quiet monitor hum, the principal\\u0027s quick breathing, a brief landline ring and vibration, receiver and cord handling sounds, and one off-screen adult male telephone line. Only one voice speaks, and the caller remains off-screen.\\n\\nnon_diegetic_music:\\nN/A\",\"refs\":[{\"index\":0,\"imageFile\":\"openapi/9fcfd4e1f274300e953268d0c7754281965be120b40347904ef5f4084df4d339.png\",\"fileName\":\"openapi/9fcfd4e1f274300e953268d0c7754281965be120b40347904ef5f4084df4d339.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"openapi/40b857588d09f7371e2c7b53ffaf4fa751a329b6c9e59b761085de6fe1c5a6e0.png\",\"fileName\":\"openapi/40b857588d09f7371e2c7b53ffaf4fa751a329b6c9e59b761085de6fe1c5a6e0.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"openapi/9b2be3c1635f17072ed726da3a1f4cec4a31356c59e2e5b2c09f4228f312a198.png\",\"fileName\":\"openapi/9b2be3c1635f17072ed726da3a1f4cec4a31356c59e2e5b2c09f4228f312a198.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[]}}},\"videoWorkspaces\":{\"rv2v\":{\"selectedIndex\":0,\"currentFrame\":0,\"editMode\":\"global\",\"runSelectEnabled\":false,\"runSelection\":[],\"totalFrames\":372,\"frameRate\":24,\"storageWidth\":864,\"storageHeight\":32,\"segments\":[],\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":0,\"width\":0,\"height\":0,\"storageWidth\":864,\"storageHeight\":32},\"videoClips\":[],\"globalCommon\":{\"commonEnabled\":false,\"commonCollapsed\":false,\"prompt\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[]}}}}",
+                              "frame_rate":  24,
+                              "steps":  8,
+                              "video_vae":  [
+                                                "3",
+                                                0
+                                            ],
+                              "sampler":  "euler",
+                              "bd_grp_perf":  "性能",
+                              "width":  1376,
+                              "ref_max_size":  1376,
+                              "task_type":  "r2v — 参考主体生视频(Reference to Video)",
+                              "clip":  [
+                                           "2",
+                                           0
+                                       ]
+                          },
+               "_meta":  {
+                             "title":  "MiniMaxH3Director"
+                         }
+           },
+    "23":  {
+               "class_type":  "MiniMaxH3MemoryEfficientSageAttentionPatch",
+               "inputs":  {
+                              "model":  [
+                                            "22",
+                                            0
+                                        ]
+                          },
+               "_meta":  {
+                             "title":  "MiniMax H3 Memory Efficient Sage Attention Patch"
+                         }
+           },
+    "24":  {
+               "class_type":  "LoraLoaderModelOnly",
+               "inputs":  {
+                              "lora_name":  "minimax_h3_fl2v_turbo_4step_v1.1_768p_comfyui_bf16.safetensors",
+                              "strength_model":  1,
+                              "model":  [
+                                            "21",
+                                            0
+                                        ]
+                          },
+               "_meta":  {
+                             "title":  "Load LoRA"
+                         }
+           },
+    "26":  {
+               "class_type":  "LoraLoaderModelOnly",
+               "inputs":  {
+                              "lora_name":  "Minimax_h3_fl2v_turbo_4step_v1.1_768p_comfyui_bf16_0825.safetensors",
+                              "strength_model":  0.7000000000000002,
+                              "model":  [
+                                            "1",
+                                            0
+                                        ]
+                          },
+               "_meta":  {
+                             "title":  "Load LoRA"
+                         }
+           },
+    "16":  {
+               "class_type":  "MiniMaxH3MemoryEfficientSageAttentionPatch",
+               "inputs":  {
+                              "model":  [
+                                            "17",
+                                            0
+                                        ]
+                          },
+               "_meta":  {
+                             "title":  "MiniMax H3 Memory Efficient Sage Attention Patch"
+                         }
+           },
+    "17":  {
+               "class_type":  "PathchSageAttentionKJ",
+               "inputs":  {
+                              "sage_attention":  "auto",
+                              "model":  [
+                                            "26",
+                                            0
+                                        ],
+                              "allow_compile":  false
+                          },
+               "_meta":  {
+                             "title":  "Patch Sage Attention KJ"
+                         }
+           },
+    "18":  {
+               "class_type":  "MiniMaxH3DirectorRefine",
+               "inputs":  {
+                              "aspect_ratio":  "16:9 (宽屏)",
+                              "refine_model":  [
+                                                   "23",
+                                                   0
+                                               ],
+                              "megapixels":  1,
+                              "upscale_model":  [
+                                                    "19",
+                                                    0
+                                                ],
+                              "latent_upscale_model":  0.25,
+                              "seed_mode":  "inherit",
+                              "sampler":  "euler",
+                              "mode":  "upscale",
+                              "passes":  1,
+                              "width":  1376,
+                              "skip_fl2v":  true,
+                              "sigmas":  [
+                                             "20",
+                                             0
+                                         ],
+                              "upscale_method":  "lanczos",
+                              "height":  768
+                          },
+               "_meta":  {
+                             "title":  "MiniMax H3 Director Refine"
+                         }
+           },
+    "19":  {
+               "class_type":  "UpscaleModelLoader",
+               "inputs":  {
+                              "model_name":  "4x-UltraSharp.pth"
+                          },
+               "_meta":  {
+                             "title":  "Load Upscale Model"
+                         }
+           },
+    "1":  {
+              "class_type":  "UNETLoader",
+              "inputs":  {
+                             "weight_dtype":  "default",
+                             "unet_name":  "minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+                         },
+              "_meta":  {
+                            "title":  "MiniMax H3 UNET"
+                        }
+          },
+    "2":  {
+              "class_type":  "CLIPLoader",
+              "inputs":  {
+                             "clip_name":  "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+                             "type":  "minimax",
+                             "device":  "default"
+                         },
+              "_meta":  {
+                            "title":  "CLIP (minimax / Qwen3-VL)"
+                        }
+          },
+    "3":  {
+              "class_type":  "VAELoader",
+              "inputs":  {
+                             "vae_name":  "minimax_h3_video_vae_fp16.safetensors"
+                         },
+              "_meta":  {
+                            "title":  "Video VAE"
+                        }
+          },
+    "4":  {
+              "class_type":  "VAELoader",
+              "inputs":  {
+                             "vae_name":  "minimax_h3_audio_vae_fp32.safetensors"
+                         },
+              "_meta":  {
+                            "title":  "Audio VAE"
+                        }
+          },
+    "6":  {
+              "class_type":  "CreateVideo",
+              "inputs":  {
+                             "images":  [
+                                            "12",
+                                            0
+                                        ],
+                             "fps":  [
+                                         "12",
+                                         2
+                                     ],
+                             "audio":  [
+                                           "12",
+                                           1
+                                       ],
+                             "bit_depth":  8
+                         },
+              "_meta":  {
+                            "title":  "Create Video"
+                        }
+          },
+    "7":  {
+              "class_type":  "SaveVideo",
+              "inputs":  {
+                             "codec":  "auto",
+                             "filename_prefix":  "video/MiniMaxH3_Director_t2v",
+                             "fw_video_preview":  "",
+                             "format":  "auto",
+                             "video":  [
+                                           "6",
+                                           0
+                                       ],
+                             "video-preview":  ""
+                         },
+              "_meta":  {
+                            "title":  "💾 Save Video"
+                        }
+          },
+    "8":  {
+              "class_type":  "PreviewAny",
+              "inputs":  {
+                             "preview":  "MiniMax H3 Director [批量生成 (r2v)] (segment): 1 segment(s), 362 frames @ 24.00 fps\nOutput: 864×480 (fixed)\nGlobal task: 参考主体生视频(Reference to Video)\n  #1 [0:362] 362f — r2v — subject_definitions:\n\n\n【参考图固定定义】本段只使用4张参考图：\u003cPicture 1\u003e  为陆沉的…\n\nExecution path: ComfyUI official MiniMax H3\nAudio: generate — decode MiniMax H3 AV latent audio.\nSegment continuity: OFF — official MiniMax H3 per-segment path (no motion-context pin/patch/trim; r2v/v2v/rv2v use stock ReferenceToVideo).\nSegment 1/1: r2v — Reference-to AV — subject images (+ optional tags) in prompt (MiniMax H3) (~6 ref image(s), 0 ref video(s)) (362 frames, seed=666)\n\nGenerated audio: decoded from MiniMax H3 AV latent (frame-aligned to picture / timeline fps).\n\nSource images: fallback to generated output (No video clips in MiniMax H3 Director timeline.).\n\nimages_pre_refine: same as images (Refine node not connected).\n\n有问题联系作者：AI搅拌手  QQ交流群：551482703",
+                             "source":  [
+                                            "12",
+                                            5
+                                        ]
+                         },
+              "_meta":  {
+                            "title":  "Director 运行报告"
+                        }
+          },
+    "20":  {
+               "class_type":  "BasicScheduler",
+               "inputs":  {
+                              "scheduler":  "beta",
+                              "denoise":  0.25000000000000006,
+                              "model":  [
+                                            "23",
+                                            0
+                                        ],
+                              "steps":  3
+                          },
+               "_meta":  {
+                             "title":  "BasicScheduler"
+                         }
+           },
+    "21":  {
+               "class_type":  "UNETLoader",
+               "inputs":  {
+                              "weight_dtype":  "default",
+                              "unet_name":  "minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+                          },
+               "_meta":  {
+                             "title":  "MiniMax H3 UNET"
+                         }
+           }
+}

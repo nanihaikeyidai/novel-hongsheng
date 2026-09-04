@@ -1,0 +1,68 @@
+{
+  "episode": "EP02",
+  "segment": "17",
+  "title": "发现目标人物",
+  "status": "generated_pending_user_review",
+  "storyboard": {
+    "path": "故事板.png",
+    "sha256": "4758B4DE9EA15899DF788A3CC1BA08AAA782906C658EB8D85C3DC2AA7D08A77E",
+    "layout": "16:9横屏六宫格（3列×2行）"
+  },
+  "previous_segment": {
+    "segment": "16",
+    "expected_exit": "林晓把黑伞塞给陆沉后，与苏婉共伞跑下台阶；陆沉留在门厅，尚未来得及说谢谢。",
+    "approved_storyboard_registered": false,
+    "continuity_note": "片段16旧故事板早于正式剧本本次修订，仅继承正式剧本中的黑伞交接结果，不把旧图当作已审核像素基线。"
+  },
+  "entry_state": {
+    "time_transition": "自然时间跳切，陆沉已离校并走上回家道路",
+    "lu_chen": {
+      "occupancy": "校外人行道",
+      "position": "调查车前方，画面纵深中央",
+      "facing": "背对调查车，沿回家方向前行",
+      "clothing": "白蓝高中校服，黑色长裤，白鞋；黑伞遮挡下衣服不湿透",
+      "held_prop": "林晓的黑色雨伞，伞柄系磨旧红绳与小木珠",
+      "carried_prop": "旧书包"
+    },
+    "investigator": {
+      "occupancy": "ND调查车驾驶位",
+      "position": "车内前景",
+      "facing": "越过方向盘看向前挡风玻璃外的陆沉",
+      "clothing": "深蓝外套、灰色衬衫、深色长裤",
+      "held_prop": "无"
+    },
+    "vehicle": {
+      "type": "深蓝黑色ND调查SUV",
+      "position": "道路一侧，位于陆沉后方",
+      "facing": "与陆沉步行方向一致",
+      "motion": "停靠，未发动跟随"
+    },
+    "environment": "持续降雨，冷蓝灰天光，挡风玻璃雨痕，湿路反射，学校建筑在远后方"
+  },
+  "panel_states": [
+    {"panel": 1, "event": "建立调查车内观察视角与陆沉前方位置", "new_subject": false},
+    {"panel": 2, "event": "雨刷扫过，陆沉背影被短暂看清", "new_subject": false},
+    {"panel": 3, "event": "调查员确认目标，视线锁定陆沉", "new_subject": false},
+    {"panel": 4, "event": "调查员拿起对讲机，主要手部位移完成", "new_subject": false},
+    {"panel": 5, "event": "调查员按键汇报，姿态与构图稳定", "new_subject": false},
+    {"panel": 6, "event": "汇报结束后继续观察，保持同机位同景别", "new_subject": false}
+  ],
+  "exit_state": {
+    "lu_chen": "仍撑黑伞沿回家方向步行，背对调查车，不回头",
+    "investigator": "仍坐驾驶位，举着对讲机，视线锁住陆沉",
+    "vehicle": "仍停靠路边，未启动",
+    "environment": "雨势、挡风玻璃雨痕和冷蓝灰光线保持不变",
+    "dialogue": "调查员：发现目标人物。",
+    "camera": "车内前景调查员与挡风玻璃中央陆沉的双层构图稳定停留"
+  },
+  "validation": {
+    "internal_panel_continuity": "passed_visual_review",
+    "subject_count": "passed：仅陆沉与一名调查员",
+    "screen_direction": "passed：陆沉始终背向调查车沿同一方向步行",
+    "vehicle_occupancy": "passed：调查员始终位于驾驶位，无新增乘员",
+    "final_three_panels": "passed：同机位完成拿起对讲机、汇报与稳定停留",
+    "text_free_frame": "passed：无字幕、气泡、标题或可读画面文字",
+    "previous_segment_pixel_match": "blocked_by_missing_approved_baseline",
+    "user_approval": "pending"
+  }
+}
