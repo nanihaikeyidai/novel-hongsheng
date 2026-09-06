@@ -1,0 +1,5 @@
+interface:
+  display_name: "《红绳》MiniMax 文戏"
+  short_description: "把《红绳》文戏拆成连续可生成的 10–15 秒单元"
+  default_prompt: "Use $redstring-minimax-drama-prompt to split this Red String drama scene into MiniMax 10–15 second units and write the first continuity-safe production prompt."
+

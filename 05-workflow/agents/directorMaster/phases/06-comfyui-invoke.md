@@ -1,8 +1,28 @@
-# 阶段 06：ComfyUI 导演台工作流调用
+# 阶段 06：工作流调用（本地 ComfyUI / RunningHub 云端）
 
-> 触发命令：`/render`
+> 触发命令：`/render`（默认本地）、`/rh` 或 `/render rh`（云端 RunningHub）
 > 目标：将已通过校验的 H3 提示词和绑定素材组装为 `timeline_data`，提交到 MiniMaxH3Director 导演台工作流，批量生成视频片段。
 > 前置产出物：提示词 + 素材映射表
+> 云端操作详细指南：`references/runninghub-guide.md`
+> 插件技术参考：`references/minimax-h3-director-guide.md`
+
+---
+
+## 导演台插件核心能力（速查）
+
+本项目使用 **MiniMax H3 Director** 插件（[AIMixer/ComfyUI_MiniMaxH3_Director](https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director)），核心能力：
+
+| 能力 | 红绳项目用法 |
+|---|---|
+| **r2v 参考主体模式** | 固定使用，公共参数=全局素材，素材组=分段 |
+| **公共参数** | 全局参考图≤5张 + 全局音频≤3条 + 全局素材说明 |
+| **素材组** | 每个15秒片段=一个素材组，追加故事板为图片6+ |
+| **段间引导** | `continuityFromPrev=true`，上下文22帧，实现分段连续性 |
+| **二采 Refine** | 工作流已外接，8步一采 + 精修，输出 `images`（终稿）和 `images_pre_refine`（一采） |
+| **原生音频** | 同时接 video_vae + audio_vae，自动生成立体声音频 |
+| **选择运行** | 可只跑勾选的分段，便于调试 |
+
+**模型硬约束**：CLIP type 必须选 `minimax`；r2v 必须用 `ref2va` UNET；必须同时接 video_vae 和 audio_vae。
 
 ---
 
@@ -168,18 +188,40 @@ subject_definitions:
 - 5 秒 @ 24fps = 120 帧，工作流实际使用 124 帧
 - 总帧数 = 所有分段 length 之和
 
-### 第三步：提交到 ComfyUI
+### 第三步：选择渲染通道并提交
 
-#### 本地 ComfyUI 调用（默认）
+根据用户指定的渲染通道选择本地或云端。**用户未指定时默认本地 ComfyUI**；用户输入 `/rh`、`/runninghub`、`/cloud` 或说"用 RH/云端生成"时使用 RunningHub。
 
-1. 确认 ComfyUI 已启动：`http://127.0.0.1:8188`（安装路径：`F:\Work-Fisher纯净包2026.8.7\ComfyUI`）
+#### 通道 A：本地 ComfyUI（默认）
+
+1. 确认 ComfyUI 已启动：`http://127.0.0.1:8188`（安装路径：`F:\Work-Fisher纯净包2026.8.7\ComfyUI`，Python 环境：`F:\Work-Fisher纯净包2026.8.7\python\python.exe`）
 2. 将全局参考图和参考音频复制到 `F:\Work-Fisher纯净包2026.8.7\ComfyUI\input\` 目录
 3. 加载工作流：`agents/minimax_h3_director_二采_加速.json`
 4. 将组装好的 `timeline_data` JSON 填入 `MiniMaxH3Director` 节点（节点12）的 `timeline_data` 输入
 5. 确认 timeline_data 中的 `imageFile` / `audioFile` 只写文件名（与 input 目录中的文件名一致）
-6. 提交工作流
-7. 轮询任务状态，等待完成
-8. 从 output 目录（`F:\Work-Fisher纯净包2026.8.7\ComfyUI\output\`）获取生成的视频
+6. 通过 API 提交：`POST http://127.0.0.1:8188/prompt`，body 为 `{"prompt": <工作流JSON>}`
+7. 轮询 `GET /history/{prompt_id}` 等待完成
+8. 从 output 目录获取视频：`GET /view?filename=<文件名>&subfolder=video&type=output`，或直接从 `F:\Work-Fisher纯净包2026.8.7\ComfyUI\output\video\` 读取
+
+#### 通道 B：RunningHub 云端（用户指定 RH 时）
+
+详细操作流程见 `references/runninghub-guide.md`，核心步骤：
+
+1. 加载 `browser-use-automation` skill，用 `computer_use_tool(plane="bu")` 打开浏览器
+2. 导航到工作流：`https://www.runninghub.cn/workflow/2096059277453643778`
+3. 检查登录状态，未登录则调用 `interaction.request_action` 请用户手动登录
+4. 上传全局参考图（≤5张）和参考音频（≤3条）到工作流对应节点
+5. 将 timeline_data JSON 粘贴到 MiniMaxH3Director 节点的 timeline_data 输入框
+6. 确认工作流参数（分辨率、帧率、采样步数等）
+7. 点击"运行"提交，记录任务 ID
+8. 轮询页面状态等待生成完成（每60秒检查一次）
+9. 生成完成后下载视频（8bit + 10bit 两个版本），保存到 `05-workflow/epXX/`
+
+**RunningHub 注意事项**：
+- 上传素材失败时，调用 `interaction.request_action` 请用户手动上传
+- timeline_data 粘贴失败时，检查 JSON 语法或用 `bu.js()` 注入
+- 队列等待超过30分钟时，告知用户并询问是否切换本地
+- 平台内部错误时，记录错误信息并切换到本地 ComfyUI
 
 #### 批量提交策略
 

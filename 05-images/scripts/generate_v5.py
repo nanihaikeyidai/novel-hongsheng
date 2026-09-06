@@ -69,7 +69,7 @@ CHARACTERS = [
         )
     },
     {
-        "name": "林明",
+        "name": "陆沉",
         "seed": 909746542,
         "day": 2,
         "prompt": FOUR_GRID_PREFIX + (
@@ -389,8 +389,8 @@ def main():
     parser = argparse.ArgumentParser(description="红绳 六角色 Krea2 四格人设图生成")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--all", action="store_true", help="生成全部 6 个角色")
-    group.add_argument("--character", type=str, help="角色名: 林晓/林明/王老师/李想/妈妈/陈老师")
-    group.add_argument("--day", type=int, choices=[1,2,3,4], help="Day 编号: 1=林晓, 2=林明, 3=王老师+李想, 4=妈妈+陈老师")
+    group.add_argument("--character", type=str, help="角色名: 林晓/陆沉/王老师/李想/妈妈/陈老师")
+    group.add_argument("--day", type=int, choices=[1,2,3,4], help="Day 编号: 1=林晓, 2=陆沉, 3=王老师+李想, 4=妈妈+陈老师")
     args = parser.parse_args()
     
     print("=" * 60)

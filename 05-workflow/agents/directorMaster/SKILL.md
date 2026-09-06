@@ -18,10 +18,14 @@ description: 红绳漫剧总导演流水线。从剧情讨论到成片交付的�
 3. **`phases/02-screenplay.md`** — 阶段二：剧本生成（调用 screenwriter）
 4. **`phases/03-segmentation.md`** — 阶段三：文戏/武戏分段
 5. **`phases/04-prompt-generation.md`** — 阶段四：MiniMax H3 提示词生成
-6. **`phases/05-asset-mapping.md`** — 阶段五：素材引用查找与映射
+6. **`phases/05-asset-mapping.md`** — 阶段五：素材引用查找与映射（缺失时强制生图）
 7. **`phases/06-comfyui-invoke.md`** — 阶段六：ComfyUI/RunningHub 工作流调用
 8. **`phases/07-summary.md`** — 阶段七：生成完毕总结
-9. **`commands.md`** — 完整命令参考
+9. **`references/asset-generation-style-guide.md`** — 素材缺失时的生图规范与风格统一指南
+10. **`references/runninghub-guide.md`** — RunningHub 云端生成操作指南（用户指定 RH 时使用）
+11. **`references/minimax-h3-director-guide.md`** — MiniMax H3 Director 插件用法参考（r2v模式、二采、段间引导）
+12. **`references/review-guide.md`** — 片段审查功能指南（/review 命令，整合剧本/台词/提示词/资源）
+13. **`commands.md`** — 完整命令参考
 
 读完后，向用户输出启动面板（见下方「启动面板」），然后等待指令。
 
@@ -139,9 +143,14 @@ directorMaster/
 │   ├── 02-screenplay.md        ← 剧本生成
 │   ├── 03-segmentation.md      ← 文戏/武戏分段
 │   ├── 04-prompt-generation.md ← H3 提示词生成
-│   ├── 05-asset-mapping.md     ← 素材映射
+│   ├── 05-asset-mapping.md     ← 素材映射（缺失时强制生图）
 │   ├── 06-comfyui-invoke.md    ← 工作流调用
 │   └── 07-summary.md           ← 生成总结
+├── references/
+│   ├── asset-generation-style-guide.md ← 素材生成风格统一规范
+│   ├── runninghub-guide.md             ← RunningHub 云端生成操作指南
+│   ├── minimax-h3-director-guide.md    ← MiniMax H3 Director 插件用法参考
+│   └── review-guide.md                 ← 片段审查功能指南
 └── templates/
     ├── exploration-template.md ← 剧情讨论模板
     └── summary-template.md     ← 总结报告模板
