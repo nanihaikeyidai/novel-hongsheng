@@ -24,7 +24,7 @@ characters = [
         )
     },
     {
-        "name": "林明",
+        "name": "陆沉",
         "prompt": (
             "A high school boy's upper body portrait, front-facing, looking at the camera with a slightly distant and introverted expression. "
             "Tanned wheat-colored skin, thick expressive eyebrows, big deep eyes with notably long eyelashes, straight nose bridge, lean face shape. "

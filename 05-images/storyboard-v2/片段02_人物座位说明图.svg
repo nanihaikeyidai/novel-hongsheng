@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#b33a3a"/>
+    </marker>
+    <pattern id="paper" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#f4f3ef"/>
+      <path d="M0 13.5H14" stroke="#dedbd3" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <style>
+      .title{font:700 42px 'Microsoft YaHei','Noto Sans SC',sans-serif;fill:#20252a}
+      .sub{font:500 23px 'Microsoft YaHei','Noto Sans SC',sans-serif;fill:#565d64}
+      .label{font:700 24px 'Microsoft YaHei','Noto Sans SC',sans-serif;fill:#20252a}
+      .small{font:500 18px 'Microsoft YaHei','Noto Sans SC',sans-serif;fill:#565d64}
+      .seat{fill:#e4e4e1;stroke:#8f9599;stroke-width:3}
+      .deskline{stroke:#a8acae;stroke-width:2}
+      .person{font:700 24px 'Microsoft YaHei','Noto Sans SC',sans-serif;fill:#1f252a;text-anchor:middle}
+      .note{font:600 20px 'Microsoft YaHei','Noto Sans SC',sans-serif;text-anchor:middle}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <text x="800" y="60" text-anchor="middle" class="title">片段02｜人物座位与行走方向说明</text>
+  <text x="800" y="96" text-anchor="middle" class="sub">固定视角：站在讲台面向教室后方；图上方为正方向</text>
+
+  <!-- classroom boundary -->
+  <rect x="230" y="125" width="1140" height="760" rx="8" fill="#fafafa" stroke="#353b40" stroke-width="5"/>
+  <text x="800" y="160" text-anchor="middle" class="label">教室后方</text>
+
+  <!-- windows on the right side -->
+  <rect x="1322" y="190" width="34" height="160" fill="#dce8ef" stroke="#6c7981" stroke-width="3"/>
+  <rect x="1322" y="370" width="34" height="160" fill="#dce8ef" stroke="#6c7981" stroke-width="3"/>
+  <rect x="1322" y="550" width="34" height="160" fill="#dce8ef" stroke="#6c7981" stroke-width="3"/>
+  <text x="1385" y="455" transform="rotate(90 1385 455)" text-anchor="middle" class="label" fill="#486b80">靠窗侧</text>
+
+  <!-- direction -->
+  <line x1="292" y1="760" x2="292" y2="205" stroke="#b33a3a" stroke-width="7" marker-end="url(#arrow)"/>
+  <text x="315" y="475" transform="rotate(-90 315 475)" text-anchor="middle" class="label" fill="#b33a3a">正方向：讲台 → 教室后方</text>
+
+  <!-- generic seats: five columns x five rows, excluding highlighted locations -->
+  <g opacity="0.82">
+    <!-- row y=220 -->
+    <g transform="translate(410 200)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(580 200)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(750 200)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(920 200)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(1090 200)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <!-- row y=320 -->
+    <g transform="translate(410 300)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(580 300)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(750 300)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(920 300)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <!-- row y=420 -->
+    <g transform="translate(410 400)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(580 400)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(750 400)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <!-- row y=520 -->
+    <g transform="translate(410 500)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(580 500)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(750 500)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(920 500)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <!-- row y=620 -->
+    <g transform="translate(410 600)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(580 600)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(750 600)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(920 600)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+    <g transform="translate(1090 600)"><rect class="seat" width="130" height="58" rx="6"/><line class="deskline" x1="15" y1="46" x2="115" y2="46"/></g>
+  </g>
+
+  <!-- highlighted seats -->
+  <g transform="translate(1090 300)">
+    <rect width="130" height="58" rx="6" fill="#dbe7f2" stroke="#355f87" stroke-width="5"/>
+    <text x="65" y="37" class="person">安娜</text>
+  </g>
+  <g transform="translate(920 400)">
+    <rect width="130" height="58" rx="6" fill="#e1eddf" stroke="#467542" stroke-width="5"/>
+    <text x="65" y="37" class="person">李想</text>
+  </g>
+  <g transform="translate(1090 400)">
+    <rect width="130" height="58" rx="6" fill="#f0dddd" stroke="#a83f3f" stroke-width="6"/>
+    <text x="65" y="37" class="person">林明</text>
+  </g>
+  <g transform="translate(1090 500)">
+    <rect width="130" height="58" rx="6" fill="#eee0e8" stroke="#8a4e72" stroke-width="5"/>
+    <text x="65" y="37" class="person">林晓</text>
+  </g>
+
+  <!-- relationship annotations -->
+  <path d="M1155 395 V362" fill="none" stroke="#355f87" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1155 463 V495" fill="none" stroke="#8a4e72" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1082 429 H1055" fill="none" stroke="#467542" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- platform and teacher -->
+  <rect x="500" y="735" width="600" height="105" rx="8" fill="#d7d4cd" stroke="#4e5357" stroke-width="4"/>
+  <rect x="680" y="755" width="240" height="64" rx="5" fill="#efede8" stroke="#5f6468" stroke-width="3"/>
+  <circle cx="800" cy="770" r="24" fill="#e5d8c4" stroke="#806c4e" stroke-width="4"/>
+  <path d="M800 796 V823 M775 812 H825" stroke="#806c4e" stroke-width="6" stroke-linecap="round"/>
+  <text x="800" y="864" text-anchor="middle" class="label">王老师在讲台上，面向教室后方</text>
+  <text x="800" y="927" text-anchor="middle" class="sub">讲台／黑板（教室前方）</text>
+  <text x="800" y="974" text-anchor="middle" class="label">固定关系：李想在左｜林晓在前｜林明居中靠窗｜安娜在后</text>
+
+  <!-- sightline -->
+  <path d="M800 730 C820 650 920 520 1080 445" fill="none" stroke="#b33a3a" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrow)" opacity="0.8"/>
+  <text x="750" y="680" class="small" fill="#b33a3a">林明从讲台沿过道走向后排</text>
+</svg>

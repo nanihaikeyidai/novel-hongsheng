@@ -117,8 +117,8 @@ non_diegetic_music:    ← 固定写 N/A
 | ComfyUI models 目录 | `F:\Work-Fisher纯净包2026.8.7\ComfyUI\models` |
 | **主工作流（导演台）** | `05-workflow\agents\minimax_h3_director_二采_加速.json` |
 | 备用工作流（文戏高配） | `05-workflow\agents\【MINIMAX-H3】八月最强文戏-高配版_api.json` |
-| RunningHub 工作流 ID | `2090984765787820034`（线上备选） |
-| RunningHub URL | `https://www.runninghub.cn/workflow/2090984765787820034?source=workspace` |
+| RunningHub 工作流 ID | `2096059277453643778`（默认渲染通道） |
+| RunningHub URL | `https://www.runninghub.cn/workflow/2096059277453643778` |
 
 ### ComfyUI 目录说明
 
