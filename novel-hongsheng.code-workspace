@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "红绳",
+      "path": "."
+    },
+    {
+      "name": "ai小说-skills",
+      "path": "../skills"
+    }
+  ],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+---
+description: 《红绳》小说与有声书项目协作规范
+alwaysApply: true
+---
+
+# 《红绳》项目规则
+
+## 路径
+
+- 项目根：`D:\HermesWorkspace\ai小说\红绳`
+- Python：`D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe`
+- TTS 模型：`D:\HermesWorkspace\models\MOSS-TTS-Local-Transformer-v1.5`
+
+## 工作流
+
+- 写/改小说 → `02-manuscript/chapters/`
+- 有声剧本 → `04-audiobook/chXX_*/` 下的 `*_有声小说.json`
+- 生成音频 → `04-audiobook/scripts/generate_moss_tts_audiobook.py` 或 `generate_ch01.bat`
+- 角色音色 → `DEFAULT_VOICE_MAP` in `generate_moss_tts_audiobook.py`
+
+## 禁止
+
+- 勿提交 `.gitignore` 中的 wav/mp3/模型权重
+- 勿修改 `00-source/` 原始素材
+- 勿在 `03-intermediate/` 上直接当最终稿发布
+
+## 语言
+
+中文交流；详细规范见项目根 `AGENTS.md`。

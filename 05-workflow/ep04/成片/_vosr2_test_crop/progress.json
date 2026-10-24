@@ -1,0 +1,12 @@
+{
+  "source": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\成片\\10月19日.mp4",
+  "output": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\成片\\_vosr2_test_crop\\2s.mp4",
+  "chunk_seconds": 2.0,
+  "total_chunks": 133,
+  "completed_chunks": 1,
+  "last_chunk": "part_00.mp4",
+  "last_elapsed_seconds": 135.6,
+  "tile_size": 1024,
+  "frame_batch": 1,
+  "updated_at": "2026-10-24 14:00:04"
+}

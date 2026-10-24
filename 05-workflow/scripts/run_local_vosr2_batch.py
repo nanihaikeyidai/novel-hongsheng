@@ -227,13 +227,13 @@ def build_workflow(
             },
         },
         "5": {
-            "class_type": "ImageScale",
+            "class_type": "ImageCrop",
             "inputs": {
                 "image": ["4", 0],
-                "upscale_method": "bicubic",
                 "width": 1920,
                 "height": 1080,
-                "crop": "center",
+                "x": 0,
+                "y": 4,
             },
         },
         "6": {
