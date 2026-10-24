@@ -59,6 +59,14 @@ D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe scripts\generate_moss_tts_a
 
 环境自检：`D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe scripts/setup.py`
 
+## Git 协作规范（2026-10-24 起生效，skill：`repo-manager`）
+
+- **每次开发开始必先拉新代码**：`git fetch origin && git pull --rebase origin main`，禁止基于旧代码开发。
+- **开发完成必须推送**：用户说「**提交**」→ 执行 `.agents/skills/repo-manager/SKILL.md` 的提交流程（先拉后推、中文 conventional commits、大资产拦截、push origin main）。云端 bot 同样遵守。
+- **双端开发**：本地电脑与云端 bot（RunningHub 生成）都可开发，**GitHub origin/main 是唯一同步中枢**——任何一端开发前先 pull、完成后 push；本地离线期间由云端独立开发，本地恢复在线后先同步云端成果再继续。
+- **大资产不入库**（两端一致）：`*.mp4/*.mp3/*.zip/*.jpg`（人物图除外）及非人物/场景 png 不入库，仅存本地磁盘；单个文件 >20MB 提交前必须拦截。
+- **禁止 force-push**，除非用户明确要求重写历史。
+
 ## AI 协作规则
 
 - **提示词语言默认规则**：后续所有《红绳》视频提示词、分镜提示词、素材描述、连续性约束、声音说明和禁止项默认使用中文。只有用户明确要求英文时才使用英文。若目标工作流要求固定字段名、引用标签或机器解析结构，保留其必要的英文标识（如 `subject_definitions:`、`<Subject N>`、`<Picture N>`、`<Audio N>`、`(Sx)`、`<d>[Chinese] ...</d>`），其余正文使用中文。
