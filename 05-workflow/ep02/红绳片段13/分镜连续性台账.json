@@ -1,0 +1,100 @@
+{
+  "project": "红绳_EP02_片段13_动作流校准",
+  "continuity_status": "unverified_previous_segment",
+  "spatial_invariants": [
+    "固定世界轴线：门厅内部 -> 苏婉 -> 林晓 -> 陆沉 -> 屋檐边界 -> 雨幕外部",
+    "三人全程位于屋檐下，衣服保持未淋湿状态",
+    "黑色雨伞只有一把，片段末仍由林晓持有且保持收拢",
+    "苏婉全程在林晓后方数步，不接近、不说话、不撑伞"
+  ],
+  "blocking_validation": {
+    "required": true,
+    "coordinate_system": {
+      "name": "school_entrance_interior_to_rain",
+      "x_min": 0,
+      "x_max": 100,
+      "y_min": 0,
+      "y_max": 100,
+      "window_plane_x": 80,
+      "threshold_tolerance": 1.5,
+      "max_displacement_per_frame": 15
+    },
+    "entity_footprints": {
+      "lu_chen": 1.0,
+      "lin_xiao": 1.0,
+      "su_wan": 1.0
+    },
+    "frames": [
+      {
+        "id": "13.00",
+        "placements": {
+          "su_wan": {"x": 40, "y": 62, "zone": "covered_entrance_interior", "support": "floor"},
+          "lin_xiao": {"x": 57, "y": 53, "zone": "covered_entrance_midground", "support": "floor"},
+          "lu_chen": {"x": 76, "y": 45, "zone": "covered_eave_edge", "support": "floor"}
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [{"axis": "x", "items": ["su_wan", "lin_xiao", "lu_chen", "window_plane"]}],
+        "movement_causes": {}
+      },
+      {
+        "id": "13.01",
+        "placements": {
+          "su_wan": {"x": 40, "y": 62, "zone": "covered_entrance_interior", "support": "floor"},
+          "lin_xiao": {"x": 67, "y": 51, "zone": "covered_entrance_near_eave", "support": "floor"},
+          "lu_chen": {"x": 76, "y": 45, "zone": "covered_eave_edge", "support": "floor"}
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [{"axis": "x", "items": ["su_wan", "lin_xiao", "lu_chen", "window_plane"]}],
+        "movement_causes": {"lin_xiao": "听见自己的呼唤后向陆沉走两步；陆沉在跨出屋檐前停住并转身"}
+      },
+      {
+        "id": "13.02",
+        "placements": {
+          "su_wan": {"x": 40, "y": 62, "zone": "covered_entrance_interior", "support": "floor"},
+          "lin_xiao": {"x": 67, "y": 51, "zone": "covered_entrance_near_eave", "support": "floor"},
+          "lu_chen": {"x": 76, "y": 45, "zone": "covered_eave_edge", "support": "floor"}
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [{"axis": "x", "items": ["su_wan", "lin_xiao", "lu_chen", "window_plane"]}],
+        "movement_causes": {}
+      },
+      {
+        "id": "13.03",
+        "placements": {
+          "su_wan": {"x": 40, "y": 62, "zone": "covered_entrance_interior", "support": "floor"},
+          "lin_xiao": {"x": 70, "y": 50, "zone": "covered_entrance_near_eave", "support": "floor"},
+          "lu_chen": {"x": 76, "y": 45, "zone": "covered_eave_edge", "support": "floor"}
+        },
+        "allowed_overlaps": [],
+        "axis_orders": [{"axis": "x", "items": ["su_wan", "lin_xiao", "lu_chen", "window_plane"]}],
+        "movement_causes": {"lin_xiao": "为递出收拢黑伞而小幅前移；陆沉拒绝且未伸手"}
+      }
+    ]
+  },
+  "frames": [
+    {
+      "id": "13.00",
+      "previous_frame": null,
+      "script_beat": "新版片段13独立首帧：陆沉正要迈入雨里，林晓持收拢黑伞叫住他，苏婉留在后方",
+      "entry_state": {
+        "environment": {"location": "教学楼门厅屋檐边", "occupancy": "3名学生", "damage_level": "intact", "weather": "heavy_rain_outside", "light": "cold_blue_grey"},
+        "entities": {
+          "lu_chen": {"present": true, "position": "covered_eave_edge_in_front_of_lin_xiao", "facing": "rain_exterior", "pose": "one_foot_starting_forward_schoolbag_against_torso", "motion": "about_to_step", "condition": "dry", "held_items": ["old_dark_schoolbag"], "ability_state": "inactive"},
+          "lin_xiao": {"present": true, "position": "covered_entrance_midground_behind_lu_chen", "facing": "lu_chen", "pose": "standing_closed_umbrella_vertical_at_side", "motion": "still", "condition": "dry", "held_items": ["closed_black_umbrella_with_red_cord"], "ability_state": "inactive"},
+          "su_wan": {"present": true, "position": "covered_entrance_interior_behind_lin_xiao", "facing": "lin_xiao_and_lu_chen", "pose": "standing", "motion": "still", "condition": "dry", "held_items": [], "ability_state": "inactive"}
+        }
+      },
+      "changes": [],
+      "exit_state": {
+        "environment": {"location": "教学楼门厅屋檐边", "occupancy": "3名学生", "damage_level": "intact", "weather": "heavy_rain_outside", "light": "cold_blue_grey"},
+        "entities": {
+          "lu_chen": {"present": true, "position": "covered_eave_edge_in_front_of_lin_xiao", "facing": "rain_exterior", "pose": "one_foot_starting_forward_schoolbag_against_torso", "motion": "about_to_step", "condition": "dry", "held_items": ["old_dark_schoolbag"], "ability_state": "inactive"},
+          "lin_xiao": {"present": true, "position": "covered_entrance_midground_behind_lu_chen", "facing": "lu_chen", "pose": "standing_closed_umbrella_vertical_at_side", "motion": "still", "condition": "dry", "held_items": ["closed_black_umbrella_with_red_cord"], "ability_state": "inactive"},
+          "su_wan": {"present": true, "position": "covered_entrance_interior_behind_lin_xiao", "facing": "lin_xiao_and_lu_chen", "pose": "standing", "motion": "still", "condition": "dry", "held_items": [], "ability_state": "inactive"}
+        }
+      },
+      "observed_matches_exit": true,
+      "notes": "已检查新生成首帧像素；上一片段没有可用的已审核末帧与主控哈希，因此连续性标记为未验证。"
+    }
+  ]
+}

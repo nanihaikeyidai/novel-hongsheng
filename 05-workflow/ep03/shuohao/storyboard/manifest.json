@@ -1,0 +1,118 @@
+{
+  "source": "红绳",
+  "episode": 3,
+  "segments": [
+    {
+      "id": "E03-01",
+      "title": "校门奔入与传闻",
+      "folder": "E03-01",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-02",
+      "title": "封锁带与安娜经过",
+      "folder": "E03-02",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-03",
+      "title": "室内泳池集合",
+      "folder": "E03-03",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-04",
+      "title": "李想的记录保持者",
+      "folder": "E03-04",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-05",
+      "title": "下一组自由泳",
+      "folder": "E03-05",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-06",
+      "title": "正对泳道的起跳端",
+      "folder": "E03-06",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-07",
+      "title": "让女生先游一半",
+      "folder": "E03-07",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-08",
+      "title": "哨响前的半拍",
+      "folder": "E03-08",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-09",
+      "title": "安娜低水花入水",
+      "folder": "E03-09",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-10",
+      "title": "从笑声到追赶",
+      "folder": "E03-10",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-11",
+      "title": "动作线与呼吸节奏",
+      "folder": "E03-11",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-12",
+      "title": "终点池壁",
+      "folder": "E03-12",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-13",
+      "title": "成绩超过记录",
+      "folder": "E03-13",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-14",
+      "title": "正式邀请",
+      "folder": "E03-14",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-15",
+      "title": "我会看看",
+      "folder": "E03-15",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    },
+    {
+      "id": "E03-16",
+      "title": "没有拒绝的邀请",
+      "folder": "E03-16",
+      "frames": "故事板.png",
+      "prompt": "prompt.md"
+    }
+  ]
+}

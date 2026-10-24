@@ -1,0 +1,38 @@
+{
+  "taskId": "2097352490436751362",
+  "status": "SUCCESS",
+  "errorCode": "",
+  "errorMessage": "",
+  "results": [
+    {
+      "url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com/8e3cb2f6099d5772ed26216d6126f481/output/Selena_ActionFlow_NewPV_15s_00001_p87-audio_cmurh_1788883735.mp4",
+      "nodeId": "214",
+      "outputType": "mp4",
+      "text": null,
+      "zindex": null
+    }
+  ],
+  "clientId": "",
+  "promptTips": "",
+  "failedReason": {},
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "387",
+    "taskCostTime": "966",
+    "thirdPartyConsumeMoney": null
+  },
+  "parentTaskId": null,
+  "taskUsageList": [
+    {
+      "taskId": "2097352490436751362",
+      "parentTaskId": null,
+      "taskStatus": "SUCCESS",
+      "usage": {
+        "consumeMoney": null,
+        "consumeCoins": "387",
+        "taskCostTime": "966",
+        "thirdPartyConsumeMoney": null
+      }
+    }
+  ]
+}

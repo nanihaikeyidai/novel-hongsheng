@@ -1,0 +1,14 @@
+{
+  "stage": "frame",
+  "title": "翠羽社墙面夕阳空镜首帧",
+  "taskId": "2113293723185147906",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "27",
+    "taskCostTime": "132",
+    "thirdPartyConsumeMoney": null
+  },
+  "prompt": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\首帧图_生图提示词.txt",
+  "output": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\首帧图.png"
+}

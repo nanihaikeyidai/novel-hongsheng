@@ -1,0 +1,17 @@
+{
+  "taskId": "2101208084520325121",
+  "submit": {
+    "taskId": "2101208084520325121",
+    "status": "RUNNING",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": null,
+    "clientId": "5103bf06b986c1632ecaa94e6f2d7bf2",
+    "promptTips": null,
+    "failedReason": {},
+    "usage": null,
+    "parentTaskId": null,
+    "taskUsageList": null
+  },
+  "segments": 4
+}

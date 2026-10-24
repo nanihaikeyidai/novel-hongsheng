@@ -1,0 +1,30 @@
+subject_definitions:
+<Picture 1> is Lu Chen from the reference image: a 17-year-old high-school boy, black short messy hair, white shirt and dark school trousers, tall and lean, detached expression. Preserve face, hairstyle, school uniform, age. Do not inherit multi-panel pose.
+<Picture 2> is the Redwood High school gate exterior from the reference image: school gate architecture, street sidewalk beyond the gate, city street edge. Preserve building structure and layout. Relight to overcast late-afternoon cool blue-gray dusk; street lamps just turning on; damp pavement reflections. No readable Chinese text on signs.
+<Picture 3> is also Lu Chen identity lock (same boy as Picture 1) for angle variety only — same face/hair/uniform.
+
+summary:
+15-second continuous 16:9 Japanese animated film clip. After-school at Redwood High main gate at dusk. Students stream out. Lu Chen walks out alone, scans exits, heads toward the bus stop without speaking to anyone. No combat, no powers, no weapons.
+
+retention_analysis:
+<Subject 1>: fully_preserved - Lu Chen face, hair, white-blue school uniform, black short hair, detached demeanor.
+<Subject 2>: fully_preserved - school gate structure; weather shifted to overcast dusk cool blue-gray, wet ground, street lamps on.
+No other named characters in frame as main subjects.
+
+detailed_description:
+15 seconds, 16:9 widescreen, 2K-class high-definition, high-precision Japanese animated film style, delicate cel-shaded characters, hand-painted background, overcast dusk cool blue-gray ambient light, wet pavement reflections, restrained highlights. No subtitles, no on-screen text, no BGM.
+
+[Shot 1] 0.0-5.0s, wide shot, school gate exterior. End-of-day dismissal: students in school uniforms stream out through the gate in small groups toward the sidewalk. Overcast sky, street lamps just lighting. Ambient chatter, footsteps, distant traffic.
+
+[Shot 2] 5.0-10.0s, medium shot tracking from the side. Lu Chen exits the gate alone, backpack on one shoulder. He first glances left and right at the exit sides, then looks toward the sidewalk ahead. Expression flat, no talking.
+
+[Shot 3] 10.0-15.0s, medium-full shot from behind-three-quarter. Lu Chen steps onto the sidewalk and walks toward the bus-stop direction at a steady unhurried pace. Other students pass in the background without interacting with him. Final frame holds him walking away for 0.5s.
+
+overall_soundscape:
+School dismissal ambience: footsteps, distant student chatter, light traffic, soft damp air. No dialogue. No background music.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, English letters, UI, watermark, logo, storyboard grid, BGM, background music, photorealism, live action, 3D render, western comic, chibi, oil painting, red glowing eyes, superpowers, monsters, weapons, guns, combat, blood, handcuffs, ND agents, cars blocking, rain storm, sunny bright noon, empty gate with no students, vertical video, low resolution, identity drift, face change, wrong uniform, wrong hair

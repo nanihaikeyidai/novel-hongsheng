@@ -1,0 +1,38 @@
+subject_definitions:
+<Subject 1> 是陆沉，依据参考图：17岁高中男生，黑色短发微乱，白衬衫深色长裤校服，瘦高，脱离感、克制、眼神防备。他坐在金属桌左侧座位上，双手从背后改扣到桌面固定环上——铐环扣在桌沿金属环，活动范围极小，双手可平放在桌面。锁定面部五官、发型、校服款式与颜色、年龄感与身材比例。允许变化：坐姿、呼吸起伏、眼神与手部小动作。不允许：换脸、换发型、换服装、受伤痕迹、镣铐消失、双手自由。
+<Subject 2> 是审问室空间，依据参考场景图：机构内部的简约谈话室。灰白色平整墙面，房间无窗。中央一张冷灰色长方形金属桌，桌面为整块拉丝金属并带细微使用划痕，桌子的长边沿房间纵深方向延伸；桌子左右两侧各一把深灰色金属框架椅，椅面为深灰色薄垫。房间左侧墙为整面单向透视玻璃，从室内看去是一片均匀的暗灰色不透明镜面，只反射出极淡的光晕，是一块完全不透明的深灰面板，镜面里绝对不可能出现任何人影、面孔或另一侧的空间。房间纵深处正前方偏右是一扇深灰色厚重金属门。金属桌面中央偏左放一只透明玻璃杯盛约七分满温水，中央偏右放一个素面牛皮纸包装的未拆封汉堡，包装无任何可读文字。房间正上方一盏冷白色顶灯自上方垂直落下，在桌面形成一小片明确亮区，房间四角自然压暗形成渐变阴影。锁定墙体材质、金属桌造型与位置、两把椅子的左右分布、单向透视玻璃位置（不透明暗灰面板，仅反射光晕，镜面内不得出现任何人影）、纵深门的位置、桌面道具的数量与相对位置关系。允许变化：极轻微光衰减、人物投影范围随动作微调。不允许：改变桌子长边方向、改变椅子左右分布、交换门与玻璃的位置、出现窗户、出现第二张桌子、增加房间杂物、桌面出现文件纸张电脑或可读文字、暖黄灯光、阳光。
+<Subject 3> 是桌面固定环与铐具，桌沿一处金属固定环，短链与一副金属手铐以短链连接固定在桌面。锁定金属材质、链条长度有限、铐环咬合状态。允许变化：手腕在铐环内极小幅度移动。不允许：镣铐凭空消失、链条变长、铐具变成绳索或扎带。
+<Subject 4> 是纵深处的厚重金属门，位于房间纵深正前方偏右。锁定门的深灰色厚重感、金属材质与在画面中的位置关系。允许变化：本片段门保持关闭状态不变。不允许：门打开、门内出现人物、暖光从门缝溢出、门移动到房间其他位置。
+
+summary:
+15秒连续16:9高精度日漫青春电影感空镜。ND东郊分部审问室内，陆沉被反铐固定在金属桌左侧座位上，独自等待。他试着缓慢转动手腕，铐环咬死未松；他向后靠上椅背，椅背冰凉，随即又坐直；随后他转头看左侧墙的单向透视玻璃，那是一块完全不透明的暗灰面板，只反射淡淡光晕，再低头看桌面那个未拆封的汉堡，却没有伸手去碰；长时间过去，无人进来，无人倒水，无人宣读任何文件；他的呼吸逐渐压平；最后，纵深处那扇厚门终于响起。全程无对白、无第二人物出现。压迫感来自静止的等待与垂直顶光，不是动作。
+
+retention_analysis:
+<Subject 1>: fully_preserved - 陆沉身份、校服、五官、发型、年龄感；坐姿允许微调，反铐状态必须全程可见且不解除；座位在桌子左侧这一空间关系不可反转。
+<Subject 2>: fully_preserved - 审问室灰白墙、金属桌长边纵深方向、两把椅子左右分布、左侧墙单向透视玻璃、纵深偏右厚门、桌面温水准偏左与未拆封汉堡准偏右、冷白顶光压短投影。空间结构跨镜头完全不变。
+<Subject 3>: fully_preserved - 桌沿固定环、短链与金属铐具的咬合状态。
+<Subject 4>: fully_preserved - 纵深偏右的厚重金属门保持关闭，仅在末段作为声音来源与视觉落点。
+本片段无对白，不分配任何说话人标签；不得出现第二个人物、脸部、手部入画或倒水动作。
+渲染风格强制：以参考图锁定空间结构与透视，但成片必须呈现高精度日漫青春电影感——细腻赛璐璐人物、清晰稳定角色线稿、手绘动画背景、通透空气透视。参考图仅为空间与道具锚点。成片必须是清晰的黑色勾线轮廓、大片平整色块、两到三层硬边或半硬边赛璐璐明暗色阶、平涂的高光形状与细腻手绘动画背景，不得渲染成摄影写实、照片感或3D渲染质感。
+
+detailed_description:
+15秒，16:9横屏，2K级高清，高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定的角色线稿，通透空气透视，冷蓝灰低饱和环境光，金属表面的克制反射；人物身份和校服严格遵循参考图。室内冷白顶光为唯一主光源，自正上方垂直落下，桌面中央亮区明确，房间四角自然压暗形成压缩与压迫感。禁止摄影写实、真人照片、3D渲染、欧美漫画、低幼卡通、厚涂油画、晴天暖阳。
+
+空间轴线（以参考场景图为准，全片段不可反转）：摄影机机位线始终保持在房间右侧墙一侧，不越轴。单向透视玻璃固定在画面左侧墙；金属桌长边沿画面纵深方向延伸，桌面道具温水杯在桌面中央偏左、未拆封汉堡在中央偏右；陆沉固定坐在桌子左侧座位，身体朝向右侧的空椅方向；厚门固定在纵深正前方偏右，是陆沉的斜前方。左侧空椅全程空置。对白无，不存在正反打，机位可作小幅连续位移但始终维持左侧玻璃与纵深门的屏幕方向不变。
+
+[Shot 1] 0.0-5.0s，锁定中景。机位在房间右侧墙一侧、与桌面同高，稳定无移动。画面包含陆沉上半身、金属桌桌面纵深走向，画面左后方可见左侧墙单向透视玻璃的一角与一小片完全不透明的暗灰镜面，只有淡淡光晕。画面纵深处可见那扇深灰厚门。陆沉双手平放在桌面，铐环与短链清晰可见。他微微低头看着自己的手，然后极缓慢地转动手腕，铐环随之轻响；手腕转动幅度极小，铐环明显咬死未松。垂直顶光在他低垂的脸上留下清晰的下颌阴影。动作落定：手腕停在桌面上，视线未抬起。环境音仅空调低鸣与一次轻微的金属摩擦声。
+
+[Shot 2] 5.0-8.5s，同一机位同一构图内的轻微连续运镜（不是硬切）：摄影机沿桌子长边方向缓慢横移约10%幅度并轻微下压，把构图重心从陆沉上半身移向他的坐姿与椅背。陆沉后背向后靠上椅背，身体刚一接触椅背即停住，随后缓慢重新坐直——金属椅面是冰的，他没有停留。整个过程中双手仍在桌面铐环内未离开，铐链随身体动作轻微绷紧又松弛。动作落定：身体回到坐直的中立姿态，背部离开椅背。环境音：一次短促的衣料与椅背摩擦声，金属椅极轻微的震颤。
+
+[Shot 3] 8.5-12.0s，切为已经锁定的新构图：hard cut to a new locked medium shot，机位仍在房间右侧墙同一侧、维持同一轴线。新构图已在切点完成重新建立，无变焦、无推拉、无残留在上一镜的运动，也无镜面翻转或左右互换。新构图以陆沉的视线方向为中心，画面下缘包含桌面上那杯温水与那个未拆封的素面纸包汉堡，两者相对位置与前镜完全一致。陆沉先向左转头看向左侧墙面的单向透视玻璃——那是一块完全不透明的暗灰面板，只有淡淡的光晕反射，镜面里不可能出现任何人影、面孔或空间；停一拍后，视线缓慢下移到桌面上的汉堡并停留。他的双手始终没有抬起去碰汉堡，水杯与汉堡的位置、包装状态与水量完全不变。垂直顶光在温水杯面形成一小块克制高光。动作落定：视线停在汉堡上，表情克制没有波动。
+
+[Shot 4] 12.0-15.0s，同一机位同一构图内的缓慢连续后拉（约8%幅度）并轻微上抬，把构图从陆沉半身缓慢扩展，把纵深处那扇深灰厚门完整纳入画面并更清晰可读。陆沉的呼吸幅度逐渐减小，胸廓起伏变缓，肩膀放松，视线缓慢收回正前方。门在整个镜头内保持关闭、不开启、不透光、不移动。最后约0.5秒摄影机完全静止，画面稳定收束在陆沉与纵深处关闭的厚门之间，为下一段老韩进门留出可承接的末态；此时无人进场，门未开。环境音：空调低鸣持续，最后约0.3秒出现一次极轻的、来自门方向的金属活动声，作为下一段的听觉预告。
+
+overall_soundscape:
+全程无对白、无任何人声。空调低鸣持续作为底噪；金属铐环在手腕转动时出现一次轻微摩擦与咬合声；身体靠上椅背后出现一次短促的衣料摩擦与金属椅背震颤声；最后约0.3秒出现一次来自门方向的极轻金属活动声。除此之外无其他音效。
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, BGM, background music, any dialogue, lip sync, speaking, second person, extra character, Zhao Kai, Xiao Yue, Lao Han, any figure entering the room, door opening, warm light spilling from doorway, water being poured, documents on table, laptop on table, readable documents, window in the room, sunlight, warm orange lighting, cheerful tone, smiling Lu Chen, relaxed posture, handcuffs removed, cuffs unlocked, chains disappearing, long chains, rope bindings, free hands, hands raised to face, injury, blood, bloody shoulder, suppression dart marks, weapon, gun, baton, superpowers, red eyes, energy effects, glowing eyes, identity drift, face change, wrong hair, wrong uniform, changing school uniform, photorealistic rendering, live action photo, 3D render, western comic style, chibi, thick oil painting, vertical video, 9:16, camera crossing the axis, mirrored room layout, swapping left and right, table long edge rotated, chairs on wrong sides, one-way mirror showing the other room, reflection of a person in the glass, silhouette behind the glass, face visible in the mirror, transparent glass showing another space, photorealistic rendering, live action photo, CG look, volumetric lighting, door on the wrong side, cluttered room, extra chairs, eye distortion, hand deformation, extra fingers

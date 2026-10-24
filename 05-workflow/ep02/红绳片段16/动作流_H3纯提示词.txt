@@ -1,0 +1,36 @@
+subject_definitions:
+<Picture 1> is the first-frame anchor for [Shot 1], showing Lin Xiao holding the closed black umbrella before Lu Chen under the covered school entrance in heavy rain.
+<Subject 1> is Lin Xiao from <Picture 2>, preserving her face, long dark ponytail with red ribbon, white-and-blue uniform, age, and quick restrained movement.
+<Subject 2> is Lu Chen from <Picture 3>, preserving his angular youthful face, short black hair, lean build, school uniform, old schoolbag, and guarded manner.
+<Subject 3> is Su Wan from <Picture 4>, preserving her short warm-brown bob, white-and-blue uniform, and deep blue-grey long-handled umbrella.
+<Subject 4> is the rainy school entrance from <Picture 5>, preserving the eave, steps, wet floor, rain curtain, and cold blue-grey light.
+<Subject 5> is Lin Xiao's black umbrella from <Picture 6>, preserving its curved handle and worn red cord.
+<Subject 6> is the distant school gate and rainy exterior from <Picture 7>, used only as environmental continuity.
+<Audio 1> is Lu Chen's low youthful male voice, surprised and restrained.
+
+summary:
+Generate a continuous 15-second 16:9 2K-class high-definition Japanese animated youth-drama clip for EP02 segment 16. After Lin Xiao explains she and Su Wan can go home together, she suddenly puts the black umbrella into Lu Chen's hands before he can answer, turns, and runs to Su Wan. Su Wan tilts her deep blue-grey umbrella toward Lin Xiao; they run down the steps together. Lu Chen starts to speak but misses the chance.
+
+retention_analysis:
+<Picture 1>: fully_preserved - exact opening composition, covered entrance, rain, and umbrella state.
+<Subject 1>: fully_preserved - identity, face, hair, uniform, age, and low ponytail motion.
+<Subject 2>: fully_preserved - identity, face, hair, uniform, old schoolbag, and handoff reaction.
+<Subject 3>: fully_preserved - identity, uniform, deep blue-grey umbrella, and distance.
+<Subject 4>: fully_preserved - entrance geometry, wet steps, rain, and cold light.
+<Subject 5>: fully_preserved - one black umbrella with red cord; after the handoff it belongs to Lu Chen.
+<Subject 6>: fully_preserved - gate direction and rainy exterior only.
+
+detailed_description:
+The target video is 15 seconds, 16:9 widescreen, 2K-class high-definition, high-precision Japanese animated film style, delicate cel shading, hand-painted rainy background, stable clean line art, cold blue-grey daylight, glass rain streaks, urban rain haze, and restrained wet-surface reflections. Preserve the same camera side and 180-degree axis until the characters run away.
+[Shot 1] 0:00-0:05, stable medium close two-shot. Lin Xiao finishes her explanation, then decisively places the closed black umbrella into Lu Chen's hands without waiting for permission. His fingers close around the handle and touch the worn red cord. The handoff is one clear continuous action; no duplicate umbrella.
+[Shot 2] 0:05-0:10, medium side view. Lu Chen looks up and opens his mouth to speak, but Lin Xiao has already turned away, hugs her schoolbag, and runs several steps toward Su Wan; her low ponytail swings naturally. Lu Chen remains under the eave with the black umbrella and old schoolbag.
+[Shot 3] 0:10-0:15, wider view toward the steps. Su Wan tilts her deep blue-grey umbrella toward Lin Xiao. Lin Xiao reaches the shared umbrella, glances back once at Lu Chen, then the two girls run down the steps together into the rain. Lu Chen remains behind, unable to finish his reply. Their running settles into a clear exit by 14.5 seconds and the last 0.5 seconds holds the stable separation: girls moving away under one umbrella, Lu Chen stationary under the eave holding the black umbrella.
+
+overall_soundscape:
+Continuous rain, roof runoff, quick footfalls on wet steps, cloth and schoolbag movement, umbrella handle click, and one unfinished breath from Lu Chen. No completed extra dialogue; no narration; no music.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable signs, storyboard grid, identity drift, face change, wrong uniform, extra people, duplicate umbrellas, malformed hands, handoff reversal, spatial reversal, axis crossing, teleportation, camera shake, sudden zoom, excessive motion blur, flicker, low resolution, vertical video, photorealism, live action, 3D rendering, western comic, chibi, oil painting, background music, sunny weather, warm sunlight, rain interruption, Lin Xiao keeping the umbrella after handoff, Su Wan absent, red cord on wrist, supernatural power, grey tail

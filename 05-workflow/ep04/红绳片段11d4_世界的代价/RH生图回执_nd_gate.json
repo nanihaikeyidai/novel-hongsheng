@@ -1,0 +1,14 @@
+{
+  "stage": "nd_gate",
+  "title": "ND东郊分部大门薄暮外景",
+  "taskId": "2113817446598270977",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "33",
+    "taskCostTime": "164",
+    "thirdPartyConsumeMoney": null
+  },
+  "prompt": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段11d4_世界的代价\\场景_ND东郊分部大门_薄暮_生图提示词.txt",
+  "output": "D:\\HermesWorkspace\\ai小说\\红绳\\05-images\\场景\\场景_ND东郊分部大门_薄暮_日漫电影感.png"
+}

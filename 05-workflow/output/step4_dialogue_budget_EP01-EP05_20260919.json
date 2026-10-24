@@ -1,0 +1,1412 @@
+[
+  {
+    "seg": "ep01/红绳片段1",
+    "source": "05-workflow/ep01/红绳片段1/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "新同学陆沉，给大家自我介绍一下。",
+        "chars": 14
+      },
+      {
+        "who": "",
+        "said": "我叫陆沉，喜欢篮球，请多关照。",
+        "chars": 12
+      },
+      {
+        "who": "",
+        "said": "陆沉，后排靠窗有空位。",
+        "chars": 9
+      }
+    ],
+    "issues": [
+      "缺 16:9 横屏声明"
+    ]
+  },
+  {
+    "seg": "ep01/红绳片段2",
+    "source": "05-workflow/ep01/红绳片段2/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 5,
+    "min_s": 0.8,
+    "max_s": 1.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "坐后排空位。",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段3",
+    "source": "05-workflow/ep01/红绳片段3/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 4,
+    "min_s": 0.7,
+    "max_s": 1.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "确认目标",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段4",
+    "source": "05-workflow/ep01/红绳片段4/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段5",
+    "source": "05-workflow/ep01/红绳片段5/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 8,
+    "min_s": 1.3,
+    "max_s": 2.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "从后门出去！不要挤！",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段6",
+    "source": "05-workflow/ep01/红绳片段6/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段7",
+    "source": "05-workflow/ep01/红绳片段7/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep01/红绳片段8",
+    "source": "05-workflow/ep01/红绳片段8/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段04",
+    "source": "05-workflow/ep02/红绳片段04/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 20,
+    "min_s": 3.3,
+    "max_s": 5.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "那是什么？好可怕……",
+        "chars": 7
+      },
+      {
+        "who": "",
+        "said": "我也不知道，我现在还没缓过神。",
+        "chars": 13
+      }
+    ],
+    "issues": [
+      "缺输出限制/禁止项（negativePrompt 必填）"
+    ]
+  },
+  {
+    "seg": "ep02/红绳片段05",
+    "source": "05-workflow/ep02/红绳片段05/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 23,
+    "min_s": 3.8,
+    "max_s": 5.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "它刚才还要扑下来。",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "后来突然不动了。",
+        "chars": 7
+      },
+      {
+        "who": "",
+        "said": "像是被什么吓住了。",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段06",
+    "source": "05-workflow/ep02/红绳片段06/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 22,
+    "min_s": 3.7,
+    "max_s": 5.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "陆沉，你看清怪兽为什么逃了吗？",
+        "chars": 13
+      },
+      {
+        "who": "",
+        "said": "没有。",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "我只看见它飞走。",
+        "chars": 7
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段07",
+    "source": "05-workflow/ep02/红绳片段07/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 7,
+    "min_s": 1.2,
+    "max_s": 1.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "报告下现场情况。",
+        "chars": 7
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段08",
+    "source": "05-workflow/ep02/红绳片段08/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "刚才查了监控录像，有一个巨大的蝙蝠破窗而入……这是什么——",
+        "chars": 24
+      },
+      {
+        "who": "",
+        "said": "有没有人员伤亡？",
+        "chars": 7
+      },
+      {
+        "who": "",
+        "said": "没有，请问……",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段09",
+    "source": "05-workflow/ep02/红绳片段09/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 33,
+    "min_s": 5.5,
+    "max_s": 8.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "是外来稀有生物入侵，已经安排专业人士捕获。",
+        "chars": 19
+      },
+      {
+        "who": "",
+        "said": "让学生不要把这件事情发媒体上。",
+        "chars": 14
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段10",
+    "source": "05-workflow/ep02/红绳片段10/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "看到的人很多……这恐怕有点难……",
+        "chars": 12
+      },
+      {
+        "who": "",
+        "said": "封锁事故现场，等我们人来处理就行，明天学校照常上课。",
+        "chars": 23
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段11",
+    "source": "05-workflow/ep02/红绳片段11/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 14,
+    "min_s": 2.3,
+    "max_s": 3.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "真不用去医院？",
+        "chars": 6
+      },
+      {
+        "who": "",
+        "said": "不用，只是还有点乱。",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段12",
+    "source": "05-workflow/ep02/红绳片段12/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段13",
+    "source": "05-workflow/ep02/红绳片段13/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": [
+      "缺 16:9 横屏声明"
+    ]
+  },
+  {
+    "seg": "ep02/红绳片段14",
+    "source": "05-workflow/ep02/红绳片段14/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 27,
+    "min_s": 4.5,
+    "max_s": 6.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "你把伞借我，你怎么办？",
+        "chars": 9
+      },
+      {
+        "who": "",
+        "said": "不用担心，我和苏婉用一把伞回去。",
+        "chars": 14
+      },
+      {
+        "who": "",
+        "said": "明天还你。",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段15",
+    "source": "05-workflow/ep02/红绳片段15/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 19,
+    "min_s": 3.2,
+    "max_s": 4.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "还有……",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "虽然不知道你怎么做到的，谢谢你救了我。",
+        "chars": 17
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段16",
+    "source": "05-workflow/ep02/红绳片段16/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 7,
+    "min_s": 1.2,
+    "max_s": 1.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "不用谢。",
+        "chars": 3
+      },
+      {
+        "who": "",
+        "said": "先调监控。",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep02/红绳片段17",
+    "source": "05-workflow/ep02/红绳片段17/动作流_H3纯提示词.txt",
+    "dur": 15,
+    "dial": 1,
+    "han": 6,
+    "min_s": 1.0,
+    "max_s": 1.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "发现目标人物。",
+        "chars": 6
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段01",
+    "source": "05-workflow/ep03/红绳片段01/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 26,
+    "min_s": 4.3,
+    "max_s": 6.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "等等我！听说那东西又出现了！",
+        "chars": 12
+      },
+      {
+        "who": "",
+        "said": "你说的是前几天袭击学校的那个？",
+        "chars": 14
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段02",
+    "source": "05-workflow/ep03/红绳片段02/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "小声点，学校说只是设备事故。",
+        "chars": 12
+      },
+      {
+        "who": "",
+        "said": "设备事故能把窗户撕成那样？",
+        "chars": 12
+      },
+      {
+        "who": "",
+        "said": "她就是那天在附近的人吧？",
+        "chars": 11
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段03",
+    "source": "05-workflow/ep03/红绳片段03/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 27,
+    "min_s": 4.5,
+    "max_s": 6.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "所有人先站到池边，检查泳帽和泳镜。",
+        "chars": 15
+      },
+      {
+        "who": "",
+        "said": "今天做自由泳计时，不比蛮力。",
+        "chars": 12
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段04",
+    "source": "05-workflow/ep03/红绳片段04/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 39,
+    "min_s": 6.5,
+    "max_s": 9.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "老师，李想是不是不用测了？",
+        "chars": 11
+      },
+      {
+        "who": "",
+        "said": "红杉高中记录保持者，早就该单独计时。",
+        "chars": 16
+      },
+      {
+        "who": "",
+        "said": "别急，记录不是拿来摆着看的。",
+        "chars": 12
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段05",
+    "source": "05-workflow/ep03/红绳片段05/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 25,
+    "min_s": 4.2,
+    "max_s": 6.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "安娜，你也下这一组吗？",
+        "chars": 9
+      },
+      {
+        "who": "",
+        "said": "老师安排了，我就下。",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "下一组，自由泳准备。",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段06",
+    "source": "05-workflow/ep03/红绳片段06/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 23,
+    "min_s": 3.8,
+    "max_s": 5.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "校运会记录保持者来了！",
+        "chars": 10
+      },
+      {
+        "who": "",
+        "said": "红杉菲尔普斯不会输给女生吧？",
+        "chars": 13
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段07",
+    "source": "05-workflow/ep03/红绳片段07/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 24,
+    "min_s": 4.0,
+    "max_s": 6.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "我觉得让女生先游一半，会比较公平。",
+        "chars": 15
+      },
+      {
+        "who": "",
+        "said": "安静。听口令，不许抢跳。",
+        "chars": 9
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段08",
+    "source": "05-workflow/ep03/红绳片段08/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 14,
+    "min_s": 2.3,
+    "max_s": 3.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "跟不上也正常，别有压力。",
+        "chars": 10
+      },
+      {
+        "who": "",
+        "said": "各就各位。",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段09",
+    "source": "05-workflow/ep03/红绳片段09/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 13,
+    "min_s": 2.2,
+    "max_s": 3.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "快下去吧！还看什么？",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "等等，我还没——",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段10",
+    "source": "05-workflow/ep03/红绳片段10/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 13,
+    "min_s": 2.2,
+    "max_s": 3.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "她怎么已经到那里了？",
+        "chars": 9
+      },
+      {
+        "who": "",
+        "said": "喂，等等我！",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段11",
+    "source": "05-workflow/ep03/红绳片段11/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 8,
+    "min_s": 1.3,
+    "max_s": 2.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "保持身体线，别抬头！",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段12",
+    "source": "05-workflow/ep03/红绳片段12/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 23,
+    "min_s": 3.8,
+    "max_s": 5.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "李想，别光顾着耍帅！",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "安娜第一，李想第二。",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "这不是赢一点吧？",
+        "chars": 7
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段13",
+    "source": "05-workflow/ep03/红绳片段13/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 21,
+    "min_s": 3.5,
+    "max_s": 5.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "你刚才，游了多少次？",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "忘了。",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "这个成绩，比校运会记录快。",
+        "chars": 11
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段14",
+    "source": "05-workflow/ep03/红绳片段14/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 22,
+    "min_s": 3.7,
+    "max_s": 5.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "我正式邀请你加入游泳部。",
+        "chars": 11
+      },
+      {
+        "who": "",
+        "said": "不是缺人，也不是临时凑数。",
+        "chars": 11
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段15",
+    "source": "05-workflow/ep03/红绳片段15/视频提示词.md",
+    "dur": 15,
+    "dial": 4,
+    "han": 29,
+    "min_s": 4.8,
+    "max_s": 7.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "每天都训练？",
+        "chars": 5
+      },
+      {
+        "who": "",
+        "said": "基本每天，周末看安排。",
+        "chars": 9
+      },
+      {
+        "who": "",
+        "said": "不去会怎样？",
+        "chars": 5
+      },
+      {
+        "who": "",
+        "said": "不会怎样，只是错过训练。",
+        "chars": 10
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep03/红绳片段16",
+    "source": "05-workflow/ep03/红绳片段16/视频提示词.md",
+    "dur": 15,
+    "dial": 6,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "所以，你愿意来吗？",
+        "chars": 7
+      },
+      {
+        "who": "",
+        "said": "我会看看。",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "那就是没拒绝？",
+        "chars": 6
+      },
+      {
+        "who": "",
+        "said": "你邀请了我。",
+        "chars": 5
+      },
+      {
+        "who": "",
+        "said": "她到底算不算加入？",
+        "chars": 8
+      },
+      {
+        "who": "",
+        "said": "她说会看看。",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段01",
+    "source": "05-workflow/ep04/红绳片段01/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 68,
+    "min_s": 11.3,
+    "max_s": 17.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "经调查，此前教学楼玻璃破损事件，系玻璃老化与极端大风所致，定性为意外事故。事故教室已完成检修，即日起恢复正常教学。",
+        "chars": 51
+      },
+      {
+        "who": "",
+        "said": "真的是意外吗……",
+        "chars": 6
+      },
+      {
+        "who": "",
+        "said": "窗户都换新的了，别多想了。",
+        "chars": 11
+      }
+    ],
+    "issues": [
+      "对白预算超时：68字 ≈ 11.3–17.0s > 15s"
+    ]
+  },
+  {
+    "seg": "ep04/红绳片段02",
+    "source": "05-workflow/ep04/红绳片段02/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段03",
+    "source": "05-workflow/ep04/红绳片段03/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段04",
+    "source": "05-workflow/ep04/红绳片段04/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段05",
+    "source": "05-workflow/ep04/红绳片段05/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段06",
+    "source": "05-workflow/ep04/红绳片段06/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 7,
+    "min_s": 1.2,
+    "max_s": 1.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "上课了，都回座位。",
+        "chars": 7
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段07",
+    "source": "05-workflow/ep04/红绳片段07/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段08",
+    "source": "05-workflow/ep04/红绳片段08/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段09",
+    "source": "05-workflow/ep04/红绳片段09/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 5,
+    "min_s": 0.8,
+    "max_s": 1.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "放大这一帧。",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段10",
+    "source": "05-workflow/ep04/红绳片段10/视频提示词.md",
+    "dur": 15,
+    "dial": 4,
+    "han": 26,
+    "min_s": 4.3,
+    "max_s": 6.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "观察对象A",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "观察对象B",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "校方已经定性意外了，还查这个？",
+        "chars": 13
+      },
+      {
+        "who": "",
+        "said": "先记录，别动。",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段11",
+    "source": "05-workflow/ep04/红绳片段11/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段12",
+    "source": "05-workflow/ep04/红绳片段12/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 6,
+    "min_s": 1.0,
+    "max_s": 1.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "……窗边，别站太久。",
+        "chars": 6
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段13",
+    "source": "05-workflow/ep04/红绳片段13/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 11,
+    "min_s": 1.8,
+    "max_s": 2.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "那天的事……你不说，我就不问。",
+        "chars": 11
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段14",
+    "source": "05-workflow/ep04/红绳片段14/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段15",
+    "source": "05-workflow/ep04/红绳片段15/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 15,
+    "min_s": 2.5,
+    "max_s": 3.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "妈妈……这根绳子，是不是在告诉我什么？",
+        "chars": 15
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep04/红绳片段16",
+    "source": "05-workflow/ep04/红绳片段16/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "母亲留下的红绳，第一次有了反应。它指向的，也许不是怪物——而是十二年前的那个雨夜。",
+        "chars": 35
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段01",
+    "source": "05-workflow/ep05/红绳片段01/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 9,
+    "min_s": 1.5,
+    "max_s": 2.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "林晓？英语老师看你了。",
+        "chars": 9
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段02",
+    "source": "05-workflow/ep05/红绳片段02/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段03",
+    "source": "05-workflow/ep05/红绳片段03/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段04",
+    "source": "05-workflow/ep05/红绳片段04/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 5,
+    "min_s": 0.8,
+    "max_s": 1.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "雨夜",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "幸存者",
+        "chars": 3
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段05",
+    "source": "05-workflow/ep05/红绳片段05/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 22,
+    "min_s": 3.7,
+    "max_s": 5.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "林晓，你来回答。",
+        "chars": 6
+      },
+      {
+        "who": "",
+        "said": "林晓，老师叫你。",
+        "chars": 6
+      },
+      {
+        "who": "",
+        "said": "……抱歉，老师，我没听清问题。",
+        "chars": 10
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段06",
+    "source": "05-workflow/ep05/红绳片段06/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 35,
+    "min_s": 5.8,
+    "max_s": 8.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "最近状态不太对。家里有什么事吗？",
+        "chars": 14
+      },
+      {
+        "who": "",
+        "said": "没什么……就是，想查一点家里的事。",
+        "chars": 13
+      },
+      {
+        "who": "",
+        "said": "有难处，可以来找我。",
+        "chars": 8
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段07",
+    "source": "05-workflow/ep05/红绳片段07/视频提示词.md",
+    "dur": 15,
+    "dial": 3,
+    "han": 9,
+    "min_s": 1.5,
+    "max_s": 2.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "观察对象B",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "旧红绳",
+        "chars": 3
+      },
+      {
+        "who": "",
+        "said": "遗物",
+        "chars": 2
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段08",
+    "source": "05-workflow/ep05/红绳片段08/视频提示词.md",
+    "dur": 15,
+    "dial": 7,
+    "han": 36,
+    "min_s": 6.0,
+    "max_s": 9.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "十二年前",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "雨夜案",
+        "chars": 3
+      },
+      {
+        "who": "",
+        "said": "调查组成员",
+        "chars": 5
+      },
+      {
+        "who": "",
+        "said": "线索未结",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "观察对象B",
+        "chars": 4
+      },
+      {
+        "who": "",
+        "said": "她母亲也牵在这案子里？",
+        "chars": 10
+      },
+      {
+        "who": "",
+        "said": "先记录，别惊动。",
+        "chars": 6
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段09",
+    "source": "05-workflow/ep05/红绳片段09/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 2,
+    "min_s": 0.3,
+    "max_s": 0.5,
+    "lines": [
+      {
+        "who": "",
+        "said": "红绳",
+        "chars": 2
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段10",
+    "source": "05-workflow/ep05/红绳片段10/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段11",
+    "source": "05-workflow/ep05/红绳片段11/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 20,
+    "min_s": 3.3,
+    "max_s": 5.0,
+    "lines": [
+      {
+        "who": "",
+        "said": "周末陪我去趟图书馆呗？你老闷在家。",
+        "chars": 15
+      },
+      {
+        "who": "",
+        "said": "嗯……去看看吧。",
+        "chars": 5
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段12",
+    "source": "05-workflow/ep05/红绳片段12/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 5,
+    "min_s": 0.8,
+    "max_s": 1.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "雨夜",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "幸存者",
+        "chars": 3
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段13",
+    "source": "05-workflow/ep05/红绳片段13/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 9,
+    "min_s": 1.5,
+    "max_s": 2.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "你怎么在这？",
+        "chars": 5
+      },
+      {
+        "who": "",
+        "said": "……查点东西。",
+        "chars": 4
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段14",
+    "source": "05-workflow/ep05/红绳片段14/视频提示词.md",
+    "dur": 15,
+    "dial": 2,
+    "han": 5,
+    "min_s": 0.8,
+    "max_s": 1.2,
+    "lines": [
+      {
+        "who": "",
+        "said": "你呢？",
+        "chars": 2
+      },
+      {
+        "who": "",
+        "said": "我不用。",
+        "chars": 3
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段15",
+    "source": "05-workflow/ep05/红绳片段15/视频提示词.md",
+    "dur": 15,
+    "dial": 1,
+    "han": 11,
+    "min_s": 1.8,
+    "max_s": 2.8,
+    "lines": [
+      {
+        "who": "",
+        "said": "妈妈……你留的线索，是在指谁？",
+        "chars": 11
+      }
+    ],
+    "issues": []
+  },
+  {
+    "seg": "ep05/红绳片段16",
+    "source": "05-workflow/ep05/红绳片段16/视频提示词.md",
+    "dur": 15,
+    "dial": 0,
+    "han": 0,
+    "min_s": 0.0,
+    "max_s": 0.0,
+    "lines": [],
+    "issues": []
+  }
+]

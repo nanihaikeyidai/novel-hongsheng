@@ -1,0 +1,32 @@
+subject_definitions:
+<Subject 1> is Selena from <Picture 1>, preserving her exact adult female identity, refined oval face, amber-brown eyes, very long dark-brown hair, pale blue high-neck dress, white embroidered long coat, silver jewelry, elegant proportions, and delicate Japanese-anime rendering. <Picture 1> provides identity and costume only; do not inherit its white character-sheet background, multiple views, or repeated bodies.
+<Picture 2> is the exact approved opening frame for [Shot 1], showing the single Selena inside a dark rain-lit observation room beside a panoramic city window and transparent silver-white spatial traces. It fixes the opening composition, scale, weather, lighting, and one-person occupancy.
+<Picture 3> is a duplicate reinforcement of the same approved opening frame, used only to strengthen the room, skyline, rain, and spatial-effect design. Treat <Picture 2> and <Picture 3> as one visual anchor; never instantiate a second Selena or a second room.
+
+summary:
+[keyframe completion + reference generation] A 15-second, 16:9 high-detail anime action PV begins exactly from <Picture 2>. Selena detects a distant moving anomaly across the city through an innate long-range perception field, maps its trajectory with forceful full-speed gestures, and locks its location before it becomes visible. The sequence is fast, sharp, and kinetic, with no dialogue and no music.
+
+retention_analysis:
+<Subject 1> (appears throughout): fully_preserved - Selena remains the only person, with the exact face, hair, clothing, adult proportions, calm mentor authority, and clean anime identity from <Picture 1>.
+<Picture 2> ([Shot 1] first frame and scene anchor throughout): fully_preserved - preserve its panoramic rainy-night city window, dark observation-room structure, blue-black palette, silver-white spatial traces, and single-person opening composition.
+<Picture 3> (environment and effect reinforcement throughout): fully_preserved - reinforce only the same room, skyline, rain, and transparent spatial-trace design already present in <Picture 2>, without adding any subject or alternate layout.
+
+detailed_description:
+The target uses high-precision Japanese anime cinematic imagery: delicate cel shading, clean stable linework, hand-painted nocturnal city architecture, transparent atmospheric perspective, blue-black rainlight, controlled silver-white highlights, 16:9 landscape composition, and 2K-class clarity. Selena's perception is an innate sensing ability visualized as transparent geometry, never a weapon or attack. Exactly one Selena exists throughout.
+
+[Shot 1] The video begins exactly from <Picture 2>. In the first 0.25 seconds the camera makes an immediate fast push-in. <Subject 1> snaps her gaze from near space to one precise point beyond the far skyline, pivots her shoulders, and drives her right hand outward. Her long hair and coat hem respond sharply to the turn. The existing silver-white traces surge across the window as concentric range rings and thin sight-lines, revealing depth across several city districts. No pause, frozen pose, or slow motion occurs.
+
+[Shot 2] At 00:02.400, a hard lateral whip-pan crosses the panoramic window into a compressed telephoto city view. The perception field races over distant rooftops in one continuous sweep: three tiny moving trajectories illuminate in sequence, one hidden anomaly bends the rain and air between buildings, and fine distance ticks converge on it. The camera snaps back to a three-quarter medium shot as Selena counter-steps left, rotates her torso, and cuts her left forearm diagonally through frame to isolate the false tracks from the true one.
+
+[Shot 3] At 00:05.000, the camera performs a fast, tight orbit around Selena while she advances three grounded steps toward the window. With both hands she draws three intersecting transparent spatial planes; each plane expands from her palms through the glass and aligns with a different depth layer of the city. The geometry updates instantly with her movements. Her eyes remain calm and exact while her body action is large, decisive, and full-speed.
+
+[Shot 4] At 00:08.000, use a rapid action montage: extreme close-up of Selena's focused eye, wide skyline with accelerating trajectory lines, low-angle full-body pivot, then a sharp overhead view of the range grid. A distant incoming threat is detected before any body appears. Selena plants her rear foot, turns hard, and thrusts one open palm toward the correct far-off coordinate. A precise silver-white perception lock closes around that point; it is a targeting mark for awareness only, causing no blast, impact, or city damage.
+
+[Shot 5] At 00:11.200, Selena sweeps both arms apart with force. A giant transparent hemispherical perception field expands across the entire skyline, displaying hundreds of fine range lines and several moving paths in real time. The camera pulls back rapidly to show the full scale, then brakes into a strong medium-wide hero composition. During the final 0.70 seconds Selena holds a stable grounded stance at the window, one hand extended and eyes fixed on the distant lock while the grid settles with low-amplitude motion. No new action begins.
+
+Hard constraints: no slow motion, time dilation, dreamy floating, meditative stillness, minimal movement, generic energy blast, combat strike, weapon, explosion, destruction, extra person, cloned Selena, split screen, duplicated body, face drift, hairstyle change, costume change, child proportions, photorealism, live action, 3D render, Western comic style, childish cartoon, oil-paint texture, sunny daylight, subtitles, captions, on-screen text, Chinese characters, title card, speech bubble, interface overlay, watermark, or logo.
+
+overall_soundscape:
+Continuous distant rain against glass and subdued nocturnal city ambience, synchronized rapid cloth and hair movement, three firm footsteps, sharp hand-motion whooshes, soft glass resonance, layered spatial pulses, and a low electrical-room hum. No dialogue, voice-over, crowd voice, or laugh track.
+
+non_diegetic_music: N/A

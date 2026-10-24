@@ -1,0 +1,14 @@
+{
+  "stage": "scene",
+  "title": "翠羽社大厅场景图",
+  "taskId": "2113293043368157186",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "32",
+    "taskCostTime": "158",
+    "thirdPartyConsumeMoney": null
+  },
+  "prompt": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\翠羽社大厅_生图提示词.txt",
+  "output": "D:\\HermesWorkspace\\ai小说\\红绳\\05-images\\场景\\场景_翠羽社大厅_日漫电影感.png"
+}

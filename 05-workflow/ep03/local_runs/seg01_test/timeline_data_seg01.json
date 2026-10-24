@@ -1,0 +1,282 @@
+{
+  "version": 5,
+  "editMode": "segment",
+  "totalFrames": 362,
+  "frameRate": 24,
+  "video": {
+    "fileName": "",
+    "videoFile": "",
+    "subfolder": "",
+    "type": "input",
+    "frames": [],
+    "frameMap": [],
+    "deletedSourceRanges": [],
+    "sourceFrameCount": 0,
+    "width": 0,
+    "height": 0
+  },
+  "videoClips": [],
+  "global": {
+    "taskType": "r2v — 参考主体生视频(Reference to Video)",
+    "prompt": "subject_definitions:\n图片1：安娜校服人物参考图，只锁定安娜的身份、深蓝长发、年龄感、体态和校服；不继承背景、文字或姿势。\n图片2：安娜游泳社人物参考图，只锁定安娜进入泳池后的深蓝长发、泳池服装和体态；不继承背景、文字或姿势。\n图片3：红杉高中校门晴天场景参考图，只锁定校门、中央校徽、红杉树、铁门、教学楼和晴朗早晨光线。\n图片4：室内标准泳池场景参考图，只锁定明亮蓝白泳池、六条泳道、长椅、远端池壁和室内天光。\n图片5：室内泳池起跳端场景参考图，只锁定起跳端与泳道正对的空间关系；不提前生成跳台上的人物。\n故事板已本地查看并转化为三个分段提示词中的文字化镜头顺序、景别、站位、动作节拍和出点状态；本次不上传任何故事板图片、线稿故事板或六宫格图。所有片段均无字幕、无画面文字、无BGM、无水印、无Logo。",
+    "refs": [
+      {
+        "index": 0,
+        "imageFile": "redstring_ep03_anna_school.png",
+        "fileName": "redstring_ep03_anna_school.png",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 1,
+        "imageFile": "redstring_ep03_anna_swim.png",
+        "fileName": "redstring_ep03_anna_swim.png",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 2,
+        "imageFile": "redstring_ep03_school_gate.png",
+        "fileName": "redstring_ep03_school_gate.png",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 3,
+        "imageFile": "redstring_ep03_pool.png",
+        "fileName": "redstring_ep03_pool.png",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 4,
+        "imageFile": "redstring_ep03_pool_start.png",
+        "fileName": "redstring_ep03_pool_start.png",
+        "type": "input",
+        "subfolder": ""
+      }
+    ],
+    "referenceVideo": {
+      "videoFile": "",
+      "fileName": "",
+      "type": "input",
+      "subfolder": ""
+    },
+    "continuousReference": false,
+    "genImage": {
+      "imageFile": ""
+    },
+    "sourceWidth": 1376,
+    "sourceHeight": 768,
+    "refAudios": [],
+    "refVideos": [],
+    "commonEnabled": true,
+    "commonCollapsed": false
+  },
+  "output": {
+    "mode": "fixed",
+    "aspectRatio": "16:9 (宽屏)",
+    "megapixels": 1,
+    "multiple": 32,
+    "longEdge": 1376,
+    "width": 1376,
+    "height": 768,
+    "maxExportFrames": 0,
+    "exportMode": "all",
+    "audioMode": "generate",
+    "continuityEnabled": true,
+    "continuityOverlapFrames": 22
+  },
+  "runSelectEnabled": false,
+  "runSelection": [],
+  "segments": [
+    {
+      "id": "ep03_p01_school_gate",
+      "name": "EP03-P01",
+      "startFrame": 0,
+      "length": 362,
+      "frameCount": 362,
+      "duration": 15,
+      "prompt": "subject_definitions:\n<Subject 1> 是来自 <Picture 3> 的红杉高中校门环境。保留正对校门的对称门楼、中央校徽、两侧高大的红杉树、黑色铁门、晴朗蓝天和正常开学早晨的金色阳光；只负责空间、光线和建筑骨架，不引入场景图中的固定路人。\n<Subject 2> 是普通学生群像：白色校服上衣、深色下装、深色书包，作为正常开学人流；不复刻安娜或李想的脸，不形成舞台式围观。\n<Subject 3> 是学生甲：普通高中男生，背深色书包，从校门外街角跑入校园，声音兴奋又紧张；只用于本段，不转化为主角。\n<Subject 4> 是学生乙：普通高中男生，背书包，从学生甲后方追上并压低声音交谈；始终位于学生甲后侧或右侧，不与他交换身份。\n<Picture 3> 是校门环境参考图，只锁定建筑、红杉树、铁门、校徽、蓝天和早晨光线；不继承偶然路人、可读校名或静态构图。\n\nsummary:\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的高精度日漫校园电影场景。故事板只被转化为文字镜头规划，不作为图片上传。镜头从校门外正面大远景开始，跟随两名普通学生跑入正常开学人流，听见关于不明生物袭击事件的低声传闻，最后把人流引向公告栏方向。安娜本段不出现，不主动融入集体。\n\nretention_analysis:\n<Subject 1>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留校门建筑、中央校徽、红杉树、铁门、晴朗天气和校园主轴；允许人物从校外进入校内，不改变建筑结构。\n<Subject 2>（出现在 [Shot 1]、[Shot 2]、[Shot 5]、[Shot 6]）：fully_preserved - 保留正常开学的人流密度、校服和书包；不得复刻主角脸，不突然清空或聚成围观圈。\n<Subject 3>（出现在 [Shot 1] 至 [Shot 5]）：fully_preserved - 保留从街角跑向校内的运动方向、深色书包和先行者位置；动作从跑步自然减速为快走，不得反向跑出校门。\n<Subject 4>（出现在 [Shot 2] 至 [Shot 5]）：fully_preserved - 保留从学生甲后方追上、位于其右后侧并向校内移动的关系；允许在 [Shot 3] 触碰手臂后并行快走，不得越过学生甲或与其换位。\n<Picture 3>（作为 [Shot 1] 至 [Shot 6] 的环境锚点）：fully_preserved - 只继承校门空间、建筑、树木、天气和光线，不继承参考图内偶然人物动作、文字或标识。\n\ndetailed_description:\n高精度日漫青春电影感，细腻赛璐璐人物，清晰稳定线稿，手绘动画背景，通透空气透视，晴朗早晨的金色阳光和树影。固定校门中轴与校内主路纵深，镜头不越过180度轴线；画面始终16:9横屏、2K级高清。所有故事板信息只作为镜头空间和动作节拍文字，不出现故事板边框、箭头、编号或黑白线稿。\n\n[Shot 1] At 00:00.000，校门外正前方大远景，完整呈现对称门楼、中央校徽、两侧红杉树和校内主楼。学生甲从画面左前方街角背着深色书包跑向校门，学生乙和几名普通学生在后方跟进，所有人向校内移动。学生甲回头但不停止，<Subject 3> (S1)<d>[Chinese] 等等我！听说那东西又出现了！</d> 说完闭口，继续跑。\n\n[Shot 2] At 00:02.500，动作匹配切到校门内侧全景，切点承接学生甲向前的跑步方向，不做跳切式放大。学生甲穿过铁门，学生乙追上半步，普通学生从两侧有序进入；校徽仍位于上方背景。<Subject 4> (S2)<d>[Chinese] 你说的是前几天袭击学校的那个？</d> 学生甲闭口继续向前。\n\n[Shot 3] At 00:05.000，沿校园主路稳定跟拍中景，学生乙追上学生甲并轻按他的上臂，两人从跑步过渡为并行快走；周围学生继续向前，不围住他们。两人保持左前右后的屏幕关系，动作在镜头末端落定。\n\n[Shot 4] At 00:07.500，明显改变构图的固定近景，从学生甲肩后看向校门外的铁栏和街道。学生甲停下半拍回头，学生乙留在右后侧闭口倾听；只表现兴奋与害怕的反应，不出现怪物实体、异常生物或破坏画面。\n\n[Shot 5] At 00:10.000，动作匹配切回校内主路全景，学生甲松开回望姿势，与学生乙一起向公告栏方向快走；普通学生从两侧经过，校门和红杉树退到后景。镜头沿同一轴线缓慢向前，不反向移动。\n\n[Shot 6] At 00:12.500，镜头继续前移并在公告栏远景处稳定停住，画面前景是校园道路和正常人流，远处能看到公告栏轮廓但不得出现可读文字。学生甲和学生乙走向画面深处，脚步和低声议论自然减弱；最后0.5秒保持稳定，不启动新动作，为下一段切入公告栏区域留下清晰空间接口。\n\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；故事板中的宫格线、箭头、编号和制作标注不入画。\n\noverall_soundscape:\n晴朗开学早晨的脚步声、书包轻响、校门人流声、树叶轻动声和远处铃声；两句学生对白严格按顺序出现并口型同步，其他学生只有不可辨认的低声环境声。没有旁白、没有怪物叫声、没有泳池声、没有BGM。\n\nnon_diegetic_music:\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\n\n## negativePrompt\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\n\n## 连续性出点\n- 学生甲和学生乙已从校门进入校园主路，保持向公告栏方向的行进方向。\n- 正常开学人流仍在场，校门、红杉树和晴朗天气保持不变。\n- 末帧停在公告栏区域的远景接口；下一段从公告栏附近接入，不上传故事板图。\n",
+      "negativePrompt": "subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame",
+      "taskType": "",
+      "refs": [],
+      "refAudios": [],
+      "refVideos": [],
+      "genImage": {
+        "imageFile": "",
+        "fileName": ""
+      },
+      "continuityFromPrev": false,
+      "refImageSize": "match",
+      "referenceVideo": {
+        "videoFile": "",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      }
+    }
+  ],
+  "timelineMode": "prompt_batch",
+  "width": 1376,
+  "height": 768,
+  "refMaxSize": 1376,
+  "gen": {
+    "defaultFrameCount": 243
+  },
+  "keyframes": [],
+  "durationSec": 15,
+  "shots": [],
+  "liveTaePreview": true,
+  "batchDetailMode": "solo",
+  "batchWorkspaces": {
+    "r2v": {
+      "selectedIndex": 0,
+      "editMode": "segment",
+      "runSelectEnabled": false,
+      "runSelection": [],
+      "segments": [
+        {
+          "id": "ep03_p01_school_gate",
+          "name": "EP03-P01",
+          "startFrame": 0,
+          "length": 362,
+          "frameCount": 362,
+          "duration": 15,
+          "prompt": "subject_definitions:\n<Subject 1> 是来自 <Picture 3> 的红杉高中校门环境。保留正对校门的对称门楼、中央校徽、两侧高大的红杉树、黑色铁门、晴朗蓝天和正常开学早晨的金色阳光；只负责空间、光线和建筑骨架，不引入场景图中的固定路人。\n<Subject 2> 是普通学生群像：白色校服上衣、深色下装、深色书包，作为正常开学人流；不复刻安娜或李想的脸，不形成舞台式围观。\n<Subject 3> 是学生甲：普通高中男生，背深色书包，从校门外街角跑入校园，声音兴奋又紧张；只用于本段，不转化为主角。\n<Subject 4> 是学生乙：普通高中男生，背书包，从学生甲后方追上并压低声音交谈；始终位于学生甲后侧或右侧，不与他交换身份。\n<Picture 3> 是校门环境参考图，只锁定建筑、红杉树、铁门、校徽、蓝天和早晨光线；不继承偶然路人、可读校名或静态构图。\n\nsummary:\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的高精度日漫校园电影场景。故事板只被转化为文字镜头规划，不作为图片上传。镜头从校门外正面大远景开始，跟随两名普通学生跑入正常开学人流，听见关于不明生物袭击事件的低声传闻，最后把人流引向公告栏方向。安娜本段不出现，不主动融入集体。\n\nretention_analysis:\n<Subject 1>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留校门建筑、中央校徽、红杉树、铁门、晴朗天气和校园主轴；允许人物从校外进入校内，不改变建筑结构。\n<Subject 2>（出现在 [Shot 1]、[Shot 2]、[Shot 5]、[Shot 6]）：fully_preserved - 保留正常开学的人流密度、校服和书包；不得复刻主角脸，不突然清空或聚成围观圈。\n<Subject 3>（出现在 [Shot 1] 至 [Shot 5]）：fully_preserved - 保留从街角跑向校内的运动方向、深色书包和先行者位置；动作从跑步自然减速为快走，不得反向跑出校门。\n<Subject 4>（出现在 [Shot 2] 至 [Shot 5]）：fully_preserved - 保留从学生甲后方追上、位于其右后侧并向校内移动的关系；允许在 [Shot 3] 触碰手臂后并行快走，不得越过学生甲或与其换位。\n<Picture 3>（作为 [Shot 1] 至 [Shot 6] 的环境锚点）：fully_preserved - 只继承校门空间、建筑、树木、天气和光线，不继承参考图内偶然人物动作、文字或标识。\n\ndetailed_description:\n高精度日漫青春电影感，细腻赛璐璐人物，清晰稳定线稿，手绘动画背景，通透空气透视，晴朗早晨的金色阳光和树影。固定校门中轴与校内主路纵深，镜头不越过180度轴线；画面始终16:9横屏、2K级高清。所有故事板信息只作为镜头空间和动作节拍文字，不出现故事板边框、箭头、编号或黑白线稿。\n\n[Shot 1] At 00:00.000，校门外正前方大远景，完整呈现对称门楼、中央校徽、两侧红杉树和校内主楼。学生甲从画面左前方街角背着深色书包跑向校门，学生乙和几名普通学生在后方跟进，所有人向校内移动。学生甲回头但不停止，<Subject 3> (S1)<d>[Chinese] 等等我！听说那东西又出现了！</d> 说完闭口，继续跑。\n\n[Shot 2] At 00:02.500，动作匹配切到校门内侧全景，切点承接学生甲向前的跑步方向，不做跳切式放大。学生甲穿过铁门，学生乙追上半步，普通学生从两侧有序进入；校徽仍位于上方背景。<Subject 4> (S2)<d>[Chinese] 你说的是前几天袭击学校的那个？</d> 学生甲闭口继续向前。\n\n[Shot 3] At 00:05.000，沿校园主路稳定跟拍中景，学生乙追上学生甲并轻按他的上臂，两人从跑步过渡为并行快走；周围学生继续向前，不围住他们。两人保持左前右后的屏幕关系，动作在镜头末端落定。\n\n[Shot 4] At 00:07.500，明显改变构图的固定近景，从学生甲肩后看向校门外的铁栏和街道。学生甲停下半拍回头，学生乙留在右后侧闭口倾听；只表现兴奋与害怕的反应，不出现怪物实体、异常生物或破坏画面。\n\n[Shot 5] At 00:10.000，动作匹配切回校内主路全景，学生甲松开回望姿势，与学生乙一起向公告栏方向快走；普通学生从两侧经过，校门和红杉树退到后景。镜头沿同一轴线缓慢向前，不反向移动。\n\n[Shot 6] At 00:12.500，镜头继续前移并在公告栏远景处稳定停住，画面前景是校园道路和正常人流，远处能看到公告栏轮廓但不得出现可读文字。学生甲和学生乙走向画面深处，脚步和低声议论自然减弱；最后0.5秒保持稳定，不启动新动作，为下一段切入公告栏区域留下清晰空间接口。\n\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；故事板中的宫格线、箭头、编号和制作标注不入画。\n\noverall_soundscape:\n晴朗开学早晨的脚步声、书包轻响、校门人流声、树叶轻动声和远处铃声；两句学生对白严格按顺序出现并口型同步，其他学生只有不可辨认的低声环境声。没有旁白、没有怪物叫声、没有泳池声、没有BGM。\n\nnon_diegetic_music:\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\n\n## negativePrompt\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\n\n## 连续性出点\n- 学生甲和学生乙已从校门进入校园主路，保持向公告栏方向的行进方向。\n- 正常开学人流仍在场，校门、红杉树和晴朗天气保持不变。\n- 末帧停在公告栏区域的远景接口；下一段从公告栏附近接入，不上传故事板图。\n",
+          "negativePrompt": "subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame",
+          "taskType": "",
+          "refs": [],
+          "refAudios": [],
+          "refVideos": [],
+          "genImage": {
+            "imageFile": "",
+            "fileName": ""
+          },
+          "continuityFromPrev": false,
+          "refImageSize": "match",
+          "referenceVideo": {
+            "videoFile": "",
+            "fileName": "",
+            "type": "input",
+            "subfolder": ""
+          }
+        }
+      ],
+      "globalCommon": {
+        "commonEnabled": true,
+        "commonCollapsed": false,
+        "prompt": "subject_definitions:\n图片1：安娜校服人物参考图，只锁定安娜的身份、深蓝长发、年龄感、体态和校服；不继承背景、文字或姿势。\n图片2：安娜游泳社人物参考图，只锁定安娜进入泳池后的深蓝长发、泳池服装和体态；不继承背景、文字或姿势。\n图片3：红杉高中校门晴天场景参考图，只锁定校门、中央校徽、红杉树、铁门、教学楼和晴朗早晨光线。\n图片4：室内标准泳池场景参考图，只锁定明亮蓝白泳池、六条泳道、长椅、远端池壁和室内天光。\n图片5：室内泳池起跳端场景参考图，只锁定起跳端与泳道正对的空间关系；不提前生成跳台上的人物。\n故事板已本地查看并转化为三个分段提示词中的文字化镜头顺序、景别、站位、动作节拍和出点状态；本次不上传任何故事板图片、线稿故事板或六宫格图。所有片段均无字幕、无画面文字、无BGM、无水印、无Logo。",
+        "refs": [
+          {
+            "index": 0,
+            "imageFile": "redstring_ep03_anna_school.png",
+            "fileName": "redstring_ep03_anna_school.png",
+            "type": "input",
+            "subfolder": ""
+          },
+          {
+            "index": 1,
+            "imageFile": "redstring_ep03_anna_swim.png",
+            "fileName": "redstring_ep03_anna_swim.png",
+            "type": "input",
+            "subfolder": ""
+          },
+          {
+            "index": 2,
+            "imageFile": "redstring_ep03_school_gate.png",
+            "fileName": "redstring_ep03_school_gate.png",
+            "type": "input",
+            "subfolder": ""
+          },
+          {
+            "index": 3,
+            "imageFile": "redstring_ep03_pool.png",
+            "fileName": "redstring_ep03_pool.png",
+            "type": "input",
+            "subfolder": ""
+          },
+          {
+            "index": 4,
+            "imageFile": "redstring_ep03_pool_start.png",
+            "fileName": "redstring_ep03_pool_start.png",
+            "type": "input",
+            "subfolder": ""
+          }
+        ],
+        "refAudios": [],
+        "refVideos": []
+      }
+    }
+  },
+  "videoWorkspaces": {
+    "v2v": {
+      "selectedIndex": 0,
+      "currentFrame": 0,
+      "editMode": "global",
+      "runSelectEnabled": false,
+      "runSelection": [],
+      "totalFrames": 0,
+      "frameRate": 24,
+      "storageWidth": 0,
+      "storageHeight": 0,
+      "segments": [],
+      "video": {
+        "fileName": "",
+        "videoFile": "",
+        "subfolder": "",
+        "type": "input",
+        "frames": [],
+        "frameMap": [],
+        "deletedSourceRanges": [],
+        "sourceFrameCount": 0,
+        "width": 0,
+        "height": 0
+      },
+      "videoClips": [],
+      "globalCommon": {
+        "commonEnabled": false,
+        "commonCollapsed": false,
+        "prompt": "",
+        "refs": [],
+        "refAudios": [],
+        "refVideos": []
+      }
+    },
+    "rv2v": {
+      "selectedIndex": 0,
+      "currentFrame": 0,
+      "editMode": "global",
+      "runSelectEnabled": false,
+      "runSelection": [],
+      "totalFrames": 124,
+      "frameRate": 24,
+      "storageWidth": 1376,
+      "storageHeight": 32,
+      "segments": [],
+      "video": {
+        "fileName": "",
+        "videoFile": "",
+        "subfolder": "",
+        "type": "input",
+        "frames": [],
+        "frameMap": [],
+        "deletedSourceRanges": [],
+        "sourceFrameCount": 0,
+        "width": 0,
+        "height": 0,
+        "storageWidth": 1376,
+        "storageHeight": 32
+      },
+      "videoClips": [],
+      "globalCommon": {
+        "commonEnabled": false,
+        "commonCollapsed": false,
+        "prompt": "",
+        "refs": [],
+        "refAudios": [],
+        "refVideos": []
+      }
+    }
+  }
+}

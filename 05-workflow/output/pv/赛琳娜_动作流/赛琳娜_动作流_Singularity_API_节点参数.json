@@ -1,0 +1,542 @@
+{
+  "36": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "37": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "38": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "49": {
+    "inputs": {
+      "image": "openapi/60174c37b8e31188f7211be70e13e7580ceb779e2f22a46008c03e0ae8ce711a.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "51": {
+    "inputs": {
+      "image": "openapi/1deabd23d62c5050313d20ca246a00e23cfa866c1e2ed118ea016db9b0a63545.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "58": {
+    "inputs": {
+      "model": [
+        "192",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "115": {
+    "inputs": {
+      "samples": [
+        "144",
+        1
+      ],
+      "vae": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "VAEDecodeAudio",
+    "_meta": {
+      "title": "VAE Decode Audio"
+    }
+  },
+  "116": {
+    "inputs": {
+      "samples": [
+        "144",
+        1
+      ],
+      "vae": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "139": {
+    "inputs": {
+      "av_latent": [
+        "226",
+        1
+      ]
+    },
+    "class_type": "LTXVSeparateAVLatent",
+    "_meta": {
+      "title": "Separate AV Latent"
+    }
+  },
+  "140": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "scale by multiplier",
+      "mode.scale": [
+        "283",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": false,
+      "latent": [
+        "139",
+        0
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "142": {
+    "inputs": {
+      "video_latent": [
+        "140",
+        0
+      ],
+      "audio_latent": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "LTXVConcatAVLatent",
+    "_meta": {
+      "title": "Concat AV Latent"
+    }
+  },
+  "144": {
+    "inputs": {
+      "noise": [
+        "256",
+        0
+      ],
+      "guider": [
+        "223",
+        0
+      ],
+      "sampler": [
+        "255",
+        0
+      ],
+      "sigmas": [
+        "289",
+        1
+      ],
+      "latent_image": [
+        "142",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "192": {
+    "inputs": {
+      "unet_name": "Minimax-h3_Singularity_ref2va_v1.3_int8.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "214": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "Selena_ActionFlow_Corrected",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "116",
+        0
+      ],
+      "audio": [
+        "115",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "223": {
+    "inputs": {
+      "model": [
+        "355",
+        0
+      ],
+      "conditioning": [
+        "265",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "226": {
+    "inputs": {
+      "noise": [
+        "256",
+        0
+      ],
+      "guider": [
+        "223",
+        0
+      ],
+      "sampler": [
+        "255",
+        0
+      ],
+      "sigmas": [
+        "289",
+        0
+      ],
+      "latent_image": [
+        "265",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "250": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "259",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "252": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.5,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "分辨率选择器"
+    }
+  },
+  "253": {
+    "inputs": {
+      "samples": [
+        "226",
+        1
+      ],
+      "vae": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "254": {
+    "inputs": {
+      "samples": [
+        "226",
+        1
+      ],
+      "vae": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "VAEDecodeAudio",
+    "_meta": {
+      "title": "VAE Decode Audio"
+    }
+  },
+  "255": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "256": {
+    "inputs": {
+      "noise_seed": 778416938750993
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "259": {
+    "inputs": {
+      "value": 10
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "视频时长（秒）"
+    }
+  },
+  "261": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 12,
+      "denoise": 1,
+      "model": [
+        "355",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "263": {
+    "inputs": {
+      "text": "subject_definitions:\n<Subject 1> is Selena from <Picture 1>, the exact adult female mentor identity, face, long dark-brown hair, pale blue-and-white layered outfit, proportions and refined Japanese anime rendering established by Picture 1. Selena is a calm, highly perceptive spatial-systems mentor. Her long-distance perception is an ability, not a device: she can sense distant positions, movement trajectories and hidden spatial disturbances across the city.\n<Picture 1> locks Selena's identity, appearance, costume, age and body proportions only. <Picture 2> is Selena's approved PV opening frame and locks the night observatory-like command room, rain-streaked glass, city lights and initial composition only. Do not inherit annotations, text or extra subjects from either image.\n\nsummary: A high-density action PV beat in which Selena instantly detects a distant spatial disturbance, maps multiple far-away moving targets, and reacts with large decisive movements. The visual language is fast, sharp and kinetic rather than slow or meditative.\n\nretention_analysis: Preserve Selena's exact face, long dark-brown hair, pale blue-and-white outfit, adult proportions, calm mentor presence, night command-room atmosphere and the original opening composition at 0.00 seconds. Preserve the ability's logic: distant perception appears as expanding transparent spatial grids, luminous sight-lines, concentric range rings and pinpoint trajectory markers across the city, never as a generic magic blast. Allow only the stated camera movement, arm gestures, hair and coat motion, city-light response and spatial overlays to change.\n\ndetailed_description: For the target video, at 0.00 seconds into the target video, <Picture 2> (from [Shot 1]) is fully referenced, while <Picture 1> (from [Shot 1]) locks Selena's identity. [Shot 1] 0.00–2.50 seconds: the camera starts in the approved night command room, then makes an immediate fast push-in and hard lateral whip-pan. Selena snaps her head toward the distant skyline, raises one hand sharply, and the dark window behind her blooms into a huge transparent city-scale spatial map. Multiple far-away points ignite at once, connected by bright sight-lines; the motion is crisp and full-speed, no slow motion. [Shot 2] 2.50–5.20 seconds: rapid cut to a wide city view seen through the glass. Selena's perception travels across several districts in one continuous visual sweep: range rings expand from far rooftops, moving figures are represented as tiny luminous trajectories, and hidden disturbances briefly distort the air between buildings. Cut back to a dynamic three-quarter shot as Selena pivots hard, her long hair and coat flaring with the turn, one arm cutting across frame to lock onto a far target. [Shot 3] 5.20–8.10 seconds: fast orbit around Selena. She steps forward decisively and draws three intersecting spatial planes with both hands; the planes stretch from the room through the skyline, showing exact distance, direction and movement vectors. The camera accelerates with the gesture; no floating pause, no dreamy slow motion. [Shot 4] 8.10–11.20 seconds: aggressive montage of close-up eye focus, wide skyline, rooftop trajectory lines and Selena's full-body counter-step. A distant incoming threat is detected before it appears; Selena sharply turns and throws one open-palm spatial mark toward the correct far-off location. The mark is a precise perception lock, not an attack, and the city remains intact. [Shot 5] 11.20–13.70 seconds: Selena crosses the room in three quick grounded steps, reaches the window and sweeps her hand outward. A giant transparent hemispherical perception field expands across the skyline, with hundreds of fine range lines and several bright moving paths updating in real time. The effect is large, readable and physically anchored to her gesture. [Shot 6] 13.70–15.00 seconds: the camera brakes from the rapid motion into a strong final medium-wide hero frame. Selena stands at the window, one hand extended toward the far city, calm eyes fixed on a distant point; the spatial grid remains visible and slowly stabilizes for the final 0.60 seconds. No new action begins in the final hold.\n\noverall_soundscape: rapid fabric and hair movement, decisive footsteps, sharp hand-motion whooshes, glass-window resonance, layered spatial pulses, distant city rain and low electrical ambience from the room; no dialogue.\n\nnon_diegetic_music: N/A\n\nvisual_style_and_hard_constraints: High-precision Japanese anime cinematic style, delicate cel shading, clean stable linework, hand-painted nocturnal city background, transparent atmospheric perspective, blue-black rainlight and controlled silver-white highlights, 16:9 landscape, 2K-class detail. Make the movement visibly large, forceful and full-speed: rapid push-ins, hard pans, fast orbit, decisive pivots, quick steps and strong arm gestures. Never use slow motion, time dilation, dreamy drifting, frozen posing or minimal movement. Preserve Selena's identity and adult proportions. No live action, photography, 3D render, Western comic, childish cartoon, oil painting, generic energy blast, weapon, combat injury, destruction, extra character, face drift, hairstyle change, costume change, duplicate body, teleportation, subtitles, captions, Chinese characters, title card, speech bubbles, UI, watermark, logo or BGM."
+    },
+    "class_type": "Text",
+    "_meta": {
+      "title": "Text"
+    }
+  },
+  "264": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "AIGCTYD1",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": false,
+      "no_preview": false,
+      "images": [
+        "253",
+        0
+      ],
+      "audio": [
+        "254",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "265": {
+    "inputs": {
+      "prompt": [
+        "263",
+        0
+      ],
+      "width": [
+        "252",
+        0
+      ],
+      "height": [
+        "252",
+        1
+      ],
+      "length": [
+        "250",
+        1
+      ],
+      "ref_image_size": "max",
+      "clip": [
+        "355",
+        1
+      ],
+      "vae": [
+        "36",
+        0
+      ],
+      "audio_vae": [
+        "37",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "51",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "49",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "_meta": {
+      "title": "MiniMax H3 Reference to Video"
+    }
+  },
+  "283": {
+    "inputs": {
+      "value": 1.5000000000000002
+    },
+    "class_type": "easy float",
+    "_meta": {
+      "title": "Float"
+    }
+  },
+  "289": {
+    "inputs": {
+      "step": 8,
+      "sigmas": [
+        "261",
+        0
+      ]
+    },
+    "class_type": "SplitSigmas",
+    "_meta": {
+      "title": "SplitSigmas"
+    }
+  },
+  "307": {
+    "inputs": {},
+    "class_type": "忽略多组孤海",
+    "_meta": {
+      "title": "忽略多组 孤海"
+    }
+  },
+  "308": {
+    "inputs": {},
+    "class_type": "忽略多组孤海",
+    "_meta": {
+      "title": "忽略多组 孤海"
+    }
+  },
+  "309": {
+    "inputs": {},
+    "class_type": "忽略多组孤海",
+    "_meta": {
+      "title": "忽略多组 孤海"
+    }
+  },
+  "310": {
+    "inputs": {},
+    "class_type": "忽略多组孤海",
+    "_meta": {
+      "title": "忽略多组 孤海"
+    }
+  },
+  "349": {
+    "inputs": {
+      "attention": "pytorch attention",
+      "model": [
+        "58",
+        0
+      ]
+    },
+    "class_type": "ModelAttentionBackend",
+    "_meta": {
+      "title": "ModelAttentionBackend"
+    }
+  },
+  "350": {
+    "inputs": {
+      "tau": 1.3,
+      "start_percent": 0.2,
+      "end_percent": 0.9,
+      "min_tokens": 12288,
+      "sink_conditioning": "exact_kv_and_rows",
+      "morton": false,
+      "morton_curve": "2d_frame",
+      "centroid_tail": true,
+      "routed_cap_percent": 0,
+      "reuse_qkv_memory": false,
+      "verbose": false,
+      "dense_blocks": "",
+      "model": [
+        "349",
+        0
+      ]
+    },
+    "class_type": "SolAttnMiniMax",
+    "_meta": {
+      "title": "Patch Sol-Attn (MiniMax)"
+    }
+  },
+  "355": {
+    "inputs": {
+      "lora_01": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "strength_01": 1,
+      "lora_02": "None",
+      "strength_02": 1,
+      "lora_03": "None",
+      "strength_03": 1,
+      "lora_04": "None",
+      "strength_04": 1,
+      "model": [
+        "350",
+        0
+      ],
+      "clip": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "Lora Loader Stack (rgthree)",
+    "_meta": {
+      "title": "Lora Loader Stack (rgthree)"
+    }
+  }
+}

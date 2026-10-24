@@ -1,0 +1,19 @@
+{
+  "source":"红绳",
+  "style":"high-precision anime cel animation, cinematic hand-drawn background, clean 16:9 composition",
+  "scenes":[
+    {"id":"S01","name":"红杉高中校门","anchor":"正面校门、红杉树、中央校徽、入校人流","lightingStates":["晴朗开学早晨"],"reference":"05-workflow/ep03/归档素材/场景/场景_红杉高中校门_晴天_无人.png"},
+    {"id":"S02","name":"室内标准泳池","anchor":"六条泳道、蓝黄分道线、玻璃天窗、池边学生集合","lightingStates":["室内蓝白天光"],"reference":"05-workflow/ep03/归档素材/场景/场景_室内标准泳池_无人.png"},
+    {"id":"S03","name":"室内泳池起跳端","anchor":"起跳台必须位于每条泳道正前端并正对泳道，水里无人时保持空池","lightingStates":["室内蓝白天光"],"reference":"05-workflow/ep03/归档素材/场景/场景_室内泳池起跳端_无人.png"},
+    {"id":"S05","name":"泳池边休息区","anchor":"池边蓝色防滑地面、毛巾架、长椅、计时板","lightingStates":["室内蓝白天光"],"reference":"05-workflow/ep03/归档素材/场景/场景_泳池边休息区_无人.png"}
+  ],
+  "props":[
+    {"id":"P01","name":"红杉高中校门","reference":"05-workflow/ep03/归档素材/场景/场景_红杉高中校门_晴天_无人.png"},
+    {"id":"P02","name":"泳池计时牌与记录板","reference":"05-workflow/ep03/归档素材/道具/泳池计时牌与记录板.png"},
+    {"id":"P03","name":"体育老师哨子","reference":"05-workflow/ep03/归档素材/道具/体育老师哨子.png"},
+    {"id":"P04","name":"泳镜与泳帽","reference":"05-workflow/ep03/归档素材/道具/游泳社训练套件.png"},
+    {"id":"P05","name":"正对泳道的起跳台","reference":"05-workflow/ep03/归档素材/场景/场景_室内泳池起跳端_无人.png"},
+    {"id":"P06","name":"泳道分道线与终点池壁","reference":"05-workflow/ep03/归档素材/场景/场景_室内标准泳池_无人.png"},
+    {"id":"P07","name":"游泳部报名表","reference":"05-workflow/ep03/归档素材/道具/游泳部报名表_无字.png"}
+  ]
+}

@@ -1,0 +1,41 @@
+subject_definitions:
+<Subject 1> 是陆沉，依据参考图：17岁高中男生，黑色短发微乱，白衬衫深色长裤校服，瘦高，脱离感、克制、眼神防备。他坐在金属桌左侧座位上，双手从背后改扣到桌面固定环上——铐环扣在桌沿金属环，活动范围极小。锁定面部五官、发型、校服款式与颜色、年龄感与身材比例。允许变化：坐姿、呼吸起伏、眼神与手部小动作、口型。不允许：换脸、换发型、换服装、受伤痕迹、镣铐消失、双手自由。
+<Subject 2> 是老韩，依据参考人设图：五十多岁的东亚男性，花白头发向后梳理得很规矩，鬓角明显发白，眼角有鱼尾纹，面部轮廓略宽厚，深灰色夹克袖口卷起两折，深色直筒长裤，左手腕一只素面金属腕表。神情是长年跑案子磨出来的疲惫，叠一层恰到好处的亲和——嘴角略微放松但不笑，眼神沉稳稳定。锁定面部五官、花白发型、夹克款式与深灰色、卷起的袖口、腕表、年龄感与身材比例。允许变化：坐姿、手部动作、口型、瓶盖动作。不允许：换脸、换发型、换服装、变年轻、出现武器或对讲机、出现眼镜帽子口罩。
+<Subject 3> 是审问室空间，依据参考场景图：机构内部的简约谈话室。灰白色平整墙面，房间无窗。中央一张冷灰色长方形金属桌，桌面为整块金属并带细微使用划痕，桌子长边沿房间纵深方向延伸；桌子左右两侧各一把深灰色金属框架椅。房间左侧墙为整面单向透视玻璃，从室内看去是一片均匀的暗灰色不透明镜面，只反射淡淡光晕，绝对看不到另一侧的任何人影或空间。房间纵深正前方偏右是一扇深灰色厚重金属门。金属桌面中央偏左放置一只透明玻璃杯盛约七分满温水，中央偏右放置一个素面牛皮纸包装的未拆封汉堡。房间正上方冷白色顶灯自上方垂直落下，桌面中央形成一小片明确亮区，房间四角自然压暗形成渐变阴影。锁定墙体材质、金属桌造型与位置、两把椅子的左右分布、单向透视玻璃位置、纵深门的位置、桌面道具的数量与相对位置。允许变化：极轻微光衰减、人物投影随动作微调。不允许：改变桌子长边方向、改变椅子左右分布、交换门与玻璃位置、出现窗户、出现第二张桌子、增加房间杂物、桌面出现文件纸张电脑或可读文字、暖黄灯光、阳光。
+<Audio 1> 是老韩的声音音色参考，仅用于锁定音色、音域与中年男性基础语速；不复制该音频的任何原始台词内容，也不复制其背景噪声。老韩的实际台词以本文档 detailed_description 中的 <d>[Chinese] ...</d> 为准。
+<Subject 4> 是桌面固定环与铐具，桌沿一处金属固定环，短链与一副金属手铐以短链连接固定在桌面。锁定金属材质、链条长度有限、铐环咬合状态。允许变化：手腕在铐环内极小幅度移动。不允许：镣铐凭空消失、链条变长、铐具变成绳索或扎带。
+
+summary:
+15秒连续16:9高精度日漫青春电影感单人审问对白段落开场。ND东郊分部审问室内，老韩推门进来，手里拎着一个牛皮纸纸袋，五十多岁，花白头发，深灰色夹克。他走到桌子右侧空椅坐下，从纸袋里拿出一个未拆封的牛肉汉堡和一瓶矿泉水，一起推到陆沉面前。桌对面的陆沉没有动，只是抬眼看着他。老韩开口说第一句话，语速平常、带着一层职业化的亲和，语气不紧不慢。全程只有老韩一人开口说话，使用指定音色参考（<Audio 1>）的中年男性嗓音，音量正常清晰；陆沉全程闭口不发任何声音，只有注视与细微反应。
+
+retention_analysis:
+<Subject 1>: fully_preserved - 陆沉身份、校服、白衬衫深色长裤、五官、发型、年龄感；反铐状态全程可见且不解除；座位在桌子左侧这一空间关系不可反转。
+<Subject 2>: fully_preserved - 老韩身份、花白发型、深灰夹克卷起袖口、腕表、五十多岁年龄感与沉稳疲惫神态；本片段只做坐下、放下物品与说一句话三个动作。
+<Subject 3>: fully_preserved - 审问室灰白墙、金属桌长边纵深方向、两把椅子左右分布、左侧墙单向透视玻璃、纵深偏右厚门、桌面温水准偏左与未拆封汉堡准偏右、冷白顶光压短投影。空间结构跨镜头完全不变。
+<Subject 4>: fully_preserved - 桌沿固定环、短链与金属铐具的咬合状态。
+说话人与音频绑定：老韩 (S1) 一一绑定 <Audio 1>，该音频只提供音色与语速基准，台词内容一律取自本提示词的 <d>[Chinese] ...</d>。本片段只有老韩发声，<Subject 2> (S1) 为唯一说话人。陆沉不分配任何 (Sx) 标签，全程闭口。
+渲染风格强制：以参考图锁定空间结构与透视，但成片必须呈现高精度日漫青春电影感——清晰的黑色勾线轮廓、大片平整色块、两到三层硬边或半硬边赛璐璐明暗色阶、平涂的高光形状，细腻手绘动画背景。参考图为空间与道具锚点，不得把成片渲染成摄影写实或3D渲染质感。
+
+detailed_description:
+15秒，16:9横屏，2K级高清，高精度日漫青春电影感，细腻赛璐璐人物与手绘动画背景，清晰稳定的角色线稿，大片平整色块与两到三层硬边赛璐璐明暗色阶，通透空气透视，冷蓝灰低饱和环境光。禁止摄影写实、真人照片质感、照片感、三维渲染、3D游戏画面、CG感、体积光照、欧美漫画、低幼卡通、厚涂油画。
+
+空间轴线（以参考场景图为准，全片段不可反转）：摄影机机位线始终保持在房间右侧墙一侧，不越轴。单向透视玻璃固定在画面左侧墙，是不透明的暗灰镜面，只反射光晕、不透出任何人影或空间。金属桌长边沿画面纵深方向延伸；温水杯在桌面中央偏左、未拆封汉堡在中央偏右；陆沉固定坐在桌子左侧座位，身体朝向右侧；老韩固定坐在桌子右侧空椅，身体朝向左侧陆沉；厚门固定在纵深正前方偏右。摄影机在正反打时始终留在轴线同一侧，陆沉恒在画面左侧、老韩恒在画面右侧，视线方向成对匹配，绝不反转左右。
+
+[Shot 1] 0.0-5.5s，锁定中景双人对角构图。机位在房间右侧墙一侧、与桌面同高，稳定无移动。画面包含桌面中央纵深走向、画面左侧坐着的陆沉上半身与桌面铐具、画面右侧正在拉开椅子准备落座的老韩上半身。纵深处可见那扇深灰厚门。画面最左侧边缘可见单向透视玻璃的一角，是一片均匀的暗灰色镜面。老韩右手拎着一个牛皮纸纸袋走到桌子右侧空椅前，把纸袋放到桌边，然后向下坐进椅子。动作落定：老韩坐稳，双手离开纸袋。陆沉全程不动，只有视线随老韩移动，头部小幅转动。环境音：一次椅子被拉动的轻响、纸袋放上桌面的轻响。
+
+[Shot 2] 5.5-9.5s，切为已经锁定的新构图：hard cut to a new locked medium two-shot of 老韩与桌面物品，机位仍在房间右侧墙同一侧、维持同一轴线。新构图已在切点完成重新建立，无变焦、无推拉、无残留在上一镜的运动。老韩从纸袋里拿出一个未拆封的牛皮纸包装汉堡和一瓶透明矿泉水，一起用双手推到桌面中央偏右的陆沉面前，两样物品在桌面上的前后位置与相邻关系完整可见。动作落定：两样物品停在桌面中央偏右，老韩双手收回桌沿。环境音：纸袋的窸窣声、瓶底与桌面接触的两声轻响。画面最左侧边缘仍可见单向透视玻璃的暗灰镜面一角，不透出任何内容。
+
+[Shot 3] 9.5-15.0s，切为已经锁定的新构图：hard cut to a new locked medium close-up of 老韩 chest-up，机位仍在房间右侧墙同一侧、维持同一轴线，陆沉仍恒在画面左侧不入此镜。新构图已在切点完成重新建立，无变焦、无推拉、无残留在上一镜的运动。老韩转向左侧看向陆沉，肩背略微放松，脸上是那层职业化的亲和，语气平常、不紧不慢，嘴唇清晰同步地说一句话，口型自然对应中文语音，说完自然收住不拖长尾音。他没有起身、没有前倾逼近，保持坐在椅子上的姿态。
+老韩用<Audio 1> 锁定的那种中年男性音色开口，音量正常、清晰可辨，语速中等不急不慢，喉音不重，气息平稳不喘息，嘴唇必须与中文每个字清晰同步，说完自然收住不拖长尾音。
+<Subject 2> (S1) says: <d>[Chinese]还没吃饭吧？牛肉的，不知道你爱不爱吃。</d>
+本段只有老韩一人发声。老韩说话期间，陆沉全程闭口、不张嘴，肩线平、姿态不回应，只用眼睛看着老韩；陆沉的注视与老韩看向画面左侧陆沉方向的视线成对匹配。最后约0.5秒摄影机完全静止，构图稳定停在老韩说完话后的中性姿态上。
+环境音：老韩这一句话的清晰人声、空调低鸣作为底噪。
+
+overall_soundscape:
+全程必须有老韩一段清晰可辨的中文对白人声，使用<Audio 1> 的中年男性音色，音量与环境音明显可区分，人声是本片段的主要声音内容，不得缺失或被环境音盖住。老韩由他先说，陆沉全程不说话、不发出任何声音。空调低鸣持续作为底噪；椅子被拉动的轻响；纸袋放上桌面的轻响与从中取物的窸窣声；瓶底与桌面接触的两声轻响。除此之外无其他音效。
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, BGM, background music, two speakers at once, both characters talking simultaneously, silent film, muted audio, no voice, missing dialogue, inaudible voice, whisper only, mumbling, robotic voice, wrong voice gender for Lao Han, young female voice for Lao Han, voice crackling, Lu Chen speaking, Lu Chen lip sync, mouth moving on silent character, both faces speaking, wrong speaker lip sync, camera off the speaker, Zhao Kai, Xiao Yue, Anna, any third character, any figure behind the one-way glass, reflection of another person, one-way mirror showing the other room, transparent glass showing the room beyond, door opening during this segment, warm light spilling from doorway, water being poured, documents on table, laptop on table, readable documents, window in the room, sunlight, warm orange lighting, cheerful cartoon tone, smiling broadly, handcuffs removed, cuffs unlocked, chains disappearing, long chains, rope bindings, free hands of Lu Chen, injury, blood, bloody shoulder, suppression dart marks, weapon, gun, baton, walkie-talkie, glasses, hat, mask, gloves, identity drift, face change, wrong hair, wrong uniform, younger version of Lao Han, photorealistic rendering, live action photo, 3D render, CG look, volumetric lighting, western comic style, chibi, thick oil painting, vertical video, 9:16, camera crossing the axis, mirrored room layout, swapping left and right, characters switching sides, table long edge rotated, chairs on wrong sides, eye distortion, hand deformation, extra fingers

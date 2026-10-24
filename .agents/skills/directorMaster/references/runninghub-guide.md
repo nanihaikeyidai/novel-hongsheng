@@ -395,3 +395,81 @@ RunningHub 云端生成时间取决于队列长度和视频时长：
 | 下载的视频 | `05-workflow/epXX/红绳_EPXX_片段NN-NN_8bit.mp4` |
 | timeline_data 备份 | `05-workflow/epXX/timeline_data_EPXX_rh.json` |
 | 运行记录 | `05-workflow/epXX/rh_runs/`（任务ID、时间、状态） |
+
+---
+
+## 七、文戏多图参考生视频工作流（手动版）
+
+### 7.1 工作流信息
+
+| 配置项 | 值 |
+|---|---|
+| 工作流名称 | MINIMAX-H3 文戏多图参考生视频-手动版 |
+| 工作流 ID | `2090840188716142593` |
+| 工作流 URL | `https://www.runninghub.cn/workflow/2090840188716142593` |
+| 核心节点 | `MiniMaxH3ReferenceToVideo`（参考图生视频） |
+| 参考图数量 | 2张（ref_image_0, ref_image_1） |
+| 参考音频数量 | 1条（ref_audio_0） |
+| 生成阶段 | 两阶段（低分辨率生成 → 放大refine） |
+
+### 7.2 与导演台工作流的区别
+
+| 维度 | 导演台工作流 | 文戏参考工作流 |
+|---|---|---|
+| 核心节点 | MiniMaxH3Director | MiniMaxH3ReferenceToVideo |
+| 参考图 | 最多5张（timeline_data中定义） | 固定2张 |
+| 参考音频 | 最多3条 | 固定1条 |
+| 分段支持 | 支持多分段timeline_data | 单段15秒 |
+| 提示词格式 | timeline_data JSON | 纯文本（Subject/Shot格式） |
+| API参数传递 | nodeInfoList有bug | 待验证 |
+
+### 7.3 提示词格式
+
+文戏参考工作流使用纯文本提示词，格式如下：
+
+```
+<Subject1> 人物1设定（外貌、音色、说话风格）
+<Subject2> 人物2设定（外貌、音色、说话风格）
+<Subject 3> 场景设定（环境、光线、道具）
+
+人物站位：描述人物位置和动作
+
+[Shot 1]
+镜头描述（景别、机位、动作）
+<Subject 1> (S1) says:
+<d>[Chinese]台词内容</d>
+
+[Shot 2]
+镜头描述...
+
+末帧保持...稳定姿态。
+
+【禁止项】
+文字/UI/水印/Logo/可读文字
+
+【强制声明】
+无背景音乐,仅保留环境音与人声和音效;画面禁字幕/文字/水印/Logo
+```
+
+### 7.4 关键节点ID（本地JSON文件）
+
+| 节点ID | 节点类型 | 用途 |
+|---|---|---|
+| 278 | PrimitiveStringMultiline | 提示词输入 |
+| 334 | LoadImage | 参考图1 |
+| 335 | LoadImage | 参考图2 |
+| 341 | LoadAudio | 参考音频 |
+| 332 | PrimitiveFloat | 时长（秒） |
+| 338 | MiniMaxH3ReferenceToVideo | 核心生成节点 |
+| 339 | ResolutionSelector | 分辨率选择 |
+| 323 | VHS_VideoCombine | 第一阶段输出（save_output=false） |
+| 359 | VHS_VideoCombine | 第二阶段输出（save_output=true，最终输出） |
+
+**注意**：RunningHub云端的节点ID可能与本地JSON文件不同，提交前需验证。
+
+### 7.5 适用场景
+
+- 单段15秒文戏生成
+- 简单对话场景（2人以内）
+- 需要精确控制人物音色和说话风格
+- 导演台工作流API参数传递有bug时的替代方案

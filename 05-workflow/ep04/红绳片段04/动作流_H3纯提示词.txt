@@ -1,0 +1,39 @@
+subject_definitions:
+<Picture 1> is Lu Chen from the reference image: 17-year-old high-school boy, black short messy hair, white shirt and dark trousers school uniform, backpack. Preserve face, hair, uniform. No wounds, no bandages.
+<Picture 2> is the END FRAME of the previous alley-block shot — THIS IS THE MANDATORY SCENE LOCK. Preserve the exact alley geometry, wet ground, wall positions, unmarked dark van blocking the exit, dusk cool blue-gray lighting, camera side of the lane, cardboard and puddles. Do NOT change location. Do NOT teleport to a school gate, open street plaza, office, or different alley. All action stays inside THIS same blocked alley.
+<Picture 3> is Zhao Kai from the reference image: adult male ND investigator in dark plainclothes, short neat hair, calm senior manner. Preserve face, hair, dark outfit. Xiao Yue (young female ND dark uniform, hair tied) may assist cuffing inside the same alley, consistent with the driver of the blocking van in Picture 2.
+
+summary:
+15-second continuous 16:9 Japanese animated capture clip ENTIRELY inside the same blocked alley locked by Picture 2. Lu Chen tries one last slip toward the van gap, is pinned to the alley wall, reverse-handcuffed. Anna only appears as a DISTANT tiny background witness far down the alley mouth / far opposite sidewalk — NEVER medium or close, NEVER standing near the capture. No weapons, no powers, no blood. Scene continuity from previous segment is mandatory.
+
+retention_analysis:
+<Subject 1>: fully_preserved - Lu Chen school identity.
+<Subject 2>: fully_preserved - SAME alley + SAME blocking van + SAME dusk wet light as Picture 2 end frame. Zero location drift.
+<Subject 3>: fully_preserved - Zhao Kai face and dark plainclothes; Xiao Yue only as alley-side cuff assist.
+Anna: distant background only — schoolgirl silhouette with long dark-blue hair and uniform, far away, no close framing.
+
+detailed_description:
+15 seconds, 16:9 widescreen, 2K HD, high-precision Japanese anime film style, cel shading. CRITICAL CONTINUITY: start from the same blocked-alley state as Picture 2 (van sealing exit, wet bricks, dusk). Camera stays in/near this alley for the whole 15s. NO location cut to elsewhere.
+
+SPATIAL RULE — Anna:
+- Anna is ONLY a far-distance witness (deep background / far end of alley mouth / distant opposite curb).
+- She is small in frame (roughly 1/8 height or smaller).
+- NEVER give Anna a medium shot, close-up, over-shoulder near the cuffs, or standing next to Lu Chen/Zhao Kai.
+- She does not walk into the alley. She does not speak. She may freeze, watch, and briefly side-press a phone while remaining far away.
+
+[Shot 1] 0.0-5.0s, medium shot INSIDE the blocked alley (same space as Picture 2). Lu Chen is still trapped between wet wall and van nose. He fakes a lower head, then suddenly darts toward the half-person gap by the van. Zhao Kai (dark plainclothes) steps in, chest-blocks him, pins Lu Chen's shoulder to the wet alley brick wall. Same alley walls and van remain in frame. No scene change.
+
+[Shot 2] 5.0-9.5s, medium close INSIDE the alley on Lu Chen + officers only. Van driver-side door / Xiao Yue from the van side locks Lu Chen's wrists behind his back — reverse handcuffs click. Lu Chen struggles twice; cuffs lock. Zhao Kai says flatly (S1): <d>[Chinese] 别再跑。</d> Lu Chen silent, jaw tight, temple on wet brick. BACKGROUND deep far end of alley mouth may show a tiny distant schoolgirl silhouette (Anna) watching — she stays far, out of the action zone.
+
+[Shot 3] 9.5-12.5s, wide alley shot from deeper in the lane looking toward the exit. Foreground/mid: Zhao Kai and Xiao Yue hold the cuffed Lu Chen beside the van in the alley. FAR background only: Anna is a small distant figure outside/near the alley mouth on the far sidewalk, still, watching. No cut to her face. Phone side-press is a tiny distant gesture if visible at all. Keep the same alley architecture and van.
+
+[Shot 4] 12.5-15.0s, medium alley shot. Officers push cuffed Lu Chen into the van side door STILL inside this alley. Door shuts. Van begins to reverse out of the alley mouth. Distant Anna remains a small far silhouette watching taillights; she does not approach. Final 0.5s hold on alley + van leaving, not on Anna close.
+
+overall_soundscape:
+Wet alley ambience, cloth struggle, handcuff metal click, one short Zhao Kai line, van door, engine reverse. Distant traffic only. No Anna dialogue. No BGM.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+scene change, location jump, different alley, school gate plaza, open bright street plaza, office interior, classroom, new background not matching Picture 2, teleportation, Anna close-up, Anna medium shot, Anna standing nearby, Anna next to Lu Chen, Anna inside the cuffing circle, Anna intervening, Anna speaking, Anna large in frame, guns, weapons, stun devices, blood, wounds, bandages, red eyes, superpowers, subtitles, captions, on-screen text, Chinese characters, UI, watermark, logo, BGM, background music, photorealism, live action, 3D render, vertical video, identity drift, face change, wrong hair, wrong uniform, smiling capture team, torture, beating

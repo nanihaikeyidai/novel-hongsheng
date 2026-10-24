@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is Lu Chen from the reference image: 17-year-old high-school boy, black short messy hair, white shirt dark trousers school uniform, backpack on one shoulder. Preserve face, hair, uniform.
+<Picture 2> is Xiao Yue from the reference image: young adult female ND officer in dark plainclothes/official dark uniform, hair tied back neatly, serious diligent newcomer. Preserve face, hairstyle, dark outfit, age. She drives and blocks the exit.
+<Picture 3> is the rain-damp school building exterior / alley-adjacent outdoor space from the reference image: wet ground, cool blue-gray overcast dusk, school building walls, narrow passage feel. Preserve architecture mood; no readable Chinese signage. Relight as dusk alley with puddles and stacked cardboard boxes if needed for narrow-lane atmosphere.
+
+summary:
+15-second continuous 16:9 Japanese animated chase clip. Lu Chen runs into a side alley with puddles. Zhao Kai chases on foot (may appear as dark-plainclothes male pursuer consistent with prior segment). At the far exit, Xiao Yue drives an unmarked dark business van across the alley mouth, blocking the escape with the car nose. Lu Chen skids to a stop. Both ends sealed. No weapons, no powers, no crashes injuring anyone.
+
+retention_analysis:
+<Subject 1>: fully_preserved - Lu Chen running, school uniform, backpack.
+<Subject 2>: fully_preserved - Xiao Yue in driver seat then at car, dark uniform, serious.
+<Subject 3>: fully_preserved - wet dusk exterior walls and ground; alley bottleneck atmosphere.
+Zhao Kai may appear as the male pursuer sealing the entrance; keep adult male dark plainclothes, calm control, no gun.
+
+detailed_description:
+15 seconds, 16:9 widescreen, 2K HD, high-precision Japanese anime film look, cel shading, hand-painted wet dusk backgrounds, cool blue-gray light, puddle splashes, cardboard boxes near alley mouth. NO weapons, NO guns, NO energy powers, NO red eyes, NO blood. Action is foot chase and vehicle blocking only.
+
+[Shot 1] 0.0-4.0s, tracking medium shot following Lu Chen sprinting into a narrow side alley. Puddles splash under his shoes. Cardboard stacks at the entrance. Breathing hard, focused escape.
+
+[Shot 2] 4.0-8.0s, reverse wide toward alley far exit. An unmarked dark business van cuts in from the street, nose angled to block the exit completely. Xiao Yue is in the driver seat, does not kill the engine, keeps the vehicle nose pressed to seal the gap. No crash stunt, controlled stop.
+
+[Shot 3] 8.0-12.0s, medium on Lu Chen as he emergency-brakes, shoes scrape on wet ground. He spins to look back — the entrance is sealed by Zhao Kai standing with empty open hands, blocking the narrow lane. He looks forward — only half a person-width remains between van and wall. Both ends locked. Chest rises twice. No path.
+
+[Shot 4] 12.0-15.0s, two-shot tension hold: Lu Chen centered between van nose and wall, Zhao Kai silhouette at rear, Xiao Yue visible through windshield. Final 0.5s stable locked frame before next segment cuffing.
+
+overall_soundscape:
+Running footsteps, water splash, van engine low idle, tire short brake on wet street, shoe scrape stop, heavy breathing. No dialogue. No BGM. No gunshots.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, UI, watermark, logo, BGM, background music, guns, weapons, batons, stun devices, darts, blood, explosions, car crash flip, superpowers, red eyes, monsters, photorealism, live action, 3D render, vertical video, handcuffs already locked in this segment, punching knockdown fight choreography, identity drift, face change, wrong hair, sunny noon, empty alley without van, Xiao Yue out of car too early before block completes

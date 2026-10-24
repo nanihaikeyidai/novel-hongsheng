@@ -1,0 +1,28 @@
+subject_definitions:
+<Picture 1> is Anna from the reference image: high-school girl, long dark-blue straight hair, school uniform, calm cold expression, backpack at side. Preserve face, hair, uniform, age exactly. She is covert and restrained — not flashy, not dramatic.
+<Picture 2> is the blocked alley capture scene from the reference frame: wet dusk alley, unmarked dark van sealing the exit, Lu Chen held/cuffed by dark-plainclothes officers near the van and wet brick wall. Preserve alley geometry, van, wet ground, cool blue-gray dusk light. This is the distant capture she peeks at.
+<Picture 3> is also Anna identity lock (same girl as Picture 1) for the covert photo beat — same face, hair, uniform; secretive body language.
+
+summary:
+Generate a continuous 5-second 16:9 Japanese animated film clip. Anna is NOT obvious. She hides at a wall corner / building foot, body half-hidden, peeking so she will not be noticed. She watches the distant alley capture covertly. She does NOT make a phone call. She secretly takes a photo with her phone (screen angled down/away, shutter gesture quiet). Two beats: (1) distant elevated/side wide proving she is far and concealed at the wall corner while capture happens deep in alley; (2) tight covert close on Anna half-behind wall corner, secretly photographing — no call, no speaking.
+
+retention_analysis:
+<Subject 1/3>: fully_preserved - Anna face, long dark-blue hair, school uniform; covert posture, low profile.
+<Subject 2>: fully_preserved - same blocked alley + van + capture as tiny distant action.
+Rules: Anna stays hidden at wall corner; never stands in open middle of sidewalk; never calls; only silent photo.
+
+detailed_description:
+5.0 seconds exact, 16:9 widescreen, 2K-class HD, high-precision Japanese anime film style, cel shading, hand-painted dusk city, cool blue-gray light. Mood: stealth observation, not heroic reveal.
+
+[Shot 1] 0.0-2.6s, elevated or slight high-angle wide, still and quiet. DEEP mid-ground: tiny alley capture — Lu Chen being held near the dark van, officers, van blocking exit. FOREGROUND / frame edge: a building wall corner or wall foot. Anna is HALF-HIDDEN behind that corner — only part of her head/shoulder/eye-line visible, body pressed to the wall, not stepping into open street. Large distance between her corner and the alley action. She peeks carefully, not waving, not standing bold. No dialogue. Locked or micro-hold.
+
+[Shot 2] 2.6-5.0s, close medium on Anna at the SAME wall corner (not open street center). She remains partially obscured by the corner edge. She slowly raises a phone with both hands or one hand, screen tilted downward/inward so it does not flash toward the alley, and secretly takes a photo — quiet shutter thumb tap, eyes watching past the corner toward the distant capture off-screen. Cold calm face, no smile, no talking, NO phone to ear, NO call UI. Final 0.4s hold on her hidden peek + phone lowered slightly after the shot.
+
+overall_soundscape:
+Very quiet dusk ambience, distant faint alley sounds only. Soft almost inaudible phone shutter click once. No voice. No call tones. No BGM.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+phone call, phone to ear, speaking, dialogue, talking, calling, obvious standing in open, middle of sidewalk hero pose, waving, running into alley, Anna next to van, Anna inside alley, Anna close to officers, dramatic spotlight on Anna, loud shutter flash burst, bright screen flash toward alley, guns, weapons, blood, red eyes, superpowers, subtitles, captions, on-screen text, Chinese characters, UI, watermark, logo, BGM, background music, photorealism, live action, 3D render, vertical video, identity drift, face change, wrong hair, smiling, shouting, two speakers at once

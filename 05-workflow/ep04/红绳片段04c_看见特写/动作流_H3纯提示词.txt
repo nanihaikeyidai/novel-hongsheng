@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is Anna from the reference image: high-school girl, long dark-blue straight hair, school uniform, calm cold expression. Preserve face, hair, uniform, age. Covert, low-profile, half-hidden at a wall corner — not flashy.
+<Picture 2> is the continuity frame of Anna peeking from the wall corner (previous shot end state): same wall corner, same dusk street, same half-hidden posture. Fully reference this as starting spatial state.
+<Picture 3> is the distant blocked-alley capture reference: wet dusk alley, dark van sealing exit, tiny officers holding Lu Chen near the van. Preserve as the far object of her gaze only.
+
+summary:
+5-second 16:9 Japanese animated film beat continuing from Anna's covert wall-corner peek. Director camera language: (1) slow push-in from her concealed corner while her eyes lock on the distant alley capture — prove she SEES them being taken; (2) settle into a tight face close-up reaction, cold and controlled. NO phone call, NO speaking, phone may stay lowered or absent. One main camera move per shot.
+
+retention_analysis:
+<Subject 1>: fully_preserved - Anna face/hair/uniform; covert corner body.
+<Subject 2>: fully_preserved - wall corner hide position from prior beat.
+<Subject 3>: fully_preserved - distant alley capture as tiny far action she watches.
+No call. No open-street hero stand.
+
+detailed_description:
+5.0 seconds exact, 16:9 widescreen, 2K-class HD, high-precision Japanese anime film style, cel shading, hand-painted dusk. Cool blue-gray light. Director camera: stable base, one motivated slow push-in, then hold on face — no wild orbit, no whip-pan spam, no zoom punch junk.
+
+CAMERA PLAN:
+- Shot 1 (0.0-2.7s): start as a slightly elevated over-shoulder / side peek from the wall corner. Anna is still half-hidden (shoulder and eye-line past the brick edge). In deep background along her eyeline: the alley capture remains small and distant (van + officers + Lu Chen). Primary move = slow push-in along her gaze axis (dolly-in ~10-15% scale), keeping her partial concealment; the distant capture stays readable as tiny action she is looking at. Result: the audience clearly reads "she sees them being captured" without her leaving cover.
+- Shot 2 (2.7-5.0s): cut or continuous settle into FACE CLOSE-UP of Anna only. Eyes still angled off-screen toward the alley. Micro-acting: pupils hold, one slow blink, jaw tight, breath almost still — cold confirmation, not panic. NO phone to ear, NO dialogue, NO call. Optional: phone remains low at frame bottom edge unused. Final 0.5s locked hold on face (payoff = her silent knowing look).
+
+[Shot 1] 0.0-2.7s, over-shoulder / corner-peek medium. Slow dolly push-in toward Anna's eye-line and the distant alley beyond. She does not step out. Distant capture stays far. Ambient only.
+
+[Shot 2] 2.7-5.0s, face close-up. Stable or micro push 3%. Silent reaction hold. No call. No text on phone screen.
+
+overall_soundscape:
+Quiet dusk hush, distant faint alley activity under soft city air. No voice. No call tone. No shutter required. No BGM.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+phone call, phone to ear, speaking, dialogue, talking, calling, open sidewalk center stand, leaving wall cover, walking into alley, Anna next to van, Anna beside officers, whip pan, 360 orbit, crash zoom, handheld chaos, guns, weapons, blood, red eyes, superpowers, subtitles, captions, on-screen text, Chinese characters, UI, watermark, logo, BGM, background music, photorealism, live action, 3D render, vertical video, identity drift, face change, wrong hair, smiling, shouting, panic scream face, two speakers at once

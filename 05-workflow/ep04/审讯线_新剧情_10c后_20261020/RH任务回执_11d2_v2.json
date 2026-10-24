@@ -1,0 +1,26 @@
+{
+  "segment": "11d2",
+  "taskId": "2112581882284826625",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "73",
+    "taskCostTime": "361",
+    "thirdPartyConsumeMoney": null
+  },
+  "prompt": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\11d2_凭什么相信_H3纯提示词.txt",
+  "images": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\参考图\\陆沉_正脸.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\参考图\\老韩_正脸.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-images\\场景\\场景_ND审问室_日漫v3.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\参考图\\11d_末帧.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\陆沉.wav",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\老韩.wav"
+  ],
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\视频草稿\\E04-11d2_凭什么相信_v2_未审核草稿.mp4"
+  ],
+  "exitFrame": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\审讯线_新剧情_10c后_20261020\\参考图\\11d2_末帧_v2.png"
+}

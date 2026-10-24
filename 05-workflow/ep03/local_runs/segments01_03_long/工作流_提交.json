@@ -1,0 +1,271 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "MiniMax H3 UNET"
+    }
+  },
+  "2": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "CLIP (minimax / Qwen3-VL)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Video VAE"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Audio VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "fps": [
+        "12",
+        2
+      ],
+      "bit_depth": 8,
+      "images": [
+        "12",
+        0
+      ],
+      "audio": [
+        "12",
+        1
+      ]
+    },
+    "class_type": "CreateVideo",
+    "_meta": {
+      "title": "Create Video"
+    }
+  },
+  "7": {
+    "inputs": {
+      "filename_prefix": "video/RedString_EP03_segments01_03_local_long",
+      "format": "auto",
+      "codec": "auto",
+      "fw_video_preview": "",
+      "video": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "SaveVideo",
+    "_meta": {
+      "title": "💾 Save Video"
+    }
+  },
+  "8": {
+    "inputs": {
+      "preview": "",
+      "source": [
+        "12",
+        5
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "Director 运行报告"
+    }
+  },
+  "12": {
+    "inputs": {
+      "task_type": "r2v — 参考主体生视频(Reference to Video)",
+      "global_prompt": "subject_definitions:\n图片1：安娜校服人物参考图，只锁定安娜的身份、深蓝长发、年龄感、体态和校服；不继承背景、文字或姿势。\n图片2：安娜游泳社人物参考图，只锁定安娜进入泳池后的深蓝长发、泳池服装和体态；不继承背景、文字或姿势。\n图片3：红杉高中校门晴天场景参考图，只锁定校门、中央校徽、红杉树、铁门、教学楼和晴朗早晨光线。\n图片4：室内标准泳池场景参考图，只锁定明亮蓝白泳池、六条泳道、长椅、远端池壁和室内天光。\n图片5：室内泳池起跳端场景参考图，只锁定起跳端与泳道正对的空间关系；不提前生成跳台上的人物。\n故事板已本地查看并转化为三个分段提示词中的文字化镜头顺序、景别、站位、动作节拍和出点状态；本次不上传任何故事板图片、线稿故事板或六宫格图。所有片段均无字幕、无画面文字、无BGM、无水印、无Logo。",
+      "bd_grp_sample": "采样设置",
+      "cfg": 1,
+      "seed": 666,
+      "frame_rate": 24,
+      "width": 1376,
+      "height": 768,
+      "ref_max_size": 1376,
+      "total_frames": 1086,
+      "timeline_data": "{\"version\":5,\"editMode\":\"segment\",\"totalFrames\":1086,\"frameRate\":24,\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":0,\"width\":0,\"height\":0},\"videoClips\":[],\"global\":{\"taskType\":\"r2v — 参考主体生视频(Reference to Video)\",\"prompt\":\"subject_definitions:\\n图片1：安娜校服人物参考图，只锁定安娜的身份、深蓝长发、年龄感、体态和校服；不继承背景、文字或姿势。\\n图片2：安娜游泳社人物参考图，只锁定安娜进入泳池后的深蓝长发、泳池服装和体态；不继承背景、文字或姿势。\\n图片3：红杉高中校门晴天场景参考图，只锁定校门、中央校徽、红杉树、铁门、教学楼和晴朗早晨光线。\\n图片4：室内标准泳池场景参考图，只锁定明亮蓝白泳池、六条泳道、长椅、远端池壁和室内天光。\\n图片5：室内泳池起跳端场景参考图，只锁定起跳端与泳道正对的空间关系；不提前生成跳台上的人物。\\n故事板已本地查看并转化为三个分段提示词中的文字化镜头顺序、景别、站位、动作节拍和出点状态；本次不上传任何故事板图片、线稿故事板或六宫格图。所有片段均无字幕、无画面文字、无BGM、无水印、无Logo。\",\"refs\":[{\"index\":0,\"imageFile\":\"redstring_ep03_anna_school.png\",\"fileName\":\"redstring_ep03_anna_school.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"redstring_ep03_anna_swim.png\",\"fileName\":\"redstring_ep03_anna_swim.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"redstring_ep03_school_gate.png\",\"fileName\":\"redstring_ep03_school_gate.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"redstring_ep03_pool.png\",\"fileName\":\"redstring_ep03_pool.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"redstring_ep03_pool_start.png\",\"fileName\":\"redstring_ep03_pool_start.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"},\"continuousReference\":false,\"genImage\":{\"imageFile\":\"\"},\"sourceWidth\":1376,\"sourceHeight\":768,\"refAudios\":[],\"refVideos\":[],\"commonEnabled\":true,\"commonCollapsed\":false},\"output\":{\"mode\":\"fixed\",\"aspectRatio\":\"16:9 (宽屏)\",\"megapixels\":1,\"multiple\":32,\"longEdge\":1376,\"width\":1376,\"height\":768,\"maxExportFrames\":0,\"exportMode\":\"all\",\"audioMode\":\"generate\",\"continuityEnabled\":true,\"continuityOverlapFrames\":22},\"runSelectEnabled\":true,\"runSelection\":[0,1,2],\"segments\":[{\"id\":\"ep03_p01_school_gate\",\"name\":\"EP03-P01\",\"startFrame\":0,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 3> 的红杉高中校门环境。保留正对校门的对称门楼、中央校徽、两侧高大的红杉树、黑色铁门、晴朗蓝天和正常开学早晨的金色阳光；只负责空间、光线和建筑骨架，不引入场景图中的固定路人。\\n<Subject 2> 是普通学生群像：白色校服上衣、深色下装、深色书包，作为正常开学人流；不复刻安娜或李想的脸，不形成舞台式围观。\\n<Subject 3> 是学生甲：普通高中男生，背深色书包，从校门外街角跑入校园，声音兴奋又紧张；只用于本段，不转化为主角。\\n<Subject 4> 是学生乙：普通高中男生，背书包，从学生甲后方追上并压低声音交谈；始终位于学生甲后侧或右侧，不与他交换身份。\\n<Picture 3> 是校门环境参考图，只锁定建筑、红杉树、铁门、校徽、蓝天和早晨光线；不继承偶然路人、可读校名或静态构图。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的高精度日漫校园电影场景。故事板只被转化为文字镜头规划，不作为图片上传。镜头从校门外正面大远景开始，跟随两名普通学生跑入正常开学人流，听见关于不明生物袭击事件的低声传闻，最后把人流引向公告栏方向。安娜本段不出现，不主动融入集体。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留校门建筑、中央校徽、红杉树、铁门、晴朗天气和校园主轴；允许人物从校外进入校内，不改变建筑结构。\\n<Subject 2>（出现在 [Shot 1]、[Shot 2]、[Shot 5]、[Shot 6]）：fully_preserved - 保留正常开学的人流密度、校服和书包；不得复刻主角脸，不突然清空或聚成围观圈。\\n<Subject 3>（出现在 [Shot 1] 至 [Shot 5]）：fully_preserved - 保留从街角跑向校内的运动方向、深色书包和先行者位置；动作从跑步自然减速为快走，不得反向跑出校门。\\n<Subject 4>（出现在 [Shot 2] 至 [Shot 5]）：fully_preserved - 保留从学生甲后方追上、位于其右后侧并向校内移动的关系；允许在 [Shot 3] 触碰手臂后并行快走，不得越过学生甲或与其换位。\\n<Picture 3>（作为 [Shot 1] 至 [Shot 6] 的环境锚点）：fully_preserved - 只继承校门空间、建筑、树木、天气和光线，不继承参考图内偶然人物动作、文字或标识。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，清晰稳定线稿，手绘动画背景，通透空气透视，晴朗早晨的金色阳光和树影。固定校门中轴与校内主路纵深，镜头不越过180度轴线；画面始终16:9横屏、2K级高清。所有故事板信息只作为镜头空间和动作节拍文字，不出现故事板边框、箭头、编号或黑白线稿。\\n\\n[Shot 1] At 00:00.000，校门外正前方大远景，完整呈现对称门楼、中央校徽、两侧红杉树和校内主楼。学生甲从画面左前方街角背着深色书包跑向校门，学生乙和几名普通学生在后方跟进，所有人向校内移动。学生甲回头但不停止，<Subject 3> (S1)<d>[Chinese] 等等我！听说那东西又出现了！</d> 说完闭口，继续跑。\\n\\n[Shot 2] At 00:02.500，动作匹配切到校门内侧全景，切点承接学生甲向前的跑步方向，不做跳切式放大。学生甲穿过铁门，学生乙追上半步，普通学生从两侧有序进入；校徽仍位于上方背景。<Subject 4> (S2)<d>[Chinese] 你说的是前几天袭击学校的那个？</d> 学生甲闭口继续向前。\\n\\n[Shot 3] At 00:05.000，沿校园主路稳定跟拍中景，学生乙追上学生甲并轻按他的上臂，两人从跑步过渡为并行快走；周围学生继续向前，不围住他们。两人保持左前右后的屏幕关系，动作在镜头末端落定。\\n\\n[Shot 4] At 00:07.500，明显改变构图的固定近景，从学生甲肩后看向校门外的铁栏和街道。学生甲停下半拍回头，学生乙留在右后侧闭口倾听；只表现兴奋与害怕的反应，不出现怪物实体、异常生物或破坏画面。\\n\\n[Shot 5] At 00:10.000，动作匹配切回校内主路全景，学生甲松开回望姿势，与学生乙一起向公告栏方向快走；普通学生从两侧经过，校门和红杉树退到后景。镜头沿同一轴线缓慢向前，不反向移动。\\n\\n[Shot 6] At 00:12.500，镜头继续前移并在公告栏远景处稳定停住，画面前景是校园道路和正常人流，远处能看到公告栏轮廓但不得出现可读文字。学生甲和学生乙走向画面深处，脚步和低声议论自然减弱；最后0.5秒保持稳定，不启动新动作，为下一段切入公告栏区域留下清晰空间接口。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；故事板中的宫格线、箭头、编号和制作标注不入画。\\n\\noverall_soundscape:\\n晴朗开学早晨的脚步声、书包轻响、校门人流声、树叶轻动声和远处铃声；两句学生对白严格按顺序出现并口型同步，其他学生只有不可辨认的低声环境声。没有旁白、没有怪物叫声、没有泳池声、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 学生甲和学生乙已从校门进入校园主路，保持向公告栏方向的行进方向。\\n- 正常开学人流仍在场，校门、红杉树和晴朗天气保持不变。\\n- 末帧停在公告栏区域的远景接口；下一段从公告栏附近接入，不上传故事板图。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}},{\"id\":\"ep03_p02_noticeboard_anna_passes\",\"name\":\"EP03-P02\",\"startFrame\":362,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的安娜：高中女生，深蓝色长发，冷淡中性表情，白色短袖校服衬衫、深色领带、深色百褶裙和黑色单肩包。<Picture 1> 只锁定她的身份、发型、年龄感、校服版型和体态，不继承泳装、泳帽或游泳动作。安娜没有主动融入集体的意愿，也没有感受到集体温暖；她只是听见议论后不拒绝经过这条路，情绪保持无感。\\n<Subject 2> 是来自 <Picture 3> 的红杉高中校门内侧环境，补充来自 <Picture 6> 的公告栏走廊空间。保留晴天、教学楼、红杉树、公告栏、通往室内体育馆的校园道路和黑黄警戒带；不继承参考图内的偶然人物、可读通知文字或错误构图。\\n<Subject 3> 是普通学生群像：白色校服、深色书包，只作为低声议论和自然让路的人流；不复刻安娜或其他主角脸。\\n<Picture 1> 是安娜校服人物参考图，只负责安娜的身份外观和服装。\\n<Picture 3> 是校门环境参考图，只负责晴天校园入口、建筑、红杉树和光线骨架。\\n<Picture 6> 是社团公告栏走廊场景参考图，只负责公告栏、封锁带、教学楼入口和人群通道的空间关系。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的校园悬疑过场。故事板只转化为文字镜头设计，不作为图片上传。镜头承接上一段进入公告栏区域：学生议论不明生物袭击，安娜从人群外侧出现，听见自己的名字后没有回头、没有回应、没有主动融入，只确认通往室内泳池的方向并继续走。结尾以她走向体育馆/室内泳池方向的稳定背影收束。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 4]、[Shot 5]、[Shot 6]）：fully_preserved - 保留安娜的深蓝长发、校服、黑色单肩包、冷淡无感表情和不主动社交的状态；允许她从人群边缘进入并沿校园道路前进，不改变发色、服装或年龄感。\\n<Subject 2>（出现在全部镜头）：fully_preserved - 保留公告栏、封锁带、教学楼入口、树影和通往室内泳池的道路；不生成可读通知，不把封锁区域变成灾难现场。\\n<Subject 3>（出现在 [Shot 1]、[Shot 2]、[Shot 3]、[Shot 4]、[Shot 5]）：fully_preserved - 保留普通学生的校服、人流密度和自然让路行为；不得把群演变成安娜的朋友或热情欢迎她。\\n<Picture 1>：fully_preserved - 只继承安娜身份外观与校服，不继承白背景、泳装或人设图姿势。\\n<Picture 3>、<Picture 6>：fully_preserved - 只继承校园空间、公告栏、封锁带、晴朗光线与道路方向，不继承图片中的文字、人物身份和静态分格。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，手绘动画背景，晴天树影和通透空气透视。固定世界轴线：公告栏在左前景，封锁入口在中远景，校园道路向室内泳池方向延伸。镜头只在信息和景别明显变化时切换，不越轴、不跳切；画面始终16:9横屏、2K级高清。故事板仅作为文字化的镜头顺序和空间逻辑，不出现宫格线、箭头、编号、文字或线稿。\\n\\n[Shot 1] At 00:00.000，公告栏旁中近景，前景由两三名学生肩膀和书包形成遮挡，学生压低声音议论；背景看见晴天教学楼和正常人流。公告纸只表现无字白色纸块和模糊色块。<Subject 3> (S1)<d>[Chinese] 小声点，学校说只是设备事故。</d> 说话学生闭口后，其他人继续观察封锁入口。\\n\\n[Shot 2] At 00:02.500，动作匹配切到公告栏与封锁入口的中远景，公告栏在左前景，黑黄警戒带和临时隔离栏横向封住远处入口。<Subject 3> (S2)<d>[Chinese] 设备事故能把窗户撕成那样？</d> 说话者只做短暂口型，其他学生闭口，画面不出现危险生物本体。\\n\\n[Shot 3] At 00:05.000，固定肩后视角，学生们的视线从公告栏转向画面右后方的校园通道，给安娜从人群边缘进入预留动线。人群不围堵、不向镜头拥挤，封锁带状态不改变。\\n\\n[Shot 4] At 00:07.500，明显改变构图的稳定中景，安娜从人群外侧进入画面，正面或三分之二侧面可见，手握单肩包带，表情平静无感。她不看议论者，不停步，不加入谈话；普通学生自然让出一条窄通道。<Subject 3> (S3)<d>[Chinese] 她就是那天在附近的人吧？</d> 声音来自安娜身后侧，安娜保持闭口，不回头。\\n\\n[Shot 5] At 00:10.000，沿同一空间轴线侧面跟拍安娜经过议论区。她的长发和校服随步伐轻微摆动，前后景学生虚化，议论声留在身后；她的视线越过人群，确认通往室内体育馆/泳池的方向，步速不变。\\n\\n[Shot 6] At 00:12.500，稳定中远景从安娜后方跟随，校园道路向远处室内体育馆的弧形建筑和玻璃立面延伸。安娜居中偏左，普通学生向不同方向分散，安娜不回头；镜头与她同向移动后在末帧减速停止，最后0.5秒保持稳定背影，不启动新动作。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；公告栏和警戒带只提供空间信息，不能出现可读通知或校内标语。\\n\\noverall_soundscape:\\n晴天校园脚步、书包摩擦、树叶声、远处学生低语和一声上课铃；三句议论严格按顺序出现并完成对应口型，安娜全程无台词。铃声后人群开始向教学楼和泳池方向分散；没有旁白、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable notice text, readable school slogans, storyboard grid, arrows, numbering, production marks, Anna speaking, Anna smiling, Anna主动社交, Anna回应议论, Anna回头, Anna泳装, Anna泳帽, brown-haired Anna, identity drift, monster, creature body, disaster scene, space reversal, crowd disappearance, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 安娜已从公告栏人群外侧经过，保持无感、闭口、不回头的状态。\\n- 她沿校园道路朝室内体育馆/泳池方向移动，普通学生在后方和两侧分散。\\n- 末帧是晴天校园道路通向室内泳池的方向；下一段切入室内泳池侧门，不上传故事板图。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable notice text, readable school slogans, storyboard grid, arrows, numbering, production marks, Anna speaking, Anna smiling, Anna主动社交, Anna回应议论, Anna回头, Anna泳装, Anna泳帽, brown-haired Anna, identity drift, monster, creature body, disaster scene, space reversal, crowd disappearance, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[{\"index\":5,\"imageFile\":\"redstring_ep03_noticeboard.png\",\"fileName\":\"redstring_ep03_noticeboard.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}},{\"id\":\"ep03_p03_indoor_pool_gathering\",\"name\":\"EP03-P03\",\"startFrame\":724,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 2> 的安娜：深蓝色长发，冷淡无感的高中女生。进入泳池后穿深蓝色连体泳衣和白色运动外套，整理泳帽与泳镜，站在学生队伍末端；她不主动融入，不因集体气氛改变表情，只按老师安排行动。\\n<Subject 2> 是来自 <Picture 3> 的李想：短黑发、运动员体型、深蓝泳帽和泳镜，穿深蓝色泳裤；本段只作为游泳课学生群中的显眼运动员，不提前站上跳台，不提前入水。\\n<Subject 3> 是成年女性体育老师：专业运动服，手持哨子和记录板，负责指挥队伍；保持成年教师的可信度、专业感和课堂威严。\\n<Subject 4> 是普通游泳课学生群：穿统一泳装或运动训练服，携带毛巾和训练袋；只做入场、放置物品、检查泳镜和集合，不复刻安娜或李想的脸。\\n<Subject 5> 是来自 <Picture 4> 的室内标准泳池环境：明亮蓝白天光、六条泳道、清澈水面、池边长椅、蓝白三角旗和高窗；空镜和集合镜头的泳池水中不得出现人物。\\n<Picture 2> 是安娜游泳社人物参考图，只锁定她的身份、深蓝长发和泳池服装，不继承人设图背景、构图或多余姿势。\\n<Picture 3> 是李想游泳社人物参考图，只锁定他的身份、体型、深蓝泳帽、泳镜和泳裤，不继承人设图背景或夸张自拍姿势。\\n<Picture 4> 是室内标准泳池场景图，只锁定泳池建筑、六条泳道、蓝白光线、长椅和远端池壁；不继承场景图中的文字或偶然物件。\\n<Picture 5> 是室内泳池起跳端场景图，只负责池边起跳端、跳台与泳道正对关系；本段只用于空间预示，不让人物提前站上跳台。\\n<Picture 6> 是游泳社训练套件道具图，只提供训练袋、毛巾、泳镜等道具形态；不生成可读文字或Logo。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的室内游泳课集合场景。故事板只被转成文字镜头设计，不作为图片上传。视频从泳池侧门打开开始，学生成组进入、把毛巾放在池边长椅，体育老师用记录板和哨子组织集合并宣布自由泳计时。安娜位于队伍末端，保持冷静无感；李想只在学生群中被建立，不提前跳台、不入水。六条泳道和水面在集合段保持空置。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 1]、[Shot 2]、[Shot 4]、[Shot 5]）：fully_preserved - 保留安娜深蓝长发、深蓝泳衣、白色运动外套、冷淡无感表情和队伍末端位置；允许她整理泳帽、泳镜和训练袋，不主动靠近人群。\\n<Subject 2>（出现在 [Shot 2]、[Shot 4]、[Shot 5]）：fully_preserved - 保留李想的短黑发、运动员体型、深蓝泳帽和泳镜；本段只能在池边学生群中出现，不上跳台、不入水、不与安娜比赛。\\n<Subject 3>（出现在 [Shot 3]、[Shot 5]、[Shot 6]）：fully_preserved - 保留成年女性体育老师的身份、记录板、哨子、专业动作和课堂威严；她是唯一负责发号施令的人。\\n<Subject 4>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留学生群的正常集合、毛巾和训练袋，道具状态从入场到摆放连续；不得让水中出现无关学生。\\n<Subject 5>（出现在全部镜头）：fully_preserved - 保留蓝白泳池、六条泳道、明亮窗光、池边长椅和远端池壁；跳台始终正对泳道，不放在泳池侧面。\\n<Picture 2>、<Picture 3>、<Picture 4>、<Picture 5>、<Picture 6>：fully_preserved - 只继承各自指定的身份、空间和道具属性，不继承参考图背景文字、宫格布局、Logo或错误人物。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，手绘动画背景，明亮蓝白室内天光，水面反射克制、线稿稳定。固定泳池长轴：泳道从近端向远端池壁延伸，跳台在泳道正前方；镜头不把跳台放到泳道侧面。集合阶段池水保持无人，只有池边学生和老师。故事板仅提供镜头顺序、站位和动作节拍文字，不出现故事板宫格、箭头、编号、文字或黑白线稿。\\n\\n[Shot 1] At 00:00.000，泳池侧门方向大远景，门打开，普通学生成组进入明亮的室内泳池；六条泳道向远端延伸，水面清澈空置，跳台位于泳道正前方的远端。安娜在队伍后侧进入，李想混在学生群中，体育老师在池边等候。\\n\\n[Shot 2] At 00:02.500，沿池边向内的全景，学生把训练袋和毛巾放到长椅上，训练套件中的毛巾、泳镜和水杯自然分散摆放；蓝白天光落在池面。安娜只整理自己的泳帽和外套，李想与其他学生保持自然距离；泳池水中仍然没有人。\\n\\n[Shot 3] At 00:05.000，固定中景，体育老师站在池边，抬起记录板和哨子示意所有学生靠近池边集合。<Subject 3> (S1)<d>[Chinese] 所有人先站到池边，检查泳帽和泳镜。</d> 老师口型清晰，学生闭口听令，安娜抬眼确认手势但不表现热情。\\n\\n[Shot 4] At 00:08.000，稳定近景组接：安娜低头检查泳镜带和泳帽边缘，手指动作准确；旁边学生各自整理泳镜和毛巾，李想把泳镜推到额头但仍留在池边。没有人下水，没有人站上跳台。\\n\\n[Shot 5] At 00:10.500，切到老师与学生群的中景，老师在无字记录板上写下测试顺序，安娜位于队伍末端，李想在学生群前侧，所有人面向老师。<Subject 3> (S1)<d>[Chinese] 今天做自由泳计时，不比蛮力。</d> 老师说完放低记录板，课堂安静下来。\\n\\n[Shot 6] At 00:13.000，哨子和记录板的稳定特写，老师把哨子握在胸前，水声和室内回响作为背景；镜头轻微拉开，恢复池边集合的稳定构图，安娜和李想都仍在池边，泳道水面无人。最后0.5秒保持哨子、记录板、池边队伍和正对泳道的跳台稳定，不启动下一组下水动作。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；记录板、训练套件和泳池标识不得出现可读文字。\\n\\noverall_soundscape:\\n室内泳池的水面回响、脚步、训练袋和毛巾放置声、泳镜轻响、远处通风声、老师清晰的两句课堂指令和短促哨子碰撞声。没有入水声、没有游泳划水声、没有观众起哄、没有旁白、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable clipboard text, readable pool signage, storyboard grid, arrows, numbering, production marks, people in pool water, swimming action, diving, jumping off blocks, students standing on starting blocks, starting blocks beside lanes, side-facing starting blocks, Anna actively socializing, Anna smiling at crowd, Lixiang entering the water, wrong hair color, wrong outfit, identity drift, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 安娜与李想都在池边集合区，安娜位于队伍末端，保持无感；李想仍未下水。\\n- 体育老师手持记录板和哨子，已宣布自由泳计时；六条泳道水面保持无人。\\n- 跳台位于泳道正前方、朝向远端池壁，下一段可从老师宣布“下一组，自由泳准备”后接入起跳端。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable clipboard text, readable pool signage, storyboard grid, arrows, numbering, production marks, people in pool water, swimming action, diving, jumping off blocks, students standing on starting blocks, starting blocks beside lanes, side-facing starting blocks, Anna actively socializing, Anna smiling at crowd, Lixiang entering the water, wrong hair color, wrong outfit, identity drift, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[{\"index\":5,\"imageFile\":\"redstring_ep03_swim_kit.png\",\"fileName\":\"redstring_ep03_swim_kit.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}}],\"timelineMode\":\"prompt_batch\",\"width\":1376,\"height\":768,\"refMaxSize\":1376,\"gen\":{\"defaultFrameCount\":243},\"keyframes\":[],\"durationSec\":45,\"shots\":[],\"liveTaePreview\":true,\"batchDetailMode\":\"solo\",\"batchWorkspaces\":{\"r2v\":{\"selectedIndex\":0,\"editMode\":\"segment\",\"runSelectEnabled\":true,\"runSelection\":[0,1,2],\"segments\":[{\"id\":\"ep03_p01_school_gate\",\"name\":\"EP03-P01\",\"startFrame\":0,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 3> 的红杉高中校门环境。保留正对校门的对称门楼、中央校徽、两侧高大的红杉树、黑色铁门、晴朗蓝天和正常开学早晨的金色阳光；只负责空间、光线和建筑骨架，不引入场景图中的固定路人。\\n<Subject 2> 是普通学生群像：白色校服上衣、深色下装、深色书包，作为正常开学人流；不复刻安娜或李想的脸，不形成舞台式围观。\\n<Subject 3> 是学生甲：普通高中男生，背深色书包，从校门外街角跑入校园，声音兴奋又紧张；只用于本段，不转化为主角。\\n<Subject 4> 是学生乙：普通高中男生，背书包，从学生甲后方追上并压低声音交谈；始终位于学生甲后侧或右侧，不与他交换身份。\\n<Picture 3> 是校门环境参考图，只锁定建筑、红杉树、铁门、校徽、蓝天和早晨光线；不继承偶然路人、可读校名或静态构图。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的高精度日漫校园电影场景。故事板只被转化为文字镜头规划，不作为图片上传。镜头从校门外正面大远景开始，跟随两名普通学生跑入正常开学人流，听见关于不明生物袭击事件的低声传闻，最后把人流引向公告栏方向。安娜本段不出现，不主动融入集体。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留校门建筑、中央校徽、红杉树、铁门、晴朗天气和校园主轴；允许人物从校外进入校内，不改变建筑结构。\\n<Subject 2>（出现在 [Shot 1]、[Shot 2]、[Shot 5]、[Shot 6]）：fully_preserved - 保留正常开学的人流密度、校服和书包；不得复刻主角脸，不突然清空或聚成围观圈。\\n<Subject 3>（出现在 [Shot 1] 至 [Shot 5]）：fully_preserved - 保留从街角跑向校内的运动方向、深色书包和先行者位置；动作从跑步自然减速为快走，不得反向跑出校门。\\n<Subject 4>（出现在 [Shot 2] 至 [Shot 5]）：fully_preserved - 保留从学生甲后方追上、位于其右后侧并向校内移动的关系；允许在 [Shot 3] 触碰手臂后并行快走，不得越过学生甲或与其换位。\\n<Picture 3>（作为 [Shot 1] 至 [Shot 6] 的环境锚点）：fully_preserved - 只继承校门空间、建筑、树木、天气和光线，不继承参考图内偶然人物动作、文字或标识。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，清晰稳定线稿，手绘动画背景，通透空气透视，晴朗早晨的金色阳光和树影。固定校门中轴与校内主路纵深，镜头不越过180度轴线；画面始终16:9横屏、2K级高清。所有故事板信息只作为镜头空间和动作节拍文字，不出现故事板边框、箭头、编号或黑白线稿。\\n\\n[Shot 1] At 00:00.000，校门外正前方大远景，完整呈现对称门楼、中央校徽、两侧红杉树和校内主楼。学生甲从画面左前方街角背着深色书包跑向校门，学生乙和几名普通学生在后方跟进，所有人向校内移动。学生甲回头但不停止，<Subject 3> (S1)<d>[Chinese] 等等我！听说那东西又出现了！</d> 说完闭口，继续跑。\\n\\n[Shot 2] At 00:02.500，动作匹配切到校门内侧全景，切点承接学生甲向前的跑步方向，不做跳切式放大。学生甲穿过铁门，学生乙追上半步，普通学生从两侧有序进入；校徽仍位于上方背景。<Subject 4> (S2)<d>[Chinese] 你说的是前几天袭击学校的那个？</d> 学生甲闭口继续向前。\\n\\n[Shot 3] At 00:05.000，沿校园主路稳定跟拍中景，学生乙追上学生甲并轻按他的上臂，两人从跑步过渡为并行快走；周围学生继续向前，不围住他们。两人保持左前右后的屏幕关系，动作在镜头末端落定。\\n\\n[Shot 4] At 00:07.500，明显改变构图的固定近景，从学生甲肩后看向校门外的铁栏和街道。学生甲停下半拍回头，学生乙留在右后侧闭口倾听；只表现兴奋与害怕的反应，不出现怪物实体、异常生物或破坏画面。\\n\\n[Shot 5] At 00:10.000，动作匹配切回校内主路全景，学生甲松开回望姿势，与学生乙一起向公告栏方向快走；普通学生从两侧经过，校门和红杉树退到后景。镜头沿同一轴线缓慢向前，不反向移动。\\n\\n[Shot 6] At 00:12.500，镜头继续前移并在公告栏远景处稳定停住，画面前景是校园道路和正常人流，远处能看到公告栏轮廓但不得出现可读文字。学生甲和学生乙走向画面深处，脚步和低声议论自然减弱；最后0.5秒保持稳定，不启动新动作，为下一段切入公告栏区域留下清晰空间接口。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；故事板中的宫格线、箭头、编号和制作标注不入画。\\n\\noverall_soundscape:\\n晴朗开学早晨的脚步声、书包轻响、校门人流声、树叶轻动声和远处铃声；两句学生对白严格按顺序出现并口型同步，其他学生只有不可辨认的低声环境声。没有旁白、没有怪物叫声、没有泳池声、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 学生甲和学生乙已从校门进入校园主路，保持向公告栏方向的行进方向。\\n- 正常开学人流仍在场，校门、红杉树和晴朗天气保持不变。\\n- 末帧停在公告栏区域的远景接口；下一段从公告栏附近接入，不上传故事板图。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable school name, readable notice text, storyboard grid, arrows, numbering, production marks, monster, distorted creature, Anna, Lixiang, main-character face replication, reverse running, school gate deformation, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":false,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}},{\"id\":\"ep03_p02_noticeboard_anna_passes\",\"name\":\"EP03-P02\",\"startFrame\":362,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 1> 的安娜：高中女生，深蓝色长发，冷淡中性表情，白色短袖校服衬衫、深色领带、深色百褶裙和黑色单肩包。<Picture 1> 只锁定她的身份、发型、年龄感、校服版型和体态，不继承泳装、泳帽或游泳动作。安娜没有主动融入集体的意愿，也没有感受到集体温暖；她只是听见议论后不拒绝经过这条路，情绪保持无感。\\n<Subject 2> 是来自 <Picture 3> 的红杉高中校门内侧环境，补充来自 <Picture 6> 的公告栏走廊空间。保留晴天、教学楼、红杉树、公告栏、通往室内体育馆的校园道路和黑黄警戒带；不继承参考图内的偶然人物、可读通知文字或错误构图。\\n<Subject 3> 是普通学生群像：白色校服、深色书包，只作为低声议论和自然让路的人流；不复刻安娜或其他主角脸。\\n<Picture 1> 是安娜校服人物参考图，只负责安娜的身份外观和服装。\\n<Picture 3> 是校门环境参考图，只负责晴天校园入口、建筑、红杉树和光线骨架。\\n<Picture 6> 是社团公告栏走廊场景参考图，只负责公告栏、封锁带、教学楼入口和人群通道的空间关系。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的校园悬疑过场。故事板只转化为文字镜头设计，不作为图片上传。镜头承接上一段进入公告栏区域：学生议论不明生物袭击，安娜从人群外侧出现，听见自己的名字后没有回头、没有回应、没有主动融入，只确认通往室内泳池的方向并继续走。结尾以她走向体育馆/室内泳池方向的稳定背影收束。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 4]、[Shot 5]、[Shot 6]）：fully_preserved - 保留安娜的深蓝长发、校服、黑色单肩包、冷淡无感表情和不主动社交的状态；允许她从人群边缘进入并沿校园道路前进，不改变发色、服装或年龄感。\\n<Subject 2>（出现在全部镜头）：fully_preserved - 保留公告栏、封锁带、教学楼入口、树影和通往室内泳池的道路；不生成可读通知，不把封锁区域变成灾难现场。\\n<Subject 3>（出现在 [Shot 1]、[Shot 2]、[Shot 3]、[Shot 4]、[Shot 5]）：fully_preserved - 保留普通学生的校服、人流密度和自然让路行为；不得把群演变成安娜的朋友或热情欢迎她。\\n<Picture 1>：fully_preserved - 只继承安娜身份外观与校服，不继承白背景、泳装或人设图姿势。\\n<Picture 3>、<Picture 6>：fully_preserved - 只继承校园空间、公告栏、封锁带、晴朗光线与道路方向，不继承图片中的文字、人物身份和静态分格。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，手绘动画背景，晴天树影和通透空气透视。固定世界轴线：公告栏在左前景，封锁入口在中远景，校园道路向室内泳池方向延伸。镜头只在信息和景别明显变化时切换，不越轴、不跳切；画面始终16:9横屏、2K级高清。故事板仅作为文字化的镜头顺序和空间逻辑，不出现宫格线、箭头、编号、文字或线稿。\\n\\n[Shot 1] At 00:00.000，公告栏旁中近景，前景由两三名学生肩膀和书包形成遮挡，学生压低声音议论；背景看见晴天教学楼和正常人流。公告纸只表现无字白色纸块和模糊色块。<Subject 3> (S1)<d>[Chinese] 小声点，学校说只是设备事故。</d> 说话学生闭口后，其他人继续观察封锁入口。\\n\\n[Shot 2] At 00:02.500，动作匹配切到公告栏与封锁入口的中远景，公告栏在左前景，黑黄警戒带和临时隔离栏横向封住远处入口。<Subject 3> (S2)<d>[Chinese] 设备事故能把窗户撕成那样？</d> 说话者只做短暂口型，其他学生闭口，画面不出现危险生物本体。\\n\\n[Shot 3] At 00:05.000，固定肩后视角，学生们的视线从公告栏转向画面右后方的校园通道，给安娜从人群边缘进入预留动线。人群不围堵、不向镜头拥挤，封锁带状态不改变。\\n\\n[Shot 4] At 00:07.500，明显改变构图的稳定中景，安娜从人群外侧进入画面，正面或三分之二侧面可见，手握单肩包带，表情平静无感。她不看议论者，不停步，不加入谈话；普通学生自然让出一条窄通道。<Subject 3> (S3)<d>[Chinese] 她就是那天在附近的人吧？</d> 声音来自安娜身后侧，安娜保持闭口，不回头。\\n\\n[Shot 5] At 00:10.000，沿同一空间轴线侧面跟拍安娜经过议论区。她的长发和校服随步伐轻微摆动，前后景学生虚化，议论声留在身后；她的视线越过人群，确认通往室内体育馆/泳池的方向，步速不变。\\n\\n[Shot 6] At 00:12.500，稳定中远景从安娜后方跟随，校园道路向远处室内体育馆的弧形建筑和玻璃立面延伸。安娜居中偏左，普通学生向不同方向分散，安娜不回头；镜头与她同向移动后在末帧减速停止，最后0.5秒保持稳定背影，不启动新动作。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；公告栏和警戒带只提供空间信息，不能出现可读通知或校内标语。\\n\\noverall_soundscape:\\n晴天校园脚步、书包摩擦、树叶声、远处学生低语和一声上课铃；三句议论严格按顺序出现并完成对应口型，安娜全程无台词。铃声后人群开始向教学楼和泳池方向分散；没有旁白、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable notice text, readable school slogans, storyboard grid, arrows, numbering, production marks, Anna speaking, Anna smiling, Anna主动社交, Anna回应议论, Anna回头, Anna泳装, Anna泳帽, brown-haired Anna, identity drift, monster, creature body, disaster scene, space reversal, crowd disappearance, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 安娜已从公告栏人群外侧经过，保持无感、闭口、不回头的状态。\\n- 她沿校园道路朝室内体育馆/泳池方向移动，普通学生在后方和两侧分散。\\n- 末帧是晴天校园道路通向室内泳池的方向；下一段切入室内泳池侧门，不上传故事板图。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable notice text, readable school slogans, storyboard grid, arrows, numbering, production marks, Anna speaking, Anna smiling, Anna主动社交, Anna回应议论, Anna回头, Anna泳装, Anna泳帽, brown-haired Anna, identity drift, monster, creature body, disaster scene, space reversal, crowd disappearance, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[{\"index\":5,\"imageFile\":\"redstring_ep03_noticeboard.png\",\"fileName\":\"redstring_ep03_noticeboard.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}},{\"id\":\"ep03_p03_indoor_pool_gathering\",\"name\":\"EP03-P03\",\"startFrame\":724,\"length\":362,\"frameCount\":362,\"duration\":15,\"prompt\":\"subject_definitions:\\n<Subject 1> 是来自 <Picture 2> 的安娜：深蓝色长发，冷淡无感的高中女生。进入泳池后穿深蓝色连体泳衣和白色运动外套，整理泳帽与泳镜，站在学生队伍末端；她不主动融入，不因集体气氛改变表情，只按老师安排行动。\\n<Subject 2> 是来自 <Picture 3> 的李想：短黑发、运动员体型、深蓝泳帽和泳镜，穿深蓝色泳裤；本段只作为游泳课学生群中的显眼运动员，不提前站上跳台，不提前入水。\\n<Subject 3> 是成年女性体育老师：专业运动服，手持哨子和记录板，负责指挥队伍；保持成年教师的可信度、专业感和课堂威严。\\n<Subject 4> 是普通游泳课学生群：穿统一泳装或运动训练服，携带毛巾和训练袋；只做入场、放置物品、检查泳镜和集合，不复刻安娜或李想的脸。\\n<Subject 5> 是来自 <Picture 4> 的室内标准泳池环境：明亮蓝白天光、六条泳道、清澈水面、池边长椅、蓝白三角旗和高窗；空镜和集合镜头的泳池水中不得出现人物。\\n<Picture 2> 是安娜游泳社人物参考图，只锁定她的身份、深蓝长发和泳池服装，不继承人设图背景、构图或多余姿势。\\n<Picture 3> 是李想游泳社人物参考图，只锁定他的身份、体型、深蓝泳帽、泳镜和泳裤，不继承人设图背景或夸张自拍姿势。\\n<Picture 4> 是室内标准泳池场景图，只锁定泳池建筑、六条泳道、蓝白光线、长椅和远端池壁；不继承场景图中的文字或偶然物件。\\n<Picture 5> 是室内泳池起跳端场景图，只负责池边起跳端、跳台与泳道正对关系；本段只用于空间预示，不让人物提前站上跳台。\\n<Picture 6> 是游泳社训练套件道具图，只提供训练袋、毛巾、泳镜等道具形态；不生成可读文字或Logo。\\n\\nsummary:\\n[reference generation] 生成一段连续15秒、16:9横屏、2K级高清的室内游泳课集合场景。故事板只被转成文字镜头设计，不作为图片上传。视频从泳池侧门打开开始，学生成组进入、把毛巾放在池边长椅，体育老师用记录板和哨子组织集合并宣布自由泳计时。安娜位于队伍末端，保持冷静无感；李想只在学生群中被建立，不提前跳台、不入水。六条泳道和水面在集合段保持空置。\\n\\nretention_analysis:\\n<Subject 1>（出现在 [Shot 1]、[Shot 2]、[Shot 4]、[Shot 5]）：fully_preserved - 保留安娜深蓝长发、深蓝泳衣、白色运动外套、冷淡无感表情和队伍末端位置；允许她整理泳帽、泳镜和训练袋，不主动靠近人群。\\n<Subject 2>（出现在 [Shot 2]、[Shot 4]、[Shot 5]）：fully_preserved - 保留李想的短黑发、运动员体型、深蓝泳帽和泳镜；本段只能在池边学生群中出现，不上跳台、不入水、不与安娜比赛。\\n<Subject 3>（出现在 [Shot 3]、[Shot 5]、[Shot 6]）：fully_preserved - 保留成年女性体育老师的身份、记录板、哨子、专业动作和课堂威严；她是唯一负责发号施令的人。\\n<Subject 4>（出现在 [Shot 1] 至 [Shot 6]）：fully_preserved - 保留学生群的正常集合、毛巾和训练袋，道具状态从入场到摆放连续；不得让水中出现无关学生。\\n<Subject 5>（出现在全部镜头）：fully_preserved - 保留蓝白泳池、六条泳道、明亮窗光、池边长椅和远端池壁；跳台始终正对泳道，不放在泳池侧面。\\n<Picture 2>、<Picture 3>、<Picture 4>、<Picture 5>、<Picture 6>：fully_preserved - 只继承各自指定的身份、空间和道具属性，不继承参考图背景文字、宫格布局、Logo或错误人物。\\n\\ndetailed_description:\\n高精度日漫青春电影感，细腻赛璐璐人物，手绘动画背景，明亮蓝白室内天光，水面反射克制、线稿稳定。固定泳池长轴：泳道从近端向远端池壁延伸，跳台在泳道正前方；镜头不把跳台放到泳道侧面。集合阶段池水保持无人，只有池边学生和老师。故事板仅提供镜头顺序、站位和动作节拍文字，不出现故事板宫格、箭头、编号、文字或黑白线稿。\\n\\n[Shot 1] At 00:00.000，泳池侧门方向大远景，门打开，普通学生成组进入明亮的室内泳池；六条泳道向远端延伸，水面清澈空置，跳台位于泳道正前方的远端。安娜在队伍后侧进入，李想混在学生群中，体育老师在池边等候。\\n\\n[Shot 2] At 00:02.500，沿池边向内的全景，学生把训练袋和毛巾放到长椅上，训练套件中的毛巾、泳镜和水杯自然分散摆放；蓝白天光落在池面。安娜只整理自己的泳帽和外套，李想与其他学生保持自然距离；泳池水中仍然没有人。\\n\\n[Shot 3] At 00:05.000，固定中景，体育老师站在池边，抬起记录板和哨子示意所有学生靠近池边集合。<Subject 3> (S1)<d>[Chinese] 所有人先站到池边，检查泳帽和泳镜。</d> 老师口型清晰，学生闭口听令，安娜抬眼确认手势但不表现热情。\\n\\n[Shot 4] At 00:08.000，稳定近景组接：安娜低头检查泳镜带和泳帽边缘，手指动作准确；旁边学生各自整理泳镜和毛巾，李想把泳镜推到额头但仍留在池边。没有人下水，没有人站上跳台。\\n\\n[Shot 5] At 00:10.500，切到老师与学生群的中景，老师在无字记录板上写下测试顺序，安娜位于队伍末端，李想在学生群前侧，所有人面向老师。<Subject 3> (S1)<d>[Chinese] 今天做自由泳计时，不比蛮力。</d> 老师说完放低记录板，课堂安静下来。\\n\\n[Shot 6] At 00:13.000，哨子和记录板的稳定特写，老师把哨子握在胸前，水声和室内回响作为背景；镜头轻微拉开，恢复池边集合的稳定构图，安娜和李想都仍在池边，泳道水面无人。最后0.5秒保持哨子、记录板、池边队伍和正对泳道的跳台稳定，不启动下一组下水动作。\\n\\n无字幕、无画面文字、无标题卡、无对白文字、无气泡、无UI、无水印、无Logo；记录板、训练套件和泳池标识不得出现可读文字。\\n\\noverall_soundscape:\\n室内泳池的水面回响、脚步、训练袋和毛巾放置声、泳镜轻响、远处通风声、老师清晰的两句课堂指令和短促哨子碰撞声。没有入水声、没有游泳划水声、没有观众起哄、没有旁白、没有BGM。\\n\\nnon_diegetic_music:\\nNone. No BGM, no score, no theme music, no musical sting, and no non-diegetic audio.\\n\\n## negativePrompt\\nsubtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable clipboard text, readable pool signage, storyboard grid, arrows, numbering, production marks, people in pool water, swimming action, diving, jumping off blocks, students standing on starting blocks, starting blocks beside lanes, side-facing starting blocks, Anna actively socializing, Anna smiling at crowd, Lixiang entering the water, wrong hair color, wrong outfit, identity drift, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\\n\\n## 连续性出点\\n- 安娜与李想都在池边集合区，安娜位于队伍末端，保持无感；李想仍未下水。\\n- 体育老师手持记录板和哨子，已宣布自由泳计时；六条泳道水面保持无人。\\n- 跳台位于泳道正前方、朝向远端池壁，下一段可从老师宣布“下一组，自由泳准备”后接入起跳端。\\n\",\"negativePrompt\":\"subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, interface overlay, watermark, logo, readable clipboard text, readable pool signage, storyboard grid, arrows, numbering, production marks, people in pool water, swimming action, diving, jumping off blocks, students standing on starting blocks, starting blocks beside lanes, side-facing starting blocks, Anna actively socializing, Anna smiling at crowd, Lixiang entering the water, wrong hair color, wrong outfit, identity drift, photorealism, live action, 3D render, Western comic, childish cartoon, oil painting, BGM, score, unstable final frame\",\"taskType\":\"\",\"refs\":[{\"index\":5,\"imageFile\":\"redstring_ep03_swim_kit.png\",\"fileName\":\"redstring_ep03_swim_kit.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[],\"genImage\":{\"imageFile\":\"\",\"fileName\":\"\"},\"continuityFromPrev\":true,\"refImageSize\":\"match\",\"referenceVideo\":{\"videoFile\":\"\",\"fileName\":\"\",\"type\":\"input\",\"subfolder\":\"\"}}],\"globalCommon\":{\"commonEnabled\":true,\"commonCollapsed\":false,\"prompt\":\"subject_definitions:\\n图片1：安娜校服人物参考图，只锁定安娜的身份、深蓝长发、年龄感、体态和校服；不继承背景、文字或姿势。\\n图片2：安娜游泳社人物参考图，只锁定安娜进入泳池后的深蓝长发、泳池服装和体态；不继承背景、文字或姿势。\\n图片3：红杉高中校门晴天场景参考图，只锁定校门、中央校徽、红杉树、铁门、教学楼和晴朗早晨光线。\\n图片4：室内标准泳池场景参考图，只锁定明亮蓝白泳池、六条泳道、长椅、远端池壁和室内天光。\\n图片5：室内泳池起跳端场景参考图，只锁定起跳端与泳道正对的空间关系；不提前生成跳台上的人物。\\n故事板已本地查看并转化为三个分段提示词中的文字化镜头顺序、景别、站位、动作节拍和出点状态；本次不上传任何故事板图片、线稿故事板或六宫格图。所有片段均无字幕、无画面文字、无BGM、无水印、无Logo。\",\"refs\":[{\"index\":0,\"imageFile\":\"redstring_ep03_anna_school.png\",\"fileName\":\"redstring_ep03_anna_school.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":1,\"imageFile\":\"redstring_ep03_anna_swim.png\",\"fileName\":\"redstring_ep03_anna_swim.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":2,\"imageFile\":\"redstring_ep03_school_gate.png\",\"fileName\":\"redstring_ep03_school_gate.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":3,\"imageFile\":\"redstring_ep03_pool.png\",\"fileName\":\"redstring_ep03_pool.png\",\"type\":\"input\",\"subfolder\":\"\"},{\"index\":4,\"imageFile\":\"redstring_ep03_pool_start.png\",\"fileName\":\"redstring_ep03_pool_start.png\",\"type\":\"input\",\"subfolder\":\"\"}],\"refAudios\":[],\"refVideos\":[]}}},\"videoWorkspaces\":{\"v2v\":{\"selectedIndex\":0,\"currentFrame\":0,\"editMode\":\"global\",\"runSelectEnabled\":false,\"runSelection\":[],\"totalFrames\":0,\"frameRate\":24,\"storageWidth\":0,\"storageHeight\":0,\"segments\":[],\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":0,\"width\":0,\"height\":0},\"videoClips\":[],\"globalCommon\":{\"commonEnabled\":false,\"commonCollapsed\":false,\"prompt\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[]}},\"rv2v\":{\"selectedIndex\":0,\"currentFrame\":0,\"editMode\":\"global\",\"runSelectEnabled\":false,\"runSelection\":[],\"totalFrames\":124,\"frameRate\":24,\"storageWidth\":1376,\"storageHeight\":32,\"segments\":[],\"video\":{\"fileName\":\"\",\"videoFile\":\"\",\"subfolder\":\"\",\"type\":\"input\",\"frames\":[],\"frameMap\":[],\"deletedSourceRanges\":[],\"sourceFrameCount\":0,\"width\":0,\"height\":0,\"storageWidth\":1376,\"storageHeight\":32},\"videoClips\":[],\"globalCommon\":{\"commonEnabled\":false,\"commonCollapsed\":false,\"prompt\":\"\",\"refs\":[],\"refAudios\":[],\"refVideos\":[]}}}}",
+      "bd_grp_advanced": "高级采样",
+      "steps": 20,
+      "sampler": "res_multistep",
+      "scheduler": "simple",
+      "shift_video": 12,
+      "shift_audio": 3,
+      "bd_grp_perf": "性能",
+      "clear_vram_between_segments": false,
+      "export_source_images": "Ollama",
+      "minimax_director_ui": "",
+      "model": [
+        "16",
+        0
+      ],
+      "video_vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ],
+      "refine": [
+        "18",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3Director",
+    "_meta": {
+      "title": "MiniMaxH3Director"
+    }
+  },
+  "16": {
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "17": {
+    "inputs": {
+      "sage_attention": "disabled",
+      "allow_compile": false,
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "18": {
+    "inputs": {
+      "mode": "upscale",
+      "upscale_method": "lanczos",
+      "latent_upscale_model": 0.25,
+      "sampler": "euler",
+      "passes": 2,
+      "seed_mode": "3:4 (竖版标准)",
+      "aspect_ratio": "16:9 (宽屏)",
+      "megapixels": 2,
+      "width": 1920,
+      "height": 1088,
+      "skip_fl2v": true,
+      "refine_model": [
+        "23",
+        0
+      ],
+      "sigmas": [
+        "20",
+        0
+      ],
+      "upscale_model": [
+        "19",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3DirectorRefine",
+    "_meta": {
+      "title": "MiniMax H3 Director Refine"
+    }
+  },
+  "19": {
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "20": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 3,
+      "denoise": 0.25000000000000006,
+      "model": [
+        "23",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "21": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "MiniMax H3 UNET"
+    }
+  },
+  "22": {
+    "inputs": {
+      "sage_attention": "disabled",
+      "allow_compile": false,
+      "model": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "23": {
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "24": {
+    "inputs": {
+      "lora_name": "h3\\minimax_h3_fl2v_turbo_4step_v1.1_768p_comfyui_bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "21",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  }
+}

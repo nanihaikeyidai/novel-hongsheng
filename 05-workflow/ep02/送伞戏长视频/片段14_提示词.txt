@@ -1,0 +1,39 @@
+subject_definitions:
+<Picture 1> is the identity anchor for Lin Xiao, preserving her face, long dark ponytail with red ribbon, white-and-blue school uniform, and age. She holds her black umbrella FOLDED (closed) in one hand at all times.
+<Subject 1> is Lin Xiao from <Picture 1>, preserving the above identity and her restrained, practical manner.
+<Subject 2> is Lu Chen from <Picture 2>, preserving his angular youthful face, short black hair, lean build, white-and-blue school uniform, dark trousers, and worn old schoolbag.
+<Subject 3> is Su Wan from <Picture 3>, preserving her short warm-brown bob and white-and-blue school uniform. She stands directly BEHIND Lin Xiao, about one step away, holding her own deep blue-grey long-handled umbrella FOLDED (closed) in one hand. She never enters the foreground and never opens the umbrella.
+<Subject 4> is the rainy covered school entrance from <Picture 4>, preserving the eave, steps, wet floor, rain curtain, cold blue-grey light, and urban rain haze.
+<Subject 5> is Lin Xiao's black umbrella from <Picture 5>: curved handle, worn red cord with one wooden bead, canopy fully FOLDED and closed in every shot.
+<Subject 6> is Su Wan's deep blue-grey long-handled umbrella from <Picture 6>, also fully FOLDED and closed in every shot.
+<Audio 1> is Lin Xiao's youthful clear female voice, restrained but concerned.
+<Audio 2> is Lu Chen's low youthful male voice, quiet and guarded.
+
+summary:
+Generate a continuous 15-second 16:9 2K-class Japanese animated youth-drama clip for EP02 segment 14. At the rainy covered school entrance, Lu Chen tries to leave while protecting his old schoolbag. Lin Xiao warns that the rain will wet it. Su Wan remains standing directly behind Lin Xiao holding her folded long umbrella. Both umbrellas stay closed for the entire segment. No umbrella is opened and no handoff occurs.
+
+retention_analysis:
+<Subject 1>: fully_preserved - identity, face, hair, uniform, folded black umbrella in hand.
+<Subject 2>: fully_preserved - identity, face, hair, uniform, body, old schoolbag.
+<Subject 3>: fully_preserved - identity, position directly behind Lin Xiao, folded deep blue-grey umbrella.
+<Subject 4>: fully_preserved - entrance geometry, wet floor, rain curtain, cold daylight.
+<Subject 5>: fully_preserved - umbrella stays folded and stays with Lin Xiao.
+<Subject 6>: fully_preserved - umbrella stays folded and stays with Su Wan.
+
+detailed_description:
+15 seconds, 16:9 widescreen, 2K-class high-definition, high-precision Japanese animated film style, delicate cel shading, hand-painted rainy background, stable clean line art, cold blue-grey daylight, glass rain streaks, urban rain haze, restrained wet-surface reflections. Maintain the 180-degree axis: Lu Chen on one side, Lin Xiao and Su Wan on the other. Both umbrellas remain FOLDED and closed throughout. Nobody opens an umbrella and nobody steps into the open rain.
+
+[Shot 1] 0:00-0:05, stable medium shot from inside the covered entrance, camera about 35 degrees to Lu Chen's front-left. Lu Chen carefully hugs his worn schoolbag and looks toward the gate; Lin Xiao stands beside the eave holding her folded black umbrella, and Su Wan stands directly behind Lin Xiao holding her folded deep blue-grey umbrella. Lin Xiao looks at the schoolbag and says (S1) with exact lip sync: <d>[Chinese] 雨这么大，你跑回去，书包会湿。</d> Lu Chen stays silent and listening.
+
+[Shot 2] 0:05-0:10, stable close shot from the right side of the axis, camera about 95 degrees from Shot 1 (a 60-degree change, clearly different angle, no jump cut). Lu Chen glances at the rain and answers quietly (S2): <d>[Chinese] 没事。</d> Lin Xiao immediately looks at the old zipper and replies, concerned but practical (S1): <d>[Chinese] 课本湿了，明天还要上课。</d> Each speaker closes the mouth after speaking; no overlapping dialogue. Su Wan stays out of focus behind Lin Xiao with her folded umbrella unchanged.
+
+[Shot 3] 0:10-0:15, wider medium-long shot from behind-right, camera about 160 degrees from Shot 2 (a 65-degree change). Lu Chen lowers his eyes to the worn zipper; his forward foot stops on the dry floor and he finally hesitates. The frame clearly shows three-layer depth: Lu Chen in front, Lin Xiao in the middle still holding the folded black umbrella, Su Wan directly behind Lin Xiao with her folded deep blue-grey umbrella. Camera settles by 14.5 seconds and holds a stable final frame for at least 0.5 seconds. No umbrella is opened; no handoff.
+
+overall_soundscape:
+Natural rain, roof runoff, drainage drops, faint distant thunder, cloth movement, shoe contact on dry covered floor, and restrained dialogue. Only the two lines are audible, one speaker at a time. No narration and no extra speech.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable signs, storyboard grid, identity drift, face change, wrong uniform, extra people, duplicate umbrellas, opened umbrella, open canopy, umbrella overhead, shared umbrella under one canopy, umbrella handoff, malformed hands, spatial reversal, axis crossing, teleportation, camera shake, sudden zoom, motion blur, flicker, low resolution, vertical video, photorealism, live action, 3D rendering, western comic, chibi, oil painting, background music, sunny weather, warm sunlight, rain interruption, environment reset, Su Wan in foreground, Su Wan beside Lin Xiao, red cord on wrist, supernatural power, grey tail, jump cut, same-angle cut

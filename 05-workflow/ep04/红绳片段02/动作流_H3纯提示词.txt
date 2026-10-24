@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is Lu Chen from the reference image: 17-year-old high-school boy, black short messy hair, white shirt and dark trousers school uniform, tall lean, detached. Preserve face, hair, uniform, age.
+<Picture 2> is Zhao Kai from the reference image: adult male ND field investigator in dark plainclothes/official dark uniform, short neat hair, calm composed senior manner, about 30s. Preserve face, hair, dark outfit, age. He is the experienced officer.
+<Picture 3> is the school-gate street sidewalk area from the reference school-gate exterior image: sidewalk outside the gate, street edge, overcast dusk cool blue-gray, street lamps on, damp ground. Preserve spatial layout; no readable text.
+
+summary:
+15-second continuous 16:9 Japanese animated dialogue/action clip. Outside the school gate sidewalk at dusk, Zhao Kai approaches Lu Chen, flashes an ID briefly, says one line; Lu Chen asks who they are; Zhao Kai grabs his arm without answering; Lu Chen shakes off the hand and turns to run. No weapons, no powers, no shooting.
+
+retention_analysis:
+<Subject 1>: fully_preserved - Lu Chen identity and school uniform.
+<Subject 2>: fully_preserved - Zhao Kai face, dark plainclothes, calm senior demeanor.
+<Subject 3>: fully_preserved - sidewalk/gate exterior structure under dusk lighting.
+SHOT DISCIPLINE for dialogue: camera on the current speaker (shot-reverse-shot).
+
+detailed_description:
+15 seconds, 16:9 widescreen, 2K-class HD, high-precision Japanese animated film style, cel shading, hand-painted background, overcast dusk cool blue-gray light, damp pavement. No weapons, no guns, no stun devices, no superpowers, no red eyes. Only Zhao Kai and Lu Chen as main acting pair; passersby optional soft background.
+
+[Shot 1] 0.0-4.0s, medium two-shot on sidewalk. Two dark-plainclothes figures approach from across the street aligning with Lu Chen's path. Zhao Kai stops about three meters away, opens a badge wallet for half a second only (badge details unreadable blur), then speaks calmly (S1): <d>[Chinese] 陆沉。请跟我们走一趟。</d> Exact lip sync. Lu Chen keeps walking at first.
+
+[Shot 2] 4.0-7.5s, reverse medium close-up on Lu Chen. He does not stop fully; side-glances the badge, face flat, asks (S1): <d>[Chinese] 你们是谁。</d> Clear lip sync. Zhao Kai does not answer in this shot.
+
+[Shot 3] 7.5-11.0s, medium shot. Zhao Kai reaches to grab Lu Chen's forearm. Lu Chen yanks his arm free hard, shoulder dips, shoves past Zhao Kai's chest contact without punching theatrically, turns and sprints away down the sidewalk toward a side alley. No weapons drawn.
+
+[Shot 4] 11.0-15.0s, tracking medium-full from behind as Lu Chen runs into the alley mouth. Zhao Kai recovers half a step and starts the chase. Final hold 0.5s on Lu Chen entering the narrow alley.
+
+overall_soundscape:
+Outdoor dusk ambience, footsteps, brief badge wallet open sound, two short dialogue lines one speaker at a time, cloth rustle of arm shake-off, running steps. No BGM. No gun sounds.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, readable ID text, UI, watermark, logo, BGM, background music, two speakers at once, wrong speaker lip sync, camera off the speaker, guns, pistols, rifles, batons, stun guns, suppression darts, blood, red eyes, superpowers, monsters, photorealism, live action, 3D render, vertical video, Zhao Kai smiling casually, Lu Chen chatting friendly, handcuffs already on, car already blocking, identity drift, face change, wrong uniform, wrong hair, Xiao Yue appearing in this segment

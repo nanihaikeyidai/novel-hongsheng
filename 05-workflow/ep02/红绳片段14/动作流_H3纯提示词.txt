@@ -1,0 +1,35 @@
+subject_definitions:
+<Picture 1> is the first-frame anchor for [Shot 1], preserving the covered school entrance, heavy rain, Lu Chen turning toward the gate with his old schoolbag, Lin Xiao holding the closed black umbrella, and Su Wan waiting under the eave.
+<Subject 1> is Lin Xiao from <Picture 2>, preserving her face, long dark ponytail with red ribbon, white-and-blue school uniform, age, and restrained expression. Do not inherit reference background or text.
+<Subject 2> is Lu Chen from <Picture 3>, preserving his angular youthful face, short black hair, lean build, white-and-blue school uniform, dark trousers, and old schoolbag. Do not inherit reference background or text.
+<Subject 3> is Su Wan from <Picture 4>, preserving her short warm-brown bob, white-and-blue uniform, and deep blue-grey long-handled umbrella. She stays in the distance and does not interrupt.
+<Subject 4> is the rainy covered school entrance from <Picture 5>, preserving the eave, steps, wet floor, rain curtain, cold blue-grey light, and urban rain haze.
+<Subject 5> is Lin Xiao's closed black umbrella from <Picture 6>, preserving the curved handle and worn red cord with one wooden bead.
+<Audio 1> is Lin Xiao's youthful clear female voice, restrained but concerned.
+<Audio 2> is Lu Chen's low youthful male voice, quiet and guarded.
+
+summary:
+Generate a continuous 15-second 16:9 2K-class high-definition Japanese animated youth-drama clip for EP02 segment 14. At the rainy school entrance, Lu Chen tries to leave while protecting his old schoolbag. Lin Xiao warns that the rain will wet it; he says it is fine, and she reminds him that the textbooks are needed tomorrow. He looks down at the worn zipper and stops. Su Wan opens her deep blue-grey umbrella in the distance. No umbrella handoff occurs in this segment.
+
+retention_analysis:
+<Picture 1>: fully_preserved - exact opening composition, three-person depth order, covered-versus-rain topology, and dry clothing.
+<Subject 1>: fully_preserved - identity, face, hair, uniform, age, and restrained performance.
+<Subject 2>: fully_preserved - identity, face, hair, uniform, age, body, and old schoolbag.
+<Subject 3>: fully_preserved - identity, distant placement, uniform, and umbrella.
+<Subject 4>: fully_preserved - entrance geometry, wet floor, rain, and cold daylight.
+<Subject 5>: fully_preserved - one closed black umbrella and its red cord; it remains with Lin Xiao.
+
+detailed_description:
+The target video is 15 seconds, 16:9 widescreen, 2K-class high-definition, high-precision Japanese animated film style, delicate cel shading, hand-painted rainy background, stable clean line art, cold blue-grey daylight, glass rain streaks, urban rain haze, and restrained wet-surface reflections. Preserve the same camera side and 180-degree axis. No one enters the open rain.
+[Shot 1] 0:00-0:05, stable medium two-shot from inside the covered entrance. Lu Chen carefully steps around the offered closed umbrella and looks toward the gate while holding his worn schoolbag against his chest. Lin Xiao does not chase him; she looks at the schoolbag and says (S1), with exact lip sync: <d>[Chinese] 雨这么大，你跑回去，书包会湿。</d> He remains silent and listening.
+[Shot 2] 0:05-0:10, stable close two-shot. Lu Chen glances at the rain and answers quietly (S2): <d>[Chinese] 没事。</d> Lin Xiao immediately looks to the old zipper and replies, concerned but practical (S1): <d>[Chinese] 课本湿了，明天还要上课。</d> Each speaker closes the mouth after speaking; no overlapping dialogue.
+[Shot 3] 0:10-0:15, closer side view. Lu Chen lowers his eyes to the worn schoolbag zipper, his forward foot stops on the dry floor, and he finally hesitates. In the distance Su Wan opens her deep blue-grey long-handled umbrella and waits at the eave. The camera settles by 14.5 seconds and holds a stable final frame for at least 0.5 seconds. The closed black umbrella remains in Lin Xiao's hands; no transfer.
+
+overall_soundscape:
+Natural rain, roof runoff, drainage drops, faint distant thunder, cloth movement, shoe contact on dry covered floor, and restrained dialogue. Only the three exact lines are audible, one speaker at a time. No narration or extra speech.
+
+non_diegetic_music:
+N/A
+
+negativePrompt:
+subtitles, captions, on-screen text, Chinese characters, title cards, speech bubbles, UI, watermark, logo, readable signs, storyboard grid, identity drift, face change, wrong uniform, extra people, duplicate umbrellas, malformed hands, spatial reversal, axis crossing, teleportation, camera shake, sudden zoom, motion blur, flicker, low resolution, vertical video, photorealism, live action, 3D rendering, western comic, chibi, oil painting, background music, sunny weather, warm sunlight, rain interruption, environment reset, umbrella handoff, red cord on wrist, supernatural power, grey tail

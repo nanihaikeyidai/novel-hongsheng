@@ -1,0 +1,38 @@
+{
+  "taskId": "2097344801602228226",
+  "status": "SUCCESS",
+  "errorCode": "",
+  "errorMessage": "",
+  "results": [
+    {
+      "url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com/8e3cb2f6099d5772ed26216d6126f481/output/AIGCTYD2_00001_p87-audio_qpcgt_1788881499.mp4",
+      "nodeId": "214",
+      "outputType": "mp4",
+      "text": null,
+      "zindex": null
+    }
+  ],
+  "clientId": "",
+  "promptTips": "",
+  "failedReason": {},
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "225",
+    "taskCostTime": "562",
+    "thirdPartyConsumeMoney": null
+  },
+  "parentTaskId": null,
+  "taskUsageList": [
+    {
+      "taskId": "2097344801602228226",
+      "parentTaskId": null,
+      "taskStatus": "SUCCESS",
+      "usage": {
+        "consumeMoney": null,
+        "consumeCoins": "225",
+        "taskCostTime": "562",
+        "thirdPartyConsumeMoney": null
+      }
+    }
+  ]
+}

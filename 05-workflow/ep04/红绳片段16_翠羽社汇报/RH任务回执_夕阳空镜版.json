@@ -1,0 +1,29 @@
+{
+  "segment": "16",
+  "taskId": "2113299536167530498",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "76",
+    "taskCostTime": "380",
+    "thirdPartyConsumeMoney": null
+  },
+  "prompt": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\动作流_H3纯提示词.txt",
+  "images": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\安娜_人设.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\雷斯特_人设.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-images\\场景\\场景_翠羽社大厅_日漫电影感.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\首帧图.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\人物参考音色\\安娜.wav"
+  ],
+  "saved": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\视频草稿\\E04-16_翠羽社汇报_未审核草稿_夕阳空镜版.mp4",
+  "exitFrame": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep04\\红绳片段16_翠羽社汇报\\末帧图_夕阳空镜版.png",
+  "duration": 15.083333,
+  "size": [
+    960,
+    544
+  ],
+  "audioStreams": 1
+}

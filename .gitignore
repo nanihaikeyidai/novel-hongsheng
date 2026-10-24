@@ -8,6 +8,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# 临时文件与日志
+.hermes-tmp.*
+*.log
+
 # 生成音频（除参考音色外）
 04-audiobook/ch01_红绳伞/*.wav
 04-audiobook/ch01_红绳伞/*.mp3

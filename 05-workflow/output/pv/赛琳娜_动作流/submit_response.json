@@ -1,0 +1,13 @@
+{
+  "taskId": "",
+  "status": "",
+  "errorCode": "803",
+  "errorMessage": "NODE_INFO_MISMATCH(nodeId=12, fieldName=task_type, reason=node_not_found_in_workflow)",
+  "results": null,
+  "clientId": "",
+  "promptTips": "",
+  "failedReason": {},
+  "usage": null,
+  "parentTaskId": null,
+  "taskUsageList": null
+}
