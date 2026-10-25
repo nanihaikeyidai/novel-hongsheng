@@ -3,26 +3,24 @@
 工作流 API `2084788947984666625` / 工作流 `2096059277453643778`  
 脚本：`05-workflow/scripts/run_ep05_rescue_rh_director.py`
 
-## 成功
+## 成功（第一幕 01–05 全通）
 
-| 单元 | taskId | 状态 | 本地下载（用户机） |
+| 单元 | taskId | 状态 | 本地下载（用户机 meilin） |
 |---|---|---|---|
 | P01a | 2114283413979750401 | SUCCESS | `05-workflow/ep05/营救陆沉/红绳片段01/片段01_P01a_云端草稿.mp4`（~4.99MB） |
 | P01b | 2114283464705671170 | SUCCESS | `…/片段01_P01b_云端草稿.mp4`（~3.92MB） |
+| P02 | 2114287636293308418 | SUCCESS | `…/红绳片段02/片段02_P02_云端草稿.mp4`（~4.34MB） |
+| P03 | 2114289157928091650 | SUCCESS | `…/红绳片段03/片段03_P03_云端草稿.mp4`（~4.80MB） |
+| P04a | 2114290555197546498 | SUCCESS | `…/红绳片段04/片段04_P04a_云端草稿.mp4`（~4.59MB） |
+| P04b | 2114293196493385729 | SUCCESS | `…/片段04_P04b_云端草稿.mp4`（~4.36MB；首次 task `2114291712330522625` SUCCESS 后下载 IncompleteRead，60s 后重提成功） |
+| P05a | 2114294884830765058 | SUCCESS | `…/红绳片段05/片段05_P05a_云端草稿.mp4`（~4.40MB） |
+| P05b | 2114296128521601026 | SUCCESS | `…/片段05_P05b_云端草稿.mp4`（~4.02MB） |
 
-## 未成功（本轮）
+## 本轮备注（2026-10-25 约 17:30–18:06 Asia/Shanghai）
 
-| 单元 | 原因 |
-|---|---|
-| P02 | 先 errorCode 421 queue limit；后 ConnectionReset/ProxyError |
-| P03 | 同上 421，后网络中断 |
-| P04a / P04b / P05a / P05b | 本轮未再提交（避让队列与网络） |
+- 未重跑已成功的 P01a / P01b。
+- 按序单单元 `--poll`：P02→P03→P04a→P04b→P05a→P05b，本轮无 421 queue limit。
+- P04b 首次云端 SUCCESS，本地下载 IncompleteRead；睡 60s 重提后下载完整。
+- 提示词/分镜未改动；未触碰《母亲的线》旧片段。
 
 素材上传缓存：`营救陆沉/制作文档/rh_upload_cache.json`（用户机）
-
-重试：
-```bat
-cd /d D:\HermesWorkspace\ai小说\红绳
-python 05-workflow\scripts\run_ep05_rescue_rh_director.py --unit P02 --poll
-python 05-workflow\scripts\run_ep05_rescue_rh_director.py --unit all05 --poll
-```
