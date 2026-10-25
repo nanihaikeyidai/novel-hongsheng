@@ -1,0 +1,36 @@
+{
+  "unit": "P01a",
+  "workflow": "金鱼",
+  "appId": "2093984226331938818",
+  "taskId": "2114348030156296193",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "69",
+    "taskCostTime": "342",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptChars": 1774,
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\雷斯特_人设.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\安娜_人设.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-images\\场景\\场景_翠羽社大厅_日漫电影感.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\雷斯特.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段01\\视频草稿\\片段01_P01a_金鱼草稿.mp4"
+  ]
+}
