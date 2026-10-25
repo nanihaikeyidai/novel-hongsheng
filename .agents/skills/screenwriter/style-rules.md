@@ -104,3 +104,16 @@ Strong technique: give each character a **unique form of address** to the same o
 - **Silence.** A character's silence in the moment when the audience expects a line is the loudest sound in the film.
 
 - **Symmetry.** First scene and last scene should rhyme. Through an object, a location, a line, or an action.
+
+---
+
+## 《红绳》项目覆盖规则（2026-10-24）
+
+通用条「Brevity = talent / 两词能说就两词」**不适用于**《红绳》分场剧本的对白与表演密度。写《红绳》时改用：
+
+1. **去 AI 味**：禁模板腔、对称排比、空叙述、口号式两字对白链；台词要像真人（打断、半句、嫌弃、试探、停顿）。
+2. **台词丰富**：每场完整来回；话少角色用碎碎念与嫌麻烦体现性格，不是删台词。
+3. **动作表情丰富**：每场有可拍的小动作、眼神、手、肩、呼吸、道具互动；禁止只用「点头/挥手/转身」。
+4. 仍禁止不可拍的内心独白与氛围形容词；丰富 ≠ 心理解说。
+5. 权威条文同步见仓库根目录 `AGENTS.md` →「剧本写作质感」。
+
