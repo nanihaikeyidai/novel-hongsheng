@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> Anna: long straight dark-blue hair, school uniform; lock to <Picture 1>. Opens hand on Shenmo left shoulder (prior end), then right cabinet, opens lower drawer, looks, no grab. Silent 15s; lips closed; no speaker ID.
+<Subject 2> Shenmo: cap/hood brim, black glasses, tactical vest over hoodie; lock to <Picture 2>. Seated typing, rear/OS to camera. Emotion: low-affect nonchalant (情绪偏低)—quiet flat, muted. HARD: head NEVER turns (locked to monitors); never looks at Anna/camera; while speaking, right hand points once RIGHT (right cabinet). FORBIDDEN: any cut to his face (no face CU/profile fill/frontal).
+<Subject 3> Dark computer room; monitors dense command-line (black bg, green-white glyphs)—lock open to <Picture 3> (prior end); monitor glow only; no solid blue screens, no waveforms.
+<Subject 4> Modified brick phone, cloned access card, earbuds: lock to <Picture 4>; in right cabinet lower drawer; no readable Chinese on props.
+<Audio 1> timbre for Shenmo (S1) only; sole line; low-emotion quiet flat delivery.
+<Audio 2> timbre for Anna; continuity only—never used for speech this clip.
+
+summary: [reference generation + keyframe completion] From <Picture 3>: low-emotion Shenmo, head fixed on screens, points RIGHT while telling Anna (~7 chars/sec) phone+ND card inside—earbuds, follow orders; never cut to his face; Anna opens drawer. End≠open (Anna at drawer, not on shoulder). Only Shenmo speaks (Audio 1).
+
+retention_analysis:
+<Subject 1> (Shot 1,3,4): fully_preserved - silent; ends at drawer.
+<Subject 2> (Shot 1,2,4): fully_preserved - rear/OS; head fixed; points right speaking; no face cutaway.
+<Subject 3> (all): fully_preserved - open=<Picture 3>; end≠open composition.
+<Subject 4> (Shot 3,4): fully_preserved - props in open drawer at end.
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3> ([Shot 1] first frame ONLY): fully_preserved - prior end; NOT last frame.
+<Picture 4>: partially_preserved
+<Audio 1>: reference - Shenmo (S1); low emotion.
+<Audio 2>: reference - Anna only; no speech.
+
+detailed_description: 16:9 anime cinematic; cool command-line light, dark room. Axis: door→Anna→Shenmo chair→monitors; right cabinet on his right. Rules: ONLY Shot 2 dialogue; ONLY (S1); Anna mute; head never rotates; gaze on screens; ~7 chars/sec (≈3.5–4.0s); low-emotion quiet flat; points RIGHT once speaking; FORBIDDEN his face; last≠first frame.
+[Shot 1] At 00.000s, open exactly on <Picture 3>: medium side-rear two-shot—Anna hand on his left shoulder, both face screens; face not readable (hood/back). Within ~1s she lifts hand, steps to right cabinet. He types, head locked. No dialogue. Keyboard/fan. Continuity ≥0.5s.
+[Shot 2] At 02.800s, hard cut OVER-SHOULDER / rear-3/4 MEDIUM (camera behind shoulder)—monitors+right space; face NOT subject (hood/back/shoulder only). Head fixed, no turn. Right hand points once RIGHT (cabinet) while speaking medium-fast, low-emotion quiet flat male teen voice matching <Audio 1>. <Subject 2> (S1) says: <d>[Chinese] 里面有个手机和我复制的ND门禁卡，连上耳机听指挥就行。</d> (≈3.5–4.0s). Ends ~06.800s; hand lowers; head still locked.
+[Shot 3] At 06.800s, hard cut drawer insert: Anna opens lower drawer; phone, card, earbuds visible; leans to look, does not pick up; mouth closed; focuses on props. No dialogue.
+[Shot 4] At 11.500s, hard cut NEW composition (≠Shot 1/<Picture 3>): medium Anna crouching at OPEN drawer, props visible; Shenmo BG at desk typing, rear/side-rear, head to screens—NOT shoulder-touch open pose. Hold ≥0.8s. No dialogue.
+
+overall_soundscape: Keyboard clicks, drawer-rail slide, case fan. One line: male teen (S1) <Audio 1> Shot 2 only—~7 chars/sec, low emotion, quiet flat. <Audio 2> unused for speech. Forbidden: Anna speaking; female delivery; Shenmo face CU; head turning; earnest tone; BGM; readable text/UI/watermark/logo. No music.
+
+non_diegetic_music: N/A

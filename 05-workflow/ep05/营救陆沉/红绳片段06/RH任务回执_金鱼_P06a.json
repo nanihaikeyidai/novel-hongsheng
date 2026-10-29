@@ -1,0 +1,16 @@
+{
+  "appId": "2110357037929558018",
+  "taskId": "2115832683887284226",
+  "costRH": 102,
+  "promptChars": 4049,
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "note": "P06a r2 下坡+快语速+低沉刚醒门卫",
+  "billing": "personal_RH_coins"
+}

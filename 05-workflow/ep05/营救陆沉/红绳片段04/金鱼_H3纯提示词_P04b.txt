@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> Anna: long straight dark-blue/purple hair, school uniform (light short-sleeve shirt, dark trim); lock identity to <Picture 1>. Continues from previous clip: at right desk with lower drawer already open, hands on drawer rim; when asking, lifts eyes toward Shenmo's back/hood — never looks into camera. Silent except her one line.
+<Subject 2> Shenmo: cap/hood brim, black glasses, tactical vest over hoodie; lock identity to <Picture 2>. Seated at desk typing, gaze locked on monitors. Emotion/voice: LOW SUBDUED (低沉) — quiet low pitch, muted flat, casually indifferent; faster delivery (~8–9 Chinese chars/sec). HARD: head NEVER turns toward Anna or camera; NEVER looks at Anna; eyes stay on computer screens only (normal screen-work gaze); talk-while-working (fingers keep keying). FORBIDDEN: any cut to his face (no face CU/profile fill/frontal talking head); head glance/turn to Anna.
+<Subject 3> Dark computer room; dual monitors dense command-line (black bg, green-white glyphs)—lock open composition AND space to <Picture 3> (= last frame of P04a rev4: Anna at open drawer FG, Shenmo typing BG toward screens); monitor glow only; no solid blue screens, no waveforms; SAME room continuous — no location/costume reset.
+<Subject 4> Modified brick phone, cloned ND access card, earbuds: lock to <Picture 4>; remain visible in the already-open lower drawer; no readable Chinese on props.
+<Audio 1> timbre for Shenmo (S2) only; his one line; LOW SUBDUED quiet deep-flat delivery, faster than normal.
+<Audio 2> timbre for Anna (S1) only; her one line.
+
+summary: [reference generation + keyframe completion] From <Picture 3> (=P04a end): same dark computer room; Anna at open drawer asks if the phone tracks; Shenmo answers fifty meters while still typing — voice LOW SUBDUED + faster (~8–9 chars/sec), head locked on screens, never looks at Anna. End≠open (Anna reaches toward props). Exactly two lines: Anna then Shenmo.
+
+retention_analysis:
+<Subject 1> (Shot 1,3,4): fully_preserved - at open drawer; one line Shot 1; ends reaching toward props.
+<Subject 2> (Shot 1,2,4): fully_preserved - rear/OS typing; head fixed on screens; never looks at Anna; talk-while-working; no face cutaway.
+<Subject 3> (all): fully_preserved - open=<Picture 3> same room; end≠open composition.
+<Subject 4> (Shot 1,3,4): fully_preserved - props stay in open drawer.
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3> ([Shot 1] first frame ONLY): fully_preserved - P04a rev4 last frame; NOT last frame of this clip.
+<Picture 4>: partially_preserved
+<Audio 1>: reference - Shenmo (S2); low subdued faster.
+<Audio 2>: reference - Anna (S1); her line only.
+
+detailed_description: 16:9 anime cinematic; cool command-line light, dark room continuous with P04a. Axis same: desk → open drawer (Anna) → Shenmo chair → dual monitors → right tower. Scene/costume/prop lock: identical dark computer room, same Anna school uniform + Shenmo hood/cap/vest, same open drawer with phone+card+earbuds — no wardrobe or location change. Rules: exactly two dialogue lines; Anna (S1) then Shenmo (S2); Shenmo ~8–9 chars/sec (faster), LOW SUBDUED quiet deep-flat nonchalant; head never rotates toward Anna; gaze on screens only; talk-while-working; FORBIDDEN his face CU; FORBIDDEN looking at Anna; last≠first frame.
+[Shot 1] At 00.000s, open exactly on <Picture 3>: medium side two-shot — Anna FG at open lower drawer (hands on rim), Shenmo BG typing toward monitors, face not readable (hood/back). Continuity hold ≥0.5s. Then Anna lifts gaze from drawer toward his back/hood (not lens). <Subject 1> (S1) says: <d>[Chinese] 你这手机有追踪功能？</d> (~1.2s; voice match <Audio 2>). Mouth closes; stays at drawer. Shenmo does NOT turn or glance at her — keeps staring at screens.
+[Shot 2] At 04.000s, hard cut OVER-SHOULDER / rear-3/4 MEDIUM (camera behind his shoulder)—monitors+keyboard; face NOT subject (hood/back/shoulder only). Head fixed on screens, NO turn toward Anna. Keeps typing while speaking FASTER (~8–9 chars/sec), LOW SUBDUED quiet deep-flat casually indifferent male teen voice matching <Audio 1>. <Subject 2> (S2) says: <d>[Chinese] 五十米内的异能者都能找到。</d> (~1.3–1.5s). Ends ~05.500s; mouth closed; fingers still on keys; eyes still on monitors — never looked at Anna.
+[Shot 3] At 06.500s, hard cut drawer insert: open drawer with phone, card, earbuds visible; Anna's hand moves slightly toward the brick phone (reach, not yet lift); focused on props; mouth closed. No dialogue.
+[Shot 4] At 11.500s, hard cut NEW composition (≠Shot 1/<Picture 3>): medium Anna leaning deeper into OPEN drawer, hand near phone; Shenmo BG still typing rear/side-rear, head to screens — NOT looking at Anna, NOT the open two-shot pose. Hold ≥0.8s. No dialogue.
+
+overall_soundscape: Keyboard clicks (including under Shenmo's line), case fan hum, soft drawer wood creak. Exactly two spoken lines: Anna (S1) <Audio 2> then Shenmo (S2) <Audio 1> — Shenmo FASTER (~8–9 chars/sec), LOW SUBDUED quiet deep-flat. Forbidden: female voice on Shenmo's line; Shenmo face CU; head turning toward Anna; looking at Anna; earnest/bright tone; BGM; readable text/UI/watermark/logo. No music.
+
+non_diegetic_music: N/A

@@ -1,0 +1,62 @@
+{
+  "appId": "2110357037929558018",
+  "appUrl": "https://www.runninghub.cn/ai-detail/2110357037929558018?aiSource=click_ai_app",
+  "taskId": "2115129690275676162",
+  "status": "SUCCESS",
+  "mode": "Plus",
+  "duration_settings": 15,
+  "aspect": "16:9 (Widescreen)",
+  "resolution": 1.5,
+  "scheduler": "simple",
+  "steps": 12,
+  "steps_label": "总步数（一采默认6步）",
+  "prompt_chars": 3884,
+  "prompt_bytes": 3984,
+  "image_slots": {
+    "image1": "anna.png",
+    "image2": "shenmo.png",
+    "image3": "first_frame.jpg",
+    "image4": "props.jpg",
+    "image5": null,
+    "image6": null
+  },
+  "audio_slots": {
+    "audio1": "shenmo.wav",
+    "audio2": "anna.wav",
+    "audio3": null
+  },
+  "video_slots": {
+    "video1": null
+  },
+  "estimated_coins": 149,
+  "balance_before": 26402,
+  "balance_after": 26229,
+  "consumeCoins": null,
+  "account": "personal",
+  "note": "P04a_rev4_new_app_no_face_cut_end_diff",
+  "timestamp": "2026-10-28T01:27:10+08:00",
+  "created_at": "2026-10-28T01:13:23+08:00",
+  "run_duration": "11:12",
+  "output_filename": "YZ_H3__00001_p82-audio_mssej_1793121857.mp4",
+  "output_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p82-audio_mssej_1793121857.mp4",
+  "file_bytes": 8371633,
+  "file_sha256": "73c74d72f7227bc32912127f993fa7be2e083571b6a7a5edd238e0be61a7985c",
+  "paths": [
+    "/workspace/ep05-preview/jinyu/P04a_金鱼草稿.mp4",
+    "/workspace/novel-hongsheng/05-workflow/ep05/营救陆沉/红绳片段04/视频草稿/片段04_P04a_金鱼草稿.mp4",
+    "/workspace/ep05-preview/jinyu/P04a_新应用草稿.mp4"
+  ],
+  "wallet_cash_unchanged": "0.007",
+  "balance_note": "Header RH币 26402→26229 (delta 173). Mid-run reading while 生成中 was 26310. Page estimate was ≈149 RH币; consumeCoins not shown on the task card. Cash wallet stayed 0.007. Delta may include other account activity.",
+  "image3_sha256": "107c74476362da2e0ed6852fe9a48eb487a02a53f308e4ee46661a35dd278010",
+  "propagate_id": "RH_2115129690275676162_20261028_74b5fc",
+  "video": {
+    "duration_sec": 15.08,
+    "size": "1664x928",
+    "fps": 24,
+    "codec": "h264+aac",
+    "container": "isom/avc1/mp41",
+    "remux": false
+  },
+  "ui_notes": "New app 2110357037929558018 (YZ金鱼-MiniMax H3 终极篇-文武双全), not old 金鱼 2093984226331938818. Slots are unlabeled image1–image6, audio1–audio3, video1 (no dedicated 首帧/角色/场景/道具 labels). image1–image3 shipped with demo doctor/patient/room stills and a doctor-consultation default prompt; both were replaced. Mapping: image1=anna.png (Picture 1), image2=shenmo.png (Picture 2), image3=first_frame.jpg (Picture 3 opening frame), image4=props.jpg (Picture 4); image5/image6 empty. audio1=shenmo.wav (sole speaker), audio2=anna.wav (continuity), audio3 empty, video1 empty. Controls kept/set: 画面比例 16:9 (Widescreen), 时长 15 (default was 12), 分辨率 1.5 (this app's default; old app used 0.5 and had ercai_scale, which this UI does not), 调度器 simple, 总步数 12, mode Plus (dropdown already on Plus; did not use 立即插队). Header stayed 个人 + RH币; wallet cash 0.007 untouched; no top-up. Result panel showed task with 耗时 11:12, 下载/发布, and an in-panel mp4 whose AIGC PropagateID matches this taskId. No login QR. 立即运行 was enabled (not concurrency-blocked)."
+}

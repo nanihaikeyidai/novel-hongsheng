@@ -1,0 +1,69 @@
+{
+  "taskId": "2115472606995111938",
+  "appId": "2110357037929558018",
+  "appUrl": "https://www.runninghub.cn/ai-detail/2110357037929558018",
+  "status": "SUCCESS",
+  "account": "个人 (RH币)",
+  "rev": "P04b_rev3",
+  "note": "rev3: Shenmo LOW SUBDUED voice, faster speech (~8-9 chars/sec), head never looks at Anna, eyes on screens only. Personal RH币 only; no shared wallet, no cash, no top-up, no 插队.",
+  "settings": {
+    "tier": "Plus",
+    "aspect": "16:9 (Widescreen)",
+    "resolution": 1.5,
+    "duration": 15,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "slots": {
+    "image1": "anna.png",
+    "image2": "shenmo.png",
+    "image3": "first_frame.jpg",
+    "image4": "props.jpg",
+    "image5": null,
+    "image6": null,
+    "audio1": "shenmo.wav",
+    "audio2": "anna.wav",
+    "audio3": null,
+    "video1": null,
+    "prompt": "prompt.txt from P04b_upload_r3 (source 5196 chars / 5302 bytes)"
+  },
+  "prompt_note": "App textarea maxlength=5000, so the full 5196-char file cannot be stored as-is. Submitted 4972 chars: entire prompt.txt except the redundant detailed_description 'Rules:' recap (already stated in Subject 2 HARD/FORBIDDEN and overall_soundscape) was shortened to 'Rules: Anna (S1) then Shenmo (S2); last≠first frame.' Default doctor-consultation prompt was fully replaced. Kept both spoken lines, LOW SUBDUED / ~8-9 chars/sec, head-never-at-Anna, screens-only gaze, female-voice forbid, non_diegetic_music: N/A.",
+  "coins": {
+    "estimated": 141,
+    "header_before": 25576,
+    "header_after": 25296,
+    "delta": -280,
+    "cash_wallet": "0.007 before and after",
+    "balance_note": "Header stayed 25,576 through 生成中 and dropped to 25,296 on reload after SUCCESS. Delta 280 exceeds the 141 estimate (same pattern as prior runs). Cash wallet unchanged. No top-up, no 插队, no shared wallet."
+  },
+  "run_time": "page 耗时 11:39; submitted 2026-10-28T23:55:41+08; result visible by 2026-10-29T00:15:04+08 (wall ~19 min; UI badge still 生成中 at ~18:43 elapsed)",
+  "created_at": "2026-10-28T23:55:41+08:00",
+  "observed_done_at": "2026-10-29T00:15:04+08:00",
+  "output_filename": "YZ_H3__00001_p83-audio_nzlui_1793203642.mp4",
+  "output_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p83-audio_nzlui_1793203642.mp4",
+  "propagate_id": "RH_2115472606995111938_20261029_58b1a6",
+  "video": {
+    "duration_sec": 15.083333,
+    "size": "1664x928",
+    "fps": 24,
+    "codec": "h264+aac",
+    "profile": "High",
+    "audio": "aac lc 32000 Hz stereo",
+    "container": "isom/iso2/avc1/mp41",
+    "bytes": 7834411,
+    "sha256": "0ef6dc4a796e85194d677f784d8b63268c637795c513a5a999db14b31fd5d553"
+  },
+  "files": [
+    "/workspace/ep05-preview/jinyu/P04b_金鱼草稿.mp4",
+    "/workspace/novel-hongsheng/05-workflow/ep05/营救陆沉/红绳片段04/视频草稿/片段04_P04b_金鱼草稿.mp4",
+    "/workspace/ep05-preview/jinyu/P04b_新应用草稿.mp4"
+  ],
+  "remux": {
+    "playable": "/workspace/ep05-preview/jinyu/P04b_可播放.mp4",
+    "playable_bytes": 7902371,
+    "playable_note": "video copy, aac 44100 Hz stereo 160k, +faststart",
+    "compat": "/workspace/ep05-preview/jinyu/P04b_兼容.mp4",
+    "compat_bytes": 5488341,
+    "compat_note": "libx264 Main level 4.0 yuv420p 24fps g=48 bf=0, aac 44100 Hz stereo 160k, +faststart"
+  }
+}

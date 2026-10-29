@@ -1,0 +1,28 @@
+subject_definitions:
+<Subject 1> 雷斯特：同 P01a；银灰发黑衣羽毛胸针；坐主座淡定续令，不演讲。
+<Subject 2> 安娜：同 P01a；深蓝长直发潮肩校服；听令后点头「明白」并转身朝侧廊电脑房方向。
+<Subject 3> 翠羽社地下大厅：同 P01a 场景锁定。
+<Audio 1> 是 <Subject 1> 雷斯特 (S1) 的音色参考；只迁移音色，不复制原台词。
+<Audio 2> 是 <Subject 2> 安娜 (S2) 的音色参考；只迁移年轻女声音色，不复制原台词。
+
+summary: [reference generation] 接上一段：雷斯特补上「尽量不暴露能力、不做不必要战斗、去找小默」；安娜应「明白」并转身去电脑房方向。推进「行动令完成→执行启动」。
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 4]): fully_preserved - 主座坐姿与外观继承 P01a 出点。
+<Subject 2> (appears in [Shot 2], [Shot 3], [Shot 4]): fully_preserved - 桌前站位继承，本段允许转身朝侧廊。
+<Subject 3>: fully_preserved - 大厅空间继承。
+<Picture 1>: attribute_transfer - 仅身份。
+<Picture 2>: attribute_transfer - 仅身份。
+<Picture 3>: partially_preserved - 空间光线。
+<Audio 1>: reference - 仅音色。
+<Audio 2>: reference - 仅音色。
+
+detailed_description: 16:9横屏，2K级高清，高精度日漫电影感。世界轴线同 P01a。入点：雷斯特仍坐主座，安娜仍在桌前听令未转身。⚠️人声纪律：仅 Shot 1 与 Shot 3 有对白；问答须前者闭口后后者发声。
+[Shot 1] 在 00.000 秒处，开场锁定雷斯特面部近景。淡定续说。<Subject 1> (S1) 说：<d>[Chinese] 尽量不要暴露能力，不要做不必要的战斗。等会你去找小默，他会教你怎么做。</d>。口型同步；切出时口型闭合、目光朝安娜。
+[Shot 2] 在 07.500 秒处，hard cut 到安娜面部近景。她听完，拇指在袖口褶上搓一下，肩线开始绷进执行态，仍闭口。主动作：搓袖 → 准备应声。切出时口型闭合。
+[Shot 3] 在 10.500 秒处，hard cut 仍以安娜近景为主构图微调（信息变为应声）。<Subject 2> (S2) 说：<d>[Chinese] 明白。</d>。短促、清楚；点头一次。切出时口型闭合。
+[Shot 4] 在 13.000 秒处，hard cut 到中景：安娜转身朝侧廊电脑房方向，脚步不快；雷斯特仍坐主座闭口目送。末 ≥0.5s 稳定；⛔禁补话。
+
+overall_soundscape: 大厅轻回响；转身衣料声与短促脚步起步。对白顺序 S1 长句 → S2「明白」；其余无声人声；无音乐。
+
+non_diegetic_music: N/A

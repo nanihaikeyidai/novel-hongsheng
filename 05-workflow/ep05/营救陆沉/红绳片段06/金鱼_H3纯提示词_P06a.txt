@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> Anna: long dark-blue/purple straight hair under cleaner cap OR flowing over shoulders as in <Picture 1>; deep gray-blue ND janitor uniform, rubber gloves, abstract ND badge (NO readable text), light mask covering nose/mouth; lock face/hair/outfit to <Picture 1>. Driving dark sedan. Voice: LOW subdued 腹黑—soft-low, quieter emotion, calm sly understated; NOT bright/cheerful. SPEECH RATE (HARD): ~7 Chinese chars/sec—「后勤部，需要清理一批临时运来的货物。」≈16 chars → MUST finish in ~2.2–2.3s, FAST, no dragging. Head does not thrash; mask stays on.
+<Subject 2> Night parking guard: middle-aged East Asian man, just-woken (刚睡醒)—groggy half-lidded eyes, rumpled dark security jacket, slight sway by barrier booth; lock to <Picture 2>. Voice: LOW DEEP (低沉)—rough, sleepy, quiet, gravelly, just-woken; NOT alert/loud. SPEECH RATE ~7 chars/sec. 「是哪个部门的？」≈6 chars → ~0.8–0.9s.
+<Subject 3> ND HQ UNDERGROUND parking entrance at night: DOWNHILL concrete ramp descending INTO subterranean garage (NOT uphill); wet sloping pavement going down into dark tunnel; yellow/black barrier arm across the lower lane at bottom of down-ramp; small booth beside down entrance; cool fluorescent + sodium; lock space to <Picture 3>. HARD: slope goes DOWN into underground, never uphill climb.
+<Subject 4> ND badge prop abstract photo block NO readable Chinese—lock to <Picture 4>; dark sedan at downhill gate with roll-down side window.
+<Audio 1> Anna (S1) timbre—FORCE lower quieter 腹黑 emotion + FAST ~7 chars/sec (timbre only; do not copy slow sample pacing).
+<Audio 2> Guard (S2) rough middle-aged male timbre—FORCE just-woken LOW DEEP sleepy delivery; NEVER Anna voice; NEVER bright alert tone.
+
+summary: [reference generation] Night: Anna in ND cleaner disguise drives DOWN the downhill ramp to underground parking gate; groggy just-woken guard asks which department in low deep voice; she rolls window, shows badge, says logistics line FAST in low subdued tone; guard raises barrier. Slope is downhill into garage.
+
+retention_analysis:
+<Subject 1> (1–4): fully_preserved - cleaner+mask; fast low line; badge show.
+<Subject 2> (1–2,4): fully_preserved - just-woken low ask then raises barrier.
+<Subject 3> (all): fully_preserved - DOWNHILL underground entrance; end barrier up.
+<Subject 4> (1,3,4): fully_preserved - badge + car on down-ramp.
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3>: partially_preserved - downhill underground gate layout.
+<Picture 4>: partially_preserved
+<Audio 1>: reference - Anna low subdued fast.
+<Audio 2>: reference - Guard just-woken low deep.
+
+detailed_description: 16:9 anime cinematic night. HARD environment: DOWNHILL ramp into underground garage (descending slope), barrier at lower entrance—NOT uphill. GLOBAL DIALOGUE RATE ~7 Chinese chars/sec. Anna LOW subdued 腹黑; Guard LOW DEEP just-woken. No readable text/UI/logo. End≠open (barrier raised).
+[Shot 1] At 00.000s wide night: dark car drives DOWN sloping ramp toward underground parking mouth; yellow-black barrier DOWN across lower lane; groggy guard by booth. Hold ≥0.5s. Engine idle. Show descending concrete clearly.
+[Shot 2] At 03.000s medium: guard steps toward window, just-woken low deep: <Subject 2> (S2) says: <d>[Chinese] 是哪个部门的？</d> (~0.85s; quiet gravelly).
+[Shot 3] At 05.000s medium outside: Anna (mask+cleaner) rolls window; holds abstract ND badge. Eyes low-calm scheming. FAST low subdued: <Subject 1> (S1) says: <d>[Chinese] 后勤部，需要清理一批临时运来的货物。</d> — MUST be ~2.2s (16 chars @7/sec); NOT slow. Subtle mouth under mask.
+[Shot 4] At 09.000s hard cut: guard nods sleepily, raises barrier arm; car inches DOWN under rising arm into underground. NEW composition vs Shot1. Hold ≥0.8s. No more dialogue.
+
+overall_soundscape: Night ambient, wet tire on descending ramp, engine idle, window roll, soft barrier motor. Two lines only at ~7 chars/sec: Guard low deep just-woken; Anna low subdued fast. Forbidden: uphill ramp; dragging Anna line; bright/alert guard; readable text; BGM; logo. No music.
+
+non_diegetic_music: N/A

@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> 安娜：锁定 <Picture 1>；浅笑取物，道谢，走向门口并关门。
+<Subject 2> 沈默：锁定 <Picture 2>；盯屏敲键，头不回嘱咐关门。
+<Subject 3> 电脑房：锁定 <Picture 3>；门合后只剩屏幕亮度。
+<Subject 4> 手机、门禁卡、耳机：锁定 <Picture 4>；被安娜收进掌心带走。
+<Audio 1> 是 <Subject 1> 安娜 (S1) 的音色参考。
+<Audio 2> 是 <Subject 2> 沈默 (S2) 的音色参考。
+
+summary: [reference generation] 安娜道谢取走手机门禁卡耳机；沈默让她关门；门合，暗室只剩屏幕光。
+
+retention_analysis:
+<Subject 1>: fully_preserved - 允许从抽屉前移动到门口
+<Subject 2>: fully_preserved
+<Subject 3>: fully_preserved - 门从开到合
+<Subject 4>: fully_preserved - 从抽屉转移到安娜掌心
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3>: partially_preserved
+<Picture 4>: partially_preserved
+<Audio 1>: reference
+<Audio 2>: reference
+
+detailed_description: 16:9横屏，2K级高清，日漫电影感。
+[Shot 1] 在 00.000 秒处，手部与安娜中近景：浅笑，手指捏起手机、门禁卡和耳机，膝顶回抽屉一半。<Subject 1> (S1) 说：<d>[Chinese] 谢了，小默，等会靠你远程协助了。</d>。切出口型闭合、道具已在掌心。
+[Shot 2] 在 05.500 秒处，hard cut 中景：安娜站直往门口走；沈默仍盯屏敲键。无对白。
+[Shot 3] 在 09.000 秒处，hard cut 沈默近景。<Subject 2> (S2) 说：<d>[Chinese] 帮我关上房间的门。</d>。切出口型闭合。
+[Shot 4] 在 12.000 秒处，hard cut 门缝视角：安娜抬手把门带上，门缝合死，房间重新只剩屏幕亮度；沈默剪影仍在屏前。末 ≥0.5s 稳；无声人声。
+
+overall_soundscape: 抽屉回推、脚步、门轴合上的闷响、键盘。对白 S1谢→S2关门嘱咐；无音乐。
+
+non_diegetic_music: N/A

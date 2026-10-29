@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> Anna: long straight dark-blue/purple hair, school uniform; lock to <Picture 1>. Stands at open drawer; gaze DOWN on drawer/phone. HARD while speaking: head does NOT turn; eyes stay on drawer/phone. SPEECH RATE (HARD): ~7 Chinese chars per second (1s≈7字)—「距离这么近？」is 5 chars → speak in ~0.7s, crisp and quick, NOT slow/dragged. Voice: Scheming 腹黑 (black-bellied)—calm surface, sly understated bite; soft-low knowing edge; NOT pure cold, NOT tease/cute/playful.
+<Subject 2> Shenmo: cap/hood, black glasses, tactical vest over hoodie; lock to <Picture 2>. Seated typing. Voice: low, IMPATIENT (不耐烦)—clipped, short-tempered. SPEECH RATE (HARD): ~7 Chinese chars/sec (same default); 「不要对放置型异能要求这么高，嫌距离短你可以自己感知。」is 25 chars → ~3.5–3.6s, no dragging. Head NEVER turns; never looks back at Anna/camera; eyes on monitors; keep typing. FORBIDDEN: face CU / frontal / head turn / looking back.
+<Subject 3> Dark computer room; dual monitors CLI (black bg, green-white glyphs)—lock space to <Picture 3> (=P04b last: Anna open drawer FG, Shenmo typing BG); monitor glow only; SAME room/costumes.
+<Subject 4> Brick phone, ND card, earbuds: lock to <Picture 4>; start in open drawer; Anna holds phone by end; no readable Chinese on props.
+<Audio 1> Shenmo (S2) timbre reference—apply ONLY to Shenmo line; keep his impatient low tone at ~7 chars/sec.
+<Audio 2> Anna (S1) timbre reference—apply ONLY to Anna line; FORCE 腹黑 (scheming/sly) tone + faster delivery ~7 chars/sec (timbre only; do not stretch to match slow/warm sample pacing).
+
+summary: [reference generation + keyframe completion] From <Picture 3>: Anna, eyes on drawer, in scheming 腹黑 tone quickly says range is this close (~0.7s); Shenmo answers impatiently while typing (~3.5s), head never turns. Default dialogue rate 7 chars/sec. End≠open. Two lines only. Ref audio = timbre only, NOT slow pace.
+
+retention_analysis:
+<Subject 1> (1,3,4): fully_preserved - fast short line, no head turn, then lifts phone.
+<Subject 2> (1,2,4): fully_preserved - rear/OS typing; no face cut; no head turn; ~7 chars/sec.
+<Subject 3> (all): fully_preserved - open=<Picture 3>; end≠open.
+<Subject 4> (1,3,4): fully_preserved - drawer→hand by end.
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3> ([Shot 1] first ONLY): fully_preserved - NOT last frame.
+<Picture 4>: partially_preserved
+<Audio 1>: reference - Shenmo (S2) timbre only; rate from prompt (~7 chars/sec).
+<Audio 2>: reference - Anna (S1) timbre only; 腹黑 (scheming/sly) delivery; rate ~7 chars/sec; ignore slow/warm pacing in sample.
+
+detailed_description: 16:9 anime cinematic; cool CLI light. Lock room/costume/props. GLOBAL DIALOGUE RATE: 1 second ≈ 7 Chinese characters. Anna (S1) then Shenmo (S2); both heads still; Shenmo impatient; no face CU; last≠first.
+[Shot 1] At 00.000s open on <Picture 3>: Anna FG at drawer looking down, Shenmo BG typing (hood/back). Hold ≥0.4s. Anna, head still, scheming 腹黑: <Subject 1> (S1) says FAST: <d>[Chinese] 距离这么近？</d> — duration MUST be ~0.7s (5 chars @ 7/sec; <Audio 2> timbre). NOT slow. Mouth closes by ~01.200s. Shenmo does not glance.
+[Shot 2] At 02.500s hard cut OVER-SHOULDER / rear-3/4 MEDIUM behind shoulder—monitors+keys; face NOT subject. Head locked; typing; impatient low male teen <Audio 1> timbre. <Subject 2> (S2) says: <d>[Chinese] 不要对放置型异能要求这么高，嫌距离短你可以自己感知。</d> — ~3.5s (25 chars @ 7/sec). Ends ~06.200s; mouth closed; still on screens.
+[Shot 3] At 07.000s hard cut drawer: Anna lifts brick phone into right hand; no speech.
+[Shot 4] At 11.000s hard cut NEW composition (≠Shot1): Anna holding phone, eyes on phone; Shenmo BG typing rear to screens. Hold ≥0.8s. No dialogue.
+
+overall_soundscape: Keyboard clicks, fan hum, soft drawer lift. Two lines only at ~7 chars/sec. Forbidden: dragging Anna's short line; pure-cold-only or warm/teasing/cute Anna tone; female voice on Shenmo; head turns; face CU; BGM; readable text/UI/watermark. No music. Ref audio = voice color only; do not copy slow sample pacing.
+
+non_diegetic_music: N/A

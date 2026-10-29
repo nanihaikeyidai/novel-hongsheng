@@ -1,0 +1,16 @@
+{
+  "appId": "2110357037929558018",
+  "taskId": "2115807889888337921",
+  "costRH": 237,
+  "promptChars": 4040,
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "note": "P05a r5 腹黑+7字/秒",
+  "billing": "personal_RH_coins"
+}
