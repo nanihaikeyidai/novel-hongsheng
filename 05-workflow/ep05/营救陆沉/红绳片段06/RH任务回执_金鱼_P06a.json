@@ -1,8 +1,8 @@
 {
   "appId": "2110357037929558018",
-  "taskId": "2115832683887284226",
-  "costRH": 102,
-  "promptChars": 4049,
+  "taskId": "2115853827138867201",
+  "costRH": 226,
+  "promptChars": 4947,
   "settings": {
     "mode": "Plus",
     "aspect": "16:9",
@@ -11,6 +11,6 @@
     "scheduler": "simple",
     "steps": 12
   },
-  "note": "P06a r2 下坡+快语速+低沉刚醒门卫",
+  "note": "P06a r3 正向车头+亭内按钮特写+安娜小声低音快",
   "billing": "personal_RH_coins"
 }
