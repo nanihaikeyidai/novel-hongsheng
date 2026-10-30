@@ -1,16 +1,1 @@
-{
-  "appId": "2110357037929558018",
-  "taskId": "2115853827138867201",
-  "costRH": 226,
-  "promptChars": 4947,
-  "settings": {
-    "mode": "Plus",
-    "aspect": "16:9",
-    "duration": 15,
-    "resolution": 1.5,
-    "scheduler": "simple",
-    "steps": 12
-  },
-  "note": "P06a r3 正向车头+亭内按钮特写+安娜小声低音快",
-  "billing": "personal_RH_coins"
-}
+{"appId":"2110357037929558018","taskId":"2116178867189415938","costRH":222,"promptChars":4952,"settings":{"mode":"Plus","aspect":"16:9","duration":15,"resolution":1.5,"scheduler":"simple","steps":12},"note":"P06a r4 栏杆按钮后才开+安娜8字/秒+门卫加句","billing":"personal_RH_coins"}
