@@ -1,12 +1,12 @@
 subject_definitions:
-<Subject 1> Anna: long dark-blue/purple straight hair under cleaner cap or over shoulders as in <Picture 1>; deep gray-blue ND janitor uniform, rubber gloves, abstract ND badge (NO readable text), light mask on nose/mouth; lock face/hair/outfit to <Picture 1>. Driving dark sedan FORWARD. Voice: QUIET + LOW PITCH (声音偏小、音调偏低)—soft-low volume, lower pitch than normal, 腹黑 sly understated, NEVER bright/loud. SPEECH RATE VERY FAST 8 Chinese chars/sec—「后勤部，需要清理一批临时运来的货物。」16 chars → MUST finish in 2.0s, clipped, no pauses. Head does not turn away from forward; mask stays on.
+<Subject 1> Anna: long dark-blue/purple straight hair under cleaner cap or over shoulders as in <Picture 1>; deep gray-blue ND janitor uniform, rubber gloves, abstract ND badge (NO readable text), light mask on nose/mouth; lock face/hair/outfit to <Picture 1>. Driving dark sedan FORWARD INTO the garage (away from street). Voice: QUIET + LOW PITCH (声音偏小、音调偏低)—soft-low volume, lower pitch than normal, 腹黑 sly understated, NEVER bright/loud. SPEECH RATE VERY FAST 8 Chinese chars/sec—「后勤运输部，有一批临时的货物需要紧急搬运。」18 chars → MUST finish in 2.2s, quick reply, clipped, no pauses. Head does not turn away from forward; mask stays on.
 <Subject 2> Night parking guard: middle-aged East Asian man, just-woken—groggy half-lidded eyes, rumpled dark security jacket; ALWAYS seated/standing INSIDE the guard booth (保安亭内), never steps outside; lock face/outfit to <Picture 2>. Voice: LOW DEEP just-woken gravelly. SPEECH RATE FAST ~8 chars/sec. 「是哪个部门的，这么晚来干什么？」13 chars → ~1.6s, no drawl.
 <Subject 3> ND HQ UNDERGROUND parking entrance night: DOWNHILL concrete ramp into subterranean garage; wet sloping pavement; yellow/black barrier arm; small booth left of lane; cool fluorescent + sodium; lock space/composition to <Picture 3>. HARD: slope DOWN into underground.
 <Subject 4> Props: abstract ND badge photo-block NO readable Chinese—lock to <Picture 4>; dark sedan with side window that can roll down.
 <Audio 1> Anna (S1) timbre—FORCE quiet soft volume + LOWER pitch + FAST 8 chars/sec (timbre only; do not copy slow sample pacing).
 <Audio 2> Guard (S2) rough middle-aged male timbre—FORCE just-woken LOW DEEP; never Anna voice.
 
-summary: [reference generation + keyframe completion] Night: dark sedan drives FORWARD nose-first DOWN into ND underground parking (headlights toward garage); barrier stays DOWN until guard INSIDE booth presses button; groggy guard CU asks department and why so late; barrier stays down; Anna rolls window, shows badge, answers quiet-low-fast; guard presses booth button then barrier rises; car continues FORWARD downhill under arm.
+summary: [reference generation + keyframe completion] Night: Anna drives the dark sedan FORWARD into ND underground parking (car faces away from camera, into the tunnel); barrier stays down; guard inside booth asks in CU; Anna shows badge and answers fast; guard presses button, barrier rises, car drives down inside.
 
 retention_analysis:
 <Subject 1> (1,3,4): fully_preserved - cleaner+mask; quiet low-pitch fast line; badge show; drives forward only.
@@ -15,18 +15,18 @@ retention_analysis:
 <Subject 4> (3): fully_preserved
 <Picture 1>: attribute_transfer
 <Picture 2>: attribute_transfer
-<Picture 3>: fully_preserved - [Shot 1] first frame: car NOSE/headlights toward underground, barrier DOWN, booth left.
+<Picture 3>: fully_preserved - [Shot 1] At 00.000s rear-high wide matching <Picture 3>: camera behind the dark sedan; car faces AWAY from camera, nose toward the lit tunnel, stopped at lowered barrier; booth left with guard inside. Hold ≥0.6s. Engine idle.
 <Picture 4>: partially_preserved
 <Audio 1>: reference
 <Audio 2>: reference
 
-detailed_description: 16:9 anime cinematic night. HARD CAR: car always faces garage—NOSE and HEADLIGHTS point downhill INTO underground; FORWARD drive only; NEVER reverse/back up; NEVER lead with taillights as motion. HARD BARRIER: arm stays DOWN until guard presses a button INSIDE the booth; NEVER auto-opens. HARD GUARD: body stays INSIDE booth for all dialogue; when he speaks, give CU of him at booth window. Anna QUIET soft volume + LOWER pitch + 8 chars/sec. ALL dialogue brisk, NO slow delivery. HARD BARRIER TIMING: when the car arrives and through ALL dialogue the barrier stays fully DOWN and motionless; it only rises AFTER Shot 4 button press. No readable text/UI/logo.
+detailed_description: 16:9 anime cinematic night. HARD CAR: from frame 1 the car faces AWAY from camera, nose pointing down the ramp INTO the underground tunnel (entering, never exiting); FORWARD only; NEVER reverse/back up; NEVER lead with taillights as motion. HARD BARRIER: arm stays DOWN until guard presses a button INSIDE the booth; NEVER auto-opens. HARD GUARD: body stays INSIDE booth for all dialogue; when he speaks, give CU of him at booth window. Anna QUIET soft volume + LOWER pitch + 8 chars/sec. ALL dialogue brisk, NO slow delivery. HARD BARRIER TIMING: when the car arrives and through ALL dialogue the barrier stays fully DOWN and motionless; it only rises AFTER Shot 4 button press. No readable text/UI/logo.
 [Shot 1] At 00.000s wide-medium matching <Picture 3>: dark sedan STOPPED at lowered yellow-black barrier on downhill ramp; car NOSE and white HEADLIGHTS face INTO underground tunnel; booth left with guard visible inside window. Hold ≥0.6s. Engine idle.
-[Shot 2] At 02.800s hard cut to CLOSE-UP of guard INSIDE booth through window (特写): groggy just-woken face, low deep: <Subject 2> (S2) says: <d>[Chinese] 是哪个部门的，这么晚来干什么？</d> (~1.6s, brisk). Barrier still DOWN. He does NOT leave the booth.
-[Shot 3] At 05.000s medium outside driver window: Anna (mask+cleaner) rolls window down; holds abstract ND badge toward booth. Eyes low-calm scheming. QUIET soft + LOWER pitch + FAST: <Subject 1> (S1) says: <d>[Chinese] 后勤部，需要清理一批临时运来的货物。</d> — MUST 2.0s (16 chars @8/sec); soft volume, not loud. Subtle mouth under mask. Head keeps facing forward/gate, no thrash.
+[Shot 2] At 02.800s hard cut to CLOSE-UP of guard INSIDE booth through window (特写): groggy just-woken face, low deep: <Subject 2> (S2) says: <d>[Chinese] 是哪个部门的，这么晚来干什么？</d> (~1.6s, brisk). Barrier still DOWN. Stays in booth.
+[Shot 3] At 05.000s medium outside driver window: Anna (mask+cleaner) rolls window down; holds abstract ND badge toward booth. Eyes low-calm scheming. QUIET soft + LOWER pitch + FAST: <Subject 1> (S1) says: <d>[Chinese] 后勤运输部，有一批临时的货物需要紧急搬运。</d> — MUST 2.2s (18 chars @8/sec), answers instantly; soft volume, not loud. Subtle mouth under mask. Head keeps facing forward/gate, no thrash.
 [Shot 4] At 08.800s cut: still INSIDE booth, guard's hand presses a physical button/switch on booth panel (NOT auto). Then only now the barrier arm begins rising. NEW angle vs Shot1.
-[Shot 5] At 11.200s medium-wide NEW composition: barrier rising; sedan drives FORWARD nose-first DOWN the ramp under the rising arm into underground; headlights lead into tunnel. Hold ≥0.8s. No more dialogue.
+[Shot 5] At 11.200s rear-high wide: barrier up; sedan rolls FORWARD away from camera DOWN the ramp into the underground tunnel, headlights leading inside. Hold ≥0.8s. No more dialogue.
 
-overall_soundscape: Night ambient, engine idle, window roll, booth button click, then barrier motor. Two lines only: Guard low deep CU; Anna quiet soft lower-pitch 8 chars/sec; guard ~8 chars/sec. Forbidden: barrier moving before button press; slow dialogue; reverse/back-up; taillight-led exit; auto barrier without button; guard stepping outside booth; loud/bright Anna; readable text; BGM; logo. No music.
+overall_soundscape: Ambient, engine idle, window roll, button click, barrier motor. Two lines only: Guard low deep CU; Anna quiet soft lower-pitch 8 chars/sec; guard ~8 chars/sec. Forbidden: barrier moving before button press; slow dialogue; reverse/back-up; car exiting toward street; loud/bright Anna; readable text; BGM; logo. No music.
 
 non_diegetic_music: N/A
