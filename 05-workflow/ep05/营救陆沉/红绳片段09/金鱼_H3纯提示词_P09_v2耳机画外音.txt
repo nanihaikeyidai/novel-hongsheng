@@ -1,0 +1,29 @@
+subject_definitions:
+<Subject 1> Door guard: lock face to <Picture 2>; standing at post <Picture 3>; annoyed after prior bump. Voice LOW. Only「喂？」. Phone is abstract brick—NO readable UI text on screen.
+<Subject 2> Shenmo: VOICE-ONLY, NEVER on screen—no face, no close-up, no PC-room cut. Off-screen voice heard through Anna's Bluetooth earpiece (or the guard's phone): band-limited telephone EQ (~300Hz–3kHz), lows and highs cut, slightly muffled, faint hiss, NOT crisp. Low casual-cold 漫不经心, ~8 chars/sec. Here ICE-COLD. Only「晚安。」
+<Subject 3> Anna (optional BG): cleaner+mask lock <Picture 1>; may appear blurred behind mop—no line this unit.
+<Audio 1> Guard (S1) rough male timbre.
+<Audio 2> Shenmo (S2) timbre—cold short; ~7–8 chars/sec.
+
+summary: [reference generation] 15s: Guard phone vibrates; he answers「喂？」; Shenmo's muffled phone voice coldly says「晚安」off-screen; a tiny click on the line. No knockout yet.
+
+retention_analysis:
+<Subject 1> (1,2): fully_preserved - vibrate, answer,「喂？」
+<Subject 2> (3,4): fully_preserved - off-screen telephone-band cold「晚安」
+<Subject 3>: weak_reference - optional BG only
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer
+<Picture 3>: fully_preserved - post
+<Audio 1>: reference
+<Audio 2>: reference
+
+detailed_description: 16:9 anime cinematic. Only two spoken syllables of dialogue total; rest is phone/body business. No readable phone UI. No BGM. No electrocute collapse in THIS unit (saved for next).
+[Shot 1] At 00.000s medium post: guard's pocket/waist phone buzzes twice under cloth. He pulls it; abstract bright screen (no glyphs). Hold ≥0.8s. Ambient corridor hum.
+[Shot 2] At 03.000s CU hand+phone: thumb swipes answer; phone to ear. Guard, irritated: <Subject 1> (S1) says: <d>[Chinese] 喂？</d> — ~0.3s. Eyes half-lidded.
+[Shot 3] At 05.200s CU guard's ear pressed to phone, brows knitting; Shenmo off-screen, heard as thin muffled telephone-band voice from the handset (and Anna's earpiece), ICE-COLD: <Subject 2> (S2) says: <d>[Chinese] 晚安。</d> — ~0.3s. Tiny line click.
+[Shot 4] At 08.000s insert: Anna's eyes above mask in background blur, one slow blink; phone screen glow pulses (abstract). Hold ≥0.7s.
+[Shot 5] At 10.500s brief cut back: guard still holding phone to ear, confused beat, not yet collapsing. Hold ≥1.0s. Silence after「晚安」. End≠celebration.
+
+overall_soundscape: Phone vibrate buzz, swipe click, short「喂？」, colder shorter「晚安」as muffled phone-band voice (lows/highs cut, not crisp), line click, fluorescent hum. Forbidden: long speeches; Shenmo on screen or close-up; PC-room cuts; readable UI; BGM; knockout sparks yet; logo. No music.
+
+non_diegetic_music: N/A

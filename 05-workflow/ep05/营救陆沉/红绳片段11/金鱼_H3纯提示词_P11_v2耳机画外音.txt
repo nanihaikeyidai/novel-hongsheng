@@ -1,0 +1,29 @@
+subject_definitions:
+<Subject 1> Anna: ND cleaner+mask lock to <Picture 1>; quiet competent; 腹黑 calm; rubber gloves; head does not thrash. No spoken line this unit (earpiece listens).
+<Subject 2> Shenmo: VOICE-ONLY, NEVER on screen—no face, no close-up, no PC-room cut. Off-screen voice heard through Anna's Bluetooth earpiece (or the guard's phone): band-limited telephone EQ (~300Hz–3kHz), lows and highs cut, slightly muffled, faint hiss, NOT crisp. Low casual-cold 漫不经心, ~8 chars/sec. Line:「口袋。上身。拿卡开门。」
+<Subject 3> Collapsed door guard: lock face cues to <Picture 3>; lying at post <Picture 2>; UPPER TORSO jacket pocket holds abstract keycard; unconscious breathing.
+<Subject 4> Observation room door + card reader at night post—lock environment to <Picture 2>; door seam reveals indoor cold light when unlocked. NO readable Chinese on card/reader.
+<Audio 1> Shenmo (S2) timbre—for the single command line.
+
+summary: [reference generation] 15s: Shenmo orders pocket-upper-card-open; Anna pulls keycard from the fallen guard's upper jacket pocket, badges the observation door, lock clicks, door slit of light; she knees the door open. Lu Chen not required on camera.
+
+retention_analysis:
+<Subject 1> (2,3,4,5): fully_preserved - extract card, badge, knee door.
+<Subject 2> (1): fully_preserved - off-screen telephone-band earpiece command.
+<Subject 3> (2): fully_preserved - upper pocket source of card.
+<Subject 4> (3,4,5): fully_preserved - door unlock light slit.
+<Picture 1>: attribute_transfer - Anna
+<Picture 2>: fully_preserved - post/door
+<Picture 3>: attribute_transfer - guard
+<Audio 1>: reference
+
+detailed_description: 16:9 anime cinematic night. HARD: card comes from UPPER torso pocket (not desktop). No Lu Chen required. No readable text on card/UI. No BGM. Anna does not turn head to camera while working.
+[Shot 1] At 00.000s CU Anna's earpiece and masked profile above the fallen guard; earpiece-only telephone-band muffled voice, Shenmo off-screen: <Subject 2> (S1) says: <d>[Chinese] 口袋。上身。拿卡开门。</d> — MUST ~1.2s (9 chars @~7.5/sec). Anna's eyes drop to his chest.
+[Shot 2] At 02.200s medium-low at fallen guard: Anna crouches; two gloved fingers slide into UPPER jacket inner/breast pocket; pulls abstract keycard; thumb scrapes card edge to confirm grip. Does not look at his face. Hold ≥2.0s.
+[Shot 3] At 05.500s she stands, two steps to observation door reader; taps card. Soft lock thunk. Thin slit of cold interior light appears in door seam. Hold ≥1.2s.
+[Shot 4] At 08.500s medium: Anna knees the door to stop rebound; widens gap to shoulder width; listens down corridor (no second footsteps). Card tucked into glove cuff.
+[Shot 5] At 11.500s doorway: shoulder about to enter; light slit brighter. Hold ≥0.8s. No more dialogue. End on threshold—do NOT reveal Lu Chen face this unit.
+
+overall_soundscape: Earpiece command as muffled telephone-band voice (lows/highs cut, not crisp), fabric pocket rustle, card tap, lock tongue click, door hinge creak, distant fluorescent. One dialogue line only. Forbidden: taking card from desk; readable UI; BGM; logo; watermark; Lu Chen mandatory reveal; Shenmo on screen or close-up; PC-room cuts. No music.
+
+non_diegetic_music: N/A

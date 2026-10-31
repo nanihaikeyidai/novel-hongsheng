@@ -110,3 +110,6 @@ paseo.json
 # 参考音色音频
 人物参考音色/*.wav
 人物参考音色/*.mp3
+
+# RH 上传缓存（含签名URL/密钥，不入库）
+rh_upload_cache*.json

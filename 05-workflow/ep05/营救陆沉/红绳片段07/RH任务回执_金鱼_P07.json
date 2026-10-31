@@ -1,0 +1,53 @@
+{
+  "appId": "2110357037929558018",
+  "taskId": "2116217035703943169",
+  "costRH_estimate": 108,
+  "promptChars": 3962,
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "note": "P07 耳机报点走廊接近；网页个人RH币提交",
+  "billing": "personal_RH_coins",
+  "refs": [
+    "anna.jpg",
+    "shenmo.png",
+    "corridor.png",
+    "pc_room.jpg"
+  ],
+  "audios": [
+    "shenmo.wav",
+    "anna.wav"
+  ],
+  "status_at_submit": "生成中",
+  "status": "SUCCESS",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P07_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P07_手机版.mp4",
+  "raw_outputs": {
+    "code": 0,
+    "msg": "success",
+    "errorMessages": null,
+    "data": [
+      {
+        "fileUrl": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p80-audio_ebkla_1793381013.mp4",
+        "fileType": "mp4",
+        "taskCostTime": "585",
+        "nodeId": "364",
+        "thirdPartyConsumeMoney": null,
+        "consumeMoney": null,
+        "consumeCoins": "234",
+        "storageType": "tos",
+        "bucket": "rh-comfyui01",
+        "objectKey": "8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p80-audio_ebkla_1793381013.mp4"
+      }
+    ]
+  },
+  "costRH_observed_delta_approx": 234,
+  "finished_at": "2026-10-31 01:23:38 Asia/Shanghai",
+  "runtime": "09:45",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p80-audio_ebkla_1793381013.mp4"
+}

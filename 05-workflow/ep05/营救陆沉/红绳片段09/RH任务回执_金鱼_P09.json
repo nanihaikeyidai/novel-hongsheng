@@ -1,0 +1,23 @@
+{
+  "appId": "2110357037929558018",
+  "taskId": "2116219870084562945",
+  "costRH_estimate": 134,
+  "promptChars": 2585,
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "note": "P09 喂/晚安；audio1 guard audio2 shenmo；网页个人RH",
+  "billing": "personal_RH_coins",
+  "status_at_submit": "生成中",
+  "status": "SUCCESS",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09_手机版.mp4",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p85-audio_cngug_1793381763.mp4",
+  "finished_at": "2026-10-31 01:36:09 Asia/Shanghai",
+  "runtime": "10:59"
+}

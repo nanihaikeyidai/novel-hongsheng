@@ -1,0 +1,32 @@
+subject_definitions:
+<Subject 1> Shenmo: 15yo lean East-Asian teen; black-rim glasses, dark under-eye, cap/hood shadowing face, tactical vest over hoodie; lock face/outfit to <Picture 2>. ALWAYS seated in dark PC room facing triple monitors; eyes locked on screens; keeps typing while speaking. Voice: low, casual-cold 漫不经心, clipped. SPEECH RATE ~7–8 Chinese chars/sec. HARD: head NEVER turns; NEVER looks at camera/person; FORBIDDEN frontal talking-to-mirror / face-to-camera speech CU as primary talk pose.
+<Subject 2> Anna: long dark-blue/purple straight hair under cleaner cap or over shoulders as in <Picture 1>; deep gray-blue ND janitor uniform, rubber gloves, light mask on nose/mouth, abstract ND badge (NO readable text); lock face/hair/outfit to <Picture 1>. Pushing a janitor cart in ND night corridor. Voice: QUIET + LOW PITCH + FAST ~8 chars/sec; 腹黑 sly understated; NEVER bright/loud. Head does not thrash while speaking; mask stays on.
+<Subject 3> ND HQ night duty corridor: long cool-white fluorescent hallway, slight floor sheen, institutional night-shift feel (NOT school campus vibe)—use <Picture 3> for space/lighting mood; rewrite any school cues into ND office corridor.
+<Subject 4> Shenmo dark computer room: three huge monitors, no ceiling lights, monitor glow only; lock space to <Picture 4>.
+<Audio 1> Shenmo (S1) timbre—low casual-cold; FORCE ~7–8 chars/sec (timbre only, ignore slow sample pacing).
+<Audio 2> Anna (S2) timbre—quiet soft-low + FAST (timbre only).
+
+summary: [reference generation] 15s night: Shenmo at triple screens reports Lu Chen's locked room via earpiece; cut to Anna pushing cart in ND corridor; she quietly reports one guard at the door; Shenmo orders her closer without noise. Ends with Anna advancing toward the distant post.
+
+retention_analysis:
+<Subject 1> (1,3): fully_preserved - screen-locked speech; no head turn.
+<Subject 2> (2,4,5): fully_preserved - cleaner+mask; quiet fast line; cart push.
+<Subject 3> (2,4,5): fully_preserved - ND night corridor mood.
+<Subject 4> (1,3): fully_preserved - dark triple-monitor room.
+<Picture 1>: attribute_transfer - Anna appearance.
+<Picture 2>: attribute_transfer - Shenmo appearance.
+<Picture 3>: weak_reference - corridor lighting/space mood (ND rewrite).
+<Picture 4>: fully_preserved - PC room.
+<Audio 1>: reference
+<Audio 2>: reference
+
+detailed_description: 16:9 anime cinematic night. GLOBAL DIALOGUE RATE ~7–8 Chinese chars/sec. Shenmo (S1) speaks only while staring at monitors, typing; Anna (S2) quiet low-pitch fast. No readable text/UI/logo/subtitles. No BGM.
+[Shot 1] At 00.000s medium over-shoulder in <Picture 4> room: Shenmo hood/back-3/4 toward triple abstract screens (no readable glyphs), typing. Hold ≥0.5s. Still staring at screens, low casual: <Subject 1> (S1) says: <d>[Chinese] 陆沉在岗后第二间观察室，红点没动。</d> — MUST ~2.1s (16 chars @~7.5/sec). Mouth closes; head never turns.
+[Shot 2] At 03.200s hard cut wide-medium ND cool-white corridor (<Picture 3> mood): Anna (cleaner+mask) pushes janitor cart toward distant glass post silhouette; wheels soft. Hold ≥0.6s. No dialogue.
+[Shot 3] At 05.500s medium beside cart: Anna eyes half-lidded toward post direction without turning head much; quiet low fast: <Subject 2> (S2) says: <d>[Chinese] 门口有人站岗。一个人。</d> — ~1.4s (11 chars). Subtle mouth under mask.
+[Shot 4] At 08.000s hard cut back to PC room rear/shoulder: Shenmo still typing at screens: <Subject 1> (S1) says: <d>[Chinese] 靠近。别出声。</d> — ~0.8s (6 chars). Cold short.
+[Shot 5] At 10.200s corridor tracking: Anna slows cart half-step, palm steadies mop bucket, advances toward distant guard-post glow. Hold ≥1.0s. No more dialogue. End≠Shot1.
+
+overall_soundscape: Keyboard clicks, fan hum, soft cart wheels, distant fluorescent buzz, earpiece-filtered voices. Three lines only at ~7–8 chars/sec. Forbidden: Shenmo facing camera to talk; loud/bright Anna; school-campus look; readable text; BGM; logo; watermark. No music.
+
+non_diegetic_music: N/A

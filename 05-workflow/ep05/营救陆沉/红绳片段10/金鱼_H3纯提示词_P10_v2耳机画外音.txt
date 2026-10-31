@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> Abstract underground cable current FX: thin white-cyan electric filaments racing along dark bundled cables under concrete; stylized anime energy—NOT explosion, NOT fireball, NOT gore. No readable labels on conduits.
+<Subject 2> Door guard: lock face to <Picture 2>; body at night post <Picture 1>; collapses unconscious after micro-arc at phone earpiece—breathing remains; NO blood, NO burns showcase.
+<Subject 3> Shenmo: VOICE-ONLY, NEVER on screen—no face, no close-up, no PC-room cut. Off-screen voice heard through Anna's Bluetooth earpiece (or the guard's phone): band-limited telephone EQ (~300Hz–3kHz), lows and highs cut, slightly muffled, faint hiss, NOT crisp. Low casual-cold 漫不经心, ~8 chars/sec.
+<Subject 4> Anna (end): cleaner+mask may enter frame bending toward fallen guard—no dialogue; appearance consistent with prior cleaner look if shown (optional, text-ok if only hands).
+<Audio 1> Shenmo (S1) timbre—for final short line only.
+
+summary: [reference generation] 15s restrained ability climax: abstract underground cable current races; micro-arc hits the guard's phone; he collapses soft; Shenmo earpiece says「倒了。动。」
+
+retention_analysis:
+<Subject 1> (1,2): fully_preserved - abstract cable current sequence.
+<Subject 2> (3,4): fully_preserved - micro-arc then soft collapse.
+<Subject 3> (5): fully_preserved - cold short off-screen telephone-band earpiece cue.
+<Picture 1>: fully_preserved - post environment
+<Picture 2>: attribute_transfer - guard
+<Audio 1>: reference
+
+detailed_description: 16:9 anime cinematic. HARD FX: thin arcs / cable filaments only; FORBIDDEN explosion, fireball, bloody trauma, charred flesh. No readable text/UI. No BGM. Dialogue only final 4 chars.
+[Shot 1] At 00.000s abstract macro: dark underground cable tunnel/bundle; a needle-thin white current streaks along metal sheath, racing past junctions like rain-wire. Camera tracks with current ≥2.0s. Electric hiss.
+[Shot 2] At 03.200s continue: current forks into building riser, squeezes toward a glowing phone-antenna ring abstract node. Pulse. Hold ≥1.0s.
+[Shot 3] At 05.500s hard cut guard post CU: phone at guard's ear; hairline white micro-arc skims handset rim (restrained). Guard shoulder spasms; knees buckle; he slides down wall/cart side, eyes closing; chest still rises faintly. Phone drops or hangs. Hold collapse ≥2.0s. No dialogue yet.
+[Shot 4] At 09.500s wide: fallen guard motionless-but-breathing; corridor cool light. Hold ≥0.6s.
+[Shot 5] At 11.000s CU Anna's masked face and earpiece at the corridor edge, eyes on the fallen guard; earpiece-only telephone-band muffled voice, Shenmo off-screen, flat short: <Subject 3> (S1) says: <d>[Chinese] 倒了。动。</d> — ~0.5s (4 chars). Optional last 1s: Anna's gloved hands enter toward fallen torso pocket (not extracting yet). End.
+
+overall_soundscape: Electric hiss/zip on cables, soft body fall, phone clack, fluorescent hum, final line as muffled telephone-band earpiece voice (lows/highs cut, not crisp). Forbidden: boom/explosion SFX as primary; screams of agony; Shenmo on screen or close-up; PC-room cuts; BGM; readable UI; logo; watermark. No music.
+
+non_diegetic_music: N/A

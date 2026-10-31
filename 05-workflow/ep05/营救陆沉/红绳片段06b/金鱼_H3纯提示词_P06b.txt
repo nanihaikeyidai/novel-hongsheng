@@ -1,0 +1,28 @@
+subject_definitions:
+<Subject 1> Anna: long dark-blue/purple straight hair under cleaner cap as in <Picture 1>; deep gray-blue ND janitor uniform, rubber gloves, light mask over nose/mouth, abstract ND badge (NO readable text), small black Bluetooth earpiece in one ear; lock face/hair/outfit to <Picture 1>. Pushes a janitor cart with mop bucket. Silent, careful, 腹黑 calm; eyes do the acting; head moves minimally.
+<Subject 2> Shenmo: VOICE-ONLY: Shenmo NEVER appears on screen—no face, no close-up, no PC-room cut. His lines are off-screen voice heard through Anna's Bluetooth earpiece: band-limited telephone EQ (~300Hz–3kHz), low and high frequencies cut, slightly muffled and compressed, faint line hiss, NOT crisp. Low, casual-cold 漫不经心, ~8 Chinese chars/sec. Never visible.
+<Subject 3> ND underground garage at night: dim concrete, sparse cold fluorescent tubes, parked car silhouettes, oil-stained floor sheen, low ceiling pipes; space/light mood from <Picture 2>. Wall-mounted access card reader beside steel elevator doors; small dome security camera on the ceiling with a tiny red LED.
+<Subject 4> Elevator interior: brushed steel, dim cool panel light, ceiling corner camera dome.
+<Audio 1> Shenmo (S2) timbre—low casual-cold; output it as telephone-band earpiece voice (timbre only, ignore sample pacing).
+
+summary: [reference generation] 15s night: Anna pushes the janitor cart through the dark ND underground garage, swipes a keycard at the elevator reader, rolls in, glances carefully up at the ceiling camera, an eye-level face close-up scans the surroundings while Shenmo's muffled phone voice speaks only in her earpiece; elevator doors close.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - cleaner+mask, cart, swipe, camera glance, eye CU.
+<Subject 2> (4): fully_preserved - off-screen earpiece telephone voice only.
+<Subject 3> (1,2): fully_preserved - dark garage, reader, ceiling camera.
+<Subject 4> (3,4,5): fully_preserved - elevator interior.
+<Picture 1>: attribute_transfer - Anna appearance.
+<Picture 2>: weak_reference - garage darkness/space mood; rewrite into interior garage elevator lobby.
+<Audio 1>: reference
+
+detailed_description: 16:9 anime cinematic, dark low-key night. No readable text/UI/logo/subtitles; reader display and signs abstract. No BGM. Shenmo never shown. Anna does not speak.
+[Shot 1] At 00.000s wide low angle in dark garage (<Picture 2> mood): Anna (cleaner+mask, earpiece) pushes janitor cart between parked car silhouettes toward steel elevator doors; wheels rattle softly on concrete; a fluorescent tube flickers. Hold ≥1.5s.
+[Shot 2] At 03.000s CU gloved hand: she lifts an abstract keycard from her chest pocket and taps the wall reader; reader light turns from red to green (no text); short beep; elevator doors slide open spilling cool light. Hold ≥1.2s.
+[Shot 3] At 05.800s medium inside elevator: she rolls the cart in, stops; without turning her head, her eyes lift slowly toward the ceiling dome camera in the corner; she lowers the cap brim a few millimeters. Insert ≥0.6s: camera dome red LED blinking.
+[Shot 4] At 08.500s extreme close-up of Anna's eyes above the mask, half-lidded, pupils sliding left then right, checking the garage behind through the open doors; faint hair strand moves. Earpiece-only, telephone-band muffled voice, Shenmo off-screen: <Subject 2> (S2) says: <d>[Chinese] 摄像头我盖住了。上七楼。</d> — ~1.4s (11 chars). Anna's face does not react except a slow blink.
+[Shot 5] At 11.500s medium from garage side: Anna presses a floor button (abstract), steel doors slide shut, closing on her masked face and eyes; last gap of light vanishes, dark garage remains. Hold ≥1.0s. End.
+
+overall_soundscape: Garage drone, distant drip, cart wheel rattle, fluorescent buzz, card reader beep, elevator door motor, faint camera servo whir. Shenmo line only as thin muffled telephone-band earpiece voice (lows and highs cut, slight hiss, not crisp). Forbidden: Shenmo on screen or close-up; Anna speaking; bright lighting; readable text; BGM; logo; watermark. No music.
+
+non_diegetic_music: N/A

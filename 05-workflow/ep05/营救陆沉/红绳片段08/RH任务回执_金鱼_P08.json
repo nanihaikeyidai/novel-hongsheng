@@ -1,0 +1,23 @@
+{
+  "appId": "2110357037929558018",
+  "taskId": "2116217897314648066",
+  "costRH_estimate": 134,
+  "promptChars": 3166,
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "note": "P08 撞人拖延连手机；网页个人RH币；image1-5 anna/guard/guard_post/shenmo/pc_room；audio shenmo/anna/guard",
+  "billing": "personal_RH_coins",
+  "status_at_submit": "生成中",
+  "status": "SUCCESS",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P08_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P08_手机版.mp4",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p86-audio_ycqxn_1793381171.mp4",
+  "finished_at": "2026-10-31 01:26:15 Asia/Shanghai",
+  "runtime": "08:56"
+}

@@ -1,0 +1,34 @@
+subject_definitions:
+<Subject 1> Shenmo: VOICE-ONLY, NEVER on screen—no face, no close-up, no PC-room cut. Off-screen voice heard through Anna's Bluetooth earpiece (or the guard's phone): band-limited telephone EQ (~300Hz–3kHz), lows and highs cut, slightly muffled, faint hiss, NOT crisp. Low casual-cold 漫不经心, ~8 chars/sec.
+<Subject 2> Anna: ND cleaner+mask lock to <Picture 1>; quiet low-pitch FAST ~8 chars/sec; 腹黑 under apology; head does not thrash; pushing janitor cart.
+<Subject 3> Door guard: middle-aged East Asian night duty man; rumpled dark security jacket; standing at observation-room door post; lock face/outfit cues to <Picture 2> and post composition to <Picture 3>. Voice: LOW annoyed. SPEECH RATE FAST. Short line only.
+<Subject 4> ND observation-door guard post night: cool corridor, door seam with indoor light slit—lock space to <Picture 3>.
+<Subject 5> Props: janitor cart with mop bucket; abstract keycard shape may be at guard torso pocket (not read text).
+<Audio 1> Shenmo (S1) timbre—low; ~7–8 chars/sec.
+<Audio 2> Anna (S2) timbre—quiet soft-low FAST.
+<Audio 3> Guard (S3) rough middle-aged male timbre—annoyed short bark.
+
+summary: [reference generation] 15s: Shenmo earpiece orders Anna closer to bump the guard with her cart; light bump; guard says watch it; Anna apologizes to stall; Shenmo confirms phone link and tells her to wait for the ring.
+
+retention_analysis:
+<Subject 1> (1,4): fully_preserved - off-screen telephone-band earpiece lines.
+<Subject 2> (2,3,4): fully_preserved - bump + apology stall.
+<Subject 3> (2,3): fully_preserved - annoyed「小心点」.
+<Subject 4> (all corridor): fully_preserved
+<Picture 1>: attribute_transfer
+<Picture 2>: attribute_transfer - guard face
+<Picture 3>: fully_preserved - post space
+<Audio 1>: reference
+<Audio 2>: reference
+<Audio 3>: reference
+
+detailed_description: 16:9 anime cinematic. Dialogue ~7–8 chars/sec. Bump is a LIGHT shin tap with cart—not an attack. No readable text/UI. No BGM. Speakers do not turn heads to camera.
+[Shot 1] At 00.000s medium behind Anna at the cart approaching the post (<Picture 3>); earpiece-only telephone-band muffled voice, Shenmo off-screen: <Subject 1> (S1) says: <d>[Chinese] 再近一点。用车碰一下他。</d> — ~1.6s (12 chars). Anna keeps facing forward.
+[Shot 2] At 02.400s medium at guard post (<Picture 3>): Anna rolls cart; wheel/bumper lightly clips guard's outer shin. Guard shoulder jerks, looks down annoyed: <Subject 3> (S3) says: <d>[Chinese] 小心点。</d> — ~0.4s (3 chars), brisk.
+[Shot 3] At 04.200s medium-low: Anna bends to cart rail, mop handle scrapes floor as fake-slip excuse, body blocking his side-step; quiet fast 腹黑 apology: <Subject 2> (S2) says: <d>[Chinese] 对不起对不起——地上滑。</d> — ~1.4s (11 chars). Eyes at his chest height, not long on face.
+[Shot 4] At 07.000s CU Anna's masked profile and earpiece, eyes lowered; earpiece-only telephone-band muffled voice, Shenmo off-screen, flat: <Subject 1> (S1) says: <d>[Chinese] 已经连上门卫手机。停。等铃。</d> — ~1.8s (14 chars).
+[Shot 5] At 10.000s post: Anna freezes mid-mop twist, listening; guard half-reaches toward pocket phone (not ringing yet). Hold ≥1.2s. No more dialogue. End on wait.
+
+overall_soundscape: Cart bump thud, mop scrape, cloth rustle, Shenmo only as muffled telephone-band earpiece voice (lows/highs cut, not crisp). Four lines only. Forbidden: violent hit; blood; loud Anna; Shenmo on screen or close-up; PC-room cuts; readable UI; BGM; logo. No music.
+
+non_diegetic_music: N/A
