@@ -1,0 +1,140 @@
+{
+  "version": 5,
+  "editMode": "segment",
+  "totalFrames": 362,
+  "frameRate": 24,
+  "video": {},
+  "videoClips": [],
+  "global": {
+    "taskType": "r2v — 参考主体生视频(Reference to Video)",
+    "prompt": "subject_definitions:\n图片1：雷斯特人设。图片2：安娜人设。图片3：翠羽社大厅场景。\n音频1：雷斯特。音频2：安娜。",
+    "refs": [
+      {
+        "index": 0,
+        "imageFile": "openapi/50089ee1c2c8f13ffcec8514dbf939e44879e5836bcf30617c8c97ace7a931f2.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 1,
+        "imageFile": "openapi/acfe578afcffe0cd3a381a6a2d6cf07a9dfa32b8e4ccc0474e780da9f62dbf30.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 2,
+        "imageFile": "openapi/7ed353ef87f82c251597de5216c5c4c46461411a441dfbf8340970a25f2e9be4.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      }
+    ],
+    "refAudios": [
+      {
+        "index": 0,
+        "audioFile": "openapi/44dfcde57eb4ce5a6ff07ae0c27130dcea41e7c8009d84157d5bb18d982c782a.wav",
+        "fileName": "44dfcde57eb4ce5a6ff07ae0c27130dcea41e7c8009d84157d5bb18d982c782a.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 9.311
+      },
+      {
+        "index": 1,
+        "audioFile": "openapi/e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.wav",
+        "fileName": "e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 4.54
+      }
+    ],
+    "commonEnabled": true,
+    "output": {
+      "mode": "fixed",
+      "aspectRatio": "16:9 (宽屏)",
+      "megapixels": 0.6,
+      "multiple": 32,
+      "longEdge": 1056,
+      "width": 1056,
+      "height": 608,
+      "continuityEnabled": true,
+      "continuityOverlapFrames": 22,
+      "refImageSize": "match"
+    }
+  },
+  "output": {
+    "mode": "fixed",
+    "aspectRatio": "16:9 (宽屏)",
+    "megapixels": 0.6,
+    "multiple": 32,
+    "longEdge": 1056,
+    "width": 1056,
+    "height": 608,
+    "maxExportFrames": 0,
+    "exportMode": "all",
+    "audioMode": "generate",
+    "refImageSize": "match",
+    "continuityEnabled": true,
+    "continuityOverlapFrames": 22
+  },
+  "runSelectEnabled": false,
+  "runSelection": [],
+  "segments": [
+    {
+      "id": "ms77c8f04bac1f",
+      "start": 0,
+      "length": 362,
+      "frameCount": 362,
+      "durationSec": 15,
+      "prompt": "subject_definitions:\n<Subject 1> 雷斯特：同 P01a；银灰发黑衣羽毛胸针；坐主座淡定续令，不演讲。\n<Subject 2> 安娜：同 P01a；深蓝长直发潮肩校服；听令后点头「明白」并转身朝侧廊电脑房方向。\n<Subject 3> 翠羽社地下大厅：同 P01a 场景锁定。\n<Audio 1> 是 <Subject 1> 雷斯特 (S1) 的音色参考；只迁移音色，不复制原台词。\n<Audio 2> 是 <Subject 2> 安娜 (S2) 的音色参考；只迁移年轻女声音色，不复制原台词。\n\nsummary: [reference generation] 接上一段：雷斯特补上「尽量不暴露能力、不做不必要战斗、去找小默」；安娜应「明白」并转身去电脑房方向。推进「行动令完成→执行启动」。\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 4]): fully_preserved - 主座坐姿与外观继承 P01a 出点。\n<Subject 2> (appears in [Shot 2], [Shot 3], [Shot 4]): fully_preserved - 桌前站位继承，本段允许转身朝侧廊。\n<Subject 3>: fully_preserved - 大厅空间继承。\n<Picture 1>: attribute_transfer - 仅身份。\n<Picture 2>: attribute_transfer - 仅身份。\n<Picture 3>: partially_preserved - 空间光线。\n<Audio 1>: reference - 仅音色。\n<Audio 2>: reference - 仅音色。\n\ndetailed_description: 16:9横屏，2K级高清，高精度日漫电影感。世界轴线同 P01a。入点：雷斯特仍坐主座，安娜仍在桌前听令未转身。⚠️人声纪律：仅 Shot 1 与 Shot 3 有对白；问答须前者闭口后后者发声。\n[Shot 1] 在 00.000 秒处，开场锁定雷斯特面部近景。淡定续说。<Subject 1> (S1) 说：<d>[Chinese] 尽量不要暴露能力，不要做不必要的战斗。等会你去找小默，他会教你怎么做。</d>。口型同步；切出时口型闭合、目光朝安娜。\n[Shot 2] 在 07.500 秒处，hard cut 到安娜面部近景。她听完，拇指在袖口褶上搓一下，肩线开始绷进执行态，仍闭口。主动作：搓袖 → 准备应声。切出时口型闭合。\n[Shot 3] 在 10.500 秒处，hard cut 仍以安娜近景为主构图微调（信息变为应声）。<Subject 2> (S2) 说：<d>[Chinese] 明白。</d>。短促、清楚；点头一次。切出时口型闭合。\n[Shot 4] 在 13.000 秒处，hard cut 到中景：安娜转身朝侧廊电脑房方向，脚步不快；雷斯特仍坐主座闭口目送。末 ≥0.5s 稳定；⛔禁补话。\n\noverall_soundscape: 大厅轻回响；转身衣料声与短促脚步起步。对白顺序 S1 长句 → S2「明白」；其余无声人声；无音乐。\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止安娜长篇复述命令、禁止雷斯特起立跟随、禁止侧廊外立刻切到电脑房（本段只到转身起步）。",
+      "taskType": "",
+      "refs": [],
+      "refAudios": [],
+      "refVideos": [],
+      "genImage": {
+        "imageFile": "",
+        "fileName": ""
+      },
+      "continuityFromPrev": false,
+      "refImageSize": "match"
+    }
+  ],
+  "timelineMode": "prompt_batch",
+  "width": 1056,
+  "height": 608,
+  "refMaxSize": 1056,
+  "gen": {},
+  "keyframes": [],
+  "durationSec": 15,
+  "shots": [],
+  "liveTaePreview": false,
+  "batchDetailMode": false,
+  "batchWorkspaces": {
+    "r2v": {
+      "segments": [
+        {
+          "id": "ms77c8f04bac1f",
+          "start": 0,
+          "length": 362,
+          "frameCount": 362,
+          "durationSec": 15,
+          "prompt": "subject_definitions:\n<Subject 1> 雷斯特：同 P01a；银灰发黑衣羽毛胸针；坐主座淡定续令，不演讲。\n<Subject 2> 安娜：同 P01a；深蓝长直发潮肩校服；听令后点头「明白」并转身朝侧廊电脑房方向。\n<Subject 3> 翠羽社地下大厅：同 P01a 场景锁定。\n<Audio 1> 是 <Subject 1> 雷斯特 (S1) 的音色参考；只迁移音色，不复制原台词。\n<Audio 2> 是 <Subject 2> 安娜 (S2) 的音色参考；只迁移年轻女声音色，不复制原台词。\n\nsummary: [reference generation] 接上一段：雷斯特补上「尽量不暴露能力、不做不必要战斗、去找小默」；安娜应「明白」并转身去电脑房方向。推进「行动令完成→执行启动」。\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 4]): fully_preserved - 主座坐姿与外观继承 P01a 出点。\n<Subject 2> (appears in [Shot 2], [Shot 3], [Shot 4]): fully_preserved - 桌前站位继承，本段允许转身朝侧廊。\n<Subject 3>: fully_preserved - 大厅空间继承。\n<Picture 1>: attribute_transfer - 仅身份。\n<Picture 2>: attribute_transfer - 仅身份。\n<Picture 3>: partially_preserved - 空间光线。\n<Audio 1>: reference - 仅音色。\n<Audio 2>: reference - 仅音色。\n\ndetailed_description: 16:9横屏，2K级高清，高精度日漫电影感。世界轴线同 P01a。入点：雷斯特仍坐主座，安娜仍在桌前听令未转身。⚠️人声纪律：仅 Shot 1 与 Shot 3 有对白；问答须前者闭口后后者发声。\n[Shot 1] 在 00.000 秒处，开场锁定雷斯特面部近景。淡定续说。<Subject 1> (S1) 说：<d>[Chinese] 尽量不要暴露能力，不要做不必要的战斗。等会你去找小默，他会教你怎么做。</d>。口型同步；切出时口型闭合、目光朝安娜。\n[Shot 2] 在 07.500 秒处，hard cut 到安娜面部近景。她听完，拇指在袖口褶上搓一下，肩线开始绷进执行态，仍闭口。主动作：搓袖 → 准备应声。切出时口型闭合。\n[Shot 3] 在 10.500 秒处，hard cut 仍以安娜近景为主构图微调（信息变为应声）。<Subject 2> (S2) 说：<d>[Chinese] 明白。</d>。短促、清楚；点头一次。切出时口型闭合。\n[Shot 4] 在 13.000 秒处，hard cut 到中景：安娜转身朝侧廊电脑房方向，脚步不快；雷斯特仍坐主座闭口目送。末 ≥0.5s 稳定；⛔禁补话。\n\noverall_soundscape: 大厅轻回响；转身衣料声与短促脚步起步。对白顺序 S1 长句 → S2「明白」；其余无声人声；无音乐。\n\nnon_diegetic_music: N/A\n",
+          "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止安娜长篇复述命令、禁止雷斯特起立跟随、禁止侧廊外立刻切到电脑房（本段只到转身起步）。",
+          "taskType": "",
+          "refs": [],
+          "refAudios": [],
+          "refVideos": [],
+          "genImage": {
+            "imageFile": "",
+            "fileName": ""
+          },
+          "continuityFromPrev": false,
+          "refImageSize": "match"
+        }
+      ]
+    }
+  },
+  "videoWorkspaces": {}
+}

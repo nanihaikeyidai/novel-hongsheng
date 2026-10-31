@@ -1,0 +1,37 @@
+﻿[
+    {
+        "name":  "IndexTTS 2.5长文本语音克隆",
+        "owner":  "T8star-Aix",
+        "id":  "2087748051929755649",
+        "nodeCount":  6,
+        "types":  "CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig"
+    },
+    {
+        "name":  "qwenimage2.0编辑图片",
+        "owner":  "那年差点考上清华",
+        "id":  "2101937853101076481",
+        "nodeCount":  9,
+        "types":  "CLIPLoader, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader"
+    },
+    {
+        "name":  "Confucius4-R2T2语音转录",
+        "owner":  "T8star-Aix",
+        "id":  "2104649076645130241",
+        "nodeCount":  10,
+        "types":  "CR Prompt Text, easy showAnything, LoadAudio, LoadImage, Note, R2T2GGUFLoader, R2T2Transcribe, RunningHub Deepcleaner, SaveImage, ShellAgentPluginOutputText"
+    },
+    {
+        "name":  "【Work-Fisher】AI短剧制作全流程",
+        "owner":  "Work-Fisher",
+        "id":  "2109735475824123905",
+        "nodeCount":  42,
+        "types":  "BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, CR Prompt Text, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, INTConstant, KSampler, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MarkdownNote, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, Note, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, Reroute, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SolAttnMiniMax, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, 忽略多组孤海"
+    },
+    {
+        "name":  "【WorkFisher】全能生图王 | 适配所有类型",
+        "owner":  "Work-Fisher",
+        "id":  "2112563481311535106",
+        "nodeCount":  25,
+        "types":  "CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, INTConstant, KSampler, LoadImage, LoraLoaderModelOnly, Note, PreviewAny, PreviewImage, PrimitiveStringMultiline, Reroute, ResolutionSelector, RH_LLMAPI_Pro_Node, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SkipLayerGuidanceDiTSimple, UNETLoader, VAEDecode, VAELoader"
+    }
+]

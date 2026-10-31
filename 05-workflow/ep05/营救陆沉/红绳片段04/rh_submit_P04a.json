@@ -1,0 +1,17 @@
+{
+  "unit": "P04a",
+  "taskId": "2114290555197546498",
+  "raw": {
+    "taskId": "2114290555197546498",
+    "status": "RUNNING",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": null,
+    "clientId": "5103bf06b986c1632ecaa94e6f2d7bf2",
+    "promptTips": null,
+    "failedReason": {},
+    "usage": null,
+    "parentTaskId": null,
+    "taskUsageList": null
+  }
+}

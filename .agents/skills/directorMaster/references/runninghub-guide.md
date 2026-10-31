@@ -47,7 +47,7 @@ RunningHub 支持两种生成方式，**优先使用 API 方式**：
 
 | 配置项 | 值 |
 |---|---|
-| API Key | `82bcf24442a84508a5b1d24f494bbb84` |
+| API Key | **不落库**：读环境变量 `RH_API_KEY`（或 `RUNNINGHUB_API_KEY`）；DPAPI 密文见 `C:\Users\Administrator\.codex\secrets\runninghub-api-key.dpapi`（CurrentUser 作用域，用 `05-workflow/scripts/rh_jinyu_info.ps1` 同款方式解密）。2026-10-31 已换新 Key。 |
 | API ID（接口ID） | `2084788947984666625` |
 | 提交接口 | `POST https://www.runninghub.cn/openapi/v2/run/workflow/2084788947984666625` |
 | 查询接口 | `POST https://www.runninghub.cn/openapi/v2/query` |
@@ -55,7 +55,7 @@ RunningHub 支持两种生成方式，**优先使用 API 方式**：
 
 **请求头**：
 ```
-Authorization: Bearer 82bcf24442a84508a5b1d24f494bbb84
+Authorization: Bearer $RH_API_KEY
 Content-Type: application/json
 ```
 
@@ -112,10 +112,11 @@ submit_body = {
 
 **提交代码示例**：
 ```python
+import os
 import json
 import requests
 
-API_KEY = "82bcf24442a84508a5b1d24f494bbb84"
+API_KEY = os.environ.get("RH_API_KEY") or os.environ.get("RUNNINGHUB_API_KEY")  # 不落库
 API_ID = "2084788947984666625"
 SUBMIT_URL = f"https://www.runninghub.cn/openapi/v2/run/workflow/{API_ID}"
 

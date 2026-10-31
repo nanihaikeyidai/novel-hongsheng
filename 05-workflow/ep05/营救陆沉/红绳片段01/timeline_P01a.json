@@ -1,0 +1,132 @@
+{
+  "version": 5,
+  "editMode": "segment",
+  "totalFrames": 362,
+  "frameRate": 24,
+  "video": {},
+  "videoClips": [],
+  "global": {
+    "taskType": "r2v — 参考主体生视频(Reference to Video)",
+    "prompt": "subject_definitions:\n图片1：雷斯特人设。图片2：安娜人设。图片3：翠羽社大厅场景。\n音频1：雷斯特音色。",
+    "refs": [
+      {
+        "index": 0,
+        "imageFile": "openapi/50089ee1c2c8f13ffcec8514dbf939e44879e5836bcf30617c8c97ace7a931f2.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 1,
+        "imageFile": "openapi/acfe578afcffe0cd3a381a6a2d6cf07a9dfa32b8e4ccc0474e780da9f62dbf30.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 2,
+        "imageFile": "openapi/7ed353ef87f82c251597de5216c5c4c46461411a441dfbf8340970a25f2e9be4.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      }
+    ],
+    "refAudios": [
+      {
+        "index": 0,
+        "audioFile": "openapi/44dfcde57eb4ce5a6ff07ae0c27130dcea41e7c8009d84157d5bb18d982c782a.wav",
+        "fileName": "44dfcde57eb4ce5a6ff07ae0c27130dcea41e7c8009d84157d5bb18d982c782a.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 9.311
+      }
+    ],
+    "commonEnabled": true,
+    "output": {
+      "mode": "fixed",
+      "aspectRatio": "16:9 (宽屏)",
+      "megapixels": 0.6,
+      "multiple": 32,
+      "longEdge": 1056,
+      "width": 1056,
+      "height": 608,
+      "continuityEnabled": true,
+      "continuityOverlapFrames": 22,
+      "refImageSize": "match"
+    }
+  },
+  "output": {
+    "mode": "fixed",
+    "aspectRatio": "16:9 (宽屏)",
+    "megapixels": 0.6,
+    "multiple": 32,
+    "longEdge": 1056,
+    "width": 1056,
+    "height": 608,
+    "maxExportFrames": 0,
+    "exportMode": "all",
+    "audioMode": "generate",
+    "refImageSize": "match",
+    "continuityEnabled": true,
+    "continuityOverlapFrames": 22
+  },
+  "runSelectEnabled": false,
+  "runSelection": [],
+  "segments": [
+    {
+      "id": "ms6b1e6677a6ca",
+      "start": 0,
+      "length": 362,
+      "frameCount": 362,
+      "durationSec": 15,
+      "prompt": "subject_definitions:\n<Subject 1> 雷斯特：翠羽社社长，银灰短发，黑色服装，胸前羽毛胸针；身份锁定为 <Picture 1> 雷斯特人设参考图，只继承五官发型体型与服装，不继承四格姿势；本段坐在大厅纵深尽头主座，肩线放松，指节可点桌沿；淡定下令，不演讲、不大声。\n<Subject 2> 安娜：深蓝长直发高中女生，校服肩线仍潮；身份锁定为 <Picture 2> 安娜人设参考图，只继承五官发型体型与校服；本段站在长桌前半步，袖口攥出一道褶，抬眼听令，本单元不发声。\n<Subject 3> 翠羽社地下大厅夜景：身份锁定为 <Picture 3> 翠羽社大厅场景参考图；拱窗余光、墙上翠羽徽记、长桌与主座纵深；冷暖混合余光，无额外人物抢戏。\n<Audio 1> 是 <Subject 1> 雷斯特 (S1) 的音色参考；只迁移成年男性沉稳声线特质，不复制原音频台词、节奏、情绪、背景噪声。\n\nsummary: [reference generation] 翠羽社大厅夜：社长雷斯特淡定下令安娜今晚潜入 ND 总部救出陆沉并带回翠羽社；安娜倾听尚未回话。只推进「汇报余波→行动令前半」。\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - 继承银灰发、黑衣、羽毛胸针与主座坐姿。\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 4]): fully_preserved - 继承深蓝长发、潮肩校服、桌前站位。\n<Subject 3> ([Shot 1] environment): fully_preserved - 继承大厅拱窗余光、徽记、长桌纵深。\n<Picture 1>: attribute_transfer - 仅身份外观，不继承四格姿势。\n<Picture 2>: attribute_transfer - 仅身份外观。\n<Picture 3>: partially_preserved - 继承空间与光线骨架。\n<Audio 1>: reference - 仅音色参考，不复制原台词。\n\ndetailed_description: 16:9横屏，2K级高清，高精度日漫电影感，赛璐璐人物，手绘动画背景，拱窗余光斜切徽记。固定世界轴线：侧廊入口 → 安娜（桌前） → 长桌 → 雷斯特主座（纵深尽头）。⚠️人声纪律：本段仅 Shot 3 一句对白；其余镜头两人闭口，只留环境与动作音。\n[Shot 1] 在 00.000 秒处，开场即锁定大厅全景。机位在侧廊一侧朝主座纵深；<Subject 3> 大厅结构清晰；<Subject 1> 雷斯特坐主座，<Subject 2> 安娜站桌前半步。主动作：建立空间 → 静止可读。切出时构图稳定。本镜无对白。\n[Shot 2] 在 03.000 秒处，hard cut 到全新双人中景；新构图已成立。机位略偏桌侧，同侧轴线。雷斯特指节在桌沿点一下停住，肩线松；安娜拇指在袖口褶上轻搓，抬眼看他。主动作：点桌沿 → 攥袖等待。切出时两人口型闭合。\n[Shot 3] 在 06.000 秒处，hard cut 到全新雷斯特面部近景；脸占画面大部；机位在桌前方略低朝主座。雷斯特淡定、语速平稳。<Subject 1> (S1) 说：<d>[Chinese] 今晚你潜入ND总部去救他，把他带到翠羽社。</d>。同一时刻仅他发声；安娜若虚化须闭口。主动作：吸气 → 落句 → 目光仍朝桌前安娜方向。切出时口型闭合。\n[Shot 4] 在 12.500 秒处，hard cut 到全新双人中景锁定。安娜听完前半，目光未移开，肩尚未转身；雷斯特话已说完闭口。主动作：听令余势落定。末段停止运镜，最后至少约 0.5 秒稳定停留；⛔末帧禁任何说话声。\n\noverall_soundscape: 地下大厅轻微回响；衣料与指节点桌的短触音；远处空调低频。对白仅 Shot 3 的 S1 一句；其余纯环境与动作音；无音乐、无旁白。\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止雷斯特站起演讲挥手、禁止安娜本段开口、禁止大厅出现无关群演抢焦、禁止把 ND 写成霓虹招牌大字。",
+      "taskType": "",
+      "refs": [],
+      "refAudios": [],
+      "refVideos": [],
+      "genImage": {
+        "imageFile": "",
+        "fileName": ""
+      },
+      "continuityFromPrev": false,
+      "refImageSize": "match"
+    }
+  ],
+  "timelineMode": "prompt_batch",
+  "width": 1056,
+  "height": 608,
+  "refMaxSize": 1056,
+  "gen": {},
+  "keyframes": [],
+  "durationSec": 15,
+  "shots": [],
+  "liveTaePreview": false,
+  "batchDetailMode": false,
+  "batchWorkspaces": {
+    "r2v": {
+      "segments": [
+        {
+          "id": "ms6b1e6677a6ca",
+          "start": 0,
+          "length": 362,
+          "frameCount": 362,
+          "durationSec": 15,
+          "prompt": "subject_definitions:\n<Subject 1> 雷斯特：翠羽社社长，银灰短发，黑色服装，胸前羽毛胸针；身份锁定为 <Picture 1> 雷斯特人设参考图，只继承五官发型体型与服装，不继承四格姿势；本段坐在大厅纵深尽头主座，肩线放松，指节可点桌沿；淡定下令，不演讲、不大声。\n<Subject 2> 安娜：深蓝长直发高中女生，校服肩线仍潮；身份锁定为 <Picture 2> 安娜人设参考图，只继承五官发型体型与校服；本段站在长桌前半步，袖口攥出一道褶，抬眼听令，本单元不发声。\n<Subject 3> 翠羽社地下大厅夜景：身份锁定为 <Picture 3> 翠羽社大厅场景参考图；拱窗余光、墙上翠羽徽记、长桌与主座纵深；冷暖混合余光，无额外人物抢戏。\n<Audio 1> 是 <Subject 1> 雷斯特 (S1) 的音色参考；只迁移成年男性沉稳声线特质，不复制原音频台词、节奏、情绪、背景噪声。\n\nsummary: [reference generation] 翠羽社大厅夜：社长雷斯特淡定下令安娜今晚潜入 ND 总部救出陆沉并带回翠羽社；安娜倾听尚未回话。只推进「汇报余波→行动令前半」。\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - 继承银灰发、黑衣、羽毛胸针与主座坐姿。\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 4]): fully_preserved - 继承深蓝长发、潮肩校服、桌前站位。\n<Subject 3> ([Shot 1] environment): fully_preserved - 继承大厅拱窗余光、徽记、长桌纵深。\n<Picture 1>: attribute_transfer - 仅身份外观，不继承四格姿势。\n<Picture 2>: attribute_transfer - 仅身份外观。\n<Picture 3>: partially_preserved - 继承空间与光线骨架。\n<Audio 1>: reference - 仅音色参考，不复制原台词。\n\ndetailed_description: 16:9横屏，2K级高清，高精度日漫电影感，赛璐璐人物，手绘动画背景，拱窗余光斜切徽记。固定世界轴线：侧廊入口 → 安娜（桌前） → 长桌 → 雷斯特主座（纵深尽头）。⚠️人声纪律：本段仅 Shot 3 一句对白；其余镜头两人闭口，只留环境与动作音。\n[Shot 1] 在 00.000 秒处，开场即锁定大厅全景。机位在侧廊一侧朝主座纵深；<Subject 3> 大厅结构清晰；<Subject 1> 雷斯特坐主座，<Subject 2> 安娜站桌前半步。主动作：建立空间 → 静止可读。切出时构图稳定。本镜无对白。\n[Shot 2] 在 03.000 秒处，hard cut 到全新双人中景；新构图已成立。机位略偏桌侧，同侧轴线。雷斯特指节在桌沿点一下停住，肩线松；安娜拇指在袖口褶上轻搓，抬眼看他。主动作：点桌沿 → 攥袖等待。切出时两人口型闭合。\n[Shot 3] 在 06.000 秒处，hard cut 到全新雷斯特面部近景；脸占画面大部；机位在桌前方略低朝主座。雷斯特淡定、语速平稳。<Subject 1> (S1) 说：<d>[Chinese] 今晚你潜入ND总部去救他，把他带到翠羽社。</d>。同一时刻仅他发声；安娜若虚化须闭口。主动作：吸气 → 落句 → 目光仍朝桌前安娜方向。切出时口型闭合。\n[Shot 4] 在 12.500 秒处，hard cut 到全新双人中景锁定。安娜听完前半，目光未移开，肩尚未转身；雷斯特话已说完闭口。主动作：听令余势落定。末段停止运镜，最后至少约 0.5 秒稳定停留；⛔末帧禁任何说话声。\n\noverall_soundscape: 地下大厅轻微回响；衣料与指节点桌的短触音；远处空调低频。对白仅 Shot 3 的 S1 一句；其余纯环境与动作音；无音乐、无旁白。\n\nnon_diegetic_music: N/A\n",
+          "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止雷斯特站起演讲挥手、禁止安娜本段开口、禁止大厅出现无关群演抢焦、禁止把 ND 写成霓虹招牌大字。",
+          "taskType": "",
+          "refs": [],
+          "refAudios": [],
+          "refVideos": [],
+          "genImage": {
+            "imageFile": "",
+            "fileName": ""
+          },
+          "continuityFromPrev": false,
+          "refImageSize": "match"
+        }
+      ]
+    }
+  },
+  "videoWorkspaces": {}
+}

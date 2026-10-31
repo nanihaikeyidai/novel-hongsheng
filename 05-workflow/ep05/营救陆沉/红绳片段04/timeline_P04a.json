@@ -1,0 +1,139 @@
+{
+  "version": 5,
+  "editMode": "segment",
+  "totalFrames": 362,
+  "frameRate": 24,
+  "video": {},
+  "videoClips": [],
+  "global": {
+    "taskType": "r2v — 参考主体生视频(Reference to Video)",
+    "prompt": "subject_definitions:\n图片1：安娜。图片2：沈默。图片3：电脑房。图片4：手机门禁卡道具。\n音频1：沈默。",
+    "refs": [
+      {
+        "index": 0,
+        "imageFile": "openapi/acfe578afcffe0cd3a381a6a2d6cf07a9dfa32b8e4ccc0474e780da9f62dbf30.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 1,
+        "imageFile": "openapi/995f78aa8e38f4e4d5f2dbb35bdc693552bab06bb8dea4eb806ae4f4361ee5b5.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 2,
+        "imageFile": "openapi/d06e67a18342f45fcefa80f7544649f94baf50c9cda8e1d4a07141991ff735ab.jpg",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 3,
+        "imageFile": "openapi/135e8f2d025e0e7bfec1e8d05bd0aaae763314e03ed5ab82ca3faa723355069e.jpg",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      }
+    ],
+    "refAudios": [
+      {
+        "index": 0,
+        "audioFile": "openapi/36af006aef89a931c88d87670740270d40ef2886d557755f85516c3a03b3cf7e.wav",
+        "fileName": "36af006aef89a931c88d87670740270d40ef2886d557755f85516c3a03b3cf7e.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 44739.242646
+      }
+    ],
+    "commonEnabled": true,
+    "output": {
+      "mode": "fixed",
+      "aspectRatio": "16:9 (宽屏)",
+      "megapixels": 0.6,
+      "multiple": 32,
+      "longEdge": 1056,
+      "width": 1056,
+      "height": 608,
+      "continuityEnabled": true,
+      "continuityOverlapFrames": 22,
+      "refImageSize": "match"
+    }
+  },
+  "output": {
+    "mode": "fixed",
+    "aspectRatio": "16:9 (宽屏)",
+    "megapixels": 0.6,
+    "multiple": 32,
+    "longEdge": 1056,
+    "width": 1056,
+    "height": 608,
+    "maxExportFrames": 0,
+    "exportMode": "all",
+    "audioMode": "generate",
+    "refImageSize": "match",
+    "continuityEnabled": true,
+    "continuityOverlapFrames": 22
+  },
+  "runSelectEnabled": false,
+  "runSelection": [],
+  "segments": [
+    {
+      "id": "ms890f18560fff",
+      "start": 0,
+      "length": 362,
+      "frameCount": 362,
+      "durationSec": 15,
+      "prompt": "subject_definitions:\n<Subject 1> 安娜：深蓝长直发校服；锁定 <Picture 1>；本段侧身到右柜拉开下层抽屉，先看清不急着拿。\n<Subject 2> 沈默：帽檐眼镜马甲；锁定 <Picture 2>；坐正中敲键，右手可抬起指右柜，头不回，面无表情慵懒。\n<Subject 3> 电脑房暗室三巨屏：锁定 <Picture 3>；不开灯。\n<Subject 4> 改装直板手机（哑光天线环）与复制门禁卡及耳塞耳机：锁定 <Picture 4> 道具参考；放在右柜下层抽屉内；禁止卡面手机屏出现可读汉字。\n<Audio 1> 是 <Subject 2> 沈默 (S1) 的音色参考；只迁移音色。\n\nsummary: [reference generation] 沈默指右柜交付改装手机与复制门禁卡，嘱咐连耳机听指挥；安娜拉开抽屉看清。\n\nretention_analysis:\n<Subject 1>: fully_preserved\n<Subject 2>: fully_preserved\n<Subject 3>: fully_preserved\n<Subject 4>: fully_preserved - 抽屉内道具可见\n<Picture 1>: attribute_transfer\n<Picture 2>: attribute_transfer\n<Picture 3>: partially_preserved\n<Picture 4>: partially_preserved\n<Audio 1>: reference\n\ndetailed_description: 16:9横屏，2K级高清，日漫电影感；屏幕冷光。轴线：房门 → 安娜 → 沈默椅 → 巨屏；右柜在沈默右侧。仅 Shot2 一句对白。\n[Shot 1] 在 00.000 秒处，中景：沈默右手抬起朝右边柜子指一下，头仍盯屏幕，面无表情。无对白。\n[Shot 2] 在 03.000 秒处，hard cut 沈默近景，慵懒。<Subject 2> (S1) 说：<d>[Chinese] 里面有个手机和我复制的ND门禁卡，连上耳机听指挥就行。</d>。切出口型闭合。\n[Shot 3] 在 09.500 秒处，hard cut 抽屉特写：安娜拉开下层抽屉，可见改装手机、复制门禁卡、耳塞耳机；她俯身看清，手未抓起。无对白。\n[Shot 4] 在 13.000 秒处，hard cut 双人中景：安娜仍蹲/俯在抽屉前，沈默继续敲键。末 ≥0.5s 稳。\n\noverall_soundscape: 键盘、抽屉滑轨轻响、风扇。对白仅 S1 一句；无音乐。\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止抽屉里出现爆炸物枪械、禁止手机屏门禁卡可读汉字、禁止沈默回头递物。",
+      "taskType": "",
+      "refs": [],
+      "refAudios": [],
+      "refVideos": [],
+      "genImage": {
+        "imageFile": "",
+        "fileName": ""
+      },
+      "continuityFromPrev": false,
+      "refImageSize": "match"
+    }
+  ],
+  "timelineMode": "prompt_batch",
+  "width": 1056,
+  "height": 608,
+  "refMaxSize": 1056,
+  "gen": {},
+  "keyframes": [],
+  "durationSec": 15,
+  "shots": [],
+  "liveTaePreview": false,
+  "batchDetailMode": false,
+  "batchWorkspaces": {
+    "r2v": {
+      "segments": [
+        {
+          "id": "ms890f18560fff",
+          "start": 0,
+          "length": 362,
+          "frameCount": 362,
+          "durationSec": 15,
+          "prompt": "subject_definitions:\n<Subject 1> 安娜：深蓝长直发校服；锁定 <Picture 1>；本段侧身到右柜拉开下层抽屉，先看清不急着拿。\n<Subject 2> 沈默：帽檐眼镜马甲；锁定 <Picture 2>；坐正中敲键，右手可抬起指右柜，头不回，面无表情慵懒。\n<Subject 3> 电脑房暗室三巨屏：锁定 <Picture 3>；不开灯。\n<Subject 4> 改装直板手机（哑光天线环）与复制门禁卡及耳塞耳机：锁定 <Picture 4> 道具参考；放在右柜下层抽屉内；禁止卡面手机屏出现可读汉字。\n<Audio 1> 是 <Subject 2> 沈默 (S1) 的音色参考；只迁移音色。\n\nsummary: [reference generation] 沈默指右柜交付改装手机与复制门禁卡，嘱咐连耳机听指挥；安娜拉开抽屉看清。\n\nretention_analysis:\n<Subject 1>: fully_preserved\n<Subject 2>: fully_preserved\n<Subject 3>: fully_preserved\n<Subject 4>: fully_preserved - 抽屉内道具可见\n<Picture 1>: attribute_transfer\n<Picture 2>: attribute_transfer\n<Picture 3>: partially_preserved\n<Picture 4>: partially_preserved\n<Audio 1>: reference\n\ndetailed_description: 16:9横屏，2K级高清，日漫电影感；屏幕冷光。轴线：房门 → 安娜 → 沈默椅 → 巨屏；右柜在沈默右侧。仅 Shot2 一句对白。\n[Shot 1] 在 00.000 秒处，中景：沈默右手抬起朝右边柜子指一下，头仍盯屏幕，面无表情。无对白。\n[Shot 2] 在 03.000 秒处，hard cut 沈默近景，慵懒。<Subject 2> (S1) 说：<d>[Chinese] 里面有个手机和我复制的ND门禁卡，连上耳机听指挥就行。</d>。切出口型闭合。\n[Shot 3] 在 09.500 秒处，hard cut 抽屉特写：安娜拉开下层抽屉，可见改装手机、复制门禁卡、耳塞耳机；她俯身看清，手未抓起。无对白。\n[Shot 4] 在 13.000 秒处，hard cut 双人中景：安娜仍蹲/俯在抽屉前，沈默继续敲键。末 ≥0.5s 稳。\n\noverall_soundscape: 键盘、抽屉滑轨轻响、风扇。对白仅 S1 一句；无音乐。\n\nnon_diegetic_music: N/A\n",
+          "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止抽屉里出现爆炸物枪械、禁止手机屏门禁卡可读汉字、禁止沈默回头递物。",
+          "taskType": "",
+          "refs": [],
+          "refAudios": [],
+          "refVideos": [],
+          "genImage": {
+            "imageFile": "",
+            "fileName": ""
+          },
+          "continuityFromPrev": false,
+          "refImageSize": "match"
+        }
+      ]
+    }
+  },
+  "videoWorkspaces": {}
+}

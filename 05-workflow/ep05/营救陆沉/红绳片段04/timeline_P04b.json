@@ -1,0 +1,147 @@
+{
+  "version": 5,
+  "editMode": "segment",
+  "totalFrames": 362,
+  "frameRate": 24,
+  "video": {},
+  "videoClips": [],
+  "global": {
+    "taskType": "r2v — 参考主体生视频(Reference to Video)",
+    "prompt": "subject_definitions:\n图片1：安娜。图片2：沈默。图片3：电脑房。图片4：道具。\n音频1：安娜。音频2：沈默。",
+    "refs": [
+      {
+        "index": 0,
+        "imageFile": "openapi/acfe578afcffe0cd3a381a6a2d6cf07a9dfa32b8e4ccc0474e780da9f62dbf30.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 1,
+        "imageFile": "openapi/995f78aa8e38f4e4d5f2dbb35bdc693552bab06bb8dea4eb806ae4f4361ee5b5.png",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 2,
+        "imageFile": "openapi/d06e67a18342f45fcefa80f7544649f94baf50c9cda8e1d4a07141991ff735ab.jpg",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      },
+      {
+        "index": 3,
+        "imageFile": "openapi/135e8f2d025e0e7bfec1e8d05bd0aaae763314e03ed5ab82ca3faa723355069e.jpg",
+        "fileName": "",
+        "type": "input",
+        "subfolder": ""
+      }
+    ],
+    "refAudios": [
+      {
+        "index": 0,
+        "audioFile": "openapi/e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.wav",
+        "fileName": "e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 4.54
+      },
+      {
+        "index": 1,
+        "audioFile": "openapi/36af006aef89a931c88d87670740270d40ef2886d557755f85516c3a03b3cf7e.wav",
+        "fileName": "36af006aef89a931c88d87670740270d40ef2886d557755f85516c3a03b3cf7e.wav",
+        "type": "input",
+        "subfolder": "",
+        "durationSec": 44739.242646
+      }
+    ],
+    "commonEnabled": true,
+    "output": {
+      "mode": "fixed",
+      "aspectRatio": "16:9 (宽屏)",
+      "megapixels": 0.6,
+      "multiple": 32,
+      "longEdge": 1056,
+      "width": 1056,
+      "height": 608,
+      "continuityEnabled": true,
+      "continuityOverlapFrames": 22,
+      "refImageSize": "match"
+    }
+  },
+  "output": {
+    "mode": "fixed",
+    "aspectRatio": "16:9 (宽屏)",
+    "megapixels": 0.6,
+    "multiple": 32,
+    "longEdge": 1056,
+    "width": 1056,
+    "height": 608,
+    "maxExportFrames": 0,
+    "exportMode": "all",
+    "audioMode": "generate",
+    "refImageSize": "match",
+    "continuityEnabled": true,
+    "continuityOverlapFrames": 22
+  },
+  "runSelectEnabled": false,
+  "runSelection": [],
+  "segments": [
+    {
+      "id": "ms0c6c15d75373",
+      "start": 0,
+      "length": 362,
+      "frameCount": 362,
+      "durationSec": 15,
+      "prompt": "subject_definitions:\n<Subject 1> 安娜：锁定 <Picture 1>；仍在右柜抽屉前，提问时抬眼看沈默后脑勺方向。\n<Subject 2> 沈默：锁定 <Picture 2>；敲键节奏不变，不回头回答。\n<Subject 3> 电脑房：锁定 <Picture 3>。\n<Subject 4> 抽屉内手机门禁卡：锁定 <Picture 4>；本段可仍在画面边缘可见。\n<Audio 1> 是 <Subject 1> 安娜 (S1) 的音色参考。\n<Audio 2> 是 <Subject 2> 沈默 (S2) 的音色参考。\n\nsummary: [reference generation] 安娜问手机是否有追踪；沈默答五十米内异能者都能找到。\n\nretention_analysis:\n<Subject 1>: fully_preserved - 继承抽屉前站位\n<Subject 2>: fully_preserved\n<Subject 3>: fully_preserved\n<Subject 4>: fully_preserved\n<Picture 1>: attribute_transfer\n<Picture 2>: attribute_transfer\n<Picture 3>: partially_preserved\n<Picture 4>: partially_preserved\n<Audio 1>: reference\n<Audio 2>: reference\n\ndetailed_description: 16:9横屏，2K级高清，日漫电影感。入点承接 P04a：抽屉已拉开，道具可见。\n[Shot 1] 在 00.000 秒处，安娜近景，目光从抽屉抬向沈默后脑。<Subject 1> (S1) 说：<d>[Chinese] 你这手机有追踪功能？</d>。切出口型闭合。\n[Shot 2] 在 05.000 秒处，hard cut 沈默近景，敲键不停。<Subject 2> (S2) 说：<d>[Chinese] 五十米内的异能者都能找到。</d>。切出口型闭合。\n[Shot 3] 在 11.500 秒处，hard cut 双人中景，关系信息落地；两人闭口。末 ≥0.5s 稳。\n\noverall_soundscape: 键盘与暗室设备底噪。对白 S1问→S2答；无音乐。\n\nnon_diegetic_music: N/A\n",
+      "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止出现雷达扫描光圈大特效、禁止沈默长篇讲解电击机制（本段只到五十米）。",
+      "taskType": "",
+      "refs": [],
+      "refAudios": [],
+      "refVideos": [],
+      "genImage": {
+        "imageFile": "",
+        "fileName": ""
+      },
+      "continuityFromPrev": false,
+      "refImageSize": "match"
+    }
+  ],
+  "timelineMode": "prompt_batch",
+  "width": 1056,
+  "height": 608,
+  "refMaxSize": 1056,
+  "gen": {},
+  "keyframes": [],
+  "durationSec": 15,
+  "shots": [],
+  "liveTaePreview": false,
+  "batchDetailMode": false,
+  "batchWorkspaces": {
+    "r2v": {
+      "segments": [
+        {
+          "id": "ms0c6c15d75373",
+          "start": 0,
+          "length": 362,
+          "frameCount": 362,
+          "durationSec": 15,
+          "prompt": "subject_definitions:\n<Subject 1> 安娜：锁定 <Picture 1>；仍在右柜抽屉前，提问时抬眼看沈默后脑勺方向。\n<Subject 2> 沈默：锁定 <Picture 2>；敲键节奏不变，不回头回答。\n<Subject 3> 电脑房：锁定 <Picture 3>。\n<Subject 4> 抽屉内手机门禁卡：锁定 <Picture 4>；本段可仍在画面边缘可见。\n<Audio 1> 是 <Subject 1> 安娜 (S1) 的音色参考。\n<Audio 2> 是 <Subject 2> 沈默 (S2) 的音色参考。\n\nsummary: [reference generation] 安娜问手机是否有追踪；沈默答五十米内异能者都能找到。\n\nretention_analysis:\n<Subject 1>: fully_preserved - 继承抽屉前站位\n<Subject 2>: fully_preserved\n<Subject 3>: fully_preserved\n<Subject 4>: fully_preserved\n<Picture 1>: attribute_transfer\n<Picture 2>: attribute_transfer\n<Picture 3>: partially_preserved\n<Picture 4>: partially_preserved\n<Audio 1>: reference\n<Audio 2>: reference\n\ndetailed_description: 16:9横屏，2K级高清，日漫电影感。入点承接 P04a：抽屉已拉开，道具可见。\n[Shot 1] 在 00.000 秒处，安娜近景，目光从抽屉抬向沈默后脑。<Subject 1> (S1) 说：<d>[Chinese] 你这手机有追踪功能？</d>。切出口型闭合。\n[Shot 2] 在 05.000 秒处，hard cut 沈默近景，敲键不停。<Subject 2> (S2) 说：<d>[Chinese] 五十米内的异能者都能找到。</d>。切出口型闭合。\n[Shot 3] 在 11.500 秒处，hard cut 双人中景，关系信息落地；两人闭口。末 ≥0.5s 稳。\n\noverall_soundscape: 键盘与暗室设备底噪。对白 S1问→S2答；无音乐。\n\nnon_diegetic_music: N/A\n",
+          "negativePrompt": "禁止字幕、禁止画面文字、禁止中文字符、禁止标题卡、禁止对话气泡、禁止UI、禁止水印、禁止Logo、禁止摄影写实、禁止真人照片、禁止3D渲染、禁止欧美漫画、禁止低幼卡通、禁止厚涂油画、禁止霓虹、禁止过饱和、禁止HDR感、禁止可见god rays、禁止改变角色发型与服装、禁止无因换轴、禁止台词与口型不同步、禁止背景音乐、禁止BGM、禁止旁白与画外解说、禁止新增台词、禁止语气词（啊/嗯/哈/哦/诶/唔）、禁止拟声词、禁止含糊不可辨人声、禁止背景说话声与交谈声、禁止未标注发声的镜头出现口型或说话声、禁止末镜出现说话声或气声、禁止可读工牌细字与屏幕汉字、禁止枪战与大范围异能光效、禁止出现雷达扫描光圈大特效、禁止沈默长篇讲解电击机制（本段只到五十米）。",
+          "taskType": "",
+          "refs": [],
+          "refAudios": [],
+          "refVideos": [],
+          "genImage": {
+            "imageFile": "",
+            "fileName": ""
+          },
+          "continuityFromPrev": false,
+          "refImageSize": "match"
+        }
+      ]
+    }
+  },
+  "videoWorkspaces": {}
+}

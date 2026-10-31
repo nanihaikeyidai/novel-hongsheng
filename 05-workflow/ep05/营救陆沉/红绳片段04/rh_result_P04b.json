@@ -1,0 +1,55 @@
+{
+  "unit": "P04b",
+  "taskId": "2114293196493385729",
+  "raw": {
+    "taskId": "2114293196493385729",
+    "status": "RUNNING",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": null,
+    "clientId": "5103bf06b986c1632ecaa94e6f2d7bf2",
+    "promptTips": null,
+    "failedReason": {},
+    "usage": null,
+    "parentTaskId": null,
+    "taskUsageList": null
+  },
+  "query": {
+    "taskId": "2114293196493385729",
+    "status": "SUCCESS",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": [
+      {
+        "url": "https://rh-comfyui01.tos-cn-beijing.volces.com/8e3cb2f6099d5772ed26216d6126f481/output/video/MiniMaxH3_Director_t2v_00005_tafuh_1792922102.mp4",
+        "nodeId": "7",
+        "outputType": "mp4",
+        "text": null,
+        "zindex": null
+      }
+    ],
+    "clientId": "",
+    "promptTips": "",
+    "failedReason": {},
+    "usage": {
+      "consumeMoney": null,
+      "consumeCoins": "72",
+      "taskCostTime": "359",
+      "thirdPartyConsumeMoney": null
+    },
+    "parentTaskId": null,
+    "taskUsageList": [
+      {
+        "taskId": "2114293196493385729",
+        "parentTaskId": null,
+        "taskStatus": "SUCCESS",
+        "usage": {
+          "consumeMoney": null,
+          "consumeCoins": "72",
+          "taskCostTime": "359",
+          "thirdPartyConsumeMoney": null
+        }
+      }
+    ]
+  }
+}
