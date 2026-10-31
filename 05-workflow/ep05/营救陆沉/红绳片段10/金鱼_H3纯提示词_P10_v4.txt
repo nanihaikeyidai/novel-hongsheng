@@ -1,0 +1,26 @@
+subject_definitions:
+<Subject 1> Cable current FX: a blazing white-cyan electric surge racing at extreme speed through dark bundled cables—stylized anime energy with bright head, trailing sparks and afterimage streaks; NOT explosion, NOT fireball. No readable labels.
+<Subject 2> Door guard: identity, buzz-cut/flat-top and uniform locked to <Picture 2> from P08: middle-aged man, short black buzz-cut / flat-top (平头, short sides, NO long or swept hair), stern tired face; dark navy security jacket with epaulettes and shoulder patch, light-blue shirt, dark navy tie, two buttoned chest flap pockets, white ID badge at lower chest, black duty belt. At post in <Picture 3>. ONE phone only, still at his ear from P09: fingers MUST grip the handset pressed firmly against the ear (thumb + fingers wrapping the phone body)—FORBIDDEN floating/hovering phone stuck to the ear with no hand. Collapses unconscious, still breathing; NO blood, NO burns.
+<Subject 3> Anna: <Picture 1> same as P08—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves, red-handled mop. She is standing right beside the guard (within arm's reach, near her cart) when he falls.
+<Subject 4> Shenmo: does NOT appear and does NOT speak in this unit.
+
+summary: [reference generation] 15s high-dynamic climax: current shoots at extreme speed over a very long distance—down cable trays, along the corridor ceiling and through wall conduits—camera whip-tracking it; a micro-arc hits the buzz-cut guard's hand-held phone at his ear; he collapses with Anna standing right beside him.
+
+retention_analysis:
+<Subject 1> (1,2,3): fully_preserved - long, ultra-fast cable run
+<Subject 2> (3,4,5): fully_preserved - gripped phone, micro-arc, soft collapse
+<Subject 3> (4,5): fully_preserved - standing beside guard
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - guard face, buzz-cut, uniform
+<Picture 3>: fully_preserved - corridor/door/reader/cart, lighting
+
+detailed_description: 16:9 anime cinematic, HIGH DYNAMIC motion, scene continuity with P08/P09. Fast cutting, whip pans, speed lines, motion blur. No dialogue. No BGM. No text/UI. Guard's phone is always hand-held against the ear.
+[Shot 1] At 00.000s macro inside a dark cable tray: the white-cyan surge rockets along the cable at extreme speed; camera chases it in a hyper-fast tracking shot, junction boxes and clamps flicking past as blurs, sparks spitting off joints. ≥2.0s.
+[Shot 2] At 02.200s long-distance run: the surge bursts up a riser, shoots horizontally along a long ceiling cable tray down the full length of the corridor (dozens of meters), fluorescent tubes stuttering one after another as it passes; camera whip-pans and dollies backward at speed to keep it in frame; it dives into a wall conduit, glowing seams racing under the plaster. ≥3.0s.
+[Shot 3] At 05.500s it reaches the wall beside the steel door in <Picture 3>, card reader screen flickers; the surge leaps into the guard's phone: he is still holding the phone with fingers gripping it tight against his ear (hand clearly visible—no floating phone); a hairline white micro-arc snaps across the handset rim. Hard flash frame. Guard's shoulders spasm.
+[Shot 4] At 07.000s medium two-shot: Anna (<Subject 3>) stands right next to him, mop in hand, motionless; his knees buckle, he slides down the steel door and slumps sideways at her feet; the gripped phone slips from his fingers and clatters to the floor, screen dying. Anna does not flinch. Hold ≥2.5s.
+[Shot 5] At 11.000s low angle: the guard lying unconscious beside Anna's shoes, eyes closed, chest faintly rising; Anna looks down, calmly sets the mop against the cart and begins to bend toward his chest. Fluorescents steady again. End.
+
+overall_soundscape: Rising high-pitched electric zip and crackle racing with the surge, Doppler whooshes on the whip pans, fluorescent tubes buzzing and popping in sequence, sharp arc snap, soft body slide and fall, phone clatter, then near-silence with fluorescent hum. Forbidden: floating phone without hand; explosion booms; screams; any voice/dialogue; Shenmo; BGM; readable UI; logo; watermark.
+
+non_diegetic_music: N/A
