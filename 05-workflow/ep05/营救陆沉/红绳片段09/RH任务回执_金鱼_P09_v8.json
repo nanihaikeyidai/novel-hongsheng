@@ -1,0 +1,28 @@
+{
+  "task_id": "2116424696609337345",
+  "taskId": "2116424696609337345",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v8",
+  "webappId": "2110357037929558018",
+  "promptChars": 4991,
+  "picture6": "ref_危险通话.png",
+  "billing": "personal_RH_coins",
+  "reuse_uploads_from": "P09v7_upload",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v8_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v8_手机版.mp4",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p87-audio_ckopt_1793430530.mp4",
+  "audio": "48kHz AAC +faststart",
+  "completed_Asia_Shanghai": "2026-10-31 15:14",
+  "self_check": {
+    "method": "fps1 frames + fine timestamps + faster-whisper small/medium + RMS energy",
+    "asr_small": "喂?@0-2.2; 晚安?@5.40-6.46 (once)",
+    "asr_medium": "喂@0-2.4; 晚安@5.94-7.32; 晚安@12.18-12.98 (SECOND)",
+    "checks": {
+      "1_no_wanan_on_guard": "PASS — hard cut to Shenmo by ~5.5s; first 晚安 ~5.94–7.32 on Shenmo side-face; early guard has 喂 only",
+      "2_wanan_once_only": "FAIL — second 晚安 ~12.2s (energy+ASR) while Shenmo+「危险通话」still on screen",
+      "3_text_after_wanan": "PASS for first 晚安 — text appears ~8.5s after speech ends ~7.3s; FAIL relative to second 晚安 overlap",
+      "4_glyphs_危险通话": "PASS — f09–f14 / t8.5–t14 show exactly「危险通话」teal wispy beside Shenmo"
+    },
+    "overall": "PARTIAL — glyphs+post-first-text OK; second 晚安 still present"
+  }
+}
