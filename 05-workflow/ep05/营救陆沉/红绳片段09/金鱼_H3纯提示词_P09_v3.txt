@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> Door guard: identity, buzz-cut/flat-top haircut and uniform locked to <Picture 2> door guard from P08: middle-aged man, short black buzz-cut / flat-top (平头, short sides, NO long or swept hair), stern tired face; dark navy security uniform jacket with epaulettes and shoulder patch, light-blue shirt, dark navy tie, two buttoned chest flap pockets, white ID badge clipped at lower chest, black duty belt with pouches. Standing at his post in <Picture 3>, irritated after the earlier bump. Voice LOW. Only line「喂？」. Phone is an abstract dark brick—NO readable UI.
+<Subject 2> Shenmo: VOICE-ONLY, NEVER on screen—no face, no body, no PC-room cut. Heard only from the guard's phone handset (and faintly in Anna's earpiece): band-limited telephone EQ (~300Hz–3kHz), lows and highs cut, muffled, faint hiss, NOT crisp. Emotion pressed to the absolute minimum: a barely audible demonic whisper, extremely low, slow, breathy, cold, like a devil murmuring into the ear. Only line「晚安。」, timbre from <Audio 2>.
+<Subject 3> Anna (background): <Picture 1> Anna: same as P08—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves, red-handled mop; mopping near her cart, blurred behind the guard; no line.
+<Subject 4> Screen-text FX「危险通话」: exactly four Chinese characters 危 险 通 话, written in a ghost-fire (鬼火) skill-name style—glyph strokes made of burning teal-green / ghostly blue will-o'-wisp flames, wisps drifting upward, faint embers; appears floating beside the guard's head/phone. Characters must be accurate and legible; no other text anywhere.
+<Audio 1> Guard (S1) rough male timbre.
+<Audio 2> Shenmo (S2) timbre—used for the whispered「晚安」only.
+
+summary: [reference generation] 15s, same corridor as P08: the buzz-cut guard's phone vibrates, he answers「喂？」; from the handset Shenmo's muffled telephone voice whispers「晚安」like a demon; beside the guard the ghost-fire skill text「危险通话」ignites. No knockout yet.
+
+retention_analysis:
+<Subject 1> (1,2,3,5): fully_preserved - buzz-cut guard, vibrate, answer,「喂？」
+<Subject 2> (3): fully_preserved - off-screen telephone-band demonic whisper「晚安」
+<Subject 3> (4): weak_reference - background only
+<Subject 4> (3,4): fully_preserved - ghost-fire「危险通话」
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - guard face, buzz-cut hair, uniform
+<Picture 3>: fully_preserved - corridor/door/reader/cart, lighting
+<Audio 1>: reference
+<Audio 2>: reference
+
+detailed_description: 16:9 anime cinematic, scene continuity with P08 (same corridor, same cool fluorescent light, same guard and Anna looks). Only two short lines total. No BGM. No electrocution in this unit. Shenmo never appears.
+[Shot 1] At 00.000s medium shot at the steel door in <Picture 3>: the buzz-cut guard <Subject 1> stands by the card reader; his uniform pocket buzzes twice. He pulls out the phone (abstract glowing screen, no glyphs). Anna blurred mopping behind. Hold ≥1.0s. Corridor hum.
+[Shot 2] At 03.000s close-up hand and phone: thumb swipes, phone to ear. Irritated: <Subject 1> (S1) says: <d>[Chinese] 喂？</d> — ~0.3s.
+[Shot 3] At 05.000s tight close-up on the guard's ear and short buzz-cut side of head pressed to the phone; a long silent beat of line hiss, then from the handset, muffled telephone-band, barely audible demonic whisper, extremely low and slow: <Subject 2> (S2) says: <d>[Chinese] 晚安。</d> — ~1.0s, stretched, breathy. At 06.500s ghost-fire flames flare beside his head and form the four characters「危险通话」(<Subject 4>), teal-blue fire licking the strokes, light flickering cold on his cheek.
+[Shot 4] At 09.000s medium: guard frozen, brows knitting, the burning「危险通话」hovering at frame side, embers drifting; Anna's masked eyes in the background slowly look up. Hold ≥1.5s.
+[Shot 5] At 12.000s slow push-in on guard holding phone, confused; ghost-fire text gutters and fades into wisps. Faint line click. Not collapsing yet. End.
+
+overall_soundscape: Phone vibrate buzz, swipe click, short rough「喂？」, then near-silent line hiss and the muffled telephone-band demonic whisper「晚安」(lows/highs cut, very low, slow, not crisp), soft ghost-fire whoosh and crackle when「危险通话」ignites, line click, fluorescent hum. Forbidden: Shenmo on screen; PC-room cuts; readable UI; any text other than「危险通话」; BGM; sparks/knockout; logo; watermark.
+
+non_diegetic_music: N/A

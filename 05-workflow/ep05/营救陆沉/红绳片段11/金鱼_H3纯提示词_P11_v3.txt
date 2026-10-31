@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> Anna: same as P08—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves, red-handled mop. Quiet, competent, calm; works alone with no instructions. No dialogue.
+<Subject 2> Collapsed door guard: identity, buzz-cut/flat-top haircut and uniform locked to <Picture 2> door guard from P08: middle-aged man, short black buzz-cut / flat-top (平头, short sides, NO long or swept hair), stern tired face; dark navy security uniform jacket with epaulettes and shoulder patch, light-blue shirt, dark navy tie, two buttoned chest flap pockets, white ID badge clipped at lower chest, black duty belt with pouches. Lying unconscious, breathing, at the steel door; keycard in his UPPER-body chest flap pocket.
+<Subject 3> Observation-room steel door and wall card reader in <Picture 3>; door seam reveals cold interior light when unlocked. No readable text on card or reader.
+
+summary: [reference generation] 15s, directly continuing P10: Anna is already beside the fallen buzz-cut guard; she crouches, takes the keycard from his upper chest pocket, swipes the reader and pushes the door open—by herself, no voice in her ear.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - crouch, take card, swipe, open door
+<Subject 2> (1,2): fully_preserved - upper pocket card source
+<Subject 3> (3,4,5): fully_preserved - reader, lock, door
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - guard face, buzz-cut, uniform
+<Picture 3>: fully_preserved - corridor/door/reader/cart, lighting
+
+detailed_description: 16:9 anime cinematic, scene continuity with P08–P10 (same corridor, light, cart). No dialogue, no earpiece voice, no BGM. Anna never looks into the camera.
+[Shot 1] At 00.000s medium: picking up from P10's last frame, Anna stands beside the unconscious guard at the steel door; she glances once down the empty corridor, then crouches smoothly in one motion.
+[Shot 2] At 02.000s close-up: her grey-gloved fingers unbutton his left chest flap pocket on the navy uniform jacket, slide in and draw out a plain white keycard; thumb checks the edge. His buzz-cut head lolls slightly, breathing. Hold ≥2.0s.
+[Shot 3] At 05.500s she rises, one step to the wall card reader beside the door; taps the card. Reader light flips, a soft lock thunk; a thin slit of cold interior light opens in the door seam. Hold ≥1.2s.
+[Shot 4] At 08.500s medium: Anna pushes the heavy door with her shoulder and knee, widening the gap to shoulder width; pauses to listen—no footsteps. Tucks card into her glove cuff.
+[Shot 5] At 11.500s from behind at the threshold: Anna slips sideways into the light slit, the guard still lying in the foreground. Hold ≥1.0s. Do not reveal Lu Chen. End.
+
+overall_soundscape: Fluorescent hum, Anna's quiet breathing behind mask, fabric rustle, pocket button snap, card tap beep, lock tongue clunk, heavy door hinge creak, faint cold air from the room. Forbidden: any dialogue or earpiece voice; Shenmo; taking card from a desk; readable UI; BGM; logo; watermark.
+
+non_diegetic_music: N/A
