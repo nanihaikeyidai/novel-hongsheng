@@ -67,6 +67,20 @@ D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe scripts\generate_moss_tts_a
 - **大资产不入库**（两端一致）：`*.mp4/*.mp3/*.zip/*.jpg`（人物图除外）及非人物/场景 png 不入库，仅存本地磁盘；单个文件 >20MB 提交前必须拦截。
 - **禁止 force-push**，除非用户明确要求重写历史。
 
+### 制作前强制拉云端代码（2026-10-31 用户锁定）
+
+> 用户原话：「**以后每次制作时都固定先拉一下云端的代码**」
+
+- **开工第一条命令**：任何制作动作（出片、生成素材、跑批、批量渲染）开始前，**必须先执行**
+  `bash 05-workflow/scripts/pre_work_sync.sh`，拉取云端最新代码。
+- **覆盖三个仓库**：红绳项目（`git@github.com:nanihaikeyidai/novel-hongsheng.git`）、directorMaster（`git@github.com:nanihaikeyidai/directorMaster.git`）、ComfyUI 内核（走 `gh-proxy` 代理，`release/v0.42` 分支）。
+- **跑批脚本已内置该钩子**：`run_local_meilin.py` 启动即自动同步，无需手动调用；紧急情况可用 `--no-sync` 跳过（会打印跳过日志）。
+- **只看不改**：`bash 05-workflow/scripts/pre_work_sync.sh --dry-run` 仅报告各仓库 ahead/behind，不做任何改动。
+- **安全约束**：绝不丢弃已跟踪文件的本地改动（不 checkout / 不 reset / 不 stash）；未跟踪文件与远程新增同路径时**先备份到仓库外**（`D:/HermesWorkspace/_git_untracked_backup_<时间戳>/`）再移走，备份失败立即中止。
+- **ComfyUI 内核升级须复查 Spark**：内核升版后必须确认 `comfy-kitchen` 仍为 `0.2.39+spark.h3.sm89.cu130.1`（脚本会自动检查并打印）。
+  若被升成无 Spark 的官方版（v0.43+ 要求 0.2.40），H3 渲染会崩，须从
+  `F:/h3tmp/spark015/ComfyUI-Spark-H3/wheelhouse/` 重装定制 wheel。
+
 ## AI 协作规则
 
 ### 剧本写作质感（2026-10-24 用户锁定）
@@ -88,7 +102,8 @@ D:\HermesWorkspace\MOSS-TTS\.venv\Scripts\python.exe scripts\generate_moss_tts_a
 
 - **提示词语言默认规则**：后续所有《红绳》视频提示词、分镜提示词、素材描述、连续性约束、声音说明和禁止项默认使用中文。只有用户明确要求英文时才使用英文。若目标工作流要求固定字段名、引用标签或机器解析结构，保留其必要的英文标识（如 `subject_definitions:`、`<Subject N>`、`<Picture N>`、`<Audio N>`、`(Sx)`、`<d>[Chinese] ...</d>`），其余正文使用中文。
 - **切镜节奏默认规则**：镜头角度、景别、构图或主体信息发生明显变化时，才优先使用直接硬切；角度和构图变化很小、主体位置几乎不变时，禁止无动机硬切，以免产生跳切、丢帧感或画面闪跳。此时优先使用连续运镜、动作匹配切、插入镜头重置，或先改变景别/构图再切。若剧情必须在小变化处切镜，必须写明切点动机和匹配动作。
-- **默认视频生成（2026-10-19 用户重锁）**：后续用户未指定其他工作流时，**默认使用本地 ComfyUI「梅林全流程」**（Spark-H3 SM89 加速），不再默认金鱼/云端。权威 UI：`F:\Work-Fisher纯净包2026.8.7\ComfyUI\user\default\workflows\梅林全流程.json`；工作区/规范/skill 资产须同步。默认参数：**0.6MP**（约 1056×608 @16:9）、**8 步**、euler+simple、Spark SM89（topk/warmup 0.2）。API 跑批：`05-workflow/scripts/run_local_meilin.py` + `本地梅林模板_SparkON_0.6MP_15s.json`（分段默认 15s）。详见 `05-workflow/全局文档/工作流规范/梅林全流程_默认说明.md` 与 skill `redstring-local-meilin-batch` / `local-meilin-defaults`。RunningHub「金鱼」`2093984226331938818`、线上 H3 工作流、云端导演台等 **仅当用户明确说云端/金鱼/RunningHub/动作流** 时使用。
+- **默认视频生成（2026-10-19 用户重锁；2026-10-25 参数定稿）**：后续用户未指定其他工作流时，**默认使用本地 ComfyUI「梅林全流程」**（Spark-H3 SM89 加速），不再默认金鱼/云端。权威 UI：`F:\Work-Fisher纯净包2026.8.7\ComfyUI\user\default\workflows\梅林全流程.json`；工作区/规范/skill 资产须同步。默认参数：**0.7MP**（约 1152×640 @16:9）、**8 步**、euler+simple、Spark SM89（topk/warmup 0.2）、加速 LoRA = **DMaD**（`minimax_h3_dmad_full_dareties_v4_step600_comfy_fro.safetensors`）。API 跑批：`05-workflow/scripts/run_local_meilin.py` + `本地梅林模板_SparkON_0.7MP_15s_dmad.json`（分段默认 15s）。**2026-10-31 起每次制作前必须先跑 `pre_work_sync.sh` 拉云端代码**（见「制作前强制拉云端代码」）。详见 `05-workflow/全局文档/工作流规范/梅林全流程_默认说明.md` 与 skill `redstring-local-meilin-batch` / `local-meilin-defaults`。RunningHub「金鱼」`2093984226331938818`、线上 H3 工作流、云端导演台等 **仅当用户明确说云端/金鱼/RunningHub/动作流** 时使用。
+- **一致性 LoRA（Licon VBVR，2026-10-31 接入）**：`H3-Licon-VBVR-I2V.safetensors`（HF `LiconStudio/Minimax-H3-VBVR`，2026-10-23 发布）针对物体复制/穿模/动作顺序错乱。使用时置于 DMaD 之后（UI 节点 9001「VBVR 一致性 (Licon)」，strength 1.0）。该 LoRA 用 kohya 命名，ComfyUI 原生 key_map 可直接映射，**无需转换脚本**；覆盖 blocks 0–49 的 `attn.qkv_proj`/`attn.out_proj`/`mlp.fc1`/`mlp.fc2`，audio loss 权重为 0（不影响音频）。
 - **Dasiwa 工作流指代规则**：用户说“dasiwa 工作流”或“Dasiwa”时，默认指 RunningHub 上的 Dasiwa AI 应用（当前已确认应用 `2099517776380649474`），不是本地 ComfyUI 工作流、脚本或模型文件。必须先解析/确认该 RunningHub AI 应用的当前节点信息，再按线上应用调用；不得擅自改用本地 ComfyUI。只有用户明确说“本地 Dasiwa”时，才允许使用本地 Dasiwa 工作流。
 - 修改章节正文 → 只动 `02-manuscript/chapters/`
 - 修改有声剧本 → 对应 `04-audiobook/chXX_*/` 下的 JSON

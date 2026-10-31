@@ -1,0 +1,8 @@
+# bash 脚本必须保持 LF，否则在 Windows 上执行会因 CRLF 报 \r: command not found
+*.sh text eol=lf
+
+# 二进制资产不参与行尾转换
+*.safetensors binary
+*.mp4 binary
+*.png binary
+*.jpg binary

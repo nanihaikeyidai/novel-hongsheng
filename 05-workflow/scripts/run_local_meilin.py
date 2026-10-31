@@ -1,26 +1,57 @@
 # -*- coding: utf-8 -*-
 """
 红绳 · 本地梅林出片（ComfyUI 8188）—— 项目默认视频路径（2026-10-19）
-配方：0.6MP(约1056x608) / 8步 / Spark SM89；API 默认 15s 段
+配方：0.7MP(约1152x640) / 8步 / Spark SM89 / DMaD 加速LoRA / int8_convrot VAE；API 默认 15s 段
+（2026-10-25 定稿：DMaD 取代 turbo EMA，0.7 取代 0.6；2026-10-31 增加 vbvr 变体 --template vbvr）
 UI 默认工作流：梅林全流程.json（与规范/AGENTS 同步）
 
 用法:
   python run_local_meilin.py --prompt <提示词文件> --img1 <人设.png> [--img2 <场景.png>] [--img3 <分镜.png>]
                              [--seconds 15] [--out <输出mp4>] [--tag 名字]
-                             [--template 0.6|0.5|路径]
+                             [--template 0.7|vbvr|0.5|路径]
 提示词文件内容会写入节点 263；图片自动复制进 ComfyUI/input 并按 49/50/51 槽位绑定。
 """
 from __future__ import annotations
-import argparse, json, os, shutil, sys, time, urllib.request
+import argparse, json, os, shutil, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 COMFY = 'http://127.0.0.1:8188'
 INPUT_DIR = Path(r'F:\Work-Fisher纯净包2026.8.7\ComfyUI\input')
 TPL_DIR = Path(r'D:\HermesWorkspace\ai小说\红绳\05-workflow\全局文档\工作流规范')
-TEMPLATE_DEFAULT = TPL_DIR / '本地梅林模板_SparkON_0.6MP_15s.json'
+TEMPLATE_DEFAULT = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad.json'
+TEMPLATE_VBVR = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad_vbvr.json'
 TEMPLATE_05 = TPL_DIR / '本地梅林模板_SparkON_0.5MP_15s.json'
-TEMPLATE_06 = TEMPLATE_DEFAULT
+TEMPLATE_06 = TPL_DIR / '本地梅林模板_旧版留存_turboEMA_0.6MP_20261025.json'
 SLOTS = ['49', '50', '51']
+
+# 开工前置同步（用户 2026-10-31 规则：每次制作前固定先拉云端代码）
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SYNC_SCRIPT = REPO_ROOT / '05-workflow' / 'scripts' / 'pre_work_sync.sh'
+
+
+def pre_work_sync(skip: bool = False) -> int:
+    """开工前拉取云端代码。返回 0=已同步，1=同步失败(仍继续)，2=跳过。"""
+    if skip:
+        print('[sync] 已按 --no-sync 跳过开工同步')
+        return 2
+    if not SYNC_SCRIPT.exists():
+        print(f'[sync] 警告：找不到同步脚本 {SYNC_SCRIPT}，跳过')
+        return 1
+    print('[sync] 开工前拉取云端代码 ...')
+    try:
+        r = subprocess.run(['bash', str(SYNC_SCRIPT)], cwd=str(REPO_ROOT),
+                           capture_output=True, text=True, timeout=600)
+    except subprocess.TimeoutExpired:
+        print('[sync] 同步超时（网络问题），继续制作')
+        return 1
+    out = (r.stdout or '') + (r.stderr or '')
+    tail = '\n'.join(out.strip().splitlines()[-8:])
+    print(tail)
+    if r.returncode != 0:
+        print(f'[sync] 同步返回 {r.returncode}，继续制作（本地改动未受影响）')
+        return 1
+    print('[sync] 云端代码已是最新')
+    return 0
 
 
 def post(path, payload, timeout=120):
@@ -36,8 +67,12 @@ def get(path, timeout=60):
 
 
 def resolve_template(arg: str | None) -> Path:
-    if not arg or arg in ('0.6', '0.6mp', 'default'):
+    if not arg or arg in ('0.7', '0.7mp', 'dmad', 'default'):
         return TEMPLATE_DEFAULT
+    if arg in ('vbvr', '0.7vbvr'):
+        return TEMPLATE_VBVR
+    if arg in ('0.6', '0.6mp', 'turbo'):
+        return TEMPLATE_06
     if arg in ('0.5', '0.5mp'):
         return TEMPLATE_05
     p = Path(arg)
@@ -55,8 +90,13 @@ def main():
     ap.add_argument('--seconds', type=float, default=15.0)
     ap.add_argument('--tag', default='local_meilin')
     ap.add_argument('--out', default=None)
-    ap.add_argument('--template', default='0.6', help='0.6 | 0.5 | path-to-api-json')
+    ap.add_argument('--template', default='0.7', help='0.7 | vbvr | 0.5 | 0.6(旧turbo) | path-to-api-json')
+    ap.add_argument('--no-sync', action='store_true',
+                    help='跳过开工前的云端代码同步（默认每次都拉）')
     a = ap.parse_args()
+
+    # 开工第一件事：拉云端代码（用户 2026-10-31 规则）
+    pre_work_sync(skip=a.no_sync)
 
     tpl = resolve_template(a.template)
     wf = json.loads(tpl.read_text(encoding='utf-8'))['prompt']
