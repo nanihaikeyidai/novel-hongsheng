@@ -19,6 +19,8 @@
 
 - **RH 敏感词会拦提交**：英文提示词避开 demonic / devil / devilish / evil / murder / kill / blood / coma / corpse / death / electrocute 等；「晚安」用 cold quiet whisper / extremely low, slow, breathy（情绪压到最低）替代「恶魔低语」类写法。屏幕字「危险通话」可保留中文；英文特效描述用 teal-blue flame / wispy flame，少写 ghost-fire / 鬼火。提交前自检，超 5000 字也要砍。
 
+- **RH 敏感词实测（P09 v5 失败 / v4 曾过）**：v5 已去掉 demonic/devil/ghost-fire 仍被拦。对比 v4→v5 新增高风险英文：`rear` / `rear-cam` / `upside-down` / `backwards`，以及大量全大写 `FORBIDDEN`。优先沿用**已通过的 v4 句式**，眼镜与「屏幕朝耳」用正向描述（screen/front face to ear；keep black rectangular glasses），禁止项改写为 `Avoid: …`；少写 rear/cam/upside/backwards。技能字「危险通话」可保留中文；英文 FX 用 teal-blue wispy skill-name strokes，少写 ghost-fire / 鬼火 / flame/fire 堆叠。提交前字数 ≤5000 且自检上述词。
+
 ## 三、语速与对白预算
 - 默认约 1 秒 7 字（汉字、字母、数字都按 1 字计）。
 - 安娜/沈默的快节奏场约 8 字/秒。
@@ -28,7 +30,7 @@
 ## 四、人物表演
 - 通用：说话时不转头。
 - **安娜**：腹黑，表面平静、话里带刺；ND 清洁工装加口罩；对白声音小、音调低。
-- **沈默**：声音低沉、漫不经心，盯着屏幕边敲键盘边说，只拍侧面，不出正脸。
+- **沈默**：14 岁少年音（不低沉、不成年），情绪平淡低压、漫不经心，盯着屏幕边敲键盘边说，只拍侧面，不出正脸。
   - EP05 营救段默认沈默**不出画**，用耳机电话音质画外音（去高低频、发闷）；**P09 v4 例外**：门卫说完「喂？」硬切沈默**侧脸特写**，他拿着自己的手机用压到最低的恶魔低语说「晚安。」，鬼火体技能字「危险通话」出现在**沈默人物旁边**（不是门卫旁）。
   - 用 `shenmo.wav` 做音色参考。
   - **沈默出画必须写眼镜**：`shenmo.png` 有厚黑框矩形眼镜时，提示词 `subject_definitions` 与侧脸镜头行都要写死「black rectangular-rimmed glasses / frames on nose bridge and over ear」；禁止 bare face / no glasses / 侧面丢框（P09 v4 成片曾丢眼镜 → v5 锁定）。

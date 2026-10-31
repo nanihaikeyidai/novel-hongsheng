@@ -1,0 +1,27 @@
+{
+  "appId": "2110357037929558018",
+  "task_id": "2116417950402699266",
+  "taskId": "2116417950402699266",
+  "status": "SUCCESS",
+  "prompt_version": "P07_v6",
+  "change": "沈默耳机画外音改为14岁少年男声(boyish teen, not deep)，绑定<Audio 1>=归档素材/人物参考音色/沈默.wav；其余同v5",
+  "settings": {
+    "mode": "Plus",
+    "aspect": "16:9",
+    "duration": 15,
+    "resolution": 1.5,
+    "scheduler": "simple",
+    "steps": 12
+  },
+  "uploads": "P07v5 上传包 image1_anna/image2_guard_平头/image3_scene_P08 + audio1_shenmo.wav",
+  "billing": "personal_RH_key_API",
+  "promptChars": 4879,
+  "consumeCoins": "114",
+  "taskCostTime_sec": "570",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p83-audio_plgdz_1793428898.mp4",
+  "draft": "/workspace/ep05-preview/jinyu/P07v6_金鱼草稿.mp4",
+  "phone": "/workspace/ep05-preview/jinyu/P07v6_手机版.mp4",
+  "phone_bytes": 9933983,
+  "audio": "48kHz AAC +faststart",
+  "finished_at_Asia_Singapore": "2026-10-31T14:42:26"
+}
