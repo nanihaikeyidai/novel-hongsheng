@@ -1,0 +1,33 @@
+subject_definitions:
+<Subject 1> Door guard: buzz-cut/flat-top and uniform locked to <Picture 2> from P08: middle-aged, short black 平头 (NO long/swept hair), stern tired face; dark navy security jacket with epaulettes/patch, light-blue shirt, navy tie, two chest flap pockets, white ID badge, black duty belt. At post in <Picture 3>. ONE PHONE ONLY (abstract dark brick, NO readable UI). SAME hand pulls and raises phone—LEFT hand presses glowing front/screen face flat to LEFT ear/cheek, fingers gripping (ear faces screen side). Avoid: two phones; left holding while right answers; floating handset; handset flipped so the back faces the ear.
+<Subject 2> Shenmo: face/upper body locked to <Picture 4>; PC room <Picture 5>. Keep thick black rectangular-rimmed eyeglasses exactly as <Picture 4>—frames on nose bridge and over the ear in every angle including tight side profile. After guard「喂？」: ON-SCREEN side-face CU; he holds HIS OWN phone to mouth/cheek (profile, not frontal mirror-talk), eyes cold behind black frames, head barely moves. Delivery: extremely low, slow, breathy, cold quiet whisper—emotion at absolute minimum. Only line「晚安。」, timbre <Audio 2>.
+<Subject 3> Anna (BG): <Picture 1> same as P08—grey cleaner cap, white mask, long black hair, dark grey cleaner uniform, grey gloves, red-handled mop; mopping near cart, blurred behind guard; no line.
+<Subject 4> Screen-text FX「危险通话」: four characters 危 险 通 话 in teal-green/teal-blue wispy skill-name strokes (soft upward wisps, faint embers); floats BESIDE SHENMO (head/shoulder in PC-room shot), NOT beside guard. Legible; no other text.
+<Audio 1> Guard (S1) rough male for「喂？」.
+<Audio 2> Shenmo (S2) for whispered「晚安」.
+
+summary: [reference generation] 15s, P08 corridor then hard cut to Shenmo PC room: buzz-cut guard ONE phone vibrates; SAME hand answers screen-to-ear;「喂？」; cut to Shenmo side-face CU WITH thick black rectangular glasses (<Picture 4>), phone to mouth, cold quiet whisper「晚安」; teal-blue wispy skill text「危险通话」beside Shenmo. Guard stays standing.
+
+retention_analysis:
+<Subject 1> (1,2): fully_preserved - buzz-cut guard, one-phone screen-to-ear,「喂？」
+<Subject 2> (3,4): fully_preserved - side-face WITH black glasses, cold quiet whisper「晚安」
+<Subject 3> (1): weak_reference - BG only
+<Subject 4> (3,4): fully_preserved - teal-blue wispy「危险通话」beside Shenmo
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - guard face/buzz-cut/uniform
+<Picture 3>: fully_preserved - corridor/door/reader/cart
+<Picture 4>: fully_preserved - Shenmo face/profile INCLUDING thick black rectangular glasses
+<Picture 5>: fully_preserved - PC room
+<Audio 1>: reference
+<Audio 2>: reference
+
+detailed_description: 16:9 anime cinematic, continuity with P08. Two short lines. No BGM. One-phone continuity. Shenmo keeps thick black rectangular glasses from <Picture 4>.
+[Shot 1] At 00.000s medium at steel door <Picture 3>: buzz-cut <Subject 1> by card reader; LEFT chest pocket buzzes twice. He pulls ONE phone with LEFT hand (abstract glow, no glyphs). Anna blurred mopping behind. Hold ≥1.0s. Corridor hum.
+[Shot 2] At 03.000s CU: LEFT thumb swipes; SAME LEFT hand raises SAME phone and presses glowing front/screen face to LEFT ear/cheek, fingers gripping (never floating; ear faces screen side). Irritated: <Subject 1> (S1) says: <d>[Chinese] 喂？</d> — ~0.3s. No second phone in frame.
+[Shot 3] At 05.000s HARD CUT to dark PC room <Picture 5>: tight SIDE-FACE CU of <Subject 2> Shenmo (<Picture 4>), profile, wearing thick black rectangular-rimmed glasses—frame clear on nose bridge and over ear. Holds HIS phone near mouth, eyes cold behind black lenses toward monitors. Extremely low, slow, breathy, cold quiet whisper, <Audio 2>: <Subject 2> (S2) says: <d>[Chinese] 晚安。</d> — ~1.0s. At 06.500s teal-blue wispy strokes appear BESIDE SHENMO head/shoulder forming「危险通话」(<Subject 4>), soft flicker on cheek and glasses.
+[Shot 4] At 09.000s hold Shenmo profile WITH black glasses still on nose and ear: lips barely closed; glowing「危险通话」at frame side, embers drift. Hold ≥1.5s. Keep glasses on through the hold.
+[Shot 5] At 12.000s brief cut back corridor: guard still pressing ONE phone screen-to-ear with SAME hand, brows knitting, confused; stays upright. End.
+
+overall_soundscape: Phone vibrate, swipe click, short rough「喂？」, near-silent beat, muffled cold quiet whisper「晚安」(extremely low, slow, breathy), soft whoosh for「危险通话」beside Shenmo, fluorescent hum. Avoid: two phones; floating phone; handset flipped back-to-ear; Shenmo without glasses / frames vanishing in profile; skill text beside guard; readable UI; text other than「危险通话」; BGM; logo; watermark.
+
+non_diegetic_music: N/A

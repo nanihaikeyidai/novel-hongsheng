@@ -1,0 +1,18 @@
+{
+  "task_id": "2116381784395698178",
+  "taskId": "2116381784395698178",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v6",
+  "consumeCoins": "231",
+  "taskCostTime_sec": "577",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p87-audio_ljgnh_1793420285.mp4",
+  "source_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p87-audio_ljgnh_1793420285.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v6_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v6_手机版.mp4",
+  "draft": "/workspace/ep05-preview/jinyu/P09v6_金鱼草稿.mp4",
+  "phone": "/workspace/ep05-preview/jinyu/P09v6_手机版.mp4",
+  "draft_bytes": 7654076,
+  "phone_bytes": 7712969,
+  "audio": "48kHz AAC +faststart",
+  "polled_at_Asia_Shanghai": "2026-10-31T12:18:30+08:00"
+}

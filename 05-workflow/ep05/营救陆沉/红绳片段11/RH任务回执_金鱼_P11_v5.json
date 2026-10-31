@@ -1,0 +1,19 @@
+{
+  "task_id": "2116378298463518722",
+  "taskId": "2116378298463518722",
+  "status": "SUCCESS",
+  "prompt_version": "P11_v5",
+  "consumeCoins": "190",
+  "taskCostTime_sec": "474",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p81-audio_mucvf_1793419350.mp4",
+  "source_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p81-audio_mucvf_1793419350.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P11v5_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P11v5_手机版.mp4",
+  "draft": "/workspace/ep05-preview/jinyu/P11v5_金鱼草稿.mp4",
+  "phone": "/workspace/ep05-preview/jinyu/P11v5_手机版.mp4",
+  "draft_bytes": 8002707,
+  "phone_bytes": 8120672,
+  "audio": "48kHz AAC +faststart",
+  "polled_at_Asia_Shanghai": "2026-10-31T12:18:30+08:00",
+  "notes": "Right-handle push door after unlock; no auto-open; collapsed guard eyes closed"
+}

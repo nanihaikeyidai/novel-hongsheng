@@ -1,0 +1,29 @@
+subject_definitions:
+<Subject 1> Anna: grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves, red-handled mop on cart; lock look to <Picture 1> (same as P06b/P08/P09). Small black Bluetooth earpiece in one ear. Scheming calm 腹黑; eyes act; head barely moves; mask on. Speaks QUIET+LOW+FAST ~7–8 chars/sec; NEVER head-turn while speaking.
+<Subject 2> Shenmo: VOICE-ONLY, NEVER on screen—no face, no CU, no PC-room cut. Earpiece-only: band-limited telephone EQ (~300Hz–3kHz), lows/highs cut, muffled, faint hiss, NOT crisp. Low casual-cold 漫不经心, ~7–8 chars/sec. Timbre <Audio 1>.
+<Subject 3> Standing door guard: face/buzz-cut/uniform locked to <Picture 2> (P08/P09)—middle-aged, short black 平头 (NO long/swept hair); dark navy security jacket with epaulettes/patch, light-blue shirt, navy tie, chest flap pockets, white ID badge, black duty belt. P09 standing staging: ONE man upright at far steel-door/card-reader post; arms idle; NOT sitting/collapsed. Distant first.
+<Subject 4> ND night corridor + steel door / wall reader / yellow cart from <Picture 3> (P08/P09): cool-white fluorescent hallway, blue wainscot, floor sheen. Near-end elevator doorway (brushed-steel doors, cool spill)—no elevator image; describe only; lighting matches <Picture 3>.
+<Audio 1> Shenmo (S1) timbre—low casual-cold; telephone-band muffled earpiece ~7–8 chars/sec (timbre only).
+
+summary: [reference generation + audio reference] 15s from P06b: Anna exits elevator into P08/P09 corridor with cart; Shenmo muffled earpiece directs Lu Chen's room (never on screen); distant ONE standing buzz-cut guard at door post (P09 staging); she reports one guard; Shenmo orders closer, quiet.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - cleaner+mask+earpiece; elevator exit; cart; quiet line
+<Subject 2> (2,5): fully_preserved - off-screen telephone-band earpiece only
+<Subject 3> (3,4,5): fully_preserved - ONE standing buzz-cut guard, P09 pose
+<Subject 4> (1,3,4,5): fully_preserved - corridor/door/reader; elevator doorway text-only
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - guard face/平头/uniform
+<Picture 3>: fully_preserved - corridor/door/reader/cart/light
+<Audio 1>: reference - Shenmo earpiece timbre
+
+detailed_description: 16:9 anime cinematic night. Continuity P06b elevator → P08/P09 corridor. Dialogue ~7–8 Chinese chars/sec. Shenmo NEVER appears. No readable text/UI/logo. No BGM.
+[Shot 1] At 00.000s medium: brushed-steel elevator doors open onto cool fluorescent corridor (<Picture 3> light); <Subject 1> Anna (cleaner+mask+earpiece) rolls yellow cart out of the cab into the hallway; doors begin to close behind. Hold ≥1.2s. Door motor, wheel rattle. No dialogue.
+[Shot 2] At 02.500s medium tracking: Anna steadies mop bucket, pushes toward far steel door. Earpiece-only telephone-band muffled Shenmo off-screen: <Subject 2> (S1) says: <d>[Chinese] 陆沉在岗后第二间观察室，红点没动。</d> — MUST ~2.1s (16 chars). Eyes narrow above mask; head does not turn.
+[Shot 3] At 05.500s long/wide behind Anna: she pushes forward; FAR end shows ONE standing guard (<Subject 3>, buzz-cut+navy locked to <Picture 2>) upright at steel-door/card-reader post—P09 standing staging (one man, not two, not seated). Fluorescent buzz; wheels. Hold ≥1.5s. No dialogue.
+[Shot 4] At 08.500s medium beside cart: Anna eyes half-lidded toward distant post, no head-turn; quiet low fast: <Subject 1> (S2) says: <d>[Chinese] 门口有人站岗。一个人。</d> — ~1.4s (11 chars). Subtle mouth under mask.
+[Shot 5] At 11.000s tracking toward the single standing guard: earpiece muffled Shenmo: <Subject 2> (S1) says: <d>[Chinese] 靠近。别出声。</d> — ~0.8s (6 chars). Anna slows half-step, steadies bucket, advances; distant ONE upright buzz-cut guard stays at door. Hold ≥1.2s. End on approach—never cut to Shenmo.
+
+overall_soundscape: Elevator door motor, soft cart wheels, fluorescent buzz, quiet breathing behind mask. Shenmo ONLY as thin telephone-band earpiece voice (lows/highs cut, muffled, faint hiss, not crisp). Three lines at ~7–8 chars/sec. Forbidden: Shenmo on screen/CU/PC-room; two guards; seated/collapsed guard; long/swept hair; school look; readable text; BGM; logo; watermark.
+
+non_diegetic_music: N/A
