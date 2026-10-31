@@ -69,5 +69,6 @@
 - **短句只说一次**：在 subject、summary、detailed、soundscape 四处都写 ONCE / no second；避免项再写「禁止第二遍」。
 - **说完再出屏字**：把「说话」和「出字」拆成两个 Shot。说话那一镜写死 `NO on-screen text yet`；下一镜写 `lips CLOSED, silent ≥1.5s` 之后才出现屏字。
 - **正写 + Avoid 双保险**：时间轴正向写清因果（先 A 后 B），Avoid 再列「第二遍台词 / 错镜头出声 / 边说边出字」。
+- **长静默持机易复读**（P09 v8）：说完「晚安」后若侧脸持机静默拖太久，模型仍可能在尾段再念一遍。说完后写死 `ZERO spoken syllables / lips locked` 到片尾；出字保持 2–3s 后尽快切回；Avoid 写 second/echo/repeat。
 - **成片自测再交付**：抽帧 + ASR。核对①每句台词出现次数；②是否叠在正确镜头；③屏字内容与出现时机（是否在台词结束之后）；④眼镜、手机朝向等硬约束。不过关先改提示词重跑，不把未自测成片发给 David。
 
