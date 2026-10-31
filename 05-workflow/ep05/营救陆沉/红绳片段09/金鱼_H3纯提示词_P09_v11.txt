@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Door guard: buzz-cut/flat-top + uniform locked to <Picture 2> from P08: navy security jacket, light-blue shirt, navy tie, white badge. At post in <Picture 3>. ONE PHONE ONLY (abstract dark brick, NO readable UI). SAME LEFT hand pulls/raises; presses glowing front/screen flat to LEFT ear/cheek, fingers gripping (ear faces screen). Guard audio track = ONLY「喂？」(~2.5–3.0s), then INSTANT HARD CUT ~3.5s—no lingering hold. Guard shots: ZERO「晚安」, never hears/repeats a reply. Return SILENT. Avoid: two phones; floating/flipped handset; any「晚安」on guard.
+<Subject 2> Shenmo: 14yo boy; face/upper body locked to <Picture 4>; PC room <Picture 5>. Keep thick black rectangular-rimmed eyeglasses exactly as <Picture 4>—frames on nose bridge and over ear every angle including tight side profile. After HARD CUT (~3.5s): side-face CU; phone to mouth/cheek, eyes cold behind black frames. Voice: young 14yo teen boy timbre matched to <Audio 2>—light youthful whisper, flat. First ~0.3–0.5s after cut: MUTE, lips closed. THEN「晚安」ONCE ONLY ~4.0–5.0s, lips LOCKED. From 5.0s to END: ZERO spoken syllables / no echo / no second「晚安」. Never speaks before HARD CUT.
+<Subject 3> Anna (BG): <Picture 1> same as P08—grey cleaner cap, white mask, long black hair, dark grey cleaner uniform, grey gloves, red-handled mop; blurred behind guard; no line.
+<Subject 4> Screen-text FX: exactly four Chinese characters「危险通话」, glyphs copied exactly from <Picture 6> (teal wispy strokes, soft upward wisps). Appears BESIDE SHENMO ONLY ≥1.0s AFTER「晚安」ends (~6.0s). NOT while/before speaking; NOT beside guard. Hold ~2s. During/after text: ZERO speech. No other text.
+<Audio 1> Guard rough male「喂？」.
+<Audio 2> Shenmo (S2) 14yo boy timbre for the single whispered「晚安」.
+
+summary: [reference generation] 15s. Guard ONE phone vibrates; SAME hand answers screen-to-ear; says only「喂？」~2.5–3.0s; INSTANT HARD CUT ~3.5s (guard segment ZERO「晚安」). Mute ~0.3–0.5s, then 14yo Shenmo side-face CU WITH thick black rectangular glasses (<Picture 4>) whispers「晚安」ONCE only (~4.0–5.0s); lips locked; ZERO speech to end. ~6.0s「危险通话」identical to <Picture 6> beside Shenmo ~2s. Cut back ~8.0s: guard confused SILENT to end. Whole film: exactly one「晚安」, never a second.
+
+retention_analysis:
+<Subject 1> (1,2,5): fully_preserved - one-phone screen-to-ear,「喂？」only, cut ~3.5s, ZERO「晚安」, silent return
+<Subject 2> (3,4): fully_preserved - 14yo + black glasses, mute then single「晚安」~4.0–5.0s then ZERO speech to end
+<Subject 3> (1): weak_reference - BG only
+<Subject 4> (4): fully_preserved -「危险通话」from <Picture 6> beside Shenmo ≥1.0s after speech (~6.0s)
+detailed_description: 16:9 anime, P08 continuity. Spoken lines EXACTLY two total, in order:「喂？」(guard, ~2.5–3.0s) then「晚安」(Shenmo, ONCE, ~4.0–5.0s ONLY). Guard segment ZERO「晚安」. No second/echo「晚安」. No BGM. Shenmo keeps black rectangular glasses from <Picture 4>.
+[Shot 1] At 00.000s medium at steel door <Picture 3>: buzz-cut <Subject 1> by card reader; LEFT chest pocket buzzes twice. Pulls ONE phone LEFT hand. Anna blurred behind. Silent.
+[Shot 2] At 02.000s CU: LEFT thumb swipes; SAME LEFT hand presses SAME phone glowing front/screen to LEFT ear/cheek, fingers gripping (ear faces screen). Irritated: <Subject 1> (S1) says: <d>[Chinese] 喂？</d> — ~2.5–3.0s, short. Then cut IMMEDIATELY—no silent hold, no reply heard. ZERO「晚安」on this shot.
+[Shot 3] At 03.500s HARD CUT to dark PC room <Picture 5>: tight SIDE-FACE CU of <Subject 2> 14yo Shenmo (<Picture 4>), profile, thick black rectangular-rimmed glasses on. Phone near mouth, eyes cold. 03.5–03.9s: total MUTE, lips closed. THEN young boy voice from <Audio 2>, soft low whisper: <Subject 2> (S2) says: <d>[Chinese] 晚安。</d> — ONLY ~4.0–5.0s, ONCE. NO on-screen text yet. Then lips LOCKED SHUT.
+[Shot 4] At 06.000s still on Shenmo profile WITH black glasses: lips LOCKED, silent. Teal wispy strokes appear BESIDE SHENMO forming exactly「危险通话」glyphs identical to <Picture 6> (<Subject 4>); hold ~2s. ZERO speech.
+[Shot 5] At 08.000s cut back corridor: guard still pressing ONE phone screen-to-ear with SAME hand, confused, SILENT to end (ZERO spoken syllables, no「喂？」no「晚安」); stays upright. End.
+
+overall_soundscape: Phone vibrate, swipe click, short rough「喂？」~2.5–3.0s, INSTANT cut ~3.5s. Hard mute ~0.3–0.5s, then ONE muffled 14yo soft whisper「晚安」ONLY ~4.0–5.0s (light young timbre per <Audio 2>), silence, soft whoosh as「危险通话」appears ~6.0s beside Shenmo; from 5.0s to end: room tone only, ZERO spoken syllables. Exactly one「晚安」in whole film. Avoid: second/echo/repeat「晚安」;「晚安」on guard shots; any「晚安」before ~4.0s; guard hearing a reply; speech while/after text; adult deep Shenmo; two phones; floating/flipped phone; Shenmo without glasses; text beside guard; glyphs ≠ <Picture 6>; BGM; watermark.
+
+non_diegetic_music: N/A

@@ -1,0 +1,41 @@
+{
+  "task_id": "2116578897935171586",
+  "taskId": "2116578897935171586",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v11",
+  "webappId": "2110357037929558018",
+  "promptChars": 4809,
+  "picture6": "ref_危险通话.png",
+  "billing": "personal_RH_coins",
+  "reuse_uploads_from": "P09v10_upload",
+  "prompt_path": "05-workflow/ep05/营救陆沉/红绳片段09/金鱼_H3纯提示词_P09_v11.txt",
+  "v10_review": {
+    "root_cause": "v10 门卫「喂？」仅~0.3s，之后持机静默~1.5–2s才硬切(~5.0s)，模型把电话空窗当成需要对方回话，把「晚安」填进门卫镜头(~3.7–5.1s)，沈默段再说一遍；晚安窗5.5–6.5s离硬切仅0.5s，禁令压不住空窗。",
+    "fix_in_v11": [
+      "喂？~2.5–3.0s 后立即硬切~3.5s，去掉门卫持机空窗; no reply heard",
+      "硬切后 mute 0.3–0.5s",
+      "晚安 ONCE ~4.0–5.0s，5.0s后到片尾 ZERO speech",
+      "危险通话 ~6.0s(≥1s后)，~8.0s 切回门卫 SILENT",
+      "四处+Avoid 写死门卫段 ZERO 晚安/全片一次"
+    ]
+  },
+  "submitted_Asia_Singapore": "2026-11-01 01:11",
+  "completed_Asia_Singapore": "2026-11-01 ~01:23",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p83-audio_pnoqu_1793467352.mp4",
+  "coins": "130",
+  "cost_time_s": "650",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v11_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v11_手机版.mp4",
+  "audio": "48kHz AAC +faststart",
+  "self_test": {
+    "overall": "FAIL",
+    "review_dir": "/workspace/ep05-preview/jinyu/P09v11_review",
+    "checks": {
+      "1_guard_no_wanan": "FAIL (前段门卫无晚安PASS：喂？~2.0–2.5s，硬切~3.0s；但片尾回门卫镜头~13.5–14.2s 又出一声晚安)",
+      "2_wanan_count_eq_1": "FAIL (2x：~4.5–5.2s 沈默段 + ~13.5–14.2s 门卫回切段)",
+      "3_text_after_wanan": "PASS (危险通话~7.0–7.5s出现，晚安结束~5.2s后)",
+      "4_text_glyphs": "PASS"
+    },
+    "note": "硬切前渗漏已解决；新问题为尾段门卫静默镜头(8–15s，约7s)过长，模型在片尾补出晚安。按规则不自动重跑。"
+  }
+}
