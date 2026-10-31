@@ -1,0 +1,41 @@
+{
+  "task_id": "2116541598841143298",
+  "taskId": "2116541598841143298",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v10",
+  "webappId": "2110357037929558018",
+  "promptChars": 4868,
+  "picture6": "ref_危险通话.png",
+  "billing": "personal_RH_coins",
+  "reuse_uploads_from": "P09v7_upload / P09v8_upload / P09v9_upload",
+  "prompt_path": "05-workflow/ep05/营救陆沉/红绳片段09/金鱼_H3纯提示词_P09_v10.txt",
+  "v9_review": {
+    "root_cause": "v9 locked ONCE + late silence, but first「晚安」bled onto guard shot ~3.6–4.6s before HARD CUT (~5.5s); Shenmo also spoke once after cut → 2x total.",
+    "fix_in_v10": [
+      "Pre-HARD-CUT / guard shots: ZERO「晚安」phonemes (subject/summary/detailed/soundscape + Avoid)",
+      "After HARD CUT (~5.0s): lips CLOSED mute ~0.3–0.5s before speech",
+      "「晚安」hard window ONLY ~5.5–6.5s ONCE",
+      "「危险通话」≥1.0s after speech (~7.5–8.0s); cut back silent guard ~10.5s",
+      "Avoid: any「晚安」before HARD CUT / before ~5.5s"
+    ]
+  },
+  "submitted_Asia_Shanghai": "2026-10-31 22:43",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v10_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v10_手机版.mp4",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p81-audio_ppvij_1793458549.mp4",
+  "audio": "48kHz AAC +faststart",
+  "coins": "296",
+  "cost_time_s": "739",
+  "completed_Asia_Shanghai": "2026-10-31 22:56",
+  "self_test": {
+    "overall": "FAIL",
+    "review_dir": "/workspace/ep05-preview/jinyu/P09v10_review",
+    "checks": {
+      "1_guard_no_wanan": "FAIL",
+      "2_wanan_count_eq_1": "FAIL (2x)",
+      "3_text_after_wanan": "PASS (vs Shenmo line)",
+      "4_text_glyphs": "PASS"
+    },
+    "note": "硬切前~3.7–5.1s 门卫仍叠晚安；沈默段~5.8–7.2s 再一声。危险通话四字正确且在沈默句后。按规则不自动重跑。"
+  }
+}
