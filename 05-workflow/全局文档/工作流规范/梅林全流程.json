@@ -101,12 +101,12 @@
       },
       "widgets_values": [
         "16:9 (Widescreen)",
-        0.6,
+        0.7,
         32
       ],
       "widgets_values_named": {
         "aspect_ratio": "16:9 (Widescreen)",
-        "megapixels": 0.6,
+        "megapixels": 0.7,
         "multiple": 32
       },
       "color": "#232",

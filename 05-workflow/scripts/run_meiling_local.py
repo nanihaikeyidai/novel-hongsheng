@@ -328,7 +328,8 @@ def apply_clip(wf: dict, clip_dir: Path, megapixels: float, frames: int,
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--clip", required=True, help="片段目录名，如 红绳片段12g_你在骗我")
-    ap.add_argument("--megapixels", type=float, default=0.6)
+    ap.add_argument("--megapixels", type=float, default=0.7,
+                    help="默认 0.7（2026-11-01 全库统一；草稿可显式传 0.5/0.35）")
     ap.add_argument("--frames", type=int, default=192)
     ap.add_argument("--steps", type=int, default=15)
     ap.add_argument("--ref-images", type=int, default=REF_IMAGES,

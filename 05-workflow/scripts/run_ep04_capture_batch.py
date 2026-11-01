@@ -91,7 +91,7 @@ def main() -> int:
                 "--seconds", "15",
                 "--tag", j["tag"],
                 "--out", str(j["out"]),
-                "--template", "0.5",
+                "--template", "0.7",  # 2026-11-01 统一 0.7（原为 0.5 草稿档）
             ]
             log(f"开始 片段{j['id']} → {j['out'].name}")
             t0 = time.time()
