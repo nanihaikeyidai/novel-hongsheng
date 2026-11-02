@@ -1,0 +1,61 @@
+{
+  "task_id": "2117276855735386113",
+  "taskId": "2117276855735386113",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v12",
+  "webappId": "2110357037929558018",
+  "promptChars": 4988,
+  "picture6": "ref_危险通话.png",
+  "billing": "personal_RH_coins",
+  "reuse_uploads_from": "P09v11_upload",
+  "prompt_path": "05-workflow/ep05/营救陆沉/红绳片段09/金鱼_H3纯提示词_P09_v12.txt",
+  "v11_review": {
+    "root_cause": "v11 尾段切回门卫后持机静默约7s(8–15s)，模型在~13.5–14.2s补出第二声晚安",
+    "fix_in_v12": [
+      "Shot5 回切后立刻 LOWERS phone off ear，取消长静默贴耳空窗",
+      "危险通话 hold 缩短 ~1.5–2s 后尽快切走",
+      "Avoid 写死 any「晚安」after 5.0s + long silent phone-to-ear hold after return cut"
+    ]
+  },
+  "submitted_Asia_Singapore": "2026-11-02 23:25",
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v12_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v12_手机版.mp4",
+  "download_url": "https://rh-comfyui01.tos-cn-beijing.volces.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p87-audio_brehz_1793633754.mp4",
+  "audio": "48kHz AAC +faststart",
+  "coins": "253",
+  "cost_time_s": "631",
+  "completed_Asia_Singapore": "2026-11-02 23:36",
+  "self_test": {
+    "overall": "FAIL",
+    "review_dir": "/workspace/ep05-preview/jinyu/P09v12_review",
+    "asr": {
+      "喂？": "~2.4–2.6s (guard; medium/small ASR ~2.0–3.0s)",
+      "晚安_1": "~4.75–5.2s (Shenmo after hard cut ~3.0s; window ASR ~4.33–6.33s)",
+      "晚安_2": "~12.6–13.0s (energy peaks 12.6/13.0; window ASR ~12.2–14.2s on later Shenmo CU)",
+      "count_晚安": 2
+    },
+    "timeline_visual": {
+      "hard_cut": "~3.0s (t2.5 still guard saying 喂；t3 already Shenmo side-face + black glasses)",
+      "危险通话_first": "~6.5–7.5s beside Shenmo (t6 none; t6.5/t7 yes; 4 glyphs OK)",
+      "return_guard": "~8–10s (t8–t10 Anna mop + guard; phone lowering/holding)",
+      "bounce_back_shenmo": "~11–15s (t11+ Shenmo CU + 危险通话 again; second 晚安)"
+    },
+    "checks": {
+      "1_guard_no_wanan": "PASS (门卫段仅喂？~2.4–2.6s；硬切前无晚安)",
+      "2_wanan_count_eq_1": "FAIL (2x：~4.75–5.2s 沈默段 + ~12.6–13.0s 尾段；全片 ASR 曾把两声并成一段，以分窗 ASR+能量峰为准)",
+      "3_text_after_wanan": "PASS (危险通话~6.5s，第一声晚安结束~5.2s之后)",
+      "4_text_glyphs": "PASS (危险通话四字正确，在沈默旁)",
+      "5_no_ending_wanan": "FAIL (回切门卫后约11s又切回沈默侧脸+屏字，~12.6–13.0s 第二声晚安)",
+      "6_glasses": "PASS (沈默侧脸可见黑框眼镜)"
+    },
+    "note": "v12 缩短回切贴耳静默后，前段渗漏仍OK、第一声晚安与屏字时序OK；但尾段模型在~8s回切门卫后又~11s弹回沈默CU+危险通话，并在~12.6s补第二声晚安。按规则不自动重跑。"
+  },
+  "v12_review": {
+    "root_cause": "回切门卫后剩余片长仍约7s；模型未停在静默门卫，而在~11s弹回沈默侧脸+屏字空窗，再于~12.6–13.0s补第二声晚安（能量峰证实）。仅写 LOWERS phone / Avoid long ear-hold 不够。",
+    "possible_next_fix": [
+      "出字后直接收在沈默静默/环境音，不再回切门卫（或回切后立刻黑场/环境空镜结束）",
+      "禁止尾段再次出现沈默说话CU：Avoid any return to Shenmo CU after text / after 8s",
+      "总时长可接受提前结束在出字后，勿留长静默尾段"
+    ]
+  }
+}
