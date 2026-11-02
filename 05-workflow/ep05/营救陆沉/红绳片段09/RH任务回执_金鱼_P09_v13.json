@@ -1,0 +1,53 @@
+{
+  "task_id": "2117298304089018370",
+  "taskId": "2117298304089018370",
+  "status": "SUCCESS",
+  "prompt_version": "P09_v13",
+  "webappId": "2110357037929558018",
+  "promptChars": 4896,
+  "picture6": "ref_危险通话.png",
+  "billing": "personal_RH_coins",
+  "reuse_uploads_from": "P09v11_upload",
+  "prompt_path": "05-workflow/ep05/营救陆沉/红绳片段09/金鱼_H3纯提示词_P09_v13.txt",
+  "submitted_Asia_Shanghai": "2026-11-03 00:50",
+  "changes": [
+    "低沉进攻晚安+14yo Audio2",
+    "耳侧光不洒身",
+    "危险通话+绿异能光",
+    "门卫回你是谁",
+    "禁止弹回沈默二次晚安"
+  ],
+  "output_mp4": "/workspace/ep05-preview/jinyu/P09v13_金鱼草稿.mp4",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/P09v13_手机版.mp4",
+  "download_url": "https://rh-comfyui01.tos-cn-beijing.volces.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p80-audio_pxnlu_1793638785.mp4",
+  "audio": "48kHz AAC +faststart",
+  "coins": "545",
+  "cost_time_s": "561",
+  "completed_Asia_Shanghai": "2026-11-03 01:00",
+  "self_test": {
+    "overall": "PASS_WITH_NOTES",
+    "method": "frames + tighter-whisper small/medium + tight windows + RMS energy",
+    "review_dir": "/workspace/ep05-preview/jinyu/P09v13_review",
+    "asr_timestamps": {
+      "喂？": "2.0–3.0s (guard CU)",
+      "晚安": "3.93–5.93s (Shenmo CU; ONCE)",
+      "危险通话_visual": "~6.5–8.0s with green energy at Shenmo phone",
+      "你是谁": [
+        "10.1–12.1s",
+        "13.3–14.7s (TWICE; note)"
+      ]
+    },
+    "checks": {
+      "a_before_cut_no_wanan_guard_wei": "PASS — win_guard ASR only「喂」; zero 晚安 before ~3.5s hard cut",
+      "b_one_wanan_after_cut": "PASS — exactly one 晚安 ~3.93–5.93s on Shenmo; tone low/aggressive preferred but not objectively scored from ASR (note unverified)",
+      "c_text_after_wanan_green_energy": "PASS — 「危险通话」visible ~6.5–8s with cyan-green energy around Shenmo phone; glyphs match 危险通话",
+      "d_return_nishei_no_second_wanan_no_bounce": "PASS_WITH_NOTES — after return to guard says「你是谁」; ZERO second 晚安; frames 10s/12s stay on guard (no bounce to Shenmo speaking). NOTE:「你是谁」ASR twice (~10.1s and ~13.3s)",
+      "e_glasses_ear_glow": "PASS_WITH_NOTES — Shenmo black glasses visible on CU; Shenmo phone glow not flooding body. NOTE: guard opening already has green ear glow earlier than text beat"
+    },
+    "notes": [
+      "Full-clip medium ASR merged all dialogue into one span; use windowed ASR for QC",
+      "Do not auto re-run; wait for David confirmation"
+    ],
+    "completed_Asia_Shanghai": "2026-11-03 01:09"
+  }
+}

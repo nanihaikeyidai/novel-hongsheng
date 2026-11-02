@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Door guard: buzz-cut/flat-top + uniform locked to <Picture 2> from P08: navy jacket, light-blue shirt, navy tie, white badge. At post in <Picture 3>. ONE PHONE ONLY (abstract dark brick, NO readable UI). SAME LEFT hand raises ONCE; presses glowing front/screen flat to LEFT ear/cheek only—phone glow lights ear/cheek zone ONLY, NO spill glow on chest/jacket/body. Guard lines ONLY:「喂？」(~2.5–3.0s) then later「你是谁！」on return (~8.5–10.0s). INSTANT HARD CUT after「喂？」~3.5s—no silent hold. Guard shots: ZERO「晚安」. Avoid: two phones; floating/flipped handset; body/chest phone-glow flash; any「晚安」on guard; bounce-cut back to Shenmo after return.
+<Subject 2> Shenmo: 14yo boy; face/upper locked to <Picture 4>; PC room <Picture 5>. Keep thick black rectangular-rimmed eyeglasses exactly as <Picture 4>—frames on nose bridge and over ear every angle including tight side profile. After HARD CUT (~3.5s): side-face CU; phone to mouth/cheek ONCE (no repeat raise). Voice: 14yo teen timbre matched to <Audio 2>—low cold aggressive youthful threat (not soft/cute). Mute 0.3–0.5s lips closed, THEN「晚安」ONCE ONLY ~4.0–5.0s, single lip move, then LOCKED. From 5.0s: ZERO Shenmo speech; never reappears after return cut.
+<Subject 3> Anna (BG): <Picture 1> same as P08—grey cleaner cap, white mask, long black hair, dark grey cleaner uniform, grey gloves, red-handled mop; blurred behind guard; no line.
+<Subject 4> Screen-text + phone FX: exactly four Chinese characters「危险通话」, glyphs copied exactly from <Picture 6> (teal wispy strokes). Appears BESIDE SHENMO ONLY ≥1.0s AFTER「晚安」ends (~6.0s), SAME instant teal-green ability energy wisps wrap Shenmo's phone edges. NOT beside guard. Hold ~1.5–2s. Shenmo silent. No other text.
+<Audio 1> Guard rough male for「喂？」and later「你是谁！」.
+<Audio 2> Shenmo (S2) 14yo boy timbre for the single low aggressive「晚安」.
+
+summary: [reference generation] 15s. Guard answers ONE phone, ear-only glow (no body flash), says「喂？」~2.5–3.0s; INSTANT HARD CUT ~3.5s. Mute then Shenmo side-face CU WITH black glasses whispers「晚安」ONCE (~4.0–5.0s) low cold aggressive 14yo (<Audio 2>); lips lock; no repeat action. ~6.0s「危险通话」=<Picture 6> beside Shenmo WITH teal-green ability energy on his phone. Cut ~8.0s to guard (stay on guard to END—no bounce to Shenmo): tense, phone still at ear, says「你是谁！」~8.5–10.0s. Exactly one「晚安」.
+
+retention_analysis:
+<Subject 1> (1,2,5): fully_preserved - ear-only phone glow,「喂？」then return「你是谁！」, ZERO「晚安」, no bounce
+<Subject 2> (3,4): fully_preserved - 14yo + black glasses, single low aggressive「晚安」~4.0–5.0s, no reappear after return
+<Subject 3> (1): weak_reference - BG only
+<Subject 4> (4): fully_preserved -「危险通话」+ teal-green phone energy beside Shenmo ~6.0s
+detailed_description: 16:9 anime, P08 continuity. Spoken lines EXACTLY three:「喂？」(guard ~2.5–3.0s) →「晚安」(Shenmo ONCE ~4.0–5.0s) →「你是谁！」(guard ~8.5–10.0s). No second「晚安」. No BGM. Shenmo keeps black rectangular glasses.
+[Shot 1] At 00.000s medium at steel door <Picture 3>: buzz-cut <Subject 1> by card reader; LEFT chest pocket buzzes twice. Pulls ONE phone LEFT hand ONCE. Anna blurred. Silent. No body phone-glow.
+[Shot 2] At 02.000s CU: LEFT thumb swipes; SAME LEFT hand presses phone glowing front/screen to LEFT ear/cheek ONLY—glow on ear/cheek, jacket/chest stay dark. Irritated: <Subject 1> (S1) says: <d>[Chinese] 喂？</d> — ~2.5–3.0s. Cut IMMEDIATELY. ZERO「晚安」.
+[Shot 3] At 03.500s HARD CUT dark PC room <Picture 5>: tight SIDE-FACE CU <Subject 2> 14yo Shenmo (<Picture 4>), black rectangular glasses on. Phone near mouth ONCE. 03.5–03.9s MUTE, lips closed. THEN <Audio 2> low cold aggressive youthful: <Subject 2> (S2) says: <d>[Chinese] 晚安。</d> — ONLY ~4.0–5.0s, ONCE, single mouth move. NO text yet. Lips LOCKED.
+[Shot 4] At 06.000s still Shenmo profile WITH glasses, lips LOCKED:「危险通话」glyphs identical to <Picture 6> appear BESIDE SHENMO AND teal-green ability energy wisps wrap his phone edges SAME time; hold ~1.5–2s. ZERO speech. Cut away soon—do not linger then cut back to Shenmo later.
+[Shot 5] At 08.000s cut corridor: stay on <Subject 1> to END (NO cut back to Shenmo). Phone still screen-to-LEFT-ear, ear-only glow, tense sweat: <Subject 1> (S1) says: <d>[Chinese] 你是谁！</d> — ~8.5–10.0s, nervous. Then holds phone, eyes dart, SILENT ambient to end. ZERO「晚安」. End.
+
+overall_soundscape: Phone vibrate, swipe, rough「喂？」~2.5–3.0s, INSTANT cut ~3.5s. Mute, then ONE low cold aggressive 14yo「晚安」ONLY ~4.0–5.0s (<Audio 2>), soft whoosh as「危险通话」+ green phone energy ~6.0s; after cut ~8.0s tense「你是谁！」~8.5–10.0s; then room tone. Exactly one「晚安」. Avoid: second/echo「晚安」; any「晚安」after 5.0s;「晚安」on guard; soft cute Shenmo whisper; adult deep Shenmo; body/chest phone-glow spill; bounce cut to Shenmo after return; two phones; floating/flipped phone; Shenmo without glasses; text beside guard; glyphs ≠ <Picture 6>; BGM; watermark.
+
+non_diegetic_music: N/A
