@@ -38,7 +38,7 @@ ROOT = Path(r"D:\HermesWorkspace\ai小说\红绳")
 APP_ID = "2110357037929558018"
 SEG = ROOT / "05-workflow" / "ep05" / "营救陆沉" / "红绳片段12"
 
-PROMPT = SEG / "金鱼_H3纯提示词_P12_rh_v1.txt"
+PROMPT = SEG / "金鱼_H3纯提示词_P12_rh_v2.txt"
 REFS = [
     SEG / "P12_upload" / "image1_anna_cleaner.jpg",
     SEG / "P12_upload" / "image2_luchen_in_custody.jpg",
@@ -50,7 +50,7 @@ AUDIOS = [
 ]
 IMAGE_NODES = ("51", "49", "50")
 AUDIO_NODES = ("48", "14")
-OUT = SEG / "视频草稿" / "片段12_P12_金鱼草稿.mp4"
+OUT = SEG / "视频草稿" / "片段12_P12_金鱼草稿_v2.mp4"
 
 
 def main() -> int:
