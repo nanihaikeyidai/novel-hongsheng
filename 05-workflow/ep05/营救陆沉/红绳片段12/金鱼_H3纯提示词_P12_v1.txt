@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> same as P08–P11—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves. Quiet, fast, decisive; voice low and quick behind mask. No mop this segment.
+<Subject 2> Lu Chen: 17yo boy, identity AND in-custody look locked to <Picture 2> from P02—black messy short hair, blue-and-white school tracksuit jacket, dark blue track pants, white sneakers. Seated on the edge of the metal bed, ONE pair of plain steel handcuffs (blank polished steel, no engraving, no lettering): one loop around his RIGHT wrist, the other loop locked to a steel ring on the bed frame side. Calm face turning to wide-eyed shock.
+<Subject 3> Observation room: interior locked to <Picture 3> from P02—metal bed with tray (untouched burger, cup of water), grey wall panels, one-way observation window, dimmed cold-white light; small green rectangle above the window is a plain blank surface, no lettering. Heavy steel door stays OPEN in a shoulder-wide gap with corridor light spilling in.
+
+summary: [reference generation] 15s, continuing P11: Anna slips into the observation room through the open door gap; Lu Chen sits on the bed edge, right wrist cuffed to the bed ring. She crouches, covers his cuff with one gloved palm—the steel sweats condensation, softens and turns into clear water that drips down his wrist onto the floor; the cuff is gone, a faint red mark remains. He jerks his head up, whispers「你是……」; she stands, grips his forearm, says「别废话，快走。」and pulls him up and out through the door gap.
+
+retention_analysis:
+<Subject 1> (1,2,5): fully_preserved - enter, crouch, palm-cover, grip forearm, pull out
+<Subject 2> (1,3,4,5): fully_preserved - seated cuffed, shock, pulled up and out
+<Subject 3> (1,3,5): fully_preserved - bed/tray/window/door-gap layout constant
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - Lu Chen in-custody look
+<Picture 3>: fully_preserved - room layout, lighting
+
+detailed_description: 16:9 anime cinematic, scene continuity with P02 and P11 (same room as <Picture 3>, same Anna as <Picture 1>). Water effect is REALISTIC and RESTRAINED: thin mist and clear droplets only, nothing glowing, no energy. Only TWO spoken lines in the whole film, each ONCE.
+[Shot 1] At 00.000s medium: Anna steps in through the shoulder-wide door gap, cold corridor light on her back; Lu Chen sits on the bed edge, right wrist cuffed to the bed ring; he lifts his head and stares. Silent.
+[Shot 2] At 03.200s close-up from elbow down: she crouches by the bed and lays her grey rubber-gloved palm flat over the steel cuff on his RIGHT wrist; fine condensation beads up on the steel under her palm.
+[Shot 3] At 06.000s tight close-up on wrist and cuff only, frame from elbow down, his head NOT in shot: the steel softens and turns into clear water—a thin stream runs down over his fingers and drips onto the floor, pooling into a small puddle by the bed leg; the cuff loops are gone, leaving a faint red pressure mark on the skin. His fingers curl slightly. Hold ≥1.0s on the empty wrist.
+[Shot 4] At 08.500s medium close on Lu Chen: he jerks his head up, eyes wide, pupils shrinking, lips barely moving; low flat teenage male voice, small volume: <Subject 2> (S2) says: <d>[Chinese] 你是……</d> — ONLY ~08.8–09.6s, ONCE, trailing off. Anna stays out of focus behind.
+[Shot 5] At 10.200s medium: Anna is already standing, grips his forearm and pulls him up in one motion; low quick female voice behind mask: <Subject 1> (S1) says: <d>[Chinese] 别废话，快走。</d> — ONLY ~10.8–12.2s, ONCE. He rises and they move fast through the open door gap, Anna first, Lu Chen half a step behind; both exit frame, final hold ≥0.8s on the empty room: bed, tray, puddle glinting, door gap light.
+
+overall_soundscape: Corridor hum through door gap, rubber glove creak, soft steel condensation hiss, water droplets hitting floor, faint chain-less silence as cuffs vanish, one low teenage male voice「你是……」~08.8–09.6s, one low quick female voice「别废话，快走。」~10.8–12.2s, fast footsteps, room tone. Exactly two spoken lines total. Avoid: glowing energy effects, sparks, magic light; any third line or repeated line; any speech before ~08.5s; adult deep Lu Chen voice; Anna's voice loud; readable text on cuffs, tray, window sign or walls; door closing on its own; BGM; logo; watermark.
+
+non_diegetic_music: N/A
