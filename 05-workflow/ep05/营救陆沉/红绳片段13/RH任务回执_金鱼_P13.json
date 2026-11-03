@@ -1,0 +1,37 @@
+{
+  "unit": "P13",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2117646510794690561",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "406",
+    "taskCostTime": "555",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 3661,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\上传包\\image1_anna_cleaner.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\上传包\\image2_luchen_whiteshirt.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\上传包\\image3_stairwell.jpg"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\上传包\\audio1_anna.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\视频草稿\\片段13_P13_金鱼草稿.mp4"
+  ]
+}

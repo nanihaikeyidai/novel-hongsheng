@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> same as P08–P12—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves. Quiet, fast, decisive. Voice matched to <Audio 1>: small volume, low pitch, flat calm.
+<Subject 2> Lu Chen: 17yo boy, look locked to <Picture 2>—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, white sneakers. Hands FREE, no handcuffs, nothing on wrists. Voice: none, he stays silent this whole film.
+<Subject 3> Stairwell: interior locked to <Picture 3>—grey concrete walls, dark metal handrail, flights of grey stairs going DOWN, cold white fluorescent strips, small green emergency sign above a grey fire door; the sign is a plain abstract green rectangle, no readable letters. The corridor before it: grey wall panels, cold-white light, one small dark dome camera high on the wall.
+<Audio 1> Anna voice reference: young female, low pitch, quiet, flat calm delivery.
+
+summary: [reference generation] 15s, continuing P12: Anna pulls Lu Chen along the left wall of the cold corridor; she whispers the plan, then both RUN fast—shoulder brushing the wall—past the dome camera, she shoulders the fire door open under the green sign, and they race down the stairwell flights two steps at a time until both exit the bottom of frame.
+
+retention_analysis:
+<Subject 1> (1,2,3,4): fully_preserved - pull, whisper, run, shoulder door, race down
+<Subject 2> (1,2,3,4): fully_preserved - pulled, run head-low, race down
+<Subject 3> (3,4): fully_preserved - stairwell layout, green sign, lighting
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - Lu Chen look (white shirt, free hands)
+<Picture 3>: fully_preserved - stairwell geometry, mood
+
+detailed_description: 16:9 anime cinematic, scene continuity with P12 (same Anna as <Picture 1>, same Lu Chen as <Picture 2>, white shirt). Fast tense escape rhythm, handheld-like camera following. NO glowing effects. Only TWO spoken lines, both Anna, each ONCE.
+[Shot 1] At 00.000s medium: in the cold corridor Anna grips Lu Chen's sleeve and pulls him close to the left wall; hissed whisper from <Audio 1>, tiny volume: <Subject 1> (S1) says: <d>[Chinese] 别跑出声。安全出口，下楼。</d> — ONLY ~01.0–03.8s, ONCE. He nods once.
+[Shot 2] At 04.500s tracking medium: both RUN fast along the wall, shoes quiet, passing the small dome camera—Anna's shoulder angles in to block its view, Lu Chen keeps his head low beside her.
+[Shot 3] At 07.500s medium wide: corridor end, green sign above the grey fire door; Anna HITS the door open with her shoulder in one motion, door swings inward.
+[Shot 4] At 09.500s interior <Picture 3>: they burst in and race DOWN the stairs two steps at a time, one hand skimming the dark handrail, hair and sleeves flying; stair echo. Earpiece click, Anna's flat low voice from <Audio 1> tiny: <Subject 1> (S1) says: <d>[Chinese] 在撤。</d> — ONLY ~12.8–13.4s, ONCE. Both keep racing down and exit the bottom of frame; final hold ≥0.8s on the empty descending stairs.
+
+overall_soundscape: Cold corridor room tone, hushed whisper ~01.0–03.8s (<Audio 1>), fast soft shoe strikes, cloth movement, door bang and spring creak at ~07.5s, stairwell echo with rapid descending footsteps, earpiece click and one flat tiny line「在撤。」~12.8–13.4s (<Audio 1>). Exactly two spoken lines total, both Anna. Avoid: Lu Chen speaking or any third voice; glowing effects, sparks, magic light; readable text on signs, walls or camera; door closing on its own; falling or stumbling; BGM; logo; watermark.
+
+non_diegetic_music: N/A
