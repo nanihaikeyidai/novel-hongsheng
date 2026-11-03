@@ -18,7 +18,7 @@
 - 用个人 RH 币，在网页上跑。
 - 成片要求：无字幕、无 BGM、无水印；`negativePrompt` 必填。
 
-- **RH 敏感词会拦提交**：英文提示词避开 demonic / devil / devilish / evil / murder / kill / blood / coma / corpse / death / electrocute 等；「晚安」用 cold quiet whisper / extremely low, slow, breathy（情绪压到最低）替代「恶魔低语」类写法。屏幕字「危险通话」可保留中文；英文特效描述用 teal-blue flame / wispy flame，少写 ghost-fire / 鬼火。提交前自检，超 5000 字也要砍。
+- **RH 敏感词会拦提交**：英文提示词避开 demonic / devil / devilish / evil / murder / kill / blood / coma / corpse / death / electrocute 等；P09「晚安」情绪用 `low cold aggressive` / `predatory quiet threat`（仍挂 14 岁 `沈默.wav`），勿写 soft/cute/软糯耳语，也勿写 demonic / devilish。屏幕字「危险通话」可保留中文；英文特效描述用 teal-blue / teal-green wispy energy，少写 ghost-fire / 鬼火。提交前自检，超 5000 字也要砍。
 
 - **RH 敏感词实测（P09 v5 失败 / v4 曾过）**：v5 已去掉 demonic/devil/ghost-fire 仍被拦。对比 v4→v5 新增高风险英文：`rear` / `rear-cam` / `upside-down` / `backwards`，以及大量全大写 `FORBIDDEN`。优先沿用**已通过的 v4 句式**，眼镜与「屏幕朝耳」用正向描述（screen/front face to ear；keep black rectangular glasses），禁止项改写为 `Avoid: …`；少写 rear/cam/upside/backwards。技能字「危险通话」可保留中文；英文 FX 用 teal-blue wispy skill-name strokes，少写 ghost-fire / 鬼火 / flame/fire 堆叠。提交前字数 ≤5000 且自检上述词。
 
@@ -30,9 +30,9 @@
 
 ## 四、人物表演
 - 通用：说话时不转头。
-- **安娜**：腹黑，表面平静、话里带刺；ND 清洁工装加口罩；对白声音小、音调低。
+- **安娜**：腹黑，表面平静、话里带刺；ND 清洁工装加口罩；对白声音小、音调低。营救行动句（如「别废话，快走。」）用 **flat / cold / calm**，Avoid raised / urgent / 拔高喊话（P12 v2）。
 - **沈默**：14 岁少年音（不低沉、不成年），情绪平淡低压、漫不经心，盯着屏幕边敲键盘边说，只拍侧面，不出正脸。
-  - EP05 营救段默认沈默**不出画**，用耳机电话音质画外音（去高低频、发闷）；**P09 例外**：门卫说完「喂？」硬切沈默**侧脸特写**，他拿着自己的手机用压到最低的耳语（cold quiet whisper，勿写 demonic）只说一次「晚安。」；技能字「危险通话」出现在**沈默人物旁边**（不是门卫旁），且**必须在他说完「晚安」之后**再出现。
+  - EP05 营救段默认沈默**不出画**，用耳机电话音质画外音（去高低频、发闷）；**P09 例外**：门卫说完「喂？」硬切沈默**侧脸特写**，他拿着自己的手机用**低沉带进攻性**耳语（`low cold aggressive` / `predatory quiet threat`；仍挂 14 岁 `沈默.wav`，勿软糯、勿 cute、勿写 demonic）只说一次「晚安。」；技能字「危险通话」出现在**沈默人物旁边**（不是门卫旁），且**必须在他说完「晚安」之后**再出现；出字同时沈默手机旁起青绿异能光；说完后切回门卫，门卫紧张回「你是谁！」；晚安动作与台词都只一次，禁止尾段弹回沈默再说。
   - 用 `shenmo.wav` 做音色参考。
   - **沈默出画必须写眼镜**：`shenmo.png` 有厚黑框矩形眼镜时，提示词 `subject_definitions` 与侧脸镜头行都要写死「black rectangular-rimmed glasses / frames on nose bridge and over ear」；禁止 bare face / no glasses / 侧面丢框（P09 v4 成片曾丢眼镜 → v5 锁定）。
 - **门卫**：平头（以 P08 成片截帧为准），刚睡醒，语气低沉；说话时在岗亭内拍特写。
@@ -40,6 +40,7 @@
   - 手机贴耳时手指必须托住手机；禁止手机悬空挂在耳朵上。
   - **接电话朝向**：屏幕正面（亮屏那面）贴耳朵/脸颊；禁止拿反、后置摄像头朝耳、倒持（P09 v4 成片曾拿反 → v5 锁定）。
   - 倒地昏迷时**闭眼**（eyes closed），禁止睁眼或半睁。
+- **陆沉**（EP05 在押）：黑乱短发 + **白衬衫**（袖挽至肘）+ 深色长裤；形象锁 ep04 / 在押参考图（如 E04P07 截帧、P12 `<Picture 2>`）；Avoid 蓝白校服运动套装等错造型（P12 v2）。少年音色偏 low flat，禁止成年低沉嗓。
 - 动作由角色自己完成，不靠台词或旁白提示（例：门卫倒下时安娜就站在旁边，顺手摸走门禁卡、刷卡开门）。
 
 ## 五、镜头、衔接与场景一致性
@@ -49,6 +50,7 @@
 - 参考素材统一从 `05-workflow/归档素材` 取。
 - ND 停车场：入口是下坡，车头朝前开进去，不许倒车；栏杆必须由保安按按钮才会打开。
 - 特效：电流在电缆里要跑得飞快、距离要长，画面动态要高。
+- 化水／冷凝特效要克制：薄雾 + 清水珠滴落即可；Avoid 发光、火花、能量光（P12 化铐）。
 - 新插入段落示例（P06b）：安娜刷门禁卡从地下车库进电梯，小心瞄一眼摄像头，脸部特写观察四周。
 - **门锁开门**：刷卡／解锁后门不得自动开；角色必须操作**右侧**门把手再**推开**；禁止自动开、从左边开门、左侧拉门观感（P11 v4 成片曾自动开／偏左 → v5 锁定）。
 
@@ -78,8 +80,9 @@
 - **回切后弹回说话角色仍会复读**（P09 v11→v12）：v12 把回切后贴耳静默改成立刻放下手机，前段「喂？」后硬切与第一声「晚安」+「危险通话」时序已过；但 ~8s 回切门卫后模型又在 ~11s 弹回沈默侧脸+屏字，并在 ~12.6–13.0s 补第二声「晚安」（分窗 ASR + RMS 峰）。改法方向：①出字后不要再给长尾段；可停在沈默静默/环境音或短空镜收束；②Avoid 写死 `no return to speaking CU after text / after ~8s`、`ZERO speech after first 晚安`；③自测必须分窗 ASR，不能只看全片 ASR（两声会被并成一段）。
 
 - **回切门卫新台词也要 ONCE + 短尾**（P09 v13）：v13 在出字后硬切回门卫并加紧张回「你是谁！」；前半「喂？」→硬切→唯一「晚安」→「危险通话」+绿异能火均过，且未再弹回沈默说晚安。但分窗 medium ASR 显示「你是谁」仍念了两遍（~10.1–12.1s 与 ~13.3–14.7s）。改法：①回切后新台词同样写 ONCE / no second / no echo；②说完立刻闭嘴或短动作收束，不留 3s+ 贴耳空窗；③Avoid 写 `second 你是谁 / echo after first reply`。
-- **绿异能火绑定屏字时机**（P09 v13）：「危险通话」出现时沈默手机旁起青绿异能光带（v13 ~6.5–8s 画面过关）；正写 `green energy WITH on-screen text`，Avoid 写 `green flame before text / green glow on guard phone early`。v13 门卫开场贴耳已见青绿光，属过早，下一版把绿光锁在沈默出字镜。
+- **绿异能火绑定屏字时机**（P09 v13）：「危险通话」出现时沈默手机旁起青绿异能光带（v13 ~6.5–8s 画面过关）；正写 `green energy WITH on-screen text`，Avoid 写 `green flame before text / green glow on guard phone early`。v13 门卫开场贴耳已见青绿光，属过早；**若重做**再把绿光锁在沈默出字镜（v13 已过关，不强制）。
 - **耳侧光不洒身**（P09 v13）：接电话亮屏只贴耳朵一侧；正写 `screen glow only at ear / cheek edge` + Avoid `chest/torso phone light flood`。v13 门卫贴耳光较集中，沈默侧脸未大面积洒身。
+- **P09 v13 已过关（2026-11-03）**：David 接受成片（含尾段「你是谁」念两遍）；后续 P09 **保持 v13**，不为「你是谁」复读单独重跑。绿异能火若重做，再把开场门卫侧的过早绿光锁死到沈默出字镜；当前过关版不强制改。
 
 - **成片自测再交付**：抽帧 + 听音频（ASR）+ 核对口型/画面。核对①每句台词内容与出现次数；②是否叠在正确镜头；③屏字内容与出现时机（是否在台词结束之后）；④眼镜、手机朝向、门把手等硬约束。自测不过关：复盘提示词 → 汇报改法 → 等 David 确认后再重跑；不把未自测成片发给 David。
 
