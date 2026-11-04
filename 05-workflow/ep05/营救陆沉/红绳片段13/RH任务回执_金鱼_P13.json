@@ -2,15 +2,15 @@
   "unit": "P13",
   "workflow": "金鱼",
   "appId": "2110357037929558018",
-  "taskId": "2117646510794690561",
+  "taskId": "2117656454176669697",
   "status": "SUCCESS",
   "usage": {
     "consumeMoney": null,
-    "consumeCoins": "406",
-    "taskCostTime": "555",
+    "consumeCoins": "359",
+    "taskCostTime": "491",
     "thirdPartyConsumeMoney": null
   },
-  "promptBytes": 3661,
+  "promptBytes": 3768,
   "params": "16:9 / 15s / 1.5MP / simple / 12",
   "refs": [
     "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\上传包\\image1_anna_cleaner.jpg",
@@ -32,6 +32,6 @@
     ]
   },
   "saved": [
-    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\视频草稿\\片段13_P13_金鱼草稿.mp4"
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段13\\视频草稿\\片段13_P13_金鱼草稿_v2.mp4"
   ]
 }

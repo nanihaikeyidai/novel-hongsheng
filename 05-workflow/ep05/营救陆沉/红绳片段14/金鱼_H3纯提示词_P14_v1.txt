@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> same as P08–P13—grey cleaner cap, white face mask, long black hair, dark grey short-sleeve cleaner uniform, grey rubber gloves. Quiet, fast, decisive. Voice matched to <Audio 1>: small volume, low pitch, urgent but controlled, never screaming.
+<Subject 2> Lu Chen: 17yo boy, look locked to <Picture 2>—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, white sneakers. Hands FREE, nothing on wrists. Silent this whole film, no lines.
+<Subject 3> Stairwell: interior locked to <Picture 3>—grey concrete walls, dark metal handrail, flights of grey stairs going DOWN, cold white fluorescent strips NOW overridden by RED EMERGENCY LIGHTING: red alarm beacons on the ceiling strobe the whole stairwell in pulsing red light, walls and stairs washed red, shadows swinging as the beacons pulse. No readable letters anywhere.
+<Audio 1> Anna voice reference: young female, low pitch, quiet, urgent controlled delivery.
+
+summary: [reference generation] 15s, continuing P13: deep in the stairwell, the facility's red alarm starts blaring—red beacons strobe the whole stairwell red. Anna, one step behind Lu Chen, calls one low urgent line; both break into a faster sprint and keep racing DOWN flight after flight without stopping, red light pulsing on their backs until they exit the bottom of frame.
+
+retention_analysis:
+<Subject 1> (1,2,3,4): fully_preserved - call out, sprint, race down
+<Subject 2> (1,2,3,4): fully_preserved - running, racing down
+<Subject 3> (1,2,3,4): fully_preserved - same stairwell, now red-strobed
+<Picture 1>: attribute_transfer - Anna look under red light
+<Picture 2>: fully_preserved - Lu Chen look (white shirt tinted red by lighting only)
+<Picture 3>: fully_preserved - stairwell geometry; lighting state = red strobe
+
+detailed_description: 16:9 anime cinematic, direct continuity with P13 (same stairwell as <Picture 3>, same Anna as <Picture 1>, same Lu Chen as <Picture 2>—white shirt reads red ONLY because of the red emergency light, his identity does not change). Constant downward motion, camera following from behind and above. NO glowing magic, NO fighting, NO third person. Only ONE spoken line, ONCE.
+[Shot 1] At 00.000s interior <Picture 3>: mid-descent on a flight, the red alarm starts—ceiling beacons begin to strobe, the grey walls and stairs wash in pulsing red; both flinch half a beat and keep moving. Alarm wail rises.
+[Shot 2] At 02.500s medium from behind: Anna one step behind Lu Chen, she reaches and shoves his shoulder forward, low urgent voice from <Audio 1>, small volume: <Subject 1> (S1) says: <d>[Chinese] 快跑，不要停下。</d> — ONLY ~02.8–04.6s, ONCE.
+[Shot 3] At 05.500s tracking wide: both sprint DOWN two steps at a time, hands skimming the dark handrail, coats and sleeves flying, red light strobing their backs with each beacon pulse; they sweep around a landing and take the next flight.
+[Shot 4] At 10.000s to end: faster cutting rhythm, still descending—flight, landing, flight; the red strobe steadies into a slower pulse; both keep racing down and exit the bottom of frame on the last beat; final hold ≥0.8s on the empty red-strobed descending stairs.
+
+overall_soundscape: Rising electronic alarm wail and pulsing beacon tone throughout, doubled stairwell echo, rapid descending footsteps, cloth movement, one low urgent female line「快跑，不要停下。」~02.8–04.6s (<Audio 1>). Exactly one spoken line total. Avoid: Lu Chen speaking or any other voice; gunshots, explosions, magic glow, sparks; anyone chasing them visible in frame; readable text on signs, walls or beacons; stopping, standing still or turning back; BGM; logo; watermark.
+
+non_diegetic_music: N/A
