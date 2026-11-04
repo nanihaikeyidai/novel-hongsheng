@@ -1,0 +1,15 @@
+{
+  "P01a": {
+    "taskId": "2114283413979750401",
+    "status": "SUCCESS",
+    "download": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段01\\片段01_P01a_云端草稿.mp4",
+    "bytes": 4994379
+  },
+  "P01b": {
+    "taskId": "2114283464705671170",
+    "status": "SUCCESS",
+    "download": "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段01\\片段01_P01b_云端草稿.mp4",
+    "bytes": 3916539
+  },
+  "P02_retry_stdout_tail": "[cache] 陆沉_人设.png -> openapi/bd14969a06fe4427e8d1364b651fce511296a23290ebaa88944bac8256290407.png\n[cache] 场景_EP05_ND观察室门口_门卫岗_夜_v5.jpg -> openapi/d1948a9c1cfe55df60fcde0262ff2b28f355368a773ae7d9f55a061bd0fa7350.jpg\n[submit] P02 ...\n"
+}
