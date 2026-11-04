@@ -1,0 +1,24 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> same as P12–P14—grey cleaner cap, white face mask, long blue-black hair (dark navy, visible blue sheen), dark grey short-sleeve cleaner uniform, grey rubber gloves. She holds a folded CLEAR plastic rain poncho. Quiet, fast, decisive. Voice matched to <Audio 1>: small volume, low pitch, flat calm.
+<Subject 2> Lu Chen: 17yo boy, look locked to <Picture 2>—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, white sneakers. Hands FREE, no handcuffs. Voice matched to <Audio 2>: low flat teenage male timbre, few words.
+<Location> Rainy back service exit, build strictly from this text: night, HEAVY rain falling in visible sheets; on the LEFT a grey steel fire door is pushed ajar, a narrow blade of pale interior light spilling through the gap onto wet concrete; a bare concrete loading platform with shallow puddles reflecting cold blue light; chain-link fence and two dim street lamps far behind, darkness beyond. No readable text anywhere; no signage with letters.
+<Audio 1> Anna voice reference: young female, low, quiet, flat calm.
+<Audio 2> Lu Chen voice reference: teenage boy, low, flat, tense.
+
+summary: 15s, continuing P14: Anna holds the rainy steel door ajar with her shoulder, shoves a clear rain poncho into Lu Chen's hands; he fumbles it open and asks who she is; she answers the organization and the order without turning her head; she keeps watch on the rain.
+
+retention_analysis:
+<Subject 1> (1,2,3,4): fully_preserved - shoulder door, hand over poncho, answer, watch
+<Subject 2> (1,2,3,4): fully_preserved - receive, fumble open, ask, nod
+<Picture 1>: attribute_transfer - Anna look
+<Picture 2>: fully_preserved - Lu Chen look (white shirt, free hands)
+
+detailed_description: 16:9 anime cinematic, scene continuity with P14 (same Anna as <Picture 1>—her long hair stays blue-black: dark navy with a visible blue sheen; same Lu Chen as <Picture 2>, white shirt, no handcuffs). Location per <Location>: night heavy rain, steel fire door ajar on the LEFT, wet concrete, cold blue tones, NO glowing effects. Only TWO spoken lines, each ONCE.
+[Shot 1] At 00.000s medium: rain hammers down; Anna braces the steel door ajar with her shoulder, eyes scanning the dark outside, then shoves the folded clear rain poncho into Lu Chen's hands without looking back.
+[Shot 2] At 02.000s medium close: he fumbles the poncho open, finds the collar, half pulls it on; from <Audio 2> his low flat voice, quiet but tense: <Subject 2> (S1) says: <d>[Chinese] 你是谁的人。为什么要救我。</d> — ONLY ~02.6–05.0s, ONCE.
+[Shot 3] At 05.800s medium: Anna keeps facing the rain, doesn't turn; her flat calm voice from <Audio 1>, small volume, even pace: <Subject 1> (S1) says: <d>[Chinese] 翠羽社。今晚把你带活的回来。先活着。</d> — ONLY ~06.2–10.4s, ONCE. (Not a shout, no urgency.)
+[Shot 4] At 10.800s medium: Lu Chen grips the poncho hem and gives one small nod; Anna lifts her chin toward the rain outside; both square up toward the doorway—story continues next scene; end ≥1.0s hold on the open door gap with rain pouring through, the pale light blade on wet concrete.
+
+overall_soundscape: Dense night-rain wall, door hinge creak, poncho plastic rustle, soft male line ~02.6–05.0s (<Audio 2>), flat quiet female line ~06.2–10.4s (<Audio 1>), distant faint thunder. Exactly two spoken lines total. Avoid: third voice, shouting, glowing effects, sparks, magic light; readable text on walls or door; door closing on its own; umbrellas; cars; BGM; logo; watermark.
+
+non_diegetic_music: N/A

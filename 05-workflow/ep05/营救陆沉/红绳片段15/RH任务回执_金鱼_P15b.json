@@ -1,0 +1,39 @@
+{
+  "unit": "P15b",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2117801528122376194",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "388",
+    "taskCostTime": "531",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 3493,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\上传包b\\image1_shenmo.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\上传包b\\image2_comproom.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\上传包b\\image3_luchen_whiteshirt.jpg"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\上传包b\\audio1_luchen.wav",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\上传包b\\audio2_shenmo.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": [
+      "48",
+      "14"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段15\\视频草稿\\片段15_P15b_金鱼草稿.mp4"
+  ]
+}

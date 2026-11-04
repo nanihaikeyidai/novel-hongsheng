@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Lu Chen: 17yo boy, same as previous scenes—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, now wearing a CLEAR plastic rain poncho over it. Voice matched to <Audio 1>: low flat teenage male timbre, few words.
+<Subject 2> Shen Mo: look locked to <Picture 1>—17-18yo, messy black hair, THICK black rectangular-rimmed eyeglasses (glasses visible in every shot of him), black hoodie with the hood pulled up, multi-pocket utility vest over it, cargo pants, dark under-eye circles. Sits at the desk in the dark monitor room, face lit only by screens. Voice matched to <Audio 2>: low, dry, bored-cold, tiny volume.
+<Subject 3> Locations: PART A rainy back-service exit at night—grey steel fire door, heavy rain, blue-grey tones, two figures leave INTO the rain; PART B monitor room interior locked to <Picture 2>—dark room, three large screens glowing with a map and data streams, one small tracking red dot on screen, desk, cables, otherwise unlit. No readable text on any screen.
+<Audio 1> Lu Chen voice reference: teenage boy, low, flat.
+<Audio 2> Shen Mo voice reference: young male, low, dry, flat-cold.
+
+summary: 15s, two-part closing scene: at the rainy exit Lu Chen answers and both walk into the rain until they vanish; HARD CUT to the dark monitor room where Shen Mo watches the red dot leave the building outline, pulls his hood lower, closes the call window and mutters one flat line.
+
+retention_analysis:
+<Subject 1> (1,2): fully_preserved - answer, walk into rain
+<Subject 2> (3,4,5): fully_preserved - watch dot, pull hood, close window, mutter
+<Subject 3> (1,2,3,4,5): fully_preserved - rain exit then monitor room
+<Picture 1>: attribute_transfer - Shen Mo look (glasses, hood up)
+<Picture 2>: fully_preserved - monitor room layout, screens
+
+detailed_description: 16:9 anime cinematic, continuity with P15a (same Lu Chen, white shirt under clear poncho; same rainy night). Cold blue tones, NO glowing effects. Only TWO spoken lines, each ONCE. One hard cut at ~07.0s.
+[Shot 1] At 00.000s medium: rain pours; Lu Chen tightens his grip on the poncho and gives a small nod; from <Audio 1> his low flat voice: <Subject 1> (S1) says: <d>[Chinese] 翠羽社。……先走。</d> — ONLY ~00.3–02.3s, ONCE.
+[Shot 2] At 02.800s wide: the two figures step out of the doorway and walk fast INTO the rain, backs to camera, growing smaller through the rain haze; by ~06.5s they are barely silhouettes; hold a beat on the empty rainy doorway.
+[Shot 3] At 07.000s HARD CUT to interior <Picture 2>: dark monitor room; Shen Mo at the desk, glasses catching screen light; on the main screen a small red dot slides out of the building outline and keeps moving away.
+[Shot 4] At 10.000s close: he pulls the hood a little lower, taps once to close the call window, and mutters to the empty room from <Audio 2>, tiny volume, dry and flat: <Subject 2> (S1) says: <d>[Chinese] 出了。别再让我救第二次。</d> — ONLY ~10.8–12.8s, ONCE. The main screen switches to another data stream; screen glow holds; slow fade out by 15s.
+
+overall_soundscape: Heavy rain fading under the cut, then dark-room PC hum and screen buzz, soft click of closing a window ~10.5s, one dry tiny line ~10.8–12.8s (<Audio 2>). Exactly two spoken lines total. Avoid: third voice, glowing effects, sparks; readable text on screens or walls; anyone else in the monitor room; alarm sounds; BGM; logo; watermark.
+
+non_diegetic_music: N/A
