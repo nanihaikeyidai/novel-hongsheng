@@ -1,0 +1,26 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1>—grey cleaner cap, white face mask, long blue-black hair (dark navy, visible blue sheen), dark grey cleaner uniform, blank white badge with no lettering, grey gloves. She LEADS in single file, one step AHEAD. Voice <Audio 1>: low, small, flat cold calm. ONE line, ONCE.
+<Subject 2> Lu Chen: 17yo, <Picture 2>—black messy short hair, white shirt sleeves rolled, dark pants. FOLLOWS one step BEHIND, never side by side. Silent.
+<Subject 3> Stairwell: <Picture 3>—ONE unbroken DOWNWARD flight, full-width grey concrete steps, side-wall handrails ONLY, NO central divider, no second flight. Every footfall lands on a LOWER step. LOW frontal camera on a lower landing facing UP; runners come TOWARD camera and grow LARGER. RED beacons strobe. Signs are PLAIN blank surfaces—no characters, no pseudo-glyphs, no lettering.
+<Audio 1> Anna voice: young female, low pitch, small volume, flat calm. ONE line, ONCE, then silent.
+
+summary: [reference generation] 15s, continuing P13: red alarm starts, beacons strobe red. Anna LEADS in single file, Lu Chen behind; she calls ONE low calm line ONCE in a tight profile close-up. Both clear the whole flight in under 6s at full sprint toward camera, each footfall clearing 3–4 steps, until they exit the bottom of frame.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - leads, one line, blue-black hair
+<Subject 2> (1,2,3,4,5): fully_preserved - follows behind, white shirt
+<Subject 3> (1,2,3,4,5): fully_preserved - ONE flight, no split lanes, anime look
+<Picture 1>: attribute_transfer - Anna, hair still BLUE
+<Picture 2>: fully_preserved - white shirt tinted red by light only
+<Picture 3>: fully_preserved - LAST FRAME of the previous anime shot, same cel look and red-beacon lighting
+
+detailed_description: 16:9 cel-anime cinematic, exact same art style, linework, red-beacon lighting and grey concrete palette as <Picture 3>; same Anna as <Picture 1> (hair blue-black, never black), same Lu Chen as <Picture 2> (white shirt reads red from light only). LOW frontal camera facing UP the flight; runners come TOWARD camera and grow LARGER, heads sinking lower; Shot 2 is one hard-cut profile insert. ONE unbroken flight, NO central divider, NO second flight. SPEED AS COUNTABLE DISTANCE: they clear the entire flight in under 6 seconds, each footfall clears 3–4 steps, step edges streak past, the landing behind them shrinks fast. Chests pitched ~25 degrees forward, arms pumping hard, knees driving high, long blue-black hair and sleeves whipping straight back, speed lines, strobe-lit afterimages, camera shake, whip-pan between shots, 5 shots with shorter cuts after ~09s. Never slow down. Exactly ONE spoken line, ONCE, ~02.8–04.4s ONLY; ZERO syllables before and after—lips CLOSED after the line.
+[Shot 1] At 00.000s interior <Picture 3>: single file, Anna AHEAD, Lu Chen behind; both blast TOWARD camera, 3–4 steps per footfall; red alarm starts, beacons strobe, steps wash red. Sharp two-tone siren, dominant throughout, stairwell echo. Silent.
+[Shot 2] At 02.500s HARD CUT to a TIGHT PROFILE CLOSE-UP of Anna, side view not frontal: face turned down the stairs, NOT toward camera; low flat calm voice <Audio 1>. Her blue-black hair (dark navy, visible blue sheen) reads BLUE under the strobe—light changes only tint, never pigment. Lu Chen behind, out of focus. <Subject 1> (S1) says: <d>[Chinese] 被发现了，快跑不要停。</d> — ONLY ~02.8–04.4s, ONCE. Alarm ducks for this line only; lips close at once.
+[Shot 3] At 04.800s low frontal wide: still single file, Anna leading; both hammer DOWN 3–4 steps per footfall, step edges streaking, speed lines, hair whipping back, whip-pan. Silent, ZERO speech.
+[Shot 4] At 09.500s LOW ANGLE on pounding shoes: sneakers slam 3–4 steps per beat, red strobe afterimages, camera shakes, motion blur on step edges. Silent.
+[Shot 5] At 12.000s to end: shorter cuts, both accelerate out the bottom of frame; hold ≥0.8s on the empty descending stairs, alarm and footsteps only, ZERO speech to the end.
+
+overall_soundscape: Sharp two-tone emergency siren, metallic edge, dominant, doubled stairwell echo, rapid accelerating footsteps. Exactly ONE spoken line total, ONCE: one low flat calm female line「被发现了，快跑不要停。」~02.8–04.4s (<Audio 1>), intelligible over the siren; ZERO speech before and after. Avoid: a second utterance, echo, repeat, mumble or any syllable after ~04.4s; Lu Chen speaking or any other voice; a third person in frame; any split in the stair flight; readable text, pseudo-glyphs or invented symbols on signs, walls, beacons or badges; BGM; logo; watermark.
+
+non_diegetic_music: N/A

@@ -1,0 +1,38 @@
+{
+  "unit": "P14_v5",
+  "versionNote": "参考 P13 归档下楼成片抽帧作 Picture 3；垂直下降锁 + 低机位迎面锁；删方向反转词与背后跟拍；保留 v4 台词 ONCE 锁与蓝黑发锚点",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2118129853785145346",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "401",
+    "taskCostTime": "549",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 4977,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image1_anna_cleaner.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image2_luchen_whiteshirt.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image3_stairwell_downward_P13.jpg"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\audio1_anna.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\视频草稿\\片段14_P14_金鱼草稿_v5.mp4"
+  ]
+}

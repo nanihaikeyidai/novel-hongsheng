@@ -14,4 +14,8 @@ Uploaded: api/e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.w
 Submitting AI app task (webapp 2110357037929558018)...
 taskId = 2118002344313708545
 Task ID: 2118002344313708545
-Waiting for result..................................
+Waiting for result................................................................................................... done (500s)
+status: SUCCESS usage: {'consumeMoney': None, 'consumeCoins': '379', 'taskCostTime': '519', 'thirdPartyConsumeMoney': None}
+Fixed MOV→MP4 container: 片段14_P14_金鱼草稿_v3.mp4
+saved D:\HermesWorkspace\ai小说\红绳\05-workflow\ep05\营救陆沉\红绳片段14\视频草稿\片段14_P14_金鱼草稿_v3.mp4 (17623 KB)
+{"done": "P14", "taskId": "2118002344313708545", "saved": ["D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\视频草稿\\片段14_P14_金鱼草稿_v3.mp4"]}

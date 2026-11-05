@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1>—grey cleaner cap, white face mask, long blue-black hair (dark navy, visible blue sheen), dark grey short-sleeve cleaner uniform, grey rubber gloves. Voice as <Audio 1>: small volume, low pitch, flat cold calm clipped. ONE line, ONCE.
+<Subject 2> Lu Chen: 17yo boy, <Picture 2>—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, white sneakers. Hands FREE. Silent throughout.
+<Subject 3> Stairwell: DOWNWARD switchback as in <Picture 3>—two parallel flights of grey steps separated by a square half-landing; BOTH flights go DOWN in elevation, every footfall lands on a LOWER step; the 180-degree pivot at the landing is IN THE HORIZONTAL PLANE ONLY and NEVER changes the vertical direction. Camera stays LOW on a lower landing facing UP the flight; runners come TOWARD the camera and grow LARGER beat by beat; steps recede UPWARD into the background. Grey walls, dark handrail; RED beacons strobe. All signs are PLAIN blank surfaces—no characters of any language, no pseudo-glyphs, no lettering.
+<Audio 1> Anna voice: young female, low pitch, small volume, flat calm. ONE line, ONCE, then silent to the end.
+
+summary: [reference generation] 15s, continuing the archived P13 descent in <Picture 3>: the red alarm starts and beacons strobe red. Anna, one step behind Lu Chen, calls ONE low calm line ONCE; both race DOWN two steps at a time TOWARD the camera, heads sinking lower frame by frame, PIVOT 180 degrees on the half-landing horizontally only, then keep descending on the parallel flight—never breaking stride—until they exit the bottom of frame.
+
+retention_analysis:
+<Subject 1> (1,2,3,4): fully_preserved - one line, downward sprint
+<Subject 2> (1,2,3,4): fully_preserved - running, pivot
+<Subject 3> (1,2,3,4): fully_preserved - switchback, both flights DOWN, low frontal camera, red-strobed
+<Picture 1>: attribute_transfer - Anna under red light
+<Picture 2>: fully_preserved - white shirt tinted red by light only
+<Picture 3>: fully_preserved - P13 DOWNWARD descent composition
+
+detailed_description: 16:9 anime cinematic, direct continuity with the archived P13 descent (same stairwell as <Picture 3>, same Anna as <Picture 1>, same Lu Chen as <Picture 2>; his white shirt reads red ONLY from emergency light; Anna's hair stays blue-black (dark navy, blue sheen), never black). LOW frontal camera on a lower landing facing UP the flight: the two come TOWARD the camera and grow LARGER every beat, heads sinking LOWER in frame from first beat to last; steps recede UPWARD behind them; camera slides along the railing at the same low frontal angle. BOTH flights descend; each footfall lands on a LOWER step; the ONE 180-degree pivot is a HORIZONTAL turn only. Exactly ONE spoken line, ONCE, ~02.8–04.4s ONLY; ZERO spoken syllables before ~02.8s and ZERO from ~04.4s to the end—both lips CLOSED after the line.
+[Shot 1] At 00.000s interior <Picture 3>: mid-descent on the first flight, running TOWARD the camera, the red alarm starts—beacons strobe, steps wash red. A sharp two-tone siren cuts in, dominant throughout, stairwell echo. Both flinch and keep coming down, silent.
+[Shot 2] At 02.500s medium frontal, camera low: Anna one step behind Lu Chen, she shoves his shoulder forward, low flat calm voice from <Audio 1>, small volume: <Subject 1> (S1) says: <d>[Chinese] 被发现了，快跑不要停。</d> — ONLY ~02.8–04.4s, ONCE. Her words stay intelligible: the alarm ducks for this line only. Lips close at once.
+[Shot 3] At 04.800s tracking wide, low and frontal: both sprint DOWN two steps at a time toward the camera, every step LOWER than the last; they reach the square half-landing and PIVOT 180 degrees IN THE HORIZONTAL PLANE ONLY in one continuous stride—the handrail changes to the other hand—then keep descending on the parallel flight, still TOWARD the camera, one flight LOWER. Red light strobes their fronts. Both silent, lips closed, ZERO speech.
+[Shot 4] At 10.000s to end: still descending, heads sinking lower in frame, handrail on the opposite side; the strobe steadies into a slower pulse; both race down and exit the bottom of frame on the last beat; hold ≥0.8s on the empty descending stairs, alarm and footsteps only, ZERO speech to the end.
+
+overall_soundscape: Sharp two-tone emergency siren, metallic edge, dominant over footsteps and voices, doubled stairwell echo, rapid descending footsteps. Exactly ONE spoken line total, ONCE: one low flat calm female line「被发现了，快跑不要停。」~02.8–04.4s (<Audio 1>), intelligible over the siren; ZERO speech before and ZERO after until the end. Avoid: a second utterance of her line, echo, repeat, mumble or any spoken syllable after ~04.4s; Lu Chen speaking or any other voice; magic glow, sparks; a third person visible in frame; readable text, pseudo-glyphs or invented symbols on signs, walls or beacons; BGM; logo; watermark.
+
+non_diegetic_music: N/A

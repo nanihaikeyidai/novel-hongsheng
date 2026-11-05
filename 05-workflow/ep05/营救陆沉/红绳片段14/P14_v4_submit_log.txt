@@ -1,0 +1,21 @@
+=== P14 v4 折返楼梯 | 金鱼 2110357037929558018 | 4906 bytes | 15s | 1.5MP ===
+  image1 node 51 -> image1_anna_cleaner.jpg
+  image2 node 49 -> image2_luchen_whiteshirt.jpg
+  image3 node 50 -> image3_stairwell.jpg
+  Audio1 node 48 -> audio1_anna.wav
+Uploading image1_anna_cleaner.jpg...
+Uploaded: api/c38f0dcc89fe907e91e8e316198813c9e786a79df8f1c099d13fc3defeed7b43.jpg
+Uploading image2_luchen_whiteshirt.jpg...
+Uploaded: api/9a32e7b732b461a7d6c4dea6f19d7c7e4ce7a9545e8bbed8a4daa59bb51008a1.jpg
+Uploading image3_stairwell.jpg...
+Uploaded: api/99b32bbbcc61e4ca4572df43e3a7dee203c640d97b14eb9b0bb43c8f3f6018f6.jpg
+Uploading audio1_anna.wav...
+Uploaded: api/e0b4fcac805ceebe7f0b6d7d64a371b56f01ef0e28b3dfe2a0d7f374c9895f5e.wav
+Submitting AI app task (webapp 2110357037929558018)...
+taskId = 2118019248071868417
+Task ID: 2118019248071868417
+Waiting for result............................................................................................................... done (560s)
+status: SUCCESS usage: {'consumeMoney': None, 'consumeCoins': '425', 'taskCostTime': '581', 'thirdPartyConsumeMoney': None}
+Fixed MOV→MP4 container: 片段14_P14_金鱼草稿_v4.mp4
+saved D:\HermesWorkspace\ai小说\红绳\05-workflow\ep05\营救陆沉\红绳片段14\视频草稿\片段14_P14_金鱼草稿_v4.mp4 (13924 KB)
+{"done": "P14", "taskId": "2118019248071868417", "saved": ["D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\视频草稿\\片段14_P14_金鱼草稿_v4.mp4"]}

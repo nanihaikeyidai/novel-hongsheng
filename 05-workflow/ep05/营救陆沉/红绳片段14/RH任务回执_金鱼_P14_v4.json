@@ -1,0 +1,38 @@
+{
+  "unit": "P14_v4",
+  "versionNote": "楼梯改折返式（两段反向 + 半层平台 180° 转身），删 Avoid: turning back；保留 v3 台词 ONCE 锁与蓝黑发锚点",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2118019248071868417",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "425",
+    "taskCostTime": "581",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 4906,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image1_anna_cleaner.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image2_luchen_whiteshirt.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\image3_stairwell.jpg"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\上传包\\audio1_anna.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段14\\视频草稿\\片段14_P14_金鱼草稿_v4.mp4"
+  ]
+}

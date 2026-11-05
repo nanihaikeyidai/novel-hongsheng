@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1>—grey cleaner cap, white face mask, long blue-black hair (dark navy, visible blue sheen), dark grey short-sleeve cleaner uniform, grey rubber gloves. Voice matched to <Audio 1>: small volume, low pitch, flat cold calm clipped, never raised. ONE line, ONCE.
+<Subject 2> Lu Chen: 17yo boy, locked to <Picture 2>—black messy short hair, plain white shirt with sleeves rolled to elbows, dark long pants, white sneakers. Hands FREE. Silent throughout.
+<Subject 3> Stairwell: SWITCHBACK (U-turn) geometry as in <Picture 3>—TWO parallel flights of grey concrete steps running in OPPOSITE directions, joined by a square half-landing; at each landing the runners PIVOT 180 degrees and descend the next flight in the REVERSE direction. Grey walls, dark handrail; RED beacons strobe the whole stairwell. All signs are PLAIN blank surfaces—no characters of any language, no pseudo-glyphs, no lettering.
+<Audio 1> Anna voice reference: young female, low pitch, small volume, flat calm. ONE line, ONCE, then silent to the end.
+
+summary: [reference generation] 15s, continuing P13: in the switchback stairwell the red alarm starts and beacons strobe red. Anna, one step behind Lu Chen, calls exactly ONE low calm line ONCE; both race down the first flight, PIVOT 180 degrees at the half-landing, then race down the second flight in the OPPOSITE direction—never breaking stride, red light pulsing on their backs until they exit the bottom of frame.
+
+retention_analysis:
+<Subject 1> (1,2,3,4): fully_preserved - one line, sprint, pivot
+<Subject 2> (1,2,3,4): fully_preserved - running, pivot
+<Subject 3> (1,2,3,4): fully_preserved - switchback, red-strobed
+<Picture 1>: attribute_transfer - Anna under red light
+<Picture 2>: fully_preserved - white shirt tinted red by light only
+<Picture 3>: fully_preserved - switchback (OPPOSITE flights + half-landing), red strobe
+
+detailed_description: 16:9 anime cinematic, direct continuity with P13 (same stairwell as <Picture 3>, same Anna as <Picture 1>, same Lu Chen as <Picture 2>—his white shirt reads red ONLY from the emergency light; Anna's hair stays blue-black (dark navy, blue sheen), never black; color shifts come from light only). The two flights are visibly ANTI-PARALLEL and travel direction REVERSES exactly once; camera follows from behind on the first flight, SWINGS with the 180-degree pivot at the landing, then follows from behind on the reverse flight. NO glowing magic, NO fighting, NO third person. Exactly ONE spoken line in the entire 15s, ONCE, inside ~02.8–04.4s ONLY; ZERO spoken syllables before ~02.8s and ZERO from ~04.4s to the end—both lips CLOSED after the line.
+[Shot 1] At 00.000s interior <Picture 3>: mid-descent on the FIRST flight, the red alarm starts—ceiling beacons strobe, walls and steps wash in pulsing red. A sharp two-tone siren cuts in, dominant for the full 15s, stairwell echo. Both flinch half a beat and keep moving. Both silent.
+[Shot 2] At 02.500s medium from behind: Anna one step behind Lu Chen, she reaches and shoves his shoulder forward, low flat calm voice from <Audio 1>, small volume: <Subject 1> (S1) says: <d>[Chinese] 被发现了，快跑不要停。</d> — 9 characters, ONLY ~02.8–04.4s, ONCE, one continuous utterance. Her words stay intelligible: the alarm ducks for this line only. Lips close at once; no reply, no pause waiting for an answer.
+[Shot 3] At 04.800s tracking wide: both sprint DOWN two steps at a time on the first flight, hands skimming the handrail; they reach the square half-landing and PIVOT 180 degrees in one continuous stride—bodies turn, the handrail changes to the other hand—then take the next flight DOWN in the OPPOSITE direction. Camera swings with the turn; red light strobes their backs. Both silent, lips closed, ZERO speech.
+[Shot 4] At 10.000s to end: faster cutting, still descending on the REVERSE-direction flight, handrail now on the opposite side; the strobe steadies into a slower pulse; both race down and exit the bottom of frame on the last beat; hold ≥0.8s on the empty red-strobed stairs, alarm and footsteps only, ZERO speech to the end.
+
+overall_soundscape: Sharp two-tone emergency siren with a metallic edge throughout, dominant over footsteps, cloth and voices, doubled stairwell echo, pulsing beacon tone, rapid descending footsteps. Exactly ONE spoken line total, ONCE: one low flat calm female line「被发现了，快跑不要停。」~02.8–04.4s (<Audio 1>), intelligible over the siren; ZERO speech before and ZERO after until the end. Avoid: a second utterance of her line, echo, repeat, mumble or any spoken syllable after ~04.4s; Lu Chen speaking or any other voice; gunshots, explosions, magic glow, sparks; anyone chasing them visible in frame; readable text, pseudo-glyphs or invented symbols on signs, walls or beacons; BGM; logo; watermark.
+
+non_diegetic_music: N/A

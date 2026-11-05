@@ -1,0 +1,26 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1>—grey cleaner cap, white mask, long BLUE-BLACK hair (dark navy, blue sheen), dark grey uniform, blank badge, grey gloves. She LEADS. Voice <Audio 1>: low, small, flat cold calm. ONE line, ONCE.
+<Subject 2> Lu Chen: 17yo, <Picture 2>—black messy short hair, white shirt sleeves rolled, dark pants. FOLLOWS behind, SILENT.
+<Subject 3> ND underground garage: <Picture 3>—cold concrete bay, sparse fluorescent tubes, low ceiling pipes, pillars with BLANK surfaces, wet floor reflections, pale bay lines, distant car silhouettes; ONE dark navy sedan right of center, ALL doors CLOSED at start, clear floor on its near side. Faint distant RED alarm glow ONLY; main light cold blue-grey. NO text, digits, plate characters, emblem, glyphs, third person.
+<Audio 1> Anna: low pitch, small volume, flat calm. ONE line, ONCE, then silent.
+
+summary: [reference generation] 15s, continuing the alarm: both burst through the bottom fire door into the garage, sprint to the SAME dark sedan; Anna opens the near-side passenger door, gives ONE low calm line ONCE in a profile close-up; Lu Chen gets in, Anna in the driver seat, doors shut, siren muffled, headlights on. Car does NOT drive away.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - leads, blue-black hair, one line
+<Subject 2> (1,2,3,4,5): fully_preserved - follows, silent, white shirt
+<Subject 3> (1,2,3,4,5): fully_preserved - garage, one sedan, blank surfaces
+<Picture 1>: attribute_transfer - Anna, hair still BLUE
+<Picture 2>: fully_preserved - white shirt, red tint from light only
+<Picture 3>: fully_preserved - anime garage bay, single sedan, cold blue-grey with distant red
+
+detailed_description: 16:9 cel-anime, EXACT same flat 2D shading, linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; hand-painted anime background, NOT photorealistic, NOT 3D. Same Anna as <Picture 1> (hair blue-black, never black), same Lu Chen as <Picture 2> (white shirt reads red only from alarm light). ONE dark navy sedan, doors CLOSED until Anna opens the near-side front passenger door; wide clear floor on that side. NO second sedan in foreground. Bay numbers, plates, pillar signs and dashboard UI are ALL blank. Faint distant red pulses; main light cold fluorescent. ONE spoken line, ONCE, ~06.2–07.2s ONLY; ZERO syllables before and after—lips CLOSED. Car NEVER drives away; stays parked with headlights on.
+[Shot 1] At 00.000s wide low angle in <Picture 3>: the bottom fire door opens from the stairwell; Anna LEADS, Lu Chen behind, both sprint INTO the garage toward camera; the dark sedan sits right of center, doors closed. Muffled siren echo, rapid footsteps on wet concrete, distant red pulse. Silent.
+[Shot 2] At 03.000s tracking medium: both sprint to the sedan, Anna ahead; she raises one gloved hand, the lights blink ONCE; a soft lock click; footsteps stop. Silent, ZERO speech.
+[Shot 3] At 05.500s HARD CUT to a TIGHT PROFILE CLOSE-UP of Anna, side view not frontal: she pulls the NEAR-SIDE FRONT PASSENGER DOOR open, face toward the car, NOT toward camera; her blue-black hair (dark navy, blue sheen) reads BLUE; light changes tint only, never pigment. Lu Chen behind, out of focus. <Subject 1> (S1) says: <d>[Chinese] 上车</d> — ONLY ~06.2–07.2s, ONCE, low flat calm <Audio 1>. Alarm ducks for this line only; lips close at once.
+[Shot 4] At 08.000s medium: Lu Chen ducks into the FRONT PASSENGER SEAT, white shirt; HARD CUT to Anna already IN THE DRIVER SEAT pulling the belt; both doors swing shut. Door thuds, seat creak, belt click. Silent, ZERO speech.
+[Shot 5] At 11.500s to end: interior medium through windshield, both seated, doors closed; siren MUFFLED behind glass; Anna presses a BLANK start button, headlights wash the empty bay ahead. Hold >=0.8s. NO departure, ZERO speech to the end.
+
+overall_soundscape: Muffled two-tone siren, garage echo, rapid footsteps on wet concrete, lock click, door thuds, seat creak, belt click, headlight relay. ONE line total, ONCE: low flat calm female line "上车" ~06.2–07.2s (<Audio 1>); ZERO speech before and after. Avoid: a second utterance, echo or mumble; Lu Chen or any other voice; a third person; the car driving away or reversing; readable text, glyphs, plate characters, emblems or dashboard UI; magic glow; BGM; logo; watermark.
+
+non_diegetic_music: N/A
