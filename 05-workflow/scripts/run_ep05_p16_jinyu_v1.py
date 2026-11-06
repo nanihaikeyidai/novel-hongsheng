@@ -60,7 +60,7 @@ PROMPT = SEG / "金鱼_H3纯提示词_P16_v1.txt"
 REFS = [
     SEG / "上传包" / "image1_anna_cleaner.jpg",
     SEG / "上传包" / "image2_luchen_whiteshirt.jpg",
-    SEG / "上传包" / "image3_garage_anime_v2.jpg",
+    SEG / "上传包" / "image3_garage_anime_v3.jpg",
 ]
 AUDIOS = [
     SEG / "上传包" / "audio1_anna.wav",

@@ -1,0 +1,69 @@
+{
+  "case_id": "P09_wanan_r2",
+  "description": "第二轮：第一轮 text 情绪把 F0 抬到 212Hz（失败）。改用「明确低音高 + 尾音下压」的描述、冷静态向量、以及原片低沉原声作情绪参考，目标 F0 贴近原片 113Hz、尾音下沉、语速放慢。",
+  "source_video": "D:/HermesWorkspace/ai小说/红绳/05-workflow/ep05/营救陆沉/红绳片段09/视频草稿/片段09_P09v13_金鱼草稿_云端旧版黑发.mp4",
+  "line": "晚安。",
+  "language": "ZH",
+  "voice_ref": "voicelab_shenmo_ref.wav",
+  "emotion_ref": "voicelab_p09_wanan_orig.wav",
+  "window": [4.00, 4.95],
+  "original_line_asr": [4.07, 4.77],
+  "out_dir": "候选音频",
+  "candidates": [
+    {
+      "name": "E_text_low",
+      "note": "改写情感文本：明确「比平时更低的音高 / 尾音向下压绝不上扬 / 音量偏小」，去掉会让 F0 抬高的「气声」措辞",
+      "emotion": {
+        "mode": "text",
+        "emotion_text": "用比平时更低的音高说话，声音沉而稳，压得很低；语速放慢，每个字都咬得清楚；冷酷、带着不加掩饰的威胁和警告，像对猎物下最后通牒；没有疑问语调，尾音向下压并干脆收住，绝不上扬；音量偏小，不喊不吼，没有笑意。仍是少年音色，只是音调略沉。",
+        "strength": 0.90
+      },
+      "duration_factor": 1.15,
+      "seed": 20261106
+    },
+    {
+      "name": "F_vector_cold",
+      "note": "冷静态向量（calm 主导 + 少量怒/厌恶），语速放慢，不加载 Qwen",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.0,
+        "angry": 0.25,
+        "sad": 0.05,
+        "afraid": 0.0,
+        "disgusted": 0.12,
+        "melancholic": 0.08,
+        "surprised": 0.0,
+        "calm": 0.75,
+        "strength": 1.0
+      },
+      "duration_factor": 1.15,
+      "seed": 20261106
+    },
+    {
+      "name": "G_refaudio_orig",
+      "note": "正式音色 + 原片「晚安」低沉原声作情绪参考音频（reference_audio 模式），让模型继承原片 113Hz 的低沉底色",
+      "emotion": {"mode": "reference_audio", "strength": 0.88},
+      "duration_factor": 1.10,
+      "seed": 20261106
+    },
+    {
+      "name": "H_origvoice_cold",
+      "note": "原片切片作音色 + 冷静态向量（贴原片音色的另一条路）",
+      "voice_ref": "voicelab_p09_wanan_orig.wav",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.0,
+        "angry": 0.25,
+        "sad": 0.05,
+        "afraid": 0.0,
+        "disgusted": 0.12,
+        "melancholic": 0.08,
+        "surprised": 0.0,
+        "calm": 0.75,
+        "strength": 1.0
+      },
+      "duration_factor": 1.12,
+      "seed": 20261106
+    }
+  ]
+}

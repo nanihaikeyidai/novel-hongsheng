@@ -1,0 +1,28 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1>—grey cleaner cap, white mask, long BLUE-BLACK hair (dark navy, blue sheen), dark grey uniform, grey gloves, blank badge. DRIVER seat. Voice <Audio 1>.
+<Subject 2> Lu Chen: 17yo, <Picture 2>—black messy short hair, white shirt sleeves rolled, dark pants. FRONT PASSENGER seat, silent.
+<Subject 3> Lan Sun: <Picture 4>—26yo lean tall, ELECTRIC-BLUE messy short hair, geometric shaved stripe at left temple, black angular wrap sunglasses, graphite-black long tactical coat over dark-navy high-collar techwear, black gloves with thin blue wire lines, faint blue energy threads at his fingers, blue reflection inside his lenses. Ignore the grey studio background of <Picture 4>.
+<Subject 4> ND garage lane: <Picture 3>—same underground garage, now the driving LANE: cold concrete pillars with yellow-black base stripes, low pipes, wet epoxy floor, empty bays, sparse cold fluorescent tubes. NO red light.
+<Audio 1> Anna: low female timbre.
+
+summary: [reference generation] 15s. The dark sedan crawls down the garage lane; far ahead a man walks out from a pillar and stops facing the car head-on. Big close-up: Lan Sun, arrogant evil grin. Close-up: Anna, cold sweat, furrowed brows, one line. Then a hard commanding order. Ends on Lu Chen's startled face. The car decelerates but never leaves the garage and never hits anyone.
+
+retention_analysis:
+<Subject 1> (1,2,3,4,5): fully_preserved - cap, mask, blue-black hair
+<Subject 2> (1,2,3,4,5): fully_preserved - white shirt, silent
+<Subject 3> (1,2,3,4,5): fully_preserved - blue hair, temple stripe, sunglasses, black coat
+<Subject 4> (1,2,3,4,5): fully_preserved - garage lane, cold fluorescent
+<Picture 1:2>: fully_preserved | <Picture 3>: fully_preserved | <Picture 4>: attribute_transfer
+
+detailed_description: 16:9 cel-anime, EXACT same flat 2D shading, linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; hand-painted anime background, NOT photorealistic, NOT 3D. NO RED LIGHT AT ALL: key light is cold fluorescent plus the car headlights only. ONE dark navy sedan, doors CLOSED, moving FORWARD at low walking pace then decelerating to a stop; it NEVER leaves the garage and NEVER touches a person. Headlights point FORWARD, pillars sweep from center to the frame edges. All plates, bay numbers, pillar signs and dashboard surfaces are BLANK. Lan Sun stands at least two meters ahead of the car and never gets in.
+
+[Shot 1] At 00.000s medium from inside the cabin behind the front seats, over both shoulders: the sedan crawls down the lane, headlights sweeping pillars and empty bays, dust in the beam, wet floor reflections. Tires, low engine hum. Silent.
+[Shot 2] At 03.500s fixed POV through the windshield from inside the cabin, faint glass reflection at the edges: twenty meters ahead a tall lean man steps out from behind a pillar and STOPS, FACING the car head-on, arms loose. He is backlit by cold tubes, his front a dark silhouette with only a cold rim on the blue hair. The car slows. Light brake squeal. Silent.
+[Shot 3] At 06.000s HARD CUT to a BIG CLOSE-UP of Lan Sun, front three-quarter: blue tousled hair, shaved temple stripe, black sunglasses; his mouth pulls into a WIDE ARROGANT EVIL GRIN showing teeth, chin lifted, delighted and predatory, NOT friendly; a faint blue reflection blooms inside both lenses and thin blue energy threads curl at his gloved fingertips. Faint electric hum. He does not speak.
+[Shot 4] At 09.000s HARD CUT to a close-up of Anna in the driver seat, front three-quarter: COLD SWEAT beads on her forehead and temple, brows tightly FURROWED, jaw clenched, eyes locked ahead. She says: <d>[Chinese] 蓝隼，可恶，被钓鱼了</d> — ONLY ~09.6–10.9s, ONCE, low and tight through clenched teeth, NOT shouted.
+[Shot 5] At 11.500s HARD CUT to a closer Anna, same angle: eyes snap hard, gloved hand already on the seat-belt buckle. She barks: <d>[Chinese] 准备跳车</d> — ONLY ~11.8–13.0s, ONCE, hard, sharp, commanding, louder and faster than the last line.
+[Shot 6] At 13.500s HARD CUT to a close-up of Lu Chen in the front passenger seat: he whips his head around, EYES WIDE, mouth slightly open, startled. Hold to the end. Silent.
+
+overall_soundscape: Cabin mix — low engine hum, tires on wet concrete, a light brake squeal, faint electric hum near Lan Sun, two Anna lines only. Distant siren almost gone. ONE line each at the two windows, ZERO speech elsewhere. Avoid: a third utterance, mumbling, echo, any male voice, Lan Sun speaking, the car leaving the garage or hitting anyone, red light, readable text, glyphs, plate characters, emblems, dashboard UI, magic glow, BGM, logo, watermark.
+
+non_diegetic_music: N/A

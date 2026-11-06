@@ -1,0 +1,39 @@
+{
+  "case_id": "P09_wanan_r4",
+  "description": "第四轮（David 2026-11-06 反馈：不够低沉、语速要加快、声音要更轻，追加「带着一些戏谑的笑容情绪」）。四条轴拆开做：模型侧只负责戏谑笑意和稍快的底子；降音高/加速/轻声/气声全部交给 voice_shaper.py + replace_line.py，避免互相抵消。音色仍锁原片「晚安」切片（F0 113Hz 少年音），按 David 规范 P09 例外只许「低沉带进攻性」，绝不成年化。",
+  "source_video": "D:/HermesWorkspace/ai小说/红绳/05-workflow/ep05/营救陆沉/红绳片段09/视频草稿/片段09_P09v13_金鱼草稿_云端旧版黑发.mp4",
+  "line": "晚安。",
+  "language": "ZH",
+  "voice_ref": "voicelab_p09_wanan_orig.wav",
+  "emotion_ref": "voicelab_p09_wanan_orig.wav",
+  "window": [4.20, 5.50],
+  "hard_end": 5.65,
+  "original_line_asr": [4.07, 4.77],
+  "out_dir": "候选音频",
+  "_window_note": "沿用第三轮窗口；本轮语速加快、台词更短，1.2s 可用窗口绰绰有余。hard_end 5.65 是下一句 5.95s 的硬边界。起音点仍由 replace_line.py 用能量包络自动检测（实测 4.29s），不用 ASR 时间戳。",
+  "candidates": [
+    {
+      "name": "M_smirk_text",
+      "note": "戏谑笑意走 Qwen 文本情绪，strength 0.55 防止抬 F0；明确写「不是开心、不笑出声、不软糯」，符合 David 规范 P09 的 low cold aggressive 口径",
+      "emotion": {
+        "mode": "text",
+        "emotion_text": "嘴角挂着一点戏谑的笑在说话，像猫逗弄已经跑不掉的老鼠，轻蔑、玩味、稳操胜券；声音压得很低很轻，气多声少，贴着耳边只让一个人听见；语速偏快、干脆利落，尾音轻轻一挑就收住，绝不拖长；不是开心，没有笑出声，不甜、不软糯、不撒娇；保持少年原本偏低偏冷的音色，不要变亮、不要变高、不要变响。",
+        "strength": 0.55
+      },
+      "duration_factor": 0.92,
+      "seed": 20261106
+    },
+    {
+      "name": "N_smirk_vector",
+      "note": "笑意用八维向量：轻 happy + 微怒 + 轻蔑(disgusted)，calm 仍为主；与 M 互为对照，验证笑意靠文本还是靠向量更自然",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.22, "angry": 0.18, "sad": 0.0, "afraid": 0.0,
+        "disgusted": 0.12, "melancholic": 0.0, "surprised": 0.05, "calm": 0.48,
+        "strength": 0.80
+      },
+      "duration_factor": 0.94,
+      "seed": 20261106
+    }
+  ]
+}

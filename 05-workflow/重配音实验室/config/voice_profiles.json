@@ -1,0 +1,17 @@
+{
+  "_note": "角色 → 正式参考音色。路径相对 红绳/05-workflow/归档素材/人物参考音色/；复制到 ComfyUI/input 时必须改成 ASCII 文件名。",
+  "source_dir": "D:/HermesWorkspace/ai小说/红绳/05-workflow/归档素材/人物参考音色",
+  "comfyui_input": "F:/Work-Fisher纯净包2026.8.7/ComfyUI/input",
+  "profiles": {
+    "沈默": {
+      "file": "沈默.wav",
+      "as_comfy_input": "voicelab_shenmo_ref.wav",
+      "timbre": "14 岁少年音，平淡低压、漫不经心；P09 定稿口径＝贴耳气声耳语、音量压低 5dB、毫无起伏的死亡宣告，F0 仍锁 113Hz 附近，不成年化",
+      "duration": "6.544s / 48kHz / mono"
+    },
+    "安娜": {"file": "安娜.wav", "as_comfy_input": "voicelab_anna_ref.wav"},
+    "陆沉": {"file": "陆沉.wav", "as_comfy_input": "voicelab_luchen_ref.wav"},
+    "老韩": {"file": "老韩.wav", "as_comfy_input": "voicelab_laohan_ref.wav"},
+    "蓝隼": {"file": null, "note": "暂无正式参考音色；需先从既有成片切出或另行录制"}
+  }
+}

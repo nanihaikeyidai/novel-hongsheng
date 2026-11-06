@@ -1,0 +1,71 @@
+{
+  "case_id": "P09_wanan_r3",
+  "description": "第三轮（David 2026-11-06 反馈：声音不够轻、要增加气声、悄悄话的死亡宣告感）。两条路并行：模型侧用原生 [breath]/[quick_breath] 标记 + 耳语情绪文本 + 字间停顿；后期侧由 whisperize.py 注入气流噪声层并把台词整体压低 6dB。音色仍锁原片切片（F0 114Hz / 相关 0.998），不成年化。",
+  "source_video": "D:/HermesWorkspace/ai小说/红绳/05-workflow/ep05/营救陆沉/红绳片段09/视频草稿/片段09_P09v13_金鱼草稿_云端旧版黑发.mp4",
+  "line": "晚安。",
+  "language": "ZH",
+  "voice_ref": "voicelab_p09_wanan_orig.wav",
+  "emotion_ref": "voicelab_p09_wanan_orig.wav",
+  "window": [4.20, 5.50],
+  "hard_end": 5.65,
+  "original_line_asr": [4.07, 4.77],
+  "out_dir": "候选音频",
+  "_window_note": "原片「晚」4.30-4.58 /「安」4.70-4.92，下一句到 5.95s 才起，故窗口可从原来的 5.05s 放宽到 5.50s（可用台词长度约 1.2s），留给耳语慢吐；hard_end 5.65 是下一句硬边界。",
+  "candidates": [
+    {
+      "name": "I_breath_token",
+      "note": "模型原生 [breath] 标记放在两字之间，模拟换气；情绪沿用 H 的冷静态向量",
+      "text": "晚[breath]安。",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.0, "angry": 0.25, "sad": 0.05, "afraid": 0.0,
+        "disgusted": 0.12, "melancholic": 0.08, "surprised": 0.0, "calm": 0.75,
+        "strength": 1.0
+      },
+      "duration_factor": 1.10,
+      "seed": 20261106
+    },
+    {
+      "name": "J_whisper_text",
+      "note": "Qwen 文本情感写「贴耳气声耳语」，strength 压到 0.6 防止上一轮 F0 飙到 200Hz",
+      "emotion": {
+        "mode": "text",
+        "emotion_text": "贴着对方耳朵说的气声耳语，几乎不用声带振动，声音非常轻、非常近，像只让一个人听见；气息多、声少，咬字放松，语速略慢；毫无情绪起伏，平静地下死亡宣告，冷得像已经决定好了结果；不喊不吼，没有笑意，尾音向下收住。保持原本的少年音色和偏低的音高，不要变亮、不要变高、不要变响。",
+        "strength": 0.60
+      },
+      "duration_factor": 1.12,
+      "seed": 20261106
+    },
+    {
+      "name": "K_pause_breath",
+      "note": "两字之间塞 [quick_breath] + 显式 0.12s 停顿，做出慢吐节奏；采样放松让发声更松更气",
+      "text": "晚[quick_breath]<pause=0.12>安。",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.0, "angry": 0.20, "sad": 0.05, "afraid": 0.0,
+        "disgusted": 0.10, "melancholic": 0.08, "surprised": 0.0, "calm": 0.80,
+        "strength": 1.0
+      },
+      "sampling": {
+        "pause_preset": "off",
+        "inference_cfg_rate": 0.55,
+        "cfm_temperature": 1.15,
+        "diffusion_steps": 25
+      },
+      "duration_factor": 1.05,
+      "seed": 20261106
+    },
+    {
+      "name": "L_flat_death",
+      "note": "极冷向量（calm 0.9），情绪起伏几乎为零，配合最慢语速做「宣告」而非「威胁」",
+      "emotion": {
+        "mode": "vector",
+        "happy": 0.0, "angry": 0.10, "sad": 0.05, "afraid": 0.0,
+        "disgusted": 0.05, "melancholic": 0.05, "surprised": 0.0, "calm": 0.90,
+        "strength": 1.0
+      },
+      "duration_factor": 1.20,
+      "seed": 20261106
+    }
+  ]
+}

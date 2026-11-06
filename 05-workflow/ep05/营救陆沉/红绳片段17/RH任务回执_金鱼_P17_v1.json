@@ -1,0 +1,40 @@
+{
+  "unit": "P17_v1",
+  "versionNote": "车库车道行驶→蓝隼正面挡车→狂妄邪恶笑特写→安娜冷汗皱眉「蓝隼，可恶，被钓鱼了」→严厉命令「准备跳车」→陆沉惊讶收；车不出库不撞人；蓝隼不上车；全段无红光；生成闸门 P17_CONFIRMED=1",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2118510201878564865",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "398",
+    "taskCostTime": "544",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 4711,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\上传包\\image1_anna_cleaner.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\上传包\\image2_luchen_whiteshirt.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\上传包\\image3_garage_anime_v3.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\上传包\\image4_lan_sun.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\上传包\\audio1_anna.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50",
+      "43"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段17\\视频草稿\\片段17_P17_金鱼草稿_v1.mp4"
+  ]
+}
