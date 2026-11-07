@@ -113,3 +113,6 @@ paseo.json
 
 # RH 上传缓存（含签名URL/密钥，不入库）
 rh_upload_cache*.json
+
+# 剧本工作室：网页编辑保存前的本地备份（不入库）
+剧本工作室/preview/.backups/
