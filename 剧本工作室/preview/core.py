@@ -60,8 +60,11 @@ RE_NOTE = re.compile(r"^【表演附注", re.M)
 RE_SCENE_HEAD = re.compile(r"^###\s+(\d+-\d+[a-z]?)\s*(.*)$")
 RE_CHARACTERS = re.compile(r"^人物[：:]\s*(.+)$")
 RE_NOTE_HEAD = re.compile(r"^【表演附注[^】]*】")
-RE_DIALOGUE_LINE = re.compile(r"^([^：:\s　]{1,12})([：:])(.*)$")
-RE_BULLET_DIALOGUE = re.compile(r"^-\s+([^：:\s]{1,12})([：:])(.*)$")
+# 分隔符捕获组必须含尾随空白（`:` + 可能存在的空格），否则文本 strip 之后
+# 往返重建会丢掉冒号后的空格：「Anna: run」→ 解析成 who=Anna/prefix=":"/text="run"
+# → 重建回「Anna:run」，空格消失。
+RE_DIALOGUE_LINE = re.compile(r"^([^：:\s　]{1,12})([：:][^\S　]*)(.*)$")
+RE_BULLET_DIALOGUE = re.compile(r"^-\s+([^：:\s]{1,12})([：:][^\S　]*)(.*)$")
 RE_HR = re.compile(r"^-{3,}\s*$")
 RE_HEADING = re.compile(r"^#{1,6}\s")
 

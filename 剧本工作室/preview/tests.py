@@ -177,6 +177,49 @@ def test_core(sandbox: Path) -> None:
           sum(1 for x, y in zip(md.split("\n"), m2.split("\n")) if x != y) == 1)
     check("set_yaml 保留 CRLF", "\r\n" in m2 and m2.count("\r\n") == md.count("\r\n"))
 
+    section("core：往返幂等与前缀保真")
+    # 往返幂等：用解析出的原样 text 重建，文件应逐字不变。
+    # 这条能抓住「分隔符吞空格」「★/◆ 行首标记丢失」这类静默丢字符的 bug。
+    for ep_file in ("ep06.md", "ep07.md"):
+        raw = (sandbox / "episodes" / ep_file).read_text(encoding="utf-8", newline="")
+        pp = core.parse_episode(raw)
+        ops = []
+        for sc in pp["scenes"]:
+            for b in sc["blocks"]:
+                if b["type"] == "dialogue":
+                    ops.append({"op": "replace_block", "lineStart": b["lineStart"], "lineEnd": b["lineEnd"],
+                                "type": "dialogue", "who": b["who"], "text": b["text"]})
+                elif b["type"] == "action":
+                    ops.append({"op": "replace_block", "lineStart": b["lineStart"], "lineEnd": b["lineEnd"],
+                                "type": "action", "text": b["text"]})
+        rebuilt, _ = core.apply_ops(raw, ops)
+        o = raw.split("\r\n"); n = rebuilt.split("\r\n")
+        d = sum(1 for i in range(min(len(o), len(n))) if o[i] != n[i])
+        check(f"{ep_file} 往返重建逐字不变", d == 0 and len(o) == len(n), f"{d} 行差异")
+
+    # 分隔符的尾随空白必须保留（半角冒号 + 空格）
+    for raw_line, want in [("Anna: run now", "Anna: run now"),
+                           ("Anna:run", "Anna:run"),
+                           ("安娜：快跑", "安娜：快跑"),
+                           ("安娜：  两空格", "安娜：  两空格")]:
+        mini = "### 1-1 S 夜 内\n\n人物：Anna\n\n" + raw_line + "\n"
+        mp = core.parse_episode(mini)
+        mb = next(b for b in mp["scenes"][0]["blocks"] if b["type"] == "dialogue")
+        mops = [{"op": "replace_block", "lineStart": mb["lineStart"], "lineEnd": mb["lineEnd"],
+                 "type": "dialogue", "who": mb["who"], "text": mb["text"]}]
+        mn, _ = core.apply_ops(mini, mops)
+        got = mn.split("\n")[mb["lineStart"]]
+        check(f"分隔符保真 {raw_line!r}", got == want, f"得到 {got!r}")
+
+    # 行首 ★/◆ 高光标记必须保留
+    mini2 = "### 1-1 S 夜 内\n\n人物：A\n\n★△带星号的动作\n"
+    mp2 = core.parse_episode(mini2)
+    mb2 = next(b for b in mp2["scenes"][0]["blocks"] if b["type"] == "action")
+    mn2, _ = core.apply_ops(mini2, [{"op": "replace_block", "lineStart": mb2["lineStart"],
+                                     "lineEnd": mb2["lineEnd"], "type": "action", "text": "新动作"}])
+    got2 = mn2.split("\n")[mb2["lineStart"]]
+    check("行首 ★ 标记保留", got2.startswith("★"), f"得到 {got2!r}")
+
     section("core：diff_lines")
     d = core.diff_lines(md, md2)
     check("diff 能报出改动行", any(x["op"] != "same" for x in d))
