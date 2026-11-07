@@ -489,22 +489,33 @@ def _render_block(orig: list[str], op: dict[str, Any]) -> list[str]:
     body_lines = [b for b in text.split("\n")] if text != "" else []
 
     if btype == "action":
+        # △ 前缀由 core 补。但原文行首的 ◆ / ★（高光标记）要**保留**：
+        # parse 时会把它们剥掉，如果不按原文补回来，往返一次就丢了。
+        # （ep06/ep07 里 ◆/★ 出现在行尾，那是正文的一部分，本来就原样保留。）
+        deco = ""
+        if orig:
+            m = re.match(r"^([◆★])", orig[0].strip())
+            if m:
+                deco = m.group(1)
         rendered: list[str] = []
         for k, bl in enumerate(body_lines):
             s = bl.strip()
             if k == 0:
-                if s.startswith("△"):
-                    s = s[1:]
-                rendered.append("△" + s)
+                s = re.sub(r"^[◆★]?△", "", s)
+                rendered.append(deco + "△" + s)
             else:
                 rendered.append(s)
     elif btype == "dialogue":
         who = op.get("who")
         prefix = op.get("prefix")
+        # 分隔符一律从**原文**取（除非调用方显式给了 prefix）。
+        # 注意：who 给不给都要取——前端只传 who 不传 prefix，
+        # 若这里只在 who 缺失时才推断，原文里的半角「:」会被悄悄改成全角「：」。
+        orig_who, orig_prefix = _infer_who_prefix(orig)
         if not who:
-            who, inferred_prefix = _infer_who_prefix(orig)
-            if not prefix:
-                prefix = inferred_prefix
+            who = orig_who
+        if not prefix:
+            prefix = orig_prefix
         if not prefix:
             prefix = "："
         who = str(who)
