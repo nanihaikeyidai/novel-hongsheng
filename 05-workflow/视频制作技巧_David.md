@@ -106,3 +106,33 @@
 - 验收用分窗 RMS 对比（全片 / 对白窗 / 纯音效段 / 开场），并**重跑 ASR** 确认台词内容、次数没被改动。
 - 不为了「模型原生更响」盲目重跑烧币：结果随机、提示词已到顶，后期更可控。详见 `全局文档/工作流规范/提示词避坑手册.md` I 型。
 
+## 十、场景光色与参考图污染（2026-11-06 P16）
+来源：P16 v1 地下车库上车复盘。
+
+- **红色范围锁**：只允许「一盏小天花板警报灯 + 远处一根柱子的薄红边」；正写 `RED NEVER illuminates faces, hair, gloves, car paint or floor`；主光必须是冷荧光 / cold blue-grey。只写 `faint / distant / ONLY` **不够**——没有负向触达清单时，参考图里的红灯会被放大成环境照明（柱面砖红、车漆紫红、人物被染红）。
+- **L 型参考图污染**：参考图自带的红警报灯、柱面编号、车位线、黄黑柱脚，模型会当「场景特征」自动补全放大。改提示词同时尽量换**去红点 / 无编号**的参考图；参考图隔离句要写清 `Ignore studio background of <Picture N>`（人设裁切灰底）。
+- **后期可救光色**：本轮用红色相压饱和 + 冷偏（`p16_v1_grade_dered.py`）救回大半，不烧币；源头仍靠下一版提示词 + 干净参考图。
+
+## 十一、镜头动作拆分（2026-11-06 P16）
+- **入口动作锁**：不要写「门打开」瞬时事件再配空场参考图——模型优先服从空场，人会凭空出现。改写为起点已含人：`ALREADY mid-stride entering frame … door still swinging shut BEHIND them`；禁止开场空建立镜。
+- **同镜单动作锁**：一个 Shot 只承载**一个**主导肢体动作。特写若要保留，把门拉开 / 坐下等大幅动作放到上一镜收尾，或写成「手已在门把 / 门已开」的完成态。同镜「侧脸特写 + 拉开车门」会丢开门。
+- **镜内勿再硬切**：同一 Shot 里再要求 HARD CUT，快速姿态（弯腰进车）易糊成色块；一镜一机位到底，旁动作用画外声带过。
+- **K 型奔跑效力上限（P16 再确认）**：只写 `sprint` 仍会直立快走；与 P14 同构。**不再堆提示词形容词**，出片后统一后期 `setpts=PTS/1.2~1.35` + `atempo`（必要时轻 `tmix`），与「一次反馈一版」闸门一致。
+
+## 十二、无标识与多台词隔离（2026-11-07 P17）
+来源：P17 v1 行车识破复盘；v2 提示词已写未提交。
+
+- **无标识用正向锁，别写 BLANK 否命题**：`All … are BLANK` / `no readable text` 挡不住柱面「3」、地面车位字、方向盘徽标、伪汉字牌。改成材料正向 + 位置清单，例如：`Every concrete surface is PURE GREY CONCRETE with stains and shadows only — no digits, no pictograms, no arrows; the floor shows only wet reflections and tire smudges; the steering wheel hub is a PLAIN GREY ROUNDEL with nothing on it.`（覆盖柱 / 地 / 方向盘，不只 plate/dashboard。）
+- **伪文字加强版（P15 起仍有效）**：招牌/安全出口写 `PLAIN blank surfaces — no characters of any language, no pseudo-glyphs`；绿出口标写成 `plain green rectangle with no marking`。
+- **多台词硬隔离**：同一片段两句对白时，overall 层必须写死两句之间 ≥0.7s `TOTAL SILENCE`（lips closed, no breath），且 `NEVER spoken as one continuous sentence`；只在各 Shot 写各自时间窗不够，H3 会黏成一串，命令句失去冲击。
+- **口罩+帽檐下的微表情细节**：冷汗等细节改落到**太阳穴 / 下颌线 / 颈侧**并给可数尺度（`two or three visible sweat drops … catching a hard highlight`）；写额头 `beads` 在遮挡+低照度下常退化成一道反光。
+- **墨镜遮眼时表情上限**：wrap-around 墨镜挡住眉眼后，笑容只能靠嘴角；H3 默认给「从容/得意」。不重跑可后期 0.5s 定格微推 + 低频电流声加压；若要坚持墨镜又要更邪，提示词升到 `unhinged open-mouthed grin`（摘镜才是眼神邪的上限，偏离人设需用户点头）。
+
+## 十三、本地重配音（0 币，2026-11-06）
+路径：`05-workflow/重配音实验室/`（IndexTTS 2.5 + ComfyUI）。成片某一句情绪不对时，**优先本地重配再交付**，不为此烧 RH 币重跑整段。
+
+- **低沉威胁靠音色+向量，不靠 text 情绪**：`text` 情绪模式常把 F0 抬到 ~200Hz（越写「气声/低声」越亮）；主推是原片切片作音色 + 冷静态向量（如 calm 高 / angry·disgusted 低）。`text` 若要用，`strength` 降到约 0.6，并验收 F0。
+- **禁用 `[breath]` / `[quick_breath]`**：会被念成英文单词；气声改走后期 `whisperize.py`（谐波软化 + 气流噪声 + 近讲 EQ）。
+- **对齐用能量包络，不用 ASR 时间戳**：ASR 可偏 +0.2s；`replace_line.py` 自动找真实起音。要「更轻」必须加 `--level-offset-db`（RMS 对齐会抵消生成时的轻），不要指望提示词形容词。
+- **贴回成片**：画面 `-c:v copy`，**不加 `-shortest`**（会截掉末帧）；输出 48kHz AAC + faststart；自测视频流 md5 应与原片一致。
+- 与「一次反馈一版」一致：音色/气声问题能本地修就不重跑金鱼。
