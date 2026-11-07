@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>《红绳》剧本预览</title>
+<style>
+  :root {
+    --bg: #0f1218;
+    --panel: #171b24;
+    --panel2: #1e2430;
+    --border: #2a3140;
+    --text: #e8ecf4;
+    --muted: #9aa3b5;
+    --accent: #7aa2ff;
+    --accent2: #5d8bff;
+    --action: #a8b0c2;
+    --name: #f0c674;
+    --note: #8b93a7;
+    --chip: #252b38;
+    --danger: #e06c75;
+    --ok: #98c379;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.65; }
+  a { color: var(--accent); }
+  .app { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
+  aside { background: var(--panel); border-right: 1px solid var(--border);
+    padding: 16px; overflow: auto; display: flex; flex-direction: column; gap: 14px; }
+  main { overflow: auto; padding: 24px 28px 64px; }
+  h1 { font-size: 16px; margin: 0 0 4px; font-weight: 600; }
+  .sub { color: var(--muted); font-size: 12px; margin: 0; }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  select, input[type="search"], button {
+    width: 100%; background: var(--panel2); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font: inherit;
+  }
+  button { cursor: pointer; }
+  button:hover, .chip:hover { border-color: var(--accent); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .row button { width: auto; flex: 1; min-width: 72px; }
+  .row button.active { background: var(--accent2); border-color: var(--accent2); color: #fff; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { width: auto; padding: 4px 10px; border-radius: 999px; background: var(--chip);
+    border: 1px solid var(--border); font-size: 12px; color: var(--muted); cursor: pointer; }
+  .chip.on { color: #fff; border-color: var(--accent); background: #243049; }
+  .scene-nav { display: flex; flex-direction: column; gap: 4px; }
+  .scene-nav a { text-decoration: none; color: var(--muted); font-size: 13px;
+    padding: 6px 8px; border-radius: 6px; }
+  .scene-nav a:hover, .scene-nav a.active { background: var(--panel2); color: var(--text); }
+  .meta-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline;
+    margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .meta-bar h2 { margin: 0; font-size: 22px; font-weight: 650; }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--chip);
+    color: var(--muted); border: 1px solid var(--border); }
+  .badge.draft { color: var(--name); border-color: #5a4a28; }
+  .scene { margin: 28px 0; scroll-margin-top: 24px; }
+  .scene-head { font-size: 17px; font-weight: 650; margin: 0 0 8px;
+    padding: 8px 12px; background: var(--panel); border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0; }
+  .chars { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+  .action { color: var(--action); margin: 8px 0; }
+  .action::before { content: "△ "; color: var(--accent); opacity: .7; }
+  .line { margin: 10px 0 10px 4px; }
+  .line .who { color: var(--name); font-weight: 600; margin-right: 6px; }
+  .line.hidden, .scene.hidden, .note-block.hidden-by-filter { display: none; }
+  details.note { margin: 14px 0 8px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; color: var(--note); font-size: 13px; }
+  details.note summary { cursor: pointer; color: var(--muted); user-select: none; }
+  details.note[open] summary { margin-bottom: 8px; }
+  .star { color: #e5c07b; }
+  .hook { color: #61afef; }
+  table.scenes { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.scenes th, table.scenes td { border: 1px solid var(--border); padding: 8px 10px;
+    text-align: left; vertical-align: top; }
+  table.scenes th { background: var(--panel); color: var(--muted); font-weight: 600; }
+  table.scenes tr:hover td { background: #1a2030; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  .hl { background: #3a3418; outline: 1px solid #6b5a20; border-radius: 2px; }
+  @media (max-width: 860px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+    aside { border-right: none; border-bottom: 1px solid var(--border); max-height: 42vh; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div>
+      <h1>《红绳》剧本工作室</h1>
+      <p class="sub">改 episodes/*.md → 跑 sync.py → 刷新本页</p>
+    </div>
+    <div>
+      <label for="epSelect">选集</label>
+      <select id="epSelect"></select>
+    </div>
+    <div>
+      <label>视图</label>
+      <div class="row" id="viewMode">
+        <button type="button" data-view="full" class="active">全文</button>
+        <button type="button" data-view="dialogue">仅台词</button>
+        <button type="button" data-view="table">分场表</button>
+      </div>
+    </div>
+    <div>
+      <label for="q">搜索台词</label>
+      <input id="q" type="search" placeholder="关键字…" autocomplete="off" />
+    </div>
+    <div>
+      <label>角色过滤</label>
+      <div class="chips" id="roleChips"></div>
+    </div>
+    <div>
+      <label>场次</label>
+      <nav class="scene-nav" id="sceneNav"></nav>
+    </div>
+  </aside>
+  <main id="main">
+    <p class="empty">加载中…</p>
+  </main>
+</div>
+<script>
+/*__EPISODES_JSON_START__*/
+const EMBEDDED_EPISODES = [{"id": "ep06", "meta": {"id": "ep06", "title": "地下车库", "status": "定稿候选", "updated": "2026-11-07", "duration_target": "90-150s", "aspect": "16:9", "premise": "撤离路上被蓝隼截杀；安娜首次高光凝刃；帕斯卡关键时刻殿后", "open": "冷开场承接上一话——蓝隼已挡车前，安娜已说准备跳车；本集从跳车起"}, "markdown": "# 《红绳》第6集 · 地下车库\n\n```yaml\nid: ep06\ntitle: 地下车库\nstatus: 定稿候选\nduration_target: 90-150s\naspect: \"16:9\"\nupdated: 2026-11-07\npremise: 撤离路上被蓝隼截杀；安娜首次高光凝刃；帕斯卡关键时刻殿后\nopen: 冷开场承接上一话——蓝隼已挡车前，安娜已说准备跳车；本集从跳车起\n```\n\n> 格式：豆包同款。画幅 16:9。主场景：地下车库 夜 内。  \n> 用户锁定台词逐字保留（只规范标点）；蓝隼人称用「他」（男）。\n\n---\n\n## 本集梗概\n\n- **目标（安娜）**：拖住蓝隼，把陆沉带离。\n- **阻力**：蓝隼近战碾压；陆沉冲动插手反而添乱。\n- **策略变化**：跳车甩障 → 飞刀牵制 → 鞋刃脱身 → 二阶几何斩加压 → 仍被近身 → 帕斯卡拦拳接手。\n- **高潮**：★ 几何斩断柱；◆ 帕斯卡令安娜带陆沉回社、自己留下。\n- **结果**：陆沉昏迷；安娜带人撤；帕斯卡 vs 蓝隼待续。\n\n## 本集人物状态\n\n| | 开场 | 结尾 |\n|---|---|---|\n| 安娜 | 驾驶位/跳车执行态；深蓝长发；不轻易出手的克制刚破 | 满头大汗；凝刃消耗；接帕斯卡令准备带回陆沉 |\n| 陆沉 | 17；白蓝校服；被动红眼将启 | 被踢飞昏迷；需被带走 |\n| 蓝隼 | 26；电蓝短发、黑墨镜、战术服；拦车、轻浮 | 拳带电被拦；目标未到手；兴趣转向帕斯卡 |\n| 帕斯卡 | （未入画） | 金发；轻浮微笑；拦下电拳；留下殿后 |\n\n---\n\n## 分场表\n\n| 场次 | 场景 时间 内外 | 节拍 | 场景功能 | 入场→离场 | 主攻防 | 观众新知道 | 与上一场 |\n|---|---|---|---|---|---|---|---|\n| 6-1a | 地下车库 夜 内 | 钩子 | 危机落地 | 还能撞过去 → 车被掀翻 | 跳车；车撞；蓝隼一拳掀车 | 蓝隼徒手能掀车 | （接上集）所以跳 |\n| 6-1b | 地下车库 夜 内 | 压迫升级 | 对峙开战 | 安娜要独挡 → 陆沉被秒杀昏 | 飞刀令跑；陆沉插手；掐脖踢飞 | 安娜会凝刃；陆沉红眼仍不够 | 所以摆阵 |\n| 6-1c | 地下车库 夜 内 | 换招试探 | 试探/调侃 | 被掐死局 → 短暂拉开距离 | 鞋刃脱身；蓝隼调侃；飞刀被打飞 | 两人旧识；流系被看穿 | 但是安娜没死 |\n| 6-1d | 地下车库 夜 内 | 假胜利/大压 | 能力高光 | 二阶出手像能赢 → 仍被瞬移近身 | 几何斩断柱；斜线；蓝隼近身带电拳 | ★凝刃二阶几何斩威力 | 所以开二阶 |\n| 6-1e | 地下车库 夜 内 | 转折收束 | 救援接手 | 电拳要砸下 → 被拦下、人可撤 | 帕斯卡拦拳；令带回；自己留下 | ◆雷老板算到；ND 钓鱼 | 但是师傅到了 |\n\n**铺垫-回收**：安娜从不轻易出手 → 本集首次凝刃高光；帕斯卡=师傅 → 关键时刻到位；陆沉「想帮」=冲动 → 被一脚踢昏埋「独活不够」。\n\n**预估**：1 大场景 5 段；说话 3–4 人；台词以用户锁定句为主。\n\n---\n\n## 第6集\n\n### 6-1a 地下车库 夜 内\n\n人物：安娜、陆沉、蓝隼\n\n△地下车库冷白灯一排接一排。水泥柱、黄黑停车线、远处排气扇嗡鸣。一辆轿车引擎还在吼，车头正对通道中央。\n\n△蓝隼站在车灯光柱里。电蓝短发，黑墨镜，石墨黑战术服。双手插兜，像等人送货上门。\n\n△驾驶座，安娜一把扣住陆沉手腕。\n\n△车门弹开。两人滚落水泥地。陆沉肩背磕上地面，闷响一声。安娜借滚势撑起半跪。\n\n△无人驾驶的轿车继续前冲，直撞蓝隼。\n\n△蓝隼侧身半步都没有。右拳抬起，拳峰贴上一层细密蓝白电弧。\n\n△拳落。车头金属塌进一个拳印，整车离地掀翻，翻滚着砸进侧方车位，玻璃碎了一地。警报尖鸣半秒，又哑掉。\n\n△烟尘散开。蓝隼抖了抖指节，墨镜反光里映出翻车残骸。\n\n【表演附注】\n- 节拍：钩子 ｜ 场景功能：危机落地 ｜ 价值：还能用车撞 → 车废人落\n- 情绪线：安娜 执行跳车零犹豫（触发：蓝隼挡路已成定局）；陆沉 被动被拽、落地懵半拍；蓝隼 全程轻，像拆快递\n- 潜台词：掀车=「你们这点速度不够看」；不说话比嘲讽更压人\n- 表演时机：跳车与车继续前冲同一拍完成；掀车要「起势→接触→车翻→碎片落地」分清，蓝隼表情几乎不变\n- 声音：轮胎、跳车衣料摩擦、金属变形巨响、碎玻璃；蓝隼呼吸极轻\n\n---\n\n### 6-1b 地下车库 夜 内\n\n人物：安娜、陆沉、蓝隼\n\n△安娜撑地站起，左脚前右脚后。双手抬到腰侧。\n\n△指缝间黑银色哑光能量一闪，凝成三柄短柄飞刀。刃面无彩光、无粒子，只剩冷金属质感。\n\n△她侧过半张脸，眼睛仍锁着蓝隼。\n\n安娜：快跑，我拖住他。\n\n△陆沉爬起半寸。虹膜骤然烧成赤红，风压似的气劲贴着校服摆动。他咬牙，拳握紧，肩线朝前。\n\n陆沉：我来帮你。\n\n△安娜头也不回。\n\n安娜：笨蛋。\n\n△话音未落。蓝隼人影已从三米外叠到安娜面前——像画面被掐掉一帧。\n\n△他单手掐住安娜脖颈，整条手臂上举。安娜双脚离地，靴尖在空中蹬了两下。她两手死死扣住蓝隼前臂，指节发白；飞刀还夹在指间，一时甩不出角度。\n\n△陆沉赤瞳一沉，低喝出拳，直取蓝隼肋侧。\n\n△蓝隼连头都没偏。抬膝，一脚踹中陆沉胸口。\n\n△陆沉整个人飞出去，后背撞上水泥柱，滑坐下去。赤红从眼底褪成一线，头一歪，昏过去。\n\n【表演附注】\n- 节拍：压迫升级 ｜ 场景功能：对峙开战 ｜ 价值：安娜要护人独挡 → 陆沉一秒出局\n- 情绪线：安娜 命令式甩开陆沉（触发：「快跑」）；陆沉 冲动插手（触发：看见她摆阵）；安娜 「笨蛋」是怒不是嫌——怕他死；蓝隼 瞬移掐喉像拆玩具\n- 潜台词：「我来帮你」= 十七岁的逞强；「笨蛋」= 你活着比你帮忙重要\n- 表演时机：飞刀黑银色哑光，禁止彩虹粒子；红眼在「我来帮你」前半拍点亮；掐喉与踢飞两条动作链分开写清主行动者\n- 声音：安娜「笨蛋」短促怒吼；陆沉出拳破风；踢中胸口的闷响；身体撞柱\n\n---\n\n### 6-1c 地下车库 夜 内\n\n人物：安娜、蓝隼、陆沉（昏迷不语）\n\n△安娜靴底一线黑银光一闪——鞋尖凝出短刃。\n\n△她借悬空拧腰，短刃朝蓝隼持喉那只手的腕侧划去。\n\n△蓝隼手腕一松，侧身让开刃锋，同时放手。安娜落地，单膝触地，一手按住自己脖子，猛咳两声。额发湿贴，汗沿鬓角往下滚。\n\n△蓝隼退后半步，插回口袋，像刚结束一次热身。\n\n蓝隼：小安娜，多年不见，流系异能用的越来越熟练了啊。\n\n安娜：少废话。\n\n△她甩腕。三柄飞刀连环掷出，黑银轨迹贴地掠向蓝隼面门与肩窝。\n\n△蓝隼抬起左手，掌缘一带——叮、叮、叮。飞刀被打飞，钉进侧面车门，颤了两下，刃体开始溃散成灰银雾。\n\n蓝隼：投降吧，我不想欺负小孩，就这点程度是伤不到我的。\n\n【表演附注】\n- 节拍：换招试探 ｜ 场景功能：试探/调侃 ｜ 价值：死局 → 喘上气但仍被压\n- 情绪线：安娜 从窒息挣扎 → 落地满头大汗仍抬眼；蓝隼 改用玩笑瓦解（触发：认出「小安娜」）\n- 潜台词：蓝隼叫「小安娜」=旧账+等级压制；「少废话」=拒绝被当小孩聊家常\n- 表演时机：鞋刃只闪一线黑银，不拉长特效；打飞飞刀要听金属声；陆沉在柱下昏迷入画余光即可，不抢戏\n- 声音：咳、飞刀破空、三记轻金属碰撞；蓝隼语调轻浮上扬\n\n---\n\n### 6-1d 地下车库 夜 内\n\n人物：安娜、蓝隼\n\n△安娜抹了一把额汗，重新站直。双手合拢又拉开——黑银色能量在掌心拉长、压薄，凝成一柄长刀。刀脊哑光，无彩晕。\n\n△上屏文字：「二阶凝刃」\n\n△上屏文字：「几何斩」\n\n安娜：小看我可会吃亏的。\n\n△蓝隼眉梢一挑，墨镜后的眼睛亮了一下。\n\n蓝隼：二阶异能，有意思，让我看看是什么招式。\n\n△安娜手腕一抖。刀尖在空中极快一划——几乎只是 0.1 秒的残影——画出一个三角形边框。\n\n△三角几何剑气脱离刀尖，带着黑银锋线朝蓝隼胸口飞去。\n\n△蓝隼身形往左一晃，人已错开半个车位。三角剑气擦着他衣角飞过——\n\n△后方一根水泥柱齐腰被切断。上半截柱体错位塌斜，钢筋外露，灰烟爆开。巨大断裂声砸满整个车库。★\n\n△安娜不等烟散，刀锋再起，朝右侧斜劈一道直线剑气。\n\n△蓝隼再次瞬移，人影从剑气轨迹尽头消失，下一帧已站在安娜面前半臂距离。\n\n蓝隼：看来还是只有这点雕虫小技啊。\n\n△他右拳握紧。蓝白电弧从指节爬上手背，拳峰嗡地亮了一下，朝安娜面门砸下。\n\n【表演附注】\n- 节拍：假胜利/大压 ｜ 场景功能：能力高光 ｜ 价值：二阶像能翻盘 → 仍被瞬移贴脸\n- 情绪线：安娜 咬牙开二阶（触发：「就这点程度」的轻视）；蓝隼 从有趣（触发：二阶）→ 观赏完仍判「雕虫」\n- 潜台词：几何斩断柱=给观众看她能伤结构，但仍伤不到他；电拳=处决预告\n- 表演时机：0.1 秒挥刀用「残影+三角成形」表达，勿写成慢动作咏唱；断柱声要盖过一切；★落在断柱结果拍\n- 声音：能量凝刀的短促嗡鸣；断柱轰响；电弧噼啪；蓝隼近身时呼吸几乎贴耳\n\n---\n\n### 6-1e 地下车库 夜 内\n\n人物：安娜、蓝隼、帕斯卡、陆沉（昏迷）\n\n△电拳落到画面边线外半寸——被另一只手从画外扣住腕骨。电弧在两人手背间乱窜，谁也没退。\n\n△持腕的人踏入灯下：金发，考究外套，嘴角带着轻浮的笑。空着的那只手里，酒杯底还剩一点红，他随手把杯沿搁到最近车盖上，杯脚一稳。\n\n△帕斯卡。\n\n△安娜瞳孔一缩，肩线终于垮半寸。蓝隼墨镜转向新来的人，笑意更深。\n\n△帕斯卡仍扣着那只带电的手腕，侧脸看向安娜，笑不变。\n\n帕斯卡：看来雷老板算到了啊，果然 ND 想利用那小子钓鱼。你带那小子回去，我陪他玩玩。◆\n\n△安娜咬一下后槽牙，点头。她撤步到水泥柱旁，架起昏迷的陆沉，把他的一只手臂绕过自己肩头。\n\n△帕斯卡这才松开蓝隼的腕，两人对上，车库冷灯在他们之间拉出一条线。\n\n△安娜半拖半架着陆沉，朝坡道出口退。身后，电弧与未散的灰烟还在两个人影之间跳。\n\n【表演附注】\n- 节拍：转折收束 ｜ 场景功能：救援接手 ｜ 价值：要被电拳砸中 → 可撤、战场移交\n- 情绪线：安娜 从死线窒息感 → 见师傅到位才敢卸力；帕斯卡 轻浮外壳、拦拳时手指极稳；蓝隼 兴趣从「小孩」转到「像样的对手」\n- 潜台词：◆句同时交三件事——雷斯特有预判、ND 在钓鱼、你们撤我留下；红酒意象只作人物识别，不妨碍拦拳\n- 表演时机：先给「画外手拦拳」，再让人脸入灯；安娜接令后立刻执行带走，不站着谢师傅；陆沉全程无对白\n- 声音：电弧被手掌压住的滋啦；酒杯底轻磕车盖；安娜拖人时的脚步与喘息；远处坡道风声\n\n---\n\n## 剧情梗概（起承转合）\n\n- **起**：跳车；车撞蓝隼被一拳掀翻。\n- **承**：安娜凝刃飞刀令陆沉跑；陆沉红眼插手被踢昏；鞋刃脱身；旧识调侃与飞刀被弹。\n- **转**：二阶凝刃·几何斩断柱，仍被瞬移近身；电拳将落。\n- **合**：帕斯卡拦拳；令安娜带陆沉回社，自己留下陪蓝隼玩（◆）。\n\n## 审稿记录\n\n1. **人称**：用户原稿「拖住她」与蓝隼男性人设冲突 → 正文改「他」，锁定句其余逐字保留。\n2. **能力口径**：旧设定蓝隼主「神经干扰丝」；本集武戏按用户锁定改为徒手掀车、瞬移、拳带电 → 已在《项目.md》标 assumed/本集锁定，不在台词里解释。\n3. **可拍拆链**：掀车、掐喉踢飞、几何斩断柱、拦拳均按起势→接触→受力→结果→反应拆 △，避免一条写完多人同动。\n4. **凝刃视觉**：全文约束黑银色哑光，禁止彩色粒子，对齐人设。\n5. **★◆**：★ 落在几何斩断柱（安娜二阶高光）；◆ 落在帕斯卡「你带那小子回去，我陪他玩玩」（移交战场+指向 ep07）。\n6. **冷读复述**：安娜要拖蓝隼救人 → 陆沉插手被秒 → 二阶仍不够 → 师傅到才能撤。因果「所以/但是」不断。\n7. **无聊点处理**：调侃段不拉长，飞刀三连后立刻进二阶，避免同强度对轰重复。\n8. **帕斯卡水系**：本集只暗示酒杯与从容拦拳，不展开水战，避免一集塞两场异能说明书。\n\n## 修订记录\n\n- 2026-11-07：按用户锁定事件重写为地下车库战完整稿；回社线迁 ep07。\n"}, {"id": "ep07", "meta": {"id": "ep07", "title": "陆沉回社", "status": "草稿", "updated": "2026-11-07", "duration_target": "90-150s", "aspect": "16:9", "premise": "进社不是保护，是「你终于没法独活」——自主权冲突；父/陈玥残页仅钩子", "open": "接 ep06 帕斯卡殿后；安娜带陆沉回翠羽社落地；不重拍车库战", "note": "草稿·等 ep06 定稿后续写；开场两场已从原 ep06 迁入并改编号"}, "markdown": "# 《红绳》第7集 · 陆沉回社\n\n```yaml\nid: ep07\ntitle: 陆沉回社\nstatus: 草稿\nduration_target: 90-150s\naspect: \"16:9\"\nupdated: 2026-11-07\npremise: 进社不是保护，是「你终于没法独活」——自主权冲突；父/陈玥残页仅钩子\nopen: 接 ep06 帕斯卡殿后；安娜带陆沉回翠羽社落地；不重拍车库战\nnote: 草稿·等 ep06 定稿后续写；开场两场已从原 ep06 迁入并改编号\n```\n\n> **草稿**：接 ep06 帕斯卡拦拳、令安娜带陆沉回去。开场 7-1、7-2 保留完整对白；侧廊钩子场待本集前确认后补写。  \n> 格式：豆包同款。\n\n---\n\n## 本集梗概\n\n- **目标**：陆沉在翠羽社落地后保住查案自主权。\n- **阻力**：雷斯特要他留下、配合；安娜用「救命」换听话空间。\n- **策略变化**：沉默跟走 → 明确拒绝被安排。\n- **高潮**：★「你们救我，不等于我听你们的。」\n- **结果**：人暂留社内，心不交权。\n- **下一钩子**：◆ 侧廊档案墙上一瞥陈玥残页。\n\n## 本集人物状态\n\n| | 开场 | 结尾 |\n|---|---|---|\n| 陆沉 | 车库战余波（可有红眼消退、外伤）；戒备、欠情但不服管 | 暂留；自主权立住；多一眼档案钩子 |\n| 雷斯特 | 等救人结果；准备安置条款 | 善意受阻；开始重新估量陆沉 |\n| 安娜 | 执行态余波；带人进厅（刚从车库脱身） | 夹在社长与陆沉之间 |\n| 帕斯卡 | （本集可不入画；仍在车库殿后） | — |\n| 沈默 | （可选）电脑房余波 | 本集可不出或一句耳机 |\n\n---\n\n## 分场表\n\n| 场次 | 场景 时间 内外 | 节拍 | 场景功能 | 入场→离场 | 主攻防 | 观众新知道 | 与上一场 |\n|---|---|---|---|---|---|---|---|\n| 7-1 | 翠羽社大厅 夜 内 | 钩子+冲突确立 | 落地/关系亮相 | 得救松一口气 → 机构目光压上来 | 雷斯特要安置；陆沉只给最短回应 | 翠羽社大厅长什么样；社长当面 | （接 ep06）所以进社 |\n| 7-2 | 翠羽社大厅 夜 内 | 压迫升级+转折 | 对峙 | 被保护 → 拒绝交权 | 留社/配合 vs 我自己查；★ | 保护带条件；陆沉不买账 | 所以条款砸下来 |\n| （待补） | 翠羽社侧廊等 | 钩子收束 | 信息诱饵 | 拒绝后空拍 → 被钩住一眼 | 残页入眼但不拆 | ◆ 陈玥残页 | 但是离开大厅时看见 |\n\n**铺垫-回收（本集）**：ep04「我自己会查清楚」→ 本集对抗「我们替你查/你先留下」；残页只埋不收。\n\n**预估**：大厅两场已齐；侧廊钩子待补；说话 3 人。\n\n---\n\n## 第7集\n\n### 7-1 翠羽社大厅 夜 内\n\n人物：陆沉、安娜、雷斯特\n\n△门外雨声猛地被石墙切短。铁门在身后合上，水声只剩鞋底与地面的黏响。\n\n△陆沉站在门内两步远。白蓝校服湿透贴在肩背，碎发贴额，水珠沿下颌线往下掉。他没有擦。眼睛先扫拱窗、主座、墙上翠羽徽记，最后才落回前方。\n\n△安娜侧身半步，让开他与主座之间的直线。袖口还潮着，呼吸已经压平。\n\n△纵深尽头，雷斯特坐在主座。银灰发，黑衣，胸前羽毛胸针在拱窗余光里亮了一下。指节在桌沿点一下，停住。\n\n雷斯特：回来了。\n\n△陆沉不接话。肩线绷着，像还在听门外有没有第二组脚步。\n\n安娜：观察室出来的。门卫只晕了。路上没有追兵咬死。\n\n雷斯特：先把水控干。客房在侧廊第二间，换衣和热水都备好了。\n\n△陆沉抬眼看他。停半拍。\n\n陆沉：你们要什么。\n\n△雷斯特没立刻答。他看了一眼安娜，又看回陆沉，肩线仍松着，像在交代一件已经想清楚的事。\n\n雷斯特：今晚——只要你还活着，站在这儿。\n\n△陆沉喉结动一下。鞋底的水在石板砖上洇开一小圈。\n\n【表演附注】\n- 节拍：钩子 + 冲突确立 ｜ 场景功能：落地/关系亮相 ｜ 价值：得救松 → 机构目光压上\n- 情绪线：陆沉 从戒备扫场（触发：进门落位）→ 最短质问（触发：「换衣热水」被当成安排）；雷斯特 全程淡定；安娜 执行收束，不抢话\n- 潜台词：陆沉问「要什么」= 不承认这是无条件的保护；雷斯特「只要你活着」= 把更大条件留到下一拍\n- 表演时机：陆沉进门先扫空间再看人；水珠掉下颌时不擦；问句前半拍停顿\n- 声音：雷斯特低、稳、不演讲；陆沉声短、偏哑；大厅有一点石壁回声\n- 衔接备注：定稿时可视 ep06 尾调整「湿透」为车库战余波（灰、擦伤、红眼刚褪），安娜台词可补一句「帕斯卡还在后面」——本草稿暂留原开场骨架\n\n---\n\n### 7-2 翠羽社大厅 夜 内\n\n人物：陆沉、雷斯特、安娜\n\n△雷斯特起身，绕过主座一角，停在距离陆沉三步的位置。没有伸手。\n\n雷斯特：ND 不会只丢一个观察室。明天他们会换手段。你一个人回去，等于把脖子送回去。\n\n陆沉：我没有要你们管我的脖子。\n\n安娜：那你刚才跟我跑楼梯的时候，是谁把你铐子化开的。\n\n△陆沉侧眼看她。安娜迎着看，不躲，但下巴微收——不像邀功，像把账摊开。\n\n陆沉：……我知道。所以我问完了。\n\n雷斯特：问完了？你连我们是谁、你母亲的档案在不在这里，都还没问。\n\n△陆沉手指在湿裤缝上摩半圈，停住。\n\n陆沉：档案我自己查。你们救我，不等于我听你们的。★\n\n△大厅静了一拍。拱窗外雨声又远了一层。\n\n△雷斯特看着他，嘴角几乎没有动，眼神却收紧半寸——像第一次把「十七岁」和「难搞」叠在同一张脸上。\n\n雷斯特：行。那你今晚至少留在墙内。门从里面锁，不从外面。\n\n△陆沉点一下头。幅度极小。像接受一张临时床，不接受一张合同。\n\n安娜：我带你去侧廊。\n\n△她先一步朝侧廊抬下巴示意。陆沉跟了半步，又停——视线越过她肩头，掠过侧廊深处一排贴墙的资料夹与一张被灯光切到边角的旧页。他没说破。继续走。\n\n【表演附注】\n- 节拍：压迫升级 + 转折 ｜ 场景功能：对峙 ｜ 价值：被保护 → 拒绝交权\n- 情绪线：雷斯特 从安置说辞（触发：ND 会换手段）→ 被顶回去后改「墙内过夜」底线；陆沉 从甩开管束 → ★钉死自主权；安娜 用救命账施压，被「问完了」挡回\n- 潜台词：★句是谢救命、拒收编；雷斯特「门从里面锁」是让步也是监视边界的软化版\n- 表演时机：★句前手指摩裤缝停住；说完后三人静一拍再接「行」；离场前陆沉眼神掠档案角但不停步\n- 声音：陆沉★句中速、字清楚、不喊；雷斯特「行」短促；安娜带路时气声压低\n\n---\n\n## 剧情梗概（起承转合）\n\n- **起**：进翠羽社大厅，雷斯特当面安置。\n- **承**：保护条款落下——ND 会再来、留下、配合。\n- **转**：陆沉钉死自主权（★），只接受「墙内过夜」。\n- **合**：侧廊瞥见陈玥相关残页却按住不问（◆，待补场）。\n\n## 修订记录\n\n- 2026-10-31：原为 ep06 草稿；6-1/6-2 完整；6-3/6-4 占位。\n- 2026-11-07：按用户指令迁为 ep07；改编号 7-1/7-2；删半成品占位堆砌；侧廊钩子待本集前确认再写。\n"}];
+/*__EPISODES_JSON_END__*/
+
+(function () {
+  const state = {
+    episodes: EMBEDDED_EPISODES.slice(),
+    epId: null,
+    view: "full",
+    roles: new Set(), // empty = all
+    query: "",
+  };
+
+  function parseEpisode(md) {
+    const scenes = [];
+    const sceneTable = [];
+    // scene table rows under ## 分场表
+    const tableBlock = md.match(/##\s*分场表[\s\S]*?(?=\n##\s|\n---\n##\s|$)/);
+    if (tableBlock) {
+      const rows = tableBlock[0].split("\n").filter((l) => /^\|/.test(l) && !/^\|\s*-+/.test(l) && !/场次/.test(l));
+      for (const r of rows) {
+        const cells = r.split("|").slice(1, -1).map((c) => c.trim());
+        if (cells.length >= 2) sceneTable.push(cells);
+      }
+    }
+
+    // scenes: ### 6-1 ... or ### 6-1 ...
+    const parts = md.split(/\n(?=###\s+\d+-\d+)/);
+    for (const part of parts) {
+      const hm = part.match(/^###\s+(\d+-\d+)\s+(.+)$/m);
+      if (!hm) continue;
+      const id = hm[1];
+      const titleLine = hm[2].trim();
+      const body = part.slice(part.indexOf("\n") + 1);
+      const charsM = body.match(/^人物[：:]\s*(.+)$/m);
+      const characters = charsM ? charsM[1].split(/[、,，]/).map((s) => s.trim()).filter(Boolean) : [];
+      const blocks = [];
+      const lines = body.split("\n");
+      const skipWho = /^(id|title|status|duration_target|aspect|updated|premise|open|节拍|潜台词|情绪线|表演时机|声音|功能|场景功能|价值)$/;
+      let i = 0;
+      while (i < lines.length) {
+        let line = lines[i];
+        if (/^人物[：:]/.test(line) || /^---\s*$/.test(line) || /^##\s/.test(line)) { i++; continue; }
+        if (/^【表演附注】/.test(line) || /^【表演附注/.test(line)) {
+          const noteLines = [line.replace(/^【表演附注[^】]*】\s*/, "")];
+          i++;
+          while (i < lines.length && !/^###\s+\d+-\d+/.test(lines[i]) && !/^##\s/.test(lines[i])) {
+            if (/^---\s*$/.test(lines[i])) break;
+            noteLines.push(lines[i]);
+            i++;
+          }
+          blocks.push({ type: "note", text: noteLines.join("\n").trim() });
+          continue;
+        }
+        if (/^△/.test(line) || /^◆△/.test(line) || /^★△/.test(line)) {
+          blocks.push({ type: "action", text: line.replace(/^[◆★]?△\s*/, "").trim() });
+          i++; continue;
+        }
+        // placeholder dialogue under "- 角色：台词"
+        const bulletDlg = line.match(/^-\s+([^：:\s]{1,12})[：:](.+)$/);
+        if (bulletDlg && !skipWho.test(bulletDlg[1].trim())) {
+          blocks.push({ type: "dialogue", who: bulletDlg[1].trim(), text: bulletDlg[2].trim() });
+          i++; continue;
+        }
+        if (/^\*\*节拍意图\*\*/.test(line) || /^-\s/.test(line) || /^\*\*/.test(line)) {
+          blocks.push({ type: "beat", text: line.trim() });
+          i++; continue;
+        }
+        const dm = line.match(/^([^：:\s]{1,12})[：:](.+)$/);
+        if (dm && !/^http/.test(dm[1]) && !skipWho.test(dm[1].trim())) {
+          blocks.push({ type: "dialogue", who: dm[1].trim(), text: dm[2].trim() });
+          i++; continue;
+        }
+        i++;
+      }
+      scenes.push({ id, heading: id + " " + titleLine, titleLine, characters, blocks });
+    }
+    return { scenes, sceneTable };
+  }
+
+  function allRoles(parsed) {
+    const set = new Set();
+    for (const s of parsed.scenes) {
+      s.characters.forEach((c) => set.add(c));
+      s.blocks.forEach((b) => { if (b.type === "dialogue") set.add(b.who); });
+    }
+    return [...set];
+  }
+
+  function markStars(text) {
+    return text
+      .replace(/★/g, '<span class="star">★</span>')
+      .replace(/◆/g, '<span class="hook">◆</span>');
+  }
+
+  function highlight(text, q) {
+    if (!q) return markStars(escapeHtml(text));
+    const esc = escapeHtml(text);
+    const re = new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+    return markStars(esc.replace(re, '<mark class="hl">$1</mark>'));
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+  }
+
+  function current() {
+    return state.episodes.find((e) => e.id === state.epId) || state.episodes[0];
+  }
+
+  function render() {
+    const ep = current();
+    const main = document.getElementById("main");
+    if (!ep) {
+      main.innerHTML = '<p class="empty">没有 episodes。请先在 episodes/ 放 epXX.md 并运行 sync.py</p>';
+      return;
+    }
+    const parsed = parseEpisode(ep.markdown);
+    const meta = ep.meta || {};
+    const roles = allRoles(parsed);
+
+    // chips
+    const chips = document.getElementById("roleChips");
+    chips.innerHTML = roles.map((r) => {
+      const on = state.roles.size === 0 || state.roles.has(r);
+      return `<button type="button" class="chip ${state.roles.has(r) ? "on" : ""}" data-role="${escapeHtml(r)}">${escapeHtml(r)}</button>`;
+    }).join("") + (roles.length ? `<button type="button" class="chip" data-role="__all">全部</button>` : "");
+
+    // scene nav
+    const nav = document.getElementById("sceneNav");
+    nav.innerHTML = parsed.scenes.map((s) =>
+      `<a href="#scene-${s.id}" data-sid="${s.id}">${escapeHtml(s.heading)}</a>`
+    ).join("") || '<span class="sub">无场次</span>';
+
+    const status = meta.status || "";
+    let body = `<div class="meta-bar">
+      <h2>${escapeHtml(meta.title || ep.id)}</h2>
+      <span class="badge ${status.includes("草稿") ? "draft" : ""}">${escapeHtml(status || ep.id)}</span>
+      <span class="badge">${escapeHtml(meta.duration_target || "")}</span>
+      <span class="badge">${escapeHtml(meta.aspect || "16:9")}</span>
+      <span class="sub">更新 ${escapeHtml(meta.updated || "")}</span>
+    </div>`;
+
+    if (state.view === "table") {
+      if (!parsed.sceneTable.length) {
+        body += '<p class="empty">本集没有解析到分场表</p>';
+      } else {
+        const head = parsed.sceneTable[0] ? null : null;
+        // use first data rows; header was filtered — rebuild from known cols if needed
+        body += `<table class="scenes"><thead><tr>
+          <th>场次</th><th>场景</th><th>节拍</th><th>功能</th><th>价值</th><th>攻防</th><th>新知</th><th>因果</th>
+        </tr></thead><tbody>`;
+        for (const cells of parsed.sceneTable) {
+          body += "<tr>" + cells.map((c) => `<td>${escapeHtml(c)}</td>`).join("") + "</tr>";
+        }
+        body += "</tbody></table>";
+      }
+      main.innerHTML = body;
+      return;
+    }
+
+    if (!parsed.scenes.length) {
+      body += '<p class="empty">未解析到场次（需要 ### 6-1 场景名… 格式）</p>';
+      main.innerHTML = body;
+      return;
+    }
+
+    const q = state.query.trim();
+    for (const s of parsed.scenes) {
+      const roleFilter = state.roles.size > 0;
+      let sceneHas = !roleFilter;
+      const blocksHtml = [];
+      for (const b of s.blocks) {
+        if (b.type === "action") {
+          if (state.view === "dialogue") continue;
+          blocksHtml.push(`<p class="action">${highlight(b.text, q)}</p>`);
+        } else if (b.type === "dialogue") {
+          const show = !roleFilter || state.roles.has(b.who);
+          if (show) sceneHas = true;
+          if (q && !b.text.includes(q) && !b.who.includes(q) && state.view === "dialogue") {
+            // still show scene if other lines match — filter line
+            if (!(b.text.includes(q) || b.who.includes(q))) {
+              blocksHtml.push(`<p class="line hidden" data-who="${escapeHtml(b.who)}"><span class="who">${escapeHtml(b.who)}：</span>${highlight(b.text, q)}</p>`);
+              continue;
+            }
+          }
+          const hideLine = roleFilter && !state.roles.has(b.who);
+          const hideSearch = q && !(b.text.includes(q) || b.who.includes(q));
+          // In full view with search: dim non-matching dialogue but keep actions
+          const cls = (hideLine || (q && hideSearch && state.view === "dialogue")) ? "line hidden" : "line";
+          blocksHtml.push(`<p class="${cls}" data-who="${escapeHtml(b.who)}"><span class="who">${escapeHtml(b.who)}：</span>${highlight(b.text, q)}</p>`);
+          if (!hideLine && (!q || !hideSearch || state.view === "full")) sceneHas = true;
+        } else if (b.type === "note") {
+          if (state.view === "dialogue") continue;
+          blocksHtml.push(`<details class="note"><summary>表演附注</summary><pre style="white-space:pre-wrap;margin:0;font:inherit;color:inherit">${highlight(b.text, q)}</pre></details>`);
+        } else if (b.type === "beat") {
+          if (state.view === "dialogue") continue;
+          blocksHtml.push(`<p class="action" style="opacity:.85">${highlight(b.text.replace(/^\*\*/,"").replace(/\*\*$/,""), q)}</p>`);
+        }
+      }
+      if (q && state.view === "dialogue") {
+        const any = s.blocks.some((b) => b.type === "dialogue" && (b.text.includes(q) || b.who.includes(q)) && (!roleFilter || state.roles.has(b.who)));
+        sceneHas = any;
+      } else if (roleFilter && state.view === "dialogue") {
+        sceneHas = s.blocks.some((b) => b.type === "dialogue" && state.roles.has(b.who));
+      } else if (roleFilter && state.view === "full") {
+        sceneHas = s.blocks.some((b) => b.type === "dialogue" && state.roles.has(b.who)) || s.characters.some((c) => state.roles.has(c));
+      }
+
+      const charLine = s.characters.length ? `<p class="chars">人物：${escapeHtml(s.characters.join("、"))}</p>` : "";
+      body += `<section class="scene ${sceneHas ? "" : "hidden"}" id="scene-${s.id}">
+        <h3 class="scene-head">${escapeHtml(s.heading)}</h3>
+        ${charLine}
+        ${blocksHtml.join("\n")}
+      </section>`;
+    }
+    main.innerHTML = body;
+  }
+
+  function init() {
+    const sel = document.getElementById("epSelect");
+    state.episodes.sort((a, b) => String(a.id).localeCompare(String(b.id), "zh"));
+    sel.innerHTML = state.episodes.map((e) =>
+      `<option value="${escapeHtml(e.id)}">${escapeHtml(e.id)} · ${escapeHtml((e.meta && e.meta.title) || e.id)}</option>`
+    ).join("");
+    state.epId = state.episodes[0] && state.episodes[0].id;
+    sel.value = state.epId || "";
+    sel.addEventListener("change", () => { state.epId = sel.value; state.roles.clear(); render(); });
+
+    document.getElementById("viewMode").addEventListener("click", (ev) => {
+      const btn = ev.target.closest("button[data-view]");
+      if (!btn) return;
+      state.view = btn.dataset.view;
+      [...document.getElementById("viewMode").querySelectorAll("button")].forEach((b) => b.classList.toggle("active", b === btn));
+      render();
+    });
+
+    document.getElementById("q").addEventListener("input", (ev) => {
+      state.query = ev.target.value;
+      render();
+    });
+
+    document.getElementById("roleChips").addEventListener("click", (ev) => {
+      const btn = ev.target.closest("[data-role]");
+      if (!btn) return;
+      const r = btn.dataset.role;
+      if (r === "__all") state.roles.clear();
+      else {
+        if (state.roles.has(r)) state.roles.delete(r);
+        else state.roles.add(r);
+      }
+      render();
+    });
+
+    document.getElementById("sceneNav").addEventListener("click", (ev) => {
+      const a = ev.target.closest("a[data-sid]");
+      if (!a) return;
+      ev.preventDefault();
+      const el = document.getElementById("scene-" + a.dataset.sid);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    render();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
