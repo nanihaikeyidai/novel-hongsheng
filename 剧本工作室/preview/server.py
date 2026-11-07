@@ -8,10 +8,20 @@
 
 为什么需要它：
     preview/index.html 是静态页，用 file:// 打开时浏览器没有写文件的能力。
-    本服务提供两个接口，让页面里的编辑真正落回 episodes/*.md：
-        GET  /api/episodes      从磁盘重新读 episodes/*.md（不走内嵌快照）
-        POST /api/save          写回 episodes/epXX.md，并自动重跑 sync.py
-    写回前会把旧版备份到 preview/.backups/，不碰 episodes/ 目录以外的任何文件。
+    本服务提供 HTTP 接口，让页面里的编辑真正落回 episodes/*.md。
+
+**本文件只做 HTTP 转发，不含任何写入逻辑**：
+    解析 → core.parse_episode()
+    编辑 → core.apply_ops()      （前端发结构化 ops，Python 侧唯一写入通道）
+    校验 → core.check_integrity()
+    落盘 → core.save_episode()    （内部：备份 → 保留 CRLF → sync 刷新内嵌）
+
+接口（见 preview/CONTRACT.md）：
+    GET  /api/episodes           列出所有集
+    GET  /api/parse?id=ep06      结构化解析结果（行号 + 块）
+    GET  /api/raw?id=ep06        某集原文
+    GET  /api/diff?id=ep06       与 git HEAD 的差异
+    POST /api/save               {id, ops, deleted} → 写回
 
 只监听 127.0.0.1，不对外暴露。
 """
@@ -19,8 +29,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
-import shutil
 import sys
 import threading
 import webbrowser
@@ -36,83 +44,15 @@ INDEX = HERE / "index.html"
 BACKUP_DIR = HERE / ".backups"
 
 sys.path.insert(0, str(HERE))
-import sync as sync_mod  # noqa: E402  复用同一份内嵌逻辑，避免两套实现漂移
-
-EP_ID_RE = re.compile(r"^ep\d{2,3}$")
-SAVE_LOCK = threading.Lock()
+import core  # noqa: E402  唯一写入通道：所有落盘逻辑都在 core 里
 
 
 def _log(msg: str) -> None:
     print(f"[{datetime.now():%H:%M:%S}] {msg}", flush=True)
 
 
-def list_episodes() -> list[dict]:
-    """从磁盘重新读取 episodes/*.md。"""
-    return sync_mod.load_episodes()
-
-
-def resolve_ep_path(ep_id: str) -> Path:
-    """把集号解析成安全的文件路径，挡住路径穿越。"""
-    if not EP_ID_RE.match(ep_id):
-        raise ValueError(f"非法集号：{ep_id}")
-    path = (EP_DIR / f"{ep_id}.md").resolve()
-    if path.parent != EP_DIR.resolve():
-        raise ValueError(f"越界路径：{ep_id}")
-    return path
-
-
-def _count(md: str, pattern: str) -> int:
-    return len(re.findall(pattern, md, re.M))
-
-
-def check_integrity(old: str, new: str, deleted: dict | None = None) -> list[str]:
-    """写回前的完整性校验：新内容不得比原文少台词行/动作行/附注段。
-
-    这是最后一道闸门——网页端的校验可能因各种原因失效，
-    这里保证磁盘上永远不会出现「被截断的剧本」。
-
-    刻意删除的行/附注段是合法编辑，因此按 deleted 放行对应减少量。
-    """
-    deleted = deleted or {}
-    del_lines = int(deleted.get("lines") or 0)
-    del_notes = int(deleted.get("notes") or 0)
-    problems: list[str] = []
-    checks = (
-        ("台词行", r"^[^：:\s　]{1,12}：", del_lines),
-        ("动作行", r"^△", del_lines),
-        ("表演附注段", r"^【表演附注", del_notes),
-    )
-    for label, pat, allowance in checks:
-        o, n = _count(old, pat), _count(new, pat)
-        if n < o - allowance:
-            problems.append(f"{label}少了 {o - n} 个（{o} → {n}），超出本次删除的 {allowance} 个")
-    return problems
-
-
-def save_episode(ep_id: str, markdown: str, deleted: dict | None = None) -> Path:
-    """写回 episodes/epXX.md，备份旧版，然后刷新内嵌数据。"""
-    path = resolve_ep_path(ep_id)
-    with SAVE_LOCK:
-        old = path.read_text(encoding="utf-8") if path.exists() else ""
-        problems = check_integrity(old, markdown, deleted) if old else []
-        if problems:
-            raise ValueError("拒绝写入，完整性校验未通过：" + "；".join(problems))
-        if path.exists():
-            BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-            stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-            shutil.copy2(path, BACKUP_DIR / f"{ep_id}.{stamp}.md")
-            # 沿用原文件的换行风格，避免 git 把整个文件视为全改
-            old_bytes = path.read_bytes()
-            if b"\r\n" in old_bytes and "\r\n" not in markdown:
-                markdown = markdown.replace("\n", "\r\n")
-        path.write_text(markdown, encoding="utf-8", newline="")
-        # 内嵌数据跟着更新，file:// 方式打开也能看到最新内容
-        sync_mod.main()
-    return path
-
-
 class Handler(BaseHTTPRequestHandler):
-    server_version = "HongshengPreview/1.0"
+    server_version = "HongshengPreview/2.0"
 
     def log_message(self, fmt: str, *args) -> None:  # 静音默认访问日志
         pass
@@ -131,13 +71,26 @@ class Handler(BaseHTTPRequestHandler):
         except (BrokenPipeError, ConnectionAbortedError):
             pass
 
-    def _json(self, obj, code: int = 200) -> None:
+    def _json(self, obj: object, code: int = 200) -> None:
         body = json.dumps(obj, ensure_ascii=False).encode("utf-8")
         self._send(code, body, "application/json; charset=utf-8")
+
+    def _ep_id(self, query: str) -> str | None:
+        """从 query 里取出集号，非法直接返回 None。"""
+        qs = parse_qs(query)
+        ep_id = (qs.get("id") or [""])[0]
+        if not ep_id:
+            return None
+        try:
+            core.resolve_ep_path(ep_id)
+        except ValueError:
+            return None
+        return ep_id
 
     # ---------- routes ----------
     def do_GET(self) -> None:
         route = urlparse(self.path)
+
         if route.path in ("/", "/index.html"):
             try:
                 body = INDEX.read_bytes()
@@ -148,21 +101,41 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         if route.path == "/api/episodes":
-            self._json({"episodes": list_episodes()})
+            self._json({"episodes": core.list_episodes()})
+            return
+
+        if route.path == "/api/parse":
+            ep_id = self._ep_id(route.query)
+            if not ep_id:
+                self._json({"error": "缺少或非法的 id 参数"}, 400)
+                return
+            try:
+                md = core.read_episode(ep_id)
+            except (ValueError, OSError) as exc:
+                self._json({"error": str(exc)}, 404)
+                return
+            parsed = core.parse_episode(md)
+            self._json({"id": ep_id, "meta": parsed["meta"], "parsed": parsed})
             return
 
         if route.path == "/api/raw":
-            qs = parse_qs(route.query)
-            ep_id = (qs.get("id") or [""])[0]
-            try:
-                path = resolve_ep_path(ep_id)
-            except ValueError as exc:
-                self._json({"error": str(exc)}, 400)
+            ep_id = self._ep_id(route.query)
+            if not ep_id:
+                self._json({"error": "缺少或非法的 id 参数"}, 400)
                 return
             try:
-                self._json({"id": ep_id, "markdown": path.read_text(encoding="utf-8")})
-            except OSError as exc:
+                self._json({"id": ep_id, "markdown": core.read_episode(ep_id)})
+            except (ValueError, OSError) as exc:
                 self._json({"error": str(exc)}, 404)
+            return
+
+        if route.path == "/api/diff":
+            ep_id = self._ep_id(route.query)
+            if not ep_id:
+                self._json({"error": "缺少或非法的 id 参数"}, 400)
+                return
+            diff = core.diff_against_head(ep_id)
+            self._json({"id": ep_id, "diff": diff})
             return
 
         self._json({"error": "not found"}, 404)
@@ -187,15 +160,50 @@ class Handler(BaseHTTPRequestHandler):
             self._json({"error": f"JSON 解析失败：{exc}"}, 400)
             return
 
+        if not isinstance(payload, dict):
+            self._json({"error": "请求体必须是 JSON 对象"}, 400)
+            return
+
         ep_id = str(payload.get("id") or "")
-        markdown = payload.get("markdown")
-        deleted = payload.get("deletedLines") or {}
-        if not isinstance(markdown, str):
-            self._json({"error": "缺少 markdown 字段"}, 400)
+        ops = payload.get("ops")
+        deleted = payload.get("deleted") or {}
+        if not isinstance(ops, list):
+            self._json({"error": "缺少 ops 字段（应为操作列表）"}, 400)
+            return
+        if not isinstance(deleted, dict):
+            deleted = {}
+
+        try:
+            old = core.read_episode(ep_id)
+        except (ValueError, OSError) as exc:
+            self._json({"error": str(exc)}, 400)
+            return
+
+        # 解析 ops → 校验 → 落盘，全部委托 core
+        try:
+            new_md, summary = core.apply_ops(old, ops)
+        except ValueError as exc:
+            self._json({"error": str(exc)}, 400)
+            return
+
+        # deleted 是前端声明的「本次主动删除量」。
+        # 取「前端声明」与「ops 圈定的行里实际有多少内容行」的**较大者**：
+        #   - 前端声明得更准（主动删了很多行）→ 采信前端
+        #   - 前端没声明或声明为 0，但 ops 里确实是 delete_block → 采信 ops
+        #   - 圈外的意外丢失 → 两边都不放行，闸门拦下
+        computed = core.deleted_allowance(old, core.op_ranges(ops))
+        deleted = {
+            "lines": max(int(deleted.get("lines") or 0), computed["lines"]),
+            "notes": max(int(deleted.get("notes") or 0), computed["notes"]),
+        }
+
+        problems = core.check_integrity(old, new_md, deleted)
+        if problems:
+            self._json({"error": "拒绝写入，完整性校验未通过：" + "；".join(problems)}, 400)
             return
 
         try:
-            path = save_episode(ep_id, markdown, deleted if isinstance(deleted, dict) else None)
+            core.save_episode(ep_id, new_md, deleted)
         except ValueError as exc:
             self._json({"error": str(exc)}, 400)
             return
@@ -203,8 +211,14 @@ class Handler(BaseHTTPRequestHandler):
             self._json({"error": f"写入失败：{exc}"}, 500)
             return
 
-        _log(f"已保存 {path.name}（{len(markdown)} 字符）")
-        self._json({"ok": True, "id": ep_id, "episodes": list_episodes()})
+        _log(f"已保存 {ep_id}.md（{summary.get('changed', 0)} 处改动）")
+        self._json({
+            "ok": True,
+            "id": ep_id,
+            "episodes": core.list_episodes(),
+            "diff": core.diff_lines(old, new_md),
+            "summary": summary,
+        })
 
 
 def main() -> None:

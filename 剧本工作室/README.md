@@ -12,13 +12,28 @@
     ep06.md            # 地下车库（蓝隼战）
     ep07.md            # 陆沉回社
   preview/
+    core.py            # 唯一写入通道：解析 / 编辑 / 校验 / 备份 / 落盘
+    server.py          # HTTP 服务：网页端走这条通道
+    cli.py             # 命令行：Agent 走这条通道
     index.html         # 可交互预览 + 在线编辑（内嵌 episodes 数据）
-    sync.py            # 改 md 后跑一次，刷新内嵌
-    server.py          # 本地服务：让网页编辑能真正写回 .md
-    .backups/          # 网页保存前的自动备份（不入库）
+    sync.py            # 刷新 index.html 的内嵌数据
+    tests.py           # 测试套件（57 项）
+    CONTRACT.md        # 三方共同遵守的接口契约
+    AGENT.md           # Agent 操作手册
+    .backups/          # 保存前的自动备份（不入库）
 ```
 
-## 网页在线编辑（推荐）
+## 两条维护路径，同一个内核
+
+```
+episodes/epXX.md          ← 唯一真相源
+        ↑ core.py          ← 唯一写入通道
+        ↑                    server.py（网页）    cli.py（Agent）
+```
+
+网页和命令行都只调 `core.py`，不各自实现写入逻辑。**不要手改 `episodes/*.md`**——手改不会经过备份与完整性闸门。
+
+## 网页在线编辑
 
 静态页用 `file://` 打开时浏览器没有写文件权限，所以要起本地服务：
 
@@ -30,33 +45,69 @@ python preview/server.py --port 9000 --no-open
 
 打开页面后：
 
-1. 侧栏点「**进入编辑**」→ 台词、△ 动作、表演附注都变成可直接点击修改的文本。
-2. 改完点「**保存到文档**」→ 写回 `episodes/epXX.md`，并自动重跑 `sync.py` 刷新内嵌数据。
-3. 点「**重新载入**」→ 从磁盘重读，丢弃未保存改动。
+1. 侧栏点「**进入编辑**」。
+2. 可直接点击修改：**台词、说话人、△ 动作、表演附注、场次标题、frontmatter（状态/标题/更新日期）**。
+3. 每场末尾有「**＋动作**」「**＋台词**」可插入新行；每行有「删除」按钮。
+4. 点「**保存到文档**」→ 弹出**保存前 diff 预览** → 确认后写回 `episodes/epXX.md`。
+5. 点「**撤销本次改动**」可丢弃未保存的编辑；「**重新载入**」从磁盘重读。
 
-几个要点：
+要点：
 
-- 只改**场次正文**（台词 / △ / 表演附注）。剧本头、分场表、梗概、审稿记录等章节仍需手改 md。
-- 保存前会自动把旧版备份到 `preview/.backups/epXX.<时间戳>.md`。
-- 写回保留原文件的 CRLF 换行，git diff 只会显示真正改动的那几行。
-- 页面在 `file://` 下打开时是**只读**的（侧栏会提示如何启动服务）。
+- 保存前自动备份旧版到 `preview/.backups/epXX.<时间戳>.md`。
+- 写回保留原文件 CRLF 换行，git diff 只会显示真正改动的那几行。
+- 编辑态下角色过滤与搜索会置灰——否则被隐藏的块改不到。
+- 页面在 `file://` 下打开是**只读**的（侧栏会提示如何启动服务）。
 - 未保存就关页面会弹提醒。
+
+## Agent 命令行
+
+给 AI Agent 用的入口，详见 `preview/AGENT.md`：
+
+```bash
+cd D:/HermesWorkspace/ai小说/红绳/剧本工作室
+
+python preview/cli.py list                      # 有哪些集
+python preview/cli.py parse ep06 --json         # 场次/块/行号（机器可读）
+python preview/cli.py show ep06 --scene 6-1b    # 看某一场
+python preview/cli.py set ep06 --block 125:125 --type dialogue --text "我来帮你啊！"
+python preview/cli.py ins ep06 --after 125 --text "△新动作"
+python preview/cli.py del ep06 --block 125:125
+python preview/cli.py replace ep06 --find "旧台词" --replace "新台词"
+python preview/cli.py meta ep06 --set status=草稿
+python preview/cli.py diff ep06                 # 与 git HEAD 比
+python preview/cli.py check ep06                # 完整性自检（不落盘）
+```
+
+`--json` 放子命令前后都行，长文本可用 stdin 管道传入。
+
+## 安全网
+
+- **备份**：每次落盘前自动备份到 `preview/.backups/`。
+- **完整性闸门**（前后端双保险）：写回内容若比原文少出「本次主动删除量」以外的台词行/动作行/附注段，一律拒绝写入，文件不动。网页与命令行都受这条保护。
+- **CRLF**：写入保留原文件换行风格，git diff 干净。
+
+## 测试
+
+```bash
+python preview/tests.py            # 全部
+python preview/tests.py core       # 只跑 core / cli / web
+```
+
+测试在临时目录的副本上跑，不碰仓库里的真实剧本；结束时会校验真实文件未被改动。
 
 ## 手动改一集
 
+确实需要手改时：
+
 1. 只改 `episodes/epXX.md`（豆包格式：场次表头 / △ / 角色：台词 / 【表演附注】）。
 2. 事实/集号/能力口径先改 `项目.md`。
-3. 跑：`python preview/sync.py`
-4. 用浏览器打开 `preview/index.html`。
+3. 跑：`python preview/sync.py`。
 
 版本用 git 或文件内「修订记录」；不要另存 `_r1` 副本，除非明确要归档。不要另增大纲 JSON。
 
 ## 命名
 
 - 集文件：`ep06.md`、`ep07.md`…
-- 场次表头：`6-1a 场景名 时间 内外`（同场分段用 a/b）
+- 场次表头：`### 6-1a 地下车库 夜 内`（同场分段用 a/b）
+- 动作行：`△` 开头；台词行：`角色名：台词`；附注块：`【表演附注 6-1a】` + 每行 `- ` 开头
 - 旧 screenplays（ep01–05）只作历史参考，本工作室不覆盖。
-
-## 预览能力
-
-选集 · 全文/仅台词/分场表 · 按角色过滤 · 点场次跳转 · 搜关键字 · 表演附注可折叠 · **网页直接编辑并写回文档**。
