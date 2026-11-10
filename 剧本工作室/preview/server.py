@@ -221,6 +221,23 @@ class Handler(BaseHTTPRequestHandler):
         })
 
 
+def _port_in_use(host: str, port: int) -> bool:
+    """探测端口是否已被占用。
+
+    直接尝试 bind 最可靠：Windows 上 allow_reuse_address 会让 bind 成功，
+    所以先关掉该选项再试。
+    """
+    import socket
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 0)
+            s.bind((host, port))
+            return False
+        except OSError:
+            return True
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="《红绳》剧本工作室 · 可编辑预览服务")
     ap.add_argument("--port", type=int, default=8765)
@@ -230,6 +247,17 @@ def main() -> None:
 
     if not EP_DIR.exists():
         raise SystemExit(f"找不到 episodes 目录：{EP_DIR}")
+
+    # 端口占用检测。
+    # Windows 上 HTTPServer 默认 allow_reuse_address=True，端口被占时不会报错，
+    # 而是两个进程同时监听 —— 请求随机落到旧实例上，表现为「页面一直加载中」
+    # 或「接口 404」，极难排查。所以这里必须先探一次端口。
+    if _port_in_use(args.host, args.port):
+        raise SystemExit(
+            f"端口 {args.port} 已被占用。\n"
+            f"  可能是之前的服务实例还在跑。先关掉它，或换端口：\n"
+            f"    python preview/server.py --port {args.port + 1}"
+        )
 
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     url = f"http://{args.host}:{args.port}/"
