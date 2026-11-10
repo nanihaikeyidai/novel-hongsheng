@@ -18,7 +18,10 @@ def load_episodes() -> list[dict]:
     for path in sorted(EP_DIR.glob("ep*.md")):
         text = path.read_text(encoding="utf-8")
         meta = {"id": path.stem, "title": path.stem, "status": "", "updated": ""}
-        m = re.search(r"```yaml\n(.*?)```", text, re.S)
+        # yaml 块的正则必须兼容 CRLF：Windows git 的 autocrlf 会把文件写成 \r\n，
+        # 用 ```yaml\n 匹配会整个失配，导致 status/updated 等字段读不出来
+        # （页面显示成默认的「草稿」）。
+        m = re.search(r"```ya?ml\r?\n(.*?)```", text, re.S)
         if m:
             for line in m.group(1).splitlines():
                 if ":" in line:

@@ -220,6 +220,23 @@ def test_core(sandbox: Path) -> None:
     got2 = mn2.split("\n")[mb2["lineStart"]]
     check("行首 ★ 标记保留", got2.startswith("★"), f"得到 {got2!r}")
 
+    section("core：元信息与离线回退")
+    # yaml 块必须在 CRLF 文件上也能解析出来。
+    # 曾经的 bug：正则用 ```yaml\n 匹配，CRLF 文件整个失配 → status/updated 读不出
+    # → 页面上把「定稿」显示成「草稿」。
+    raw = (sandbox / "episodes" / "ep06.md").read_text(encoding="utf-8", newline="")
+    check("ep06 是 CRLF 文件", "\r\n" in raw)
+    py = core.parse_yaml(raw)
+    check("CRLF 下能解析出 status", py.get("status") == "定稿", str(py.get("status")))
+    check("CRLF 下能解析出 updated", py.get("updated") == "2026-11-07", str(py.get("updated")))
+    eps_meta = {e["id"]: e["meta"] for e in core.list_episodes()}
+    check("list_episodes 的 status 正确", eps_meta.get("ep06", {}).get("status") == "定稿",
+          str(eps_meta.get("ep06", {}).get("status")))
+
+    # 内嵌快照（file:// 打开时用）也必须带正确的 status
+    idx = (sandbox / "preview" / "index.html").read_text(encoding="utf-8")
+    check("index.html 有内嵌数据块", "__EPISODES_JSON_START__" in idx)
+
     section("core：diff_lines")
     d = core.diff_lines(md, md2)
     check("diff 能报出改动行", any(x["op"] != "same" for x in d))
@@ -291,6 +308,37 @@ except ValueError as e:
 
 # ---------------------------------------------------------------- web tests
 def test_web(sandbox: Path) -> None:
+    section("web：file:// 离线模式")
+    # 用户常见场景：直接双击 index.html（file://），此时没有本地服务。
+    # 曾经的 bug：离线回退里混进了 Python 的 lstrip()，导致整个回退路径崩溃，
+    # 页面永远停在「加载中…」。这条用例专门守住它。
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  ⚠️ 未装 playwright，跳过 file:// 用例")
+        return
+    page_url = (sandbox / "preview" / "index.html").resolve().as_uri()
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
+        pg = b.new_page()
+        errs = []
+        pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+        pg.goto(page_url, wait_until="load")
+        pg.wait_for_timeout(2500)
+        heads = pg.eval_on_selector_all(".scene-head", "els=>els.map(e=>e.textContent.trim())")
+        check("file:// 下能渲染场次", len(heads) == 5, f"渲染了 {len(heads)} 场")
+        check("file:// 下场次号正确", heads and heads[0].startswith("6-1a"), str(heads[:1]))
+        meta = pg.eval_on_selector(".meta-bar", "e=>e.textContent")
+        check("file:// 下 status 显示正确", "定稿" in meta and "草稿" not in meta, meta.replace("\n", " "))
+        check("file:// 下无脚本错误", not errs, str(errs[:2]))
+        # 切换到另一集
+        pg.select_option("#epSelect", "ep07")
+        pg.wait_for_timeout(800)
+        heads2 = pg.eval_on_selector_all(".scene-head", "els=>els.map(e=>e.textContent.trim())")
+        check("file:// 下能切换集", len(heads2) == 4, f"渲染了 {len(heads2)} 场")
+        b.close()
+
     section("web：端到端")
     try:
         from playwright.sync_api import sync_playwright
