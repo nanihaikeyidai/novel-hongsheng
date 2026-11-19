@@ -1,0 +1,38 @@
+{
+  "unit": "EP06_6-1a_v4_jinyu",
+  "versionNote": "2026-11-14 用户判 v3『不行，还是控制不住』→ 先出 6 宫格确认镜头理解 → 用户『可以，生视频』＝该次已确认。v4 按 G19 静态降级：删除跳车/脚踢/空中旋转/落地爆炸整条动作链（G16 物理清零，连否定句都不写），全片只剩两扇前门打开、蓝隼邪恶笑容特写、车迎面逼近三类可静止状态；STATIC SHOT LOCK 每镜 FIXED 机位、柱子灯管停车线逐帧同屏幕坐标（用户『背景不用动』，与 G17 互斥，K 型加速词清零）；FRONT-FACING LOCK 蓝隼每镜 FULL FRONT VIEW 正对来车；安娜主驾 LEFT、陆沉副驾 RIGHT，二人 hips STILL ON THE SEAT / REMAINS INSIDE，只开门不跳车。4937 bytes、6 标签、5 镜、3 图 0 音频、无 negativePrompt。一版反馈=一次生成。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2121474091151220737",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "0",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "76.5"
+  },
+  "promptBytes": 4937,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_anna.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png"
+  ],
+  "audios": [],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": []
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\视频草稿\\EP06_6-1a_金鱼_v4.mp4"
+  ],
+  "tlsFix": "curl --ssl-no-revoke (Schannel CRYPT_E_REVOCATION_OFFLINE)",
+  "resumed": true
+}

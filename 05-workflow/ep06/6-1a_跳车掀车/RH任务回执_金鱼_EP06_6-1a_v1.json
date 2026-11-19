@@ -1,0 +1,38 @@
+{
+  "unit": "EP06_6-1a_v1_jinyu",
+  "versionNote": "从本地梅林 v1 未达标试片改走云端金鱼；场景动作前置、4957 bytes（云端已跑通基线内）；3 张预缩放同画风域参考图、蓝隼残留能量丝已物理清除；0 音频槽（全段无对白）；不含 negativePrompt 段与任何事故形态负向词。一次反馈=一次生成，未迭代第二版。首次提交脚本本地轮询被超时中断，本回执由 resume 脚本接续同一 taskId 补齐，未二次提交",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2120912562534178818",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "0",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "82.45"
+  },
+  "promptBytes": 4957,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_anna.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png"
+  ],
+  "audios": [],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": []
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\视频草稿\\EP06_6-1a_金鱼_v1.mp4"
+  ],
+  "tlsFix": "curl --ssl-no-revoke (Schannel CRYPT_E_REVOCATION_OFFLINE)",
+  "resumed": true
+}

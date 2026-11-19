@@ -1,0 +1,28 @@
+subject_definitions:
+SETTING FIRST - <Picture 2> ND garage lane, cold tube lights, striped pillars with yellow-black warning bands, wet floor reflections. Cool blue-grey ONLY. Plate and badge text BLANK.
+MOTION UNITY LOCK (EVERY shot): people, pillars, floor are ONE motion system; each CUT changes ONLY the camera, INHERITING the same coordinates, heading, speed, momentum.
+SPEED LOCK: real-time FAST, every 0.5 to 1 second a NEW contact, loss of balance or struggle; NO slow motion, NO freeze, NO held poses, NO prolonged staring.
+MOUTH LOCK (EVERY character, EVERY shot): ALL mouths stay CLOSED at all times - lips sealed, teeth clenched, jaws tight. NO character opens their mouth, NO talking, NO shouting, NO gasping, NO lip movement of any kind. Anna's mouth is fully hidden behind the white mask. Faces express ONLY through eyes and brows.
+<Picture 1> Anna: grey cap, WHITE MASK covering nose and mouth, long BLUE-BLACK hair, dark grey uniform, grey gloves. Inherit look ONLY - NOT its camera angle.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, geometric shaved stripe, black angular sunglasses NEVER removed, graphite-black long coat. Inherit hair, shave, sunglasses, coat ONLY - NOT its camera angle.
+Lu Chen: 17yo boy, black messy short hair, white shirt sleeves rolled to elbows, dark trousers, white sneakers.
+
+summary:
+15 seconds, 5 shots, ABSOLUTELY SILENT, real-time FAST, every mouth CLOSED throughout. Lan Sun INSTANTLY TELEPORTS from several meters away to directly in front of Anna - appearing in a single blink with NO walking and NO running steps - and ONE hand clamps her throat, LIFTING her whole body clear off the floor; she kicks and struggles, face flushing. Lu Chen's eyes flare red, he charges to attack in a FRONT-ON shot, and as he closes in an OFF-SCREEN foot from Lan Sun kicks him clean off his feet and blasts him flying backward - his punch NEVER lands. Nobody speaks, nobody opens their mouth.
+
+retention_analysis:
+SETTING + LOOK fully_preserved - Anna in WHITE MASK throughout, all mouths CLOSED, same garage, same cool blue-grey cel-anime; cuts inherit position, direction, speed; people, pillars, floor share ONE motion system. Lan Sun's position is INSTANT teleport, never a walk cycle.
+
+detailed_description:
+16:9 cel-anime, 2D flat shading, cool blue-grey palette matching <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. no text. Express every emotion through EYES and BROWS only, mouths never open. Detail the finger grip, cloth sway, hair inertia, wet-floor reflection.
+[Shot 1] 00.0s LOW side tracking: Lan Sun TELEPORTS - he BLINKS out of a standstill several meters away and REAPPEARS instantly already nose-to-nose with Anna, both feet planted, right hand rising fingers spread; ZERO travel frames, NO walking, NO running, NO approaching steps; mouth CLOSED. 2.0s.
+[Shot 2] 02.0s Lan Sun's right hand CLAMPS Anna's throat, palm on her windpipe, arm powers her whole body OFF the floor, both feet dangling; her hands clamp his wrist, knuckles white; boot toes kick fast in air, hair and coat stream upward; both jaws clenched, mouths CLOSED. 4.0s.
+[Shot 3] 06.0s HARD CUT to Anna FRONT face CLOSE-UP, white mask covering nose and mouth, only eyes visible: brows knit tight, eyes wide, veins and sweat at the temple, pupils shifting from rage to oxygen-deprived haze; expression all in the eyes, mask hides the closed mouth. 3.0s.
+[Shot 4] 09.0s side MID SHOT: Lan Sun's free hand still in pocket, sunglasses, faint smirk, lips CLOSED; Anna's struggles weaken, hair falls, boots slow. 3.0s.
+[Shot 5] 12.0s STRICT FRONT-ON shot of LU CHEN ONLY - camera locked frontal on his face, he fills the frame: red irises flare, teeth clenched mouth CLOSED, fists up, he surges straight toward the camera/attacker. As he closes in, a BLACK-BOOTED FOOT snaps in from OFF-SCREEN (Lan Sun's leg, Lan Sun himself NOT in frame) and CRASHES into Lu Chen's chest; Lu Chen is kicked clean off his feet and BLASTED flying backward, arms flailing, shirt whipping up, his punch NEVER connecting. 3.0s.
+
+overall_soundscape:
+Diegetic, URGENT - choking gasps through the nose, boot-toe air rush, leather glove grip, cloth strain, a heavy OFF-SCREEN kick impact and body hitting concrete. ZERO speech, ZERO dialogue, NO mouth opens, NO voice of any kind. Avoid: subtitles, text, watermark, live-action, red light, second car.
+
+non_diegetic_music:
+N/A

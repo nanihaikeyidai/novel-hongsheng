@@ -38,7 +38,7 @@ def main() -> int:
     f_title, f_row, f_small = font(24), font(17), font(14)
 
     d.text((28, 20), "P09「晚安」重配音 · 候选声学对比（原片基线 113 Hz）", font=f_title, fill="#e8eef7")
-    d.text((28, 54), "F0 越低 = 越低沉    |    气声比越高 = 气流越多    |    音色相关越接近 1.000 = 越贴原片音色", font=f_small, fill="#8fa3bd")
+    d.text((28, 54), "F0 越低 = 越低沉  |  气声比越高 = 气流越多  |  字/秒越大 = 语速越快  |  音色相关越近 1.000 = 越贴原片", font=f_small, fill="#8fa3bd")
 
     x0, x1 = 300, 830
     scale = (x1 - x0) / 240.0  # 0–240 Hz
@@ -57,6 +57,7 @@ def main() -> int:
         "C": "#8f7ad6", "H": "#62c9a0",  # 原片音色
         "D": "#8894a6", "G": "#c9b45a",  # baseline / reference_audio
         "W": "#4fc3c9",  # 气声后期层
+        "X": "#e0a24a",  # 第四轮：降调+加速+笑意
     }
     for i, r in enumerate(rows):
         y = 100 + i * 56
@@ -68,13 +69,14 @@ def main() -> int:
         d.rounded_rectangle((x0, y + 8, hz_x(f0), y + 30), radius=6, fill=c)
         d.text((hz_x(f0) + 8, y + 9), f"{f0:.0f} Hz", font=f_small, fill=c)
         d.text((x1 + 22, y + 9),
-               f"气声 {r.get('hf_ratio_db', 0):.0f}dB · 音色 {r['timbre_corr_vs_ref']:.3f} · {r['voiced_s']:.2f}s",
+               f"气声 {r.get('hf_ratio_db', 0):.0f}dB · 音色 {r['timbre_corr_vs_ref']:.3f} · "
+               f"{r['voiced_s']:.2f}s / {r.get('zi_per_s', 0):.1f}字每秒",
                font=f_small, fill="#9fb2c9")
 
     d.line([(28, H - 52), (W - 28, H - 52)], fill="#3a4553", width=1)
     d.text((28, H - 40),
-           "第三轮主推 W_L_whisper：F0 114Hz（≈原片）· 气声比 -9.7dB（原片 -26.8dB）· 电平 -5.5dB · 0.74s 慢吐",
-           font=f_small, fill="#4fc3c9")
+           "第四轮主推 X_r4_deep：F0 100.5Hz（少年音下限）· 4.4 字/秒（上轮 2.7）· 气声 -10.4dB · 电平 -8.0dB · 戏谑笑意",
+           font=f_small, fill="#e0a24a")
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     im.save(out)

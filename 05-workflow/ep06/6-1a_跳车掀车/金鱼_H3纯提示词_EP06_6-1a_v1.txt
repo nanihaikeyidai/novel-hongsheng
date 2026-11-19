@@ -1,0 +1,24 @@
+subject_definitions:
+SETTING FIRST — every shot is the SAME place: <Picture 2> ND underground garage DRIVING LANE, cold white fluorescent tubes, concrete pillars with yellow-black base stripes, low ceiling pipes, wet epoxy floor, empty bays. Cool blue-grey monochrome ONLY; sole lights are cold tubes and headlights. All pillar signs, bay numbers, plates, emblems and badges are BLANK plain material, no lettering.
+<Picture 1> Anna: grey cleaner cap, white mask, long BLUE-BLACK hair (dark navy, visible blue sheen), dark grey short-sleeve uniform, grey rubber gloves, blank badge. DRIVER seat, never speaks.
+<Picture 3> Lan Sun: ELECTRIC-BLUE messy short hair with geometric shaved stripe at left temple, black angular wrap sunglasses NEVER removed, graphite-black long tactical coat over dark-navy high collar, black gloves. Hands in pockets, calm faint smirk. Power is BARE FIST: thin blue-white SHORT arcs hug only the skin of his right fist and forearm, no longer than his fist. Ignore the light grey studio backdrop of <Picture 1> and <Picture 3>; inherit appearance only.
+Lu Chen: 17yo, black messy short hair, white shirt sleeves rolled to elbow, dark trousers, white sneakers. FRONT PASSENGER, never speaks.
+THE CAR: ONE dark navy four-door sedan, headlights ON, engine running. Its NOSE always points INTO the depth toward the exit ramp; it travels straight FORWARD, NEVER reverses, never tilts up, never leaves the garage.
+
+summary: [reference generation] 15s, 5 shots, ZERO dialogue. In this garage the sedan rolls forward; BOTH front doors are flung open and Anna and Lu Chen bail out to opposite sides; the EMPTY car coasts straight at Lan Sun, who stands still in the headlight cone; he draws one right fist and slams it into the hood; metal dents, tail lifts, the whole car flips sideways off the ground and crashes into a side parking bay. One continuous physical chain at real-world speed.
+
+retention_analysis:
+SETTING (all): fully_preserved - same garage lane, cold tubes, wet floor, cool blue-grey cel-anime shading like <Picture 1> <Picture 2> <Picture 3>.
+THE CAR (all): fully_preserved - one dark navy sedan, nose into depth, forward heading, damage carries across cuts.
+<Picture 1> and <Picture 3>: attribute_transfer - faces, hair, costumes, sunglasses; studio backdrop never enters frame.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, EXACT same linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; hand-painted background, NOT photorealistic, NOT 3D. Concrete, pillars, plates and badges are blank material without text or digits. Every state change has an operator, a body part, an action and a visible result; real physical speed, no slow motion, no freeze.
+[Shot 1] At 00.000s LOW exterior wide, fixed: the dark navy sedan centered in the lane, nose into depth toward the ramp, headlights ON. Two car lengths ahead Lan Sun stands MOTIONLESS facing the car head-on in the headlight cone, hands in pockets, blue hair cold rim-lit. Anna in the driver seat, Lu Chen in the front passenger seat. Hold >=0.5s. Silent.
+[Shot 2] At 03.000s fixed SIDE medium: LU CHEN HIMSELF pushes the LEFT front door open and ANNA HERSELF pushes the RIGHT front door open, both swing outward at once. Lu Chen rolls out to the car's LEFT, Anna leaps out to the car's RIGHT, each rolls half a turn on the wet concrete and ends separated on opposite sides. Doors stay open, cabin now EMPTY, car still rolls forward.
+[Shot 3] At 06.500s tracking medium from side-rear: the EMPTY sedan coasts straight FORWARD toward Lan Sun, nose into depth, never reversing, never lifting. His feet do not move; his RIGHT hand leaves the pocket, closes into a fist and rises; thin blue-white short arcs hug only his knuckles and right forearm skin.
+[Shot 4] At 09.500s fixed SIDE full shot: Lan Sun's right fist drives DOWN onto the hood center. Metal caves into a fist-shaped dent from the contact point, hood buckles into folds, cracks spread across the windshield; the impact lifts the tail and the entire car rotates sideways off the ground around its nose.
+[Shot 5] At 12.500s diagonal WIDE: the car lands sideways across an empty side bay, broken glass scatters on the wet floor, grey dust rises. Lan Sun stands at the same spot and shakes out his right knuckles; arcs fade segment by segment; the wreck reflected small in his black lenses. Hold final 0.5s stable.
+
+overall_soundscape: Pure diegetic action sound — low engine hum, ventilation fan, two door thuds, two body landings, tires on wet concrete, faint electric hum at the fist, metal collapse, glass cracking, heavy crash, scattering glass. NO BGM. ZERO speech, ZERO dialogue, ZERO vocalization, ZERO narration; no character opens their mouth to speak. Avoid: subtitles, on-screen text, readable print, pseudo-glyphs, watermark, logo, live-action or 3D look, red light, warm color, colored particles, a second car, slow motion, freeze frames.
+
+non_diegetic_music: N/A

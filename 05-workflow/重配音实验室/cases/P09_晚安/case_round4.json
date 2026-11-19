@@ -6,11 +6,11 @@
   "language": "ZH",
   "voice_ref": "voicelab_p09_wanan_orig.wav",
   "emotion_ref": "voicelab_p09_wanan_orig.wav",
-  "window": [4.20, 5.50],
+  "window": [4.20, 5.08],
   "hard_end": 5.65,
   "original_line_asr": [4.07, 4.77],
   "out_dir": "候选音频",
-  "_window_note": "沿用第三轮窗口；本轮语速加快、台词更短，1.2s 可用窗口绰绰有余。hard_end 5.65 是下一句 5.95s 的硬边界。起音点仍由 replace_line.py 用能量包络自动检测（实测 4.29s），不用 ASR 时间戳。",
+  "_window_note": "第三轮为耳语慢吐放宽到 5.50s；本轮语速加快、有效发声只有 0.45s，改收回 5.08s（仍留 0.79s 余量给气口），避免把 5.08s 之后的原片环境音一起挖空造成真空感。hard_end 5.65 是下一句 5.95s 的硬边界。起音点仍由 replace_line.py 用能量包络自动检测（实测 4.29s），不用 ASR 时间戳。",
   "candidates": [
     {
       "name": "M_smirk_text",

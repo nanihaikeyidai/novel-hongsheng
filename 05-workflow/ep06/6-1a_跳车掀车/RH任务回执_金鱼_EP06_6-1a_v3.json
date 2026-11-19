@@ -1,0 +1,38 @@
+{
+  "unit": "EP06_6-1a_v3_jinyu",
+  "versionNote": "v3 修正用户四项：①Shot1 改 WINDSHIELD INTERIOR POV（车内后座、仪表盘+方向盘、安娜主驾在 LEFT、陆沉副驾在 RIGHT，透过挡风玻璃看蓝隼）；②安娜跳左/陆沉跳右，各自带车速动量翻滚；③照武戏模板加 MOTION UNITY LOCK（人/车/背景同一运动系统，切镜只改机位并继承坐标/朝向/速度/损伤）修人景运动不一致；④结尾拳改 RIGHT BOOT ONE SINGLE side KICK → 整车被踢离原线、空中 corkscrew 整周 SPINNING、落地 EXPLODES（冷色调白热闪光+蓝白冲击环+黑烟，不写橙火）；删净 punch/fist 防动作摇摆。4991 bytes，6 标签，3 图 0 音频，无 negativePrompt。一版反馈=一次生成，未迭代第四版",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2121268007220236289",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "0",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "76.84"
+  },
+  "promptBytes": 4991,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_anna.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png"
+  ],
+  "audios": [],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": []
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\视频草稿\\EP06_6-1a_金鱼_v3.mp4"
+  ],
+  "tlsFix": "curl --ssl-no-revoke (Schannel CRYPT_E_REVOCATION_OFFLINE)",
+  "resumed": true
+}

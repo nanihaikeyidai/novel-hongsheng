@@ -6,7 +6,7 @@
     "沈默": {
       "file": "沈默.wav",
       "as_comfy_input": "voicelab_shenmo_ref.wav",
-      "timbre": "14 岁少年音，平淡低压、漫不经心；P09 定稿口径＝贴耳气声耳语、音量压低 5dB、毫无起伏的死亡宣告，F0 仍锁 113Hz 附近，不成年化",
+      "timbre": "14 岁少年音，平淡低压、漫不经心；P09 第四轮口径＝贴耳气声耳语、语速偏快（约 4.4 字/秒）、音量压低 8dB、F0 降到 100–105Hz、嘴角带一点戏谑轻蔑的笑（不是开心、不软糯、不笑出声）；绝不进 80–90Hz 成年男声区",
       "duration": "6.544s / 48kHz / mono"
     },
     "安娜": {"file": "安娜.wav", "as_comfy_input": "voicelab_anna_ref.wav"},

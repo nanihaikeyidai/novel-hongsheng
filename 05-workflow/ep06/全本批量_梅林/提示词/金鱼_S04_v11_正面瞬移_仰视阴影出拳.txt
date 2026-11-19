@@ -1,0 +1,25 @@
+subject_definitions:
+SETTING <Picture 2> ND garage lane, cold tubes, striped pillars, wet floor, cool blue-grey ONLY. No text.
+MOTION UNITY LOCK: people, pillars, floor ONE motion system; every CUT changes ONLY camera, INHERITING position, heading, speed, momentum.
+SPEED LOCK: real-time FAST; NO slow-mo, NO freeze, NO held pose.
+MOUTH LOCK: Anna jaw COMPLETELY STILL behind WHITE MASK always, even choked; Lu Chen mouth CLOSED; Lan Sun CLOSED EXCEPT [Shot 2] OPENS to speak.
+GRIP LOCK: Lan Sun right hand clamps Anna throat, holds her OFF floor, face HIGH ABOVE his eyes; Anna BOTH hands GRIP his forearm/wrist to RELIEVE throat pressure, blades down. This pose = ONE state INHERITED every shot.
+<Picture 1> Anna: grey cap, WHITE MASK, blue-black hair, dark grey uniform, gloves; START blade-ready combat stance from ref (knees bent, low, blade each hand), NOT upright. Inherit look/blades/stance ONLY, not camera angle.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, shaved stripe, black angular sunglasses NEVER removed, graphite-black coat. Inherit look ONLY, not camera angle.
+<Picture 4> Lu Chen: FACE and CLOTHES from this ref only - black messy short hair, white shirt, dark trousers. Inherit face/hair/shirt ONLY, not multi-panel layout or angles. 17yo in shots 3-5.
+<Audio 1> Lan Sun timbre only; the single line in Shot 2.
+
+summary: 15s, 5 shots, real-time FAST. Anna opens blade-ready. In ONE instant Lan Sun TELEPORTS with BLUE-WHITE LIGHTNING to the side Anna FACES - chest-to-chest, FACE-TO-FACE - clamps her throat, holds her face HIGH above him; Anna grips his arm with BOTH hands. CUT to EXTREME LOW-ANGLE Lan Sun: chin lifted, head TILTED UP ~45deg, gazing UP at her, her face blocking the tube light casting a HARD SHADOW across his eyes; smirk, ONE line. CUT to Lu Chen PUNCH CLOSE-UP, red eye flare - he LUNGES IN, and AT THE PEAK of his charge Lan Sun's SIDE KICK intercepts him, REVERSING his momentum; Lu Chen TUMBLES into a striped pillar.
+
+retention_analysis: LOOK preserved - white mask + blade stance, white shirt + face from <Picture 4>, blue hair + sunglasses, jaw STILL, same garage; cuts inherit position/heading/speed/momentum, ONE motion system. Teleport = INSTANT arcs arriving on the side Anna FACES, chest-to-chest, Anna high above his gaze. Grip + two-hand clutch = ONE inherited state. Lu Chen's attack = ONE forward charge, kick REVERSES it.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D, no text/subtitles. Teleport = ONLY CRACKLING BLUE-WHITE LIGHTNING + ELECTRIC ARCS, cold blue-white, never red/fire.
+[Shot 1] 0.0s CAMERA 3/4 to their facing line so BOTH faces show: Anna BLADE-READY, knees bent, blade each hand. In ONE instant Lan Sun MATERIALIZES in a VIOLENT BLUE-WHITE LIGHTNING BURST on the side Anna FACES - chest-to-chest, noses ONE line, shoulder lines parallel, both faces visible, NOT one behind the other. ZERO travel, NO walk/run/slide. Right hand CLAMPS her throat, holds her OFF floor, face HIGH ABOVE his eyes; Anna's BOTH hands CLAMP his forearm/wrist to RELIEVE throat pressure, blades down; JAW LOCKED. 4.0s.
+[Shot 2] 4.0s HARD CUT LAN SUN FACE CLOSE-UP: EXTREME LOW camera near his chest aimed UP, CHIN LIFTED, head TILTED UP ~45 DEGREES, gaze UP at Anna's face held above him, underside of jaw visible, face broadly toward camera, ceiling tubes at top. Anna's face/hair directly between his eyes and overhead tube, HARD SHADOW across eyes + upper face, lit jaw, cool chiaroscuro. Slow smirk, MOUTH OPENS, ONE line, amused contempt. ONLY shot his mouth opens. 4.5s.
+[Shot 3] 8.5s HARD CUT LU CHEN PUNCH CLOSE-UP (white shirt from <Picture 4>): TIGHT close-up, irises FLARE BRILLIANT RED, brows down; he LUNGES forward driving ONE HARD PUNCH at CLOSE range - torso SURGING IN, fist GROWS LARGER, feet driving the charge, momentum still BUILDING, NOT a long-distance run; NO stop, NO settle; mouth CLOSED. 2.0s.
+[Shot 4] 10.5s Lan Sun PIVOTS SIDE-ON in one motion; his SIDE KICK INTERCEPTS Lu Chen MID-LUNGE - at the PEAK of his forward drive, fist STILL extended, body STILL surging, ZERO chance to step back or recover. Impact REVERSES his momentum. CRITICAL: Lan Sun's hand NEVER releases Anna's throat; Anna SAME grip, BOTH hands STILL on his arm, jaw still. 2.0s.
+[Shot 5] 12.5s Lu Chen BLASTED backward by MOMENTUM REVERSAL - his own forward speed turned against him, body TUMBLING end over end, back SMASHES into a YELLOW-BLACK STRIPED CONCRETE PILLAR - dust bursts; Lan Sun STILL holding Anna in the inherited grip. 2.5s.
+
+overall_soundscape: Diegetic. [Shot 2] Lan Sun speaks ONE line in Chinese, cold/amused, <Audio 1> timbre: <d>[Chinese] 安娜，好久不见，让我看看你变强了没有</d>. Else: electric crackle, choking gasps, cloth strain, side-kick impact, body slamming concrete. Anna never speaks. Avoid: subtitles, text, watermark, live-action, red light, second car, other words, second reading of line.
+
+non_diegetic_music: N/A

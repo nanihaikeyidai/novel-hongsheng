@@ -1,0 +1,28 @@
+subject_definitions:
+SETTING FIRST - <Picture 2> ND garage lane, cold tube lights, striped pillars with yellow-black warning bands, wet floor reflections. Cool blue-grey ONLY. Plate and badge text BLANK.
+MOTION UNITY LOCK (EVERY shot): people, pillars, floor are ONE motion system; each CUT changes ONLY the camera, INHERITING the same coordinates, heading, speed, momentum.
+SPEED LOCK: real-time FAST except the one speaking close-up; NO slow motion, NO freeze, NO held poses.
+MOUTH LOCK: ANNA's mouth and jaw stay COMPLETELY STILL in EVERY shot - lips sealed behind the white mask, no lip or jaw movement, even while choked she does NOT open her mouth; she expresses only through eyes and brows. LAN SUN keeps his mouth CLOSED in every shot EXCEPT [Shot 3], his speaking close-up, where his mouth OPENS and moves as he talks. Lu Chen's mouth stays closed in his shot.
+<Picture 1> Anna: grey cap, WHITE MASK covering nose and mouth, long BLUE-BLACK hair, dark grey uniform, grey gloves. START POSE = combat-ready stance inherited from the reference: knees bent, weight lowered, both arms extended forward with BLACK-SILVER BLADES gripped in each hand. She is NOT standing upright, NOT relaxed. Inherit look, blades and combat stance ONLY - NOT its camera angle.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, geometric shaved stripe, black angular sunglasses NEVER removed, graphite-black long coat. Inherit hair, shave, sunglasses, coat ONLY - NOT its camera angle.
+Lu Chen: 17yo boy, black messy short hair, white shirt sleeves rolled to elbows, dark trousers, white sneakers.
+
+summary:
+15 seconds, 5 shots, real-time FAST except the speaking close-up. Anna opens in a blade-ready combat stance. In ONE instant Lan Sun MATERIALIZES directly in front of her face - in place, NO walking, NO lateral travel - and ONE hand clamps her throat, LIFTING her whole body off the floor; her jaw stays locked as she struggles. Then HARD CUT to a LAN SUN FRONT CLOSE-UP: sunglasses, smirk, mouth OPEN, he speaks one line to her. Then Anna's close-up, eyes burning. Finally Lu Chen charges FRONT-ON, and as he closes in an OFF-SCREEN foot from Lan Sun kicks him flying backward - his punch NEVER lands.
+
+retention_analysis:
+SETTING + LOOK fully_preserved - Anna in WHITE MASK and blade-ready stance at open, Anna's mouth/jaw STILL throughout, same garage, same cool blue-grey cel-anime; cuts inherit position, direction, speed; people, pillars, floor share ONE motion system. Lan Sun's arrival is INSTANT teleport in place.
+
+detailed_description:
+16:9 cel-anime, 2D flat shading, cool blue-grey palette matching <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. no text, no subtitles. Detail finger grip, cloth sway, hair inertia, wet-floor reflection.
+[Shot 1] 00.0s LOW front tracking: Anna alone in BLADE-READY COMBAT STANCE - knees bent, weight low, both arms forward, black-silver blades gripped in each hand, mask on, eyes locked ahead. In a SINGLE instant Lan Sun MATERIALIZES at a fixed point DIRECTLY IN FRONT of Anna's face - from nothing to nose-to-nose in place, ZERO travel frames, NO approach from the side, NO lateral movement, NO walking, NO running, NO slide; his right hand rising fingers spread, mouth CLOSED. 2.0s.
+[Shot 2] 02.0s Lan Sun's right hand CLAMPS Anna's throat, palm on her windpipe, arm powers her whole body OFF the floor, both feet dangling; the blades in her hands tilt as her hands clamp his wrist, knuckles white; boot toes kick fast in air, hair and coat stream upward; Anna's JAW LOCKED, lower face completely STILL. 2.5s.
+[Shot 3] 04.5s HARD CUT to LAN SUN FRONT FACE CLOSE-UP - face fills the frame, electric-blue hair and geometric shaved stripe, black angular sunglasses, graphite-black long coat collar; a slow smirk spreads across his face, his MOUTH OPENS and he SPEAKS with clear lip movements, looking down at her with amused contempt, one eyebrow raised behind the sunglasses. This is the ONLY shot where Lan Sun's mouth opens. 5.0s.
+[Shot 4] 09.5s HARD CUT to Anna FRONT face CLOSE-UP, white mask covering nose and mouth, only eyes visible: brows knit tight, eyes wide with fury, veins and sweat at the temple; expression all in the eyes and brows ONLY - the mouth and jaw underneath the mask do NOT move at all. 2.0s.
+[Shot 5] 11.5s STRICT FRONT-ON shot of LU CHEN ONLY - camera locked frontal on his face, he fills the frame: red irises flare, teeth clenched mouth CLOSED, fists up, he surges straight toward the camera/attacker. As he closes in, a BLACK-BOOTED FOOT snaps in from OFF-SCREEN (Lan Sun's leg, Lan Sun himself NOT in frame) and CRASHES into Lu Chen's chest; Lu Chen is kicked clean off his feet and BLASTED flying backward, arms flailing, shirt whipping up, his punch NEVER connecting. 3.5s.
+
+overall_soundscape:
+Diegetic. [Shot 3] Lan Sun speaks ONE line in Chinese, cold and amused: "安娜，好久不见，让我看看你变强了没有". All other shots: choking gasps through the nose, boot-toe air rush, leather glove grip, cloth strain, a heavy OFF-SCREEN kick impact and body hitting concrete. Anna never speaks. Avoid: subtitles, text, watermark, live-action, red light, second car.
+
+non_diegetic_music:
+N/A

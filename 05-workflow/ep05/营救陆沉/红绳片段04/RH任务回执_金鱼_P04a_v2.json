@@ -1,0 +1,40 @@
+{
+  "unit": "P04a_v2_relink",
+  "versionNote": "重制 03→04 插入段；入点锁 P03 归档末帧、出点锁 P04b 归档首帧；废稿 960x544 明亮蓝波形房作废；近黑命令行暗室 + 沈默不给正脸 + 蓝椅开放抽屉；一次反馈=一次生成，未迭代第二版",
+  "workflow": "金鱼",
+  "appId": "2110357037929558018",
+  "taskId": "2118922338878849025",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": "449",
+    "taskCostTime": "614",
+    "thirdPartyConsumeMoney": null
+  },
+  "promptBytes": 4939,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\上传包_relink\\image1_anna.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\上传包_relink\\image2_shenmo.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\上传包_relink\\image3_P03_lastframe_anime.jpg",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\上传包_relink\\image4_P04b_firstframe_anime.jpg"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\上传包_relink\\audio1_shenmo.wav"
+  ],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50",
+      "43"
+    ],
+    "audios": [
+      "48"
+    ]
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep05\\营救陆沉\\红绳片段04\\视频草稿\\片段04_P04a_金鱼草稿_v2_衔接版.mp4"
+  ]
+}

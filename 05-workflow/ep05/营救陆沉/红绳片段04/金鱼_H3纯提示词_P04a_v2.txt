@@ -1,0 +1,26 @@
+subject_definitions:
+<Subject 1> Anna: <Picture 1> — long blue-black hair (dark navy, visible blue sheen), loose; light grey short-sleeve school shirt, dark trim, navy tie and skirt; hair pigment never changes with lighting. MUTE all clip, lips closed, never looks into camera. Starts behind Shenmo's chair at his left (<Picture 3>); moves right, sits on the blue office chair, pulls the lower drawer open, looks, takes nothing.
+<Subject 2> Shenmo: <Picture 2> — hood up low, black rectangular-rimmed glasses, black tactical vest over hoodie, slim teen boy. Seated typing, gaze locked on monitors; head never turns toward Anna or camera; fingers keep keying while speaking; only hood/back/shoulder/rear-3/4 shown, face never the subject. Right hand points ONCE to the right cabinet, then lowers.
+<Subject 3> Dark computer room: <Picture 3> = LAST FRAME of the previous finished anime shot (same cel linework, near-black, green-white command-line glow as ONLY light). <Picture 4> = FIRST FRAME of the next shot (same room, blue office chair, lower drawer at desk's lower right, black upright tower with tiny red dot at viewer-right). Curved monitors, 2-3 visible by angle, black bg with dense scrolling green-white terminal text. All <Picture N> share one art-style domain. No ceiling light, no solid blue screens, no abstract waveforms.
+<Subject 4> In the open drawer: black brick phone with matte antenna ring, cloned ND access card, small earbud — plain blank surfaces, no characters of any language, no pseudo-glyphs, no logo, no watermark.
+<Audio 1> Shenmo (S1) timbre only; one line; low-key flat nonchalant teen voice.
+
+summary: Opens exactly on <Picture 3> in the near-black command-line room. Hooded Shenmo, head locked on screens, points once to the right cabinet and gives his ONLY line while typing; Anna sits on the blue office chair, pulls the lower drawer open and looks at the three blank props without taking them. Ends on a NEW composition matching <Picture 4> from another angle. Only Shenmo speaks once; Anna is mute.
+
+retention_analysis:
+<Subject 1> (1,3,4), <Subject 2> (1,2,4): fully_preserved.
+<Subject 3> (all): fully_preserved; open=<Picture 3>; end≠open.
+<Subject 4> (3,4): fully_preserved.
+<Picture 1>, <Picture 2>, <Picture 4>: attribute_transfer; <Picture 4> = ending anchor only, NOT opening frame.
+<Picture 3> (Shot 1 first ONLY): fully_preserved - prior clip's last frame.
+<Audio 1>: reference - Shenmo (S1), one line.
+
+detailed_description: 16:9 anime cinematic, high-detail cel animation, near-black room; the sole light is green-white command-line text rim-lighting faces, fingers, keyboard edges and drawer rim; walls and ceiling sink into near-black. Scene/costume/prop lock: same room, uniform, hood/glasses/vest. Rules: ONE line only, Shenmo (S1) in Shot 2, ~7 Chinese chars/sec (25 chars about 3.6s); Anna mute; head never rotates; gaze on screens; fingers keying; only hood/back/shoulder of Shenmo; last frame differs from first.
+[Shot 1] At 00.000s open exactly on <Picture 3>: medium side-rear two-shot — Anna behind his chair at his left, Shenmo hooded back to camera typing; no ceiling light. Hold ≥0.5s. His RIGHT hand points ONCE to the right cabinet and lowers; head stays on monitors. Anna moves right. No dialogue.
+[Shot 2] At 02.800s hard cut OVER-SHOULDER / rear-3/4 MEDIUM from behind his shoulder — monitors, keyboard, right space; face NOT the subject. Head fixed, fingers typing. <Subject 2> (S1) says ONCE, low-key flat casually indifferent, <Audio 1> timbre: <d>[Chinese] 里面有个手机和我复制的ND门禁卡，连上耳机听指挥就行。</d> (about 3.5-3.8s). Lips closed by ~06.800s; ZERO speech thereafter. No second line, no reply from Anna.
+[Shot 3] At 07.000s hard cut Anna at the desk's right side: she sits on the BLUE OFFICE CHAIR and pulls the LOWER DRAWER open. Insert: black brick phone with matte antenna ring, cloned ND access card, small earbud — blank surfaces with no lettering. She leans to look, hands on rim, takes nothing; mouth closed. No dialogue.
+[Shot 4] At 11.500s hard cut NEW composition (different from Shot 1 and <Picture 3>): medium two-shot from another angle — Anna seated on the blue office chair at the OPEN drawer; Shenmo in left background typing, hood/rear-3/4, head to screens; command-line monitors and black upright tower at viewer-right, matching <Picture 4>. Hold ≥0.8s silent. No dialogue.
+
+overall_soundscape: Keyboard clicks, case fan hum, drawer-rail slide, faint screen hiss. ONE spoken line: Shenmo (S1) <Audio 1> in Shot 2 only, ~7 chars/sec, low-key flat nonchalant. ZERO speech after ~06.8s; Anna never speaks. Avoid: subtitles, on-screen text, pseudo-glyphs, watermark, logo, live-action or 3D look, BGM, a second reading of the line, any Shenmo face close-up or head turn, ceiling light, bright room, blue screens, readable print on props, picking the props up. No music.
+
+non_diegetic_music: N/A

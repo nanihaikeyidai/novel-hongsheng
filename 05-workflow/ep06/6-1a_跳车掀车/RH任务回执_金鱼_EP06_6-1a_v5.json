@@ -1,0 +1,38 @@
+{
+  "unit": "EP06_6-1a_v5_jinyu",
+  "versionNote": "2026-11-14 用户判 v4『动作太慢了，动作要快，车速也要快，加速撞的感觉，要夸张点增加速度赶，给一个车轮加速的镜头，现在是慢吞吞开过去』。按 G20 本应先出加速版 6 宫格，用户主动取消出图并选择『直接生成 v5 视频』＝该次已确认；本轮 G20 由用户豁免，留痕在复盘。v5 是口径反转：恢复 K 型全部加速锚点（ACCELERATES HARD / SPEED LINES / motion blur / GROWS LARGER / SHRINKS FASTER / cuts get SHORTER / radial streaks），但 BACKGROUND LOCK 仍锁柱子灯管停车线逐帧同屏幕坐标（用户『背景不用动』未撤回），速度线只贴车身/轮拱/地面反光带，不写 9b 的 MOTION UNITY LOCK；新增 [Shot 5] 贴地车轮加速特写，末镜内 3 个短拍切回同机位；动作链仍按 G19 降级（不跳车/不踢/不翻/不爆炸，G16 物理清零），门 SNAP open IN ONE BEAT；G21 蓝隼特写补机位层正轴锁、参考图声明不继承 3/4 侧角度；G14 车头双灯 AT 蓝隼胸口，NEVER reverses / NEVER passes him。4983 bytes、6 标签、6 镜、3 图 0 音频、无 negativePrompt。一版反馈=一次生成。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2121617958865436673",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "0",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "85.34"
+  },
+  "promptBytes": 4983,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_anna.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png"
+  ],
+  "audios": [],
+  "nodes": {
+    "prompt": "263",
+    "images": [
+      "51",
+      "49",
+      "50"
+    ],
+    "audios": []
+  },
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\视频草稿\\EP06_6-1a_金鱼_v5.mp4"
+  ],
+  "tlsFix": "curl --ssl-no-revoke (Schannel CRYPT_E_REVOCATION_OFFLINE)",
+  "resumed": true
+}

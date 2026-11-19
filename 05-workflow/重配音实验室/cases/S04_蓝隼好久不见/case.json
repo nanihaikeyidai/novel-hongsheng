@@ -1,0 +1,29 @@
+{
+  "case_id": "S04_lansun_haojian",
+  "description": "EP06 S04 蓝隼掐住安娜后台词重配：蓝隼音色，冷冽傲慢带戏谑——「安娜，好久不见，让我看看你变强了没有」。",
+  "source_video": "D:/HermesWorkspace/ai小说/红绳/05-workflow/ep06/全本批量_梅林/视频草稿/EP06_S04_v8_干净底.mp4",
+  "line": "安娜，好久不见，让我看看你变强了没有。",
+  "language": "ZH",
+  "voice_ref": "voicelab_lansun_ref.wav",
+  "window": [5.0, 9.2],
+  "original_line_asr": [5.5, 8.8],
+  "candidates": [
+    {
+      "name": "A_cold_smirk",
+      "note": "主推：蓝隼音色 + 冷冽傲慢戏谑文本情绪，像猫逗弄猎物，语速中等偏慢",
+      "emotion": {
+        "mode": "text",
+        "emotion_text": "冷冽、傲慢，嘴角挂着一点戏谑的轻笑，像强者俯视终于重逢的对手，语气慢条斯理、稳操胜券；不是开心，不笑出声，不甜不软。",
+        "strength": 0.6
+      },
+      "duration_factor": 1.0,
+      "seed": 20261119
+    },
+    {
+      "name": "B_plain",
+      "note": "对照：蓝隼音色直接念，不接情绪",
+      "duration_factor": 1.0,
+      "seed": 20261119
+    }
+  ]
+}

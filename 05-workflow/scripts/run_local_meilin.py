@@ -1,15 +1,32 @@
 # -*- coding: utf-8 -*-
 """
 红绳 · 本地梅林出片（ComfyUI 8188）—— 项目默认视频路径（2026-10-19）
-配方：0.7MP(约1152x640) / 8步 / Spark SM89 / DMaD 加速LoRA / int8_convrot VAE；API 默认 15s 段
+配方：0.5MP(约960x544) / 8步 / Spark SM89 / DMaD 加速LoRA / int8_convrot VAE；API 默认 15s 段
 （2026-10-25 定稿：DMaD 取代 turbo EMA，0.7 取代 0.6；2026-10-31 增加 vbvr 变体 --template vbvr）
+（2026-11-10 用户把分辨率倍数改为 0.5：默认模板换 本地梅林模板_SparkON_0.5MP_15s_dmad.json；
+  0.7MP DMaD 版留作 --template 0.7，UI 工作流节点 115 同步改 0.5）
 UI 默认工作流：梅林全流程.json（与规范/AGENTS 同步）
 
 用法:
-  python run_local_meilin.py --prompt <提示词文件> --img1 <人设.png> [--img2 <场景.png>] [--img3 <分镜.png>]
+  python run_local_meilin.py --prompt <提示词文件> [--img1 <图>] [--img2 <图>] [--img3 <图>] [--img4 <图>]
                              [--seconds 15] [--out <输出mp4>] [--tag 名字]
-                             [--template 0.7|vbvr|0.5|路径]
-提示词文件内容会写入节点 263；图片自动复制进 ComfyUI/input 并按 49/50/51 槽位绑定。
+                             [--template default|0.7|vbvr|0.5turbo|0.6|路径]
+提示词写入节点 263；图片自动复制进 ComfyUI/input 并按 49/50/51 槽位绑定。
+
+⚠️ 槽位 ↔ <Picture N> 真实映射（2026-11-11 核对，勿按直觉传图）：
+    --img1 → 节点 49 → ref_image_1 → <Picture 2>
+    --img2 → 节点 50 → ref_image_2 → <Picture 3>
+    --img3 → 节点 51 → ref_image_0 → <Picture 1>
+  模板默认提示词即按此编号：Picture 1 = 人设(51)、Picture 2 = 场景(49)、Picture 3 = 分镜(50)。
+  开跑前先写死「哪个 Picture 对应哪张图」，再倒推 --imgN；旧版用法示例
+  （--img1 人设 / --img2 场景 / --img3 分镜）与实际节点绑定不一致，已废弃。
+
+⚠️ 上下文预算（G08，2026-11-11）：本模板节点 263 默认提示词 1185 字符是**已跑通基线**；
+  新稿控制在 ±20%，场景与动作前置、主体定义压短。节点 265 的 ref_image_size='max'
+  会让参考图按原尺寸进 Qwen3-VL 且 token 每步都在，参考图请统一预缩放到生成分辨率
+  量级（0.5MP ≈ 960x544）、去掉多视图拼图；改 'match' 属改模板参数，须用户确认。
+  negativePrompt 是本段 Text 的末尾一行（无独立 negative 端口），≤10 条、不写具体错误形态。
+  判据：人物锚全对但场景动作全丢 = 上下文预算超支，不是模型画错。
 """
 from __future__ import annotations
 import argparse, json, os, shutil, subprocess, sys, time, urllib.request
@@ -18,11 +35,22 @@ from pathlib import Path
 COMFY = 'http://127.0.0.1:8188'
 INPUT_DIR = Path(r'F:\Work-Fisher纯净包2026.8.7\ComfyUI\input')
 TPL_DIR = Path(r'D:\HermesWorkspace\ai小说\红绳\05-workflow\全局文档\工作流规范')
-TEMPLATE_DEFAULT = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad.json'
-TEMPLATE_VBVR = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad_vbvr.json'
-TEMPLATE_05 = TPL_DIR / '本地梅林模板_SparkON_0.5MP_15s.json'
+# 2026-11-10 起默认 0.5 分辨率倍数（DMaD / 8步 / Spark 不变）
+TEMPLATE_DEFAULT = TPL_DIR / '本地梅林模板_SparkON_0.5MP_15s_dmad.json'
+TEMPLATE_07 = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad.json'   # 旧默认，留档可显式调用
+TEMPLATE_VBVR = TPL_DIR / '本地梅林模板_SparkON_0.7MP_15s_dmad_vbvr.json'  # VBVR 变体仍 0.7
+TEMPLATE_05 = TPL_DIR / '本地梅林模板_SparkON_0.5MP_15s.json'             # 旧 turboEMA 0.5MP，非 DMaD，仅兼容
 TEMPLATE_06 = TPL_DIR / '本地梅林模板_旧版留存_turboEMA_0.6MP_20261025.json'
+VSR_TPL = TPL_DIR / '本地VSR2x放大模板.json'
 SLOTS = ['49', '50', '51']
+
+# RelayVSR 放大：2x / 4x 各自要配同倍率的底模与 VAE（混用会出灰片）
+VSR_MODELS = {
+    '2x': ('relayvsr_x2_lightx2v_int8_convrot.safetensors',
+           'relayvsr_flash_vae_x2_fp32.safetensors'),
+    '4x': ('relayvsr_x4_int8_convrot.safetensors',
+           'relayvsr_flash_vae_x4_fp32.safetensors'),
+}
 
 # 开工前置同步（用户 2026-10-31 规则：每次制作前固定先拉云端代码）
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -66,15 +94,116 @@ def get(path, timeout=60):
         return json.load(r)
 
 
+def free_memory(want_free_gb: float = 9.0, timeout: int = 240) -> bool:
+    """卸载 ComfyUI 里所有已加载模型并回收显存。
+
+    为什么要这一步：H3 UNET 19.53GB、RelayVSR x2 4.81GB，本机只有 16GB 显存。
+    同一张图里串两段模型会反复触发全量换出/换入，表现为长时间停在 0 it/s
+    （10-09 那次 B 组卡死 15 分钟就是这么来的）。分两段跑、中间卸载最稳。
+    """
+    try:
+        # /free 返回 200 但 body 为空，不能走 post()（那个会 json.load）
+        req = urllib.request.Request(
+            COMFY + '/free',
+            data=json.dumps({'unload_models': True, 'free_memory': True}).encode(),
+            headers={'Content-Type': 'application/json'}, method='POST')
+        urllib.request.urlopen(req, timeout=60).read()
+    except Exception as e:
+        print(f'  [vsr] /free 请求异常（一般无害）：{e}')
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        time.sleep(3)
+        try:
+            dev = (get('/system_stats').get('devices') or [{}])[0]
+            free = dev.get('vram_free', 0) / 1073741824
+            total = dev.get('vram_total', 1) / 1073741824
+        except Exception:
+            continue
+        print(f'  [vsr] 显存可用 {free:.1f}/{total:.1f} GB', end='\r', flush=True)
+        if free >= want_free_gb:
+            print()
+            return True
+    print()
+    print(f'  [vsr] 等待 {timeout}s 显存仍不足 {want_free_gb}GB，继续尝试提交')
+    return False
+
+
+def run_vsr(src_mp4: Path, detail: float = 0.5, scale: str = '2x',
+            tag: str = 'meilin', timeout: int = 2400) -> Path | None:
+    """把生成好的 mp4 送进 RelayVSR 放大，返回输出路径。"""
+    if not VSR_TPL.exists():
+        print(f'  [vsr] 找不到模板 {VSR_TPL}')
+        return None
+    if scale not in VSR_MODELS:
+        print(f'  [vsr] 不支持的倍率 {scale}（只有 2x / 4x）')
+        return None
+    unet, vae = VSR_MODELS[scale]
+    wf = json.loads(VSR_TPL.read_text(encoding='utf-8'))['prompt']
+    wf['3']['inputs']['unet_name'] = unet
+    wf['4']['inputs']['vae_name'] = vae
+    wf['7']['inputs']['detail'] = float(detail)
+
+    # LoadVideo 只认 ComfyUI/input 下的文件
+    INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    local = INPUT_DIR / f'vsr_src_{tag}_{int(time.time())}.mp4'
+    shutil.copy2(src_mp4, local)
+    wf['1']['inputs']['file'] = local.name
+    wf['9']['inputs']['filename_prefix'] = f'vsr/{tag}_{scale}_d{detail}'
+
+    t0 = time.time()
+    resp = post('/prompt', {'prompt': wf})
+    pid = resp.get('prompt_id')
+    if not pid:
+        print('  [vsr] 提交失败:', json.dumps(resp, ensure_ascii=False)[:400])
+        return None
+    print(f'  [vsr] 已提交 prompt_id={pid}（{scale} detail={detail}）')
+
+    while time.time() - t0 < timeout:
+        time.sleep(5)
+        try:
+            hist = get(f'/history/{pid}')
+        except Exception:
+            continue
+        if pid not in hist:
+            el = time.time() - t0
+            if int(el) % 30 < 6:
+                print(f'  [vsr] 放大中 {el:.0f}s')
+            continue
+        rec = hist[pid]
+        st = (rec.get('status') or {}).get('status_str')
+        el = time.time() - t0
+        if st == 'error':
+            print(f'  [vsr] 执行失败 {el:.1f}s')
+            for m in ((rec.get('status') or {}).get('messages') or []):
+                if m and m[0] == 'execution_error':
+                    print('   ', json.dumps(m[1], ensure_ascii=False)[:500])
+            return None
+        got = None
+        for _nid, o in (rec.get('outputs') or {}).items():
+            for key in ('images', 'video', 'gifs', 'videos'):
+                for f in (o.get(key) or []):
+                    if isinstance(f, dict) and f.get('filename'):
+                        sub = f.get('subfolder', '')
+                        p = FALLBACK_OUT / sub / f['filename'] if sub else FALLBACK_OUT / f['filename']
+                        if p.exists():
+                            got = p
+        print(f'  [vsr] 放大完成 {el:.1f}s -> {got}')
+        return got
+    print('  [vsr] 超时未完成')
+    return None
+
+
 def resolve_template(arg: str | None) -> Path:
-    if not arg or arg in ('0.7', '0.7mp', 'dmad', 'default'):
-        return TEMPLATE_DEFAULT
+    if not arg or arg in ('default', '0.5dmad', 'dmad'):
+        return TEMPLATE_DEFAULT            # 0.5MP + DMaD（当前默认）
+    if arg in ('0.7', '0.7mp', '0.7dmad'):
+        return TEMPLATE_07                # 旧默认 0.7MP + DMaD
     if arg in ('vbvr', '0.7vbvr'):
         return TEMPLATE_VBVR
     if arg in ('0.6', '0.6mp', 'turbo'):
         return TEMPLATE_06
-    if arg in ('0.5', '0.5mp'):
-        return TEMPLATE_05
+    if arg in ('0.5', '0.5mp', '0.5turbo', 'turbo05'):
+        return TEMPLATE_05                # 旧 turboEMA 0.5MP，非默认
     p = Path(arg)
     if not p.exists():
         raise FileNotFoundError(f'template not found: {arg}')
@@ -87,12 +216,24 @@ def main():
     ap.add_argument('--img1', default=None)
     ap.add_argument('--img2', default=None)
     ap.add_argument('--img3', default=None)
+    ap.add_argument('--img4', default=None,
+                    help='第4张参考图 -> 动态LoadImage节点520 -> 265.ref_image_3 -> <Picture 4>'
+                         '（H3 autogrow 支持 max 9 张图；不传则老链路不变）')
+    ap.add_argument('--audio1', default=None,
+                    help='参考音频0 -> 节点265.ref_audio_0（H3 ref2va 音色/语言参考，建议中文语音WAV）')
+    ap.add_argument('--audio2', default=None, help='参考音频1 -> 节点265.ref_audio_1')
+    ap.add_argument('--audio3', default=None, help='参考音频2 -> 节点265.ref_audio_2')
     ap.add_argument('--seconds', type=float, default=15.0)
     ap.add_argument('--tag', default='local_meilin')
     ap.add_argument('--out', default=None)
-    ap.add_argument('--template', default='0.7', help='0.7 | vbvr | 0.5 | 0.6(旧turbo) | path-to-api-json')
+    ap.add_argument('--template', default='default',
+                    help='default=0.5MP DMaD | 0.7(旧默认) | vbvr | 0.5turbo(旧turboEMA) | 0.6(旧turbo) | path-to-api-json')
     ap.add_argument('--no-sync', action='store_true',
                     help='跳过开工前的云端代码同步（默认每次都拉）')
+    ap.add_argument('--vsr', default='off', choices=['off', '2x', '4x'],
+                    help='生成后自动接 RelayVSR 放大（默认 off；2x 约 +60s/15s片）')
+    ap.add_argument('--vsr-detail', type=float, default=0.5,
+                    help='VSR 细节强度：0.5 最贴原片，0.7 更锐但软源易出重影/波纹')
     a = ap.parse_args()
 
     # 开工第一件事：拉云端代码（用户 2026-10-31 规则）
@@ -117,6 +258,36 @@ def main():
         shutil.copy2(src_p, dst)
         wf[slot]['inputs']['image'] = src_p.name
         print(f'  槽位 {slot} <- {src_p.name}')
+
+    # 第4张参考图（2026-11-19）：H3 节点 265 的 ref_images 是 autogrow（max 9），
+    # 模板只预置 ref_image_0/1/2（节点51/49/50）。第4图动态建 LoadImage 520 →
+    # ref_image_3 → 提示词 <Picture 4>。不传 --img4 则完全不影响老链路。
+    if a.img4:
+        src_p = Path(a.img4)
+        if not src_p.exists():
+            raise FileNotFoundError(a.img4)
+        INPUT_DIR.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src_p, INPUT_DIR / src_p.name)
+        wf['520'] = {"class_type": "LoadImage", "inputs": {"image": src_p.name}}
+        wf['265']['inputs']['ref_images.ref_image_3'] = ['520', 0]
+        print(f'  槽位 520 (ref_image_3/<Picture 4>) <- {src_p.name}')
+
+    # 参考音频注入（2026-11-19）：H3 ref2va 节点 265 支持 ref_audios.ref_audio_0/1/2
+    # 用中文语音 WAV 锁语言/音色，压住自生成日语/乱码。LoadAudio 节点用 400/401/402，
+    # 模板默认无这些节点，只有传了 --audioN 才动态创建，不影响老链路。
+    for i, src in enumerate([a.audio1, a.audio2, a.audio3]):
+        if not src:
+            continue
+        src_p = Path(src)
+        if not src_p.exists():
+            raise FileNotFoundError(src)
+        INPUT_DIR.mkdir(parents=True, exist_ok=True)
+        dst = INPUT_DIR / src_p.name
+        shutil.copy2(src_p, dst)
+        aid = str(400 + i)
+        wf[aid] = {"class_type": "LoadAudio", "inputs": {"audio": src_p.name}}
+        wf['265']['inputs'][f'ref_audios.ref_audio_{i}'] = [aid, 0]
+        print(f'  参考音频 ref_audio_{i} <- {src_p.name}')
 
     for nid in ('214', '264'):
         if nid in wf:
@@ -151,11 +322,13 @@ def main():
             print('  完成:', st, f'耗时 {(time.time()-t0)/60:.1f} 分钟')
             outs = (rec.get('outputs') or {})
             saved = []
+            all_out = []
             for nid, o in outs.items():
                 for v in (o.get('gifs') or o.get('videos') or []):
                     fn = v.get('filename'); sub = v.get('subfolder', '')
                     src = FALLBACK_OUT / sub / fn if sub else FALLBACK_OUT / fn
                     print('  输出:', src)
+                    all_out.append(src)
                     if a.out and src.exists():
                         out_p = Path(a.out)
                         out_p.parent.mkdir(parents=True, exist_ok=True)
@@ -164,6 +337,31 @@ def main():
                         saved.append(out_p)
             if st and st != 'success':
                 return 3
+
+            # ---- 接 RelayVSR 放大（两段式：先卸载 H3，再加载 VSR）----
+            if a.vsr != 'off':
+                base = saved[0] if saved else (all_out[0] if all_out else None)
+                if base and Path(base).exists():
+                    print(f'[vsr] 开始 {a.vsr} 放大（detail={a.vsr_detail}）')
+                    free_memory()
+                    vsr_t0 = time.time()
+                    v = run_vsr(Path(base), detail=a.vsr_detail, scale=a.vsr, tag=a.tag)
+                    if v:
+                        if a.out:
+                            dst = Path(a.out).with_name(Path(a.out).stem + f'_{a.vsr}.mp4')
+                            dst.parent.mkdir(parents=True, exist_ok=True)
+                            shutil.copy2(v, dst)
+                            print('  [vsr] 已复制到', dst)
+                        else:
+                            dst = v
+                        total = (time.time() - t0) / 60
+                        print(f'[vsr] 完成 {(time.time()-vsr_t0)/60:.2f} 分钟 | 全流程 {total:.2f} 分钟')
+                        print('[vsr] 成片:', dst)
+                    else:
+                        print('[vsr] 放大失败，生成片仍在:', base)
+                else:
+                    print('[vsr] 没找到可放大的生成产物，跳过')
+
             return 0 if (outs or st == 'success') else 4
     print('超时未完成')
     return 5

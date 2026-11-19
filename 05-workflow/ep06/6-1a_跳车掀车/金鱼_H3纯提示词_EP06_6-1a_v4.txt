@@ -1,0 +1,25 @@
+subject_definitions:
+SETTING FIRST — all shots: <Picture 2> ND garage LANE, cold tubes, striped pillars, wet floor, white stripes. Cool blue-grey monochrome ONLY; tubes and headlights are the only lights. Signs, plates, badges BLANK.
+STATIC SHOT LOCK (EVERY shot): ONE FIXED camera; pillars, tubes, stripes and distant cars hold the SAME screen coordinates in EVERY frame, all sharp stills. ONLY THREE state changes: two doors opening, one widening smirk, one shrinking car-to-man gap. Cuts carry the timeline.
+FRONT-FACING LOCK (EVERY shot): the sedan's NOSE and BOTH headlights aim straight AT Lan Sun's chest; he stands IN THE HEADLIGHT CONE, shoulders square, lenses symmetric, FULL FRONT VIEW facing the oncoming car. The floor strip between bumper and boots SHRINKS frame by frame. The car NEVER reverses.
+<Picture 1> Anna: grey cap, white mask, long BLUE-BLACK hair, dark grey uniform, grey gloves. DRIVER in the LEFT seat, steering wheel in front of her, never speaks.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, geometric shaved stripe, black angular sunglasses NEVER removed, graphite-black long coat, deep blue high collar, BOTH hands in pockets, WIDE SINISTER SMIRK with upper teeth showing. Ignore <Picture 1>/<Picture 3> grey backdrop; appearance only.
+Lu Chen: 17yo, black messy short hair, white shirt sleeves rolled, dark trousers. FRONT PASSENGER in the RIGHT seat, never speaks.
+THE CAR: ONE dark navy four-door sedan, headlights ON cold white, tail lamps dark, grille BLANK.
+
+summary: 15s, 5 shots, ZERO dialogue, STATIC TENSION. INSIDE the windshield Lan Sun stands dead-center FACING the car; BOTH front doors open 30 degrees while Anna and Lu Chen stay SEATED; CUT to Lan Sun's FULL FRONT face close-up with a WIDE SINISTER SMIRK; CUT to a FIXED exterior view of the car closing on him, background locked. Everyone STAY SEATED; the clip ends on the still instant BEFORE contact.
+
+retention_analysis:
+SETTING (all): fully_preserved - same garage lane, cool blue-grey cel-anime like <Picture 1> <Picture 2> <Picture 3>.
+AXIS + STILLNESS (all): fully_preserved - nose AT Lan Sun, FULL FRONT VIEW, gap SHRINKING, pillars at the SAME screen coordinates across cuts. <Picture 1>/<Picture 3>: appearance only.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, EXACT linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. Surfaces blank, no text. FIXED cameras ONLY; each state change: operator + body part + action + result.
+[Shot 1] 00.0s WINDSHIELD INTERIOR POV: dashboard, steering wheel, mirror bottom at frame bottom; Anna's gloved hands on the wheel at the LEFT, Lu Chen braced at the RIGHT. THROUGH the windshield Lan Sun stands dead-center, INSIDE the headlight cone, FULL FRONT VIEW, hands in pockets, faint calm smirk; pillars and stripes hold the SAME coordinates. 2.5s.
+[Shot 2] 02.5s FIXED interior CLOSE shot of the LEFT front seat: ANNA HERSELF, RIGHT grey glove, pushes the LEFT front door outward to 30 degrees; she leans forward, ONE foot still on the cabin floor, hips STILL ON THE SEAT, whole body REMAINS INSIDE the cabin. The open door is the ONLY change; the pillar in the doorway and every stripe stay put. 3.0s.
+[Shot 3] 05.5s FIXED interior CLOSE shot of the RIGHT front seat, SAME instant: LU CHEN HIMSELF pushes the RIGHT front door outward to 30 degrees, one hand braced on the door frame, ONE foot still in the cabin, hips STILL ON THE SEAT, whole body REMAINS INSIDE the cabin. Both doors open to the SAME angle; pillars and tubes keep the SAME coordinates. 2.5s.
+[Shot 4] 08.0s FIXED FULL FRONT face CLOSE-UP of Lan Sun, head centered filling seven tenths of the frame: ELECTRIC-BLUE hair, geometric shaved stripe, black angular sunglasses NEVER removed, shoulders square, lenses symmetric; WIDE SINISTER SMIRK, a line of upper teeth, chin raised. ONE pillar and ONE cold tube behind him stay at the SAME coordinates, softly defocused, only cold tube light on his face and clean cel shadows. 2.5s.
+[Shot 5] 10.5s FIXED exterior view from BEHIND and slightly ABOVE the sedan, over its roof: rear and roof fill the lower half, nose points down the lane; in the upper third Lan Sun stands FULL FRONT VIEW, shoulders square, hands in pockets, WIDE SINISTER SMIRK wider still, FACING the oncoming car. The car CLOSES the last metres: its lit nose GROWS NEARER to his chest, the floor strip between bumper and boots SHRINKS; pillars, yellow-black pillar feet, cold tubes, white stripes and distant cars hold the SAME screen coordinates in EVERY frame. Hold on the still tension BEFORE contact. 4.5s.
+
+overall_soundscape: Diegetic, quiet — low engine hum, two soft door thuds, fabric rustle, tyre hiss on wet floor, faint fan. NO BGM. ZERO speech, ZERO dialogue; no character opens their mouth. Avoid: subtitles, on-screen text, pseudo-glyphs, watermark, logo, live-action or 3D look, red light, a second car.
+
+non_diegetic_music: N/A

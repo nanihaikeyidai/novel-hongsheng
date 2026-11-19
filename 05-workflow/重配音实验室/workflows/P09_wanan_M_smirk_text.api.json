@@ -1,0 +1,75 @@
+{
+  "1": {
+    "class_type": "T8_IndexTTS25_ModelLoader",
+    "inputs": {
+      "model_name": "IndexTTS-2.5",
+      "device": "auto",
+      "precision": "auto",
+      "acceleration_mode": "off",
+      "use_cuda_kernel": false,
+      "release_after_run": false,
+      "recycle_after_runs": 0,
+      "verify_hashes": false,
+      "custom_model_path": "",
+      "reference_device": "auto",
+      "reuse_spk_cond_for_emo": false,
+      "persistent_reference_cache": true,
+      "download_missing": false,
+      "accept_model_license": false
+    }
+  },
+  "2": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "voicelab_p09_wanan_orig.wav"
+    }
+  },
+  "4": {
+    "class_type": "T8_IndexTTS25_EmotionControl",
+    "inputs": {
+      "mode": "text",
+      "mode.emotion_text": "嘴角挂着一点戏谑的笑在说话，像猫逗弄已经跑不掉的老鼠，轻蔑、玩味、稳操胜券；声音压得很低很轻，气多声少，贴着耳边只让一个人听见；语速偏快、干脆利落，尾音轻轻一挑就收住，绝不拖长；不是开心，没有笑出声，不甜、不软糯、不撒娇；保持少年原本偏低偏冷的音色，不要变亮、不要变高、不要变响。",
+      "mode.strength": 0.55
+    }
+  },
+  "5": {
+    "class_type": "T8_IndexTTS25_Generate",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "speaker_audio": [
+        "2",
+        0
+      ],
+      "text": "晚安。",
+      "language": "ZH",
+      "duration_factor": 0.92,
+      "target_duration_mode": "off",
+      "target_duration_seconds": 0.0,
+      "postprocess_preset": "off",
+      "postprocess_strength": 1.0,
+      "seed": 20261106,
+      "quality_retry_count": 0,
+      "quality_asr_backend": "auto",
+      "quality_asr_model": "base",
+      "quality_asr_device": "auto",
+      "quality_threshold": 0.82,
+      "emotion": [
+        "4",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "5",
+        0
+      ],
+      "filename_prefix": "voicelab/P09_wanan_r4_M_smirk_text"
+    }
+  }
+}

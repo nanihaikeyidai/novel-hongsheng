@@ -1,0 +1,30 @@
+{
+  "unit": "EP06_S04_v10_jinyu",
+  "versionNote": "2026-11-19 用户基于 v9b 成功版『用云端金鱼重新生成一下，蓝隼闪身到安娜正面面对面不背后，蓝隼脸部特写有阴影且抬头45度向上看(安娜脸挡光)，陆沉不要远距离跑改为出拳攻击特写，安娜双手抓蓝隼手臂缓解压力』。5 镜：电光瞬移正面抓安娜+安娜双手抓臂(/GRIP LOCK 跨镜继承) → 蓝隼低角度仰视45度+阴影台词特写 → 陆沉出拳特写(红眼并入) → 蓝隼侧身踢(手不松安娜) → 陆沉撞黄黑条纹柱。4980 bytes、六标签、4 图(含陆沉 G25) + 1 音频(蓝隼音色锁中文台词)、无 negativePrompt。一次反馈=一次生成；按 2026-11-15 新口径不写复盘/开发说明文档，交付只放视频。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2123435687096311810",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "533",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "90.61"
+  },
+  "promptBytes": 4980,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\安娜_凝刃战斗姿态_ref.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\陆沉_人设.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\蓝隼.wav"
+  ],
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\视频草稿\\EP06_S04_v10_金鱼_面对面仰视阴影出拳.mp4"
+  ]
+}

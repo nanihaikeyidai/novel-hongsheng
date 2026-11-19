@@ -1,0 +1,26 @@
+subject_definitions:
+SETTING FIRST — every shot: <Picture 2> ND underground garage DRIVING LANE, cold tubes, striped pillars, wet floor. Cool blue-grey monochrome ONLY; cold tubes and headlights are the only lights. Signs, numbers, plates BLANK.
+DIRECTION LOCK (EVERY shot): the sedan's NOSE and BOTH headlights aim straight AT Lan Sun's chest; he stands IN THE HEADLIGHT CONE, FACING the oncoming car, feet planted. The floor strip between bumper and his boots SHRINKS frame by frame. The car NEVER reverses, NEVER turns away.
+SPEED LOCK (EVERY shot): the sedan ACCELERATES HARD straight AT Lan Sun, engine ROARING, anime SPEED LINES streak backward, motion blur on wheels, the lit nose GROWS LARGER, cuts get SHORTER.
+MOTION UNITY LOCK (EVERY shot): characters, car and background share ONE motion system — pillars and stripes streak past AT the car's speed; tumbling bodies keep the car's momentum; no frozen or mismatched background. Every cut changes ONLY camera position, INHERITING coordinates, heading, speed, damage, dust.
+<Picture 1> Anna: grey cap, white mask, long BLUE-BLACK hair, dark grey uniform. DRIVER in the LEFT seat, never speaks.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair with geometric shaved stripe, black angular wrap sunglasses NEVER removed, graphite-black long tactical coat, calm smirk. Power: thin blue-white SHORT arcs hug his striking limb, crawling to his RIGHT boot and shin for the kick. Ignore <Picture 1>/<Picture 3> grey backdrop; appearance only.
+Lu Chen: 17yo, black messy short hair, white shirt, dark trousers. FRONT PASSENGER in the RIGHT seat, never speaks.
+THE CAR: ONE dark navy four-door sedan, headlights ON, ALWAYS accelerating straight AT Lan Sun.
+
+summary: 15s, 5 shots, ZERO dialogue, HIGH-SPEED ACTION. From INSIDE the windshield the sedan ACCELERATES straight AT Lan Sun; BOTH doors fly open WHILE it speeds up, driver Anna bails LEFT, passenger Lu Chen bails RIGHT; the EMPTY car keeps ACCELERATING; ONE SINGLE side KICK launches the ENTIRE car SPINNING through the air into a side bay where it EXPLODES.
+
+retention_analysis:
+SETTING (all): fully_preserved - same garage lane, cool blue-grey cel-anime like <Picture 1> <Picture 2> <Picture 3>.
+AXIS + MOTION (all): fully_preserved - nose AT Lan Sun, gap SHRINKING, acceleration rising, ONE motion system, damage carries across cuts. <Picture 1>/<Picture 3>: appearance only.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, EXACT linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. Surfaces blank, no text. Real-time speed ONLY; every 0.5-1s a NEW contact or impact; every state change: operator + body part + action + visible result.
+[Shot 1] 00.0s WINDSHIELD INTERIOR POV from the back seat: dashboard and steering wheel at the frame bottom, Anna's gloved hands on the wheel at the LEFT, Lu Chen braced at the RIGHT; THROUGH the windshield Lan Sun stands ahead dead-center in the lane, INSIDE the headlight cone, FACING the car. The car ACCELERATES AT him: lane stripes and pillars STREAK past the glass, SPEED LINES converge, he GROWS LARGER. 2.5s.
+[Shot 2] 02.5s fast SIDE tracking exterior, SAME axis, STILL ACCELERATING: ANNA HERSELF shoves the LEFT front door open, LU CHEN HIMSELF the RIGHT one; Anna leaps out LEFT, Lu Chen dives out RIGHT, each tumbles once carrying the car's momentum. Doors stay open, cabin EMPTY, car keeps ACCELERATING straight AT Lan Sun, SPEED LINES, motion blur. 2.5s.
+[Shot 3] 05.0s LOW FRONT-SIDE tracking: the EMPTY car ACCELERATES HARD into the last metres, headlights flare white on Lan Sun's chest, the floor strip between bumper and his boots SHRINKS to nothing; he holds his ground, weight on his left leg, RIGHT leg chambering high, blue-white arcs crawling over his RIGHT boot and shin. SPEED LINES converge, cuts shorten. 3.0s.
+[Shot 4] 08.0s SIDE full shot, camera SHAKES: Lan Sun's RIGHT BOOT lands ONE SINGLE side KICK on the oncoming nose. In the SAME beat the ENTIRE sedan is KICKED sideways off its line, LAUNCHED off the ground as one rigid body — all four wheels leaving the floor, SPINNING through a full corkscrew roll in mid-air toward an empty side bay; a shockwave bursts from his boot. 3.0s.
+[Shot 5] 11.0s diagonal WIDE: the spinning sedan SLAMS down into the empty side bay and EXPLODES — cool palette: a WHITE-hot flash burst, a BLUE-WHITE shockwave ring, thick BLACK smoke billowing, debris scattering. Lan Sun stands at the SAME spot, feet planted, lowering his right leg, coat settling; the flash reflected small in his black lenses. 4.0s.
+
+overall_soundscape: Diegetic action — engine ROAR rising, wind on the windshield, two door thuds, two body landings, one massive kick impact, a spinning whoosh, one huge explosion blast, debris rain. NO BGM. ZERO speech, ZERO dialogue; no character opens their mouth. Avoid: subtitles, on-screen text, pseudo-glyphs, watermark, logo, live-action or 3D look, red light, a second car.
+
+non_diegetic_music: N/A

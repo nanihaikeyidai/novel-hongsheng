@@ -1,0 +1,26 @@
+subject_definitions:
+SETTING FIRST - <Picture 2> ND garage LANE, cold tubes, striped pillars, wet floor, white stripes. Cool blue-grey ONLY; tubes + headlights are the only lights. Plates, badges BLANK.
+BACKGROUND LOCK (EVERY shot): ONE FIXED camera; pillars, tubes, stripes, distant cars hold the SAME screen coordinates in EVERY frame - no background drift, no tracking, no camera shake. SPEED LINES ONLY hug car body, wheel arches, wet floor, NEVER over pillars or tubes.
+SPEED LOCK (EVERY shot): EXPLOSIVE ACCELERATION. Car ACCELERATES HARD, nose GROWS LARGER beat by beat, gap SHRINKS FASTER each second, spokes BLUR into radial streaks, short SPEED LINES, motion blur on wheels and door edges, cuts get SHORTER, never slow down. Doors SNAP open IN ONE BEAT; hair and sleeves stream backward.
+FRONT-FACING LOCK (EVERY shot): NOSE and BOTH headlights aim straight AT Lan Sun's chest; he stands IN THE HEADLIGHT CONE, FULL FRONT VIEW; CAMERA ON HIS CENTRAL AXIS, BOTH EARS VISIBLE, lenses EQUAL width, nose bridge on the vertical center line. NEVER reverses, NEVER passes him; ends BEFORE contact.
+<Picture 1> Anna: grey cap, white mask, long BLUE-BLACK hair, dark grey uniform, grey gloves. DRIVER in the LEFT seat, wheel in front of her.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, geometric shaved stripe, black angular sunglasses NEVER removed, graphite-black long coat, deep blue collar, hands in pockets, WIDE SINISTER SMIRK with upper teeth. 3/4 crop: inherit hair, shave, sunglasses, coat ONLY - DO NOT inherit its camera angle.
+Lu Chen: 17yo, black messy short hair, white shirt sleeves rolled, dark trousers. FRONT PASSENGER in the RIGHT seat.
+THE CAR: ONE dark navy four-door sedan, headlights ON cold white, tail lamps dark, grille BLANK.
+
+summary: 15s, 6 shots, ZERO dialogue, FAST ACCELERATION. Windshield POV: Lan Sun GROWS LARGER in an expanding headlight cone; BOTH front doors SNAP open while Anna and Lu Chen stay SEATED; CUT to his FULL FRONT sinister smirk; CUT to a WHEEL close-up blurring into radial streaks; CUT to the car rushing AT him, background locked. STAY SEATED; ends BEFORE contact.
+
+retention_analysis:
+SETTING + AXIS (all): fully_preserved - garage lane, cool blue-grey cel-anime; nose AT Lan Sun, FULL FRONT VIEW, gap SHRINKING FASTER, pillars SAME coordinates across cuts; <Picture 1>/<Picture 3> appearance only.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, EXACT linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. no text. FIXED cameras ONLY.
+[Shot 1] 00.0s WINDSHIELD INTERIOR POV: dashboard, wheel, mirror bottom; Anna's gloved hands at the LEFT, Lu Chen braced at the RIGHT. Lan Sun stands dead-center in an EXPANDING headlight cone, GROWING LARGER fast, FULL FRONT VIEW; SPEED LINES hug the lower body edge and wet floor only. 2.0s.
+[Shot 2] 02.0s LEFT seat CLOSE: ANNA SNAPS the LEFT door to 45 degrees IN ONE BEAT, leans hard forward, BLUE-BLACK hair and sleeves stream backward, door-edge SPEED LINES; hips STILL ON THE SEAT, ONE foot on the floor, body REMAINS INSIDE the cabin. 1.3s.
+[Shot 3] 03.3s RIGHT seat CLOSE, SAME instant: LU CHEN SNAPS the RIGHT door to 45 degrees IN ONE BEAT, one hand braced on the frame, sleeves stream backward; hips STILL ON THE SEAT, body REMAINS INSIDE the cabin. Both doors at the SAME angle; pillars keep the SAME coordinates. 1.3s.
+[Shot 4] 04.6s FULL FRONT face CLOSE-UP of Lan Sun, CAMERA ON HIS CENTRAL AXIS, BOTH EARS VISIBLE, lenses EQUAL width, nose bridge on the vertical center line: ELECTRIC-BLUE hair, geometric shaved stripe, black angular sunglasses NEVER removed; WIDE SINISTER SMIRK SNAPPING wider, upper teeth, chin raised. ONE pillar and ONE cold tube behind him stay at the SAME coordinates. 1.6s.
+[Shot 5] 06.2s GROUND-LEVEL WHEEL CLOSE-UP from the front-side: ONE front wheel fills the frame, spokes BLUR into radial streaks, tyre edge streaked with cold white SPEED LINES, wet floor throws a long white reflection trail under the wheel; upper frame dark blurred garage with ONE cold tube at a FIXED position. 2.0s.
+[Shot 6] 08.2s FIXED exterior from BEHIND and slightly ABOVE the sedan, over its roof: rear and roof fill the lower half; in the upper third Lan Sun stands FULL FRONT VIEW, WIDE SINISTER SMIRK wider still, FACING the car. THREE SHORT BEATS, each a HARD CUT back to the SAME FIXED camera with the SAME background coordinates: nose GROWS LARGER, then car fills two thirds with headlights flaring into a cold white pool on his chest, then nose almost AT his chest; gap SHRINKS FASTER each beat, cuts get SHORTER, SPEED LINES hug the car body. Hold the instant BEFORE contact, NEVER passing him. 6.8s.
+
+overall_soundscape: Diegetic, URGENT - engine note RISING in pitch, two SHARP door cracks, tyre SCREECH on wet floor, rushing air. NO BGM. ZERO speech, ZERO dialogue; no mouth opens. Avoid: subtitles, text, glyphs, watermark, logo, live-action, red light, a second car.
+
+non_diegetic_music: N/A

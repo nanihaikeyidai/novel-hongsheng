@@ -1,0 +1,26 @@
+subject_definitions:
+SETTING FIRST - <Picture 2> ND garage LANE, cold tubes, striped pillars, wet floor, white stripes. Cool blue-grey ONLY. Plates, badges BLANK.
+MOTION UNITY LOCK (EVERY shot): people, car, pillars, floor are ONE motion system; each CUT changes ONLY the camera, INHERITING the same coordinates, heading, speed, momentum - pillars and stripes recede at the SAME speed as the moving pair.
+SPEED LOCK: car ACCELERATES HARD, nose GROWS LARGER, gap to Lan Sun SHRINKS FASTER, spokes BLUR into radial streaks, short SPEED LINES hug car body, wheel arches, wet floor, motion blur on wheels and door edges, cuts get SHORTER.
+DIRECTION LOCK: nose + BOTH headlights aim AT Lan Sun's chest; FULL FRONT VIEW in the headlight cone, CAMERA ON HIS CENTRAL AXIS, BOTH EARS VISIBLE, lenses EQUAL width. NEVER reverses, NEVER passes him; ends BEFORE contact.
+<Picture 1> Anna: grey cap, white mask, long BLUE-BLACK hair, dark grey uniform, grey gloves. DRIVER in the LEFT FRONT seat, wheel in front of her.
+Lu Chen: 17yo, black messy short hair, white shirt sleeves rolled, dark trousers. FRONT PASSENGER in the RIGHT FRONT seat, SAME front row as Anna, dashboard at his knees, windshield ahead.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, geometric shaved stripe, black angular sunglasses NEVER removed, graphite-black long coat, WIDE SINISTER SMIRK with upper teeth. 3/4 crop: inherit hair, shave, sunglasses, coat ONLY - DO NOT inherit its camera angle.
+THE CAR: ONE dark navy four-door sedan, headlights ON cold white, tail lamps dark, grille BLANK.
+
+summary: 15s, 6 shots, ZERO dialogue, FAST. Windshield POV as Lan Sun GROWS LARGER; FULL FRONT sinister smirk; GROUND-LEVEL WHEEL blur; then ONE single continuous unbroken motion - Anna in the LEFT driver seat GRABS Lu Chen from the RIGHT passenger seat, SNAPS the driver door, they EXIT TOGETHER through that SAME LEFT front door, Anna CLAMPS his wrist; they land as ONE, ROLL TWO TO THREE full turns across the wet floor to bleed off the impact, Anna WRAPPED around him and shielding him; the empty car rushes AT Lan Sun. ends BEFORE contact.
+
+retention_analysis:
+SETTING + AXIS (all): fully_preserved - garage lane, cool blue-grey; Lu Chen RIGHT FRONT beside Anna, both exit the LEFT driver door as ONE pair; nose AT Lan Sun; people, car, background share ONE motion system.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, EXACT linework and cool blue-grey palette as <Picture 1> <Picture 2> <Picture 3>; NOT photorealistic, NOT 3D. no text.
+[Shot 1] 00.0s WINDSHIELD INTERIOR POV: dashboard, wheel, mirror bottom; Anna's gloved hands at the LEFT, Lu Chen braced at the RIGHT in the SAME front row. Lan Sun dead-center in an EXPANDING headlight cone, GROWING LARGER fast, FULL FRONT VIEW; SPEED LINES hug the lower body edge and wet floor. 2.0s.
+[Shot 2] 02.0s FULL FRONT face CLOSE-UP of Lan Sun, CAMERA ON HIS CENTRAL AXIS, BOTH EARS VISIBLE, lenses EQUAL width: ELECTRIC-BLUE hair, geometric shaved stripe, black angular sunglasses NEVER removed; WIDE SINISTER SMIRK SNAPPING wider, upper teeth. ONE pillar and ONE cold tube behind. 1.3s.
+[Shot 3] 03.3s GROUND-LEVEL WHEEL CLOSE-UP: ONE front wheel fills the frame, spokes BLUR into radial streaks, tyre edge streaked with cold white SPEED LINES, wet floor throws a long white reflection trail; ONE cold tube above. 1.2s.
+[Shot 4] 04.5s EXTERIOR driver-side MID SHOT of the LEFT front door: Anna's grey-gloved RIGHT hand CLAMPS Lu Chen's wrist and PULLS him across the centre console, her LEFT hand SNAPS the door to 45 degrees; in ONE single continuous unbroken motion they LAUNCH TOGETHER out through that SAME LEFT front door, Anna still gripping him, both bodies clear the frame in ONE beat, held as ONE unbroken take; BLUE-BLACK hair and white sleeves stream backward, door-edge SPEED LINES. 2.5s.
+[Shot 5] 07.0s CUT to the SAME side, camera slightly HIGHER, INHERITING their momentum: they HIT the wet floor as ONE entangled pair, Anna's arms WRAPPED around Lu Chen, ROLL TWO TO THREE full turns across the white stripes to bleed off the impact; pillars and stripes recede at the SAME speed as the rolling pair (ONE motion system); they come to rest with Anna shielding him. 4.5s.
+[Shot 6] 11.5s CUT to a FIXED exterior from BEHIND and slightly ABOVE the empty sedan, over its roof: rear and roof fill the lower half; upper third Lan Sun FULL FRONT VIEW, WIDE SINISTER SMIRK wider. TWO SHORT BEATS: nose GROWS LARGER, headlights flare into a cold white pool on his chest; gap SHRINKS FASTER, cuts get SHORTER. Hold BEFORE contact, NEVER passing him. 3.5s.
+
+overall_soundscape: Diegetic, URGENT - engine note RISING in pitch, two SHARP door cracks, tyre SCREECH on wet floor, rushing air, ONE heavy landing thud, cloth and body ROLLING friction over wet floor, a short skid. NO BGM. ZERO speech, ZERO dialogue; no mouth opens. Avoid: subtitles, text, watermark, live-action, red light, a second car.
+
+non_diegetic_music: N/A
