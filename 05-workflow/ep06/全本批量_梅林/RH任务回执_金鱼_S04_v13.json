@@ -1,0 +1,31 @@
+{
+  "unit": "EP06_S04_v13_jinyu",
+  "versionNote": "2026-11-20 用户『不要配音，口型对不上，用视频原声，陆沉进攻要对着蓝隼，踢腿时出现多腿』。相对 v12：①交付金鱼原生音轨，不跑 postfix 修音（贴的干净台词与嘴型不同步）；保留 <Audio 1> + MOUTH LOCK 让口型与台词音轨由模型同步生成。②新增 AIM LOCK + Shot 3 改过肩双人同框：陆沉画面左、蓝隼画面右 IN THE SAME SHOT，拳沿两人连线打向蓝隼的脸，不再朝镜头外挥（G14 方向锚画内另一主体）。③新增 LEG LOCK：每人 EXACTLY TWO LEGS、一脚 PLANTED 一脚踢，陆沉双腿 TOGETHER 直到被踢才一起腾空，limbs DISTINCT，消除三人腿部叠成多腿。4889 bytes、六标签、4 图(含陆沉 G25) + 1 音频、无 negativePrompt。一次反馈=一次生成；按 2026-11-15 新口径不写复盘/开发说明文档，交付只放原生音轨视频。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2123788918628507650",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "549",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "93.33"
+  },
+  "promptBytes": 4889,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "audio": "原生音轨（不做 demucs/贴台词修音）",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\安娜_凝刃战斗姿态_ref.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\陆沉_人设.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\蓝隼.wav"
+  ],
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\视频草稿\\EP06_S04_v13_金鱼_朝蓝隼出拳单腿踢_原生音轨.mp4"
+  ]
+}

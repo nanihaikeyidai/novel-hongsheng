@@ -1,0 +1,30 @@
+{
+  "unit": "EP06_S04_v12_jinyu",
+  "versionNote": "2026-11-20 用户在 v11 基础上追加：『蓝隼说话时正面特写，不要仰拍；踢陆沉时手不要放开安娜，只是快速出脚侧踢到陆沉胸口，踢飞出去，动态高；陆沉跑两步马上出拳进攻特写，然后被踢飞』。相对 v11：说话特写从仰拍翻回 FULL FRONT 正面平视(eye-level/NO low angle/NO tilt up/双耳同框)，保留安娜挡光的 HARD SHADOW；出拳改 TWO QUICK STEPS 短冲即出拳(非长距离跑)；踢击改 SNAPS fast SIDE KICK 至 CHEST、HIGH DYNAMIC/SPEED LINES、手全程不松安娜。5 镜：电光瞬移正面抓安娜 → 蓝隼正面平视+阴影台词 → 陆沉两步出拳(红眼) → 冲峰值被快速侧踢胸口动量反转(手不松安娜) → 翻滚撞黄黑条纹柱。4812 bytes、六标签、4 图(含陆沉 G25) + 1 音频(蓝隼音色锁中文台词)、无 negativePrompt。一次反馈=一次生成；按 2026-11-15 新口径不写复盘/开发说明文档，交付只放视频。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2123461788036202498",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "541",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "91.97"
+  },
+  "promptBytes": 4812,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\安娜_凝刃战斗姿态_ref.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\陆沉_人设.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\蓝隼.wav"
+  ],
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\视频草稿\\EP06_S04_v12_金鱼_正面台词两步出拳踢胸口.mp4"
+  ]
+}

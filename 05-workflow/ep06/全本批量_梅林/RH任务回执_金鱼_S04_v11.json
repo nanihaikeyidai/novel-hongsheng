@@ -1,0 +1,30 @@
+{
+  "unit": "EP06_S04_v11_jinyu",
+  "versionNote": "2026-11-19 用户在 v10 基础上追加『重跑：修仰视45度没做出+瞬移偏侧面；男主是进攻过程中被踢飞，不是进攻一半又退回去，要设计镜头表现力』。相对 v10：删掉压过仰角的 STRAIGHT-ON/双耳同框等强正面锁，用『安娜脸被举到他眼睛上方』给仰视物理动机；瞬移改用 CAMERA 3/4+肩线平行+双方可见锁正面对面；出拳→踢飞改为同一前冲动量链(LUNGES/SURGING/MID-LUNGE/REVERSES momentum/MOMENTUM REVERSAL/TUMBLING)，不做收拳站稳。5 镜：电光瞬移正面抓安娜 → 蓝隼仰视45度+阴影台词 → 陆沉前冲出拳(红眼) → 冲到峰值被踢拦截动量反转(手不松安娜) → 翻滚撞黄黑条纹柱。4973 bytes、六标签、4 图(含陆沉 G25) + 1 音频(蓝隼音色锁中文台词)、无 negativePrompt。一次反馈=一次生成；按 2026-11-15 新口径不写复盘/开发说明文档，交付只放视频。",
+  "workflow": "金鱼云端",
+  "appId": "2110357037929558018",
+  "taskId": "2123445195327635458",
+  "status": "SUCCESS",
+  "usage": {
+    "consumeMoney": null,
+    "consumeCoins": null,
+    "taskCostTime": "529",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "89.93"
+  },
+  "promptBytes": 4973,
+  "params": "16:9 / 15s / 1.5MP / simple / 12",
+  "refs": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\安娜_凝刃战斗姿态_ref.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_garage.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\6-1a_跳车掀车\\上传包_云端\\ep06s01c_lansun_clean.png",
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物\\陆沉_人设.png"
+  ],
+  "audios": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\归档素材\\人物参考音色\\蓝隼.wav"
+  ],
+  "saved": [
+    "D:\\HermesWorkspace\\ai小说\\红绳\\05-workflow\\ep06\\全本批量_梅林\\视频草稿\\EP06_S04_v11_金鱼_正面瞬移仰视出拳.mp4"
+  ]
+}
