@@ -1,0 +1,28 @@
+subject_definitions:
+SETTING <Picture 2> ND garage lane, cold tubes, striped concrete pillars, wet floor, cool blue-grey ONLY. No text.
+MOTION UNITY LOCK: people, pillars, floor ONE motion system; every CUT changes ONLY camera, INHERITING position, heading, speed, momentum.
+SPEED LOCK: real-time FAST; NO slow-mo, NO freeze, NO held pose.
+MOUTH LOCK: Anna jaw COMPLETELY STILL behind WHITE MASK until [Shot 4] OPENS to speak ONE short line; Lan Sun CLOSED EXCEPT [Shot 4] OPENS to speak ONE line; Lu Chen in background CLOSED always, breath ONLY.
+GRIP LOCK: START - Lan Sun right hand clamps Anna throat, holds her OFF floor; Anna BOTH hands GRIP his forearm, blades down. RELEASE - [Shot 3] Anna's boot-blade slices his wrist, his hand LOOSENS, he turns sideways to dodge and LETS GO; [Shot 4] Anna lands, ONE hand presses her own throat. ONE state INHERITED per phase, transition only at Shot 3.
+BLADE LOCK: the boot-blade is ONE thin line of matte black-silver light at the boot tip, NO colored glow, NO particles, NO long trail; it appears in [Shot 1] and stays ONLY on her boot. The three throwing knives stay matte black-silver, no color.
+LEG LOCK: EXACTLY TWO LEGS per person, limbs DISTINCT, no third limb; Anna ONE knee to floor on landing.
+<Picture 1> Anna: grey cap, WHITE MASK, blue-black hair, dark grey uniform, gloves; START choked, both hands gripping the forearm, OFF floor. Inherit look/blades ONLY, not camera angle.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, shaved stripe, black angular sunglasses NEVER removed, graphite-black coat. Inherit look ONLY, not camera angle.
+<Picture 4> Lu Chen: white shirt, black messy short hair; BACKGROUND ONLY, curled by the wreck, hand on chest, breathing, silent; inherit face/shirt ONLY.
+<Audio 1> Lan Sun timbre only; his [Shot 4] line.
+<Audio 2> Anna timbre only; her [Shot 4] short line.
+
+summary: 15s, 5 shots, real-time FAST. STILL choked OFF floor. Anna's boot tip flashes ONE thin matte black-silver line, a short blade forms. Hanging, she twists her waist and slashes the blade at Lan Sun's throat-holding wrist; his hand loosens, he turns sideways to dodge and lets go. Anna drops, ONE knee to the floor, ONE hand presses her throat, coughs hard twice, wet hair stuck to her brow, sweat on her temple. Lan Sun steps back, hand into pocket, teases. Anna looks up cold, ONE short line. Lu Chen curls by the wreck in the background, silent.
+
+retention_analysis: LOOK preserved - white mask + gloves, blue hair + sunglasses, white shirt from <Picture 4>, same garage, cool blue-grey; cuts inherit position/heading/speed/momentum, ONE motion system. Grip PHASE: choke INHERITED through Shot 2, released ONCE at Shot 3, Anna throat-press after. Boot-blade = single matte black-silver line, no color/particles. TWO LEGS per person. Anna coughs but stays conscious and defiant.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D, no text/subtitles. No colored particles, blades matte black-silver, no red light.
+[Shot 1] 0.0s CAMERA 3/4: Lan Sun right hand CLAMPS Anna's throat, holds her OFF floor, her boots dangling; Anna BOTH hands GRIP his forearm, jaw behind WHITE MASK. Her boot tip flashes ONE thin matte black-silver line, a SHORT blade forms at the toe, no color no particles. 3.0s.
+[Shot 2] 3.0s HANGING TWIST: Anna twists her waist hard, the boot-blade SLASHES toward the wrist of Lan Sun's throat-holding hand; motion blur, SPEED LINES, ONE thin silver arc only. Lan Sun's grip is STILL on her throat at shot start. 3.0s.
+[Shot 3] 6.0s HARD CUT: Lan Sun's wrist LOOSENS, he turns sideways to dodge the blade, and RELEASES Anna's throat completely. Anna drops toward the floor, both hands coming up. EXACTLY TWO LEGS per person, limbs DISTINCT. 2.5s.
+[Shot 4] 9.0s Anna LANDS, ONE knee to the wet floor, ONE hand PRESSES her own throat, coughs HARD twice, wet hair stuck to brow, sweat rolling down her temple. Lan Sun steps back half a step, hand back into pocket, sunglasses on, mouth OPENS, ONE taunting line to Anna. Anna lifts her eyes cold behind the mask, mouth OPENS, ONE short line back. 3.5s.
+[Shot 5] 12.5s WIDE: Lan Sun drifts ONE step sideways, positioning himself BETWEEN Anna and the wreck, blocking her line of sight; BACKGROUND - Lu Chen curled by the wreck, hand pressed to chest, ragged silent breaths, NOT unconscious. Anna's eyes lock past him toward Lu Chen. 2.5s.
+
+overall_soundscape: Diegetic. [Shot 4] Lan Sun speaks ONE line in Chinese, light teasing tone, <Audio 1> timbre: <d>[Chinese] 小安娜，多年不见，流系异能用的越来越熟练了啊</d>. Then Anna replies ONE short line, cold, <Audio 2> timbre: <d>[Chinese] 少废话</d>. Else: boot-blade thin metallic flash, cloth twist, blade slash whoosh, feet on wet floor, two hard coughs, garage hum. Lu Chen silent. Avoid: subtitles, text, watermark, live-action, colored particles, glowing blades, other spoken words, second reading of any line.
+
+non_diegetic_music: N/A

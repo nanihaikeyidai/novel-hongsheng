@@ -1,0 +1,30 @@
+subject_definitions:
+SETTING <Picture 2> ND garage lane, cold tubes, striped concrete pillars, wet floor, cool blue-grey ONLY. NO subtitles, NO captions, NO text, NO words anywhere in frame.
+MOTION UNITY LOCK: people, pillars, floor ONE motion system; every CUT changes ONLY camera, INHERITING position, heading, speed, momentum.
+SPEED LOCK: real-time HIGH DYNAMIC; NO slow-mo, NO freeze, NO held pose, NO static staring. Punches/kicks ACCELERATE HARD with SPEED LINES and motion blur; cuts get SHORTER.
+MOUTH LOCK: Anna jaw COMPLETELY STILL behind WHITE MASK; Lan Sun CLOSED EXCEPT [Shot 5] OPENS to speak ONE short line looking at Lu Chen; Lu Chen CLOSED always. Spoken words NEVER rendered on screen.
+GRIP LOCK: Lan Sun right hand clamps Anna throat, holds her OFF floor; Anna BOTH hands GRIP his forearm, blades down, jaw still. ONE state INHERITED, hand NEVER releases even when kicking.
+RED PUPIL LOCK: ONLY the two small PUPILS turn RED, a pinpoint in each eye; IRIS, eye-white, eyelids stay NORMAL. NOT glowing eyeball, NOT red ring, NOT whole eye.
+FLIGHT LOCK: kick launches Lu Chen FLYING BACKWARD in ONE straight line frame-left toward a striped pillar; ONE direction, NEVER arcs, spins, changes heading, or lands on a car; flight BEGINS the instant boot touches his chest.
+PUNCH ARC LOCK: punch = PREPARE - COCK - DRIVE; Lu Chen draws fist BACK to hip then DRIVES it forward in ONE fast arc; kick lands WHILE fist still mid-drive, punch INTERRUPTED, NEVER completes. NO slow wind-up, NO slow-motion fist, no punch landing first.
+GAZE LOCK: when Lan Sun speaks [Shot 5], head and sunglasses TURN DOWN to Lu Chen collapsed at pillar frame-left; he LOOKS AT LU CHEN, NOT at Anna. Anna frame-right, head lowered.
+LEG LOCK: EXACTLY TWO LEGS per person, ONE foot PLANTED ONE leg moving; Lan Sun kicks ONE leg other planted; Lu Chen legs TRAIL straight as ONE body flying; limbs DISTINCT.
+<Picture 1> Anna: grey cap, WHITE MASK, blue-black hair, dark grey uniform, gloves; START choked, both hands on forearm, OFF floor. Inherit look/blades ONLY.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, shaved stripe, black angular sunglasses NEVER removed, graphite-black coat. Inherit look ONLY.
+<Picture 4> Lu Chen: FACE/CLOTHES only - black messy short hair, white shirt, dark trousers; inherit face/hair/shirt ONLY. 17yo.
+<Audio 1> Lan Sun timbre reference only; his spoken line is AUDIO, never printed on screen.
+
+summary: 15s, 5 shots, real-time FAST high-dynamic martial arts. Lan Sun holds Anna choked OFF floor one hand, both her hands on his arm. Lu Chen rises, two PUPILS tiny RED dots, iris and eye-white normal. He COCKS fist back to hip and DRIVES it frame-right - MID-DRIVE Lan Sun's boot SNAPS into his CHEST, punch INTERRUPTED, never completes. Lu Chen FLYING BACKWARD in ONE straight line, back SMASHES into a striped concrete pillar; NOT unconscious, presses chest, breathes hard. Lan Sun turns sunglasses DOWN to Lu Chen, speaks ONE short line, NOT looking at Anna.
+
+retention_analysis: LOOK preserved - white mask + grip, white shirt + face from <Picture 4>, blue hair + sunglasses, same garage, cool blue-grey; cuts inherit position/heading/speed/momentum, ONE motion system. Grip NEVER releases through kick. Punch = PREPARE-COCK-DRIVE INTERRUPTED mid-drive. RED in PUPILS only. Flight = ONE straight line to ONE striped pillar, no car, no spin. Lan Sun gaze to Lu Chen only. TWO LEGS each. Lu Chen AWAKE.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D. NO subtitles, NO captions, NO on-screen text, NO words, NO watermark. No colored particles, blades matte black-silver, no red light.
+[Shot 1] 0.0s CAMERA 3/4: Lan Sun right hand CLAMPS Anna's throat, holds her OFF floor; Anna BOTH hands CLAMP his forearm, blades down, JAW LOCKED. Lu Chen rises half up at frame-left, two PUPILS shrink to tiny RED dots while IRIS and eye-white stay NORMAL, jaw set. 2.5s.
+[Shot 2] 2.5s SOLO CLOSE-UP, LU CHEN ONLY in frame: Lu Chen COCKS right fist BACK to hip, shoulder winding, then DRIVES it toward frame-right in ONE fast arc with SPEED LINES and motion blur; fist HALF-EXTENDED, STILL traveling at shot end. NO slow wind-up. 2.5s.
+[Shot 3] 5.0s HARD CUT: Lu Chen's fist STILL mid-drive frame-right when Lan Sun's boot SNAPS into his CHEST with motion blur and SPEED LINES - kick lands DURING the unfinished punch, arc INTERRUPTED. Lan Sun grappling hand NEVER releases Anna's throat; Anna SAME grip BOTH hands on his arm. HIGH DYNAMIC, EXACTLY TWO LEGS per person, ONE planted ONE kicking. 3.0s.
+[Shot 4] 8.0s THE INSTANT boot connects Lu Chen FLYING BACKWARD in ONE straight line frame-left, legs TRAILING straight as ONE body, back SMASHES into a STRIPED CONCRETE PILLAR - NO car, NO spin, NO heading change. NOT unconscious: red pupils stay in pupils only, left hand PRESSES his chest, right hand braces on pillar, heaves SUPPRESSED breaths. 3.0s.
+[Shot 5] 11.0s HARD CUT LAN SUN + ANNA: Lan Sun's head and sunglasses TURN from Anna DOWN toward Lu Chen collapsed at pillar frame-left - LOOKS AT LU CHEN, NOT at Anna; Anna frame-right, head lowered. Mouth OPENS, ONE short amused Chinese line as AUDIO ONLY; NO subtitle, NO text on screen. 4.0s.
+
+overall_soundscape: Diegetic. [Shot 5] Lan Sun speaks ONE short Chinese line, flat amused, <Audio 1> timbre; SPOKEN AUDIO ONLY - do NOT render any subtitle, caption, lyric or text on screen. Else: electric crackle, choking gasps, cloth strain, fast punch whoosh CUT OFF mid-flight, heavy kick impact, back hitting concrete pillar, suppressed ragged breathing. Anna never speaks. Avoid: subtitles, captions, on-screen text, words, watermark, live-action, colored particles, glowing eyeballs, second car, repeated line.
+
+non_diegetic_music: N/A

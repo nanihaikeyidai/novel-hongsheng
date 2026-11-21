@@ -1,0 +1,31 @@
+subject_definitions:
+SETTING <Picture 2> ND garage lane, cold tubes, striped concrete pillars, wet floor, cool blue-grey ONLY.
+MOTION UNITY LOCK: people, pillars, floor ONE motion system; every CUT changes ONLY camera, INHERITING position, heading, speed, momentum.
+SPEED LOCK: real-time HIGH DYNAMIC, NO slow-mo/freeze/held pose. Run and punches ACCELERATE HARD with SPEED LINES, motion blur, scuff marks, trailing shirt; cuts get SHORTER.
+MOUTH LOCK: Anna jaw STILL behind WHITE MASK; Lan Sun CLOSED EXCEPT [Shot 5] speaks ONE line; Lu Chen CLOSED always.
+GRIP LOCK: Lan Sun right hand clamps Anna throat, holds her OFF floor; Anna BOTH hands GRIP his forearm, blades down, jaw still. ONE state INHERITED, hand NEVER releases even when kicking.
+RED PUPIL LOCK: ONLY the two small PUPILS turn RED, a pinpoint each eye; IRIS, eye-white, eyelids NORMAL. NOT glowing eyeball, NOT red ring, NOT whole eye.
+RUN-UP LOCK: Lu Chen STARTS FAR frame-left, a FULL 5 METERS from Lan Sun, standing upright, NOT crouching, NOT rising from ground. SPRINTS the whole distance toward frame-right, body low-forward, feet driving with scuff marks, trailing shirt, ACCELERATING every step. Punch thrown WHILE RUNNING at full speed, NOT from planted/crouched stance.
+PUNCH ARC LOCK: ONE EXAGGERATED full-body punch - hip and shoulder ROTATE HARD, torso lunges, arm swings ONE huge committed arc, whole momentum behind the fist, fist HALF-EXTENDED mid-swing. Kick lands WHILE fist still traveling, punch INTERRUPTED, NEVER completes. NO small punch, NO arm-only swing, NO wind-up pause.
+FLIGHT LOCK: kick launches Lu Chen FLYING BACKWARD in ONE straight line frame-left toward a striped pillar; ONE direction, NEVER arcs, spins, changes heading, or lands on a car; flight BEGINS the instant boot touches his chest.
+GAZE LOCK: when Lan Sun speaks [Shot 5], head and sunglasses TURN DOWN to Lu Chen collapsed at pillar frame-left, LOOKS AT LU CHEN NOT at Anna; Anna frame-right head lowered.
+LEG LOCK: EXACTLY TWO LEGS per person, limbs DISTINCT; Lu Chen legs alternate in sprint then TRAIL straight as ONE body flying; Lan Sun one leg kicks one planted.
+<Picture 1> Anna: grey cap, WHITE MASK, blue-black hair, dark grey uniform, gloves; START choked, both hands on forearm, OFF floor. Inherit look/blades ONLY.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, shaved stripe, black angular sunglasses NEVER removed, graphite-black coat. Inherit look ONLY.
+<Picture 4> Lu Chen: FACE/CLOTHES only - black messy short hair, white shirt, dark trousers; inherit face/hair/shirt ONLY. 17yo.
+<Audio 1> is the voice-timbre reference for Lan Sun (S1), used only in [Shot 5].
+
+summary: 15s, 5 shots, real-time FAST martial arts. Lan Sun chokes Anna OFF floor one hand. Lu Chen stands FAR frame-left 5 meters away, two tiny RED PUPILS; he SPRINTS the whole distance, mid-run throws ONE EXAGGERATED full-body punch; WHILE fist still travels Lan Sun's boot SNAPS into his CHEST, punch INTERRUPTED. Lu Chen FLYING BACKWARD in ONE straight line, back SMASHES into a striped concrete pillar, NOT unconscious. Lan Sun turns sunglasses DOWN to Lu Chen, speaks ONE line, NOT at Anna.
+
+retention_analysis: LOOK preserved - white mask + grip, white shirt + face from <Picture 4>, blue hair + sunglasses, same garage, cool blue-grey; cuts inherit position/heading/speed/momentum. Lu Chen STARTS standing 5 meters away, never crouched, SPRINTS in; punch = exaggerated full-body arc INTERRUPTED. RED in PUPILS only. Flight = ONE straight line to ONE striped pillar, no car, no spin. TWO LEGS each, AWAKE.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D. Spoken dialogue is SOUND in the audio track ONLY, NEVER rendered as subtitles, captions, on-screen text or watermark; NO visible text of any kind. No colored particles, no red light.
+[Shot 1] 0.0s CAMERA WIDE: Lan Sun right hand CLAMPS Anna's throat frame-right, holds her OFF floor; Anna BOTH hands CLAMP his forearm, blades down, JAW LOCKED. FAR frame-left a FULL 5 METERS away, Lu Chen stands upright, NOT crouching, two PUPILS shrink to tiny RED dots, IRIS and eye-white NORMAL, jaw set, coiled to spring. 2.0s.
+[Shot 2] 2.0s SPRINT + HUGE PUNCH: Lu Chen EXPLODES into full-speed SPRINT toward frame-right, body low-forward, feet pounding wet floor with scuff marks, shirt and hair trailing, SPEED LINES, motion blur, ACCELERATING. Mid-run throws ONE EXAGGERATED full-body punch, torso lunge, hip and shoulder ROTATING HARD, arm swinging ONE huge committed arc, whole momentum behind the fist, fist HALF-EXTENDED still traveling. 3.0s.
+[Shot 3] 5.0s HARD CUT: Lu Chen's fist STILL mid-swing when Lan Sun's boot SNAPS into his CHEST with motion blur and SPEED LINES - impact lands DURING the unfinished punch, arc INTERRUPTED. Lan Sun NEVER releases Anna's throat; Anna SAME grip BOTH hands on his arm. HIGH DYNAMIC, EXACTLY TWO LEGS each. 3.0s.
+[Shot 4] 8.0s THE INSTANT boot connects Lu Chen FLYING BACKWARD in ONE straight line frame-left, legs TRAILING straight as ONE body, back SMASHES into a STRIPED CONCRETE PILLAR - NO car, NO spin, NO heading change. NOT unconscious: red pupils stay in pupils only, left hand PRESSES his chest, right hand braces on pillar, heaves SUPPRESSED breaths. 3.0s.
+[Shot 5] 11.0s HARD CUT LAN SUN + ANNA: Lan Sun's head and sunglasses TURN from Anna DOWN toward Lu Chen collapsed at pillar frame-left, LOOKS AT LU CHEN NOT at Anna; Anna frame-right head lowered. Lan Sun (S1), flat amused tone, says: <d>[Chinese] 赤瞳，看来是稀有的邪系异能者，有意思。</d> Spoken as AUDIO ONLY, the line NEVER printed on screen, NO subtitle, NO visible text. 4.0s.
+
+overall_soundscape: Diegetic. [Shot 5] Lan Sun's single line is a flat amused male voice, <Audio 1> timbre, AUDIO ONLY, no visible text - exact words in [Shot 5]. Else: sprint footfalls on wet floor, cloth strain, accelerating whoosh, punch whoosh CUT OFF mid-flight, heavy kick impact, back hitting concrete pillar, suppressed ragged breathing. Anna never speaks. Avoid: subtitles, captions, on-screen text, words, watermark, live-action, colored particles, glowing eyeballs, second car, repeated line.
+
+non_diegetic_music: N/A
