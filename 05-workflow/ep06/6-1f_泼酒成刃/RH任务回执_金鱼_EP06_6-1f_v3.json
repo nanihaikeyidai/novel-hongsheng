@@ -1,0 +1,79 @@
+{
+  "unit": "EP06_6-1f_v3_jinyu",
+  "workflow": "金鱼云端(box)",
+  "appId": "2110357037929558018",
+  "taskId": "2124170109156294658",
+  "status": "SUCCESS",
+  "billing": "personal RH account, settleMode=POINT",
+  "usage": {
+    "consumeCoins": null,
+    "consumeMoney": null,
+    "taskCostTime": "513",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "117.99"
+  },
+  "promptBytes": 4991,
+  "params": "16:9 / 15s / 1.5MP / simple / 12 / plus",
+  "prompt_path": "05-workflow/ep06/6-1f_泼酒成刃/金鱼_H3纯提示词_EP06_6-1f_v3.txt",
+  "refs": {
+    "51": "pascal.png",
+    "49": "garage_clean.png",
+    "50": "lansun_front_side.png"
+  },
+  "audios": {
+    "48": "lansun.wav"
+  },
+  "upload_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_upload",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p82-audio_zuajs_1795277105.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v3_金鱼草稿.mp4",
+  "completed_local": "2026-11-22 00:05 Asia/Shanghai",
+  "remainPoint_before_after": [
+    1306.15,
+    1158.16
+  ],
+  "note_wallet": "outputs chargedPoint=117.99; wallet readout dropped 147.99 (1306.15→1158.16). Report official task charge as 117.99 points.",
+  "submitted_local": "2026-11-21 23:56 Asia/Shanghai",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v3_手机版.mp4",
+  "audio_phone": "48kHz AAC 192k +faststart",
+  "david_extra_locks": [
+    "blades launch themselves after hardening, Pascal does not throw them",
+    "FIVE METERS apart, wide empty floor gap, never close-range"
+  ],
+  "self_test": {
+    "overall": "PASS_WITH_NOTES",
+    "review_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v3_review",
+    "method": "2fps sheets + dense tiles + key frames + faster-whisper medium (numpy wav; with/without initial_prompt; VAD windows)",
+    "checks": {
+      "blades_auto_fly_not_thrown": "PASS — 3.6–5.2s 七枚刃先凝成扇形，再自行转向画右飞出；5.5s 刃已在两人之间的空中飞向蓝隼，不是从帕斯卡手里甩出",
+      "distance_not_close": "PASS — 5.2–8.0s 宽中景帕斯卡画左、蓝隼画右，中间整条车道空地，明显拉开，无贴身",
+      "no_through_body": "FAIL_PARTIAL — 斥力波可见，6.5s 部分刃从身侧飞过；但 6.0s、7.0s 仍有红刃划过蓝隼胸口/外套/头侧，与轮廓重叠",
+      "midshot_no_fist_halo": "FAIL_PARTIAL — 9.5–11.5s 特写电弧贴指节手腕爬，无光圈；5.5–8.0s 对打中景出拳那只手仍有蓝色圆环光圈",
+      "lines_and_hard_silence": "PASS_WITH_NOTES — 新词各一次、有停顿；蓝隼 8.20–11.72s（早于 9.6s，落到碎杯镜），帕斯卡 12.20–14.98s；间隔约 0.48s（短于 0.7s，也早于 12.7s）",
+      "pascal_no_punch_glass_down": "PASS_WITH_NOTES — 对打段不出拳；6.0s 起杯子多垂在身侧。注：5.5s 右手把杯子往前举起，像在示意，但杯子没有伸进斥力波",
+      "lansun_no_retreat_no_lunge": "PASS — 5.2–8.0s 直立站定在画右，脚不后退，没有换成弓步",
+      "one_glass_drop": "FAIL_PARTIAL — 8.3–9.1s 特写里一只杯落下裂开，没有复读三次。但 7.0–8.0s 宽中景脚边已有一只倒地的酒杯，同时手里还握着另一只，等于两只杯"
+    },
+    "asr": {
+      "蓝隼": "这么快的元素变化，看来又是流系异能者。 8.20–11.72s（一次；无提示词窗为「模块的元素变化…流系一能者」）",
+      "帕斯卡": "什么系不重要，优雅的战斗才是重点。 12.20–14.98s（一次；无提示词窗识别为繁体同句）",
+      "gap_s": 0.48,
+      "extra_speech": "0–8.0s 开 VAD 后基本无人声；7.98–8.32s 窗口因蓝隼句提前开始而擦到半句（nsp=0.69）。无 VAD 的 0–8.5s 出现提示词泄漏式幻听，忽略"
+    },
+    "other_notes": [
+      "喝酒/泼酒 0–3.6s 仍是帕斯卡特写，蓝隼不入画",
+      "造型稳定：金发黑马甲、银羽胸针；蓝发墨镜不摘",
+      "成刃特写可见约 7 枚尖细酒红针刃",
+      "Do not auto re-run; wait for David confirmation"
+    ],
+    "v4_suggestions_if_needed": [
+      "Blades must never be drawn across his coat, face or chest; if they would hit, they shatter on the wave first, then only fragments fly past OUTSIDE the outline",
+      "Wide fight: NO blue disc/circle/halo around either fist; only thin jagged arcs on the skin. The repulsion WAVE may stay as ripples in the air ahead",
+      "Until Shot 5 the floor has NO glass; Pascal keeps the SAME one glass in hand, then drops that one at 8.5s",
+      "NO voice anywhere before 9.6s; Shot 6 line 9.6–12.0s only; 12.0–12.7s hard silence; Pascal starts at 12.7s",
+      "Pascal's right elbow stays at his hip, glass at thigh level, never lifted toward the blades"
+    ],
+    "no_auto_rerun": true,
+    "completed_Asia_Shanghai": "2026-11-22 00:10"
+  }
+}
