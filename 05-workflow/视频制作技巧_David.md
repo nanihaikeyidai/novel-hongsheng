@@ -174,11 +174,16 @@
 - **贴回成片**：画面 `-c:v copy`，**不加 `-shortest`**（会截掉末帧）；输出 48kHz AAC + faststart；自测视频流 md5 应与原片一致。
 - 与「一次反馈一版」一致：音色/气声问题能本地修就不重跑金鱼。
 
-## 十四、武戏能力投射物（2026-11-21 EP06 6-1f 泼酒成刃 v1）
+## 十四、武戏能力投射物（2026-11-21 EP06 6-1f 泼酒成刃 v1–v2）
 - **投射物数量写死就能数对**：`EXACTLY SEVEN slim tapered … BLADES in one fan row` 一次命中 7 枚；「多个」不写数，模型会给一大片。数量 + 形状（needle-thin / tapered / razor point）+ 材质（translucent like red glass）+ 朝向（aimed at X）四件套一起写。
 - **「子弹时间」不用慢动作**：写 `Only the droplets themselves stop in the air; people and camera stay real-time`，悬停→拉长→收尖可在 1.5–2s 特写里完成，不触发整体慢放。
 - **唯一暖色锁**：冷色场景里能力是红色时，加 `COLOR LOCK: X is the ONLY warm color`，并预先把参考图里的红灯/红晕物理擦掉（红灯会和能力抢色、诱发全片红光）。
 - **小道具落地会复读**：「松手→杯子落地弹两下→裂开」写在台词同一镜里时，H3 会连掉好几只杯子。写成 `ONE object ONLY, falls ONCE, cracks and STAYS`，并把落地完成放在开口前，不和台词抢同一时窗。
-- **格挡要写排他句**：只写「拳击碎第 N 枚」时仍会有刃从身体穿过；补 `every projectile either shatters on contact or flies past OUTSIDE the body`。
-- **电拳形态**：只写 `arcs on fists` 容易画成拳外电环；要贴皮电弧写 `thin jagged arcs crawling along knuckles and wrists, NOT rings`。
-- **双句台词间隔**：写了 ≥0.7s TOTAL SILENCE 仍只得 0.22s；要可靠就把第二句的起点写成绝对时间（如 `starts at 13.0s`），并在两句之间安排一个无声动作（碎杯/收拳）占住时窗。
+- **格挡要写排他句**：只写「拳击碎第 N 枚」时仍会有刃从身体穿过；补 `every projectile either shatters on contact or flies past OUTSIDE the body`。v2 写了这句后，中景对打仍有刃穿过脸和胸口，须再加轮廓锁：`projectiles NEVER overlap the body silhouette / face / chest`。
+- **电拳形态**：只写 `arcs on fists` 容易画成拳外电环；要贴皮电弧写 `thin jagged arcs crawling along knuckles and wrists, NOT rings`。这句须在**每个出拳镜头**（含中景/全景）重复写；v2 特写已贴腕，对打中景仍是拳外蓝光圈。斥力波可留在拳前，光圈不能套在拳上。
+- **双句台词间隔**：写了 ≥0.7s TOTAL SILENCE 仍只得 0.22s；把第二句起点写成绝对时间（如 `starts at 13.0s`）并插入无声动作后，v2 间隔仍只有 0.36s，且第一句会提早约 1s 开口。更稳的是两句之间硬切到无口型动作镜，或预留后期把中间人声静音，不要只靠 overall 层静音窗。
+- **单人动作镜要排他入画（v2 已验）**：需要「只看一个人做动作」时，写成该人特写，并写死 `OTHER CHARACTER IS NOT IN FRAME / does not appear`。用双人中景再指望构图躲开另一个人不可靠。v2 喝酒/泼酒两个特写（0–3.6s）另一人完全不入画。
+- **格挡写身前力场，不要只写拳打中投射物**：远程拦截写成拳头打出可见斥力波/力场，投射物在拳前约半米撞上波阵面碎裂或弹开；只写「拳击中刃」时，模型容易画成拳打到人，或让人后退来「躲开」。
+- **「不后退」要同时锁站姿**：只写 `FEET PLANTED / never move / HOLDS HIS GROUND` 时，人可能原地改成弓步。补 `upright stance, no lunge, knees not bent into a bow stance, feet stay under the shoulders`。
+- **对打中未写动作的一方会即兴出招**：格挡镜如果只写进攻/格挡的一方，另一人可能伸手、出拳、把道具伸进力场，甚至多握出一只杯子。闲置一方要写死：站在哪一侧、只握几只道具、手放哪里、`NEVER punches / NEVER extends the prop`。
+- **落地锁管不住对打镜里的道具分身**：`ONE object ONLY, falls ONCE` 能管住落地次数（v2 空杯只掉一次已验），但对打中景仍可能双手各出现一只。道具总数锁要写进所有出该道具的镜头，不只写落地那一镜。
