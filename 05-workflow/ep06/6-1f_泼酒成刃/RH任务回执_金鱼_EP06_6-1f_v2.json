@@ -1,0 +1,70 @@
+{
+  "unit": "EP06_6-1f_v2_jinyu",
+  "workflow": "金鱼云端(box)",
+  "appId": "2110357037929558018",
+  "taskId": "2124152449928495105",
+  "status": "SUCCESS",
+  "billing": "personal RH account, settleMode=POINT",
+  "usage": {
+    "consumeCoins": null,
+    "consumeMoney": null,
+    "taskCostTime": "525",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "120.75"
+  },
+  "promptBytes": 4852,
+  "params": "16:9 / 15s / 1.5MP / simple / 12 / plus",
+  "prompt_path": "05-workflow/ep06/6-1f_泼酒成刃/金鱼_H3纯提示词_EP06_6-1f_v2.txt",
+  "refs": {
+    "51": "pascal.png",
+    "49": "garage_clean.png",
+    "50": "lansun_front_side.png"
+  },
+  "audios": {
+    "48": "lansun.wav"
+  },
+  "upload_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_upload",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p85-audio_kvhqi_1795272905.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v2_金鱼草稿.mp4",
+  "completed_local": "2026-11-21 22:55 Asia/Shanghai",
+  "remainPoint_before_after": [
+    1426.9,
+    1306.15
+  ],
+  "submitted_local": "2026-11-21 22:46 Asia/Shanghai",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v2_手机版.mp4",
+  "audio_phone": "48kHz AAC 192k +faststart",
+  "self_test": {
+    "overall": "PASS_WITH_NOTES",
+    "review_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v2_review",
+    "method": "2fps contact sheets + dense tiles + key frames + faster-whisper medium (numpy wav; with/without initial_prompt; VAD windows)",
+    "checks": {
+      "pascal_cu_sip_pour_no_lansun": "PASS — 0.0–3.6s 全是帕斯卡胸像/手杯特写，蓝隼完全不入画；抿酒 0.0–1.8s，泼酒 2.4–3.6s，酒珠悬停接 3.6–5.0s 成刃特写",
+      "em_repulsion_no_retreat": "PASS_WITH_NOTES — 5.5–7.5s 拳前可见蓝白同心电磁斥力波，刃被弹开或碎成红雾白汽；蓝隼占位不后退。注：脚从直立换成弓步，并非完全钉死",
+      "new_lines_once_with_pause": "PASS_WITH_NOTES — 新词各一次、中间有停顿；间隔约 0.36s（要求 ≥0.7s）。蓝隼句从 8.6s 起，略早于 9.5s 近景",
+      "one_glass_drop": "PASS — 8.0–8.5s 一只空杯落下一次、裂开、碎片停在脚边。注：7.0s 对打中帕斯卡双手各似握一只杯，属对打镜脏点，落地本身未复读",
+      "no_through_body_arcs_not_rings": "FAIL_PARTIAL — 部分刃被弹到身侧（6.5–7.5s），但 6.0s 有几枚从蓝隼脸部和胸口穿过。对打中景拳头仍是蓝色光圈，9.0–11.5s 特写才是贴指节手腕爬的电弧"
+    },
+    "asr": {
+      "蓝隼": "这么快的元素变化，看来又是流系异能者。 8.60–11.80s（近景开口，一次；无提示词窗为「流系一能者」）",
+      "帕斯卡": "什么系不重要，优雅的战斗才是重点。 12.16–15.04s（一次；无提示词窗识别为繁体同句）",
+      "gap_s": 0.36,
+      "extra_speech": "无（0–8.5s VAD 无人声；无 VAD「咳吐喝」为音效幻听，nsp=0.62）"
+    },
+    "other_notes": [
+      "5.5–7.5s 帕斯卡也伸手/出拳，把杯子伸进斥力波，提示词未要求",
+      "5.0s 成刃特写可见恰好 7 枚尖细酒红针刃",
+      "造型：帕斯卡金发黑马甲、蓝隼蓝发墨镜不摘",
+      "Do not auto re-run; wait for David confirmation"
+    ],
+    "v3_suggestions_if_needed": [
+      "Shot 4：Pascal STANDS STILL on frame-left, holding ONE glass down at his side, NEVER punches, NEVER extends the glass",
+      "blades NEVER overlap Lan Sun's silhouette; they break on the wave or fly past strictly OUTSIDE his outline",
+      "mid-fight fists: thin jagged arcs crawling on knuckles and wrists, NO circular halo / ring around the fist (the repulsion WAVE may stay as ripples ahead of the fist)",
+      "Lan Sun line starts at 9.6s only; 12.0–12.7s hard TOTAL SILENCE before Pascal speaks"
+    ],
+    "no_auto_rerun": true,
+    "completed_Asia_Shanghai": "2026-11-21 23:00"
+  }
+}
