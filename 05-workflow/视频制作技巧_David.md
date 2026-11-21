@@ -173,3 +173,12 @@
 - **对齐用能量包络，不用 ASR 时间戳**：ASR 可偏 +0.2s；`replace_line.py` 自动找真实起音。要「更轻」必须加 `--level-offset-db`（RMS 对齐会抵消生成时的轻），不要指望提示词形容词。
 - **贴回成片**：画面 `-c:v copy`，**不加 `-shortest`**（会截掉末帧）；输出 48kHz AAC + faststart；自测视频流 md5 应与原片一致。
 - 与「一次反馈一版」一致：音色/气声问题能本地修就不重跑金鱼。
+
+## 十四、武戏能力投射物（2026-11-21 EP06 6-1f 泼酒成刃 v1）
+- **投射物数量写死就能数对**：`EXACTLY SEVEN slim tapered … BLADES in one fan row` 一次命中 7 枚；「多个」不写数，模型会给一大片。数量 + 形状（needle-thin / tapered / razor point）+ 材质（translucent like red glass）+ 朝向（aimed at X）四件套一起写。
+- **「子弹时间」不用慢动作**：写 `Only the droplets themselves stop in the air; people and camera stay real-time`，悬停→拉长→收尖可在 1.5–2s 特写里完成，不触发整体慢放。
+- **唯一暖色锁**：冷色场景里能力是红色时，加 `COLOR LOCK: X is the ONLY warm color`，并预先把参考图里的红灯/红晕物理擦掉（红灯会和能力抢色、诱发全片红光）。
+- **小道具落地会复读**：「松手→杯子落地弹两下→裂开」写在台词同一镜里时，H3 会连掉好几只杯子。写成 `ONE object ONLY, falls ONCE, cracks and STAYS`，并把落地完成放在开口前，不和台词抢同一时窗。
+- **格挡要写排他句**：只写「拳击碎第 N 枚」时仍会有刃从身体穿过；补 `every projectile either shatters on contact or flies past OUTSIDE the body`。
+- **电拳形态**：只写 `arcs on fists` 容易画成拳外电环；要贴皮电弧写 `thin jagged arcs crawling along knuckles and wrists, NOT rings`。
+- **双句台词间隔**：写了 ≥0.7s TOTAL SILENCE 仍只得 0.22s；要可靠就把第二句的起点写成绝对时间（如 `starts at 13.0s`），并在两句之间安排一个无声动作（碎杯/收拳）占住时窗。

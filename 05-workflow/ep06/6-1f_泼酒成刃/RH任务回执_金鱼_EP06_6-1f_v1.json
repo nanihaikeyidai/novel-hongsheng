@@ -1,0 +1,69 @@
+{
+  "unit": "EP06_6-1f_v1_jinyu",
+  "workflow": "金鱼云端(box)",
+  "appId": "2110357037929558018",
+  "taskId": "2124059180833931265",
+  "status": "SUCCESS",
+  "billing": "personal RH account, settleMode=POINT",
+  "usage": {
+    "settleMode": "POINT",
+    "chargedPoint": "120.98",
+    "taskCostTime": "526",
+    "consumeCoins": null
+  },
+  "promptBytes": 4898,
+  "params": "16:9 / 15s / 1.5MP / simple / 12 / plus",
+  "prompt_path": "05-workflow/ep06/6-1f_泼酒成刃/金鱼_H3纯提示词_EP06_6-1f_v1.txt",
+  "refs": {
+    "51": "pascal.png",
+    "49": "garage_clean.png",
+    "50": "lansun_front_side.png"
+  },
+  "audios": {
+    "48": "lansun.wav"
+  },
+  "upload_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_upload",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p81-audio_zqmmy_1795250669.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_金鱼草稿.mp4",
+  "completed_local": "2026-11-21 01:46 America/Phoenix (box clock CST 16:46)",
+  "remainPoint_before_after": [
+    1547.88,
+    1426.9
+  ],
+  "submitted_local_America_Phoenix": "2026-11-21 01:36",
+  "phone_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_手机版.mp4",
+  "audio_phone": "48kHz AAC 192k +faststart",
+  "refs_source": {
+    "51": "05-workflow/归档素材/人物/帕斯卡_人设.png",
+    "49": "05-images/场景/场景_EP05_地下车库_日漫电影感_v3.png（box 上擦除柱顶红灯+红晕）",
+    "50": "05-workflow/归档素材/人物/蓝隼_人设.png 裁正面+侧面全身（去掉带能量丝头像格）",
+    "48": "05-workflow/归档素材/人物参考音色/蓝隼.wav"
+  },
+  "self_test": {
+    "overall": "PASS_WITH_NOTES",
+    "review_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_review",
+    "beats": {
+      "sip": "PASS 0.0–2.0s",
+      "fling": "PASS 2.5–3.5s",
+      "hover_to_blades": "PASS 4.0–5.5s（7 枚尖细酒红针刃，另有散落酒珠悬停）",
+      "volley": "PASS 6.0–6.5s",
+      "electric_fist_knock_down": "PASS 6.75–9.0s（拳面电环击碎、红液溅地、白汽；末刃在柱上划出渗红细口 8.5s+）"
+    },
+    "identity": "PASS 帕斯卡金发黑马甲米白衬衫；蓝隼蓝发剃纹墨镜全程不摘、黑长风衣",
+    "blades": "PASS 恰好 7 枚，细长尖锐、半透明酒红",
+    "dialogue_asr": {
+      "蓝隼": "水系,难怪敢一个人留下。 9.58–12.30s（近景开口，一次）",
+      "帕斯卡": "酒也是水,你早该想到。 12.52–14.88s（ASR 听成「球也是水」，一次）",
+      "extra_speech": "无（VAD 0–9.5s 无人声；无 VAD 窗口出的「请不吝点赞…/睡觉」为 Whisper 对音效的幻听）"
+    },
+    "notes": [
+      "两句间隔仅约 0.22s（要求 ≥0.7s），听感偏紧但未黏成一句",
+      "12.8–14.5s 空杯落地像被复读：先后约 3 只杯子掉落/翻滚，未见清晰「裂开」",
+      "6.75–7.5s 有 1–2 枚刃从蓝隼身侧/衣摆前穿过，不像被拳击中",
+      "蓝隼电弧多画成拳头外的蓝色电环而非沿指节到腕的电弧",
+      "帕斯卡无参考音色，音色由模型生成，未客观核对",
+      "6.5–9.5s 镜头跟蓝隼，帕斯卡出画"
+    ],
+    "no_auto_rerun": true
+  }
+}

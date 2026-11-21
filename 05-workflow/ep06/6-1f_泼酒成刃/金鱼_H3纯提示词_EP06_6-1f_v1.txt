@@ -1,0 +1,25 @@
+subject_definitions:
+SETTING <Picture 2> ND underground garage lane: cold white tubes, grey concrete pillars with yellow-black base stripes, wet floor reflections, cool blue-grey ONLY. Plain concrete, no digits or signs, no red lamps.
+AXIS LOCK: Pascal ALWAYS frame-left, Lan Sun ALWAYS frame-right, about five meters apart, facing each other; every CUT changes ONLY camera, INHERITING position, heading, momentum and debris.
+SPEED LOCK: people and camera move in real-time FAST; NO slow-mo, NO held pose, NO empty pause. Only the wine droplets themselves stop in the air.
+COLOR LOCK: the wine is the ONLY warm color: deep translucent WINE-RED. Lan Sun's arcs are cold BLUE-WHITE only.
+MOUTH LOCK: Pascal mouth CLOSED except [Shot 6]; Lan Sun mouth CLOSED except [Shot 5]. Speakers keep head still while talking.
+<Picture 1> Pascal: adult man, swept blond hair, calm half-smile, black waistcoat over cream shirt, dark trousers, black loafers, small silver feather brooch on chest; holds ONE stemmed wine glass in RIGHT hand, a little dark red wine inside. Inherit face/hair/outfit ONLY, NOT the multi-panel layout.
+<Picture 3> Lan Sun: adult man, ELECTRIC-BLUE short hair with shaved stripe, black angular sunglasses NEVER removed, long graphite-black coat, black boots. Bare-handed, NO weapon. Inherit look ONLY, not layout or angle.
+<Audio 1> Lan Sun timbre only, his single line in [Shot 5].
+
+summary: 15s, 6 shots. Pascal sips wine once, flings the rest at Lan Sun; droplets stop mid-air, harden into SEVEN needle-thin WINE-RED BLADES and fly; Lan Sun's BLUE-WHITE ELECTRIC FISTS smash them away, one blade cuts a pillar. Two lines, no winner yet.
+
+retention_analysis: <Picture 1> Pascal and <Picture 3> Lan Sun fully preserved in face, hair, outfit; sunglasses stay on. <Picture 2> garage preserved; floor wine splashes, steam and the pillar cut ACCUMULATE and never reset after cuts.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D, no text.
+[Shot 1] 0.0s MEDIUM two-shot, eye level. Pascal ALREADY lifting the glass to his lips: takes ONE small sip, throat moves once, lowers the glass; a thin layer of red wine left. Frame-right Lan Sun leans in, sparks on his knuckles. 2.5s.
+[Shot 2] 2.5s CUT low side angle on Pascal. His wrist SNAPS forward and FLINGS the remaining wine toward Lan Sun in ONE sharp stroke; the wine leaves the glass as a flat spray of droplets that travel one meter and then STOP dead, hovering in a horizontal fan between the two men. Pascal keeps the empty glass in hand. 2.0s.
+[Shot 3] 4.5s CUT CLOSE-UP of the hovering droplets under the cold tubes. Each droplet STRETCHES into a long NEEDLE-THIN blade with a razor point aimed at Lan Sun: EXACTLY SEVEN slim tapered WINE-RED BLADES in one fan row, translucent like red glass, hard white highlights on each edge, a tiny tremble. 2.0s.
+[Shot 4] 6.5s CUT wide side tracking shot, FAST. The SEVEN blades LAUNCH together and streak at Lan Sun in a tight volley. Lan Sun raises both fists; BLUE-WHITE ARCS climb from knuckles to wrists. His RIGHT electric jab meets the first blade head-on: it SHATTERS into red droplets and a puff of white steam. His LEFT hook swats the next two sideways; they break apart and splash red across the wet floor. A quick right-left combo knocks three more down. He pivots his shoulder; the LAST blade grazes past his arm and cuts a THIN LINE into the concrete pillar beyond him, a trickle of red seeping out, concrete dust puffing. Lan Sun skids half a step on the wet floor. 3.5s.
+[Shot 5] 10.0s CUT Lan Sun CLOSE-UP, FULL FRONT eye level, sunglasses EQUAL width. Fists half lowered, arcs still jumping on his knuckles. His grin narrows; MOUTH OPENS, ONE line, head still. Only shot his mouth opens. 2.0s.
+[Shot 6] 12.0s CUT MEDIUM two-shot, Pascal frame-left, Lan Sun frame-right. Pascal opens his fingers: the empty glass falls, hits the floor, bounces twice, cracks. At 12.6s Pascal says ONE line, calm, head still. At 14.0s Lan Sun's smile disappears, he re-clenches both fists and the blue-white arcs flare brighter and stay lit; red drops still drip from the pillar cut. 3.0s.
+
+overall_soundscape: Diegetic. [Shot 5] Lan Sun, low and flat, <Audio 1> timbre: <d>[Chinese] 水系……难怪敢一个人留下。</d> [Shot 6] Pascal, calm relaxed adult male voice, clearly different from <Audio 1>: <d>[Chinese] 酒也是水。你早该想到。</d> At least 0.7s TOTAL SILENCE of voices between the two lines; NEVER one continuous sentence; each line spoken ONCE only. Else: sip, wine whoosh, crystalline hum while droplets hover, blades whistling, electric crackle, glassy shatter and steam hiss, splashes, pillar scrape, glass clinking twice then cracking, rising electric buzz. Avoid: any other words, a second reading of a line, music, subtitles, text, watermark, live-action, red lamps, extra weapons.
+
+non_diegetic_music: N/A
