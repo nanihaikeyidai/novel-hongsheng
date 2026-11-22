@@ -128,6 +128,7 @@
   - ⚠️ **画面禁字幕的正解是强制声明**（`spoken dialogue = AUDIO ONLY, never rendered as on-screen text/watermark; NO visible text of any kind`），**不是删 `<d>` 台词**。此前「为避字幕删台词」是过度纠偏：音色参考还在、模型照样发声但没内容 → ASR 变无意义音节。写台词是对的，v2 出字幕是因台词塞错段落 + 无强制声明。
 
 - **硬切后才说指定台词**：角色 A 镜头里禁止出现角色 B 的台词。例：门卫镜头只许「喂？」；「晚安」只能出现在硬切到沈默侧脸之后。
+- **台词必须落在说话人特写里，不能提早开口**（2026-11-22 EP06 6-1f v3）：即使写了绝对时间窗（如 9.6–12.0s），蓝隼句仍从 8.20s 起，叠在碎杯/帕斯卡镜上，听起来像说错人。David 明确：谁说话，就先切到谁的特写。改法：①先硬切到该人特写，闭口约 0.3s 再开口（`voice must not start before this close-up`）；②前面所有镜头写 `ZERO speech / lips CLOSED`；③subject 里用 MOUTH LOCK 写死谁在哪一镜、哪几秒才准张嘴。这是「硬切后才说」在双人对白上的加强版。
 - **短句只说一次**：在 subject、summary、detailed、soundscape 四处都写 ONCE / no second；避免项再写「禁止第二遍」。
 - **屏字先出文字参考图再喂视频**：技能字/屏幕文字（如「危险通话」）先由资产生成机器人出文字参考图，再作为图片参考喂进视频；不要只靠文生视频凭空出字。
 - **说完再出屏字**：把「说话」和「出字」拆成两个 Shot。说话那一镜写死 `NO on-screen text yet`；下一镜写 `lips CLOSED, silent ≥1.5s` 之后才出现屏字。
@@ -184,16 +185,20 @@
 - **贴回成片**：画面 `-c:v copy`，**不加 `-shortest`**（会截掉末帧）；输出 48kHz AAC + faststart；自测视频流 md5 应与原片一致。
 - 与「一次反馈一版」一致：音色/气声问题能本地修就不重跑金鱼。
 
-## 十四、武戏能力投射物（2026-11-21 EP06 6-1f 泼酒成刃 v1–v2）
+## 十四、武戏能力投射物（2026-11-21–22 EP06 6-1f 泼酒成刃 v1–v4）
 - **投射物数量写死就能数对**：`EXACTLY SEVEN slim tapered … BLADES in one fan row` 一次命中 7 枚；「多个」不写数，模型会给一大片。数量 + 形状（needle-thin / tapered / razor point）+ 材质（translucent like red glass）+ 朝向（aimed at X）四件套一起写。
 - **「子弹时间」不用慢动作**：写 `Only the droplets themselves stop in the air; people and camera stay real-time`，悬停→拉长→收尖可在 1.5–2s 特写里完成，不触发整体慢放。
 - **唯一暖色锁**：冷色场景里能力是红色时，加 `COLOR LOCK: X is the ONLY warm color`，并预先把参考图里的红灯/红晕物理擦掉（红灯会和能力抢色、诱发全片红光）。
 - **小道具落地会复读**：「松手→杯子落地弹两下→裂开」写在台词同一镜里时，H3 会连掉好几只杯子。写成 `ONE object ONLY, falls ONCE, cracks and STAYS`，并把落地完成放在开口前，不和台词抢同一时窗。
-- **格挡要写排他句**：只写「拳击碎第 N 枚」时仍会有刃从身体穿过；补 `every projectile either shatters on contact or flies past OUTSIDE the body`。v2 写了这句后，中景对打仍有刃穿过脸和胸口，须再加轮廓锁：`projectiles NEVER overlap the body silhouette / face / chest`。
-- **电拳形态**：只写 `arcs on fists` 容易画成拳外电环；要贴皮电弧写 `thin jagged arcs crawling along knuckles and wrists, NOT rings`。这句须在**每个出拳镜头**（含中景/全景）重复写；v2 特写已贴腕，对打中景仍是拳外蓝光圈。斥力波可留在拳前，光圈不能套在拳上。
-- **双句台词间隔**：写了 ≥0.7s TOTAL SILENCE 仍只得 0.22s；把第二句起点写成绝对时间（如 `starts at 13.0s`）并插入无声动作后，v2 间隔仍只有 0.36s，且第一句会提早约 1s 开口。更稳的是两句之间硬切到无口型动作镜，或预留后期把中间人声静音，不要只靠 overall 层静音窗。
+- **格挡要写排他句**：只写「拳击碎第 N 枚」时仍会有刃从身体穿过；补 `every projectile either shatters on contact or flies past OUTSIDE the body`。v2 写了这句后，中景对打仍有刃穿过脸和胸口，须再加轮廓锁：`projectiles NEVER overlap the body silhouette / face / chest`。v3 加了轮廓锁后仍有刃划过胸口、外套和头侧——「不重叠」管不住「贴着身体划过」。再补：若会命中则先在力场上粉碎，只有碎片从轮廓外侧飞过；写 `NEVER drawn across coat / face / chest`，不要只写 never overlap。
+- **电拳形态**：只写 `arcs on fists` 容易画成拳外电环；要贴皮电弧写 `thin jagged arcs crawling along knuckles and wrists, NOT rings`。这句须在**每个出拳镜头**（含中景/全景）重复写；v2/v3 特写已贴腕，对打中景仍是拳外蓝光圈。加强：全局 ARC LOCK；斥力波写在拳前空气中、与拳头分离（`WAVE sits in the air ahead, SEPARATE from the fist`）；明确禁止 `blue disc / circle / halo around either fist`。斥力波可留在拳前，光圈不能套在拳上。
+- **双句台词间隔**：写了 ≥0.7s TOTAL SILENCE 仍只得 0.22s；把第二句起点写成绝对时间（如 `starts at 13.0s`）并插入无声动作后，v2 间隔仍只有 0.36s，且第一句会提早约 1s 开口。v3 再加硬静音窗后间隔仍约 0.48s，且第一句提前落到别人的镜头上（见 §八「说话人特写锁」）。更稳的是：先切到说话人特写再开口；两句之间硬切到无口型动作镜；或预留后期把中间人声静音。不要只靠 overall 层静音窗。
 - **单人动作镜要排他入画（v2 已验）**：需要「只看一个人做动作」时，写成该人特写，并写死 `OTHER CHARACTER IS NOT IN FRAME / does not appear`。用双人中景再指望构图躲开另一个人不可靠。v2 喝酒/泼酒两个特写（0–3.6s）另一人完全不入画。
 - **格挡写身前力场，不要只写拳打中投射物**：远程拦截写成拳头打出可见斥力波/力场，投射物在拳前约半米撞上波阵面碎裂或弹开；只写「拳击中刃」时，模型容易画成拳打到人，或让人后退来「躲开」。
 - **「不后退」要同时锁站姿**：只写 `FEET PLANTED / never move / HOLDS HIS GROUND` 时，人可能原地改成弓步。补 `upright stance, no lunge, knees not bent into a bow stance, feet stay under the shoulders`。
-- **对打中未写动作的一方会即兴出招**：格挡镜如果只写进攻/格挡的一方，另一人可能伸手、出拳、把道具伸进力场，甚至多握出一只杯子。闲置一方要写死：站在哪一侧、只握几只道具、手放哪里、`NEVER punches / NEVER extends the prop`。
-- **落地锁管不住对打镜里的道具分身**：`ONE object ONLY, falls ONCE` 能管住落地次数（v2 空杯只掉一次已验），但对打中景仍可能双手各出现一只。道具总数锁要写进所有出该道具的镜头，不只写落地那一镜。
+- **对打中未写动作的一方会即兴出招**：格挡镜如果只写进攻/格挡的一方，另一人可能伸手、出拳、把道具伸进力场，甚至多握出一只杯子。闲置一方要写死：站在哪一侧、只握几只道具、手放哪里、`NEVER punches / NEVER extends the prop`。v3 写出拳/伸手禁令后不再出拳，但仍会把杯子往前举起示意。再锁肘位和道具高度：`elbow stays at the hip, glass at thigh level, never lifted toward the action`。
+- **落地锁管不住对打镜里的道具分身**：`ONE object ONLY, falls ONCE` 能管住落地次数（v2 空杯只掉一次已验），但对打中景仍可能双手各出现一只。v3 落地特写仍是一只杯掉一次，但对打宽镜头里脚边已提前出现一只倒地杯，手里还握着另一只。道具总数锁要写进所有出该道具的镜头，不只写落地那一镜；并写死落地前地面没有该道具（`Until the drop shot, the floor has NO glass; he keeps the SAME one glass in hand, then drops that one`）。
+- **投射物自行飞出要锁直线和初始朝向**（v3 已验「不是手扔」，v4 按 David 改直线）：只写 `launch themselves / 自动飞向对方`，刃仍可能先凝成再中途转向。须写：凝成时尖已对准目标（`tips ALREADY aimed at X`），随后自行直线飞出（`STRAIGHT line, no mid-air turn or curve`），施放者绝不手扔。
+- **拉开站位可写死（v3 已验）**：需要两人不要贴身对打时，写清大约距离和中间空地（如 `FIVE METERS apart, wide empty floor gap, never close-range`）。v3 宽中景已能站在车道两端、中间整条空地。
+- **禁止两人侧面同框；格挡和说话用正面单人**（2026-11-22 David，v4 提示词已按此改，成片尚未自测写入）：投射物对打不要侧面双人中景。飞行段只跟投射物（目标若入画只是正前方远处小点）；格挡改受击者正面单人，另一人不出画；谁说话就切谁的正面特写。写 `NEVER a side two-shot` ＋各镜 `ONLY [character]`。
+- **飞行段要给长高速特写，准备镜让时**（2026-11-22 David）：刃飞出后不要立刻切双人对打，单独给一段跟拍特写（约 3s）：镜头贴在刃后，直线冲过场景，带速度残影、刃缘模糊、景物甩过。15s 内可把前面抿/泼/凝成各压到约 1.3s、落地约 0.8s，把时间让给飞行。
