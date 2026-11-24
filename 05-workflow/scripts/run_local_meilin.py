@@ -228,6 +228,8 @@ def main():
     ap.add_argument('--out', default=None)
     ap.add_argument('--template', default='default',
                     help='default=0.5MP DMaD | 0.7(旧默认) | vbvr | 0.5turbo(旧turboEMA) | 0.6(旧turbo) | path-to-api-json')
+    ap.add_argument('--speed-slider', type=float, default=0.0, metavar='0-5',
+                    help='H3 动作速度 LoRA 强度，范围 0–5，默认 0 关闭（仅支持带节点 530 的模板）')
     ap.add_argument('--no-sync', action='store_true',
                     help='跳过开工前的云端代码同步（默认每次都拉）')
     ap.add_argument('--vsr', default='off', choices=['off', '2x', '4x'],
@@ -235,12 +237,23 @@ def main():
     ap.add_argument('--vsr-detail', type=float, default=0.5,
                     help='VSR 细节强度：0.5 最贴原片，0.7 更锐但软源易出重影/波纹')
     a = ap.parse_args()
+    if not 0.0 <= a.speed_slider <= 5.0:
+        ap.error('--speed-slider 必须在 0 到 5 之间')
 
     # 开工第一件事：拉云端代码（用户 2026-10-31 规则）
     pre_work_sync(skip=a.no_sync)
 
     tpl = resolve_template(a.template)
     wf = json.loads(tpl.read_text(encoding='utf-8'))['prompt']
+    speed_node = wf.get('530')
+    if (speed_node
+            and speed_node.get('class_type') == 'LoraLoaderModelOnly'
+            and speed_node.get('inputs', {}).get('lora_name', '').endswith(
+                'H3_speed_slider_1.1.safetensors')):
+        speed_node['inputs']['strength_model'] = a.speed_slider
+    elif a.speed_slider:
+        ap.error('当前模板未接入速度滑块，请使用 default 模板')
+    print(f'动作速度 LoRA 强度={a.speed_slider:g}（0 为关闭）')
     prompt_text = Path(a.prompt).read_text(encoding='utf-8').strip()
     wf['263']['inputs']['text'] = prompt_text
     wf['259']['inputs']['value'] = a.seconds

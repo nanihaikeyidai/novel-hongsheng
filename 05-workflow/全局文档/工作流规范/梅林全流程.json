@@ -1,8 +1,8 @@
 {
   "id": "e3f2b845-8f2c-4b5a-9caf-eac1029d3e7e",
   "revision": 0,
-  "last_node_id": 294,
-  "last_link_id": 506,
+  "last_node_id": 295,
+  "last_link_id": 507,
   "nodes": [
     {
       "id": 115,
@@ -1588,8 +1588,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            297,
-            504
+            507
           ]
         }
       ],
@@ -8507,6 +8506,85 @@
       "widgets_values": [
         "# 梅林默认加速 · Spark-H3 SM89\n\n**默认链**（2026-10+）：\n`UNET → Spark SM89 → 风格LoRA → Guider → Sampler`\n\n- 步数默认 **8**（INTConstant 163 + BasicScheduler）\n- topk_ratio **0.2** · warmup_ratio **0.2**\n- **不要**与 Sol / Sage override / Turbo-SLA 叠同一 model 链\n- DualClock+SLA+Audit 已 bypass，需要 4NFE Turbo 时再手动启用\n- 4070 Ti SUPER 实测 ~**1.45×** vs dense（960×544 / 5.2s / 8step）\n"
       ]
+    },
+    {
+      "id": 295,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -705.4569091796875,
+        5092.716203021935
+      ],
+      "size": [
+        384.13946533203125,
+        82
+      ],
+      "flags": {
+        "disabled": false
+      },
+      "order": 76,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 507
+        },
+        {
+          "label": "lora_name",
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "lora_name"
+          },
+          "link": null
+        },
+        {
+          "label": "strength_model",
+          "localized_name": "strength_model",
+          "name": "strength_model",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_model"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            297,
+            504
+          ]
+        }
+      ],
+      "title": "动作速度滑块 (0–5，0关闭)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "version": "7.8",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "h3\\loras\\H3_speed_slider_1.1.safetensors",
+        0.0
+      ],
+      "widgets_values_named": {
+        "lora_name": "h3\\loras\\H3_speed_slider_1.1.safetensors",
+        "strength_model": 0.0
+      },
+      "color": "#233",
+      "bgcolor": "rgba(0,0,0,0)"
     }
   ],
   "links": [
@@ -8584,7 +8662,7 @@
     ],
     [
       297,
-      151,
+      295,
       0,
       126,
       0,
@@ -9312,7 +9390,7 @@
     ],
     [
       504,
-      151,
+      295,
       0,
       124,
       0,
@@ -9333,6 +9411,14 @@
       122,
       0,
       "LATENT"
+    ],
+    [
+      507,
+      151,
+      0,
+      295,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [

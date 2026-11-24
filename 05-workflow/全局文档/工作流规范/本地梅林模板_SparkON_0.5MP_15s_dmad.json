@@ -411,9 +411,20 @@
     "tail_granularity": "query",
     "reblock_layout": "q_reuse_k",
     "model": [
-     "53",
+     "530",
      0
     ]
+   }
+  },
+  "530": {
+   "class_type": "LoraLoaderModelOnly",
+   "inputs": {
+    "model": [
+     "53",
+     0
+    ],
+    "lora_name": "h3\\loras\\H3_speed_slider_1.1.safetensors",
+    "strength_model": 0.0
    }
   }
  }
