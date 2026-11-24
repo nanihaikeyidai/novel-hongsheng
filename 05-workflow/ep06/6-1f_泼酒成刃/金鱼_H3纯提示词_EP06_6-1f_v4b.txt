@@ -1,0 +1,31 @@
+subject_definitions:
+SETTING <Picture 2> ND underground garage: cold white tubes, grey striped pillars, wet floor, cool blue-grey ONLY. Plain concrete, no digits or signs, no red lamps.
+CAMERA LOCK: NEVER a side two-shot. Pascal shots: ONLY Pascal. Flight: blades only. Block and Lan Sun's line: his FULL FRONT only, Pascal NOT visible. Pascal flings toward frame-right; Lan Sun stands far away, FIVE METERS or more apart.
+SPEED LOCK: real-time FAST; NO slow-mo. Only droplets stop in the air.
+COLOR LOCK: wine the ONLY warm color, deep WINE-RED; electricity cold BLUE-WHITE only.
+MOUTH LOCK: ZERO speech before 9.6s. Lan Sun speaks ONLY in [Shot 6] 9.6-12.0s. 12.0-12.7s TOTAL SILENCE. Pascal speaks ONLY in [Shot 8] 12.7-14.9s. Head still while talking.
+GLASS LOCK: ONE glass ONLY, always the SAME one in Pascal's right hand, elbow at his hip, glass at thigh level after the fling. The floor has NO glass and NO cup until [Shot 7]. It falls ONCE in [Shot 7], cracks, STAYS as shards; never a second or intact glass.
+ARC LOCK: NO ring, halo, circle or disc of light around either fist, in every shot. Only thin jagged BLUE-WHITE ARCS crawling along knuckles and wrists. The REPULSION WAVE is a flat clear shimmer of bent air, like heat haze, ahead of the fist, SEPARATE from it, never round rings.
+STANCE LOCK: Lan Sun HOLDS HIS GROUND, FEET PLANTED, upright square stance; no lunge; feet never move.
+BLADE LOCK: tips ALREADY point at Lan Sun; SEVEN blades LAUNCH THEMSELVES STRAIGHT; no turn. Pascal NEVER throws them. Blades NEVER reach his body: ALL SEVEN SHATTER on the wave one meter ahead of his fists; NEVER drawn across his face, chest, coat or head; only tiny red spray scatters at the frame edges.
+<Picture 1> Pascal: adult man, swept blond hair, black waistcoat, cream shirt, silver feather brooch; ONE wine glass in RIGHT hand. Inherit face/hair/outfit ONLY, NOT the multi-panel layout.
+<Picture 3> Lan Sun: ELECTRIC-BLUE short hair, shaved stripe, black angular sunglasses NEVER removed, graphite-black coat and boots. Bare-handed. Inherit look ONLY, not layout or angle.
+<Audio 1> Lan Sun timbre only; ONLY in [Shot 6] from 9.6s, never over Pascal.
+
+summary: 15s, 8 shots. Pascal sips and flings wine; SEVEN WINE-RED BLADES fly STRAIGHT. Lan Sun FULL FRONT shatters all of them on a clear REPULSION WAVE ahead of his fists. Lan Sun speaks on his close-up; one glass drops in silence; Pascal answers.
+
+retention_analysis: Looks fully preserved; sunglasses stay on. Garage and debris ACCUMULATE, never reset.
+
+detailed_description: 16:9 cel-anime, 2D flat shading, cool blue-grey; NOT photorealistic, NOT 3D, no text.
+[Shot 1] 0.0s PASCAL CLOSE-UP, ONLY Pascal. ONE small sip, lowers the glass. Lips closed. 1.3s.
+[Shot 2] 1.3s CLOSE-UP of Pascal's right hand and glass. Wrist SNAPS toward frame-right and FLINGS the wine; droplets STOP in the air. Floor empty. 1.3s.
+[Shot 3] 2.6s CLOSE-UP of droplets STRETCHING into EXACTLY SEVEN needle-thin WINE-RED BLADES in one fan, tips aimed at frame-right. They LAUNCH THEMSELVES straight. 1.3s.
+[Shot 4] 3.9s HIGH-SPEED BLADE CLOSE-UP, tracking just behind the seven blades racing STRAIGHT down the garage; motion streaks, pillars whipping past. No person in frame. 2.1s.
+[Shot 5] 6.0s LAN SUN FULL-FRONT medium wide, ONLY Lan Sun, lips closed. HOLDS HIS GROUND, FEET PLANTED. Thin arcs on knuckles and wrists; NO ring or halo on the fists. RIGHT, LEFT, RIGHT punches push a clear heat-haze REPULSION WAVE one meter ahead. Blades hit that wave far from him and ALL SHATTER into red spray and white steam; no blade crosses his face, chest or coat. 2.6s.
+[Shot 6] 8.6s Lan Sun CLOSE-UP, FULL FRONT, sunglasses EQUAL width, fists half raised with thin wrist arcs, NO ring of light. No blades. Mouth CLOSED until 9.6s, then ONE line, head still, ends by 12.0s. 3.4s.
+[Shot 7] 12.0s CLOSE-UP of Pascal's right hand at thigh level, no face. Fingers open: the SAME one glass falls ONCE, CRACKS on the floor, shards STAY. Silence. 0.7s.
+[Shot 8] 12.7s PASCAL MEDIUM, ONLY Pascal, empty hand at his side, glass shards on the floor, no intact glass. At 12.7s he speaks ONE line, calm, head still, ends by 14.9s. 2.3s.
+
+overall_soundscape: 0.0s to 9.6s ZERO voices. [Shot 6] Lan Sun, low, <Audio 1> timbre, 9.6s to 12.0s ONLY, on his close-up: <d>[Chinese] 这么快的元素变化，看来又是流系异能者</d> 12.0s to 12.7s TOTAL SILENCE of voices, only one glass crack. [Shot 8] Pascal, calm adult male, clearly different from <Audio 1>, 12.7s to 14.9s ONLY: <d>[Chinese] 什么系不重要，优雅的战斗才是重点</d> Each line ONCE. Else: sip, wine whoosh, blade whistle, electric crackle, punch thrum. Avoid: other words, a second reading, music, subtitles, watermark, Lan Sun's voice over Pascal.
+
+non_diegetic_music: N/A

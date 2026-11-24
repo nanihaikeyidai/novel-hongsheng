@@ -1,0 +1,34 @@
+{
+  "unit": "EP06_6-1f_v4b_jinyu",
+  "workflow": "金鱼云端(box)",
+  "appId": "2110357037929558018",
+  "taskId": "2125033522753392641",
+  "status": "SUCCESS",
+  "billing": "personal_RH_coins",
+  "usage": {
+    "consumeCoins": null,
+    "consumeMoney": null,
+    "taskCostTime": "481",
+    "thirdPartyConsumeMoney": null,
+    "settleMode": "POINT",
+    "chargedPoint": "110.63"
+  },
+  "coins_before": "0",
+  "coins_after": "0",
+  "coins_delta": 0.0,
+  "promptBytes": 4785,
+  "params": "16:9 / 15s / 1.5MP / simple / 12 / plus",
+  "prompt_path": "05-workflow/ep06/6-1f_泼酒成刃/金鱼_H3纯提示词_EP06_6-1f_v4b.txt",
+  "refs": {
+    "51": "pascal.png",
+    "49": "garage_clean.png",
+    "50": "lansun_front_side.png"
+  },
+  "audios": {
+    "48": "lansun.wav"
+  },
+  "upload_dir": "/workspace/ep05-preview/jinyu/EP06_6-1f_v1_upload",
+  "download_url": "https://rh-images-tos.xiaoyaoyou.com/8e3cb2f6099d5772ed26216d6126f481/output/YZ_H3__00001_p81-audio_fxdeo_1795482925.mp4",
+  "output_mp4": "/workspace/ep05-preview/jinyu/EP06_6-1f_v4b_金鱼草稿.mp4",
+  "completed_local": "2026-11-24 09:16 CST"
+}
