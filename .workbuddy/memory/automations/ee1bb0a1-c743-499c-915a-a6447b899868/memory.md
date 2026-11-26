@@ -177,3 +177,11 @@
 - 结构性提醒（不建议自动化擅改）：微信 p2p 绑的会话同时被定时任务/守护探针复用（154 轮、2.13 亿 input token），忙时会回「已排队」——这正是 11-13 丢消息的机理。该会话仍锁 `workbuddy:space-bunny`（max），而配置默认已是 hy4free、model_probe 也报 `activeModel=hy4free`；改投影无效（DSH 从事件流重建），只能由用户在微信发 `/new`（推荐，甩掉巨型上下文）或 `/model` 切模型。
 - 待用户动作：微信随手发一条消息验证入站（已静默 112h，getconfig 只能证明凭证有效）。
 
+## 2026-11-25 03:00（DSH / 微信链路夜检）—— DSH 进程死亡，已重启恢复
+- 现象：自检第 1 项 FAIL——3080 端口完全无监听（netstat 确认），DSH web 进程消失（其余 node 进程均为 WorkBuddy 自身 MCP）。11-24 14:52 用户有一条微信消息未被回复（最后出站停在 11-21 16:10 的「模型服务正在限流 MODEL_RATE_」错误回执），推断 DSH 在 11-21 限流错误后某个时间点死亡/未再启动。
+- 修复：`cmd //c start "" //min D:\HermesWorkspace\wechat-bridge\start_dsh_detached.cmd` 分离启动成功（PID 40308，单实例）；新 token `UIRGwNz…` 与旧的不同，已回写 `dsh_url.txt`。
+- 重启后自检：0 代理 OK（ProxyEnable=1 且 65532 端口有监听，非坏死，未触发自动切直连）/ 1 dsh web OK（303）/ 2 DeepSeek OK（余额 42.13，11-19 为 44.32，正常消耗）/ 3 微信 OK（getconfig 200 ret=0 typing_ticket=true，账号 wx_d6fc00…2b36 唯一）。
+- 未自动恢复项：11-24 那条消息已被消费（seen 83→84）但未处理，重启后开放轮次 seq 20297 仍未闭合（interruptedTurnClosers 需下次写开才补），**该消息不会自动重放**。无专用出站发送工具，按惯例不代发微信；用户重发该消息即可正常获得回复。last outbound 仍是限流错误文本属历史遗留（STALE 24h 已降级为 note 级）。
+- 插件核查：无新增冲突；沿用 bsk probe failed / CODEX_BINARY_UNAVAILABLE / CURSOR_BINARY_UNAVAILABLE 三条非致命告警（有意不动，均不影响微信）。
+- 经验：本轮首次出现「DSH 进程整体死亡」型故障（此前都是限流/静默丢轮次）；`start_dsh_detached.cmd` + 手工回写 dsh_url.txt 流程一次成功，约 30s 起监听。
+
